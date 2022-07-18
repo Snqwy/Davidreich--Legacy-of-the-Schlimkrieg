@@ -3,7 +3,7 @@ characters={
 		name=ENG_sebastian
 		portraits={
 			civilian={
-				large="gfx/leaders/ENG/Portrait_Sebastian_Democratic.dds"
+				large="GFX_portrait_sebastian_democratic"
 			}
 			army={
 				small="GFX_idea_ENG_winston_churchill"
@@ -62,10 +62,10 @@ characters={
 	}
 
 	ENG_oswald_mosley={
-		name=ENG_oswald_mosley
+		name=ENG_sebastian
 		portraits={
 			civilian={
-				large=GFX_portrait_ENG_oswald_mosley
+				large="GFX_portrait_sebastian_fascist"
 			}
 			army={
 				small="GFX_idea_ENG_oswald_mosley"
@@ -99,10 +99,10 @@ characters={
 	}
 
 	ENG_harry_pollitt={
-		name=ENG_harry_pollitt
+		name=ENG_sebastin
 		portraits={
 			civilian={
-				large=GFX_portrait_ENG_harry_pollitt
+				large="GFX_portrait_sebastian_communist"
 			}
 			army={
 				small="GFX_idea_harry_pollitt"

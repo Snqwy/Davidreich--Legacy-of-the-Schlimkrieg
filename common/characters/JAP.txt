@@ -3,7 +3,7 @@ characters={
 		name=JAP_emperor_hirohito
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_Dillon_Fascist.dds"
+				large="GFX_portrait_dillon_fascist"
 			}
 		}
 		country_leader={

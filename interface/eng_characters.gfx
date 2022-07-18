@@ -1,0 +1,17 @@
+spriteTypes = {	
+
+	### Leaders
+	
+	spriteType = {
+		name = "GFX_portrait_sebastian_democratic"
+		texturefile = "gfx/leaders/ENG/Portrait_Sebastian_Democratic.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sebastian_fascist"
+		texturefile = "gfx/leaders/ENG/Portrait_Sebastian_Fascist.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sebastian_communist"
+		texturefile = "gfx/leaders/ENG/Portrait_Sebastian_Communist.dds"
+	}
+}

@@ -3,7 +3,7 @@ characters={
 		name=ITA_benito_mussolini
 		portraits={
 			civilian={
-				large= ### portait of liam
+				large="GFX_portrait_max_fascist"
 			}
 		}
 		country_leader={

@@ -1,0 +1,9 @@
+spriteTypes = {	
+
+	### Leaders
+	
+	spriteType = {
+		name = "GFX_portrait_haskell_democratic"
+		texturefile = "gfx/leaders/FRA/Portrait_Haskell_Democratic.dds"
+	}
+}

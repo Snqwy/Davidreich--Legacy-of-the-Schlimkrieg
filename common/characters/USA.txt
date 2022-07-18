@@ -3,7 +3,7 @@ characters={
 		name=USA_franklin_delano_roosevelt
 		portraits={
 			civilian={
-				large="gfx/leaders/USA/Portrait_Collin_Democratic.dds"
+				large="GFX_portrait_colin_democratic"
 			}
 		}
 		country_leader={

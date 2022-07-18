@@ -1,0 +1,9 @@
+spriteTypes = {	
+
+	### Leaders
+	
+	spriteType = {
+		name = "GFX_portrait_max_fascist"
+		texturefile = "gfx/leaders/ITA/Portrait_Max_Fascist.dds"
+	}
+}

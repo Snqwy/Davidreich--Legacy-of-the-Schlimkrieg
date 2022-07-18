@@ -1,6 +1,6 @@
 ﻿l_english:
  #SOVIET UNION
- SOV_iosif_stalin:0 "Iosif Stalin"
+ SOV_iosif_stalin:0 "Conner"
  SOV_konstantin_rodzayevsky:0 "Konstantin Rodzayevsky"
  SOV_aleksandr_kerensky:0 "Aleksandr Kerensky"
  SOV_supreme_soviet:0 "The Supreme Soviet"
@@ -324,7 +324,7 @@
  MAN_changlin_linge:0 "Changlin Linge"
 
  #USA
- USA_franklin_delano_roosevelt:0 "Collin"
+ USA_franklin_delano_roosevelt:0 "Colin"
  USA_william_dudley_pelley:0 "William Dudley Pelley"
  USA_earl_browder:0 "$earl_browder$"
  USA_george_s_patton:0 "$george_patton$"
@@ -384,7 +384,7 @@
  
 
  #ITALY
- ITA_benito_mussolini:0 "Liam"
+ ITA_benito_mussolini:0 "Max"
  ITA_ferruccio_parri:0 "Ferruccio Parri"
  ITA_victor_emmanuel_iii:0 "Victor Emmanuel III"
  ITA_palmiro_togliatti:0 "Palmiro Togliatti"

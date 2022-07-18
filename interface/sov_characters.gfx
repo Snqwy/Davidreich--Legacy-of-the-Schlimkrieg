@@ -1,0 +1,9 @@
+spriteTypes = {	
+
+	### Leaders
+	
+	spriteType = {
+		name = "GFX_portrait_conner_communist"
+		texturefile = "gfx/leaders/SOV/Portrait_Conner_Communist.dds"
+	}
+}

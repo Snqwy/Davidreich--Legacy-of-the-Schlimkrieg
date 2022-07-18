@@ -1,13 +1,13 @@
 characters={
-	FRA_pierre_laval={ #Neutrality Leader
+	FRA_pierre_laval={ #Democratic Leader
 		name=FRA_pierre_laval
 		portraits={
 			civilian={
-				large="gfx/leaders/FRA/Portrait_Haskell_Neutrality.dds"
+				large="GFX_portrait_haskell_democratic"
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=conservatism
 			expire="1965.1.1.1"
 			id=-1
 		}
