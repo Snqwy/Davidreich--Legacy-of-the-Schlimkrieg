@@ -1,0 +1,22 @@
+state={
+	id=730
+	name="STATE_730"
+	manpower=3426
+	state_category = tiny_island
+
+	history={
+		owner = USA
+		add_core_of = CAN
+		add_core_of = USA
+		buildings = {
+			infrastructure = 2
+			373 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={ 373 }
+
+	local_supplies=0.0 
+}
