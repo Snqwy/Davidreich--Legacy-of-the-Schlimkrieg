@@ -11,8 +11,7 @@ state={
 	}
 	
 	history={
-		owner = USA 
-		add_core_of = USA
+		owner = MEX
 		buildings = {
 			infrastructure = 2
 			air_base = 2

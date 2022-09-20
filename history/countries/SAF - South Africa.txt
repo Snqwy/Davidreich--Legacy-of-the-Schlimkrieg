@@ -95,4 +95,4 @@ recruit_character = SAF_j_f_van_rensburg
 recruit_character = SAF_e_g_jansen
 recruit_character = SAF_nicolaas_havenga
 recruit_character = SAF_sir_patrick_duncan
-recruit_character = SAF_abram_fischer
+#recruit_character = SAF_abram_fischer

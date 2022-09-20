@@ -99,7 +99,7 @@ characters={
 	}
 
 	ENG_harry_pollitt={
-		name=ENG_sebastin
+		name=ENG_sebastian
 		portraits={
 			civilian={
 				large="GFX_portrait_sebastian_communist"

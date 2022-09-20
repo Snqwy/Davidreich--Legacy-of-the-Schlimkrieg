@@ -1,6 +1,6 @@
 characters={
 	GER_adolf_hitler={
-		name=GER_adolf_hitler
+		name=GER_david
 		portraits={
 			civilian={
 				large="GFX_portrait_david_fascist"

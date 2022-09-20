@@ -11,8 +11,8 @@ state={
 	
 
 	history={
-		owner = USA 
-		add_core_of = USA
+		owner = NIC
+		add_core_of = NIC
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -22,7 +22,6 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = COS
 		victory_points = {
 			13087 3
 		}

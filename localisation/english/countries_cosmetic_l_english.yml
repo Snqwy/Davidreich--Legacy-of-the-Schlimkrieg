@@ -835,8 +835,8 @@
  ESU_POR_unified_communism:0 "Iberian Socialist Union"
  ESU_POR_unified_communism_def:0 "the Iberian Socialist Union"
  ESU_POR_unified_communism_adj:0 "Iberian"
- ESU_POR_unified_democratic:0 "United Republics of Iberia"
- ESU_POR_unified_democratic_def:0 "the United Republics of Iberia"
+ ESU_POR_unified_democratic:0 "Iberian Union"
+ ESU_POR_unified_democratic_def:0 "the Iberian Union"
  ESU_POR_unified_democratic_adj:0 "Iberian"
  ESU_POR_unified:0 "Iberia"
  ESU_POR_unified_def:0 "Iberia"
@@ -979,7 +979,6 @@
  UBF_united_balkan_federation:0 "United Balkan Federation"
  UBF_united_balkan_federation_DEF:0 "the United Balkan Federation"
  UBF_united_balkan_federation_ADJ:0 "Balkan"
-
  TBE_third_bulgarian_empire_neutrality:0 "Third Bulgarian Empire"
  TBE_third_bulgarian_empire_neutrality_DEF:0 "the Third Bulgarian Empire"
  TBE_third_bulgarian_empire_neutrality_ADJ:0 "Bulgarian"
@@ -1034,7 +1033,6 @@
  TRA_YUG_subject_DEF:0 "the Autonomous Region of Transylvania"
  vojvodina_YUG_subject:0 "Autonomous Region of Vojvodina"
  vojvodina_YUG_subject_DEF:0 "the Autonomous Region of Vojvodina"
-
  UBF_united_balkan_federation_communism:0 "United Balkan Federation"
  UBF_united_balkan_federation_communism_DEF:0 "the United Balkan Federation"
  UBF_united_balkan_federation_communism_ADJ:0 "Balkan"
@@ -1050,17 +1048,14 @@
  BUL_ff_bulgaria:0 "$BUL_communism$"
  BUL_ff_bulgaria_DEF:0 "$BUL_communism_DEF$"
  BUL_ff_bulgaria_ADJ:0 "$BUL_communism_ADJ$"
- 
  GRE_dem_monarchy_fascism:0 "National Union of Greece"
  GRE_dem_monarchy_fascism_DEF:0 "the National Union of Greece"
  GRE_dem_monarchy_fascism_ADJ:0 "Greek"
-
  TUR_PROVISIONARY_communism:0 "Provisionary State of Anatolia"
  TUR_PROVISIONARY_democratic:0 "Provisionary State of Anatolia"
  TUR_PROVISIONARY_fascism:0 "Provisionary State of Anatolia"
  TUR_PROVISIONARY_neutrality:0 "Provisionary State of Anatolia"
  TRN_neutrality_DEF:0 "Turan"
-
  POL_SANATION_neutrality:0 "Sanationist Poland"
  POL_SANATION_neutrality_DEF:0 "the Polish Sanation Government"
  POL_SANATION_democratic:0 "Sanationist Republic of Poland"
@@ -1244,7 +1239,6 @@
  mountainous_republics_unified:0 "North Caucasia"
  mountainous_republics_unified_DEF:0 "North Caucasia"
  mountainous_republics_unified_ADJ:0 "North Caucasian"
- 
  transcaucasia_unified_SOV_communism_subject:0 "Transcaucasian Socialist Federative Soviet Republic"
  transcaucasia_unified_SOV_communism_subject_DEF:0 "the Transcaucasian Socialist Federative Soviet Republic"
  transcaucasia_unified_neutrality:0 "Transcaucasian Federation"
@@ -1258,7 +1252,6 @@
  transcaucasia_unified:0 "Transcaucasia"
  transcaucasia_unified_DEF:0 "Transcaucasia"
  transcaucasia_unified_ADJ:0 "Transcaucasian"
- 
  siberia_unified_SOV_communism_subject:0 "Siberian Federative Soviet Socialist Republic"
  siberia_unified_SOV_communism_subject_DEF:0 "the Siberian Socialist Federative Soviet Republic"
  siberia_unified_neutrality:0 "Multinational State of Siberia"
@@ -1272,7 +1265,6 @@
  siberia_unified:0 "Siberia"
  siberia_unified_DEF:0 "Siberia"
  siberia_unified_ADJ:0 "Siberian"
- 
  idel_ural_SOV_communism_subject:0 "Idel Ural Federative Soviet Socialist Republic"
  idel_ural_SOV_communism_subject_DEF:0 "the Idel Ural Federative Soviet Socialist Republic"
  idel_ural_neutrality:0 "Idel-Ural State"
@@ -1286,4 +1278,3 @@
  idel_ural:0 "Idel Ural"
  idel_ural_DEF:0 "the Idel Ural State"
  idel_ural_ADJ:0 "Idel Uralic"
- 

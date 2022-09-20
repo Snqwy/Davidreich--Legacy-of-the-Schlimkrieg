@@ -1,6 +1,6 @@
 characters={
 	JAP_emperor_hirohito={
-		name=JAP_emperor_hirohito
+		name=JAP_dillon
 		portraits={
 			civilian={
 				large="GFX_portrait_dillon_fascist"
@@ -15,10 +15,10 @@ characters={
 	}
 
 	JAP_kyuichi_tokuda={
-		name=JAP_kyuichi_tokuda
+		name=JAP_emperor_hirohito
 		portraits={
 			civilian={
-				large="GFX_Portrait_kyuichi_tokuda"
+				large="GFX_portrait_dillon_communist"
 			}
 		}
 		country_leader={
@@ -29,10 +29,10 @@ characters={
 	}
 
 	JAP_tetsu_katayama={
-		name=JAP_tetsu_katayama
+		name=JAP_emperor_hirohito
 		portraits={
 			civilian={
-				large="GFX_Portrait_tetsu_katayama"
+				large="GFX_portrait_dillon_democratic"
 			}
 		}
 		country_leader={

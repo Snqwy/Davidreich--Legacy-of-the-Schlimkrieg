@@ -16,7 +16,7 @@ bookmarks = {
 		}
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = democratic
 		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
@@ -33,13 +33,26 @@ bookmarks = {
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism	
+			focuses = {
+				#
+			}	
 		}
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
-		effect = {
-			randomize_weather = 22345 # <- Obligatory in every bookmark !
-			#123 = { rain_light = yes }
+		"CSA"={
+			minor = yes
+			history = ""
+			ideology = neutrality
+		}
+		"PRU"={
+			minor = yes
+			history = ""
+			ideology = neutrality
+		}
+		effect={
+			randomize_weather=22345 # <- Obligatory in every bookmark !
+			#123={rain_light=yes}
 		}
 	}
 }

@@ -3,8 +3,8 @@ state={
 	name="STATE_739"
 
 	history={
-		owner = USA 
-		add_core_of = USA
+		owner = CSA
+		add_core_of = CSA
 		buildings = {
 			infrastructure = 1
 
@@ -12,12 +12,8 @@ state={
 				naval_base = 1
 
 			}
-
-
 		}
-		add_core_of = CAN
 	}
-
 	provinces={
 		1869
 	}

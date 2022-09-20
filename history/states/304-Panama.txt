@@ -10,8 +10,7 @@ state={
 	state_category = town
 	
 	history={
-		owner = USA 
-		add_core_of = USA
+		owner = NIC
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -24,7 +23,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = PAN
+		add_core_of = NIC
 		victory_points = {
 			7630 5 
 		}

@@ -10,7 +10,7 @@ state={
 		}
 		add_core_of = MON
 		victory_points = {
-			4800 
+			4800 5 
 		}
 	}
 	provinces={

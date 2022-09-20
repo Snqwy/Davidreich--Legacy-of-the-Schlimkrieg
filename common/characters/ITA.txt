@@ -1,6 +1,6 @@
 characters={
 	ITA_benito_mussolini={
-		name=ITA_benito_mussolini
+		name=ITA_max
 		portraits={
 			civilian={
 				large="GFX_portrait_max_fascist"

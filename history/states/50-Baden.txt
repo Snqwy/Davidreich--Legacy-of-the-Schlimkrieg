@@ -6,7 +6,6 @@ state={
 	history={
 		owner=BAY
 		add_core_of=BAY
-		add_core_of=WUR
 		victory_points={
 			9517 20
 		}

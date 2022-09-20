@@ -1,6 +1,6 @@
 ﻿capital = 231 #Tbilisi
 set_cosmetic_tag = transcaucasia_unified
-oob = "GEO_1936"
+oob = ""
 
 set_research_slots = 3
 

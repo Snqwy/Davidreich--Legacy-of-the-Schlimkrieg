@@ -1,9 +1,0 @@
-spriteTypes = {	
-
-	### Leaders
-	
-	spriteType = {
-		name = "GFX_portrait_colin_democratic"
-		texturefile = "gfx/leaders/USA/Portrait_Colin_Democratic.dds"
-	}
-}

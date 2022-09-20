@@ -8,7 +8,7 @@ state={
 	history={
 		owner = LIB 
 		add_core_of = LIB
-		add_core_of = IVO
+		add_core_of = GNA
 		victory_points = {
 			10803 1
 		}

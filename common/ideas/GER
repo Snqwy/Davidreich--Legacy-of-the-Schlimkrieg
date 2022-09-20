@@ -1,0 +1,4 @@
+ideas={country={
+	idea_legacy_of_the_schlimkrieg_dr={allowed={always=no} allowed_civil_war={always=yes} removal_cost=-1 modifier={army_org_Factor=-0.05 war_support_factor=-0.1 drift_defence_factor=0.30}rule={can_create_factions=yes}}
+	idea_militarization_dr={allowed={always=no} allowed_civil_war={always=yes} removal_cost=-1 modifier={ai_focus_military_advancements_factor=0.5 conscription_factor=0.05 experience_gain_army=0.05 training_time_factor=-0.1}}
+	idea_steady_economic_recovery_dr={allowed={always=no} allowed_civil_war={always=no} removal_cost=-1 modifier={production_factory_efficiency_gain_factor=0.05 consumer_goods_factor=0.05}}}

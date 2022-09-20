@@ -1,4 +1,4 @@
-﻿capital = 563 #Chita
+﻿capital = 657
 #oob = "FER_1936"
 
 set_research_slots = 3
