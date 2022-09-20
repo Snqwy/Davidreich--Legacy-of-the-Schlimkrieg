@@ -1,6 +1,4 @@
-﻿set_party_name={ideology=communism long_name=SOV_communism_party_russian_long name=SOV_communism_party_russian}
-set_party_name={ideology=fascism long_name=SOV_fascism_party_russian_long name=SOV_fascism_party_russian}
-recruit_character=SOV_iosif_stalin
+﻿recruit_character=SOV_iosif_stalin
 if={limit={has_dlc="No Step Back"} recruit_character=SOV_provisional_government set_country_flag=vlasov_owner_flag}
 recruit_character = SOV_mikhail_kalinin
 recruit_character = SOV_nikita_khrushchyov

@@ -2673,5 +2673,8 @@
  POL_investments_monarchist:0 "Monarchist Investments"
  CHANGE_ADVISOR:1 "\nYou can replace this advisor by clicking here and selecting a replacement."
  idea_legacy_of_the_schlimkrieg_dr:0 "Legacy of the Schlimkrieg"
+ idea_legacy_of_the_schlimkrieg_dr_desc:0 "TBD"
  idea_militarization_dr:0 "Militarization"
+ idea_militarization_dr_desc:0 "TBD"
  idea_steady_economic_recovery_dr:0 "Steady Economic Recovery"
+ idea_steady_economic_recovery_dr_desc:0 "TBD"

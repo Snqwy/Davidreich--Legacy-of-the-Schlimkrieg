@@ -754,26 +754,9 @@
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = GER_daveschluss_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Claim Greater Burgundy
-	focus = {
-		id = GER_claim_greater_burgundy_dr
-		icon = GFX_goal_generic_major_war
-		x = 41
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_daveschluss_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
+		prerequisite={focus=GER_daveschluss_dr}
+		ai_will_do={factor=1}completion_reward={#}}
+	focus={id=GER_claim_greater_burgundy_dr icon=GFX_goal_generic_major_war x=41 y=8 cost=56 available_if_capitulated=yes prerequisite={focus=GER_daveschluss_dr}ai_will_do={factor=1}search_filters={FOCUS_FILTER_ANNEXATION}ai_will_do={factor=1}completion_reward={add_state_claim=6 add_state_claim=7 add_state_claim=8 add_state_claim=17 add_state_claim=18 add_state_claim=20 add_state_claim=27 add_state_claim=28 add_state_claim=29 add_state_claim=34 add_state_claim=35 add_state_claim=35 add_state_claim=785} ###decision for establishing hrugundy
 	#Focus for Davidsraum
 	focus = {
 		id = GER_davidsraum_dr
@@ -823,8 +806,6 @@
 			factor = 1
 		}
 	}
-
-	#Focus for Commie Victory
 	focus = {
 		id = GER_commie_victory_dr
 		icon = GFX_goal_support_communism
@@ -1241,22 +1222,7 @@
 			factor = 1
 		}
 	}
-
-	#Focus for Holy Roman Claimnant
-	focus = {
-		id = GER_holy_roman_claimnant_dr
-		icon = GFX_focus_ger_revive_kaiserreich
-		x = 55
-		y = 13
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_rekindle_the_alliance_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Turn Eastwards
+	focus={id=GER_holy_roman_claimnant_dr icon=GFX_focus_ger_revive_kaiserreich x=55 y=13 cost=15 available_if_capitulated=yes prerequisite={focus=GER_rekindle_the_alliance_dr}ai_will_do={factor=1}completion_reward={add_state_core=3 add_state_core=39 add_state_core=102 add_state_core=151 add_state_core=158 add_state_core=159 add_state_core=160 add_state_core=161 add_state_core=162 add_state_core=736}} #event for reformation of holy roman empire & for cosmetic tag
 	focus = {
 		id = GER_turn_eastwards_dr
 		icon = GFX_focus_generic_join_comintern
@@ -1270,28 +1236,7 @@
 			factor = 1
 		}
 	}
-
-	#Focus for Fourth Internationale
-	focus = {
-		id = GER_fourth_internationale_dr
-		icon = GFX_goal_support_fourth_int
-		x = 58
-		y = 9
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = GER_seize_the_means_of_production_dr 
-		}
-		prerequisite = { 
-			focus = GER_abolish_capitalism_dr
-		}
-		mutually_exclusive = { focus = GER_turn_eastwards_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Export The Revolution
+	focus={id=GER_fourth_internationale_dr icon=GFX_goal_support_fourth_int x=58 y=9 cost=42 available_if_capitulated=yes prerequisite={focus=GER_seize_the_means_of_production_dr}prerequisite={focus=GER_abolish_capitalism_dr}mutually_exclusive={focus=GER_turn_eastwards_dr}ai_will_do={factor=1}completion_reward={creation_faction=fourth_internationale}}
 	focus = {
 		id = GER_export_the_revolution_dr
 		icon = GFX_focus_por_workers_of_iberia
@@ -1411,8 +1356,6 @@
 			factor = 1
 		}
 	}
-
-	#Focus for Eastern Colonization
 	focus = {
 		id = GER_eastern_colonization_dr
 		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
