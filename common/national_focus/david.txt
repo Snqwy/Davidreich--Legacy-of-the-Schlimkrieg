@@ -95,18 +95,7 @@
 			factor = 1
 		}
 	}
-	focus = {
-		id = GER_davidian_youth_movement_dr
-		icon = GFX_focus_generic_military_academy
-		x = 41
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_indoctrinate_the_masses_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	focus={id=GER_davidian_youth_movement_dr icon=GFX_focus_generic_military_academy x=41 y=5 cost=35 available_if_capitulated=yes search_filters={FOCUS_FILTER_MANPOWER}prerequisite={focus=GER_indoctrinate_the_masses_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_davidian_youth_movement_dr}}
 	focus = {
 		id = GER_the_old_doctrine_dr
 		icon = GFX_goal_generic_cavalry
