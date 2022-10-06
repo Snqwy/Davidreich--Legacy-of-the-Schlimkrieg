@@ -2,7 +2,7 @@
 state={
 	id=117
 	name="STATE_117" # Campania
-	manpower = 5333611
+	manpower = 4240000
 	
 	state_category = city
 	resources={
@@ -25,16 +25,10 @@ state={
 			}
 		}
 		add_core_of = ITA
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 2
-				industrial_complex = 3
-			}
-		}
 	}
 
 	provinces={
-		819 851 883 955 3958 3968 6843 6939 6972 6980 9826 11803 
+		819 851 955 3958 3968 6972 9826 11803 
 	}
 
 	local_supplies=13.0 

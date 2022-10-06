@@ -13,6 +13,7 @@ state={
 
 		owner = FRA
 		add_core_of = MOR
+		add_core_of = CHA
 		buildings = {
 			infrastructure = 1
 			12857 = {

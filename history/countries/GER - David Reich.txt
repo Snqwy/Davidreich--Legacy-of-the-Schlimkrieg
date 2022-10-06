@@ -1,8 +1,4 @@
-﻿capital=64
-if={limit={NOT={has_dlc="No Step Back"}}set_oob=""}if={limit={has_dlc="No Step Back"}set_oob=""}
-starting_train_buffer=2
-set_fuel_ratio=0.8
-set_technology={infantry_weapons=1 infantry_weapons1=1 tech_recon=1 tech_support=1 tech_engineers=1 tech_mountaineers=1 motorised_infantry=1 gw_artillery=1 interwar_antiair=1 early_fighter=1 fighter1=1 early_bomber=1 tactical_bomber1=1 strategic_bomber1=1 CAS1=1 naval_bomber1=1 basic_train=1 mobile_warfare=1 trade_interdiction=1 formation_flying=1 synth_oil_experiments=1 fuel_silos=1 fuel_refining=1}
+﻿capital=64 starting_train_buffer=2 set_fuel_ratio=0.8 set_technology={infantry_weapons=1 infantry_weapons1=1 tech_recon=1 tech_support=1 tech_engineers=1 tech_mountaineers=1 motorised_infantry=1 gw_artillery=1 interwar_antiair=1 early_fighter=1 fighter1=1 early_bomber=1 tactical_bomber1=1 strategic_bomber1=1 CAS1=1 naval_bomber1=1 basic_train=1 mobile_warfare=1 trade_interdiction=1 formation_flying=1 synth_oil_experiments=1 fuel_silos=1 fuel_refining=1}
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
@@ -86,7 +82,6 @@ if = {
 		armored_car1 = 1
 	}
 }
-set_variable={var=ger_gateway_to_europe_influence value=0} set_variable={var=wehrmacht_anger value=0} set_variable={var=ss_anger value=0}
 set_research_slots=4
 set_convoys=200
 set_stability=0.75 
@@ -97,8 +92,7 @@ set_popularities = {
 	fascism = 60
 	communism = 20
 }
-create_faction=Axis add_to_faction=GER
-add_ideas={idea_legacy_of_the_schlimkrieg_dr idea_militarization_dr idea_steady_economic_recovery_dr limited_exports extensive_conscription partial_economic_mobilisation}
+create_faction=Axis add_to_faction=GER add_ideas={idea_legacy_of_the_schlimkrieg_dr idea_militarization_dr idea_steady_economic_recovery_dr limited_exports extensive_conscription partial_economic_mobilisation}
 recruit_character = GER_wilhelm_pieck
 recruit_character = GER_konrad_adenauer
 recruit_character = GER_adolf_hitler

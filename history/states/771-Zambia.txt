@@ -12,7 +12,6 @@ state={
 	history={
 		owner = COG 
 		add_core_of = COG
-		add_core_of = ZAM
 		victory_points = {
 			5199 1
 		}

@@ -1,5 +1,0 @@
-spriteTypes={	
-	spriteType={name="GFX_idea_legacy_of_the_schlimkrieg_dr" texturefile="gfx/interface/ideas/idea_yug_local_militias.dds"}
-	spriteType={name="GFX_idea_militarization_dr" texturefile="gfx/interface/ideas/idea_eng_imperial_conscription.dds"}
-	spriteType={name="GFX_idea_steady_economic_recovery_dr" texturefile="gfx/interface/ideas/idea_generic_foreign_capital.dds"}
-}

@@ -1,4 +1,10 @@
-﻿capital=231 set_cosmetic_tag=transcaucasia_unified set_research_slots=3
+﻿capital = 231 #Tbilisi
+set_cosmetic_tag = transcaucasia_unified
+oob = ""
+
+set_research_slots = 3
+
+# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -41,11 +47,64 @@ if = {
 		basic_light_tank_chassis = 1 
 	}
 }
-if={limit={not={has_dlc="Man the Guns"}}set_technology={
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
 		early_submarine = 1
 		basic_submarine = 1
 		early_destroyer = 1
 		early_light_cruiser = 1
 		early_heavy_cruiser = 1
 		early_battleship = 1
-		early_battlecruiser=1 transport=1}}if={limit={has_dlc="Man the Guns"}set_technology={early_ship_hull_submarine=1 basic_ship_hull_submarine=1 early_ship_hull_light=1 early_ship_hull_cruiser=1 early_ship_hull_heavy=1 mtg_transport=1 basic_battery=1 basic_torpedo=1}}set_popularities={democratic=40 communism=40 fascism=10 neutrality=10}create_country_leader={name="Noe Zhordania"picture="gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"expire="1953.3.1"ideology=liberalism}create_country_leader={name="Kandid Charkviani"picture="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"expire="1953.3.1"ideology=stalinism}
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+}
+
+set_popularities = {
+	democratic = 40
+	communism = 40
+	fascism = 10
+	neutrality = 10
+}
+
+create_country_leader = {
+	name = "Noe Zhordania"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1953.3.1"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Kandid Charkviani"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	expire = "1953.3.1"
+	ideology = stalinism
+	traits = {
+		
+	}
+}
+
+#couldnt find anything else, the commies simply forced everyone else into exile

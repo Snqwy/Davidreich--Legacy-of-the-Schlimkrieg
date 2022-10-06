@@ -1,7 +1,7 @@
 ﻿capital = 580 #Khanty-Mansiysk (Tobolsk state) 
 
 #oob = "OVO_1936"
-
+set_cosmetic_tag = siberia_unified
 set_research_slots = 2
 
 # Starting tech

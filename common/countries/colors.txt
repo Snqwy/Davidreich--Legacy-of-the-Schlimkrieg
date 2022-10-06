@@ -74,8 +74,8 @@ SWI = {
 	color_ui = rgb { 193 81 81 }
 }
 TUR = {
-	color = rgb { 189 123 123 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 209 151 151 }
+	color_ui = rgb { 209 151 151 }
 }
 GRE = {
 	color = rgb { 93 181 227 }
@@ -218,8 +218,8 @@ PHI = {
 	color_ui = rgb { 198 169 248 }
 }
 PRU = {
-	color = rgb { 196 189 204 }
-	color_ui = rgb { 255 246 255 }
+	color = rgb { 198 135 115 }
+	color_ui = rgb { 198 135 115 }
 }
 SAF = {
 	color = rgb { 200 136 83 }
@@ -472,8 +472,8 @@ ISR = {
 	color_ui = rgb { 136 172 172 }
 }
 CSA = {
-	color = rgb { 145 163 176  }
-	color_ui = rgb { 186 205 219 }
+	color = rgb { 228 120 199 }
+	color_ui = rgb { 228 120 199 }
 }
 D01 = {
 	color = rgb { 122 179 97 }
@@ -736,8 +736,8 @@ BYA = {
 	color_ui = rgb { 0 45 179 }
 }
 FER = {
-	color = rgb { 179 45 0 }
-	color_ui = rgb { 128 32 0 }
+	color = rgb { 160 188 137 }
+	color_ui = rgb { 160 188 137 }
 }
 CKK = {
 	color = rgb { 179 179 0 }

@@ -3772,11 +3772,11 @@ characters = {
 			allowed = {
 				has_dlc = "No Step Back"
 			}
-			name = SOV_konstantin_rodzayevsky
+			name = SOV_iosif_stalin
 
 			portraits = {
 				civilian = {
-					large = GFX_portrait_SOV_konstantin_rodzayevsky
+					large = GFX_portrait_conner_fascist
 				}
 				army = {
 					small = "GFX_idea_konstantin_rodzaevsky"

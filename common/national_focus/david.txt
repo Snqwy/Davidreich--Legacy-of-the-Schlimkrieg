@@ -1,4 +1,4 @@
-﻿focus_tree={id=Germany country={factor=0 modifier={add=10 tag=GER}}
+﻿focus_tree={id=german_Focus country={factor=0 modifier={add=10 tag=GER}}
 	focus = {
 		id = GER_davelantikwall_dr
 		icon = GFX_focus_generic_coastal_fort
@@ -95,7 +95,18 @@
 			factor = 1
 		}
 	}
-	focus={id=GER_davidian_youth_movement_dr icon=GFX_focus_generic_military_academy x=41 y=5 cost=35 available_if_capitulated=yes search_filters={FOCUS_FILTER_MANPOWER}prerequisite={focus=GER_indoctrinate_the_masses_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_davidian_youth_movement_dr}}
+	focus = {
+		id = GER_davidian_youth_movement_dr
+		icon = GFX_focus_generic_military_academy
+		x = 41
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_indoctrinate_the_masses_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	focus = {
 		id = GER_the_old_doctrine_dr
 		icon = GFX_goal_generic_cavalry
@@ -744,7 +755,7 @@
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite={focus=GER_daveschluss_dr}
-		ai_will_do={factor=1}completion_reward={#}}
+		ai_will_do={factor=1}completion_reward={#}}}
 	focus={id=GER_claim_greater_burgundy_dr icon=GFX_goal_generic_major_war x=41 y=8 cost=56 available_if_capitulated=yes prerequisite={focus=GER_daveschluss_dr}ai_will_do={factor=1}search_filters={FOCUS_FILTER_ANNEXATION}ai_will_do={factor=1}completion_reward={add_state_claim=6 add_state_claim=7 add_state_claim=8 add_state_claim=17 add_state_claim=18 add_state_claim=20 add_state_claim=27 add_state_claim=28 add_state_claim=29 add_state_claim=34 add_state_claim=35 add_state_claim=35 add_state_claim=785} ###decision for establishing hrugundy
 	#Focus for Davidsraum
 	focus = {
@@ -1347,7 +1358,7 @@
 	}
 	focus = {
 		id = GER_eastern_colonization_dr
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		icon = GFX_focus_LAT_ostland
 		x = 42
 		y = 12
 		cost = 10

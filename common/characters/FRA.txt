@@ -1190,7 +1190,6 @@ characters={
 							tag  = VIC 
 						}
 					}
-					country_event  = lar_france_political_violence.2
 				}
 			}
 			ai_will_do  = {

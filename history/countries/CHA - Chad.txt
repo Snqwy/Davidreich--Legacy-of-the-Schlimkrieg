@@ -7,6 +7,7 @@ set_technology = {
 
 set_convoys = 0
 
+recruit_character = CHA_gigachad
 recruit_character = CHA_acas
 recruit_character = CHA_communist_guy
 recruit_character = CHA_ncs
