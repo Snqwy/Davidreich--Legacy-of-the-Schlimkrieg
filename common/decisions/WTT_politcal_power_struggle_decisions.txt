@@ -1,1 +1,1 @@
-override
+WTT_political_power_struggle_override_cat={}

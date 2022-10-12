@@ -1,14 +1,10 @@
-﻿focus_tree={
-	id=lithuania_tree
-	country={
+﻿focus_tree = {
+	id = lithuania_tree
+	country = {
 		factor = 0
 		modifier = {
 			add = 10
 			tag = LIT
 		}
 	}
-	
-	default = no
-
-	continuous_focus_position = { x = 20 y = 1000 }
 }

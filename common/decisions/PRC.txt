@@ -1,1 +1,3 @@
-override
+PRC_override_cat={}
+PRC_infiltrate_nationalist_areas={}
+PRC_anti_japanese_expedition={}

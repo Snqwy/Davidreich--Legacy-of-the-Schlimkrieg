@@ -1,1 +1,1 @@
-﻿set_convoys=0
+﻿capital=169

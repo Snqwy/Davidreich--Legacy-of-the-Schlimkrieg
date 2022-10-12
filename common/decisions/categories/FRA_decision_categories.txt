@@ -1,1 +1,2 @@
-override
+FRA_override_cat={}
+VIC_concessions_to_the_germans={}

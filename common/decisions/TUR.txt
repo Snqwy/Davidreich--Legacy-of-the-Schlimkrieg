@@ -1,1 +1,3 @@
-override
+TUR_override_cat={}
+TUR_reforming_our_armed_forces_category={}
+TUR_the_constitutional_arrows_category={}

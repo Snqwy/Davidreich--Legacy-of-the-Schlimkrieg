@@ -1,1 +1,7 @@
-override
+HOL_override_cat={}
+HOL_prepare_the_inundation_lines={}
+HOL_war_on_pacifism={}
+HOL_secret_staff_talks={}
+HOL_gateway_to_europe_hol_category={}
+HOL_request_allied_favors={}
+HOL_obtain_foreign_colonial_investments={}

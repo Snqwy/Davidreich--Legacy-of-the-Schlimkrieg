@@ -1,1 +1,9 @@
-override
+POL_override_cat={}
+POL_fight_against_monarchy_in_LIT_cat={}
+POL_danzig_decisions={}
+POL_cossack_republic_decisions={}
+POL_reopen_the_maritime_and_colonial_league={}
+POL_anti_fascist_revolution_category={}
+POL_anti_capitalist_decisions={}
+POL_organize_the_peasants_strike={}
+POL_invite_foreign_motor_decisions={}
