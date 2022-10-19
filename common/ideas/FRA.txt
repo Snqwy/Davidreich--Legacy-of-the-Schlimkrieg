@@ -1,0 +1,15 @@
+ideas={country={
+    idea_political_crisis_dr={picture=chi_war_of_resistance3 allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_outdated_army_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+        ###
+    idea_merchandising_merchandising_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_social_welfare_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_french_republicanism_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_neo_feudalism_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_government_consulate_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_the_continental_system_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_the_right_to_conquer_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_reformed_army_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_free_economy_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_international_brigades_dr={picture=generic_volunteer_expedition_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+}

@@ -2,7 +2,7 @@
 @tier2=20
 @tier3=10
 leader_traits={
-	dictator={random=no political_power_factor=0.25 surrender_limit=0.15 ai_will_do={factor = 1}}
+	dictator={random=no political_power_factor=0.25 surrender_limit=0.15 ai_will_do={factor=1}}trait_a_modern_napoleon_dr={random=no ai_will_do={factor=1}}trait_christ_himself_dr={random=no ai_will_do={factor=1}}trait_his_royal_majesty_dr={random=no ai_will_do={factor=1}}
 	
 	warrior_code = {
 		random = no

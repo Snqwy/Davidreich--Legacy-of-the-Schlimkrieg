@@ -1,0 +1,16 @@
+ideas={country={
+    idea_the_setting_sun_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}  
+        ###  
+    idea_red_terror_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_biggering_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_the_glorious_red_banner_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_rule_britannia_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_limited_worker_conditions_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_pluronationalism_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_artiljerija_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+        ###########################
+    #idea_limited_worker_conditions_2_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    #idea_limited_worker_conditions_3_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    #idea_biggering_2_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    #idea_biggering_3_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+}

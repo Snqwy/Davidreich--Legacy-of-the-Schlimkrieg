@@ -1,1 +1,1 @@
-﻿capital=122
+capital=122

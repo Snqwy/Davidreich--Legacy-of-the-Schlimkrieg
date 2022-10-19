@@ -1,1 +1,1 @@
-﻿capital=659
+capital=293
