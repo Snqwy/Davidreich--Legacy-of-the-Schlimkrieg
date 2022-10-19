@@ -139,9 +139,9 @@ if = {
 	}
 }
 
-set_research_slots = 3
-set_stability = 0.5
-set_war_support = 0.3
+set_research_slots=3
+set_stability=0.69
+set_war_support=0.5
 # Starting tech
 set_technology = { #WARNING: Do not just remove techs from here -> It can impact a lot of stuff. Before removing, double check that content does not count on these techs being researched
 	infantry_weapons = 1
@@ -234,11 +234,10 @@ if = {
 set_country_flag = SOV_TEST_REMOVE_VANILLA_ADVISORS_flag
 
 add_ideas = {	
-	home_of_revolution
-	trotskyite_plot_nsb
-	SOV_politicized_military
-
-	SOV_genrikh_yagoda #NKVD Chief (political advisor)
+	idea_a_fractured_motherland_dr
+	idea_home_of_the_revolution_dr
+	idea_agrarian_society_dr
+	idea_stalinist_plot_dr
 }
 set_convoys = 50
 

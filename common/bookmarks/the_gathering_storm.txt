@@ -9,10 +9,28 @@ bookmarks = {
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
+			ideas = {
+				idea_militarization_dr
+				idea_legacy_of_the_schlimkrieg_dr
+				idea_steady_economic_recovery_dr
+			}
+			focuses = {
+				GER_davidsraum_dr
+				GER_total_victory_dr
+				GER_locate_hyperborea_dr
+			}
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
+			ideas = {
+				idea_a_fractured_motherland_dr
+				idea_home_of_the_revolution_dr
+				idea_agrarian_society_dr
+			}
+			focuses = {
+				#
+			}
 		}
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
@@ -40,15 +58,30 @@ bookmarks = {
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
+		"MAN"={
+			minor = yes
+			history = ""
+			ideology = fascism
+		}
+		"MEX"={
+			minor = yes
+			history = ""
+			ideology = fascism
+		}
+		"PRU"={
+			minor = yes
+			history = ""
+			ideology = fascism
+		}
 		"CSA"={
 			minor = yes
 			history = ""
 			ideology = neutrality
 		}
-		"PRU"={
+		"SAF"={
 			minor = yes
 			history = ""
-			ideology = neutrality
+			ideology = democratic
 		}
 		effect={
 			randomize_weather=22345 # <- Obligatory in every bookmark !

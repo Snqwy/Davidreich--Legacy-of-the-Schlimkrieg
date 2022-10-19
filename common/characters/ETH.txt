@@ -840,11 +840,6 @@ characters = {
 			traits = {
 				archbishop_of_ethiopian_orthodox_tewahedo_church
 			}
-			on_add = {
-				owner = {
-					ETH_BOP_centralization_small_effect = yes
-				}
-			}
 		}
 	}
 
@@ -1142,11 +1137,6 @@ characters = {
 			traits  = {
 				minister_of_finance_mariyam
 			}
-			on_add = {
-				owner = {
-					ETH_BOP_centralization_small_effect = yes
-				}
-			}
 		}
 	}
 
@@ -1232,11 +1222,6 @@ characters = {
 			}
 			traits  = {
 				military_theorist
-			}
-			on_add = {
-				owner = {
-					ETH_BOP_centralization_small_effect = yes
-				}
 			}
 		}
 	}

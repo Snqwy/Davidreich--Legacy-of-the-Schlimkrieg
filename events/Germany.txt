@@ -375,7 +375,6 @@ country_event = {
 			add_state_claim = 766 #SOUTHERN BESSARABIA (ROM)
 		}
 
-		hidden_effect =  { add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 } }
 		GER = {
 			country_event = { days = 1 id = germany.12 }
 			effect_tooltip = {
@@ -4253,7 +4252,6 @@ country_event = {
 
 	option = {
 		name = germany.75.b	#no way
-		add_timed_idea = { idea = SOV_scientist_defect days = 365 }
 		ai_chance = { factor = 0 }
 		add_political_power = -10
 		add_opinion_modifier = { target = GER modifier = refused_MR_pact }# no pact

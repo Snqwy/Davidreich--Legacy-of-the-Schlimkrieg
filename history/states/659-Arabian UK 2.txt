@@ -15,9 +15,6 @@ state={
 			5074 = {
 				naval_base = 3
 			}
-			8000 = {
-				naval_base = 1
-			}
 		}
 	}
 	provinces={

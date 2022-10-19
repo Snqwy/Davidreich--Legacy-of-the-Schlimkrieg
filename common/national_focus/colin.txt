@@ -1,1 +1,1 @@
-﻿focus_tree={id=usa_focus country={factor=0 modifier={add=10 tag=AST}}default=no continuous_focus_position={x=20 y=1000}}
+﻿focus_tree={id=usa_focus country={factor=0 modifier={add=10 tag=USA}}default=no continuous_focus_position={x=20 y=1000}}

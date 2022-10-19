@@ -1,1 +1,1 @@
-GER_override_cat={}
+GER_dev_tools_cat_dr={allowed={always=no}available={is_debug=yes}priority=10}

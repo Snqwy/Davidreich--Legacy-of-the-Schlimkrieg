@@ -1,1 +1,2 @@
-GER_override_cat={GER_barbarossa_mission={}}
+GER_dev_tools_cat_dr={allowed={always=no}priority=10}
+GER_dev_tools_release_dr={available={is_debug=yes}visible={always=yes}fire_only_once=yes cost=0 complete_effect={release=GER}
