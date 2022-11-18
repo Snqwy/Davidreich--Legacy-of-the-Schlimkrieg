@@ -44,10 +44,6 @@ country_event = {
 		}
 	}
 
-	trigger = {
-		NOT = { has_completed_focus = SOV_the_bloc_of_rights_and_trotskyites }
-	}
-
 	option = { #GOOD TO KNOW, THANKS
 		name = NSB_soviet_paranoia_system_events.01.a
 		
@@ -3868,7 +3864,6 @@ country_event = {
 			}
 			modifier = { #Is going non-aligned (kill SOV in focus branch)
 				factor = 0
-				has_completed_focus = JAP_support_the_kodoha_faction
 			}
 		}
 
@@ -3900,10 +3895,6 @@ country_event = {
 			}
 			modifier = { #Is going commie or historical
 				factor = 0
-				OR = {
-					has_completed_focus = JAP_the_unthinkable_option
-					has_completed_focus = JAP_purge_the_kodoha_faction
-				}
 			}
 		}
 
@@ -5686,7 +5677,6 @@ country_event = {
 			is_subject_of = SOV
 		}
 		SOV = {
-			has_completed_focus = SOV_the_gobi_gambit
 			surrender_progress > 0.5
 		}
 		OR = {
@@ -6125,23 +6115,18 @@ country_event = {
 			}
 			modifier = {
 				factor = 10
-				has_completed_focus = GER_mol_rib_pact
 			}
 			modifier = {
 				factor = 10
-				has_completed_focus = GER_soviet_ally
 			}
 			modifier = {
 				factor = 0.1
-				has_completed_focus = GER_anti_comitern_pact
 			}
 			modifier = {
 				factor = 0
 				OR = {
 					has_war_with = FROM
 					is_justifying_wargoal_against = FROM
-					has_completed_focus = GER_anti_soviet_pact
-					has_completed_focus = GER_ussr_war_goal
 				}
 			}
 		}
@@ -6547,7 +6532,6 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				has_completed_focus = FRA_form_the_popular_front
 			}
 			modifier = {
 				factor = 2
@@ -6575,7 +6559,6 @@ country_event = {
 						is_subject = yes
 						NOT = { is_subject_of = SOV }
 					}
-					has_completed_focus = FRA_utilize_the_leagues
 					focus_progress = {
 						focus = FRA_utilize_the_leagues
 						progress > 0
@@ -6632,7 +6615,6 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.5
-				has_completed_focus = FRA_form_the_popular_front
 			}
 			modifier = {
 				factor = 1.5
@@ -6648,7 +6630,6 @@ country_event = {
 				OR = {
 					NOT = { country_exists = POL }
 					POL = { has_capitulated = yes }
-					has_completed_focus = FRA_utilize_the_leagues
 					focus_progress = {
 						focus = FRA_utilize_the_leagues
 						progress > 0
@@ -6708,11 +6689,9 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 10
-				has_completed_focus = FRA_utilize_the_leagues
 			}
 			modifier = {
 				factor = 0.1
-				has_completed_focus = FRA_form_the_popular_front
 			}
 		}
 		effect_tooltip = {
@@ -6804,7 +6783,6 @@ country_event = {
 					has_wargoal_against = POL
 					is_justifying_wargoal_against = POL
 					has_opinion_modifier = MR_pact
-					has_completed_focus = SOV_claims_on_poland
 					focus_progress = {
 						focus = SOV_claims_on_poland
 						progress > 0
@@ -6856,7 +6834,6 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				has_completed_focus = FRA_form_the_popular_front
 			}
 			modifier = { #Appropriate PC for Foreign Affairs
 				factor = 1.25
@@ -6865,7 +6842,6 @@ country_event = {
 			modifier = {
 				factor = 0
 				OR = {
-					has_completed_focus = FRA_utilize_the_leagues
 					focus_progress = {
 						focus = FRA_utilize_the_leagues
 						progress > 0
@@ -6967,7 +6943,6 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				has_completed_focus = POL_organize_the_peasants_strike
 			}
 			modifier = {
 				factor = 2
@@ -6979,16 +6954,9 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				OR = {
-					SOV = { has_completed_focus = SOV_claims_on_poland }
-				}
 			}
 			modifier = {
 				factor = 0
-				OR = {
-					has_completed_focus = POL_assemble_the_regency_council
-					has_completed_focus = POL_nationalist_constitution
-				}
 			}
 		}
 
@@ -7015,7 +6983,6 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				has_completed_focus = POL_complete_april_constitution
 			}
 			modifier = {
 				factor = 2
@@ -7526,7 +7493,6 @@ country_event = {
 
 	trigger = {
 		OR = { #Do not trigger if Soviet civil war has finished or was bypassed
-			NOT = {	has_completed_focus = SOV_coup_detat }
 			has_global_flag = SOV_soviet_civil_war
 		}
 	}
@@ -7686,7 +7652,6 @@ country_event = {
 		}
 		trigger = {
 			has_character = SOV_ivan_smirnov
-			has_completed_focus = SOV_integrate_smirnovs_bloc
 		}
 
 		# SET UP NEW CAPITAL - This is where the player will launch the uprising from
@@ -7717,15 +7682,12 @@ country_event = {
 				NOT = { has_character = SOV_lev_trotsky }
 				OR = { 
 					NOT = { has_character = SOV_ivan_smirnov }
-					NOT = { has_completed_focus = SOV_integrate_smirnovs_bloc }
 				}
 				OR = { 
 					NOT = { has_character = SOV_grigory_zinovyev }
-					NOT = { has_completed_focus = SOV_align_the_zinovyevites }
 				}
 				OR = { 
 					NOT = { has_character = SOV_lev_kamenev }
-					NOT = { has_completed_focus = SOV_align_the_zinovyevites }
 				}
 			}
 		}
@@ -7815,7 +7777,6 @@ country_event = {
 		}
 		trigger = {
 			has_character = SOV_grigory_zinovyev
-			has_completed_focus = SOV_align_the_zinovyevites
 		}
 
 		# SET UP NEW CAPITAL - This is where the player will launch the uprising from
@@ -7843,7 +7804,6 @@ country_event = {
 		}
 		trigger = {
 			has_character = SOV_lev_kamenev
-			has_completed_focus = SOV_align_the_zinovyevites
 		}
 
 		# SET UP NEW CAPITAL - This is where the player will launch the uprising from
@@ -7920,11 +7880,9 @@ country_event = {
 				NOT = { has_character = SOV_aleksey_rykov }
 				OR = { 
 					NOT = { has_character = SOV_grigory_zinovyev }
-					NOT = { has_completed_focus = SOV_align_the_zinovyevites }
 				}
 				OR = { 
 					NOT = { has_character = SOV_lev_kamenev }
-					NOT = { has_completed_focus = SOV_align_the_zinovyevites }
 				}
 			}
 		}
@@ -7997,7 +7955,6 @@ country_event = {
 		name = NSB_soviet_communist_civil_war.002.d
 		trigger = {
 			has_character = SOV_grigory_zinovyev
-			has_completed_focus = SOV_align_the_zinovyevites
 		}
 		# Set New Country Leader
 		SOV_promote_to_country_leader_zinovyev = yes
@@ -8012,7 +7969,6 @@ country_event = {
 		name = NSB_soviet_communist_civil_war.002.e
 		trigger = {
 			has_character = SOV_lev_kamenev
-			has_completed_focus = SOV_align_the_zinovyevites
 		}
 		# Set New Country Leader
 		SOV_promote_to_country_leader_kamenev = yes
@@ -8108,11 +8064,9 @@ country_event = {
 				NOT = { has_character = SOV_aleksey_rykov }
 				OR = { 
 					NOT = { has_character = SOV_grigory_zinovyev }
-					NOT = { has_completed_focus = SOV_align_the_zinovyevites }
 				}
 				OR = { 
 					NOT = { has_character = SOV_lev_kamenev }
-					NOT = { has_completed_focus = SOV_align_the_zinovyevites }
 				}
 			}
 		}
@@ -8203,7 +8157,6 @@ country_event = {
 		}
 		trigger = {
 			has_character = SOV_grigory_zinovyev
-			has_completed_focus = SOV_align_the_zinovyevites
 		}
 
 		# SET UP NEW CAPITAL - This is where the player will launch the uprising from
@@ -8231,7 +8184,6 @@ country_event = {
 		}
 		trigger = {
 			has_character = SOV_lev_kamenev
-			has_completed_focus = SOV_align_the_zinovyevites
 		}
 
 		# SET UP NEW CAPITAL - This is where the player will launch the uprising from
@@ -12160,13 +12112,10 @@ country_event = {
 		original_tag = JAP
 		NOT = { 
 			SOV = {
-				has_completed_focus = SOV_rebuild_the_far_eastern_fleet
-			}
-		}
-		SOV = {
-			focus_progress = {
-				focus = SOV_rebuild_the_far_eastern_fleet
-				progress > 0.33
+				focus_progress = {
+					focus = SOV_rebuild_the_far_eastern_fleet
+					progress > 0.33
+				}
 			}
 		}
 	}
@@ -12190,7 +12139,6 @@ country_event = {
 
 	trigger = {
 		original_tag = SOV
-		NOT = { has_completed_focus = SOV_memories_of_1905 }
 		focus_progress = {
 			focus = SOV_memories_of_1905
 			progress > 0.33
@@ -12217,14 +12165,10 @@ country_event = {
 	trigger = {
 		original_tag = USA
 		NOT = { 
-			SOV = {
-				has_completed_focus = SOV_eastern_expansion
-			}
-		}
-		SOV = {
-			focus_progress = {
-				focus = SOV_eastern_expansion
-				progress > 0.33
+				focus_progress = {
+					focus = SOV_eastern_expansion
+					progress > 0.33
+				}
 			}
 		}
 	}

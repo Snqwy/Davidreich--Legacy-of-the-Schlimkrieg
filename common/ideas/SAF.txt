@@ -1,0 +1,3 @@
+ideas={country={
+   idea_way_down_south_the_land_of_traitors_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+}

@@ -1,3 +1,0 @@
-ROM_override_cat={}
-ROM_dividing_yugo={}
-ROM_change_sides={}

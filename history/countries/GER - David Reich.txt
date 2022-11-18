@@ -721,7 +721,7 @@ create_equipment_variant = {
 				tank_nsb_armor_upgrade = 2
 			}
 			obsolete = yes
-			icon = "gfx/interface/technologies/cze_imp_light_tank.dds"
+			icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
 		}
 		create_equipment_variant = {
 			name = "Panzer 38(t)"
@@ -743,7 +743,7 @@ create_equipment_variant = {
 				tank_nsb_armor_upgrade = 3
 			}
 			
-			icon = "gfx/interface/technologies/cze_basic_main_tank.dds"
+			icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
 		}
 	}
 	create_equipment_variant = {

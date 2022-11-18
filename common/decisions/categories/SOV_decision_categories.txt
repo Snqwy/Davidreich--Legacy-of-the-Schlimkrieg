@@ -1,2 +1,0 @@
-SOV_override_cat={}
-SOV_paranoia_system={}

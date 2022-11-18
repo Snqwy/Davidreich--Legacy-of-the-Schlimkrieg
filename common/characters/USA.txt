@@ -8,7 +8,6 @@ characters={
 		}
 		country_leader={
 			ideology=liberalism
-			traits={ dislikes_germany }
 			expire="1947.1.1.1"
 			id=-1
 		}

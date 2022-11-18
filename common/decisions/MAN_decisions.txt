@@ -1,2 +1,0 @@
-MAN_override_cat={}
-MAN_banditry_category={}

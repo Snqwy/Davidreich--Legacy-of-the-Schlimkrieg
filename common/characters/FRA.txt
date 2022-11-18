@@ -1183,15 +1183,6 @@ characters={
 					has_government  = fascism 
 				}
 			}
-			on_add  = {
-				if  = {
-					limit  = {
-						not  = {
-							tag  = VIC 
-						}
-					}
-				}
-			}
 			ai_will_do  = {
 				factor  = 0.000
 			}

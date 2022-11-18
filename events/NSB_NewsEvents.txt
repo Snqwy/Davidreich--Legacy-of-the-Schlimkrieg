@@ -186,14 +186,6 @@ news_event = {
 		trigger = {
 			NOT = { tag = FROM }
 			has_government = democratic
-			GER = {
-				NOT = {
-					OR = {
-						has_completed_focus = GER_rhineland
-						has_completed_focus = GER_oppose_hitler
-					}
-				}
-			}
 		}
 	}
 	option = {
@@ -201,12 +193,6 @@ news_event = {
 		trigger = {
 			NOT = { tag = FROM }
 			has_government = democratic
-			GER = {
-				OR = {
-					has_completed_focus = GER_rhineland
-					has_completed_focus = GER_oppose_hitler
-				}
-			}
 		}
 	}
 	option = {
@@ -232,33 +218,18 @@ news_event = {
 	title = nsb_news.5.t
 	desc = {
 		text = nsb_news.5.desc.saxon
-		trigger = {
-			POL = { has_completed_focus = POL_claiming_lithuania }
-		}
 	}
 	desc = {
 		text = nsb_news.5.desc.romania
-		trigger = {
-			POL = { has_completed_focus = POL_hohenzollern }
-		}
 	}
 	desc = {
 		text = nsb_news.5.desc.cossack
-		trigger = {
-			POL = { has_completed_focus = POL_cossack_king }
-		}
 	}
 	desc = {
 		text = nsb_news.5.desc.romanov
-		trigger = {
-			POL = { has_completed_focus = POL_romanov }
-		}
 	}
 	desc = {
 		text = nsb_news.5.desc.habsburg
-		trigger = {
-			POL = { has_completed_focus = POL_habsburg }
-		}
 	}
 	picture = GFX_news_event_generic_parliament
 	
@@ -276,26 +247,12 @@ news_event = {
 		name = nsb_news.5.b
 		trigger = {
 			NOT = { tag = FROM }
-			POL = {
-				NOT = {
-					OR = {
-						has_completed_focus = POL_cossack_king
-						has_completed_focus = POL_romanov
-					}
-				}
-			}
 		}
 	}
 	option = {
 		name = nsb_news.5.c
 		trigger = {
 			NOT = { tag = FROM }
-			POL = {
-				OR = {
-					has_completed_focus = POL_cossack_king
-					has_completed_focus = POL_romanov
-				}
-			}
 		}
 	}
 }
@@ -910,13 +867,6 @@ news_event = {
 	trigger = {
 		NOT = { has_global_flag = SOV_fourth_international_fired }
 		SOV = {	has_government = communism }
-		OR = {
-			SOV = { has_completed_focus = SOV_the_fourth_international }
-			AND = {
-				NOT = { SOV = { has_completed_focus = SOV_the_left_opposition } }
-				date > 1938.9.1
-			}
-		}
 	}
 
 	immediate = {
@@ -928,20 +878,10 @@ news_event = {
 	desc = {
 		#Triggered by Trotsky
 		text = news.173.d_1
-		trigger = {
-			SOV = {
-				has_completed_focus = SOV_the_left_opposition
-			}
-		}
 	}
 	desc = {
 		#NOT Trotsky
 		text = news.173.d_2
-		trigger = {
-			SOV = {
-				NOT = { has_completed_focus = SOV_the_left_opposition }
-			}
-		}
 	}
 
 	option = {
@@ -1026,22 +966,10 @@ news_event = {
 	option = {
 		name = news.173.b
 		trigger = { tag = SOV }
-
-		if = {
+		IF = {
 			limit = {
-				has_completed_focus = SOV_the_fourth_international
-			}
-			IF = {
-				limit = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-					}
-				}
-				SOV_iosif_stalin = {
-					swap_country_leader_traits = { 
-						remove = stalin_heart_of_steel
-						add = stalin_heart_of_steel_opposition
-					}
+				has_country_leader = {
+					character = SOV_iosif_stalin
 				}
 			}
 			

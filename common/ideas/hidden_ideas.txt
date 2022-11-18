@@ -1,0 +1,4 @@
+ideas={country={
+    idea_hidden_debuff_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+    idea_hidden_debuff_2_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=-0.999}}
+}

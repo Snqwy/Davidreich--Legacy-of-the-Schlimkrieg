@@ -720,21 +720,6 @@ country_event = {
 		}
 		add_named_threat = { threat = -5 name = GER_soviet_smoothes_relationships }
 		add_political_power = -50
-		every_country = {
-			limit = {
-				has_idea = GER_the_great_red_menace
-			}
-			country_event = { id = wtt_germany.25 days = 1 random_days = 2 }
-			random_list = {
-				80 = {
-					# No effect
-				}
-				20 = {
-					remove_ideas = GER_the_great_red_menace
-				}
-			}
-		}
-		GER = { country_event = { id = wtt_germany.25 days = 1 random_days = 2 } }
 	}
 
 	# Do nothing
@@ -942,7 +927,6 @@ country_event = {
 	# Oh dear
 	option = {
 		name = wtt_germany.24.a
-		effect_tooltip = { add_ideas = GER_the_great_red_menace }
 	}
 }
 
@@ -1251,7 +1235,6 @@ country_event = {
 		name = germany.61.b
 		trigger = {
 			NOT = { GER = { has_country_flag = germany_war_return_kaiser } }
-			NOT = { has_completed_focus = ENG_a_change_in_course }
 		}
 		ai_chance = { 
 			factor = 10
@@ -1306,7 +1289,6 @@ country_event = {
 		name = germany.61.c
 		trigger = {
 			GER = { has_country_flag = germany_war_return_kaiser }
-			NOT = { has_completed_focus = ENG_a_change_in_course }
 		}
 		ai_chance = { 
 			factor = 10
@@ -1370,7 +1352,6 @@ country_event = {
 	
 	option = {
 		name = germany.62.a
-		trigger = { NOT = { has_completed_focus = ENG_a_change_in_course } }
 		add_opinion_modifier = { target = GER modifier = protest_action }
 		GER = {
 			add_war_support = 0.1
@@ -1379,7 +1360,6 @@ country_event = {
 
 	option = {
 		name = germany.62.b
-		trigger = { has_completed_focus = ENG_a_change_in_course }
 	}
 }
 
@@ -1734,7 +1714,6 @@ country_event = {
 			event_target:WTT_current_china_leader = {
 				OR = {
 					has_idea = german_advisors 
-					has_completed_focus = CHI_give_falkenhausen_citizenship
 				}
 			}
 		}
@@ -2509,7 +2488,6 @@ country_event = {
 		has_full_control_of_state = 86
 		owns_state = 85
 		owns_state = 86
-		has_idea = GER_the_great_red_menace
 		surrender_progress > 0.3
 		has_defensive_war_with = SOV
 		NOT = { has_government = communism }

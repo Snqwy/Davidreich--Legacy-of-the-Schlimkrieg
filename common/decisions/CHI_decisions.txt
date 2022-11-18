@@ -1,7 +1,0 @@
-CHI_override_cat={}
-WTT_border_conflicts_override_cat={}
-WTT_political_power_struggle_override_cat={}
-CHI_seek_japanese_support={}
-CHI_army_reform={}
-CHI_industrial_evacuations={}
-CHI_integrate_the_warlords={}

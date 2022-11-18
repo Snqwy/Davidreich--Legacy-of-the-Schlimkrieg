@@ -163,11 +163,8 @@ characters={
 			slot = high_command
 			idea_token = erwin_rommel
 			ledger = army
-			allowed = {
-				original_tag = GER
-			}
 			available = {
-				has_completed_focus = GER_army_innovation
+				always=yes
 			}
 			traits = {
 				army_armored_3
@@ -1133,9 +1130,6 @@ characters={
 			allowed = {
 				original_tag = GER
 			}
-			available = {
-				has_completed_focus = GER_army_innovation
-			}
 			traits = {
 				army_chief_maneuver_2
 			}
@@ -1145,19 +1139,7 @@ characters={
 			}
 		}
 	}
-
-
-	### NAVY CHIEFS ###
-
-	# Dönitz up there
-
-	# Raeder up there
-
-
-	### AIR CHIEFS ###
-
-	# Kesselring up there
-
+	
 	GER_hermann_goring={
 		name=GER_hermann_goring
 		portraits={
@@ -1202,9 +1184,6 @@ characters={
 			idea_token = ritter_von_greim
 			allowed = {
 				original_tag = GER
-			}
-			available = {
-				has_completed_focus = GER_air_innovation
 			}
 			traits = {
 				air_chief_all_weather_2
@@ -1288,9 +1267,6 @@ characters={
 			ledger = air
 			allowed = {
 				original_tag = GER
-			}
-			available = {
-				has_completed_focus = GER_air_innovation
 			}
 			traits = {
 				air_close_air_support_2
@@ -1392,7 +1368,7 @@ characters={
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_west_wall 
+				has_completed_focus = focus_westwall_dr
 			}
 			traits = {
 				fortification_engineer 
@@ -1435,12 +1411,6 @@ characters={
 			cost = 75.000
 			allowed = {
 				original_tag = GER
-			}
-			available = {
-				has_completed_focus = GER_four_year_plan 
-				not = {
-					has_completed_focus = GER_demand_sudetenland 
-				}
 			}
 			traits = {
 				captain_of_industry 
@@ -1536,7 +1506,7 @@ characters={
 					limit = {
 						has_dlc = "Waking the Tiger"
 					}
-					has_completed_focus = GER_reestablish_free_elections 
+					has_completed_focus = focus_libtard_victory_dr
 				}
 			}
 			traits = {
@@ -1744,7 +1714,7 @@ characters={
 				has_dlc = "Waking the Tiger"
 			}
 			available = {
-				has_completed_focus = GER_oppose_hitler 
+				has_completed_focus = focus_royalist_victory_dr
 			}
 			traits = {
 				anti_fascist_agent 
@@ -1770,7 +1740,7 @@ characters={
 				has_dlc = "Waking the Tiger"
 			}
 			available = {
-				has_completed_focus = GER_revive_the_kaiserreich 
+				has_completed_focus = focus_royalist_victory_dr
 			}
 			traits = {
 				monarchist_media_mogul 
@@ -1795,7 +1765,7 @@ characters={
 				has_dlc = "Waking the Tiger"
 			}
 			available = {
-				has_completed_focus = GER_revive_the_kaiserreich 
+				has_completed_focus = focus_royalist_victory_dr
 			}
 			traits = {
 				economist 
@@ -1820,7 +1790,7 @@ characters={
 				has_dlc = "Waking the Tiger"
 			}
 			available = {
-				has_completed_focus = GER_reestablish_free_elections 
+				has_completed_focus = focus_libtard_victory_dr
 			}
 			traits = {
 				connected_citizen 
@@ -1845,7 +1815,7 @@ characters={
 				has_dlc = "Waking the Tiger"
 			}
 			available = {
-				has_completed_focus = GER_reestablish_free_elections 
+				has_completed_focus = focus_libtard_victory_dr
 			}
 			traits = {
 				liberal_journalist 

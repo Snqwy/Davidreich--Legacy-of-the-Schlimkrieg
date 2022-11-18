@@ -15,9 +15,19 @@ state = {
 		}
 		
 		add_core_of = UZB
-		add_core_of = KKP
-		add_core_of = KHI
-		
+		add_core_of = GER		
+		add_core_of = SOV
+		add_core_of = ENG
+		add_core_of = CSA
+		add_core_of = ITA 
+		add_core_of = SAF 
+		add_core_of = FRA 
+		add_core_of = USA
+		add_core_of = AST 
+		add_core_of = MEX 
+		add_core_of = PRU		
+		add_core_of = JAP
+		add_core_of = MAN
 	}
 
 	provinces = {

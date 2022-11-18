@@ -86,7 +86,6 @@ on_actions = {
 				limit = {
 					original_tag = ENG
 					has_government = fascism
-					has_completed_focus = ENG_organize_the_blackshirts
 				}
 				set_country_flag = { flag = won_british_civil_war value = 1 days = 365 }
 				country_event = { id = mtg_britain.34 }
@@ -98,7 +97,6 @@ on_actions = {
 					has_government = democratic
 					FROM = {
 						has_government = fascism
-						has_completed_focus = ENG_organize_the_blackshirts
 					}
 				}
 				delete_unit_template_and_units = { division_template = "Loyalist Brigade" }
@@ -161,7 +159,6 @@ on_actions = {
 				limit = {
 					original_tag = ENG
 					has_government = democratic
-					has_completed_focus = ENG_concessions_to_the_trade_unions
 				}
 				country_event = { id = mtg_britain.56 }
 			}
@@ -175,7 +172,6 @@ on_actions = {
 						original_tag = NZL
 					}
 					has_government = neutrality
-					ENG = { has_completed_focus = ENG_appeal_to_imperial_loyalists }
 					NOT = { is_subject_of = ENG }
 				}
 				ENG = { country_event = { id = mtg_britain.113 hours = 6 } }
@@ -199,7 +195,6 @@ on_actions = {
 				limit = {
 					original_tag = ENG
 					has_government = fascism
-					has_completed_focus = ENG_organize_the_blackshirts
 				}
 				random_other_country = {
 					limit = {
@@ -508,7 +503,6 @@ on_actions = {
 						original_tag = ENG
 						NOT = { has_government = communism }
 					}
-					has_completed_focus = MEX_focus_nationalize_the_oil_fields
 				}
 				set_cosmetic_tag = ENG_MEX_dominion
 			}	
@@ -1744,7 +1738,6 @@ on_actions = {
 					tag = GER
 					FROM = {
 						tag = HOL
-						has_completed_focus = HOL_wilhelminism
 					}
 				}
 				HOL = { country_event = { id = mtg_netherlands.76 } }
@@ -1813,7 +1806,6 @@ on_actions = {
 			if = {
 				limit = {
 					original_tag = HOL
-					has_completed_focus = HOL_wilhelminism
 					FROM = {
 						original_tag = GER
 						has_government = fascism

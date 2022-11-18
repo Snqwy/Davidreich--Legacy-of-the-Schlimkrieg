@@ -5,43 +5,10 @@ characters={
 			civilian={
 				large="GFX_portrait_sebastian_democratic"
 			}
-			army={
-				small="GFX_idea_ENG_winston_churchill"
-			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_winston_churchill
-			available  = {
-				has_government  = neutrality 
-				has_completed_focus  = ENG_the_kings_party 
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			allowed  = {
-				original_tag  = ENG
-				has_dlc = "Man the Guns"
-			}
-			traits  = {
-				royalist_bulldog 
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-
 		country_leader={
-			ideology=conservatism
-			traits = {
-				british_bulldog
-			}
-			expire="1965.1.1.1"
+			ideology=liberalism
+			expire="1938.1.1.1"
 			id=-1
 		}
 	}

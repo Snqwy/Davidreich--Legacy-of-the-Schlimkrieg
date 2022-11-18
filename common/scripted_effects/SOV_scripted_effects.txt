@@ -4171,15 +4171,6 @@ SOV_relocate_industry_in_appropriate_state_effect = {
 SOV_kill_trotsky_effect = { # Poor bwoy D: -> ROOT = SOV (or it doesn't work! :D)
 	#log = "ROOT is [ROOT.GetName] // THIS is [THIS.GetName] // FROM is [FROM.GetName]" -> Everything is SOV but retire_character tooltip keeps saying "Retire char from [nothing]"
 	set_global_flag = flag_trotsky_dead
-	if = {
-		limit = {
-			has_idea = trotskyite_plot_nsb
-		}
-		swap_ideas = {
-			remove_idea = trotskyite_plot_nsb
-			add_idea = trotskyite_plot_purged
-		}
-	}
 	SOV_lev_trotsky = {
 		set_character_flag = SOV_character_purged_flag
 		retire = yes

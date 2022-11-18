@@ -603,10 +603,6 @@ on_actions = {
 				random_country = {
 					limit = {
 						original_tag = FRA
-						OR = {
-							has_completed_focus = FRA_right_wing_rhetoric
-							has_completed_focus = FRA_utilize_the_leagues
-						}
 					}
 					country_event = { id = france.32 }
 				}
@@ -710,7 +706,6 @@ on_actions = {
 				limit = {
 					original_tag = POL
 					has_government = neutrality
-					NOT = { has_completed_focus = POL_fulfil_fifth_of_november }
 				}
 				retire_country_leader = yes
 			}
@@ -904,7 +899,6 @@ on_actions = {
 					limit = {
 						OR = {
 							is_historical_focus_on = no
-							has_completed_focus = SPA_supremacy_of_the_communion
 						}
 					}
 					add_timed_idea = { idea = SPA_recovering_from_civil_war days = 2190 }
@@ -912,9 +906,6 @@ on_actions = {
 				if = {
 					limit = {
 						is_historical_focus_on = yes
-						NOT = {
-							has_completed_focus = SPA_supremacy_of_the_communion
-						}
 					}
 					add_ideas = SPA_recovering_from_civil_war #keep the spirit on historical mode, keeping them out of the war
 				}

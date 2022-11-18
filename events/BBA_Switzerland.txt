@@ -236,17 +236,6 @@ country_event = {  #Frankfurter trial approaches
 	title = BBA_switzerland.3.t
 	desc = BBA_switzerland.3.desc
 	picture = GFX_report_event_SWI_parliament_members
-	 
-	trigger = {
-		ROOT = {
-			OR = {
-				has_completed_focus = SWI_fortify_border_with_italy
-				has_completed_focus = SWI_fortify_border_with_france
-				has_completed_focus = SWI_fortify_border_with_germany	
-			}
-			has_country_flag = SWI_prepare_for_trial
-		}
-	}
 
 	mean_time_to_happen = {
 		days = 90
@@ -369,17 +358,6 @@ country_event = {  #Germany thanks Switzerland for harsh sentence for Frankfurte
 	title = BBA_switzerland.4.t
 	desc = BBA_switzerland.4.desc
 	picture = GFX_report_event_fascist_gathering 
-	
-	trigger = {
-		ROOT = {
-			OR = {
-				has_completed_focus = SWI_fortify_border_with_italy
-				has_completed_focus = SWI_fortify_border_with_france
-				has_completed_focus = SWI_fortify_border_with_germany	
-			}
-			has_country_flag = SWI_frankfurter_immediate_harsh_sentence
-		}		
-	} 
 
 	fire_only_once = yes 
 
@@ -1685,7 +1663,6 @@ country_event = { #Easter Egg, look away
 
 	trigger = {
 		original_tag = SWI 
-		GER = { has_completed_focus = GER_anschluss }
 
 	}
 	mean_time_to_happen = {
@@ -3775,7 +3752,6 @@ country_event = { #Sending request for The Rest of Austria
 				factor = 3 
 				GER = {
 					has_army_manpower = { size > 399999 }
-					has_completed_focus = GER_rhineland
 				}
 			}
 			modifier = {
@@ -3913,14 +3889,12 @@ country_event = { #Sending request Alps territory
 		text = BBA_swiss_expansion.12.desc_FRA
 		trigger = {
 			ROOT = { original_tag = FRA }
-			FROM = { has_completed_focus = SWI_the_second_helvetic_republic }
 		}
 	}
 	desc = {
 		trigger = {
 			NOT = {
-				ROOT = { original_tag = FRA }
-				FROM = { has_completed_focus = SWI_the_second_helvetic_republic }			
+				ROOT = { original_tag = FRA }			
 			}	
 		}
 		text = BBA_swiss_expansion.12.desc 

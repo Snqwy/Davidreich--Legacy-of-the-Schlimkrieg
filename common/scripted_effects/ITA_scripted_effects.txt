@@ -42,18 +42,7 @@ ITA_end_the_italo_ethiopian_war = {
 	}
 }
 
-
-ITA_manage_italian_defeat_in_ethiopia_effect = {
-	#First missiolini focus (Struggle in ETH, AByssinian Fiasco and Solid Progress) are handled before this effect
-	if = {
-		limit = {
-			NOT = { has_completed_focus = ITA_servizio_informazione_militare }
-		}
-		unlock_national_focus = ITA_servizio_informazione_militare
-	}
-	unlock_national_focus = ITA_triumph_in_africa_bba
-}
-
+ITA_manage_italian_defeat_in_ethiopia_effect = {}
 
 ##     ## ####  ######   ######  ####  #######  ##       #### ##    ## ####  ######
 ###   ###  ##  ##    ## ##    ##  ##  ##     ## ##        ##  ###   ##  ##  ##    ##
@@ -129,7 +118,6 @@ ITA_missiolinis_add_to_failed_missions = {
 
 ITA_missiolinis_reroll_cost = {
 	add_political_power = -25
-	ITA_bop_very_low_decrease_effect = yes
 
 	custom_effect_tooltip = ITA_missiolinis_reroll_tt
 }
@@ -284,24 +272,11 @@ ITA_missiolini_stockpile_trucks_failure_effect = {
 }
 
 ITA_missiolini_stockpile_trucks_success_effect = {
-	if = { #DEFAULT
-		limit = {
-			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
-		}
-		add_political_power = 50
-		add_war_support = 0.03
-		add_timed_idea = {
-			idea = ITA_efficient_supply_lines
-			days = 365
-		}
-	}
+	add_political_power = 50
+	add_war_support = 0.03
 	else = { # GREATER REWARD (from To Live as a Lion focus)
 		add_political_power = 75
 		add_war_support = 0.05
-		add_timed_idea = {
-			idea = ITA_efficient_supply_lines_lion_version
-			days = 365
-		}
 	}
 }
 
@@ -312,28 +287,15 @@ ITA_missiolini_stockpile_fuel_failure_effect = {
 }
 
 ITA_missiolini_stockpile_fuel_success_effect = {
-	if = { #DEFAULT
-		limit = {
-			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
-		}
-		army_experience = 25
-		navy_experience = 25
-		air_experience = 25
-		add_war_support = 0.03
-		add_timed_idea = {
-			idea = ITA_fuel_reserves
-			days = 365
-		}
-	}
-	else = { # GREATER REWARD (from To Live as a Lion focus)
+	army_experience = 25
+	navy_experience = 25
+	air_experience = 25
+	add_war_support = 0.03
+	else = {
 		army_experience = 30
 		navy_experience = 30
 		air_experience = 30
 		add_war_support = 0.05
-		add_timed_idea = {
-			idea = ITA_fuel_reserves_lion_version
-			days = 365
-		}
 	}
 }
 
@@ -341,10 +303,6 @@ ITA_missiolini_stockpile_fuel_success_effect = {
 ITA_missiolini_strengthen_the_airforce_failure_effect = {
 	add_political_power = -25
 	add_war_support = -0.03
-	add_timed_idea = {
-		idea = ITA_disgruntlement_in_the_airforce
-		days = 365
-	}
 }
 
 ITA_missiolini_strengthen_the_airforce_success_effect = {
@@ -1220,7 +1178,6 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 	#log = "CIVIL WAR EFFECT"
 
 	#KILL BoP to prevent endless CW insde CW inside CW etc etc tack
-	ITA_bop_remove_bop_effect = yes
 
 	# Launch The Civil War
 	start_civil_war = {
@@ -2556,7 +2513,6 @@ ITA_civil_war_deal_with_militias = {
 
 ITA_start_anti_fascist_civil_war = { #The one triggered via focus
 	#KILL BoP to prevent endless CW insde CW inside CW etc etc tack
-	ITA_bop_remove_bop_effect = yes
 
 	if = {
 		limit = {
@@ -4199,9 +4155,6 @@ ITA_promote_umberto_to_country_leader = {
 		}
 	}
 	else_if = {
-		limit = {
-			has_completed_focus = ITA_democratic_king
-		}
 		add_country_leader_role = {
 			character =  ITA_prince_umberto
 			promote_leader = yes

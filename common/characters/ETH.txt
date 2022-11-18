@@ -1,5 +1,19 @@
 characters = {
 	#### COUNTRY LEADERS 
+	ETH_mike_neutrality={
+		name=ETH_mike
+		portraits={
+			civilian={
+				large="GFX_portrait_mike"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			traits={ trait_hardcore_and_awesome_dr }
+			id=-1
+		}
+	}
 	ETH_haile_selassie = {
 		name = ETH_haile_selassie
 		portraits = {
