@@ -1,7 +1,7 @@
 ideas={country={
-   idea_incompetent_army_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}   
-   idea_roman_senate_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
-   idea_a_people_united_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
-   idea_pax_romana_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
-   idea_by_blood_alone_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+   idea_incompetent_army_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}   
+   idea_roman_senate_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+   idea_a_people_united_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+   idea_pax_romana_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+   idea_by_blood_alone_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
 }

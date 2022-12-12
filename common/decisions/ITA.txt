@@ -104,10 +104,6 @@ debug_decisions = {
 			has_any_power_balance = no
 			is_debug = yes
 		}
-
-		complete_effect = {
-			ITA_initiate_balance_of_power_effect = yes
-		}
 	}
 }
 
@@ -1661,18 +1657,12 @@ ITA_balance_of_power_category = {
 		visible = {
 			is_debug = yes
 		}
-		complete_effect = {
-			ITA_bop_absurdly_high_increase_effect = yes
-		}
 	}
 
 	DEBUG_bop_high_increase_value = {
 		priority = 19
 		visible = {
 			is_debug = yes
-		}
-		complete_effect = {
-			ITA_bop_high_increase_effect = yes
 		}
 	}
 
@@ -1681,18 +1671,12 @@ ITA_balance_of_power_category = {
 		visible = {
 			is_debug = yes
 		}
-		complete_effect = {
-			ITA_bop_medium_increase_effect = yes
-		}
 	}
 
 	DEBUG_bop_low_increase_value = {
 		priority = 17
 		visible = {
 			is_debug = yes
-		}
-		complete_effect = {
-			ITA_bop_low_increase_effect = yes
 		}
 	}
 
@@ -1701,18 +1685,12 @@ ITA_balance_of_power_category = {
 		visible = {
 			is_debug = yes
 		}
-		complete_effect = {
-			ITA_bop_very_low_increase_effect = yes
-		}
 	}
 
 	DEBUG_bop_absurdly_high_decrease_value = {
 		priority = 15
 		visible = {
 			is_debug = yes
-		}
-		complete_effect = {
-			ITA_bop_absurdly_high_decrease_effect = yes
 		}
 	}
 
@@ -1721,18 +1699,12 @@ ITA_balance_of_power_category = {
 		visible = {
 			is_debug = yes
 		}
-		complete_effect = {
-			ITA_bop_high_decrease_effect = yes
-		}
 	}
 
 	DEBUG_bop_medium_decrease_value = {
 		priority = 13
 		visible = {
 			is_debug = yes
-		}
-		complete_effect = {
-			ITA_bop_medium_decrease_effect = yes
 		}
 	}
 
@@ -1741,18 +1713,12 @@ ITA_balance_of_power_category = {
 		visible = {
 			is_debug = yes
 		}
-		complete_effect = {
-			ITA_bop_low_decrease_effect = yes
-		}
 	}
 
 	DEBUG_bop_very_low_decrease_value = {
 		priority = 11
 		visible = {
 			is_debug = yes
-		}
-		complete_effect = {
-			ITA_bop_very_low_decrease_effect = yes
 		}
 	}
 
@@ -1761,22 +1727,12 @@ ITA_balance_of_power_category = {
 		visible = {
 			is_debug = yes
 		}
-		complete_effect = {
-			set_power_balance = {
-				right_side = ITA_mussolini_side
-			}
-		}
 	}
 
 	DEBUG_set_grand_council_bop = {
 		priority = 7
 		visible = {
 			is_debug = yes
-		}
-		complete_effect = {
-			set_power_balance = {
-				left_side = ITA_grand_council_side
-			}
 		}
 	}
 
@@ -1785,22 +1741,12 @@ ITA_balance_of_power_category = {
 		visible = {
 			is_debug = yes
 		}
-		complete_effect = {
-			set_power_balance = {
-				right_side = ITA_balbo_side
-			}
-		}
 	}
 
 	DEBUG_set_grandi_bop = {
 		priority = 5
 		visible = {
 			is_debug = yes
-		}
-		complete_effect = {
-			set_power_balance = {
-				right_side = ITA_grandi_side
-			}
 		}
 	}
 
@@ -1809,22 +1755,12 @@ ITA_balance_of_power_category = {
 		visible = {
 			is_debug = yes
 		}
-		complete_effect = {
-			set_power_balance = {
-				right_side = ITA_king_side
-			}
-		}
 	}
 
 	DEBUG_set_king_umberto_bop = {
 		priority = 3
 		visible = {
 			is_debug = yes
-		}
-		complete_effect = {
-			set_power_balance = {
-				right_side = ITA_king_umberto_side
-			}
 		}
 	}
 
@@ -1833,22 +1769,12 @@ ITA_balance_of_power_category = {
 		visible = {
 			is_debug = yes
 		}
-		complete_effect = {
-			set_power_balance = {
-				left_side = ITA_communism_side
-			}
-		}
 	}
 
 	DEBUG_set_democratic_bop = {
 		priority = 1
 		visible = {
 			is_debug = yes
-		}
-		complete_effect = {
-			set_power_balance = {
-				right_side = ITA_democratic_side
-			}
 		}
 	}
 
@@ -1857,11 +1783,6 @@ ITA_balance_of_power_category = {
 		visible = {
 			is_debug = yes
 		}
-		complete_effect = {
-			set_power_balance = {
-				left_side = ITA_pope_side
-			}
-		}
 	}
 
 	DEBUG_set_max_bop = {
@@ -1869,22 +1790,12 @@ ITA_balance_of_power_category = {
 		visible = {
 			is_debug = yes
 		}
-		complete_effect = {
-			set_power_balance = {
-				set_value = 1
-			}
-		}
 	}
 
 	DEBUG_set_min_bop = {
 		priority = -2
 		visible = {
 			is_debug = yes
-		}
-		complete_effect = {
-			set_power_balance = {
-				set_value = -1
-			}
 		}
 	}
 
@@ -1902,7 +1813,6 @@ ITA_balance_of_power_category = {
 				ruling_only = yes
 			}
 			NOT = { has_country_leader_with_trait = mussolini_minister_of_foreign_affairs }
-			has_completed_focus = ITA_triumph_in_africa_bba
 		}
 
 		available = {
@@ -1923,7 +1833,6 @@ ITA_balance_of_power_category = {
 		complete_effect = {
 			set_country_flag = { flag = ITA_mussolini_took_over_minister_of_foreign_affairs_flag value = 1 days = 365 }
 			add_country_leader_trait = mussolini_minister_of_foreign_affairs
-			ITA_bop_medium_increase_effect = yes
 
 			hidden_effect = { #In order to work with debug decisions
 				if = {
@@ -1983,7 +1892,6 @@ ITA_balance_of_power_category = {
 		complete_effect = {
 			set_country_flag = { flag = ITA_mussolini_resigned_minister_of_foreign_affairs_position_flag value = 1 days = 365 }
 			remove_country_leader_trait = mussolini_minister_of_foreign_affairs
-			ITA_bop_medium_decrease_effect = yes
 
 			hidden_effect = { #In order to work with debug decisions
 				if = {
@@ -2014,7 +1922,6 @@ ITA_balance_of_power_category = {
 				ruling_only = yes
 			}
 			NOT = { has_country_leader_with_trait = mussolini_minister_of_justice }
-			has_completed_focus = ITA_triumph_in_africa_bba
 		}
 
 		available = {
@@ -2035,7 +1942,6 @@ ITA_balance_of_power_category = {
 		complete_effect = {
 			set_country_flag = { flag = ITA_mussolini_took_over_minister_of_justice_flag value = 1 days = 365 }
 			add_country_leader_trait = mussolini_minister_of_justice
-			ITA_bop_medium_increase_effect = yes
 
 			hidden_effect = { #In order to work with debug decisions
 				if = {
@@ -2095,7 +2001,6 @@ ITA_balance_of_power_category = {
 		complete_effect = {
 			set_country_flag = { flag = ITA_mussolini_resigned_minister_of_justice_position_flag value = 1 days = 365 }
 			remove_country_leader_trait = mussolini_minister_of_justice
-			ITA_bop_medium_decrease_effect = yes
 
 			hidden_effect = { #In order to work with debug decisions
 				if = {
@@ -2126,7 +2031,6 @@ ITA_balance_of_power_category = {
 				ruling_only = yes
 			}
 			NOT = { has_country_leader_with_trait = mussolini_minister_of_education }
-			has_completed_focus = ITA_triumph_in_africa_bba
 		}
 
 		available = {
@@ -2147,7 +2051,6 @@ ITA_balance_of_power_category = {
 		complete_effect = {
 			set_country_flag = { flag = ITA_mussolini_took_over_minister_of_education_flag value = 1 days = 365 }
 			add_country_leader_trait = mussolini_minister_of_education
-			ITA_bop_medium_increase_effect = yes
 
 			hidden_effect = { #In order to work with debug decisions
 				if = {
@@ -2207,7 +2110,6 @@ ITA_balance_of_power_category = {
 		complete_effect = {
 			set_country_flag = { flag = ITA_mussolini_resigned_minister_of_education_position_flag value = 1 days = 365 }
 			remove_country_leader_trait = mussolini_minister_of_education
-			ITA_bop_medium_decrease_effect = yes
 
 			hidden_effect = { #In order to work with debug decisions
 				if = {
@@ -2238,7 +2140,6 @@ ITA_balance_of_power_category = {
 				ruling_only = yes
 			}
 			NOT = { has_country_leader_with_trait = mussolini_minister_of_corporations }
-			has_completed_focus = ITA_triumph_in_africa_bba
 		}
 
 		available = {
@@ -2259,7 +2160,6 @@ ITA_balance_of_power_category = {
 		complete_effect = {
 			set_country_flag = { flag = ITA_mussolini_took_over_minister_of_corporations_flag value = 1 days = 365 }
 			add_country_leader_trait = mussolini_minister_of_corporations
-			ITA_bop_medium_increase_effect = yes
 
 			hidden_effect = { #In order to work with debug decisions
 				if = {
@@ -2319,7 +2219,6 @@ ITA_balance_of_power_category = {
 		complete_effect = {
 			set_country_flag = { flag = ITA_mussolini_resigned_minister_of_corporations_position_flag value = 1 days = 365 }
 			remove_country_leader_trait = mussolini_minister_of_corporations
-			ITA_bop_medium_decrease_effect = yes
 
 			hidden_effect = { #In order to work with debug decisions
 				if = {
@@ -2349,10 +2248,6 @@ ITA_balance_of_power_category = {
 				character = ITA_benito_mussolini
 				ruling_only = yes
 			}
-			OR = {
-				has_completed_focus = ITA_undermine_the_duce
-				has_completed_focus = ITA_triumph_in_africa_bba
-			}
 		}
 
 		available = {}
@@ -2360,10 +2255,6 @@ ITA_balance_of_power_category = {
 		cost = ITA_bop_generic_council_cost
 
 		fire_only_once = yes
-
-		complete_effect = {
-			ITA_bop_low_decrease_effect = yes
-		}
 
 		ai_will_do = {
 			base = 1
@@ -2396,10 +2287,6 @@ ITA_balance_of_power_category = {
 				character = ITA_benito_mussolini
 				ruling_only = yes
 			}
-			OR = {
-				has_completed_focus = ITA_undermine_the_duce
-				has_completed_focus = ITA_triumph_in_africa_bba
-			}
 		}
 
 		available = {}
@@ -2414,13 +2301,10 @@ ITA_balance_of_power_category = {
 		fire_only_once = yes
 
 		complete_effect = {
-			ITA_bop_low_decrease_effect = yes
 			hidden_effect = {
 				add_command_power = -25
 				add_political_power = -25
-
 			}
-
 		}
 
 		ai_will_do = {
@@ -2454,10 +2338,6 @@ ITA_balance_of_power_category = {
 				character = ITA_benito_mussolini
 				ruling_only = yes
 			}
-			OR = {
-				has_completed_focus = ITA_conspiracies_in_the_shadows
-				has_completed_focus = ITA_triumph_in_africa_bba
-			}
 		}
 
 		available = {}
@@ -2472,7 +2352,6 @@ ITA_balance_of_power_category = {
 		days_re_enable = 365
 
 		complete_effect = {
-			ITA_bop_very_low_decrease_effect = yes
 			hidden_effect = {
 				add_political_power = -15
 				army_experience = -10
@@ -2510,10 +2389,6 @@ ITA_balance_of_power_category = {
 				character = ITA_benito_mussolini
 				ruling_only = yes
 			}
-			OR = {
-				has_completed_focus = ITA_conspiracies_in_the_shadows
-				has_completed_focus = ITA_triumph_in_africa_bba
-			}
 		}
 
 		available = {}
@@ -2528,7 +2403,6 @@ ITA_balance_of_power_category = {
 		days_re_enable = 365
 
 		complete_effect = {
-			ITA_bop_very_low_decrease_effect = yes
 			hidden_effect = {
 				add_political_power = -15
 				air_experience = -10
@@ -2566,10 +2440,6 @@ ITA_balance_of_power_category = {
 				character = ITA_benito_mussolini
 				ruling_only = yes
 			}
-			OR = {
-				has_completed_focus = ITA_conspiracies_in_the_shadows
-				has_completed_focus = ITA_triumph_in_africa_bba
-			}
 		}
 
 		available = {}
@@ -2584,7 +2454,6 @@ ITA_balance_of_power_category = {
 		days_re_enable = 365
 
 		complete_effect = {
-			ITA_bop_very_low_decrease_effect = yes
 			hidden_effect = {
 				add_political_power = -15
 				navy_experience = -10
@@ -2617,15 +2486,6 @@ ITA_balance_of_power_category = {
 			original_tag = ITA
 		}
 
-		visible = {
-			OR = {
-				has_completed_focus = ITA_italo_balbo_focus
-				has_completed_focus = ITA_dino_grandi_focus
-				has_completed_focus = ITA_monarchia_d_italia
-				has_completed_focus = ITA_triumph_in_africa_bba
-			}
-		}
-
 		available = {
 			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
 		}
@@ -2633,11 +2493,7 @@ ITA_balance_of_power_category = {
 		cost = ITA_bop_generic_council_cost
 
 		days_re_enable = 365
-
-		complete_effect = {
-			ITA_bop_very_low_increase_effect = yes
-		}
-
+		
 		ai_will_do = {
 			base = 1
 			modifier = {
@@ -2713,11 +2569,6 @@ ITA_balance_of_power_category = {
 		target_root_trigger = {
 			original_tag = ITA
 			has_civil_war = no
-			OR = {
-				has_completed_focus = ITA_italo_balbo_focus
-				has_completed_focus = ITA_dino_grandi_focus
-				has_completed_focus = ITA_culto_del_duce
-			}
 		}
 
 		days_remove = 60
@@ -2756,7 +2607,6 @@ ITA_balance_of_power_category = {
 		custom_cost_text = decision_cost_CP_25_pp_25
 
 		complete_effect = {
-			ITA_bop_low_increase_effect = yes
 			hidden_effect = {
 				add_political_power = -25
 				add_command_power = -25
@@ -2801,24 +2651,11 @@ ITA_balance_of_power_category = {
 			original_tag = ITA
 		}
 
-		visible = {
-			OR = {
-				has_completed_focus = ITA_italo_balbo_focus
-				has_completed_focus = ITA_dino_grandi_focus
-				has_completed_focus = ITA_monarchia_d_italia
-				has_completed_focus = ITA_triumph_in_africa_bba
-			}
-		}
-
 		available = {}
 
 		cost = ITA_bop_generic_council_cost
 
 		days_re_enable = 365
-
-		complete_effect = {
-			ITA_bop_very_low_increase_effect = yes
-		}
 
 		ai_will_do = {
 			base = 1
@@ -2857,24 +2694,11 @@ ITA_balance_of_power_category = {
 			original_tag = ITA
 		}
 
-		visible = {
-			OR = {
-				has_completed_focus = ITA_italo_balbo_focus
-				has_completed_focus = ITA_dino_grandi_focus
-				has_completed_focus = ITA_monarchia_d_italia
-				has_completed_focus = ITA_triumph_in_africa_bba
-			}
-		}
-
 		available = {}
 
 		cost = ITA_bop_generic_council_cost
 
 		days_re_enable = 365
-
-		complete_effect = {
-			ITA_bop_very_low_increase_effect = yes
-		}
 
 		ai_will_do = {
 			base = 1
@@ -2913,24 +2737,11 @@ ITA_balance_of_power_category = {
 			original_tag = ITA
 		}
 
-		visible = {
-			OR = {
-				has_completed_focus = ITA_italo_balbo_focus
-				has_completed_focus = ITA_dino_grandi_focus
-				has_completed_focus = ITA_monarchia_d_italia
-				has_completed_focus = ITA_triumph_in_africa_bba
-			}
-		}
-
 		available = {}
 
 		cost = ITA_bop_generic_council_cost
 
 		days_re_enable = 365
-
-		complete_effect = {
-			ITA_bop_very_low_increase_effect = yes
-		}
 
 		ai_will_do = {
 			base = 1
@@ -2971,10 +2782,6 @@ ITA_balance_of_power_category = {
 			original_tag = ITA
 		}
 
-		visible = {
-			has_completed_focus = ITA_revoke_the_acerbo_law
-		}
-
 		available = {
 			has_government = democratic
 		}
@@ -2984,7 +2791,6 @@ ITA_balance_of_power_category = {
 		fire_only_once = yes
 
 		complete_effect = {
-			ITA_bop_high_increase_effect = yes
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.1
@@ -3010,10 +2816,6 @@ ITA_balance_of_power_category = {
 			original_tag = ITA
 		}
 
-		visible = {
-			has_completed_focus = ITA_power_to_the_king
-		}
-
 		available = {
 			has_government = neutrality
 		}
@@ -3023,7 +2825,6 @@ ITA_balance_of_power_category = {
 		fire_only_once = yes
 
 		complete_effect = {
-			ITA_bop_medium_increase_effect = yes
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.1
@@ -3049,17 +2850,6 @@ ITA_balance_of_power_category = {
 			original_tag = ITA
 		}
 
-		visible = {
-			has_completed_focus = ITA_power_to_the_king
-			NOT = { has_completed_focus = ITA_seek_papal_support }
-			NOT = { has_country_flag = ITA_expanded_lateran_treaty_flag }
-		}
-
-		available = {
-			NOT = { has_completed_focus = ITA_seek_papal_support }
-			NOT = { has_country_flag = ITA_expanded_lateran_treaty_flag }
-		}
-
 		cost = 70
 
 		fire_only_once = yes
@@ -3067,7 +2857,6 @@ ITA_balance_of_power_category = {
 		complete_effect = {
 			set_country_flag = ITA_revoked_lateran_treaty_flag
 			add_stability = -0.05
-			ITA_bop_medium_increase_effect = yes
 
 			custom_effect_tooltip = ITA_bop_revoke_the_lateran_treaty_tt
 		}
@@ -3083,11 +2872,6 @@ ITA_balance_of_power_category = {
 
 		allowed = {
 			original_tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_seek_papal_support
-			NOT = { has_country_flag = ITA_revoked_lateran_treaty_flag }
 		}
 
 		available = {
@@ -3106,7 +2890,6 @@ ITA_balance_of_power_category = {
 				ideology = neutrality
 				popularity = 0.05
 			}
-			ITA_bop_medium_decrease_effect = yes
 		}
 
 		ai_will_do = {
@@ -3122,10 +2905,6 @@ ITA_balance_of_power_category = {
 			original_tag = ITA
 		}
 
-		visible = {
-			has_completed_focus = ITA_strengthen_the_papacy
-		}
-
 		available = {
 			has_government = neutrality
 		}
@@ -3136,7 +2915,6 @@ ITA_balance_of_power_category = {
 
 		complete_effect = {
 			add_stability = 0.1
-			ITA_bop_medium_decrease_effect = yes
 
 			custom_effect_tooltip = ITA_bop_liturgical_reforms_cd_tt
 		}
@@ -3154,18 +2932,6 @@ ITA_balance_of_power_category = {
 			original_tag = ITA
 		}
 
-		visible = {
-			OR = {
-				has_completed_focus = ITA_seek_papal_support
-				has_completed_focus = ITA_disband_the_blackshirts
-			}
-		}
-
-		available = {
-			has_completed_focus = ITA_seek_papal_support
-			has_completed_focus = ITA_disband_the_blackshirts
-		}
-
 		cost = 70
 
 		fire_only_once = yes
@@ -3180,7 +2946,6 @@ ITA_balance_of_power_category = {
 				ideology = fascism
 				popularity = -0.1
 			}
-			ITA_bop_low_decrease_effect = yes
 		}
 
 		ai_will_do = {
@@ -3211,7 +2976,6 @@ ITA_balance_of_power_category = {
 		days_remove = 90
 
 		remove_effect = {
-			ITA_bop_high_decrease_effect = yes
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.1
@@ -3231,10 +2995,6 @@ ITA_balance_of_power_category = {
 			original_tag = ITA
 		}
 
-		visible = {
-			has_completed_focus = ITA_the_popular_front
-		}
-
 		available = {
 			has_government = communism
 		}
@@ -3248,7 +3008,6 @@ ITA_balance_of_power_category = {
 				ideology = communism
 				popularity = 0.05
 			}
-			ITA_bop_medium_decrease_effect = yes
 		}
 
 		ai_will_do = {
@@ -3262,10 +3021,6 @@ ITA_balance_of_power_category = {
 
 		allowed = {
 			original_tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_a_leader_steps_forward
 		}
 
 		available = {
@@ -3287,7 +3042,6 @@ ITA_balance_of_power_category = {
 				ideology = communism
 				popularity = 0.05
 			}
-			ITA_bop_medium_decrease_effect = yes
 		}
 
 		ai_will_do = {
@@ -3301,10 +3055,6 @@ ITA_balance_of_power_category = {
 
 		allowed = {
 			original_tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_common_ground
 		}
 
 		available = {
@@ -3325,7 +3075,6 @@ ITA_balance_of_power_category = {
 				ideology = democratic
 				popularity = 0.1
 			}
-			ITA_bop_medium_increase_effect = yes
 		}
 
 		remove_effect = {
@@ -3362,10 +3111,6 @@ ITA_balance_of_power_category = {
 			original_tag = ITA
 		}
 
-		visible = {
-			has_completed_focus = ITA_italian_socialism
-		}
-
 		available = {
 			has_government = democratic
 		}
@@ -3379,7 +3124,6 @@ ITA_balance_of_power_category = {
 				ideology = democratic
 				popularity = 0.05
 			}
-			ITA_bop_low_increase_effect = yes
 		}
 
 		ai_will_do = {
@@ -3393,10 +3137,6 @@ ITA_balance_of_power_category = {
 
 		allowed = {
 			original_tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_cooperate_with_the_mafia
 		}
 
 		available = {
@@ -3416,8 +3156,6 @@ ITA_balance_of_power_category = {
 		remove_effect = {
 			add_to_variable = { ITA_re_supply_node_range = 0.1 }
 			custom_effect_tooltip = ITA_bop_utilize_the_mafia_re_tt
-
-			ITA_bop_low_increase_effect = yes
 		}
 
 		ai_will_do = {
@@ -3456,10 +3194,6 @@ ETH_italian_occupation_category = {
 
 		cost = 75
 		days_remove = 90
-
-		visible = {
-			has_completed_focus = ITA_triumph_in_africa_bba
-		}
 
 		available = {
 			NOT = { has_country_flag = expanding_regional_control_flag }
@@ -3506,10 +3240,6 @@ ETH_italian_occupation_category = {
 		icon = GFX_decision_generic_speech
 		allowed = {
 			tag = ITA
-		}
-
-		available = {
-			has_completed_focus = ITA_the_new_emperor_of_ethiopia
 		}
 
 		visible = {
@@ -3560,11 +3290,6 @@ ETH_italian_occupation_category = {
 		fire_only_once = yes # Only once per State
 		available = {
 			NOT = { has_country_flag = ETH_investments_in_progress_flag }
-			has_completed_focus = ITA_develop_ethiopia
-		}
-
-		visible = {
-			has_completed_focus = ITA_triumph_in_africa_bba
 		}
 
 		cancel_trigger = {
@@ -3635,10 +3360,6 @@ ITA_colonial_management_dec_cat = {
 					is_core_of = ETH
 				}
 			}
-		}
-
-		visible = {
-			has_completed_focus = ITA_ministry_of_italian_africa
 		}
 
 		ai_hint_pp_cost = 50
@@ -3886,10 +3607,6 @@ ITA_colonial_management_dec_cat = {
 			}
 		}
 
-		visible = {
-			has_completed_focus = ITA_ministry_of_italian_africa
-		}
-
 		cost = 5
 
 		complete_effect = {
@@ -3936,7 +3653,6 @@ ITA_colonial_management_dec_cat = {
 		}
 
 		visible = {
-			has_completed_focus = ITA_ministry_of_italian_africa
 			NOT = { has_country_flag = ITA_improved_irregular_templates_flag }
 		}
 
@@ -4041,10 +3757,6 @@ ITA_colonial_management_dec_cat = {
 			base = 0.5
 			modifier = {
 				factor = 3
-				OR = {
-					has_completed_focus = ITA_comandante_diavolo
-					has_completed_focus = ITA_irregulars
-				}
 			}
 		}
 	}
@@ -4057,7 +3769,6 @@ ITA_colonial_management_dec_cat = {
 		}
 
 		visible = {
-			has_completed_focus = ITA_strengthen_ascari_corps
 			NOT = { has_country_flag = ITA_improved_ascari_templates_flag }
 		}
 
@@ -4274,10 +3985,6 @@ ITA_colonial_management_dec_cat = {
 			base = 1
 			modifier = {
 				factor = 3
-				OR = {
-					has_completed_focus = ITA_strengthen_ascari_corps
-					has_completed_focus = ITA_ascari
-				}
 			}
 		}
 	}
@@ -4312,7 +4019,6 @@ ITA_colonial_management_dec_cat = {
 
 		target_root_trigger = {
 			original_tag = ITA
-			has_completed_focus = ITA_regional_development
 			has_civil_war = no
 		}
 
@@ -4359,8 +4065,6 @@ ITA_colonial_management_dec_cat = {
 		fire_only_once = yes
 
 		available = {
-			has_completed_focus = ITA_ministry_of_italian_africa
-			has_completed_focus = ITA_the_new_emperor_of_ethiopia
 			custom_trigger_tooltip = {
 				tooltip = aoi_required_ethiopian_states
 				AND = {
@@ -4496,7 +4200,6 @@ ITA_colonial_management_dec_cat = {
 		}
 
 		visible = {
-			has_completed_focus = ITA_ministry_of_italian_africa
 			original_tag = ITA # Italy
 			NOT = { has_global_flag = italian_east_africa_flag }
 		}
@@ -4647,7 +4350,6 @@ ITA_colonial_management_dec_cat = {
 		}
 
 		visible = {
-			has_completed_focus = ITA_ministry_of_italian_africa
 			original_tag = ITA # Italy
 			has_global_flag = italian_east_africa_flag
 			NOT = {
@@ -4700,7 +4402,6 @@ ITA_colonial_management_dec_cat = {
 		}
 
 		visible = {
-			has_completed_focus = ITA_ministry_of_italian_africa
 			original_tag = ITA # Italy
 			has_global_flag = italian_east_africa_flag
 			NOT = {
@@ -4753,7 +4454,6 @@ ITA_colonial_management_dec_cat = {
 		}
 
 		visible = {
-			has_completed_focus = ITA_ministry_of_italian_africa
 			original_tag = ITA # Italy
 			has_global_flag = italian_east_africa_flag
 			NOT = {
@@ -4800,7 +4500,6 @@ ITA_colonial_management_dec_cat = {
 		}
 
 		visible = {
-			has_completed_focus = ITA_ministry_of_italian_africa
 			original_tag = ITA # Italy
 			has_global_flag = italian_east_africa_flag
 		}
@@ -4868,7 +4567,6 @@ ITA_colonial_management_dec_cat = {
 		}
 
 		visible = {
-			has_completed_focus = ITA_ministry_of_italian_africa
 			original_tag = ITA # Italy
 			has_global_flag = italian_east_africa_flag
 		}
@@ -4925,10 +4623,6 @@ ITA_colonial_management_dec_cat = {
 		icon = GFX_decision_generic_reorganize_irregulars
 		allowed = {
 			tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_abolish_the_colonies
 		}
 
 		available = {
@@ -5251,7 +4945,6 @@ ITA_naval_cooperation_programs_dec_cat = {
 		target_root_trigger = {
 			original_tag = ITA
 			has_civil_war = no
-			has_completed_focus = ITA_corpo_di_truppe_volontarie #It's totally ok that the decision gets unlocked even if the focus gets bypassed
 			NOT = { has_country_flag = ITA_ceded_aquila_class_destroyers_flag } #To prevent visible trigger to check every tick after this happens
 			OR = {
 				has_global_flag = spanish_civil_war
@@ -5327,8 +5020,6 @@ ITA_naval_cooperation_programs_dec_cat = {
 		target_root_trigger = {
 			original_tag = ITA
 			has_civil_war = no
-			has_completed_focus = ITA_cooperation_programs
-			has_completed_focus = ITA_midget_submarines
 			NOT = { FROM = { has_country_flag = ITA_midget_submarines_flag } } #To prevent visible trigger to check every tick after this happens
 		}
 
@@ -5412,7 +5103,6 @@ ITA_diplomacy_balkan_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = ITA_potential_allies_in_the_balkans
 			is_subject = no
 		}
 
@@ -5479,10 +5169,6 @@ ITA_diplomacy_balkan_decision_category = {
 
 		target_trigger = {
 			SOV_basic_promote_rallies_triggers = yes
-		}
-
-		target_root_trigger = {
-			has_completed_focus = ITA_potential_allies_in_the_balkans
 		}
 
 		allowed = {
@@ -5565,7 +5251,6 @@ ITA_diplomacy_balkan_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = ITA_balkan_ambition
 			is_Subject = no
 		}
 
@@ -5638,7 +5323,6 @@ ITA_diplomacy_balkan_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = ITA_potential_allies_in_the_balkans
 			is_subject = no
 		}
 
@@ -6392,9 +6076,6 @@ ITA_diplomacy_balkan_decision_category = {
 		}
 
 		available = {
-			ITA = {
-				has_completed_focus = ITA_befriend_greece
-			}
 			any_country = {
 				controls_state = 342
 				controls_state = 339
@@ -6455,7 +6136,6 @@ ITA_diplomacy_balkan_decision_category = {
 
 		available = {
 			ITA = {
-				has_completed_focus = ITA_befriend_greece
 				is_faction_leader = yes
 				controls_state = 164
 			}
@@ -6531,7 +6211,6 @@ ITA_diplomacy_balkan_decision_category = {
 
 		available = {
 			ITA = {
-				has_completed_focus = ITA_befriend_turkey
 				is_faction_leader = yes
 				controls_state = 164
 			}
@@ -7038,7 +6717,6 @@ political_actions = {
 		}
 
 		visible = {
-			has_completed_focus = ITA_power_to_the_king
 			has_country_leader = {
 				character = ITA_vittorio_emanuele_iii
 				ruling_only = yes
@@ -7072,7 +6750,6 @@ ITA_italian_mafia_dec_cat = {
 			}
 			OR = {
 				NOT = { original_tag = ITA }
-				has_completed_focus = ITA_crush_the_mafia
 			}
 		}
 		state_target = yes
@@ -7132,10 +6809,6 @@ operations = {
 
 		allowed = {
 			original_tag = ITA
-		}
-
-		visible = {
-			has_completed_focus = ITA_decima_flottiglia_mas
 		}
 
 		available = {

@@ -170,7 +170,6 @@ GER_mefo_bills_category = {
 					set_variable = { GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission }
 					set_country_flag = paid_for_mefo
 				}
-				GER_mefo_bills_level_up = yes
 				if = {
 					limit = {
 						check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }

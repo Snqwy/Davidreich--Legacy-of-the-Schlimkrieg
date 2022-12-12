@@ -64,7 +64,7 @@
 			factor = 4
 		}
 
-		available = {
+		available = {always=no
 		
 		}
 
@@ -1378,7 +1378,7 @@
 			factor = 4
 		}
 
-		available = {
+		available = {always=no
 
 		}
 
@@ -1822,7 +1822,7 @@
 			factor = 4
 		}
 
-		available = {
+		available = {always=no
 
 		}
 

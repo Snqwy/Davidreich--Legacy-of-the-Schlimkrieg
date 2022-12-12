@@ -65,7 +65,7 @@ shared_focus = {
 		}
 	}
 
-	available = {
+	available = {always=no
 
 	}
 

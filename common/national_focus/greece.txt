@@ -2121,7 +2121,6 @@ focus_tree = {
 				}
 				AND = { 
 					GER = { 
-						has_completed_focus = GER_revive_the_kaiserreich 
 						is_in_faction = yes
 						is_faction_leader = yes
 					}
@@ -2168,7 +2167,6 @@ focus_tree = {
 			else_if = {
 				limit = { 
 					GER = { 
-						has_completed_focus = GER_revive_the_kaiserreich 
 						is_faction_leader = no
 					}
 				}
@@ -2193,11 +2191,6 @@ focus_tree = {
 						has_completed_focus = HUN_proclaim_the_restoration_of_austria_hungary 
 						is_faction_leader = no
 						is_in_faction = no
-					}
-					GER = { 
-						NOT = { 
-							has_completed_focus = GER_revive_the_kaiserreich
-						}
 					}
 				}
 				create_faction = GRE_argos_alliance

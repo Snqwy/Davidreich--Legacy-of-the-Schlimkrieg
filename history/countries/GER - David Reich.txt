@@ -84,15 +84,16 @@ if = {
 }
 set_research_slots=4
 set_convoys=200
-set_stability=0.75 
-set_war_support=0.5
+set_stability=0.85
+set_war_support=0.8
 set_politics={ruling_party=fascism last_election="1933.3.5" election_frequency=48 elections_allowed=no}
 set_popularities = {
-	democratic = 20
-	fascism = 60
-	communism = 20
+	democratic = 5
+	neutrality = 10
+	fascism = 80
+	communism = 5
 }
-create_faction=Axis add_to_faction=GER add_ideas={idea_legacy_of_the_schlimkrieg_dr idea_militarization_dr idea_steady_economic_recovery_dr limited_exports extensive_conscription partial_economic_mobilisation}
+create_faction=Maxis add_to_faction=GER add_to_faction=ITA add_ideas={idea_legacy_of_the_schlimkrieg_dr idea_militarization_dr idea_steady_economic_recovery_dr limited_exports extensive_conscription partial_economic_mobilisation}
 recruit_character = GER_wilhelm_pieck
 recruit_character = GER_konrad_adenauer
 recruit_character = GER_adolf_hitler

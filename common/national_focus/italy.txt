@@ -8204,7 +8204,6 @@ focus_tree = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
 				}
-				has_completed_focus = ITA_defy_the_duce
 			}
 		}
 
@@ -8326,7 +8325,6 @@ focus_tree = {
 						option = HIDE
 					}
 				}
-				NOT = { has_completed_focus = ITA_defy_the_duce }
 			}
 		}
 
@@ -8339,29 +8337,10 @@ focus_tree = {
 			if = {
 				limit = {
 					has_any_power_balance = no
-				}
-				set_power_balance = {
-					id = ITA_power_balance
-					left_side = ITA_grand_council_side # will keep the last set side if not specified
-					right_side = ITA_mussolini_side # will keep the last set side if not specified
-					#set_default = yes # whether or not to reset the power balance to the initial value, default = no
-					set_value = 0.2
-				}
 			}
 			else_if = {
 				limit = {
 					NOT = { has_completed_focus = ITA_undermine_the_duce }
-				}
-				ITA_bop_medium_decrease_effect = yes
-			}
-			else = {
-				effect_tooltip = {
-					set_power_balance = {
-						id = ITA_power_balance
-						left_side = ITA_grand_council_side # will keep the last set side if not specified
-						right_side = ITA_mussolini_side # will keep the last set side if not specified
-						set_value = 0.2
-					}
 				}
 			}
 			if = {
@@ -8456,8 +8435,6 @@ focus_tree = {
 				popularity = -0.05
 			}
 
-			ITA_bop_low_decrease_effect = yes
-
 			if = {
 				limit = {
 					has_completed_focus = ITA_struggle_in_ethiopia
@@ -8514,27 +8491,10 @@ focus_tree = {
 				limit = {
 					has_any_power_balance = no
 				}
-				if = {
-					limit = {
-						NOT = { has_completed_focus = ITA_defy_the_duce	}
-					}
-					ITA_initiate_balance_of_power_effect = yes
-				}
 			}
 			else_if = {
 				limit = {
 					NOT = { has_completed_focus = ITA_triumph_in_africa_bba }
-				}
-				ITA_bop_very_low_increase_effect = yes
-			}
-			else = {
-				effect_tooltip = {
-					set_power_balance = {
-						id = ITA_power_balance
-						left_side = ITA_grand_council_side # will keep the last set side if not specified
-						right_side = ITA_mussolini_side # will keep the last set side if not specified
-						set_default = yes # whether or not to reset the power balance to the initial value, default = no
-					}
 				}
 			}
 
@@ -8565,7 +8525,6 @@ focus_tree = {
 						option = HIDE
 					}
 				}
-				NOT = { has_completed_focus = ITA_defy_the_duce	}
 			}
 		}
 
@@ -8600,10 +8559,6 @@ focus_tree = {
 		cost = 5
 		available = {
 			is_at_peace_exiled_countries_excluded = yes
-			power_balance_value = {
-				id = ITA_power_balance
-				value < 0.01
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
@@ -8614,8 +8569,6 @@ focus_tree = {
 
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ITA_pietro_d_acquarone	
-
-			ITA_bop_low_decrease_effect = yes	
 
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -8951,8 +8904,6 @@ focus_tree = {
 		completion_reward = {
 			add_country_leader_trait = lion_tamer
 
-			ITA_bop_very_low_increase_effect = yes
-
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -8970,10 +8921,6 @@ focus_tree = {
 			has_country_leader = {
 				character = ITA_benito_mussolini
 				ruling_only = yes
-			}
-			power_balance_value = {
-				id = ITA_power_balance
-				value > 0.499
 			}
 			custom_trigger_tooltip = {
 				tooltip = "Requires 50+ value towards Mussolini in the Balance of Power"
@@ -9000,8 +8947,6 @@ focus_tree = {
 					add = il_duce_providence
 				}
 			}
-
-			ITA_bop_very_low_increase_effect = yes
 		}
 	}
 
@@ -9041,20 +8986,12 @@ focus_tree = {
 		y = 3
 		relative_position_id = ITA_the_man_of_providence
 		cost = 5
-		available = {
-			power_balance_value = {
-				id = ITA_power_balance
-				value > 0.699
-			}
-		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_ITA_MISSIOLINI}
 
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.05
-
-			ITA_bop_very_low_decrease_effect = yes
 
 			custom_effect_tooltip = ITA_boost_the_grand_council_of_fascism_missiolinis_tt
 		}
@@ -9074,10 +9011,6 @@ focus_tree = {
 				character = ITA_benito_mussolini
 				ruling_only = yes
 			}
-			power_balance_value = {
-				id = ITA_power_balance
-				value > 0.649
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_BALANCE_OF_POWER FOCUS_FILTER_ITA_MISSIOLINI}
@@ -9089,8 +9022,6 @@ focus_tree = {
 				remove = lion_tamer
 				add = lion_tamer_2
 			}
-
-			ITA_bop_very_low_increase_effect = yes
 
 			#Reduce time for Missiolinis
 			set_variable = { ITA_missiolinis_default_days = 350 }
@@ -9256,10 +9187,6 @@ focus_tree = {
 				character = ITA_benito_mussolini
 				ruling_only = yes
 			}
-			power_balance_value = {
-				id = ITA_power_balance
-				value > 0.799
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
@@ -9271,8 +9198,6 @@ focus_tree = {
 				remove = il_duce_providence_strengthen
 				add = il_duce_devotion 
 			}
-
-			ITA_bop_very_low_increase_effect = yes
 		}
 	}
 
@@ -9311,8 +9236,6 @@ focus_tree = {
 			}
 			add_war_support = 0.03
 			add_political_power = 25
-
-			ITA_bop_very_low_increase_effect = yes #Works for every Duce
 		}
 	}
 
@@ -10023,10 +9946,6 @@ focus_tree = {
 				character = ITA_benito_mussolini
 				ruling_only = yes
 			}
-			power_balance_value = {
-				id = ITA_power_balance
-				value > 0.949
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_BALANCE_OF_POWER}
@@ -10094,8 +10013,6 @@ focus_tree = {
 					technology = super_heavy_spaa
 				}
 			}
-
-			ITA_bop_very_low_increase_effect = yes
 
 			#Names for NSs
 			hidden_effect = {
@@ -10577,11 +10494,7 @@ focus_tree = {
 		
 		cost = 5
 		available = {
-			has_government = fascism
-			power_balance_value = {
-				id = ITA_power_balance
-				value < -0.09
-			}		
+			has_government = fascism	
 		}
 
 		bypass = {
@@ -10601,8 +10514,7 @@ focus_tree = {
 				}
 				promote_character = ITA_grand_council
 			}
-			add_ideas = ITA_shadow_of_mussolini
-			ITA_bop_low_decrease_effect = yes 
+			add_ideas = ITA_shadow_of_mussolini 
 		}
 	}
 
@@ -10619,27 +10531,17 @@ focus_tree = {
 		available = {
 			has_character = ITA_italo_balbo
 			has_government = fascism
-			GER = {
-				NOT = {
-					has_completed_focus = GER_assassinate_mussolini
-				}
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
-			set_power_balance = {
-				id = ITA_power_balance
-				right_side = ITA_balbo_side 
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_country_flag = ITA_deposed_leader_flag
-					}
-					clr_country_flag = ITA_deposed_leader_flag
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = ITA_deposed_leader_flag
 				}
+				clr_country_flag = ITA_deposed_leader_flag
 			}
 			custom_effect_tooltip = ITA_remove_balbo_as_advisor_tt
 			add_country_leader_role = {
@@ -10660,7 +10562,6 @@ focus_tree = {
 			add_political_power = 75
 			add_war_support = 0.1
 			add_stability = 0.05
-			ITA_bop_medium_increase_balbo_side_effect = yes
 		}
 	}
 
@@ -10677,11 +10578,6 @@ focus_tree = {
 		available = {
 			has_character = ITA_dino_grandi
 			has_government = fascism
-			GER = {
-				NOT = {
-					has_completed_focus = GER_assassinate_mussolini
-				}
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
@@ -10694,10 +10590,6 @@ focus_tree = {
 					}
 					clr_country_flag = ITA_deposed_leader_flag
 				}
-			}
-			set_power_balance = {
-				id = ITA_power_balance
-				right_side = ITA_grandi_side
 			}
 			custom_effect_tooltip = ITA_remove_grandi_as_advisor_tt
 			if = {
@@ -10735,7 +10627,6 @@ focus_tree = {
 			add_political_power = 75
 			add_war_support = 0.05
 			add_stability = 0.1
-			ITA_bop_medium_increase_grandi_side_effect = yes
 		}
 	}
 
@@ -10761,28 +10652,6 @@ focus_tree = {
 			custom_effect_tooltip = ITA_stop_the_squandering_ricostruzione_industriale_tt
 			add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.05 }
 			custom_effect_tooltip = ITA_stop_the_squandering_military_industry_tt
-
-			if = {
-				limit = {
-					is_power_balance_side_active = {
-						id = ITA_power_balance
-						side = ITA_balbo_side
-					}
-				}
-				ITA_bop_very_low_increase_balbo_side_effect = yes
-			}
-			else_if = {
-				limit = {
-					is_power_balance_side_active = {
-						id = ITA_power_balance
-						side = ITA_grandi_side
-					}
-				}
-				ITA_bop_very_low_increase_grandi_side_effect = yes
-			}
-			else = {
-				ITA_bop_very_low_increase_effect = yes
-			}
 		}
 	}
 
@@ -10808,27 +10677,6 @@ focus_tree = {
 			add_war_support = 0.05
 			add_stability = 0.05
 			add_political_power = 50
-			if = {
-				limit = {
-					is_power_balance_side_active = {
-						id = ITA_power_balance
-						side = ITA_balbo_side
-					}
-				}
-				ITA_bop_very_low_increase_balbo_side_effect = yes
-			}
-			else_if = {
-				limit = {
-					is_power_balance_side_active = {
-						id = ITA_power_balance
-						side = ITA_grandi_side
-					}
-				}
-				ITA_bop_very_low_increase_grandi_side_effect = yes
-			}
-			else = {
-				ITA_bop_very_low_increase_effect = yes
-			}
 		}
 	}
 
@@ -10901,27 +10749,6 @@ focus_tree = {
 			}
 			add_war_support = 0.1
 			add_ideas = ITA_divino_duce_1
-			if = {
-				limit = {
-					is_power_balance_side_active = {
-						id = ITA_power_balance
-						side = ITA_balbo_side
-					}
-				}
-				ITA_bop_medium_increase_balbo_side_effect = yes
-			}
-			else_if = {
-				limit = {
-					is_power_balance_side_active = {
-						id = ITA_power_balance
-						side = ITA_grandi_side
-					}
-				}
-				ITA_bop_medium_increase_grandi_side_effect = yes
-			}
-			else = {
-				ITA_bop_medium_increase_effect = yes
-			}
 		}
 	}
 
@@ -10971,27 +10798,6 @@ focus_tree = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			add_ideas = ITA_italian_hegemony_master_1
-			if = {
-				limit = {
-					is_power_balance_side_active = {
-						id = ITA_power_balance
-						side = ITA_balbo_side
-					}
-				}
-				ITA_bop_medium_increase_balbo_side_effect = yes
-			}
-			else_if = {
-				limit = {
-					is_power_balance_side_active = {
-						id = ITA_power_balance
-						side = ITA_grandi_side
-					}
-				}
-				ITA_bop_medium_increase_grandi_side_effect = yes
-			}
-			else = {
-				ITA_bop_medium_increase_effect = yes
-			}
 		}
 	}
 
@@ -11120,7 +10926,6 @@ focus_tree = {
 			add_to_variable = { ITA_re_motorized_attack = 0.05 }
 			add_to_variable = { ITA_re_mechanized_attack = 0.05 }
 			custom_effect_tooltip = ITA_reorganize_regio_esercito_re_tt
-			ITA_bop_very_low_increase_balbo_side_effect = yes
 		}
 	}
 
@@ -11151,7 +10956,6 @@ focus_tree = {
 			add_to_variable = { ITA_ra_air_attack = 0.05 }
 			add_to_variable = { ITA_ra_air_superiority_bonus_in_combat = 0.05 }
 			custom_effect_tooltip = ITA_reinforce_aeronautica_ra_tt
-			ITA_bop_very_low_increase_balbo_side_effect = yes
 		}
 	}
 
@@ -11716,7 +11520,6 @@ focus_tree = {
 					}
 				}
 			}
-			ITA_bop_low_increase_balbo_side_effect = yes
 		}
 	}
 
@@ -11966,7 +11769,6 @@ focus_tree = {
 					}
 				}
 				add_country_leader_trait = father_of_the_empire
-				ITA_bop_low_increase_grandi_side_effect = yes
 			}
 			else_if = {
 				limit = {
@@ -11975,7 +11777,6 @@ focus_tree = {
 						ruling_only = yes
 					}
 				}
-				ITA_bop_low_increase_king_side_effect = yes
 			}
 			else = {
 				custom_effect_tooltip = ITA_bop_will_shift
@@ -12004,7 +11805,6 @@ focus_tree = {
 		completion_reward = {
 			add_country_leader_trait = political_reformer_1
 			add_political_power = 100
-			ITA_bop_very_low_increase_grandi_side_effect = yes
 		}
 	}
 
@@ -12059,7 +11859,6 @@ focus_tree = {
 				uses = 1
 				category = nuclear
 			}
-			ITA_bop_very_low_increase_grandi_side_effect = yes
 		}
 	}
 
@@ -12285,13 +12084,6 @@ focus_tree = {
 			show_ideas_tooltip = ITA_vittorio_emanuele_orlando
 			
 			show_unit_leaders_tooltip = ITA_giuseppe_de_stefanis
-
-			#BoP
-			set_power_balance = {
-				id = ITA_power_balance
-				right_side = ITA_king_side
-			}
-			ITA_bop_low_increase_king_side_effect = yes
 		}
 	}
 
@@ -12559,7 +12351,6 @@ focus_tree = {
 					}
 				}
 				NOT = { has_completed_focus = ITA_culto_del_duce }
-				NOT = { has_completed_focus = ITA_defy_the_duce }
 			}
 		}
 
@@ -13110,49 +12901,6 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.05
 			}
-			if = {
-				limit = {
-					is_power_balance_side_active = {
-						id = ITA_power_balance
-						side = ITA_king_side
-					}
-				}
-				ITA_bop_high_increase_king_side_effect = yes
-			}
-			else_if = {
-				limit = {
-					is_power_balance_side_active = {
-						id = ITA_power_balance
-						side = ITA_king_umberto_side
-					}
-				}
-				ITA_bop_high_increase_king_umberto_side_effect = yes
-			}
-			else_if = {
-				limit = {
-					is_power_balance_side_active = {
-						id = ITA_power_balance
-						side = ITA_democratic_side
-					}
-				}
-				ITA_bop_high_increase_democratic_side_effect = yes
-			}
-			else = {
-				ITA_bop_high_increase_effect = yes
-			}
-
-			if = {
-				limit = {
-					is_power_balance_side_active = {
-						id = ITA_power_balance
-						side = ITA_grand_council_side
-					}
-				}
-				hidden_effect = { #Remove all BoP modifiers from losing states
-					ITA_bop_remove_lost_core_modifier = yes
-				}
-				custom_effect_tooltip = ITA_crush_opposition_bop_tt
-			}
 		}
 	}
 
@@ -13386,46 +13134,6 @@ focus_tree = {
 				}
 				remove_ideas = ITA_shadow_of_mussolini
 			}
-
-			if = {
-				limit = {
-					is_power_balance_side_active = {
-						id = ITA_power_balance
-						side = ITA_king_side
-					}
-				}
-				ITA_bop_high_increase_king_side_effect = yes
-			}
-			else_if = {
-				limit = {
-					is_power_balance_side_active = {
-						id = ITA_power_balance
-						side = ITA_king_umberto_side
-					}
-				}
-				ITA_bop_high_increase_king_umberto_side_effect = yes
-			}
-			else_if = {
-				limit = {
-					is_power_balance_side_active = {
-						id = ITA_power_balance
-						side = ITA_democratic_side
-					}
-				}
-				ITA_bop_high_increase_democratic_side_effect = yes
-			}
-			else_if = {
-				limit = {
-					is_power_balance_side_active = {
-						id = ITA_power_balance
-						side = ITA_pope_side
-					}
-				}
-				ITA_bop_high_increase_pope_side_effect = yes
-			}
-			else = {
-				ITA_bop_high_increase_effect = yes
-			}
 		}
 	}
 
@@ -13481,27 +13189,6 @@ focus_tree = {
 			}
 			add_ideas = ITA_papal_support
 
-			#BoP
-			set_power_balance = {
-				id = ITA_power_balance
-				left_side = ITA_pope_side
-			}
-			#If BoP was towards Grand Council, set it to 0
-			if = {
-				limit = {
-					power_balance_value = {
-						id = ITA_power_balance
-						value < 0 # accepts <, > or =
-					}
-				}
-				set_power_balance = {
-					id = ITA_power_balance
-					set_value = 0
-				}
-			}
-			hidden_effect = { #Remove all BoP modifiers from losing states
-				ITA_bop_remove_lost_core_modifier = yes
-			}
 			unlock_decision_tooltip = ITA_bop_expand_the_lateran_treaty
 			if = {
 				limit = {
@@ -13545,10 +13232,6 @@ focus_tree = {
 				add_idea = ITA_papal_support_agents_no_lar
 			}
 		}
-
-
-			ITA_bop_very_low_increase_pope_side_effect = yes
-		}
 	}
 
 	focus = {
@@ -13581,9 +13264,6 @@ focus_tree = {
 					add_idea = ITA_papal_support_strengthened_no_lar
 				}
 			}
-			
-			ITA_bop_medium_increase_pope_side_effect = yes
-
 			unlock_decision_tooltip = ITA_bop_liturgical_reforms
 		}
 	}
@@ -14336,8 +14016,6 @@ focus_tree = {
 					add_idea = ITA_papal_state_no_lar
 				}
 			}
-			
-			ITA_bop_low_increase_pope_side_effect = yes
 		}
 	}
 
@@ -14662,15 +14340,8 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = ITA_papal_state_catholic_dominion_puppet_discount_tt
-
-			ITA_bop_medium_increase_pope_side_effect = yes
 		}
 	}
-
-
-
-
-
 
 ########  #######  ########  ######## ####  ######   ##    ##    ########   #######  ##       #### ######## ####  ######   ######     ########  ####  ######   ##     ## ######## 
 ##       ##     ## ##     ## ##        ##  ##    ##  ###   ##    ##     ## ##     ## ##        ##     ##     ##  ##    ## ##    ##    ##     ##  ##  ##    ##  ##     ##    ##    
@@ -14695,7 +14366,6 @@ focus_tree = {
 						option = HIDE
 					}
 				}
-				NOT = { has_completed_focus = ITA_defy_the_duce }
 			}
 		}
 
@@ -14733,7 +14403,6 @@ focus_tree = {
 		available = {
 			NOT = {
 				has_completed_focus = ITA_unite_the_opposition
-				has_completed_focus = ITA_defy_the_duce
 			}
 		}
 
@@ -18320,7 +17989,6 @@ focus_tree = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
 				}
-				has_completed_focus = ITA_defy_the_duce
 			}
 		}
 
@@ -18762,14 +18430,6 @@ focus_tree = {
 					}
 				}
 			}
-
-			#BoP
-			set_power_balance = {
-				id = ITA_power_balance
-				left_side = ITA_communism_side
-				right_side = ITA_democratic_side
-				set_value = -0.15
-			}
 		}
 	}
 
@@ -19021,8 +18681,6 @@ focus_tree = {
 			country_event = BBA_italy_communist_events.01
 
 			unlock_decision_tooltip = ITA_bop_unify_the_left
-
-			ITA_bop_medium_increase_communism_side_effect = yes
 		}
 	}
 
@@ -19084,8 +18742,6 @@ focus_tree = {
 			hidden_effect = {
 				country_event = { id = BBA_italy_communist_events.300 days = 25 random_days = 5 }
 			}
-
-			ITA_bop_low_increase_communism_side_effect = yes
 		}
 	}
 
@@ -19177,8 +18833,6 @@ focus_tree = {
 					}
 				}
 			}
-
-			ITA_bop_medium_increase_communism_side_effect = yes
 
 			#Clear stuff thanks
 			hidden_effect = {
@@ -19285,8 +18939,6 @@ focus_tree = {
 			ITA_norma_barbolini = {
 				promote_leader = yes
 			}
-
-			ITA_bop_very_low_increase_communism_side_effect = yes
 		}
 	}
 
@@ -19344,13 +18996,11 @@ focus_tree = {
 				limit = {
 					has_completed_focus = ITA_the_popular_front
 				}
-				ITA_bop_medium_increase_democratic_side_effect = yes #WARNING THIS VALUES NEED TO MATCH WITH THE ONE SHOWN IN TOOLTIP ITA_common_ground_bop_tt
 			}
 			else_if = {
 				limit = {
 					has_completed_focus = ITA_italian_socialism
 				}
-				ITA_bop_medium_increase_communism_side_effect = yes #WARNING THIS VALUES NEED TO MATCH WITH THE ONE SHOWN IN TOOLTIP ITA_common_ground_bop_tt
 			}
 			else = {
 				custom_effect_tooltip = ITA_common_ground_bop_tt
@@ -19662,8 +19312,6 @@ focus_tree = {
 					ITA_create_laura_garroni_operative = yes
 				}
 			}
-
-			ITA_bop_medium_increase_communism_side_effect = yes
 		}
 	}
 
@@ -19827,8 +19475,6 @@ focus_tree = {
 				}
 				add_war_support = ITA_democratic_neighbors
 			}
-
-			ITA_bop_low_increase_communism_side_effect = yes
 		}
 	}
 
@@ -20016,7 +19662,6 @@ focus_tree = {
 				}
 			}
 
-			ITA_bop_low_increase_communism_side_effect = yes
 		}
 	}
 
@@ -20087,8 +19732,6 @@ focus_tree = {
 					}
 				}
 			}
-
-			ITA_bop_low_increase_communism_side_effect = yes
 		}
 	}
 
@@ -20124,8 +19767,6 @@ focus_tree = {
 			add_research_slot = 1
 
 			custom_effect_tooltip = ITA_il_sol_dell_avvenire_pc_tt
-
-			ITA_bop_medium_increase_communism_side_effect = yes
 		}
 	}
 
@@ -20203,14 +19844,6 @@ focus_tree = {
 					}
 				}
 			}
-
-			#BoP
-			set_power_balance = {
-				id = ITA_power_balance
-				left_side = ITA_communism_side
-				right_side = ITA_democratic_side
-				set_value = 0.15
-			}
 		}
 	}
 
@@ -20284,8 +19917,6 @@ focus_tree = {
 					}
 				}
 			}
-
-			ITA_bop_very_low_increase_democratic_side_effect = yes
 		}
 	}
 
@@ -20388,8 +20019,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
-			ITA_bop_low_increase_democratic_side_effect = yes
 		}
 	}
 
@@ -20476,8 +20105,6 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = BBA_italy_democratic_events.01
-
-			ITA_bop_medium_increase_democratic_side_effect = yes
 		}
 	}
 
@@ -20510,8 +20137,6 @@ focus_tree = {
 
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ITA_enrico_fermi
-
-			ITA_bop_low_increase_democratic_side_effect = yes
 		}
 	}
 
@@ -20537,7 +20162,6 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.1
 			}
-			ITA_bop_medium_increase_democratic_side_effect = yes
 		}
 	}
 
@@ -20704,8 +20328,6 @@ focus_tree = {
 					custom_effect_tooltip = ITA_italia_libera_faction_tt
 				}
 			}
-
-			ITA_bop_low_increase_democratic_side_effect = yes
 		}
 	}
 
@@ -21179,7 +20801,6 @@ focus_tree = {
 					add_war_support = 0.1
 				}
 			}
-			ITA_bop_low_increase_democratic_side_effect = yes
 		}
 	}
 

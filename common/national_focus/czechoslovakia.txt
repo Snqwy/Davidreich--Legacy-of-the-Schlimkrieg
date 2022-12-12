@@ -67,7 +67,7 @@
 			factor = 200			
 		}
 
-		available = {
+		available = {always=no
 
 		}
 
@@ -757,7 +757,7 @@
 			factor = 90
 		}
 
-		available = {
+		available = {always=no
 
 		}
 
@@ -1268,7 +1268,7 @@
 			factor = 90
 		}
 
-		available = {
+		available = {always=no
 
 		}
 
@@ -2064,7 +2064,7 @@
 			factor = 90
 		}
 
-		available = {
+		available = {always=no
 
 		}
 
@@ -2847,7 +2847,7 @@
 			factor = 90
 		}
 
-		available = {
+		available = {always=no
 
 		}
 
@@ -3302,7 +3302,7 @@
 			factor = 90
 		}
 
-		available = {
+		available = {always=no
 
 		}
 
@@ -3635,9 +3635,7 @@
 		}
 
 		available = {
-			any_owned_state = {
-				is_coastal = yes
-			}
+			always=no
 		}
 
 		bypass = {

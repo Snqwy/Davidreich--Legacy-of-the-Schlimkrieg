@@ -1829,13 +1829,6 @@ country_event = {
 				remove_from_faction = AUS
 			}
 		}
-		if = {
-			limit = {
-				ITA = { #Italy gets an event to ask the UK and France to guarantee Austria too
-					country_event = { id = BBA_italy_interaction_events.24 hours = 1 }
-				}
-			}
-		}
 	}
 }
 

@@ -103,16 +103,10 @@ characters = {
 				original_tag = SOV
 			}
 			visible = {
-				has_completed_focus = SOV_beaten_but_not_defeated
-				NOT = {
-					has_completed_focus = SOV_the_third_rome
-				}
+				always=yes
 			}
 			available = {
-				has_completed_focus = SOV_the_hands_do
-				NOT = {
-					has_completed_focus = SOV_the_third_rome
-				}
+				always=yes
 			}
 			traits = {
 				the_masses_opium
@@ -1929,8 +1923,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			visible = {
-				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
+				always=yes
 			}
 		}
 	}
@@ -1953,8 +1946,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			visible = {
-				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
+				always=yes
 			}
 		}
 	}
@@ -1975,8 +1967,7 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 3
 			visible = {
-				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
+				always=yes
 			}
 		}
 	}
@@ -1997,8 +1988,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			visible = {
-				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
+				always=yes
 			}
 		}
 	}
@@ -2019,8 +2009,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 2
 			visible = {
-				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
+				always=yes
 			}
 		}
 	}
@@ -2041,8 +2030,7 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 1
 			visible = {
-				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
+				always=yes
 			}
 		}
 	}
@@ -3312,7 +3300,6 @@ characters = {
 			available = {
 				OR = {
 					has_completed_focus = SOV_patriarch_of_all_russia
-					has_completed_focus = SOV_the_declaration
 				}
 			}
 			traits = {
@@ -3341,10 +3328,10 @@ characters = {
 				original_tag = SOV
 			}
 			visible = {
-				has_completed_focus = SOV_beaten_but_not_defeated
+				always=yes
 			}
 			available = {
-				has_completed_focus = SOV_return_of_the_rocor
+				always=yes
 			}
 			traits = {
 				orthodox_rabblerouser
@@ -3373,10 +3360,10 @@ characters = {
 				original_tag = SOV
 			}
 			visible = {
-				has_completed_focus = SOV_beaten_but_not_defeated
+				always=yes
 			}
 			available = {
-				has_completed_focus = SOV_the_declaration
+				always=yes
 			}
 			traits = {
 				theocratic_diplomat
@@ -3405,10 +3392,10 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				has_completed_focus = SOV_the_declaration
+				always=yes
 			}
 			visible = {
-				has_completed_focus = SOV_beaten_but_not_defeated
+				always=yes
 			}
 			traits = {
 				driver_of_the_faithful
@@ -3495,7 +3482,6 @@ characters = {
 					custom_trigger_tooltip = {
 					 	tooltip = SOV_grigory_semyonov_man_tt
 					 	SOV_soviet_civil_war_not_started = yes 
-					 	NOT = { SOV = { has_completed_focus = SOV_approach_semyonov } }
 					}
 				}
 				
@@ -3541,9 +3527,6 @@ characters = {
 			allowed = {
 				original_tag = SOV
 			}
-			available = {
-				has_completed_focus = SOV_consolidate_power
-			}
 			traits = {
 				political_chameleon
 			}
@@ -3576,7 +3559,6 @@ characters = {
 				}
 			}
 			available = {
-				has_completed_focus = SOV_reconvene_the_zemsky_sobor
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag

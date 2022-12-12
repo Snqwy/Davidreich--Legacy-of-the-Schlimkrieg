@@ -72,7 +72,7 @@ focus_tree = {
 			factor = 4
 		}
 
-		available = {
+		available = {always=no
 
 		}
 
@@ -720,7 +720,7 @@ focus_tree = {
 			factor = 4
 		}
 
-		available = {
+		available = {always=no
 
 		}
 

@@ -80,7 +80,7 @@
 			}
 		}
 
-		available = {
+		available = {always=no
 		
 		}
 		
@@ -115,7 +115,7 @@
 			}
 		}
 
-		available = {
+		available = {always=no
 
 		}
 		
@@ -563,7 +563,7 @@
 		}
 
 		available = {
-			has_war = yes
+			always=no
 		}
 		
 		bypass = {
@@ -1568,8 +1568,7 @@
 		}
 
 		available = {
-			num_of_factories > 50
-			is_subject = no
+			always=no
 		}
 		
 		bypass = {
@@ -1910,7 +1909,7 @@
 			factor = 4
 		}
 
-		available = {
+		available = {always=no
 
 		}
 		
@@ -2359,8 +2358,7 @@
 		}
 
 		available = {
-			ENG = { has_government = ROOT }
-			is_in_tech_sharing_group = commonwealth_research
+			always=no
 		}
 		
 		bypass = {
@@ -2793,7 +2791,7 @@
 		}
 
 		available = {
-			NOT = { has_country_flag = britain_enforced_our_loyalty }
+			always=no
 		}
 		
 		bypass = {
@@ -3741,7 +3739,7 @@
 			factor = 3
 		}
 
-		available = {
+		available = {always=no
 
 		}
 		
@@ -4246,7 +4244,7 @@
 			factor = 9
 		}
 
-		available = {
+		available = {always=no
 
 		}
 		

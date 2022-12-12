@@ -980,9 +980,6 @@ focus_tree = {
 			EST = {
 				NOT = { has_completed_focus = EST_formalize_baltic_entente }
 			}
-			LIT = {
-				NOT = { has_completed_focus = LIT_formalize_baltic_entente }
-			}
 		}
 
 		bypass = {

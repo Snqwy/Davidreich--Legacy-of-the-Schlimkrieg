@@ -12183,7 +12183,6 @@ country_event = {
 	}
 }
 
-
 # Event for Russia: coronation of Tsar Vladimir I
 country_event = {
 	id = NSB_soviet_fascist_tsarist.14

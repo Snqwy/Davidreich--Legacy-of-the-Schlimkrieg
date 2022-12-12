@@ -73,7 +73,7 @@
 			factor = 1
 		}
 
-		available = {
+		available = {always=no
 
 		}
 		
@@ -622,7 +622,7 @@
 			factor = 1
 		}
 
-		available = {
+		available = {always=no
 
 		}
 		
@@ -1400,10 +1400,7 @@
 		}
 
 		available = {
-			any_state = {
-				is_coastal = yes
-				is_controlled_by = ROOT
-			}
+			always=no
 		}
 		
 		bypass = {
@@ -1733,7 +1730,7 @@
 			factor = 4
 		}
 
-		available = {
+		available = {always=no
 
 		}
 		
@@ -1764,7 +1761,7 @@
 			factor = 5
 		}
 
-		available = {
+		available = {always=no
 
 		}
 		
@@ -2265,11 +2262,8 @@
 			factor = 3
 		}
 
-		available = {
-			OR = {
-				threat > 0.20
-				has_war = yes
-			}
+		available = {always=no
+		
 		}
 		
 		bypass = {
@@ -2955,14 +2949,7 @@
 		}
 
 		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
-			ENG = { has_war = no }
+			always=no
 		}
 		
 		bypass = {
@@ -3450,7 +3437,7 @@
 		}
 
 		available = {
-			NOT = { has_country_flag = britain_enforced_our_loyalty }
+			always=no
 		}
 		
 		bypass = {

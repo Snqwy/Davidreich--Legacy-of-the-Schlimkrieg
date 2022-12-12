@@ -60,7 +60,7 @@ shared_focus = {
 		factor = 1
 	}
 
-	available = {
+	available = {always=no
 
 	}
 
@@ -2437,7 +2437,7 @@ shared_focus = {
 		}
 	}
 
-	available = {
+	available = {always=no
 		
 	}
 

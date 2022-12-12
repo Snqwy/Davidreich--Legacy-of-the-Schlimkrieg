@@ -29,7 +29,7 @@
 			factor = 1
 		}
 		available = {
-			has_country_leader = { ruling_only = yes character = FRA_charles_de_gaulle}
+			always=no
 		}
 		
 		bypass = {
@@ -606,15 +606,7 @@
 			factor = 1
 		}
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				has_legitimacy > 40
-			}
-			else = {
-				num_of_factories > 14
-			}
+			always=no
 		}
 		
 		bypass = {

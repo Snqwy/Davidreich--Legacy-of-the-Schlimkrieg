@@ -36,8 +36,8 @@ focus_tree = {
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
+
+		available={always=no}
 
 		completion_reward = {
 			army_experience = 5
@@ -279,8 +279,7 @@ focus_tree = {
 		
 		search_filters = {   FOCUS_FILTER_RESEARCH }
 
-		available_if_capitulated = yes
-
+		available={always=no}
 
 		complete_tooltip = {
 			air_experience = 25
@@ -586,14 +585,7 @@ focus_tree = {
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
-		available_if_capitulated = yes
-
-
-		available = {
-			any_state = {
-				is_coastal = yes
-				is_controlled_by = ROOT
-			}
+		available = {always=no}
 		}
 
 		complete_tooltip = {
@@ -603,7 +595,6 @@ focus_tree = {
 				type = dockyard
 				level = 3
 				instant_build = yes
-			}
 		}
 		
 		completion_reward = {
@@ -949,7 +940,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		
-		available_if_capitulated = yes
+		available={always=no}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1733,7 +1724,7 @@ focus_tree = {
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	
-		available_if_capitulated = yes
+		available={always=no}
 
 		completion_reward = {
 			add_political_power = 120

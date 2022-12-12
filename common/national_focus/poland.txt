@@ -4827,13 +4827,6 @@ focus_tree = {
 			784 = {
 				owns_or_subject_of = yes
 			}
-			GER = {
-				OR = {
-					has_completed_focus = GER_anschluss
-					has_completed_focus = GER_oppose_hitler
-					exists = no
-				}
-			}
 			has_army_manpower = { size > 399999 }
 		}
 
@@ -9607,17 +9600,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			hidden_effect = {
-				if = {
-					limit = {
-						LIT = { has_completed_focus = LIT_support_monarchism_in_POL }
-					}
-					LIT = { set_country_flag = POL_banned_monarchy_flag }
-					set_country_flag = POL_banned_monarchy_flag
-					hidden_effect = {
-						if = {
-							limit = { is_ai = yes }
-							save_event_target_as = POL_or_LIT_target
-							LIT = {country_event = LIT_monarchy_events.1 }
+				LIT = { set_country_flag = POL_banned_monarchy_flag }
+				set_country_flag = POL_banned_monarchy_flag
+				hidden_effect = {
+					if = {
+						limit = { is_ai = yes }
+						save_event_target_as = POL_or_LIT_target
+						LIT = {country_event = LIT_monarchy_events.1 }
 						}
 						else = {
 							LIT = { save_event_target_as = POL_or_LIT_target }
@@ -9625,14 +9614,7 @@ focus_tree = {
 						}
 					}
 				}
-				else = {
-					LIT = {
-						country_event = NSB_poland_monarchist_events.1
-					}
-					save_global_event_target_as = pol_monarchy_claimer_target
-				}
 			}
-			custom_effect_tooltip = POL_support_monarchy_in_LIT_tt
 		}
 	}
 

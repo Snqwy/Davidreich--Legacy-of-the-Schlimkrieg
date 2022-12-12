@@ -568,11 +568,9 @@ SOV_paranoia_system = {
 			}
 			modifier = {
 				factor = 10
-				has_idea = SOV_purged_junior_navy_officers_2
 			}
 			modifier = {
 				factor = 50
-				has_idea = SOV_purged_junior_navy_officers_3
 			}
 		}
 
@@ -585,11 +583,6 @@ SOV_paranoia_system = {
 		}
 
 		visible = {
-			OR = {
-				has_idea = SOV_purged_junior_navy_officers_1
-				has_idea = SOV_purged_junior_navy_officers_2
-				has_idea = SOV_purged_junior_navy_officers_3
-			}
 			SOV_is_stalinist = yes
 		}
 
@@ -610,36 +603,6 @@ SOV_paranoia_system = {
 				add_command_power = -50
 				add_political_power = -50
 				navy_experience = -50
-			}
-		}
-
-		remove_effect = {
-			if = {
-				limit = {
-					has_idea = SOV_purged_junior_navy_officers_3
-				}
-				swap_ideas = {
-					remove_idea = SOV_purged_junior_navy_officers_3
-					add_idea = SOV_purged_junior_navy_officers_2
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = SOV_purged_junior_navy_officers_2
-				}
-				swap_ideas = {
-					remove_idea = SOV_purged_junior_navy_officers_2
-					add_idea = SOV_purged_junior_navy_officers_1
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = SOV_purged_junior_navy_officers_1
-				}
-				remove_ideas = SOV_purged_junior_navy_officers_1
-			}
-			else = {
-				#log = "I CANNOT REMOVE A NS THAT DOESN'T EXIST!"
 			}
 		}
 	}
@@ -2773,7 +2736,6 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_anti_capitalist_policies
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 		}
@@ -4891,7 +4853,6 @@ SOV_diplomacy_baltic_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_respect_baltic_self_determination
 			is_subject = no
 		}
 
@@ -4960,7 +4921,6 @@ SOV_diplomacy_baltic_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_respect_baltic_self_determination
 			is_subject = no
 		}
 
@@ -5031,7 +4991,6 @@ SOV_diplomacy_baltic_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_claims_in_baltic
 			is_subject = no
 		}
 
@@ -5126,7 +5085,6 @@ SOV_diplomacy_baltic_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_baltic_security
 			is_subject = no
 		}
 
@@ -5212,7 +5170,6 @@ SOV_diplomacy_nordic_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_control_scandinavia
 			is_subject = no
 		}
 
@@ -5281,7 +5238,6 @@ SOV_diplomacy_nordic_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_control_scandinavia
 			is_subject = no
 		}
 
@@ -5360,7 +5316,6 @@ SOV_diplomacy_nordic_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_control_scandinavia
 			is_subject = no
 		}
 
@@ -5446,7 +5401,6 @@ SOV_diplomacy_balkan_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_seek_balkan_cooperation
 			is_subject = no
 		}
 
@@ -5514,10 +5468,6 @@ SOV_diplomacy_balkan_decision_category = {
 			SOV_basic_promote_rallies_triggers = yes
 		}
 
-		target_root_trigger = {
-			has_completed_focus = SOV_seek_balkan_cooperation
-		}
-
 		allowed = {
 			original_tag = SOV
 		}
@@ -5582,7 +5532,6 @@ SOV_diplomacy_balkan_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_demand_balkan_submission
 			is_Subject = no
 		}
 
@@ -5653,7 +5602,6 @@ SOV_diplomacy_balkan_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_seek_balkan_cooperation
 			is_subject = no
 		}
 
@@ -5739,7 +5687,6 @@ SOV_diplomacy_middle_east_decision_category = {
 			OR = {
 				AND = { #AFG
 					FROM = { tag = AFG }
-					has_completed_focus = SOV_support_afghan_ideology
 				}
 				AND = { #SAU
 					FROM = { tag = SAU }
@@ -5749,10 +5696,6 @@ SOV_diplomacy_middle_east_decision_category = {
 		}
 
 		target_root_trigger = {
-			OR = {
-				has_completed_focus = SOV_support_afghan_ideology
-				has_completed_focus = SOV_the_khakimov_proposal
-			}
 			is_subject = no
 		}
 
@@ -5821,7 +5764,6 @@ SOV_diplomacy_middle_east_decision_category = {
 			OR = {
 				AND = { #AFG
 					FROM = { tag = AFG }
-					has_completed_focus = SOV_support_afghan_ideology
 				}
 				AND = { #SAU
 					FROM = { tag = SAU }
@@ -5831,10 +5773,6 @@ SOV_diplomacy_middle_east_decision_category = {
 		}
 
 		target_root_trigger = {
-			OR = {
-				has_completed_focus = SOV_support_afghan_ideology
-				has_completed_focus = SOV_the_khakimov_proposal
-			}
 			is_subject = no
 		}
 
@@ -5902,7 +5840,6 @@ SOV_diplomacy_middle_east_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_preemptive_invasion_of_iran
 			is_Subject = no
 		}
 
@@ -5973,7 +5910,6 @@ SOV_diplomacy_middle_east_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_middle_east_diplomacy
 			is_subject = no
 		}
 
@@ -6285,11 +6221,9 @@ SOV_diplomacy_asia_decision_category = {
 			}
 			OR = {
 				AND = {
-					has_completed_focus = SOV_two_red_flags
 					FROM = { tag = PRC }
 				}
 				AND = {
-					has_completed_focus = SOV_support_the_kuomintang
 					FROM = { tag = CHI }
 				}
 			}
@@ -6350,7 +6284,6 @@ SOV_diplomacy_asia_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_recover_the_kuril_islands
 			country_exists = JAP
 			has_war_with = JAP
 		}
@@ -6413,7 +6346,6 @@ SOV_diplomacy_asia_decision_category = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_recover_the_kuril_islands
 			country_exists = JAP
 			has_war_with = JAP
 		}
@@ -6487,7 +6419,6 @@ SOV_diplomacy_asia_decision_category = {
 		}
 
 		visible = {
-			has_completed_focus = SOV_the_gobi_gambit
 			SIK = { #Relevant states under Sinkiang control
 				SOV_is_valid_subject = yes
 				NOT = { has_war_with = ROOT }
@@ -6646,7 +6577,6 @@ SOV_diplomacy_asia_decision_category = {
 		}
 
 		visible = {
-			has_completed_focus = SOV_the_gobi_gambit
 			SIK = { #Relevant states under Sinkiang control
 				SOV_is_valid_subject = yes
 				NOT = { has_war_with = ROOT }
@@ -6813,7 +6743,6 @@ SOV_diplomacy_asia_decision_category = {
 		}
 
 		visible = {
-			has_completed_focus = SOV_the_gobi_gambit
 			SIK = { #Relevant states under Sinkiang control
 				SOV_is_valid_subject = yes
 				NOT = { has_war_with = ROOT }
@@ -7030,7 +6959,6 @@ SOV_diplomacy_asia_decision_category = {
 		}
 
 		visible = {
-			has_completed_focus = SOV_the_gobi_gambit
 			SIK = { #Relevant states under Sinkiang control
 				SOV_is_valid_subject = yes
 				NOT = { has_war_with = ROOT }
@@ -7279,7 +7207,6 @@ SOV_diplomacy_asia_decision_category = {
 		}
 
 		visible = {
-			has_completed_focus = SOV_the_gobi_gambit
 			country_exists = SIK
 			SIK = {
 				is_subject = no
@@ -7810,7 +7737,6 @@ prospect_for_resources = {
 		}
 
 		available = {
-			has_completed_focus = SOV_the_gobi_gambit
 			has_full_control_of_state = 617 #URUMQI
 			has_full_control_of_state = 619 #YARKAND
 			num_of_civilian_factories_available_for_projects > 0
@@ -7898,7 +7824,6 @@ prospect_for_resources = {
 		}
 
 		available = {
-			has_completed_focus = SOV_the_gobi_gambit
 			has_full_control_of_state = 617 #URUMQI
 			has_full_control_of_state = 618 #DZUNGARIA
 			num_of_civilian_factories_available_for_projects > 1
@@ -7989,7 +7914,6 @@ prospect_for_resources = {
 		}
 
 		available = {
-			has_completed_focus = SOV_the_gobi_gambit
 			has_full_control_of_state = 604 #QINGHAI
 			has_full_control_of_state = 755 #HAIXI
 			has_full_control_of_state = 756 #JIUQUAN
@@ -11058,7 +10982,6 @@ SOV_comecon_dec_cat = {
 		cancel_effect = {
 			hidden_effect = {
 				clr_country_flag = SOV_comecon_industrialization_program_ongoing_flag
-				}
 			}
 		}
 
@@ -13108,12 +13031,6 @@ SOV_soviet_civil_war_dec_cat = {
 		}
 		visible = {
 			SOV_soviet_civil_war_not_started = yes
-			hidden_trigger = {
-				OR = {
-					has_completed_focus = SOV_divert_attention_towards_military
-					has_completed_focus = SOV_covert_operations
-				}
-			}
 		}
 		cost = SOV_army_framejob_decision_cost
 		fire_only_once = no
@@ -13189,12 +13106,6 @@ SOV_soviet_civil_war_dec_cat = {
 		}
 		visible = {
 			SOV_soviet_civil_war_not_started = yes
-			hidden_trigger = {
-				OR = {
-					has_completed_focus = SOV_divert_attention_towards_military
-					has_completed_focus = SOV_covert_operations
-				}
-			}
 		}
 		cost = SOV_navy_framejob_decision_cost
 		fire_only_once = no
@@ -13744,7 +13655,6 @@ SOV_soviet_civil_war_dec_cat = {
 		}
 
 		visible = {
-			hidden_trigger = { has_completed_focus = SOV_embrace_the_black_hundreds }
 			NOT = { has_global_flag = SOV_soviet_civil_war }
 		}
 		cancel_if_not_visible = yes
@@ -13840,7 +13750,6 @@ SOV_soviet_civil_war_dec_cat = {
 					has_completed_focus = SOV_concessions_to_foreign_powers # Right Opposition
 					AND = {
 						SOV_is_exiles = yes
-						has_completed_focus = SOV_unification_of_the_exiles
 					}
 				}
 			}
@@ -13927,7 +13836,6 @@ SOV_soviet_civil_war_dec_cat = {
 					has_completed_focus = SOV_concessions_to_foreign_powers # Right Opposition
 					AND = {
 						SOV_is_exiles = yes
-						has_completed_focus = SOV_unification_of_the_exiles
 					}
 				}
 			}
@@ -14002,7 +13910,6 @@ SOV_soviet_civil_war_dec_cat = {
 				OR = {
 					has_completed_focus = SOV_concessions_to_foreign_powers
 					AND = {
-						has_completed_focus = SOV_unification_of_the_exiles
 						SOV_has_selected_hq = yes
 					}
 				}
@@ -14161,7 +14068,6 @@ SOV_soviet_civil_war_dec_cat = {
 		state_target = yes
 		target_root_trigger = {
 			SOV_is_exiles = yes
-			has_completed_focus = SOV_sabotage_behind_enemy_lines
 		}
 
 		target_trigger = {
@@ -14246,7 +14152,6 @@ SOV_soviet_civil_war_dec_cat = {
 					region = 155 # Manchuria
 				}
 			}
-			has_completed_focus = SOV_approach_semyonov
 		}
 		available = {
 			NOT = { has_country_flag = recruiting_cavalry_flag }
@@ -14327,7 +14232,6 @@ SOV_soviet_civil_war_dec_cat = {
 				FROM = { has_state_flag = SOV_exiles_state }
 				FROM = { is_owned_by = MAN}
 			}
-			has_completed_focus = SOV_approach_semyonov
 			NOT = { has_global_flag = SOV_soviet_civil_war }
 		}
 		on_map_mode = map_only
@@ -14996,7 +14900,6 @@ SOV_soviet_civil_war_dec_cat = {
 				limit = {
 					SOV_is_exiles = yes
 				}
-				has_completed_focus = SOV_embrace_the_black_hundreds
 			}
 		}
 
@@ -15108,7 +15011,6 @@ SOV_soviet_civil_war_dec_cat = {
 				limit = {
 					SOV_is_exiles = yes
 				}
-				has_completed_focus = SOV_embrace_the_black_hundreds
 			}
 		}
 
@@ -17341,11 +17243,7 @@ political_actions = {
 			factor = 0
 		}
 	}
-
 }
-
-
-
 
 SOV_panslavic_nationalism = {
 
@@ -17362,10 +17260,6 @@ SOV_panslavic_nationalism = {
 			has_full_control_of_state = 74
 			has_full_control_of_state = 75
 			has_full_control_of_state = 664
-		}
-
-		visible = {
-			has_completed_focus = SOV_panslavic_nationalism
 		}
 
 		cost = 150
@@ -17401,10 +17295,6 @@ SOV_panslavic_nationalism = {
 			has_full_control_of_state = 211
 			has_full_control_of_state = 212
 			has_full_control_of_state = 801
-		}
-
-		visible = {
-			has_completed_focus = SOV_panslavic_nationalism
 		}
 
 		cost = 75
@@ -17448,10 +17338,6 @@ SOV_panslavic_nationalism = {
 			has_full_control_of_state = 784
 			has_full_control_of_state = 93
 			has_full_control_of_state = 87
-		}
-
-		visible = {
-			has_completed_focus = SOV_panslavic_nationalism
 		}
 
 		cost = 150
@@ -17508,10 +17394,6 @@ SOV_panslavic_nationalism = {
 			has_full_control_of_state = 736
 			has_full_control_of_state = 852
 			has_full_control_of_state = 163
-		}
-
-		visible = {
-			has_completed_focus = SOV_panslavic_nationalism
 		}
 
 		cost = 100
@@ -17599,10 +17481,6 @@ SOV_panslavic_nationalism = {
 			has_full_control_of_state = 803
 			has_full_control_of_state = 45
 			has_full_control_of_state = 764
-		}
-
-		visible = {
-			has_completed_focus = SOV_panslavic_nationalism
 		}
 
 		cost = 25

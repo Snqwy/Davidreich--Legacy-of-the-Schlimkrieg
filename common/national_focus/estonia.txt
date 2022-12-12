@@ -77,7 +77,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
+		available = {always=no
 		}
 
 		bypass = {
@@ -505,9 +505,6 @@ focus_tree = {
 			}
 			LAT = {
 				NOT = { has_completed_focus = LAT_formalize_baltic_entente }
-			}
-			LIT = {
-				NOT = { has_completed_focus = LIT_formalize_baltic_entente }
 			}
 		}
 
@@ -1126,7 +1123,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
+		available = {always=no
 		}
 
 		bypass = {

@@ -538,7 +538,7 @@
 			factor = 1
 		}
 		completion_reward = {
-			army_experience=5 swap_ideas={remove_idea=idea_der_davemacht_dr add_idea=idea_der_davemacht_3_dr} #add research bonus
+			army_experience=5 add_tech_bonus={name=gun_bonus_dr bonus=0.5 uses=3 technology=infantry_tech}swap_ideas={remove_idea=idea_der_davemacht_dr add_idea=idea_der_davemacht_3_dr}
 		}
 	}
 	
@@ -566,6 +566,7 @@
 		y = 5
 		cost = 6
 		available_if_capitulated = yes
+		search_filters={FOCUS_FILTER_MANPOWER} 
 		prerequisite = { focus = GER_indoctrinate_the_masses_dr }
 		ai_will_do = {
 			factor = 1
@@ -583,10 +584,10 @@
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_rekindle_the_alliance_dr }
 		ai_will_do = {
-			factor = 1
+			factor = 1 
 		}
+		completion_reward={add_tech_bonus={name=old_doctrine_bonus_dr bonus=0.5 uses=2 cat_grand_battle_plan}}
 	}
-
 	#Focus for Develop our Dockyards
 	focus = {
 		id = GER_develop_our_dockyards_dr
@@ -2165,4 +2166,4 @@
 		}
 	}
 
-	focus={id=GER_all_for_the_cause_dr icon=GFX_ETH_freedom_at_gunpoint x=42 y=13 cost=5 available_if_capitulated=yes prerequisite={focus=GER_the_war_commences_dr}ai_will_do={factor=1}completion_reward={add_timed_idea={idea=idea_all_for_the_cause_dr days=180}}}}
+	focus={id=GER_all_for_the_cause_dr icon=GFX_ETH_freedom_at_gunpoint x=42 y=13 cost=5 available_if_capitulated=yes prerequisite={focus=GER_the_war_commences_dr}ai_will_do={factor=1}completion_reward={add_timed_idea={idea=idea_all_for_the_cause_dr days=200}}}}

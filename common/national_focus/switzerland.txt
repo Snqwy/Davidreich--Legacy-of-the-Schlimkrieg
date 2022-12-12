@@ -447,13 +447,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_fully_cantons  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -531,12 +524,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_fully_cantons  
-			}
-		}
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		bypass = {
 
@@ -588,13 +575,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons  
-			}
-		}
-
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		
 		bypass = {
@@ -628,12 +608,6 @@
 			factor = 1
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons  
-			}
-		}
 		
 		bypass = {
 
@@ -672,13 +646,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -724,13 +691,6 @@
 			factor = 1
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -778,14 +738,7 @@
 				SWI_someone_is_about_to_be_angry = yes 
 			}
 		}
-	
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
-		}
-	
+
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_SWI_MILITARY_READINESS} 
 
 		completion_reward = {
@@ -813,14 +766,7 @@
 				SWI_someone_is_about_to_be_angry = yes 
 			}
 		}
-	
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}		
-		}
-	
+
 		search_filters = { FOCUS_FILTER_INDUSTRY } 
 
 		completion_reward = {
@@ -898,10 +844,6 @@
 		}
 	
 		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
 			NOT = { has_country_flag = SWI_militias_turned_into_regulars }			
 		}
 	
@@ -937,14 +879,7 @@
 				SWI_someone_is_about_to_be_angry = yes 
 			}
 		}
-	
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}		
-		}
-	
+
 		search_filters = {  } 
 
 		completion_reward = {
@@ -981,13 +916,6 @@
 			}
 		}
 	
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}		
-		}
-	
 		search_filters = { FOCUS_FILTER_INDUSTRY } 
 
 		completion_reward = {
@@ -1020,14 +948,7 @@
 				SWI_someone_is_about_to_be_angry = yes 
 			}
 		}
-	
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}		
-		}
-	
+
 		search_filters = { FOCUS_FILTER_INDUSTRY } 
 
 		completion_reward = {
@@ -1061,10 +982,6 @@
 	
 		available = {
 			has_tech = interwar_antiair	
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
 		}
 	
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -1124,14 +1041,7 @@
 				SWI_someone_is_about_to_be_angry = yes 
 			}
 		}
-	
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}			
-		}
-	
+
 		search_filters = {  } 
 
 		completion_reward = {
@@ -1161,13 +1071,6 @@
 				factor = 0.2
 				SWI_someone_is_about_to_be_angry = yes 
 			}
-		}
-	
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}		
 		}
 	
 		search_filters = {  } 
@@ -1201,10 +1104,6 @@
 		}
 
 		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
 			NOT = { has_country_flag = SWI_militias_turned_into_regulars }
 		}
 		
@@ -1248,13 +1147,6 @@
 			}
 		}
 
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -1290,13 +1182,6 @@
 			}
 		}
 
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -1359,10 +1244,6 @@
 		}
 
 		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
 			NOT = { has_country_flag = SWI_militias_turned_into_regulars }
 		}
 		
@@ -1402,13 +1283,6 @@
 			}
 		}
 
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -1445,10 +1319,6 @@
 		}
 
 		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
 			any_other_country = {
 				SWI_is_country_to_balance = yes
 				has_war = yes 
@@ -1490,13 +1360,6 @@
 			}
 		}
 
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -1552,14 +1415,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range = SWI_centralization_bop_fully_cantons
-			}
-			NOT = {	has_country_flag = SWI_militias_turned_into_regulars }	
-		}
-		
 		bypass = {
 
 		}
@@ -1592,14 +1447,6 @@
 				factor = 0.2
 				SWI_someone_is_about_to_be_angry = yes 
 			}
-		}
-
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range = SWI_centralization_bop_fully_cantons
-			}
-			has_tech = motorised_infantry
 		}
 		
 		bypass = {
@@ -1664,14 +1511,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range = SWI_centralization_bop_fully_cantons
-			}
-			NOT = { has_country_flag = SWI_militias_turned_into_regulars }
-		}
-		
 		bypass = {
 
 		}
@@ -1731,14 +1570,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range = SWI_centralization_bop_fully_cantons
-			}
-			NOT = { has_country_flag = SWI_militias_turned_into_regulars }
-		}
-		
 		bypass = {
 
 		}
@@ -1775,10 +1606,6 @@
 		}
 
 		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range = SWI_centralization_bop_fully_cantons
-			}
 			NOT = { has_country_flag = SWI_militias_turned_into_regulars }
 		}
 		
@@ -1821,13 +1648,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range = SWI_centralization_bop_fully_cantons
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -1941,13 +1761,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range = SWI_centralization_bop_fully_cantons
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -2004,13 +1817,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range = SWI_centralization_bop_fully_cantons
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -2095,13 +1901,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range = SWI_centralization_bop_fully_cantons
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -2138,13 +1937,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_fully_cantons  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -2216,13 +2008,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_fully_cantons  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -2288,13 +2073,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_fully_cantons  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -2349,13 +2127,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -2419,13 +2190,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -2487,10 +2251,6 @@
 		}
 
 		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_fully_cantons  
-			}
 			GER = {
 				has_opinion = {
 					target = ROOT 
@@ -2533,13 +2293,6 @@
 			factor = 1
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_fully_cantons  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -2592,14 +2345,7 @@
 		ai_will_do = {
 			factor = 10
 		}
-	
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range > SWI_centralization_bop_very_council
-			}			
-		}
-	
+
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER } 
 
 		completion_reward = {
@@ -2651,13 +2397,6 @@
 			factor = 1
 		}
 
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -2720,13 +2459,6 @@
 			factor = 1
 		}
 
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -2758,10 +2490,6 @@
 		}
 
 		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
 			has_tech = tech_field_hospital
 		}
 		
@@ -2813,13 +2541,6 @@
 			}
 		}
 
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -2844,13 +2565,6 @@
 			modifier = {
 				factor = 0.2 
 				SWI_someone_is_about_to_be_angry = yes 
-			}
-		}
-
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
 			}
 		}
 		
@@ -2890,13 +2604,6 @@
 			factor = 1
 		}
 
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -2928,13 +2635,6 @@
 			factor = 1
 		}
 
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -2977,10 +2677,6 @@
 		}
 
 		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
 			NOT = { has_country_flag = SWI_militias_turned_into_regulars }
 		}
 		
@@ -3026,10 +2722,6 @@
 		available = {
 			has_tech = radio_detection
 			has_tech = interwar_antiair
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
-			}
 			NOT = { has_country_flag = SWI_militias_turned_into_regulars }
 		}
 		
@@ -3102,13 +2794,6 @@
 			modifier = {
 				factor = 0.2 
 				SWI_someone_is_about_to_be_angry = yes 
-			}
-		}
-
-		available = {
-			power_balance_value = {
-				id = SWI_centralization_bop
-				value > 0
 			}
 		}
 		
@@ -3212,14 +2897,6 @@
 			factor = 1
 		}
 
-		available = {
-			democratic > 0.70
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_fully_cantons
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -3333,13 +3010,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range > SWI_centralization_bop_balanced
-			}	
-		}
-		
 		bypass = {
 
 		}
@@ -3424,10 +3094,6 @@
 		}
 
 		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range > SWI_centralization_bop_balanced
-			}	
 			AUS = {
 				exists = no 
 			}
@@ -3486,13 +3152,6 @@
 			factor = 1
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range > SWI_centralization_bop_balanced
-			}	
-		}
-		
 		bypass = {
 
 		}
@@ -3527,13 +3186,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range > SWI_centralization_bop_balanced
-			}	
-		}
-		
 		bypass = {
 
 		}
@@ -3571,13 +3223,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced
-			}	
-		}
-		
 		bypass = {
 
 		}
@@ -3617,10 +3262,6 @@
 		}
 
 		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced
-			}
 			any_other_country = {  
 				capital_scope = {
 					is_on_continent = europe
@@ -3666,10 +3307,6 @@
 
 		available = {
 			democratic > 0.70
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced
-			}
 		}
 		
 		bypass = {
@@ -3730,11 +3367,7 @@
 		}
 	
 		available = {
-			democratic > 0.70
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced
-			}			
+			democratic > 0.70		
 		}
 	
 		search_filters = {  } 
@@ -3791,10 +3424,6 @@
 
 		available = {
 			democratic > 0.70
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced
-			}
 			USA = {
 				exists = yes 
 				NOT = { has_government = fascism }
@@ -3860,10 +3489,6 @@
 
 		available = {
 			fascism < 0.30
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced
-			}
 		}
 		
 		bypass = {
@@ -3903,11 +3528,7 @@
 		}
 
 		available = {
-			democratic > 0.70
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council
-			}			
+			democratic > 0.70		
 			FRA = {
 				exists = yes 
 				has_capitulated = no
@@ -4055,11 +3676,7 @@
 		}
 
 		available = {
-			fascism < 0.30
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced
-			}			
+			fascism < 0.30		
 			any_other_country = {
 				has_government = democratic 
 				is_faction_leader = yes 
@@ -4161,11 +3778,7 @@
 		}
 
 		available = {
-			democratic > 0.75		
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}			
+			democratic > 0.75				
 			has_government = democratic 
 			has_intelligence_agency = yes
 			any_other_country = {
@@ -4205,11 +3818,7 @@
 		}
 
 		available = {
-				democratic > 0.75
-				is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}			
+			democratic > 0.75		
 			has_government = democratic 
 			has_intelligence_agency = yes
 			any_other_country = {
@@ -4260,10 +3869,6 @@
 
 		available = {
 			democratic > 0.75
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}
 			has_government = democratic 
 			has_intelligence_agency = yes
 			any_other_country = {
@@ -4316,10 +3921,6 @@
 			}
 			is_in_faction = no 
 			has_war = no
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}
 			any_other_country = {
 				is_possible_secret_ally = yes 
 			}
@@ -4384,10 +3985,6 @@
 
 		available = {
 			democratic > 0.75
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}
 		}
 		
 		bypass = {
@@ -4432,10 +4029,6 @@
 
 		available = {
 			democratic > 0.75
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}
 		}
 		
 		bypass = {
@@ -4468,10 +4061,6 @@
 
 		available = {
 			democratic > 0.75
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}
 		}
 		
 		bypass = {
@@ -4508,10 +4097,6 @@
 
 		available = {
 			democratic > 0.70
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}
 		}
 		
 		bypass = {
@@ -4575,10 +4160,6 @@
 
 		available = {
 			democratic > 0.70
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}
 		}
 		
 		bypass = {
@@ -4660,10 +4241,6 @@
 
 		available = {
 			democratic > 0.70
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}
 		}
 		
 		bypass = {
@@ -4701,10 +4278,6 @@
 
 		available = {
 			democratic > 0.70
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}
 		}
 		
 		bypass = {
@@ -4755,10 +4328,6 @@
 
 		available = {
 			democratic > 0.70
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}
 		}
 		
 		bypass = {
@@ -4804,10 +4373,6 @@
 
 		available = {
 			democratic > 0.70
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}
 		}
 		
 		bypass = {
@@ -4852,10 +4417,6 @@
 
 		available = {
 			democratic > 0.70
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced
-			}
 		}
 		
 		bypass = {
@@ -5024,10 +4585,6 @@
 		available = {
 			democratic < 0.90
 			fascism < 0.20
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}
 		}	
 
 		bypass = {
@@ -5074,10 +4631,6 @@
 			democratic < 0.80
 			fascism < 0.20
 			AUS = {	exists = yes }
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced
-			}
 		}
 		
 		bypass = {
@@ -5115,7 +4668,6 @@
 					GER = {
 						exists = yes 
 						has_government = fascism
-						NOT = { has_completed_focus = GER_oppose_hitler }
 					}
 				}
 				GER = { 
@@ -5150,10 +4702,6 @@
 		available = {
 			democratic < 0.75
 			fascism < 0.20
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council
-			}
 			owns_state = 848
 		}
 		
@@ -5706,11 +5254,6 @@
 		available = {
 			democratic < 0.70
 			fascism < 0.15		
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council
-			}
-
 		}
 		
 		bypass = {
@@ -5744,10 +5287,6 @@
 		available = {
 			democratic < 0.65
 			fascism < 0.10			
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council
-			}
 		}
 		
 		bypass = {
@@ -5982,10 +5521,6 @@
 		available = {
 			democratic < 0.80
 			fascism < 0.20
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council
-			}
 		}
 		
 		bypass = {
@@ -6028,10 +5563,6 @@
 		available = {
 			democratic < 0.80
 			fascism < 0.20
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council
-			}
 		}
 		
 		bypass = {
@@ -6065,10 +5596,6 @@
 		available = {
 			democratic < 0.80
 			fascism < 0.20
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council
-			}
 		}
 		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		bypass = {
@@ -6123,10 +5650,6 @@
 		available = {
 			democratic < 0.80
 			fascism < 0.20
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council
-			}
 		}
 		
 		bypass = {
@@ -6181,10 +5704,6 @@
 		available = {
 			democratic < 0.80
 			fascism < 0.20
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council
-			}
 		}
 		
 		bypass = {
@@ -6238,10 +5757,6 @@
 		available = {
 			democratic < 0.80
 			fascism < 0.20
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council
-			}
 		}
 		
 		bypass = {
@@ -6689,13 +6204,6 @@
 				SWI_someone_is_about_to_be_angry = yes 
 			}
 		}
-
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_fully_cantons  
-			}
-		}
 		
 		bypass = {
 
@@ -6733,13 +6241,6 @@
 			modifier = {
 				factor = 0.2 
 				SWI_someone_is_about_to_be_angry = yes 
-			}
-		}
-
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_fully_cantons
 			}
 		}
 		
@@ -6783,10 +6284,6 @@
 		}
 
 		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_fully_cantons
-			}
 			NOT = {
 				has_war_with = var:SWI_biggest_fascist
 			
@@ -6929,13 +6426,6 @@
 			}
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_fully_cantons
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -7144,15 +6634,7 @@
 				}
 			}
 		}
-	
-		available = {
-			fascism > 0.4	
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced
-			}		
-		}
-	
+
 		search_filters = {  } 
 
 		completion_reward = {
@@ -7196,10 +6678,6 @@ focus = {
 
 		available = {
 			fascism > 0.15
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}
 		}
 		
 		bypass = {
@@ -7260,10 +6738,6 @@ focus = {
 
 		available = {
 			fascism > 0.15
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}
 		}
 		
 		bypass = {
@@ -7322,10 +6796,6 @@ focus = {
 				has_government = fascism
 			}
 			fascism > 0.2
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_cantons
-			}
 		}
 		
 		bypass = {
@@ -7412,10 +6882,6 @@ focus = {
 
 		available = {
 			fascism > 0.3
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced
-			}
 		}
 		
 		bypass = {
@@ -7527,10 +6993,6 @@ focus = {
 
 		available = {
 			fascism > 0.5
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council
-			}
 		}
 		
 		bypass = {
@@ -7595,10 +7057,6 @@ focus = {
 
 		available = {
 			fascism > 0.6
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council
-			}
 		}
 		
 		bypass = {
@@ -7658,10 +7116,6 @@ focus = {
 
 		available = {
 			fascism > 0.6
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council
-			}
 		}
 		
 		bypass = {
@@ -7721,10 +7175,6 @@ focus = {
 
 		available = {
 			fascism > 0.65
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council
-			}
 		}
 		
 		bypass = {
@@ -7762,10 +7212,6 @@ focus = {
 
 		available = {
 			fascism > 0.65
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_very_council
-			}
 		}
 		
 		bypass = {
@@ -8299,13 +7745,6 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced  
-			}
-		}
 		
 		bypass = {
 
@@ -8373,13 +7812,6 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced  
-			}
-		}
 		
 		bypass = {
 
@@ -8428,13 +7860,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -8467,13 +7892,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -8506,13 +7924,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -8557,13 +7968,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -8597,13 +8001,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -8634,13 +8031,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -8678,13 +8068,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -8718,13 +8101,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced  
-			}
-		}
-		
 		bypass = {
 
 		}
@@ -8750,15 +8126,6 @@ focus = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-			is_power_balance_in_range = {
-				id = SWI_centralization_bop
-				range < SWI_centralization_bop_balanced  
-			}
-			has_tech = paratroopers
-			has_tech = tech_mountaineers
 		}
 		
 		bypass = {

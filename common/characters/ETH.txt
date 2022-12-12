@@ -61,7 +61,6 @@ characters = {
 					ruling_only = yes 
 					character = ETH_haile_selassie
 				}
-				has_completed_focus = ETH_rally_around_the_emperor
 				NOT = { has_country_leader_with_trait = imperator_absentis }
 			}
 		}
@@ -418,7 +417,6 @@ characters = {
 			visible = {
 				OR = {
 					has_government = neutrality
-					has_completed_focus = ETH_amedeos_feast_of_maskal
 					ROOT = { original_tag = ITA }
 				}
 			}
@@ -798,7 +796,6 @@ characters = {
 				AND = {
 					has_government = fascism
 					has_cosmetic_tag = jimma
-					has_completed_focus = ETH_assertiveness
 				}
 			}	
 		}
@@ -822,7 +819,6 @@ characters = {
 					has_government = neutrality
 					AND = {
 						has_cosmetic_tag = jimma
-						has_completed_focus = ETH_assertiveness
 					}
 				}
 			}
@@ -969,7 +965,6 @@ characters = {
 			available = {
 				NOT = { has_government = democratic }
 				NOT = { has_idea_with_trait = minister_of_the_interior_aregai }
-				NOT = { has_completed_focus = ETH_boarding_the_train }
 			}
 			traits  = {
 				minister_of_the_interior_abate 
@@ -987,7 +982,6 @@ characters = {
 					AND = {
 						has_government = fascism
 						has_cosmetic_tag = jimma
-						has_completed_focus = ETH_assertiveness
 					}
 				}
 			}
@@ -1012,7 +1006,6 @@ characters = {
 						}
 						has_completed_focus = ETH_assertiveness
 					}
-					has_completed_focus = ETH_the_fetno-derash
 					OR = {
 						has_government = neutrality
 						has_government = democratic
@@ -1200,7 +1193,6 @@ characters = {
 			}
 			available = {
 				has_government = fascism
-				has_completed_focus = ETH_replace_the_abuna
 			}
 			traits  = {
 				collaborationist_arch_bishop
@@ -1326,7 +1318,6 @@ characters = {
 				NOT = { has_government = fascism }
 				NOT = { has_government = communism }
 				NOT = { has_global_flag = second_italo_ethiopian_war_flag }
-				has_completed_focus = ETH_bring_in_foreign_advisors
 			}
 			traits  = {
 				air_chief_all_weather_2
@@ -1356,7 +1347,6 @@ characters = {
 				NOT = { has_country_flag = ETH_second_italo_ethiopian_war_flag }
 			}
 			visible = {
-				has_completed_focus = ETH_cooperation
 				has_country_flag = ETH_gugsa_cooperation_flag
 			}
 			traits  = {

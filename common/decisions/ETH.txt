@@ -1,5 +1,1259 @@
-ETH_defeat_italy_category={ETH_defeat_italy={}democratic_on_the_rise={ETH_coup_haile_selassie_imru={}governments_in_exile={ETH_false_flag_operation_decision={}ETH_throw_grand_party_for_host={}ETH_take_loans={}ETH_fundraising_campaign_decision={}ETH_recruit_mercenaries_from_host={}ETH_recruit_aircrews_from_host={}ETH_recruit_merchant_marines_from_host={}ETH_buy_rifles_from_host={}ETH_buy_support_equipment_from_host={}ETH_buy_tanks_from_host={}ETH_chitet_category={}ETH_disband_the_chitet={}ETH_disband_the_chitet_mission={}ETH_second_italo_ethiopian_war_category={}ETH_buy_rifles={}ETH_buy_artillery={}ETH_buy_support_equipment={}ETH_buy_anti_tank_guns={}ETH_time_based_war_escalation_mission={}ITA_time_based_war_escalation_mission={}ETH_christmas_offensive_mission={}ETH_hold_the_north_mission={}ITA_conquer_the_north_mission={}ETH_hold_the_south_mission={}ITA_conquer_the_south_mission={} 
+ETH_defeat_italy_category = {
 
+	ETH_defeat_italy = {
+
+		allowed = { tag = ETH }
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+		available = {
+			has_full_control_of_state = 550 #ERITREA
+			has_full_control_of_state = 559 #SOMALILAND
+			has_full_control_of_state = 844 #JUBALAND
+			has_war_with = ITA
+			ITA = { is_in_faction = no }
+		}
+		is_good = yes
+		fire_only_once = yes
+
+		cancel_trigger = {
+			hidden_trigger = {
+				OR = {
+					ITA = {
+						has_completed_focus = ITA_triumph_in_africa_bba
+					}
+					NOT = { has_war_with = ITA }
+				}
+			}
+		}
+
+		visible = {
+			has_war_with = ITA
+		}
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			hidden_effect = {
+				550 = { add_compliance = 50 }
+				559 = { add_compliance = 50 }
+				844 = { add_compliance = 50 }
+			}
+			ITA = { country_event = ETH_events.1 }
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				transfer_state = 550
+				transfer_state = 559
+				transfer_state = 844
+				white_peace = ITA
+			}
+		}
+
+		timeout_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 20000 #Ethiopia should be very into this idea
+		}
+	}	
+}
+
+democratic_on_the_rise = {
+	ETH_coup_haile_selassie_imru = {
+		allowed = { tag = ETH }
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+		available = {
+			democratic > 0.35
+			ETH_haile_selassie = {
+				has_trait = imperator_absentis			
+			}
+			has_idea = ETH_prince_regent_idea		
+		}
+		fire_only_once = yes 
+		cost = 100
+
+		visible = {
+			ETH_haile_selassie = {
+				has_trait = imperator_absentis			
+			}
+			democratic > 0.3
+			has_idea = ETH_prince_regent_idea		
+		}
+		
+		cancel_effect = {
+		
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = ETH_palace_coup_tt
+			hidden_effect = {
+				ETH_ras_imru_haile_selassie= {
+					unit_leader_event = {
+						id = BBA_ethiopia_imperial_events.20
+						hours = 2
+						random_hours = 4
+					}
+				}
+			}
+		}
+
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}
+
+governments_in_exile = {
+	# Formal Request 
+	ETH_formal_request_to_host = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { original_tag = ETH }
+		available = {
+			has_completed_focus = ETH_reclaiming_ethiopia
+			IF = {
+				limit = {
+					check_variable = { ETH.host_nation = GER }
+				}
+				var:ETH.host_nation = {
+					has_opinion = {
+						target = ITA
+						value < 1
+					}
+				}
+
+			}
+			ITA = { has_civil_war = no }
+		}
+
+		visible = {
+			is_government_in_exile = yes 
+			
+			var:ETH.host_nation = {
+				NOT = { has_war_with = ITA }
+			}
+		}
+		fire_only_once = yes 
+		cost = 150 
+		days_remove = 90 
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			ETH_no_longer_alone = yes 
+			set_global_flag = ethiopia_recognized_flag
+			ETH_haile_selassie_returns = yes 
+			custom_effect_tooltip = ETH_reclaiming_ethiopia_event_tt
+			effect_tooltip = {
+				country_event = {
+					id = BBA_ethiopia_exile_events.01
+					hours = 1
+				}
+			}
+			hidden_effect = {
+				var:ETH.host_nation = {
+					country_event = {
+						id = BBA_ethiopia_exile_events.01
+						hours = 1
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			base = 250
+			modifier = {
+				factor = 0
+				date < 1941.1.1
+				is_historical_focus_on = yes 
+			}
+			modifier = {
+				factor = 0
+				date < 1938.1.1
+			}
+		}
+	}
+
+	ETH_false_flag_operation_decision = {
+		icon = GFX_decision_generic_ignite_civil_war
+		allowed = { original_tag = ETH }
+		available = {
+			has_completed_focus = ETH_sabotage_italo-german_relations
+		}
+
+		visible = {
+			is_government_in_exile = yes 
+			
+			var:ETH.host_nation = {
+				NOT = { has_war_with = ITA }
+				is_neighbor_of = ITA
+				original_tag = GER
+			}
+		}
+		fire_only_once = yes 
+		days_remove = 90 
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 999 }
+		}
+		custom_cost_text = decision_cost_ie_1000
+		modifier = {
+	
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}			
+		}
+		remove_effect = {
+			var:ETH.host_nation = {
+				country_event = {
+					id = BBA_ethiopia_exile_events.50
+					hours = 1
+				}
+			}
+		}
+		ai_will_do = {
+			base = 250
+			modifier = {
+				factor = 0
+				date < 1938.1.1
+			}
+		}
+	}
+
+	# Spending imperial funds
+	ETH_throw_grand_party_for_host = {
+		icon = GFX_decision_gre_investment_decisions
+		allowed = { original_tag = ETH }
+		available = {
+
+		}
+
+		visible = {
+			is_government_in_exile = yes 
+		}
+		
+		days_re_enable = 90 # can't really do this very often and expect effect
+		fire_only_once = no
+		custom_cost_trigger = {
+			check_variable = {
+				var = ETH_treasury
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = ETH_influence_host_cost #TODO_TA FIX ICON
+		complete_effect = {
+			subtract_from_variable = { ETH_treasury = 10 }
+			add_legitimacy = 5
+			country_event = {
+				id = BBA_ethiopia_exile_events.52
+				hours = 12
+			}
+		}
+		
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_legitimacy > 70
+			}
+		}
+	}
+	ETH_take_loans = {
+		icon = GFX_decision_hol_attract_foreign_investors
+		allowed = { original_tag = ETH }
+		available = {
+			has_legitimacy > 10
+		}
+
+		visible = {
+			is_government_in_exile = yes 
+		}
+		
+		days_re_enable = 90 # can't really do this very often and expect effect
+		fire_only_once = no
+		cost = 50
+		
+		complete_effect = {
+			custom_effect_tooltip = ETH_take_loans_tt
+			add_to_variable = { ETH_treasury = 20 }
+			add_legitimacy = -10
+			
+		}
+		
+		ai_will_do = {
+			base = 0
+			# Just don't
+		}
+	}
+	# American Fundraising Campaign
+	ETH_fundraising_campaign_decision = {
+		icon = GFX_decision_generic_fundraising
+		allowed = { original_tag = ETH }
+		fixed_random_seed = no
+		available = {
+			has_legitimacy > 20
+		}
+
+		visible = {
+			is_government_in_exile = yes 
+			has_country_flag = american_radio_adress_flag
+		}
+		days_remove = 30	
+		days_re_enable = 90 # can't really do this very often and expect effect
+		fire_only_once = no
+		cost = 50
+		
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			random_list = {
+				20 = { 
+					custom_effect_tooltip = ETH_low_fundraising_effect_tt
+					add_to_variable = { ETH_treasury = 5 }
+				}
+				40 = { 
+					custom_effect_tooltip = ETH_medium_fundraising_effect_tt
+					add_to_variable = { ETH_treasury = 15 }
+				}
+				20 = { 
+					modifier = {
+						factor = 0
+						has_country_flag = ETH_had__high_effect_flag
+					}
+					custom_effect_tooltip = ETH_high_fundraising_effect_tt
+					add_to_variable = { ETH_treasury = 20 }
+					set_country_flag = ETH_had_high_effect_flag
+				}
+				20 = { 
+					modifier = {
+						factor = 0
+						has_country_flag = ETH_had__high_effect_flag
+					}
+					custom_effect_tooltip = ETH_very_high_fundraising_effect_tt
+					add_to_variable = { ETH_treasury = 30 }
+					set_country_flag = ETH_had_high_effect_flag
+				}
+			}
+			country_event = {
+				id = BBA_ethiopia_exile_events.52
+				hours = 1
+			}
+		}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 200
+				check_variable = { ETH_treasury < 25 }
+				has_legitimacy < 80
+			}
+		}
+	}
+
+	# Recruit Mercenaries 
+	ETH_recruit_mercenaries_from_host = {
+		icon = GFX_decision_generic_military
+		allowed = { original_tag = ETH }
+		available = {
+			NOT = { has_country_flag = ETH_recruiting_mercenaries_flag }
+		}
+
+		visible = {
+			has_completed_focus = ETH_the_ferengi
+		}
+		days_remove = 14
+		days_re_enable = ETH_re_enable_time_international_actions
+		fire_only_once = no
+		custom_cost_trigger = {
+			check_variable = {
+				var = ETH_treasury
+				value = ETH_recruit_mercenaries_cost
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = ETH_recruit_mercenaries_host_cost #TODO_TA FIX ICON
+		complete_effect = {
+			subtract_from_variable = { ETH_treasury = ETH_recruit_mercenaries_cost }
+			set_country_flag = ETH_recruiting_mercenaries_flag
+		}
+		remove_effect = {
+			clr_country_flag = ETH_recruiting_mercenaries_flag
+			ETH = {
+				add_manpower = 5000
+			}
+			custom_effect_tooltip = ETH_will_be_re_enabled_tt
+			country_event = {
+				id = BBA_ethiopia_exile_events.55
+				hours = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	ETH_recruit_aircrews_from_host = {
+		icon = GFX_decision_generic_air
+		allowed = { original_tag = ETH }
+		available = {
+			NOT = { has_country_flag = ETH_recruiting_mercenaries_flag }
+		}
+
+		visible = {
+			has_completed_focus = ETH_the_ferengi
+		}
+		days_remove = 14
+		days_re_enable = ETH_re_enable_time_international_actions
+		fire_only_once = no
+		custom_cost_trigger = {
+			check_variable = {
+				var = ETH_treasury
+				value = ETH_recruit_mercenaries_cost
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = ETH_recruit_mercenaries_host_cost #TODO_TA FIX ICON
+		complete_effect = {
+			subtract_from_variable = { ETH_treasury = ETH_recruit_mercenaries_cost }
+			set_country_flag = ETH_recruiting_mercenaries_flag
+		}
+		remove_effect = {
+			clr_country_flag = ETH_recruiting_mercenaries_flag
+			ETH = {
+				add_manpower = 150
+				air_experience = 20
+			}
+			custom_effect_tooltip = ETH_will_be_re_enabled_tt
+			country_event = {
+				id = BBA_ethiopia_exile_events.56
+				hours = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	ETH_recruit_merchant_marines_from_host = {
+		icon = GFX_decision_generic_merge_plant_ship
+		allowed = { original_tag = ETH }
+		available = {
+			NOT = { has_country_flag = ETH_recruiting_mercenaries_flag }
+		}
+
+		visible = {
+			has_completed_focus = ETH_the_ferengi
+		}
+		days_remove = 14
+		days_re_enable = ETH_re_enable_time_international_actions
+		fire_only_once = no
+		custom_cost_trigger = {
+			check_variable = {
+				var = ETH_treasury
+				value = ETH_recruit_mercenaries_cost
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = ETH_recruit_mercenaries_host_cost #TODO_TA FIX ICON
+		complete_effect = {
+			subtract_from_variable = { ETH_treasury = ETH_recruit_mercenaries_cost }
+			set_country_flag = ETH_recruiting_mercenaries_flag
+		}
+		remove_effect = {
+			clr_country_flag = ETH_recruiting_mercenaries_flag
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 10
+				producer = ETH.host_nation
+			}
+			navy_experience = 10
+			custom_effect_tooltip = ETH_will_be_re_enabled_tt
+			country_event = {
+				id = BBA_ethiopia_exile_events.57
+				hours = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	# Arms trade
+	ETH_buy_rifles_from_host = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = { original_tag = ETH }
+		available = {
+			NOT = { has_country_flag = ETH_securing_arms_deals_flag }
+		}
+
+		visible = {
+			has_completed_focus = ETH_secure_arms
+		}
+		days_remove = 14
+		days_re_enable = ETH_re_enable_time_international_actions
+		fire_only_once = no
+		custom_cost_trigger = {
+			check_variable = {
+				var = ETH_treasury
+				value = ETH_buy_arms_from_host_cost
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = ETH_buy_rifles_from_host_cost #TODO_TA FIX ICON
+		complete_effect = {
+			subtract_from_variable = { ETH_treasury = ETH_buy_arms_from_host_cost }
+			set_country_flag = ETH_securing_arms_deals_flag
+		}
+		remove_effect = {
+			clr_country_flag = ETH_securing_arms_deals_flag
+			ETH = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 1000
+					producer = ETH.host_nation
+				}
+			}
+			custom_effect_tooltip = ETH_will_be_re_enabled_tt
+			country_event = {
+				id = BBA_ethiopia_exile_events.58
+				hours = 1
+			}
+		}
+		ai_will_do = {
+			base = 200
+		}
+	}
+
+	ETH_buy_support_equipment_from_host = {
+		icon = GFX_decision_generic_merge_plant_materiel
+		allowed = { original_tag = ETH }
+		available = {
+			NOT = { has_country_flag = ETH_securing_arms_deals_flag }
+		}
+
+		visible = {
+			has_completed_focus = ETH_secure_arms
+		}
+		days_remove = 14
+		days_re_enable = ETH_re_enable_time_international_actions
+		fire_only_once = no
+		custom_cost_trigger = {
+			check_variable = {
+				var = ETH_treasury
+				value = ETH_buy_arms_from_host_cost
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = ETH_buy_rifles_from_host_cost #TODO_TA FIX ICON
+		complete_effect = {
+			subtract_from_variable = { ETH_treasury = ETH_buy_arms_from_host_cost }
+			set_country_flag = ETH_securing_arms_deals_flag
+		}
+		remove_effect = {
+			clr_country_flag = ETH_securing_arms_deals_flag
+			ETH = {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 250
+					producer = ETH.host_nation
+				}
+			}
+			custom_effect_tooltip = ETH_will_be_re_enabled_tt
+			country_event = {
+				id = BBA_ethiopia_exile_events.59
+				hours = 1
+			}
+		}
+		ai_will_do = {
+			base = 200
+		}
+	}
+	#TODO_TA
+	#### ADD THING ABOUT FUNDRAISING CAMPAIGNS
+
+	ETH_buy_tanks_from_host = {
+		icon = GFX_decision_generic_tank
+		allowed = { original_tag = ETH }
+		available = {
+			NOT = { has_country_flag = ETH_securing_arms_deals_flag }
+		}
+
+		visible = {
+			has_completed_focus = ETH_secure_arms
+		}
+		days_remove = 14
+		days_re_enable = ETH_re_enable_time_international_actions
+		fire_only_once = no
+		custom_cost_trigger = {
+			check_variable = {
+				var = ETH_treasury
+				value = ETH_buy_arms_from_host_cost
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = ETH_buy_rifles_from_host_cost
+		complete_effect = {
+			subtract_from_variable = { ETH_treasury = ETH_buy_arms_from_host_cost }
+			set_country_flag = ETH_securing_arms_deals_flag
+		}
+		remove_effect = {
+			clr_country_flag = ETH_securing_arms_deals_flag
+			IF = {
+				limit = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+				}	
+				add_equipment_to_stockpile = {
+					type = light_tank_equipment_1
+					amount = 25
+					producer = ETH.host_nation
+				}
+			}
+			ELSE = {
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_0
+					amount = 25
+					producer = ETH.host_nation
+				}			
+			}
+			custom_effect_tooltip = ETH_will_be_re_enabled_tt
+			country_event = {
+				id = BBA_ethiopia_exile_events.60
+				hours = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	
+}
+
+ETH_chitet_category = { 
+	# Calling the Levy
+#	ETH_raise_the_chitet = { 
+#
+#		icon = generic_research
+#
+#		available = {
+#			
+#			has_war = yes 
+#			custom_trigger_tooltip = {
+#				tooltip = ETH_chitet_disband_tt
+#				NOT = { has_decision = ETH_disband_the_chitet}
+#			}
+#		} 
+#
+#		visible = {
+#			NOT = { has_country_flag = ETH_chitet_raised_flag }
+#		}
+#
+#		fire_only_once = no
+#		cost = 25
+#		days_remove = 5
+#
+#		complete_effect = {
+#
+#		}
+#
+#		remove_effect = {
+#			set_country_flag = ETH_chitet_raised_flag
+#			ETH_raise_the_chitet_effect = yes 
+#		} 
+#
+#		ai_will_do = {
+#			base = 0
+#			modifier = {
+#				add = 50
+#				has_war = yes 
+#			}
+#			modifier = {
+#				factor = 5
+#				has_defensive_war = yes 
+#			}
+#		}
+#	}
+	# Disbanding the Levy 
+	ETH_disband_the_chitet = {
+
+		icon = GFX_decision_ETH_chitet
+
+		available = {
+			OR = {
+				has_war = no 
+				custom_trigger_tooltip = {
+					tooltip = ETH_number_levy_units_less_than_five
+					check_variable = { num_armies_with_type@irregular_infantry < 5 }
+				}
+			}
+		}
+
+		visible = {
+			has_country_flag = ETH_chitet_raised_flag
+			is_government_in_exile = no
+		}
+		days_remove = 7
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			delete_units = { 
+				division_template = "Chitet Sefari"
+				disband = no # if yes, equipment will be returned to country equipment. default is no
+			}
+			clr_country_flag = ETH_chitet_raised_flag
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	# No longer at war
+#    ETH_disband_the_chitet_mission = {      
+#		allowed = { original_tag = ETH }    
+#		available = { 
+#			OR = {
+#				has_war = yes 
+#				has_decision = ETH_disband_the_chitet
+#			}   
+#		}
+#		activation = { 
+#			has_war = no
+#			has_country_flag = ETH_chitet_raised_flag
+#		}
+#		is_good = yes                           
+#		selectable_mission = no  
+#		days_mission_timeout = 10
+#		timeout_effect = {
+#			activate_decision = ETH_disband_the_chitet
+#		}
+#		complete_effect = {  
+#		}
+#	}
+}
+
+ETH_second_italo_ethiopian_war_category = {
+	# Decisions
+
+	#### Establish Host Country
+	# Approach the U.K. 
+	ETH_host_country_decision = {
+		target_trigger = {
+               FROM = {
+                    OR = {
+                         tag = ENG
+                         tag = JAP
+                         tag = GER
+                         tag = SWE
+                    }
+               }
+          }
+
+		icon = generic_prepare_civil_war
+		allowed = { tag = ETH }
+		available = {
+			NOT = { has_completed_focus	= ETH_the_emperor_stays }
+			NOT = { has_country_flag = ETH_request_sent_flag }
+			NOT = { FROM = { is_in_faction_with = ITA } }
+		}
+
+		visible = {
+			has_completed_focus = ETH_rally_around_the_emperor 
+			NOT = { has_country_flag = ETH_host_confirmed_flag }
+			NOT = { has_completed_focus = ETH_the_emperor_stays }
+			NOT = { has_country_flag = ETH_refused_forced_peace_flag } #ETH shouldn't be allowed back to ENG after refusing their demands for peace
+		}
+
+		fire_only_once = no
+		cost = 0
+		days_re_enable = 30
+
+		complete_effect = {
+			set_country_flag = ETH_request_sent_flag
+			FROM = {
+				country_event = {
+					id = BBA_italo_ethiopian_war_events.100
+					hours = 8
+					random_hours = 6
+				}
+			}
+			custom_effect_tooltip = if_they_accept_tt
+			custom_effect_tooltip = ETH_host_country_decision_tt
+		}
+
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 2
+				FROM = { tag = ENG }
+			}
+			modifier = {
+				factor = 2.5
+				FROM = { has_completed_focus = JAP_support_the_kodoha_faction } # Key members of the faction had good relations with the Ethiopians 
+			}
+			modifier = {
+				factor = 0.75
+				FROM = { has_government = ITA }
+			}
+		}
+	}
+
+	# Arms trade
+	ETH_buy_rifles = {
+
+		icon = generic_prepare_civil_war
+		allowed = { tag = ETH }
+
+		available = {
+			IF = {
+				limit = { has_tech = gw_artillery }
+				NOT = { has_decision = ETH_buy_artillery }
+			}
+			IF = {
+				limit = { has_tech = tech_support  }
+				NOT = { has_decision = ETH_buy_support_equipment }
+			}
+			IF = {
+				limit = { has_tech = interwar_antitank SWE = { has_tech = interwar_antitank }  }
+				NOT = { has_decision = ETH_buy_anti_tank_guns }
+			}
+			has_global_flag = second_italo_ethiopian_war_flag
+			league_of_nations_is_active = yes 
+		}
+
+		visible = {
+			has_completed_focus = ETH_arms_purchases
+			has_global_flag = second_italo_ethiopian_war_flag
+			league_of_nations_is_active = yes 
+		}
+		days_remove = 30
+		days_re_enable = 30
+
+		fire_only_once = no
+		cost = 50
+
+		complete_effect = {
+			
+		}
+		modifier = {
+        	consumer_goods_factor = 0.2
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2000
+				producer = FRA
+			}
+		}
+
+		ai_will_do = {
+			base = 200
+		}
+	}
+
+	ETH_buy_artillery = {
+
+		icon = generic_prepare_civil_war
+		allowed = { tag = ETH }
+		available = {
+			NOT = { has_decision = ETH_buy_rifles }
+			IF = {
+				limit = { has_tech = tech_support  }
+				NOT = { has_decision = ETH_buy_support_equipment }
+			}
+			IF = {
+				limit = { has_tech = interwar_antitank SWE = { has_tech = interwar_antitank } }
+				NOT = { has_decision = ETH_buy_anti_tank_guns }
+			}
+			has_global_flag = second_italo_ethiopian_war_flag
+			league_of_nations_is_active = yes 
+		}
+
+		visible = {
+			has_completed_focus = ETH_arms_purchases
+			has_tech = gw_artillery
+			has_global_flag = second_italo_ethiopian_war_flag
+			league_of_nations_is_active = yes 
+		}
+		days_remove = 30
+		days_re_enable = 30
+
+		fire_only_once = no
+		cost = 50
+
+		complete_effect = {
+			
+		}
+		modifier = {
+        		consumer_goods_factor = 0.2
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 500
+				producer = GER
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	ETH_buy_support_equipment  = {
+
+		icon = generic_prepare_civil_war
+		allowed = { tag = ETH }
+		available = {
+			NOT = { has_decision = ETH_buy_rifles }
+			IF = {
+				limit = { has_tech = gw_artillery }
+				NOT = { has_decision = ETH_buy_artillery }
+			}
+			IF = {
+				limit = { has_tech = interwar_antitank SWE = { has_tech = interwar_antitank } }
+				NOT = { has_decision = ETH_buy_anti_tank_guns }
+			}
+			has_global_flag = second_italo_ethiopian_war_flag
+			league_of_nations_is_active = yes 
+		}
+
+		visible = {
+			has_completed_focus = ETH_arms_purchases
+			has_tech = tech_support 
+			has_global_flag = second_italo_ethiopian_war_flag
+			league_of_nations_is_active = yes 
+		}
+		days_remove = 30
+		days_re_enable = 30
+
+		fire_only_once = no
+		cost = 50
+
+		complete_effect = {
+			
+		}
+		modifier = {
+        	consumer_goods_factor = 0.2
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 500
+				producer = ENG
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	ETH_buy_anti_tank_guns  = {
+
+		icon = generic_prepare_civil_war
+		allowed = { tag = ETH }
+		available = {
+			NOT = { has_decision = ETH_buy_rifles }
+			IF = {
+				limit = { has_tech = gw_artillery }
+				NOT = { has_decision = ETH_buy_artillery }
+			}
+			IF = {
+				limit = { has_tech = tech_support  }
+				NOT = { has_decision = ETH_buy_support_equipment }
+			}
+			has_global_flag = second_italo_ethiopian_war_flag
+			league_of_nations_is_active = yes 
+		}
+
+		visible = {
+			has_completed_focus = ETH_arms_purchases
+			has_tech = interwar_antitank 
+			SWE = { has_tech = interwar_antitank }
+			has_global_flag = second_italo_ethiopian_war_flag
+			league_of_nations_is_active = yes 
+		}
+		days_remove = 30
+		days_re_enable = 30
+
+		fire_only_once = no
+		cost = 50
+
+		complete_effect = {
+			
+		}
+		modifier = {
+        	consumer_goods_factor = 0.2
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment_1
+				amount = 250
+				producer = SWE
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	# War escalates over time, no matter what 
+	ETH_time_based_war_escalation_mission = {   
+		icon = GFX_decision_generic_ignite_civil_war
+		allowed = { 
+			original_tag = ETH 
+		}    
+		available = { 
+			hidden_trigger ={ always = no }
+		}
+	
+		activation = { 
+			has_war = yes 
+			has_global_flag = second_italo_ethiopian_war_flag
+			check_variable = { ETH.ETH_war_escalation_level < 10}
+		}
+		visible = { hidden_trigger = { has_global_flag = second_italo_ethiopian_war_flag } }
+		cancel_if_not_visible = yes 
+		is_good = yes 
+		fire_only_once = no                            
+		selectable_mission = no  
+		days_mission_timeout = ETH_war_escalation_length
+		timeout_effect = {
+			ETH_escalate_the_war_effect = yes 
+			add_to_variable = { ETH.ETH_escalation_time_increase_total = 1 }
+			# Increase timer after first six months of war
+			IF = {
+				limit = { check_variable = { ETH_war_escalation_length < 170 } }
+				set_variable = { ETH_war_escalation_length = 170 }
+			}
+		}
+	} 
+	# Same Mission for italy - but with correct colors and tooltips
+	ITA_time_based_war_escalation_mission = {  
+		name = ETH_time_based_war_escalation_mission
+		icon = GFX_decision_generic_operation # TODO_TA set correct icon   
+		allowed = { 	
+				original_tag = ITA
+		}    
+		available = { 
+			hidden_trigger ={ always = no }
+		}
+	
+		activation = { 
+			has_war = yes 
+			has_global_flag = second_italo_ethiopian_war_flag
+			check_variable = { ETH.ETH_war_escalation_level < 10 }
+		}
+		visible = { hidden_trigger = { has_global_flag = second_italo_ethiopian_war_flag } }
+		cancel_if_not_visible = yes 
+		is_good = no 
+		fire_only_once = no                            
+		selectable_mission = no  
+		days_mission_timeout = ETH.ETH_war_escalation_length
+		timeout_effect = {
+			custom_effect_tooltip = ITA_war_escalation_inc_tt
+		}
+	} 
+
+	# the last weeks of the christmas offensive
+	ETH_christmas_offensive_mission = {   
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = { original_tag = ETH }    
+		available = { 
+			always = no 
+		}
+	
+		activation = { 
+			has_war = yes 
+			has_global_flag = second_italo_ethiopian_war_flag
+		}
+		is_good = yes 
+		fire_only_once = yes                            
+		selectable_mission = no  
+		days_mission_timeout = 14
+		timeout_effect = {
+			remove_ideas = ETH_christmas_offensive_idea
+
+			# TODO_MANU Change to Italian event, and move activation effects to there
+			hidden_effect = {
+				ITA = {
+					ITA_benito_mussolini = {
+						unit_leader_event = {
+							id = BBA_italo_ethiopian_war_events.01
+							hours = 2
+							random_hours = 6
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {  
+			#set_country_flag = ETH_hold_the_north_mission_flag
+			#add_war_support = -0.1
+		}
+	} 
+
+	
+	# Hold the north mission for Ethiopia 
+	ETH_hold_the_north_mission = {   
+		icon = GFX_decision_border_war   
+		allowed = { original_tag = ETH }    
+		available = { 
+			count_triggers = {
+				amount = 2
+				# NOT = { 841 = { is_controlled_by = ROOT } }
+				# NOT = { 842 = { is_controlled_by = ROOT } }
+				# NOT = { 843 = { is_controlled_by = ROOT } }
+				NOT = { controls_province = 1984 }
+				NOT = { controls_province = 2072 }
+				NOT = { controls_province = 5097 }
+				
+			}
+		}
+	
+		activation = { 
+			always = no 
+		}
+		visible = { has_global_flag = second_italo_ethiopian_war_flag }
+		cancel_if_not_visible = yes 
+		is_good = yes 
+		fire_only_once = yes                            
+		selectable_mission = no  
+		days_mission_timeout = ETH.ETH_hold_the_north_time
+		timeout_effect = {
+			ETH_escalate_the_war_effect = yes 
+			set_country_flag = ETH_hold_the_north_mission_flag
+			set_country_flag = ETH_hold_the_north_mission_success_flag
+		}
+		complete_effect = {  
+			set_country_flag = ETH_hold_the_north_mission_flag
+			add_war_support = -0.1
+		}
+	}
+#	# Hold the north "dummy" mission for Italy 
+#	ITA_conquer_the_north_mission = {    
+#		icon = GFX_decision_generic_operation # TODO_TA set correct icon   
+#		allowed = { tag = ITA }    
+#		available = { 
+#			count_triggers = {
+#				amount = 2
+#				841 = { is_controlled_by = ROOT }
+#				842 = { is_controlled_by = ROOT }
+#				843 = { is_controlled_by = ROOT }
+#			}
+#		}
+#		activation = { 
+#			always = no 
+#		}
+#		visible = { has_global_flag = second_italo_ethiopian_war_flag }
+#		cancel_if_not_visible = yes 
+#		is_good = no 
+#		fire_only_once = yes                            
+#		selectable_mission = no  
+#		days_mission_timeout = ETH.ETH_hold_the_north_time
+#		timeout_effect = {
+#			custom_effect_tooltip = ITA_war_escalation_inc_tt
+#		}
+#		complete_effect = {  
+#			ETH = { add_war_support = -0.1 }
+#		}
+#	}
+
+	# Hold the south mission for Ethiopia 
+	ETH_hold_the_south_mission = {   
+		icon = GFX_decision_border_war   
+		allowed = { original_tag = ETH }    
+		available = { 
+			count_triggers = {
+				amount = 2
+				# NOT = { 835 = { is_controlled_by = ROOT } }
+				# NOT = {	836 = { is_controlled_by = ROOT } }
+				# NOT = {	837 = { is_controlled_by = ROOT } }
+				NOT = { controls_province = 12812 }
+				NOT = { controls_province = 10775 }
+				NOT = { controls_province = 13247 }
+			}
+		}
+		activation = { 
+			always = no 
+		}
+		visible = { has_global_flag = second_italo_ethiopian_war_flag }
+		cancel_if_not_visible = yes 
+		is_good = yes 
+		fire_only_once = yes                            
+		selectable_mission = no  
+		days_mission_timeout = ETH.ETH_hold_the_south_time
+		# Ethiopia holds on to the South
+		timeout_effect = {
+			ETH_escalate_the_war_effect = yes 
+			set_country_flag = ETH_hold_the_south_mission_flag
+			set_country_flag = ETH_hold_the_south_mission_success_flag
+		}
+		# Italy captures the South
+		complete_effect = {  
+			
+			set_country_flag = ETH_hold_the_south_mission_flag
+			add_war_support = -0.1
+			hidden_effect = {
+				IF = {
+					limit = { 835 = { is_controlled_by = ROOT } }
+					ETH = { activate_mission = ETH_hold_harar_mission }
+					ITA = { activate_mission = ETH_conquer_harar_mission }
+				}
+			}
+		}
+	}
+#	# Hold the south "dummy" mission for Italy 
+#	ITA_conquer_the_south_mission = {   
+#		icon = GFX_decision_generic_operation # TODO_TA set correct icon   
+#		allowed = { tag = ITA }    
+#		available = { 
+#			count_triggers = {
+#				amount = 2
+#				835 = { is_controlled_by = ROOT }
+#				836 = { is_controlled_by = ROOT }
+#				837 = { is_controlled_by = ROOT }
+#			}
+#		}
+#		activation = { 
+#			always = no 
+#		}
+#		visible = { has_global_flag = second_italo_ethiopian_war_flag }
+#		cancel_if_not_visible = yes 
+#		is_good = no 
+#		fire_only_once = yes                            
+#		selectable_mission = no  
+#		days_mission_timeout = ETH.ETH_hold_the_south_time
+#		timeout_effect = {
+#			custom_effect_tooltip = ITA_war_escalation_inc_tt
+#		}
+#		complete_effect = {  
+#			effect_tooltip = {
+#				ETH = { add_war_support = -0.1 }
+#			}
+#			
+#		}
+#	}
+	# Hold the capital mission for Ethiopia 
 	ETH_hold_addis_ababa_mission = {   
 		icon = GFX_decision_border_war  
 		allowed = { original_tag = ETH }    
@@ -253,7 +1507,6 @@ ETH_italian_occupation_category = {
 			clr_country_flag = ETH_building_local_resistance_flag
 			add_to_variable = { FROM.ETH_resistance_force_strength = 1 }
 			custom_effect_tooltip = ETH_build_local_resistance_force_increase_tt
-			ETH_BOP_decentralization_small_effect = yes 
 			FROM = { add_resistance = -5 }
 			custom_effect_tooltip = ETH_will_be_re_enabled_tt
 		}
@@ -1299,9 +2552,8 @@ ETH_centralization_balance_of_power_category = {
 		fire_only_once = yes 
 		cost = 10
 		
-		complete_effect = {
-			ETH_BOP_decentralization_small_effect = yes 
-		}
+		complete_effect = {}
+
 		remove_effect = {
 			show_unit_leaders_tooltip = ETH_balcho_safo
 			custom_effect_tooltip = balcho_safo_recalled_tt
@@ -1378,7 +2630,7 @@ ETH_centralization_balance_of_power_category = {
 				value = 1
 			}
 		}
-		
+
 		ai_will_do = {
 			base = 0
 			# Don't do this, too risky
@@ -1478,7 +2730,6 @@ ETH_centralization_balance_of_power_category = {
 		days_re_enable = 120   
 		# Ethiopia fails to retake lost states 
 		timeout_effect = {
-			ETH_BOP_decentralization_small_effect = yes 
 			add_war_support = -0.1
 			add_stability = -0.1
 			add_ideas = ETH_demoralized_ras_idea
@@ -1486,7 +2737,6 @@ ETH_centralization_balance_of_power_category = {
 		# Ethiopia Recaptures states 
 		complete_effect = {  
 			add_war_support = 0.05
-			ETH_BOP_centralization_large_effect = yes
 		}
 	}
 
@@ -1494,37 +2744,8 @@ ETH_centralization_balance_of_power_category = {
 		icon = GFX_decision_eng_trade_unions_support
 		cost = 25
 		allowed = { original_tag = ETH }    
-		visible = {
-			OR = {
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_anarchist_power_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_anarchist_dominant_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_total_anarchist_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_mesafint_power_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_mesafint_dominant_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_mesafint_total_control_range
-				}
-			}
-		}
 		fire_only_once = yes
 		complete_effect = {
-			ETH_BOP_decentralization_small_effect = yes
 			country_event = {
 				id = BBA_ethiopia_balance_of_power_events.24
 				hours = 1
@@ -1542,38 +2763,8 @@ ETH_centralization_balance_of_power_category = {
 		icon = GFX_decision_eng_trade_unions_support
 		cost = 25
 		allowed = { original_tag = ETH }    
-		visible = { 
-			OR = {
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_communist_power_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_communist_dominant_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_communist_total_control_range
-				}
-
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_mekwanint_power_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_mekwanint_dominant_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_mekwanint_total_control_range
-				}
-			}
-		}
 		fire_only_once = yes
 		complete_effect = {
-			ETH_BOP_centralization_small_effect = yes
 			country_event = {
 				id = BBA_ethiopia_balance_of_power_events.23
 				hours = 1
@@ -1589,46 +2780,8 @@ ETH_centralization_balance_of_power_category = {
 		icon = GFX_decision_rubber
 		allowed = { original_tag = ETH } 
 		cost = 25   
-		visible = {
-			OR = {
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_anarchist_influence_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_anarchist_power_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_anarchist_dominant_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_total_anarchist_range
-				}
-
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_mesafint_influence_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_mesafint_power_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_mesafint_dominant_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_mesafint_total_control_range
-				}
-			}			
-		}
 		fire_only_once = yes
 		complete_effect = {
-			ETH_BOP_decentralization_small_effect = yes
 			every_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -1649,47 +2802,8 @@ ETH_centralization_balance_of_power_category = {
 		icon = GFX_decision_rubber
 		allowed = { original_tag = ETH } 
 		cost = 25   
-		visible = {
-			OR = {
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_communist_influence_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_communist_power_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_communist_dominant_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_communist_total_control_range
-				}
-
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_mekwanint_influence_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_mekwanint_power_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_mekwanint_dominant_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_mekwanint_total_control_range
-				}
-
-			}	
-		}
 		fire_only_once = yes
 		complete_effect = {
-			ETH_BOP_centralization_small_effect = yes
 			every_owned_state = {
 				limit = {is_capital = yes}
 				add_building_construction = {
@@ -1708,23 +2822,9 @@ ETH_centralization_balance_of_power_category = {
 	ETH_officer_reforms_centralized_BoP = {
 		icon = GFX_decision_generic_army_support
 		allowed = { original_tag = ETH }
-		visible = { 
-			has_government = communism
-			OR = {
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_communist_dominant_range
-				}
-				is_power_balance_in_range = {
-					id = ETH_centralization_balance
-					range = ETH_communist_total_control_range
-				}
-			}			
-		}
 		cost = 25
 		fire_only_once = yes
 		complete_effect = {
-			ETH_BOP_centralization_small_effect = yes
 			country_event = {
 				id = BBA_ethiopia_balance_of_power_events.25
 				days = 0
@@ -1764,23 +2864,9 @@ ETH_centralization_balance_of_power_category = {
 	ETH_officer_reforms_decentralized_BoP = {
 		icon = GFX_decision_generic_army_support
 		allowed = { original_tag = ETH }
-		visible = { 
-				has_government = communism
-				OR = {
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_anarchist_dominant_range
-					}
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_total_anarchist_range
-					}
-				}
-			}
 		cost = 25
 		fire_only_once = yes
 		complete_effect = {
-			ETH_BOP_decentralization_small_effect = yes
 			country_event = {
 				id = BBA_ethiopia_balance_of_power_events.26
 				days = 0
@@ -1798,19 +2884,6 @@ ETH_centralization_balance_of_power_category = {
 		allowed = { 
 			original_tag = ETH
 		}
-		visible = { 
-				has_government = communism
-				OR = {
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_anarchist_dominant_range
-					}
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_total_anarchist_range
-					}
-				} 
-			}
 		cost = 25
 		fire_only_once = yes
 		complete_effect = {
@@ -1818,7 +2891,6 @@ ETH_centralization_balance_of_power_category = {
 			delete_unit_template_and_units = {
 				division_template = "Red Guards"
 			}
-			ETH_BOP_decentralization_small_effect = yes
 		}
 		ai_will_do = {
 			base = 100
@@ -1830,27 +2902,9 @@ ETH_centralization_balance_of_power_category = {
 		allowed = { 
 			original_tag = ETH
 		}
-		visible = { 
-				has_government = communism
-				OR = {
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_communist_power_range
-					}
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_communist_dominant_range
-					}
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_communist_total_control_range
-					}
-				}
-			}
 		cost = 25
 		fire_only_once = yes
 		complete_effect = {
-			ETH_BOP_centralization_small_effect = yes
 			custom_effect_tooltip = ETH_BoP_expand_red_guards_tt
 			IF = {
 				limit = {NOT = {has_template = "Red Guards"}}
@@ -1893,27 +2947,9 @@ ETH_centralization_balance_of_power_category = {
 		allowed = { 
 			original_tag = ETH
 		}
-		visible = { 
-				has_government = communism
-				OR = {
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_anarchist_power_range
-					}
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_anarchist_dominant_range
-					}
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_total_anarchist_range
-					}
-				}
-			}
 		cost = 25
 		fire_only_once = yes
 		complete_effect = {
-			ETH_BOP_decentralization_small_effect = yes
 			custom_effect_tooltip = ETH_BoP_expand_black_lions_tt
 			IF = {
 				limit = {NOT = {has_template = "Black Lions"}}
@@ -1953,18 +2989,8 @@ ETH_centralization_balance_of_power_category = {
 		icon = GFX_decision_generic_civil_support
 		allowed = { original_tag = ETH }
 		visible = { 
-				has_government = communism
-				OR = {
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_communist_dominant_range
-					}
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_communist_total_control_range
-					}
-				}
-			}
+			has_government = communism
+		}
 		cost = 25
 		fire_only_once = yes
 		complete_effect = {
@@ -1976,7 +3002,6 @@ ETH_centralization_balance_of_power_category = {
 				id = BBA_ethiopia_communist_events.06
 				hours = 1
 			}
-			ETH_BOP_centralization_small_effect = yes
 		}
 		ai_will_do = {
 			base = 100
