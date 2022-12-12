@@ -662,6 +662,7 @@
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward={add_ideas={idea_davidian_youth_movement_dr
 	}
 
 	#Focus for Mitteldaveuropa
@@ -2104,7 +2105,7 @@
 		}
 	}
 
-	#Focus for Total Victory
+	#Focus for Total Victory - can be picked after the fall of the connerian union
 	focus = {
 		id = GER_total_victory_dr
 		icon = GFX_focus_ger_reichskommisariats
@@ -2128,7 +2129,7 @@
 		}
 	}
 
-	#Focus for Negotiate Surrender
+	#Focus for Negotiate Surrender - scripted peace deal
 	focus = {
 		id = GER_negotiate_surrender_dr
 		icon = GFX_goal_generic_forceful_treaty
@@ -2152,7 +2153,7 @@
 		}
 	}
 
-	#Focus for Local Collaboration
+	#Focus for Local Collaboration - add compliance in certain states if owned
 	focus = {
 		id = GER_local_collaboration_dr
 		icon = GFX_focus_POL_belarus_army
