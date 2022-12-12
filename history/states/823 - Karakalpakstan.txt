@@ -13,8 +13,6 @@ state={
 
 		}
 		add_core_of = UZB
-		add_core_of = KKP
-
 	}
 
 	provinces={

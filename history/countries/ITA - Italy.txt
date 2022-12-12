@@ -1,29 +1,14 @@
-﻿capital = 2
-starting_train_buffer = 1.5
-
-set_research_slots = 4
-set_stability = 0.6
-set_war_support = 0.7
-add_ideas = {
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
-}
-every_owned_state = { #LIBYAN STATES
+﻿capital=2 starting_train_buffer=1.5 set_research_slots=4 set_stability=0.85 set_war_support=0.7 add_ideas={limited_exports limited_conscription partial_economic_mobilisation}
+every_owned_state = { 
 	limit = {
 		is_core_of = LBA
-		NOT = { state = 273 } #Don't add resistance in the middle of the impassable desert thanks
+		NOT = { state = 273 } 
 	}
 	start_resistance = yes
 	set_compliance = 35
 	set_resistance = 0
 	set_garrison_strength = 1.0
 }
-
-
-#######################################
-############ MISSIOLINIS ##############
-#######################################
 
 set_variable = { ITA_missiolinis_number_of_missions_triggered = 0 }
 set_variable = { ITA_missiolinis_number_of_missions_resolved = 0 }
@@ -285,7 +270,6 @@ set_variable = { ITA_ra_air_mission_efficiency = 0 } #Airforce
 set_variable = { ITA_ra_air_attack = 0 } #Airforce
 set_variable = { ITA_ra_air_interception = 0 } #Airforce
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -396,15 +380,6 @@ if = {
 	}
 }
 
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = MTG_naval_treaty_cheating
-}
-
-
-### STOCKPILE ###
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
 	amount = 150
@@ -424,21 +399,7 @@ add_equipment_to_stockpile = {
 	variant_name = "Fiat 3000B"
 }
 
-# DIPLOMACY / WAR 36
-if = {
-	limit = {
-		has_start_date < 1936.01.02
-	}
-
-	declare_war_on = {
-		target = ETH
-		type = annex_everything
-	}
-	give_guarantee = ALB
-}
-
-
-set_convoys = 200
+give_guarantee=ALB set_convoys=200
 
 set_politics = {
 	ruling_party = fascism
@@ -588,14 +549,9 @@ ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.11 day
 ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.31 days = 370 random_days = 5 } } # JAN 37 - Industrialization - DEC 37 - (350 days)
 ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.41 days = 735 random_days = 5 } } # JAN 38 - Increase Army - DEC 38 (350 days)
 ITA_benito_mussolini = { unit_leader_event = { id = BBA_italy_missiolinis.00 days = 1105 random_days = 5 } } # JAN 39 - Random mission dispatcher (350 days) - This event auto-triggers itself every 6 months
-# Next Missiolini is random and comes in JUN 39, next one in JUN 40.
 
-
-#CIVIL WAR SPLIT FLAGS
 ITA_set_up_character_cw_flags_effect = yes
 
-
-#PURGE FLAGS
 ITA_achille_starace = { set_character_flag = ITA_character_can_be_purged }
 ITA_renato_ricci = { set_character_flag = ITA_character_can_be_purged }
 ITA_carlo_scorza = { set_character_flag = ITA_character_can_be_purged }
@@ -617,64 +573,9 @@ ITA_emilio_de_bono = { set_character_flag = ITA_character_can_be_purged }
 
 
 
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	ITA_create_francesco_de_martini_operative = yes
-	ITA_create_paolo_caccia_dominioni_operative = yes
-}
+if={limit={has_dlc="La Resistance"}ITA_create_francesco_de_martini_operative=yes ITA_create_paolo_caccia_dominioni_operative=yes}if={limit={NOT={has_dlc="By Blood Alone"}}create_equipment_variant={name="CR.42"type=fighter_equipment_0 upgrades={plane_gun_upgrade=1 plane_range_upgrade=0 plane_engine_upgrade=2 plane_reliability_upgrade=1}}}if={limit={has_dlc="By Blood Alone"}create_equipment_variant={name="CR.32"type=small_plane_airframe_0 modules={fixed_main_weapon_slot=light_mg_2x engine_type_slot=engine_1_1x special_type_slot_1=empty}}create_equipment_variant={name="Ca.111"type=small_plane_cas_airframe_0 modules={fixed_main_weapon_slot=small_bomb_bay engine_type_slot=engine_1_1x special_type_slot_1=empty}obsolete=yes icon="GFX_ITA_CAS1_medium"}create_equipment_variant={name="Ca.101"type=medium_plane_airframe_0 modules={fixed_main_weapon_slot=medium_bomb_bay engine_type_slot=engine_1_3x special_type_slot_1=lmg_defense_turret}obsolete=yes icon="GFX_ITA_early_bomber_old_medium"}
 
-### VARIANTS ###
-# 1936 Start #
-#plane variants
-if = {
-	limit = { NOT = { has_dlc = "By Blood Alone" } }
-	create_equipment_variant = {
-		name = "CR.42"
-		type = fighter_equipment_0
-		upgrades = {
-			plane_gun_upgrade = 1
-			plane_range_upgrade = 0  
-			plane_engine_upgrade = 2
-			plane_reliability_upgrade = 1
-		}
-	}
-}
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-	create_equipment_variant = {
-		name = "CR.32" #
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-	}
-	create_equipment_variant = {
-		name = "Ca.111" #
-		type = small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		obsolete = yes
-		icon = "GFX_ITA_CAS1_medium"
-	}
-	create_equipment_variant = {
-		name = "Ca.101" #
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			engine_type_slot = engine_1_3x
-			special_type_slot_1 = lmg_defense_turret
-		}
-		obsolete = yes
-		icon = "GFX_ITA_early_bomber_old_medium"
-	}
-	create_equipment_variant = {
+create_equipment_variant = {
 		name = "Ca.133" #
 		type = medium_plane_airframe_0
 		modules = {
@@ -721,6 +622,12 @@ if = {
 	}
 
 }
+
+
+
+
+
+
 
 #TANKS
 if = {
@@ -1349,45 +1256,4 @@ if = {
 			}
 		}
 	}
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		create_equipment_variant = {
-			name = "L6/40"
-			type = light_tank_chassis_1
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_auto_cannon
-				turret_type_slot = tank_light_one_man_tank_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 2
-				tank_nsb_armor_upgrade = 4
-			}
-			icon = "GFX_ITA_improved_light_tank_medium"
-		}
-
-		create_equipment_variant = {
-			name = "M11/39"
-			type = light_tank_chassis_2
-			parent_version = 0
-			modules = {
-				main_armament_slot = tank_high_velocity_cannon
-				turret_type_slot = tank_light_fixed_superstructure_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = secondary_turret_hmg
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 2
-				tank_nsb_armor_upgrade = 3
-			}
-			icon = "GFX_ITA_basic_medium_tank_medium"
-		}
-	}
-}
+if={limit={has_dlc="No Step Back"}create_equipment_variant={name="L6/40"type=light_tank_chassis_1 parent_version=0 modules={main_armament_slot=tank_auto_cannon turret_type_slot=tank_light_one_man_tank_turret suspension_type_slot=tank_bogie_suspension armor_type_slot=tank_riveted_armor engine_type_slot=tank_gasoline_engine}upgrades={tank_nsb_engine_upgrade=2 tank_nsb_armor_upgrade=4}icon="GFX_ITA_improved_light_tank_medium"}create_equipment_variant={name="M11/39"type=light_tank_chassis_2 parent_version=0 modules={main_armament_slot=tank_high_velocity_cannon turret_type_slot=tank_light_fixed_superstructure_turret suspension_type_slot=tank_bogie_suspension armor_type_slot=tank_riveted_armor engine_type_slot=tank_gasoline_engine special_type_slot_1=secondary_turret_hmg}upgrades={tank_nsb_engine_upgrade=2 tank_nsb_armor_upgrade=3}icon="GFX_ITA_basic_medium_tank_medium"}}}
