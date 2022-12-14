@@ -476,22 +476,7 @@
 		}
 	}
 	
-	focus = {
-		id = GER_der_davemacht_dr
-		icon = GFX_focus_ger_oppose_hitler
-		x = 11
-		y = 2
-		cost = 5
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ARMY_XP }
-		prerequisite = { focus = GER_affairs_of_the_military_dr }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			army_experience=15 swap_ideas={remove_idea=idea_militarization_dr add_idea=idea_der_davemacht_dr}
-		}
-	}
+	focus={id=GER_der_davemacht_dr icon=GFX_focus_ger_oppose_hitler x=11 y=2 cost=5 available_if_capitulated=yes search_filters={FOCUS_FILTER_ARMY_XP}prerequisite={focus=GER_affairs_of_the_military_dr}ai_will_do={factor=1}completion_reward={army_experience=15 swap_ideas={remove_idea=idea_militarization_dr add_idea=idea_der_davemacht_dr}}}
 
 	#Focus for A Storm Of Steel
 	focus = {
@@ -586,9 +571,8 @@
 		ai_will_do = {
 			factor = 1 
 		}
-		completion_reward={add_tech_bonus={name=old_doctrine_bonus_dr bonus=0.5 uses=2 cat_grand_battle_plan}}
 	}
-	#Focus for Develop our Dockyards
+	
 	focus = {
 		id = GER_develop_our_dockyards_dr
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -600,9 +584,9 @@
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward={63={if={limit={is_controlled_by=GER}add_building_construction={type=dockyard level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}61={if={limit={is_controlled_by=GER}add_building_construction={type=dockyard level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}59={if={limit={is_controlled_by=GER}add_building_construction={type=dockyard level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}58={if={limit={is_controlled_by=GER}add_building_construction={type=dockyard level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}85={if={limit={is_controlled_by=GER}add_building_construction={type=dockyard level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}763={if={limit={is_controlled_by=GER}add_building_construction={type=dockyard level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}custom_effect_tooltip=develop_our_dockyards_tooltip_dr}
 	}
 
-	#Focus for Develop Our Airports
 	focus = {
 		id = GER_develop_our_airports_dr
 		icon = GFX_goal_generic_build_airforce
@@ -614,6 +598,7 @@
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward={53={if={limit={is_controlled_by=GER}add_building_construction={type=air_base level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}68={if={limit={is_controlled_by=GER}add_building_construction={type=air_base level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}67={if={limit={is_controlled_by=GER}add_building_construction={type=air_base level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}5={if={limit={is_controlled_by=GER}add_building_construction={type=air_base level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}911={if={limit={is_controlled_by=GER}add_building_construction={type=air_base level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}59={if={limit={is_controlled_by=GER}add_building_construction={type=air_base level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}custom_effect_tooltip=develop_our_airports_tooltip_dr}
 	}
 
 	#Focus for Westwall
@@ -646,8 +631,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward={navy_experience=15
-		}
+		completion_reward={navy_experience=15 add_ideas={idea_der_davesmarine_dr}}
 	}
 
 	#Focus for European Economic Unity
@@ -662,7 +646,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward={add_ideas={idea_davidian_youth_movement_dr
+		completion_reward={add_ideas={idea_eu_member_dr}}#add this to france too, obtain decision to expand eu
 	}
 
 	#Focus for Mitteldaveuropa
@@ -992,8 +976,7 @@
 			factor = 1
 		}
 	}
-
-	#Focus for Davewirtschaft
+	
 	focus = {
 		id = GER_davewirtschaft_dr
 		icon = GFX_goal_generic_positive_trade_relations

@@ -6,21 +6,11 @@ add_ideas={
 	idea_japanese_lapdog_dr
 	idea_countryside_banditry_dr
 	idea_memories_of_the_empire_dr
+	idea_army_of_manchuria_dr
 }
 set_technology = {
 	infantry_weapons = 1
 	gw_artillery = 1
-	
-}
-
-if = {
-	limit = { has_dlc = "Waking the Tiger" }
-	set_country_flag = MAN_northern_bandits
-	set_country_flag = MAN_eastern_bandits
-	set_country_flag = MAN_western_bandits
-	add_ideas = MAN_banditry
-	add_ideas = MAN_kwantung_veto
-	add_ideas = MAN_low_legitimacy_5
 }
 
 recruit_character = MAN_aisin_gioro_puyi
@@ -57,6 +47,5 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 80
-	neutrality = 20
+	fascism = 100
 }

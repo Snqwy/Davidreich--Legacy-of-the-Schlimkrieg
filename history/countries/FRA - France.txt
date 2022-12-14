@@ -332,28 +332,25 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1932.5.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 64
-	fascism = 1
-	neutrality = 15
-	communism = 20
+	democratic = 50
+	fascism = 15
+	neutrality = 6
+	communism = 29
 }
 
 add_ideas = {
-	FRA_victors_of_wwi
-	FRA_disjointed_government
-	FRA_protected_by_the_maginot_line
-	limited_conscription
-	FRA_full_employment
-	FRA_political_violence
-	FRA_inefficient_economy_2
+	idea_political_crisis_dr
+	idea_post_schlimkrieg_demobilization_dr
 }
 
 give_guarantee = CZE
 give_guarantee = YUG
 give_guarantee = ROM
+give_guarantee = HOL 
+give_guarantee = LUX
 
 recruit_character = FRA_philippe_petain
 recruit_character = FRA_maurice_thorez

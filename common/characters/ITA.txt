@@ -2334,13 +2334,9 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				OR = {
-					AND = {
-						OR = {
-							has_government = democratic
-							has_government = neutrality
-						}
-					}
+				IF = {
+					has_government = democratic
+					has_government = neutrality
 				}
 			}
 		}

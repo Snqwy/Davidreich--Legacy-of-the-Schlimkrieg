@@ -408,10 +408,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 20
-	fascism = 73
-	communism = 2
-	neutrality = 5
+	democratic = 5
+	fascism = 83
+	communism = 3
+	neutrality = 9
 }
 
 recruit_character = ITA_benito_mussolini

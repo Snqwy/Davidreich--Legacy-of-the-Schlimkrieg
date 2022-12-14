@@ -1245,7 +1245,6 @@ news_event = {
 				tag = ENG
 				AND = {
 					tag = GER
-					has_completed_focus = GER_oppose_hitler
 				}
 			}
 		}
@@ -1268,7 +1267,6 @@ news_event = {
 					tag = GRE
 					AND = {
 						tag = GER
-						has_completed_focus = GER_oppose_hitler
 					}
 					tag = ITA
 					tag = BUL

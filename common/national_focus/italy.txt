@@ -87,7 +87,7 @@ focus_tree = {
 			}
 		}
 
-		available = {
+		available = {always=no
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -157,12 +157,7 @@ focus_tree = {
 		relative_position_id = ITA_ethiopian_war_logistics_bba
 		cost = 5
 		available = {
-			OR = {
-				controls_state = 2
-				controls_state = 117
-				controls_state = 162
-				controls_state = 158
-			}
+			always=no
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -8382,8 +8377,7 @@ focus_tree = {
 		}
 		relative_position_id = ITA_solid_progress
 		cost = 10
-		available = {
-		}
+		available = {always=no}
 
 		search_filters = {}
 
@@ -16332,7 +16326,7 @@ focus_tree = {
 		}
 		
 		available = {
-			tag = RDS
+			always=no
 		}
 
 		search_filters = {}
@@ -17083,7 +17077,7 @@ focus_tree = {
 		}
 
 		available = {
-			tag = RSI
+			always=no
 		}
 
 		search_filters = {}

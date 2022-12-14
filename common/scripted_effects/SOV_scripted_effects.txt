@@ -5371,13 +5371,6 @@ SOV_start_civil_war = {
 				uncomplete_children = yes
 			}
 		}
-		if = {
-			limit = { has_completed_focus = SOV_beaten_but_not_defeated }
-			uncomplete_national_focus = { # Remove all traces of exiles'
-				focus = SOV_beaten_but_not_defeated
-				uncomplete_children = yes
-			}
-		}
 
 		complete_national_focus = SOV_the_path_of_marxism_leninism
 		complete_national_focus = SOV_the_centre
@@ -5443,7 +5436,6 @@ SOV_start_civil_war = {
 		IF = {
 			limit = {
 				GER = { 
-					has_completed_focus = GER_ussr_war_goal # has completed War with the USSR
 					NOT = { has_war_with = SOV } # Not has started the war already
 					has_wargoal_against = SOV # Still has the wargoal
 				}
@@ -5663,52 +5655,6 @@ SOV_start_civil_war = {
 		
 		clear_variable = ROOT.temp_target_state
 	}
-
-	# Anti Comintern Pact 
-	IF = {
-		limit = {
-			GER = { has_completed_focus = GER_anti_comitern_pact }
-		}
-		# Add effects to SOS
-		IF = {
-			limit = {
-				GER = { has_completed_focus = GER_anti_soviet_pact }
-			}
-			SOS = { add_opinion_modifier = { target = GER modifier = worse_pact_against_us } }
-		}
-		ELSE = {
-			SOS = { add_opinion_modifier = { target = GER modifier = pact_against_us } }
-		}
-		every_country = {
-			limit = {
-				has_country_flag = anti_comintern_member
-				NOT = { has_idea = anti_soviet_pact }
-			}
-			SOS = { add_opinion_modifier = { target = PREV modifier = pact_against_us } }
-		}
-		every_country = {
-			limit = { has_idea = anti_soviet_pact }
-			SOS = { add_opinion_modifier = { target = PREV modifier = worse_pact_against_us } }
-		}
-		# Clear effect for non-communist Russias
-		IF = { 
-			limit = { NOT = { has_government = communism } }
-			every_country = {
-				limit = {
-					OR = {
-						tag = GER
-						has_idea = anti_soviet_pact
-						has_country_flag = anti_comintern_member
-					}
-				}
-				ROOT = { remove_opinion_modifier = { target = PREV modifier = pact_against_us } }
-				ROOT = { remove_opinion_modifier = { target = PREV modifier = worse_pact_against_us  } }
-			}
-		}
-	}
-
-	# Let the world know
-	news_event = { id = nsb_news.9 hours = 8 }
 }
 
 SOV_left_opposition_civil_war_start = {
@@ -5926,18 +5872,6 @@ SOV_exiles_civil_war_start = {
 		}
 	}
 
-	# Cavalry
-	IF = {
-		limit = {
-			has_completed_focus = SOV_approach_semyonov
-		}
-		MAN = {
-			country_event = {
-				id = NSB_Soviet_fascist_civil_war.004 # transfer Semyonov from MAN to SOV
-				days = 0
-			}
-		}
-	}
 	IF = {
 		limit = {
 			any_state = { has_state_flag = SOV_exiles_cavalry_flag }

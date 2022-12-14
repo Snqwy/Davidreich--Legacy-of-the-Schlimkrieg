@@ -806,7 +806,7 @@
 		}
 
 		available = {
-			has_war_support > 0.12
+			always=no
 		}
 		
 		bypass = {
@@ -1554,7 +1554,7 @@
 		}
 
 		available = {
-			
+			always=no
 		}
 		
 		bypass = {
@@ -4617,7 +4617,7 @@
 			factor = 1
 		}
 		available = {
-			
+			always=no
 		}
 		mutually_exclusive = { focus = FRA_form_the_popular_front }
 		bypass = {
@@ -7995,6 +7995,7 @@
 				not = { has_dlc = "La Resistance" }
 			}
 		}
+		available={always=no}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
@@ -8494,7 +8495,7 @@
 			}
 		}
 		available_if_capitulated = yes
-
+		available={always=no}
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = air_focus_bypass_tt

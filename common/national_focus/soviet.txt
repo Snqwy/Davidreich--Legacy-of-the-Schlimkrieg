@@ -8414,7 +8414,6 @@ focus_tree = {
 				}
 				SOV_get_centre_military_support = yes 
 			}
-
 		}
 	}
 
@@ -12283,11 +12282,10 @@ ai_will_do = {
 		
 		search_filters = {}
 	
-			if = {
-				limit = {
-					ENG = {
-						has_government = democratic
-					}
+		if = {
+			limit = {
+				ENG = {
+					has_government = democratic
 				}
 				hidden_effect = { add_ideas = SOV_targeted_bonus_against_ENG }
 				create_wargoal = {
@@ -12295,11 +12293,11 @@ ai_will_do = {
 					target = ENG
 				}
 			}
-			if = {
-				limit = {
-					FRA = {
-						has_government = democratic
-					}
+		}
+		if = {
+			limit = {
+				FRA = {
+					has_government = democratic
 				}
 				hidden_effect = { add_ideas = SOV_targeted_bonus_against_FRA }
 				create_wargoal = {
@@ -12307,11 +12305,11 @@ ai_will_do = {
 					target = FRA
 				}
 			}
-			if = {
-				limit = {
-					GER = {
-						has_government = democratic
-					}
+		}
+		if = {
+			limit = {
+				GER = {
+					has_government = democratic
 				}
 				hidden_effect = { add_ideas = SOV_targeted_bonus_against_GER }
 				create_wargoal = {
@@ -12319,11 +12317,11 @@ ai_will_do = {
 					target = GER
 				}
 			}
-			if = {
-				limit = {
-					ITA = {
-						has_government = democratic
-					}
+		}
+		if = {
+			limit = {
+				ITA = {
+					has_government = democratic
 				}
 				hidden_effect = { add_ideas = SOV_targeted_bonus_against_ITA }
 				create_wargoal = {
@@ -12331,21 +12329,8 @@ ai_will_do = {
 					target = ITA
 				}
 			}
-
 		}
 	}
-
-
-
-########  #######  ########  ######## ####  ######   ##    ##    ########   #######  ##       #### ######## ####  ######   ######  
-##       ##     ## ##     ## ##        ##  ##    ##  ###   ##    ##     ## ##     ## ##        ##     ##     ##  ##    ## ##    ## 
-##       ##     ## ##     ## ##        ##  ##        ####  ##    ##     ## ##     ## ##        ##     ##     ##  ##       ##       
-######   ##     ## ########  ######    ##  ##   #### ## ## ##    ########  ##     ## ##        ##     ##     ##  ##        ######  
-##       ##     ## ##   ##   ##        ##  ##    ##  ##  ####    ##        ##     ## ##        ##     ##     ##  ##             ## 
-##       ##     ## ##    ##  ##        ##  ##    ##  ##   ###    ##        ##     ## ##        ##     ##     ##  ##    ## ##    ## 
-##        #######  ##     ## ######## ####  ######   ##    ##    ##         #######  ######## ####    ##    ####  ######   ######  
-
-
 
 	focus = {
 		id = SOV_anti_capitalist_policies
