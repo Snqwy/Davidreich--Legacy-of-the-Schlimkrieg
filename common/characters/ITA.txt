@@ -2290,6 +2290,9 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
+				has_government = democratic
+				has_government = neutrality
+			}
 		}
 	}
 
@@ -2359,7 +2362,6 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
-			visible = {
 		}
 	}
 
@@ -3335,7 +3337,7 @@ characters = {
 			logistics_skill = 1
 			legacy_id = -1
 			visible = {
-				always = no #Used for unit_leader events
+				always = no 
 			}
 		}
 	}

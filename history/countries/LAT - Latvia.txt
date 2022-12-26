@@ -11,8 +11,6 @@ if = {
 
 add_ideas = {
 	limited_conscription
-	LAT_perkonkrust_idea
-	democratic_opposition
 }
 
 recruit_character = LAT_gustavs_celminsh

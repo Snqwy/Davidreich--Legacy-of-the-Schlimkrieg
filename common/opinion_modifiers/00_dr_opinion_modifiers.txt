@@ -1,0 +1,1 @@
+opinion_modifiers={chinese_nationalist_integration_opm_dr={value=75}chinese_communist_integration_opm_dr={value=75}}

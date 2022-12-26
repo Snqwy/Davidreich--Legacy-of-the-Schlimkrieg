@@ -144,8 +144,8 @@ ARA_UNIFIED = {
 }
 
 MAJ_UNIFIED = {
-	color = rgb { 255 51 51 }
-	color_ui = rgb { 255 51 51 }
+	color = rgb { 216 120 120 }
+	color_ui = rgb { 216 120 120 }
 }
 
 RAT_UNIFIED = {
@@ -759,8 +759,8 @@ mountainous_republics_unified = {
 }
 
 transcaucasia_unified = {
-    color = rgb { 204 102 0 }
-    color_ui = rgb { 153 77 0 }
+    color = rgb { 205 61 0 }
+    color_ui = rgb { 205 61 0 }
 }
 
 siberia_unified = {
@@ -800,3 +800,7 @@ SOV_ROME = {
 	color = rgb { 128 0 128 }
 	color_ui = rgb { 128 0 128 }
 }
+cosmetic_tag_brg_dr={color=rgb{13 77 20}color_ui=rgb{13 77 20}}
+cosmetic_tag_david_commie_dr={color=rgb{171 0 0}color_ui=rgb{171 0 0}}
+cosmetic_tag_funland_dr={color=rgb{120 24 183}color_ui=rgb{120 24 183}}
+cosmetic_tag_freedom_dr={color=rgb{82 40 155}color_ui=rgb{82 40 155}}

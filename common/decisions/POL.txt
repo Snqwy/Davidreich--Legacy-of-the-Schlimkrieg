@@ -1393,7 +1393,6 @@ POL_miedzymorze_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = POL_the_north_sea
 			FIN = {
 				is_ai = yes
 				exists = yes
@@ -1440,7 +1439,6 @@ POL_miedzymorze_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = POL_finno_polish_pact
 			DEN = {
 				is_ai = yes
 				exists = yes
@@ -1487,7 +1485,6 @@ POL_miedzymorze_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = POL_finno_polish_pact
 			NOR = {
 				is_ai = yes
 				exists = yes
@@ -1534,7 +1531,6 @@ POL_miedzymorze_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = POL_finno_polish_pact
 			SWE = {
 				is_ai = yes
 				exists = yes
@@ -1581,7 +1577,6 @@ POL_miedzymorze_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = POL_the_mediterranean
 			CZE = {
 				is_ai = yes
 				exists = yes
@@ -1628,7 +1623,6 @@ POL_miedzymorze_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = POL_the_mediterranean
 			YUG = {
 				is_ai = yes
 				exists = yes
@@ -1675,7 +1669,6 @@ POL_miedzymorze_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = POL_coerce_czechoslovakia
 			AUS = {
 				is_ai = yes
 				exists = yes
@@ -1722,7 +1715,6 @@ POL_miedzymorze_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = POL_coerce_czechoslovakia
 			HUN = {
 				is_ai = yes
 				exists = yes
@@ -1769,10 +1761,6 @@ POL_miedzymorze_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = POL_protect_yugoslavia
-			NOT = {
-				has_completed_focus = POL_control_the_bosporus
-			}
 			GRE = {
 				is_ai = yes
 				exists = yes
@@ -1820,9 +1808,6 @@ POL_miedzymorze_decisions = {
 
 		visible = {
 			has_completed_focus = POL_protect_yugoslavia
-			NOT = {
-				has_completed_focus = POL_invite_greece
-			}
 			TUR = {
 				is_ai = yes
 				exists = yes
@@ -1866,27 +1851,6 @@ POL_miedzymorze_decisions = {
 
 		available = {
 			NOT = { has_country_flag = POL_completing_miedzymorze_decision }
-			has_completed_focus = POL_austro_hungarian_alliance
-			OR = {
-				has_completed_focus = POL_invite_greece
-				has_completed_focus = POL_control_the_bosporus
-			}
-		}
-
-		visible = {
-			OR = {
-				has_completed_focus = POL_austro_hungarian_alliance
-				has_completed_focus = POL_invite_greece
-				has_completed_focus = POL_control_the_bosporus
-			}
-			ITA = {
-				NOT = {
-					is_in_faction = yes
-					has_war_with = ROOT
-					has_country_flag = rejected_miedzymorze_flag
-					has_country_flag = delegation_recieved_flag
-				}
-			}
 		}
 
 		cost = 10
@@ -2678,21 +2642,6 @@ POL_support_monarchy_in_LIT_cat = {
 		icon = generic_prepare_civil_war
 
 		available = {
-			if = {
-				limit = {
-					OR = {
-						has_completed_focus = POL_support_monarchism_in_LIT
-						has_completed_focus = POL_internal_romanian_support
-					}
-				}
-				has_completed_focus = POL_arm_monarchist_militants
-			}
-			if = {
-				limit = {
-					has_completed_focus = POL_support_monarchy_in_CZE
-				}
-				has_completed_focus = POL_habsburg_monarchist_militants
-			}
 			IF = {
 				limit = { tag = LIT }
 			}
@@ -3394,7 +3343,6 @@ POL_promote_falangism_decisions = {
 								original_tag = BEL
 								original_tag = LUX
 							}
-							ROOT = { NOT = { has_completed_focus = POL_invite_the_lowlands } }
 						}
 						AND = {
 							is_latin_american_country = yes
@@ -3406,7 +3354,6 @@ POL_promote_falangism_decisions = {
 								original_tag = VEN
 								original_tag = PRU
 							}
-							ROOT = { NOT = { has_completed_focus = POL_support_falangists_in_the_americas } }
 						}
 					}
 					NOT = { has_government = fascism }

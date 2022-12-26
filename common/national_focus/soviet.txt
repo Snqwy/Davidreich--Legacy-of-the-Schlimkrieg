@@ -13108,7 +13108,6 @@ ai_will_do = {
 
 		bypass = {
 			OR = {
-				has_idea = SOV_molotov_ribbentrop_pact
 
 				NOT = { country_exists = POL }
 
@@ -15368,7 +15367,6 @@ ai_will_do = {
 						}
 					}
 				}
-				add_timed_idea = { idea = SOV_national_brotherhood_idea days = 730 }
 				add_opinion_modifier = { target = ROOT modifier = SOV_support_for_exiles }
 				add_ai_strategy = {
 					type = send_volunteers_desire

@@ -233,49 +233,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_ecole_militaire_haile_selassie_1er
 		cost = 10
-		available = {	
-			IF = {
-				limit = { NOT = { has_government = communism } }
-				NOT = {
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_mesafint_total_control_range
-					}
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_mesafint_dominant_range
-					}
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_mesafint_power_range
-					}
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_mesafint_influence_range
-					}
-				}
-			}
-			ELSE = {
-				NOT = {
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_anarchist_influence_range
-					}
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_anarchist_power_range
-					}
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_anarchist_dominant_range
-					}
-					is_power_balance_in_range = {
-						id = ETH_centralization_balance
-						range = ETH_total_anarchist_range
-					}
-				}
-			}			
-		}
 		ai_will_do = {
 			base = 1
 			modifier = {

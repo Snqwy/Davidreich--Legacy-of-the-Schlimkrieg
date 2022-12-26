@@ -5050,7 +5050,6 @@
 			}
 			OR = {
 				SWI_is_fully_centralized = yes 			
-				NOT = { has_power_balance = { id = SWI_centralization_bop } }
 			}	
 			NOT = {
 				var:SWI_confederation_president = {
@@ -7330,11 +7329,6 @@ focus = {
 		available = {
 			OR = {
 				SWI_is_fully_centralized = yes
-				NOT = {
-					has_power_balance = {
-						id = SWI_centralization_bop
-					}
-				}
 			}
 			SWI_has_fascist_neighbor = yes  
 			var:SWI_biggest_fascist = {
@@ -7414,13 +7408,7 @@ focus = {
 		available = {
 			OR = {
 				SWI_is_fully_centralized = yes 
-				NOT = {
-					has_power_balance = {
-						id = SWI_centralization_bop
-					}
-				}
 			}
-
 			fascism > 0.65
 		}
 		

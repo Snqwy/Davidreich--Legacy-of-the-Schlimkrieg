@@ -8186,8 +8186,6 @@ focus_tree = {
 						option = HIDE
 					}
 				}
-				NOT = { has_completed_focus = ITA_culto_del_duce }
-				NOT = { has_completed_focus = ITA_convene_the_grand_council }
 			}
 		}
 
@@ -8379,7 +8377,6 @@ focus_tree = {
 		cost = 10
 		available = {always=no}
 
-		search_filters = {}
 
 		completion_reward = {
 			if = {

@@ -6462,7 +6462,6 @@
 			factor = 1
 			modifier = {
 				factor = 10
-				GER = { has_completed_focus = GER_reestablish_free_elections }
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -6665,18 +6664,6 @@
 						}
 					}
 				}
-	 			if = {
-	 				limit = {
-	 					GER = { has_completed_focus = GER_reestablish_free_elections }
-	 				}
-	 				random_other_country = {
-	 					limit = {
-	 						original_tag = SPR
-	 						has_government = fascism
-	 					}
-	 					remove_ideas = SPA_recovering_from_civil_war
-	 				}
-	 			}
 			}
 		}
 	}
@@ -6702,7 +6689,6 @@
 			}
 			modifier = {
 				factor = 0
-				NOT = { GER = { has_completed_focus = GER_central_european_alliance } }
 			}
 			modifier = {
 				factor = 200

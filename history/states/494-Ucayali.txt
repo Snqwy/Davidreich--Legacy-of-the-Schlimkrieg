@@ -9,11 +9,14 @@ state={
 
 	history={
 		owner = PRU
+		victory_points={
+			5166 15 
+		} 
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = PRU
 	}
+	add_core_of = PRU
 
 	provinces={
 		2212 2226 5166 8160 8191 10940 

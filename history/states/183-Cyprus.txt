@@ -12,7 +12,7 @@ state= {
 	{
 		owner = ISR
 		add_core_of = ISR
-		add_core_of = CYP
+		add_core_of = GRE
 		victory_points = {
 			11984 5
 		}

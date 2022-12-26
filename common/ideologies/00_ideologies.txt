@@ -83,7 +83,11 @@ ideologies = {
 			anarchist_communism = {
 			}
 			
-			#imperial_vanguardism={}
+			imperial_vanguardism={
+			}
+			
+			vanguardism={
+			}
 		}
 
 		dynamic_faction_names = {
@@ -144,8 +148,12 @@ ideologies = {
 
 			rexism = {
 			}	
-			#davidism={}
-			#maxism={}
+
+			davidism={
+			}
+
+			maxism={
+			}
 		}
 
 		dynamic_faction_names = {

@@ -941,22 +941,6 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					GER = {
-						OR = {
-							has_completed_focus = GER_return_of_the_kaiser
-							has_completed_focus = GER_the_monarchy_compromise
-						}
-						not = { is_in_faction_with = ROOT }
-					}
-				}
-				create_wargoal = {
-					target = GER
-					type = topple_government
-					expire = 0
-				}
-			}
-			if = {
-				limit = {
 					HUN = {
 						has_cosmetic_tag = HUN_EMPIRE
 						not = { is_in_faction_with = ROOT }
@@ -1025,10 +1009,6 @@ focus_tree = {
 					if = {
 						limit = {
 							has_dlc = "By Blood Alone"
-						}
-						NOT = {
-							has_completed_focus = ITA_abolish_the_colonies
-							has_completed_focus = ITA_new_colonial_policies
 						}
 					}
 					any_state = {
@@ -1103,10 +1083,6 @@ focus_tree = {
 						}
 						OR = {
 							NOT = { has_dlc = "By Blood Alone" }
-							NOT = {
-								has_completed_focus = ITA_abolish_the_colonies
-								has_completed_focus = ITA_new_colonial_policies
-							}
 						}
 					}
 				}

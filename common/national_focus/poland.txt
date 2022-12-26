@@ -1902,7 +1902,6 @@ focus_tree = {
 				NOT = {
 					OR = {
 						has_completed_focus = POL_organize_the_peasants_strike
-						has_completed_focus = POL_nationalist_constitution
 						has_completed_focus = POL_assemble_the_regency_council
 					}
 				}
@@ -3335,7 +3334,6 @@ focus_tree = {
 					is_subject_of = GER
 					is_in_faction_with = GER
 				}
-				has_completed_focus = POL_reach_out_to_underground_state
 			}
 			OR = {
 				NOT = { has_completed_focus = POL_plan_east }
@@ -4451,7 +4449,6 @@ focus_tree = {
 					OR = {
 						has_completed_focus = POL_organize_the_peasants_strike
 						has_completed_focus = POL_assemble_the_regency_council
-						has_completed_focus = POL_nationalist_constitution
 					}
 				}
 			}
@@ -4912,7 +4909,6 @@ focus_tree = {
 				NOT = {
 					OR = {
 						has_completed_focus = POL_complete_april_constitution
-						has_completed_focus = POL_nationalist_constitution
 						has_completed_focus = POL_assemble_the_regency_council
 						has_completed_focus = POL_restore_the_sejm
 					}
@@ -6968,7 +6964,6 @@ focus_tree = {
 					OR = {
 						has_completed_focus = POL_complete_april_constitution
 						has_completed_focus = POL_assemble_the_regency_council
-						has_completed_focus = POL_nationalist_constitution
 					}
 				}
 			}
@@ -7357,7 +7352,6 @@ focus_tree = {
 				NOT = {
 					OR = {
 						has_completed_focus = POL_complete_april_constitution
-						has_completed_focus = POL_nationalist_constitution
 						has_completed_focus = POL_organize_the_peasants_strike
 						has_completed_focus = POL_restore_the_sejm
 					}
@@ -8694,7 +8688,6 @@ focus_tree = {
 						has_completed_focus = POL_organize_the_peasants_strike
 						has_completed_focus = POL_restore_the_sejm
 						has_completed_focus = POL_complete_april_constitution
-						has_completed_focus = POL_nationalist_constitution
 					}
 				}
 			}
@@ -9112,7 +9105,6 @@ focus_tree = {
 						has_completed_focus = POL_organize_the_peasants_strike
 						has_completed_focus = POL_restore_the_sejm
 						has_completed_focus = POL_complete_april_constitution
-						has_completed_focus = POL_nationalist_constitution
 					}
 				}
 			}
@@ -11001,7 +10993,6 @@ focus_tree = {
 			x = -47
 			y = 0
 			trigger = {
-				has_completed_focus = POL_nationalist_constitution
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
@@ -11424,7 +11415,6 @@ focus_tree = {
 			x = -48
 			y = 0
 			trigger = {
-				has_completed_focus = POL_nationalist_constitution
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
@@ -11500,7 +11490,6 @@ focus_tree = {
 			x = -48
 			y = 0
 			trigger = {
-				has_completed_focus = POL_nationalist_constitution
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
@@ -13154,7 +13143,6 @@ focus_tree = {
 			x = -47
 			y = 0
 			trigger = {
-				has_completed_focus = POL_nationalist_constitution
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
@@ -13924,7 +13912,6 @@ focus_tree = {
 			x = -47
 			y = 0
 			trigger = {
-				has_completed_focus = POL_nationalist_constitution
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
