@@ -1,9 +1,17 @@
-version="Alpha"
-tags={"Alternative History" "Events" "Map" "National Focuses"}
+version="Beta v0.1"
+tags={
+	"Alternative History"
+	"Events"
+	"Map"
+	"National Focuses"
+}
 name="Davidreich: Legacy of the Schlimkrieg"
+picture="thumbnail.png"
 replace_path="common/ai_focuses"
 replace_path="common/ai_strategy"
 replace_path="common/ai_strategy_plans"
 replace_path="common/national_focus"
 replace_path="history/countries"
 supported_version="1.12.*"
+path="C:/Users/robod/Documents/Paradox Interactive/Hearts of Iron IV/mod/davidreich"
+remote_file_id="2906892627"
