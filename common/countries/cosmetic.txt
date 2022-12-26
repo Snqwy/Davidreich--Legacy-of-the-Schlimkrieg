@@ -801,6 +801,9 @@ SOV_ROME = {
 	color_ui = rgb { 128 0 128 }
 }
 cosmetic_tag_brg_dr={color=rgb{13 77 20}color_ui=rgb{13 77 20}}
-cosmetic_tag_david_commie_dr={color=rgb{171 0 0}color_ui=rgb{171 0 0}}
+cosmetic_tag_david_commie_dr={color=rgb{149 0 0}color_ui=rgb{149 0 0}}
 cosmetic_tag_funland_dr={color=rgb{120 24 183}color_ui=rgb{120 24 183}}
 cosmetic_tag_freedom_dr={color=rgb{82 40 155}color_ui=rgb{82 40 155}}
+cosmetic_tag_jhukovian_soviet_dr={color=rgb{146 47 47}color_ui=rgb{146 47 47}}
+cosmetic_tag_inca_dr={color=rgb{174 130 105}color_ui=rgb{174 130 105}}
+cosmetic_tag_inca_fp_dr={color=rgb{172 98 60}color_ui=rgb{172 98 60}}

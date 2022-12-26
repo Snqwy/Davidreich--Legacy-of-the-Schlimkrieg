@@ -88,6 +88,9 @@ ideologies = {
 			
 			vanguardism={
 			}
+
+			utopianism={
+			}
 		}
 
 		dynamic_faction_names = {

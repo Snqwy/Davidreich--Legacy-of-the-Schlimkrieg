@@ -11,7 +11,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = stalinism
+			ideology = vanguardism
 			traits = { trait_the_red_walker_dr trait_international_criminal_dr }
 			expire = "1953.3.1.1"
 			id = -1

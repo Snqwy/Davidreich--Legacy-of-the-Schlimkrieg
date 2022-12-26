@@ -111,8 +111,7 @@ characters={
 		}
 		
 		country_leader={
-			ideology=leninism
-			traits={ staunch_stalinist }
+			ideology=imperial_vanguardism
 			expire="1965.1.1.1"
 			id=-1
 		}
