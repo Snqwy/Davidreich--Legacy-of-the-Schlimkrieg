@@ -4457,10 +4457,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
-		bypass = {
-			has_completed_focus = POL_draw_closer_to_britain
-		}
 
 		available = {
 			NOT = { has_government = fascism }

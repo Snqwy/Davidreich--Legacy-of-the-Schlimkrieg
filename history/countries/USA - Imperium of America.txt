@@ -169,6 +169,8 @@ set_popularities = {
 	communism = 1
 }
 
+set_autonomy={target=MEX autonomous_state=autonomy_puppet}
+
 if = {
 	limit = { has_dlc = "La Resistance" }
 	create_operative_leader = {

@@ -1868,7 +1868,6 @@ political_actions = {
 			modifier = {
 				add = 10
 				original_tag = ITA
-				has_completed_focus = ITA_convene_the_grand_council
 				OR = {
 					ITA_is_monarchist_ai = yes
 					ITA_is_christian_democracy_ai = yes
@@ -1877,7 +1876,6 @@ political_actions = {
 			modifier = {
 				add = 40
 				original_tag = ITA
-				has_completed_focus = ITA_monarchia_d_italia
 			}
 		}
     }

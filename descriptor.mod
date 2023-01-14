@@ -1,4 +1,4 @@
-version="Beta v0.1"
+version="[Beta] v0.1.2"
 tags={
 	"Alternative History"
 	"Events"

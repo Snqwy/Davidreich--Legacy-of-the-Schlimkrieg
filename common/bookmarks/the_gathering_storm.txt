@@ -14,11 +14,6 @@ bookmarks = {
 				idea_legacy_of_the_schlimkrieg_dr
 				idea_steady_economic_recovery_dr
 			}
-			focuses = {
-				GER_davidsraum_dr
-				GER_total_victory_dr
-				GER_locate_hyperborea_dr
-			}
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"

@@ -1368,7 +1368,7 @@ characters={
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_westwall_dr
+				#has_completed_focus = GER_westwall_dr
 			}
 			traits = {
 				fortification_engineer 

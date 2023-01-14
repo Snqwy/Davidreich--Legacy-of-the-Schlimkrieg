@@ -54,8 +54,8 @@ UNL_UNIFIED = {
 }
 
 USC_UNIFIED = {
-	color = rgb { 103 204 255 }
-	color_ui = rgb { 103 204 255 }
+	color = rgb { 104 186 195 }
+	color_ui = rgb { 104 186 195 }
 }
 
 BAL_UNIFIED = {

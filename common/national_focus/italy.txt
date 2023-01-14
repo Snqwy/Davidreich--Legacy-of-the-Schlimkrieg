@@ -8235,10 +8235,6 @@ focus_tree = {
 							rule = obsolete_focus_branches_visibility
 							option = HIDE
 						}
-						OR = {
-							has_completed_focus = ITA_culto_del_duce
-							has_completed_focus = ITA_convene_the_grand_council
-						}
 					}
 				}
 			}

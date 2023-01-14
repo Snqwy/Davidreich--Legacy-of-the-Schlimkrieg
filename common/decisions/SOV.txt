@@ -4175,13 +4175,6 @@ SOV_gosproyektstroy_decision_category = {
 			original_tag = SOV
 		}
 
-		available = {
-			OR = {
-				has_idea = SOV_gosproyektstroy_2_usa #Done like this for tooltip purposes
-			}
-			NOT = { has_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag }
-		}
-
 		days_remove = SOV_gosproyektstroy_decision_time
 
 		fire_only_once = yes

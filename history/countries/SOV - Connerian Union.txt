@@ -214,6 +214,7 @@ add_ideas = {
 	idea_a_fractured_motherland_dr
 	idea_home_of_the_revolution_dr
 	idea_agrarian_society_dr
+	idea_red_airforce_and_navy_dr
 	idea_stalinist_plot_dr
 }
 set_convoys = 50

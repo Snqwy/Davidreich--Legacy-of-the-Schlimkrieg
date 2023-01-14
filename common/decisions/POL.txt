@@ -1807,7 +1807,6 @@ POL_miedzymorze_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = POL_protect_yugoslavia
 			TUR = {
 				is_ai = yes
 				exists = yes
@@ -3105,7 +3104,6 @@ POL_fight_against_monarchy_in_LIT_cat = {
 				OR = {
 					has_country_flag = POL_banned_monarchy_flag
 					has_completed_focus = POL_support_monarchy_in_CZE
-					has_completed_focus = POL_internal_romanian_support
 					has_country_flag = achievement_POL_elected_monarch
 					AND = {
 						original_tag = LIT 
@@ -3408,7 +3406,6 @@ POL_promote_falangism_decisions = {
 						original_tag = VEN
 						original_tag = PRU
 					}
-					ROOT = { NOT = { has_completed_focus = POL_support_falangists_in_the_americas } }
 					NOT = { has_government = fascism }
 					NOT = { has_country_flag = banned_fascism_flag }
 				}
