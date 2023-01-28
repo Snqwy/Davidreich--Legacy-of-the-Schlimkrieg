@@ -47,20 +47,7 @@ focus_tree = {
 		#relative_position_id =
 		cost = 5
 		dynamic = yes 
-		available = {
-			IF = {
-				limit = {
-					271 = { is_owned_by = ROOT }
-				}
-				271 = { is_controlled_by = ROOT }
-			}
-			ELSE = {
-				any_state = {
-					is_capital = yes 
-					is_owned_by = ROOT 
-					is_controlled_by = ROOT
-				}
-			}
+		available = {always=no
 		}
 		ai_will_do = {
 			base = 2
@@ -1277,10 +1264,7 @@ focus_tree = {
 		#relative_position_id =
 		cost = 10
 		available = {
-			271 = {
-				is_controlled_by = ROOT
-			}
-			has_civil_war = no
+			always=no
 		}
 
 
@@ -2493,7 +2477,7 @@ focus_tree = {
  		#relative_position_id =
  		cost = 5
  		available = {
- 			has_global_flag = second_italo_ethiopian_war_flag
+ 			always=no
  		}
  		bypass = { } 
 
@@ -2951,10 +2935,7 @@ focus_tree = {
 		#relative_position_id =
 		cost = 5
 		available = {
-			has_country_leader = {
-				character = ETH_haile_selassie 
-				ruling_only = yes 
-			}
+			always=no
 		}
 		ai_will_do = {
 			base = 2
@@ -5511,7 +5492,7 @@ focus_tree = {
 		icon = GFX_focus_generic_join_comintern
 		cost = 5
 		available = {
-			is_subject = no
+			always=no
 		}	
 
 		completion_reward = {
@@ -7140,9 +7121,7 @@ focus_tree = {
 		#relative_position_id =
 		cost = 5
 		available = {
-			controls_half_ethiopian_owned_states = yes 
-			has_global_flag = second_italo_ethiopian_war_flag
-			ITA = { has_civil_war = no }
+			always=no
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL}

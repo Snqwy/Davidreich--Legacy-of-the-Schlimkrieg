@@ -8,6 +8,7 @@ characters={
 		}
 		country_leader={
 			ideology=liberalism
+			traits={trait_savior_of_the_imperium_dr}
 			expire="1947.1.1.1"
 			id=-1
 		}

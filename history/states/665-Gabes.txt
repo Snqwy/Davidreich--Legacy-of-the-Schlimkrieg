@@ -5,6 +5,7 @@ state={
 	history={
 		owner = FRA
 		add_core_of = TUN
+		add_claim_by=ITA
 		victory_points = {
 			7005 1 
 		}

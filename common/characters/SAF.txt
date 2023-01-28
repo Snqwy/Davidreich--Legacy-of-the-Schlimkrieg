@@ -8,6 +8,7 @@ characters={
 		}
 		country_leader={
 			ideology=conservatism
+			traits={trait_submissive_and_breedable_dr}
 			expire="1965.1.1.1"
 			id=-1
 		}

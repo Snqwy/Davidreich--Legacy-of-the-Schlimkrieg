@@ -8,6 +8,7 @@ characters={
 		}
 		country_leader={
 			ideology=liberalism
+			traits={british_bulldog}
 			expire="1938.1.1.1"
 			id=-1
 		}

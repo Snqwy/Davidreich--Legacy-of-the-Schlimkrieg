@@ -8,7 +8,7 @@ characters={
 		}
 		country_leader={
 			ideology=conservatism
-			traits={trait_hero_of_france_dr}
+			traits={trait_hero_of_france_dr trait_black_dr}
 			expire="1965.1.1.1"
 			id=-1
 		}

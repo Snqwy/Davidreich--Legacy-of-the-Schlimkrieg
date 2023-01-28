@@ -24,7 +24,7 @@ focus_tree = {
 		id = TUR_the_montreux_convention
 		icon = GFX_focus_TUR_the_montreux_convention
 		available = {
-			TUR = { is_puppet = no }
+			always=no
 		}
 		x = 5
 		y = 0
@@ -8878,6 +8878,7 @@ focus_tree = {
 		x = 30
 		y = 0
 		cost = 5
+		available={always=no}
 		ai_will_do = {
 			base = 10
 		}
@@ -8923,6 +8924,7 @@ focus_tree = {
 		x = 45
 		y = 0
 		cost = 5
+		available={always=no}
 		ai_will_do = {
 			base = 10
 		}

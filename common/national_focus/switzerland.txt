@@ -80,7 +80,7 @@
 			factor = 10
 		}
 	
-		available = {
+		available = {always=no
 			
 		}
 	

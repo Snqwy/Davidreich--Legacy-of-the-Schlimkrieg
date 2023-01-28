@@ -1,0 +1,1 @@
+ideas={country={idea_victor_of_the_schlimkrieg_dr={picture=generic_victors_of_ww1 allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={guarantee_cost=0.3 mobilization_speed=-0.3 land_doctrine_cost_factor=0.1}}
