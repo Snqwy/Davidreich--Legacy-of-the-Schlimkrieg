@@ -11,10 +11,6 @@ if = {
 
 set_research_slots = 3
 
-add_ideas = {
-	en_svensk_tiger
-	neutrality_idea
-}
 set_stability = 0.9
 set_war_support = 0.1
 
@@ -378,41 +374,6 @@ if = {
 			mid_1_custom_slot = ship_airplane_launcher_1
 			mid_2_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = ship_mine_layer_1
-		}
-	}
-}
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Submarines #
-		create_equipment_variant = {
-			name = "Delfinen Class"				
-			type = ship_hull_submarine_2
-			name_group = SWE_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_1
-				fixed_ship_engine_slot = sub_ship_engine_1
-				rear_1_custom_slot = ship_mine_layer_sub
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Sjölejonet Class"				
-			type = ship_hull_submarine_2
-			name_group = SWE_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = empty
-			}
 		}
 	}
 }

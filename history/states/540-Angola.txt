@@ -7,6 +7,7 @@ state={
 
 	history={
 		owner = COG
+		add_core_of = CHA
 		buildings = {
 			infrastructure = 1
 			8248 = {
@@ -20,7 +21,7 @@ state={
 	}
 
 	provinces={
-		5158 7548 8219 8248 12981
+		7548 8219 8248 12981
 	}
 	manpower=1600000
 	buildings_max_level_factor=1.000

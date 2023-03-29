@@ -9,7 +9,8 @@ state=
 	history=
 	{
 		owner = SPR
-		add_core_of = GAB
+		add_core_of = CAR
+		add_core_of = CHA
 		victory_points = {
 			1903 1 
 		}

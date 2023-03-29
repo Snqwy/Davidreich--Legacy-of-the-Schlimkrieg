@@ -1,0 +1,16 @@
+characters={
+	BAY_schnitzel_man={
+		name="Schnitzel Man"
+		portraits={
+			civilian={
+				large="GFX_portrait_schnitzel_man"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			traits={trait_friendly_schnitzel_man_dr}
+			id=-1
+		}
+	}
+}

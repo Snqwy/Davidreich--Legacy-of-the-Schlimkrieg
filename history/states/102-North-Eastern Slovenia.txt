@@ -16,7 +16,7 @@ state=
 			665 1
 		}
 		add_core_of = YUG
-		add_core_of = SLV
+		add_core_of = CRO
 	}
 	provinces={
 		596 665 3631 3654 6672 9596

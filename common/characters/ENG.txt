@@ -9,6 +9,7 @@ characters={
 		country_leader={
 			ideology=liberalism
 			traits={british_bulldog}
+			desc=leader_desc_sebastian
 			expire="1938.1.1.1"
 			id=-1
 		}
@@ -31,6 +32,7 @@ characters={
 
 	ENG_oswald_mosley={
 		name=ENG_sebastian
+		desc = leader_desc_sebastian
 		portraits={
 			civilian={
 				large="GFX_portrait_sebastian_fascist"
@@ -68,6 +70,7 @@ characters={
 
 	ENG_harry_pollitt={
 		name=ENG_sebastian
+		desc = leader_desc_sebastian
 		portraits={
 			civilian={
 				large="GFX_portrait_sebastian_communist"

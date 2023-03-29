@@ -18,6 +18,7 @@ state = {
 
 		}
 		add_core_of = COG
+		add_core_of = CHA
 
 	}
 	

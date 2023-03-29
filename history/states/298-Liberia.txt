@@ -25,6 +25,7 @@ state=
 		}
 		add_core_of = LIB
 		add_core_of = GNA
+		add_core_of = CHA
 	}
 	provinces={
 		7959 8006

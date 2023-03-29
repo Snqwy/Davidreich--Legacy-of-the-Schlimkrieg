@@ -807,3 +807,14 @@ cosmetic_tag_freedom_dr={color=rgb{82 40 155}color_ui=rgb{82 40 155}}
 cosmetic_tag_jhukovian_soviet_dr={color=rgb{146 47 47}color_ui=rgb{146 47 47}}
 cosmetic_tag_inca_dr={color=rgb{174 130 105}color_ui=rgb{174 130 105}}
 cosmetic_tag_inca_fp_dr={color=rgb{172 98 60}color_ui=rgb{172 98 60}}
+cosmetic_tag_zhelto_dr={color=rgb{205 59 93}color_ui=rgb{205 59 93}}
+cosmetic_tag_zhelto_russia_dr={color=rgb{205 59 93}color_ui=rgb{205 59 93}}
+cosmetic_tag_anglo_slav_dr={color=rgb{46 76 102}color_ui=rgb{46 76 102}}
+cosmetic_tag_spaceballs_dr={color=rgb{158 178 176}color_ui=rgb{158 178 176}}
+cosmetic_tag_kaos_dr={color=rgb{116 122 138}color_ui=rgb{116 122 138}}
+cosmetic_tag_conner_mongol_dr={color=rgb{133 215 218}color_ui=rgb{133 215 218}}
+cosmetic_tag_french_union_dr={color=rgb{182 100 100}color_ui=rgb{182 100 100}}
+cosmetic_tag_moody_clique_nat_dr={color=rgb{47 104 181}color_ui=rgb{47 104 181}}
+cosmetic_tag_moody_clique_com_dr={color=rgb{189 57 42}color_ui=rgb{189 57 42}}
+cosmetic_tag_moody_china_nat_dr={color=rgb{47 104 181}color_ui=rgb{47 104 181}}
+cosmetic_tag_moody_china_com_dr={color=rgb{189 57 42}color_ui=rgb{189 57 42}}

@@ -25,7 +25,7 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = VEN
+		add_core_of = COL
 		victory_points = {
 			8113 5 
 		}

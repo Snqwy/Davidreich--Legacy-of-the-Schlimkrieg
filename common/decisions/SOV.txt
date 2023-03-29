@@ -13001,7 +13001,6 @@ SOV_soviet_civil_war_dec_cat = {
 		icon = generic_police_action
 		available = {
 			IF = {
-				limit = { SOV_is_exiles = yes }
 				any_army_leader = {
 					NOT = { has_trait = trait_SOV_monarchist_sympathizer }
 					NOT = { has_trait = trait_SOV_stalinist }
@@ -13076,7 +13075,6 @@ SOV_soviet_civil_war_dec_cat = {
 		icon = generic_police_action
 		available = {
 			IF = {
-				limit = { SOV_is_exiles = yes }
 				any_navy_leader = {
 					NOT = { has_trait = trait_SOV_monarchist_sympathizer }
 					NOT = { has_trait = trait_SOV_stalinist }
@@ -13226,7 +13224,6 @@ SOV_soviet_civil_war_dec_cat = {
 				}
 				ELSE_IF = {
 					limit = {
-						SOV_is_exiles = yes
 					}
 					random_army_leader = {
 						limit = {
@@ -13329,7 +13326,6 @@ SOV_soviet_civil_war_dec_cat = {
 				}
 				ELSE_IF = {
 					limit = {
-						SOV_is_exiles = yes
 					}
 					random_navy_leader = {
 						limit = {
@@ -13475,7 +13471,6 @@ SOV_soviet_civil_war_dec_cat = {
 				add_to_variable = { SOV.SOV_right_opposition_army_support = 0.1 }
 			}
 			ELSE_IF = {
-				limit = { SOV_is_exiles = yes }
 				add_to_variable = { SOV.SOV_exiles_army_support = 0.1 }
 			}
 			SOV_get_centre_military_support = yes
@@ -13551,7 +13546,6 @@ SOV_soviet_civil_war_dec_cat = {
 				add_to_variable = { SOV_right_opposition_navy_support = 0.1 }
 			}
 			ELSE_IF = {
-				limit = { SOV_is_exiles = yes }
 				add_to_variable = { SOV_exiles_navy_support = 0.1 }
 			}
 			SOV_get_centre_military_support = yes
@@ -13623,7 +13617,6 @@ SOV_soviet_civil_war_dec_cat = {
 				add_to_variable = { SOV_right_opposition_air_support = 0.1 }
 			}
 			ELSE_IF = {
-				limit = { SOV_is_exiles = yes }
 				add_to_variable = { SOV_exiles_air_support = 0.1 }
 			}
 			SOV_get_centre_military_support = yes
@@ -13698,8 +13691,7 @@ SOV_soviet_civil_war_dec_cat = {
 		}
 		target_root_trigger = {
 			OR = {
-				SOV_is_right_opposition = yes
-				SOV_is_exiles = yes
+				SOV_is_right_opposition = y
 			}
 		}
 		available = {
@@ -13715,8 +13707,7 @@ SOV_soviet_civil_war_dec_cat = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				add = 50
-				SOV_is_exiles = yes
+				add = 
 			}
 			modifier = {
 				add = 50
@@ -13742,7 +13733,6 @@ SOV_soviet_civil_war_dec_cat = {
 				OR = {
 					has_completed_focus = SOV_concessions_to_foreign_powers # Right Opposition
 					AND = {
-						SOV_is_exiles = yes
 					}
 				}
 			}
@@ -13782,8 +13772,7 @@ SOV_soviet_civil_war_dec_cat = {
 		}
 		target_root_trigger = {
 			OR = {
-				SOV_is_right_opposition = yes
-				SOV_is_exiles = yes
+				SOV_is_right_opposition = y
 			}
 		}
 
@@ -13801,8 +13790,7 @@ SOV_soviet_civil_war_dec_cat = {
 		ai_will_do = {
 			base = 100
 			modifier = {
-				add = 50
-				SOV_is_exiles = yes
+				add = 
 			}
 			modifier = {
 				add = 50
@@ -13828,7 +13816,6 @@ SOV_soviet_civil_war_dec_cat = {
 				OR = {
 					has_completed_focus = SOV_concessions_to_foreign_powers # Right Opposition
 					AND = {
-						SOV_is_exiles = yes
 					}
 				}
 			}
@@ -13890,8 +13877,7 @@ SOV_soviet_civil_war_dec_cat = {
 		}
 		target_root_trigger = {
 			OR = {
-				SOV_is_right_opposition = yes
-				SOV_is_exiles = yes
+				SOV_is_right_opposition = y
 			}
 		}
 		cost = 10
@@ -14059,8 +14045,7 @@ SOV_soviet_civil_war_dec_cat = {
 	SOV_sabotage_behind_enemy_lines_decision = {
 		icon = generic_assassination
 		state_target = yes
-		target_root_trigger = {
-			SOV_is_exiles = yes
+		target_root_trigger 
 		}
 
 		target_trigger = {
@@ -14135,8 +14120,7 @@ SOV_soviet_civil_war_dec_cat = {
 	SOV_recruit_manchurian_cavalry_exiles = {
 		icon = generic_cavalry
 		state_target = yes
-		target_root_trigger = {
-			SOV_is_exiles = yes
+		target_root_trigger 
 		}
 
 		target_trigger = {
@@ -14188,8 +14172,7 @@ SOV_soviet_civil_war_dec_cat = {
 	SOV_recruit_cavalry_exiles = {
 		icon = generic_cavalry
 		state_target = yes
-		target_root_trigger = {
-			SOV_is_exiles = yes
+		target_root_trigger 
 		}
 		target_trigger = {
 			FROM = {
@@ -14273,8 +14256,7 @@ SOV_soviet_civil_war_dec_cat = {
 		icon = {
 			key = SOV_place_hq_exiles
 			trigger = {
-				214 = { has_state_flag = SOV_hq_state_selected }
-				SOV_is_exiles = yes
+				214 = { has_state_flag = SOV_hq_state_selected
 			}
 		}
 
@@ -14362,8 +14344,7 @@ SOV_soviet_civil_war_dec_cat = {
 		icon = {
 			key = SOV_place_hq_exiles
 			trigger = {
-				192 = { has_state_flag = SOV_hq_state_selected }
-				SOV_is_exiles = yes
+				192 = { has_state_flag = SOV_hq_state_selected
 			}
 		}
 		available = {
@@ -14435,8 +14416,7 @@ SOV_soviet_civil_war_dec_cat = {
 		icon = {
 			key = SOV_place_hq_exiles
 			trigger = {
-				571 = { has_state_flag = SOV_hq_state_selected }
-				SOV_is_exiles = yes
+				571 = { has_state_flag = SOV_hq_state_selected
 			}
 		}
 		available = {
@@ -14508,8 +14488,7 @@ SOV_soviet_civil_war_dec_cat = {
 		icon = {
 			key = SOV_place_hq_exiles
 			trigger = {
-				405 = { has_state_flag = SOV_hq_state_selected }
-				SOV_is_exiles = yes
+				405 = { has_state_flag = SOV_hq_state_selected
 			}
 		}
 		available = {
@@ -14581,8 +14560,7 @@ SOV_soviet_civil_war_dec_cat = {
 		icon = {
 			key = SOV_place_hq_exiles
 			trigger = {
-				651 = { has_state_flag = SOV_hq_state_selected }
-				SOV_is_exiles = yes
+				651 = { has_state_flag = SOV_hq_state_selected
 			}
 		}
 		available = {
@@ -14619,8 +14597,7 @@ SOV_soviet_civil_war_dec_cat = {
 	SOV_plan_start_of_uprising_chita = {
 		state_target = yes
 		target_root_trigger = {
-			OR = {
-				SOV_is_exiles = yes
+			OR =
 				SOV_is_right_opposition = yes
 			}
 		}
@@ -14654,8 +14631,7 @@ SOV_soviet_civil_war_dec_cat = {
 		icon = {
 			key = SOV_place_hq_exiles
 			trigger = {
-				563 = { has_state_flag = SOV_hq_state_selected }
-				SOV_is_exiles = yes
+				563 = { has_state_flag = SOV_hq_state_selected
 			}
 		}
 		available = {
@@ -14692,8 +14668,7 @@ SOV_soviet_civil_war_dec_cat = {
 		name = SOV_plan_start_of_uprising_chita
 		state_target = yes
 		target_root_trigger = {
-			OR = {
-				SOV_is_exiles = yes
+			OR =
 				SOV_is_right_opposition = yes
 			}
 		}
@@ -14727,8 +14702,7 @@ SOV_soviet_civil_war_dec_cat = {
 		icon = {
 			key = SOV_place_hq_exiles
 			trigger = {
-				566 = { has_state_flag = SOV_hq_state_selected }
-				SOV_is_exiles = yes
+				566 = { has_state_flag = SOV_hq_state_selected
 			}
 		}
 		available = {
@@ -14864,8 +14838,7 @@ SOV_soviet_civil_war_dec_cat = {
 		icon = {
 			key = SOV_place_hq_exiles
 			trigger = {
-				FROM = { state = var:SOV.SOV_civil_war_start_state }
-				SOV_is_exiles = yes
+				FROM = { state = var:SOV.SOV_civil_war_start_state
 			}
 		}
 
@@ -14890,8 +14863,7 @@ SOV_soviet_civil_war_dec_cat = {
 			FROM = { SOV_is_unaligned_state = yes }
 			NOT = { has_country_flag = SOV_align_state_in_process }
 			IF = {
-				limit = {
-					SOV_is_exiles = yes
+				limit = 
 				}
 			}
 		}
@@ -15001,8 +14973,7 @@ SOV_soviet_civil_war_dec_cat = {
 			FROM = { SOV_is_unaligned_state = yes }
 			NOT = { has_country_flag = SOV_align_state_in_process }
 			IF = {
-				limit = {
-					SOV_is_exiles = yes
+				limit = 
 				}
 			}
 		}
@@ -15041,8 +15012,7 @@ SOV_soviet_civil_war_dec_cat = {
 		ai_will_do = {
 			base = 110
 			modifier = {
-				add = -10
-				SOV_is_exiles = yes # Prio clearing Siberia and Far East
+				add = - # Prio clearing Siberia and Far East
 			}
 			modifier = {
 				factor = 0
@@ -15119,8 +15089,7 @@ SOV_soviet_civil_war_dec_cat = {
 		icon = {
 			key = SOV_place_hq_exiles
 			trigger = {
-				FROM = { state = var:SOV.SOV_civil_war_start_state }
-				SOV_is_exiles = yes
+				FROM = { state = var:SOV.SOV_civil_war_start_state
 			}
 		}
 		state_target = yes
@@ -15252,8 +15221,7 @@ SOV_soviet_civil_war_dec_cat = {
 		icon = {
 			key = SOV_place_hq_exiles
 			trigger = {
-				FROM = { state = var:SOV.SOV_civil_war_start_state }
-				SOV_is_exiles = yes
+				FROM = { state = var:SOV.SOV_civil_war_start_state
 			}
 		}
 		state_target = yes
@@ -15306,8 +15274,7 @@ SOV_soviet_civil_war_dec_cat = {
 		ai_will_do = {
 			base = 150
 			modifier = {
-				add = -60 # prio clearing the East
-				SOV_is_exiles = yes
+				add = -60 # prio clearing the Ea
 			}
 			modifier = {
 				factor = 0
@@ -15384,8 +15351,7 @@ SOV_soviet_civil_war_dec_cat = {
 		icon = {
 			key = SOV_place_hq_exiles
 			trigger = {
-				FROM = { state = var:SOV.SOV_civil_war_start_state }
-				SOV_is_exiles = yes
+				FROM = { state = var:SOV.SOV_civil_war_start_state
 			}
 		}
 		state_target = yes
@@ -15519,8 +15485,7 @@ SOV_soviet_civil_war_dec_cat = {
 		icon = {
 			key = SOV_place_hq_exiles
 			trigger = {
-				FROM = { state = var:SOV.SOV_civil_war_start_state }
-				SOV_is_exiles = yes
+				FROM = { state = var:SOV.SOV_civil_war_start_state
 			}
 		}
 		state_target = yes

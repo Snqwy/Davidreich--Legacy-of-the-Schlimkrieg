@@ -1,4 +1,4 @@
-version="[Beta] v0.1.2"
+version="[Beta] v0.1.3"
 tags={
 	"Alternative History"
 	"Events"
@@ -12,6 +12,6 @@ replace_path="common/ai_strategy"
 replace_path="common/ai_strategy_plans"
 replace_path="common/national_focus"
 replace_path="history/countries"
-supported_version="1.12.7"
+supported_version="1.12.*"
 path="C:/Users/robod/Documents/Paradox Interactive/Hearts of Iron IV/mod/davidreich"
 remote_file_id="2906892627"

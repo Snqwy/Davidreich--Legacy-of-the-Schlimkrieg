@@ -36,12 +36,7 @@ state = {
 		
 		owner = ETH
 		add_core_of = ETH
-		add_core_of = GBA
-
-		1936.6.1 = {
-			owner = ITA
-			controller = ITA
-		}
+		add_core_of = CHA
 	}
 
 	provinces = {

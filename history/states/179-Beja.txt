@@ -24,7 +24,6 @@ state={
 
 			}
 		}
-		add_core_of = POR
 		add_core_of = SPR
 		add_extra_state_shared_building_slots = 1 
 

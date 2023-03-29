@@ -15,7 +15,8 @@ state={
 
 		}
 
-		add_core_of = MZB
+		add_core_of = TZN
+		add_core_of = CHA
 
 	}
 	provinces={

@@ -2,12 +2,12 @@
 
 create_country_leader = {
 	name = "Riley"
-	desc = ""
-	picture = "leader_unknown.dds"
+	desc = "leader_desc_riley"
+	picture = "gfx/leaders/generic/leader_unknown.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-		
+		trait_dislikes_colin_dr
 	}
 }
 

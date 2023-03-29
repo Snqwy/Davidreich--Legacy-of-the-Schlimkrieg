@@ -12,6 +12,7 @@ state={
 
 	history={
 		owner = SAF
+		add_core_of = CHA
 		buildings = {
 			infrastructure = 1
 		}

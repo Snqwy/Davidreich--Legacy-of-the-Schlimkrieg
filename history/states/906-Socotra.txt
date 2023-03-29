@@ -14,7 +14,9 @@ state={
 			}
 
 		}
-		add_claim_by = SOM
+		add_core_of = CHA
+		add_core_of = ETH
+		add_core_of = SOM
 	}
 
 	provinces={

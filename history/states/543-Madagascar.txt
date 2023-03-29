@@ -8,6 +8,7 @@ state={
 	
 	history={
 		add_core_of = MAD
+		add_core_of = CHA
 		owner = MAD
 		victory_points = {
 			5128 1

@@ -2350,7 +2350,6 @@ ITA_add_correct_mafia_rising_modifier_version = {
 		limit = {
 			has_dlc = "La Resistance"
 		}
-		add_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
 	}
 	else = {
 		add_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }

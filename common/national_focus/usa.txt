@@ -202,10 +202,6 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = USA_armed_forces_desegregation
-				add_idea = USA_full_desegregation
-			}
 			if = {
 				limit = {
 					not = { has_government = communism }
@@ -1882,17 +1878,9 @@ focus_tree = {
 				limit = {
 					has_completed_focus = USA_limited_intervention
 				}
-				swap_ideas = {
-					remove_idea = USA_limited_intervention
-					add_idea = USA_lend_lease_act_li
-				}
 			}
 			else_if = {
 				limit = { has_completed_focus = USA_neutrality_act }
-				swap_ideas = {
-					remove_idea = USA_neutrality_act
-					add_idea = USA_lend_lease_act_na
-				}
 			}
 			else = {
 				add_ideas = USA_lend_lease_act_dummy #should never get here, just for tooltip purposes
@@ -2590,7 +2578,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
-			add_timed_idea = { idea = USA_adjusted_compensation_payment days = 180 }
+			#add_timed_idea = { idea = USA_adjusted_compensation_payment days = 180 }
 			USA_great_depression_level_down = yes
 			if = {
 				limit = {
@@ -3040,7 +3028,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_banking_sector_deregulation
 		}
 	}
 	focus = {
@@ -3069,13 +3056,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = USA_banking_sector_deregulation
-				add_idea = USA_national_employment_strategy
-			}
-			USA_great_depression_level_down = yes
-		}
 	}
 	focus = {
 		id = USA_invite_foreign_support
@@ -5384,13 +5364,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = USA_war_department
-				add_idea = USA_department_of_defense
-			}
-		}
 	}
 
 

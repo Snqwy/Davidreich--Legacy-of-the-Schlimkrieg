@@ -29,7 +29,6 @@ state=
 			}
 		}
 		add_core_of = INS
-		add_core_of = MAL
 	}
 
 	provinces={

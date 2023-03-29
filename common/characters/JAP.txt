@@ -9,6 +9,7 @@ characters={
 		country_leader={
 			ideology=fascism_ideology
 			traits={emperor_showa warrior_code}
+			desc = leader_desc_dillon
 			expire="1989.1.1.1"
 			id=700
 		}
@@ -16,6 +17,7 @@ characters={
 
 	JAP_kyuichi_tokuda={
 		name=JAP_emperor_hirohito
+		desc = leader_desc_dillon
 		portraits={
 			civilian={
 				large="GFX_portrait_dillon_communist"

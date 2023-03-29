@@ -1,1 +1,1 @@
-state={id=410 name="STATE_410"manpower=341053 state_category=rural history={owner=AFG victory_points={10782 1}buildings={infrastructure=1}add_core_of=AFG add_core_of=PER}provinces={1889 2039 2070 4891 10782 13082}local_supplies=6.0}
+state={id=410 name="STATE_410"manpower=341053 state_category=rural history={owner=AFG victory_points={10782 1}buildings={infrastructure=1}add_core_of=AFG}provinces={1889 2039 2070 4891 10782 13082}local_supplies=6.0}

@@ -28,8 +28,8 @@ state = {
 		
 		owner = ETH
 		add_core_of = ETH
-		add_core_of = SID
-		add_core_of = ORO
+		add_core_of = SOM
+		add_core_of = CHA
 	}
 
 	provinces = {

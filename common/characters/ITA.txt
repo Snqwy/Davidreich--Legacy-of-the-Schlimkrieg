@@ -20,6 +20,7 @@ characters = {
 			ideology=maxism
 			expire="1965.1.1.1"
 			traits = { il_duce }
+			desc = leader_desc_max
 			id=-1
 		}
 	}

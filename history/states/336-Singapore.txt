@@ -39,7 +39,6 @@ state={
 				naval_base = 5
 			}
 		}
-		add_core_of = MAL
 		add_core_of = INS
 	}
 

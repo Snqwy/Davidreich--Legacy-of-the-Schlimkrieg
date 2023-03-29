@@ -406,12 +406,7 @@ ITA_has_peaced_out_eth_on_startup = {
 	}
 }
 
-ITA_state_has_any_version_of_mafia_rising_modifier = {
-	OR = {
-		has_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-		has_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
-	}
-}
+ITA_state_has_any_version_of_mafia_rising_modifier = {}
 
 ITA_is_advisor_available = {
 	is_country_leader = no

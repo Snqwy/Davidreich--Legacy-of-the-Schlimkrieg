@@ -6747,20 +6747,6 @@ ITA_italian_mafia_dec_cat = {
 			}
 		}
 
-		remove_effect = {
-			FROM = {
-				if = {
-					limit = {
-						has_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
-					}
-					remove_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
-				}
-				else = {
-					remove_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
-				}
-			}
-		}
-
 		ai_will_do = {
 			base = 0.1
 		}

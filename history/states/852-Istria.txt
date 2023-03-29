@@ -20,8 +20,8 @@ state = {
 			}
 		}
 		add_core_of = YUG
+		add_core_of = ITA
 		add_core_of = CRO
-		add_core_of=ITA
 
 		set_province_name = { id = 11564 name = VICTORY_POINTS_11564_ITA }
 	}

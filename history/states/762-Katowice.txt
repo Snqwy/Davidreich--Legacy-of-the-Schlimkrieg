@@ -21,7 +21,6 @@ state={
 		}
 		add_core_of = POL
 		add_core_of = GER
-		add_core_of = SIL
 	}
 
 	local_supplies=0.0 

@@ -13,6 +13,7 @@ characters={
 		country_leader = {
 			ideology = vanguardism
 			traits = { trait_the_red_walker_dr trait_international_criminal_dr }
+			desc = leader_desc_conner
 			expire = "1953.3.1.1"
 			id = -1
 		}
@@ -2513,7 +2514,6 @@ characters={
 					has_government = communism
 				}
 				AND = {
-					SOV_is_exiles = yes 
 					has_government = communism 
 				}
 			}
@@ -2588,8 +2588,7 @@ characters={
 					tag = SOV 
 					has_government = communism
 				}
-				AND = {
-					SOV_is_exiles = yes 
+				AND = { 
 					has_government = communism 
 				}
 			}
@@ -2648,7 +2647,6 @@ characters={
 					has_government = communism
 				}
 				AND = {
-					SOV_is_exiles = yes 
 					has_government = communism 
 				}
 			}
@@ -2711,8 +2709,7 @@ characters={
 					SOV_is_right_opposition = yes 
 					has_completed_focus = SOV_cooperation_against_stalin 
 				}
-				AND = {
-					SOV_is_exiles = yes 
+				AND = { 
 					has_government = communism 
 				}
 			}
@@ -2773,8 +2770,7 @@ characters={
 					SOV_is_right_opposition = yes 
 					has_completed_focus = SOV_cooperation_against_stalin 
 				}
-				AND = {
-					SOV_is_exiles = yes 
+				AND = { 
 					has_government = communism 
 				}
 			}
@@ -2830,8 +2826,7 @@ characters={
 					tag = SOV 
 					has_government = communism
 				}
-				AND = {
-					SOV_is_exiles = yes 
+				AND = { 
 					has_government = communism 
 				}
 			}
@@ -2890,8 +2885,7 @@ characters={
 					SOV_is_left_opposition = yes 
 					has_completed_focus = SOV_cooperation_against_stalin 
 				}
-				AND = {
-					SOV_is_exiles = yes 
+				AND = { 
 					has_government = communism 
 				}
 			}
@@ -2950,8 +2944,7 @@ characters={
 					SOV_is_left_opposition = yes 
 					has_completed_focus = SOV_cooperation_against_stalin 
 				}
-				AND = {
-					SOV_is_exiles = yes 
+				AND = { 
 					has_government = communism 
 				}
 			}
@@ -3004,8 +2997,7 @@ characters={
 					tag = SOV 
 					has_government = communism
 				}
-				AND = {
-					SOV_is_exiles = yes 
+				AND = { 
 					has_government = communism 
 				}
 			}
@@ -3096,8 +3088,7 @@ characters={
 					tag = SOV 
 					has_government = communism
 				}
-				AND = {
-					SOV_is_exiles = yes 
+				AND = { 
 					has_government = communism 
 				}
 			}
@@ -3159,8 +3150,7 @@ characters={
 					tag = SOV 
 					has_government = communism
 				}
-				AND = {
-					SOV_is_exiles = yes 
+				AND = { 
 					has_government = communism 
 				}
 			}
@@ -3220,8 +3210,7 @@ characters={
 					SOV_is_right_opposition = yes 
 					has_completed_focus = SOV_liberate_ryutin 
 				}
-				AND = {
-					SOV_is_exiles = yes 
+				AND = { 
 					has_government = communism
 				}
 			}
@@ -3590,8 +3579,7 @@ characters={
 			allowed = {
 				original_tag = SOV
 			}
-			available = {
-				SOV_is_exiles = yes
+			available = 
 				OR = {
 					has_global_flag = SOV_soviet_civil_war
 					has_global_flag = SOV_soviet_civil_war_over
@@ -3629,25 +3617,12 @@ characters={
 			idea_token = SOV_vyacheslav_tkachyov
 			allowed = {
 				original_tag = SOV
-			}
-			available = {
-				SOV_is_exiles = yes
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				has_government=neutrality 
+				has_government=fascism
 			}
 			traits = { air_chief_reform_2 }
 		}
 	}
-
-	#CHIEF OF AIRFORCE
 	SOV_yan_nagursky = {
 		name = SOV_yan_nagursky
 
@@ -3670,8 +3645,7 @@ characters={
 			allowed = {
 				original_tag = SOV
 			}
-			available = {
-				SOV_is_exiles = yes
+			available = 
 				OR = {
 					has_global_flag = SOV_soviet_civil_war
 					has_global_flag = SOV_soviet_civil_war_over
@@ -3711,8 +3685,7 @@ characters={
 			allowed = {
 				original_tag = SOV
 			}
-			available = {
-				SOV_is_exiles = yes
+			available = 
 				OR = {
 					has_global_flag = SOV_soviet_civil_war
 					has_global_flag = SOV_soviet_civil_war_over
@@ -3813,8 +3786,8 @@ characters={
 	}
 
 	SOV_aleksandr_kerensky = {
-		name = SOV_iosef_stalin
-
+		name = SOV_iosif_stalin
+		desc = leader_desc_conner
 		portraits = {
 			civilian = {
 				large = GFX_portrait_conner_democratic

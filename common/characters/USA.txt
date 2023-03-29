@@ -8,7 +8,8 @@ characters={
 		}
 		country_leader={
 			ideology=liberalism
-			traits={trait_savior_of_the_imperium_dr}
+			traits={trait_savior_of_the_imperium_dr trait_dislikes_riley_dr}
+			desc = leader_desc_colin
 			expire="1947.1.1.1"
 			id=-1
 		}

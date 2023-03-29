@@ -40,7 +40,7 @@ if = {
 		early_battlecruiser = 1
 		transport = 1
 	}
-	set_naval_oob = "GER_1936_naval"
+	set_naval_oob = ""
 }
 if = {
 	limit = {
@@ -72,7 +72,7 @@ if = {
 		sonar = 1
 		basic_cruiser_armor_scheme = 1
 	}
-	set_naval_oob = "GER_1936_naval_mtg"
+	set_naval_oob = ""
 }
 if = {
 	limit = {
@@ -93,7 +93,7 @@ set_popularities = {
 	fascism = 80
 	communism = 5
 }
-add_ideas={idea_legacy_of_the_schlimkrieg_dr idea_militarization_dr idea_steady_economic_recovery_dr limited_exports extensive_conscription partial_economic_mobilisation}
+add_ideas={idea_legacy_of_the_schlimkrieg_dr idea_militarization_dr idea_steady_economic_recovery_dr limited_exports extensive_conscription partial_economic_mobilisation}add_timed_idea={idea=idea_david_four_year_plan_dr days=1095}
 recruit_character = GER_wilhelm_pieck
 recruit_character = GER_konrad_adenauer
 recruit_character = GER_adolf_hitler

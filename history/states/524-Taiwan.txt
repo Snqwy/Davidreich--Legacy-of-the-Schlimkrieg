@@ -10,6 +10,7 @@ state=
 		owner = PRC
 		add_core_of = CHI
 		add_core_of = PRC
+		add_claim_by = JAP
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1

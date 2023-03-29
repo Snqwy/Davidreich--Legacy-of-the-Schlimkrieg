@@ -16,17 +16,6 @@ SWI_debug_decisions_category = {
 		}
 	}
 
-	SWI_add_dynamic_modifiers = {
-		complete_effect = {
-			add_dynamic_modifier = {
-				modifier = SWI_dormant_citizen_militia
-			}
-			add_dynamic_modifier =  {
-				modifier = SWI_active_citizen_militia
-			}
-		}
-	}	
-
 	SWI_remove_dynamic_modifiers = {
 		complete_effect = {
 			SWI_turn_militias_into_regulars = yes
@@ -2977,13 +2966,6 @@ SWI_absolute_neutrality_decisions_category = {
 			FROM = {
 				SWI_is_country_to_balance = yes
 				has_government = fascism 
-				NOT = {
-					has_war_with = ROOT 
-					has_dynamic_modifier = { modifier = SWI_gold_trade_with_switzerland }
-					has_dynamic_modifier = { modifier = SWI_stole_our_gold_reserves }
-				}
-				NOT = {has_country_flag = SWI_rejected_investment} 
-				NOT = {has_country_flag = SWI_waiting_for_answer_timeout}
 			}
 			NOT = {
 				any_other_country = {
@@ -3029,12 +3011,6 @@ SWI_absolute_neutrality_decisions_category = {
 				NOT = { has_war_with = ROOT } 
 				SWI_is_country_to_balance = yes
 				has_government = democratic 
-				NOT = {					
-					has_dynamic_modifier = { modifier = SWI_gold_trade_with_switzerland }
-					has_dynamic_modifier = { modifier = SWI_stole_our_gold_reserves }
-				}
-				NOT = {has_country_flag = SWI_rejected_investment}  
-				NOT = {has_country_flag = SWI_waiting_for_answer_timeout}
 			}
 			NOT = {
 				any_other_country = {
@@ -3594,26 +3570,6 @@ SWI_military_readiness_decisions_category = {
 			has_country_flag = SWI_militias_turned_into_regulars  
 		}
 
-		remove_effect = {
-			set_country_flag = SWI_militia_active #activates the Militia Mission
-			effect_tooltip = { #Every time I have to make a Tooltip to represent basic functionality Dynamic Modifiers should support my will to live dies a little bit. 
-				remove_dynamic_modifier = {
-					modifier = SWI_dormant_citizen_militia
-				}			
-				add_dynamic_modifier = {
-					modifier = SWI_fake_active_citizen_militia_for_the_tooltip
-				}
-			}
-			hidden_effect = {
-				remove_dynamic_modifier = {
-					modifier = SWI_dormant_citizen_militia
-				}
-				add_dynamic_modifier =  {
-					modifier = SWI_active_citizen_militia
-				}
-			}
-		}
-
 		ai_will_do = {
 			base = 0 
 			modifier = { #PANIC! 
@@ -3642,15 +3598,7 @@ SWI_military_readiness_decisions_category = {
 		complete_effect = {
 			clr_country_flag = SWI_militia_active
 			custom_effect_tooltip = SWI_remove_citizen_militia_active_tooltip # I have about 10 more of these in me... 
-			hidden_effect = { 
-				remove_dynamic_modifier = {
-					modifier = SWI_active_citizen_militia
-				}
-			}
 			SWI_reset_citizen_militia_active_modifier = yes
-			add_dynamic_modifier = { 
-				modifier = SWI_dormant_citizen_militia
-			}
 		}
 		ai_will_do = {
 			base = 0 

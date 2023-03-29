@@ -547,22 +547,6 @@ SWI_turn_militias_into_regulars = { #Effect to turn militias into regulars
 				}
 				clr_country_flag = SWI_militia_active
 			}
-			if = {
-				limit = {
-					has_dynamic_modifier = { modifier =  SWI_dormant_citizen_militia} 
-				}
-				remove_dynamic_modifier = {
-					modifier = SWI_dormant_citizen_militia 
-				}
-			}
-			if = {
-				limit = {
-					has_dynamic_modifier = { modifier = SWI_active_citizen_militia }
-				}
-				remove_dynamic_modifier = {
-					modifier = SWI_active_citizen_militia 
-				}
-			}
 		}  
 	}
 }
@@ -1626,15 +1610,11 @@ SWI_increase_gold_trade = { #Increases the gold trade level for both parties
 
 SWI_update_gold_trade_modifiers = { #Creates dynamic modifier if there's none, and updates the values. 
 	if = {
-		limit = { NOT = { has_dynamic_modifier = { modifier = SWI_gold_trade_with_switzerland } } }
 		set_variable = { SWI_gold_trade_consumer_goods_factor = SWI.SWI_gold_trade_consumer_goods_factor_increase }
 		set_variable = { SWI_gold_trade_building_speed_factor = SWI.SWI_gold_trade_building_speed_factor_increase }
 		set_variable = { SWI_gold_trade_research_speed_factor = SWI.SWI_gold_trade_research_speed_factor_increase }
 		set_variable = { SWI_gold_trade_lack_of_resource_penalty_factor = SWI.SWI_gold_trade_lack_of_resource_penalty_factor_increase }
 		set_variable = { SWI_gold_trade_factory_max_efficiency_factor = SWI.SWI_gold_trade_factory_max_efficiency_factor_increase }
-		hidden_effect = {
-			add_dynamic_modifier = { modifier = SWI_gold_trade_with_switzerland }
-		}
 		custom_effect_tooltip = SWI_start_gold_trade_with_switzerland_dynamic_mod_TT
 		add_opinion_modifier = {
 			target = SWI 
@@ -1656,15 +1636,11 @@ SWI_update_gold_trade_modifiers = { #Creates dynamic modifier if there's none, a
 	SW_calculate_seized_modifiers = yes
 	SWI = {
 		if = {
-			limit = { NOT = { has_dynamic_modifier = { modifier = SWI_swiss_gold_market } } }
 			set_variable = { SWI_gold_trade_consumer_goods_factor = SWI_gold_trade_consumer_goods_factor_increase }
 			set_variable = { SWI_gold_trade_building_speed_factor = SWI_gold_trade_building_speed_factor_increase }
 			set_variable = { SWI_gold_trade_research_speed_factor = SWI_gold_trade_research_speed_factor_increase }
 			set_variable = { SWI_gold_trade_lack_of_resource_penalty_factor = SWI_gold_trade_lack_of_resource_penalty_factor_increase }
 			set_variable = { SWI_gold_trade_factory_max_efficiency_factor = SWI_gold_trade_factory_max_efficiency_factor_increase }
-			hidden_effect = { 
-				add_dynamic_modifier = { modifier = SWI_swiss_gold_market } 
-			}
 			custom_effect_tooltip = SWI_Start_swiss_gold_market_dynamic_mod_TT
 		}
 		else = {
@@ -1717,7 +1693,7 @@ SWI_seize_gold = {
 		set_variable = { SWI.SWI_gold_seized_lack_of_resource_penalty_factor = SWI_gold_seized_lack_of_resource_penalty_factor  }
 		set_variable = { SWI.SWI_gold_seized_factory_max_efficiency_factor = SWI_gold_seized_factory_max_efficiency_factor  }
 	}
-	remove_dynamic_modifier = { modifier = SWI_gold_trade_with_switzerland }
+	#remove_dynamic_modifier = { modifier = SWI_gold_trade_with_switzerland }
 	custom_effect_tooltip = SWI_remove_swiss_gold_dynamic_mod_TT
 	add_opinion_modifier = {
 		target = SWI
@@ -1727,13 +1703,9 @@ SWI_seize_gold = {
 		target = SWI 
 		modifier = SWI_gold_trade
 	}
-	add_dynamic_modifier = {
-		modifier = SWI_stole_our_gold_reserves
-		days = 180
-	}
 	custom_effect_tooltip = SWI_add_stolen_gold_dynamic_mod_TT
 	SWI = {
-		add_dynamic_modifier = { modifier = SWI_seized_gold days = 365 } 
+		#add_dynamic_modifier = { modifier = SWI_seized_gold days = 365 } 
 		custom_effect_tooltip = SWI_seized_gold_dynamic_mod_TT
 	}
 	SWI_adjust_gold_market_after_seizing_gold = yes 
@@ -1744,10 +1716,6 @@ SWI_adjust_gold_market_after_seizing_gold = {
 	if = {
 		limit = {
 			check_variable = { SWI.SWI_gold_trade = SWI_country_gold_trading_level }
-		}
-		SWI = {
-			remove_dynamic_modifier = { modifier = SWI_swiss_gold_market }
-			set_variable = { SWI.SWI_gold_trade = 0 }
 		}
 	}
 	else = {

@@ -21,7 +21,6 @@ state={
 				naval_base = 4
 			}
 		}
-		add_core_of = ECU
 		victory_points = {
 			12798 5
 		}

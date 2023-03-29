@@ -5,7 +5,6 @@ state={
 	history={
 		owner = UZB
 		add_core_of = UZB
-		add_core_of = SIK
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {

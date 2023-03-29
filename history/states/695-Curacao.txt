@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		add_core_of = CRC
+		add_core_of = COL
 		owner = DOM
 		add_core_of = DOM
 		victory_points = {

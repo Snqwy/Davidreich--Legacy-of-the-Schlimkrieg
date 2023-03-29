@@ -19,14 +19,19 @@ bookmarks = {
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
+				idea_agrarian_society_dr
 				idea_a_fractured_motherland_dr
 				idea_home_of_the_revolution_dr
-				idea_agrarian_society_dr
 			}
 		}
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
+			ideas = {
+				idea_victor_of_the_schlimkrieg_dr
+				idea_political_crisis_dr
+				idea_post_schlimkrieg_demobilization_dr
+			}
 		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
@@ -35,6 +40,9 @@ bookmarks = {
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
+			ideas = {
+				idea_victor_of_the_schlimkrieg_dr
+			}
 		}
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
@@ -43,16 +51,12 @@ bookmarks = {
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
-			ideas = {
-				#
-			}
-			focuses = {
-				#
-			}	
 		}
+
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
+		
 		"MAN"={
 			minor = yes
 			history = ""
@@ -84,11 +88,6 @@ bookmarks = {
 			ideology = democratic
 		}
 		"ETH"={
-			minor = yes
-			history = ""
-			ideology = neutrality
-		}
-		"CHA"={
 			minor = yes
 			history = ""
 			ideology = neutrality

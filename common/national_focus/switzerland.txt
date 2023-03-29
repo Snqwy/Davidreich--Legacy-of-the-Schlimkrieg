@@ -419,7 +419,7 @@
 
 		completion_reward = {
 			SWI_make_helvetia_defensive = yes
-			add_dynamic_modifier = { 
+			#add_dynamic_modifier = { 
 				modifier = SWI_dormant_citizen_militia
 				scope = SWI 
 			}
@@ -925,7 +925,7 @@
 			}
 			every_owned_state = { 
 				limit = { is_core_of = ROOT }
-				add_dynamic_modifier = { modifier = SWI_infrastructure_rigged_to_blow } 
+				#add_dynamic_modifier = { modifier = SWI_infrastructure_rigged_to_blow } 
 			}	
 			custom_effect_tooltip = SWI_rig_infrastructure_to_blow_TT
 			SWI_add_suspicious_prep_opinion = yes 		
@@ -1045,12 +1045,12 @@
 		search_filters = {  } 
 
 		completion_reward = {
-			3 = {
-				add_dynamic_modifier = {
-					modifier = SWI_attack_from_the_mountains 
-					scope = SWI 
-				}
-			}
+			#3 = {
+				#add_dynamic_modifier = {
+					#modifier = SWI_attack_from_the_mountains 
+					#scope = SWI 
+				#}
+			#}
 			SWI_add_suspicious_prep_opinion = yes 		
 		}
 	}
@@ -1078,7 +1078,7 @@
 		completion_reward = {
 			army_experience = 50
 			add_command_power = 50
-			add_ideas = { SWI_frontier_defense_plan_idea_1 }
+			#add_ideas = { SWI_frontier_defense_plan_idea_1 }
 			SWI_add_suspicious_prep_opinion = yes 		
 			show_ideas_tooltip = SWI_jakob_huber_army_chief
 			show_ideas_tooltip = SWI_jakob_huber_theorist
@@ -1199,14 +1199,14 @@
 				add_building_construction = { type = bunker province = { all_provinces = yes } level = 3 instant_build = yes }
 			}
 
-			3 = { # Swiss PLateau
-				add_dynamic_modifier = {
-					modifier = SWI_frontier_defense 
-					scope = SWI 
-				}
-				add_building_construction = { type = bunker province = 11623 level = 3 instant_build = yes }
-				add_building_construction = { type = bunker province = 663 level = 3 instant_build = yes }
-			}
+			#3 = { # Swiss PLateau
+				#add_dynamic_modifier = {
+					#modifier = SWI_frontier_defense 
+					#scope = SWI 
+				#}
+				#add_building_construction = { type = bunker province = 11623 level = 3 instant_build = yes }
+				#add_building_construction = { type = bunker province = 663 level = 3 instant_build = yes }
+			#}
 			151 = { # Eastern Swiss Alps 
 				add_building_construction = { type = bunker province = 661 level = 2 instant_build = yes }
 				add_building_construction = { type = bunker province = 3660 level = 2 instant_build = yes }
@@ -1618,12 +1618,12 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			every_owned_state = {
-				add_dynamic_modifier = {
-					modifier = SWI_citizen_supply_mandate_mod
-					scope = SWI
-				}
-			}
+			#every_owned_state = {
+				#add_dynamic_modifier = {
+					#modifier = SWI_citizen_supply_mandate_mod
+					#scope = SWI
+				#}
+			#}
 			SWI_add_suspicious_prep_opinion = yes 		
 		}
 	}
@@ -2648,7 +2648,7 @@
 				limit = {
 					is_core_of = SWI
 				}
-				add_dynamic_modifier = { modifier = SWI_heer_und_haus_mod }
+				#add_dynamic_modifier = { modifier = SWI_heer_und_haus_mod }
 			}
 			add_to_variable = {
 				var = SWI_citizen_militia_initial_activation_timeout
@@ -2691,11 +2691,11 @@
 		completion_reward = {
 			every_owned_state = {
 				limit = { is_core_of = ROOT }
-				add_dynamic_modifier = {
-					modifier = SWI_Ortswehren_dynamic_mod
-					scope = SWI 
-				}
-			}
+				#add_dynamic_modifier = {
+					#modifier = SWI_Ortswehren_dynamic_mod
+					#scope = SWI 
+				#}
+			#}
 			SWI_mr_high_medium_increase = yes
 			SWI_add_suspicious_prep_opinion = yes
 		}
@@ -5012,10 +5012,10 @@
 				limit = {
 					is_alpine_state = yes 
 				}
-				add_dynamic_modifier = {
-					modifier = SWI_alpine_redoubt_dynamic_modifier
-					scope = SWI 
-				}
+				#add_dynamic_modifier = {
+					#modifier = SWI_alpine_redoubt_dynamic_modifier
+					#scope = SWI 
+				#}
 				add_building_construction = {
 					type = bunker 
 					level = 1 

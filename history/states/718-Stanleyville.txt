@@ -10,6 +10,7 @@ state={
 
 	history={
 		owner = COG
+		add_core_of = CHA
 		buildings = {
 			infrastructure = 1
 

@@ -9,7 +9,6 @@ state={
 	state_category = wasteland
 	history={
 		owner = XSM
-		add_core_of = SIK
 		add_core_of = XSM
 		add_core_of = CHI
 		add_core_of = PRC

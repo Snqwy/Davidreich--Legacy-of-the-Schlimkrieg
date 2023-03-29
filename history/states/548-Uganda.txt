@@ -8,11 +8,12 @@ state={
 	}
 	history={
 		owner = ENG
+		add_core_of = CHA
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_core_of = UGA
+		add_core_of = TZN
 		victory_points = {
 			12989 1
 		}

@@ -6,6 +6,7 @@ state={
 	
 	history={
 		owner = ENG
+		add_claim_by = RAJ
 		buildings = {
 			infrastructure = 2
 			12251 = {

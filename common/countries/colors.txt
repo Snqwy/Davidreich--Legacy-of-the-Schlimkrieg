@@ -17,7 +17,7 @@ SWE = {
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-	color = rgb { 80 138 203 }
+	color = rgb { 66 122 186 }
 	color_ui = rgb { 80 138 203 }
 }
 LUX = {
@@ -816,6 +816,30 @@ CHU = {
 	color_ui = rgb { 134 89 45 }
 }
 MAD = {
-	color = rgb { 172 192 108 }
-	color_ui = rgb { 172 192 108 }
+	color = rgb { 164 209 86 }
+	color_ui = rgb { 164 209 86 }
+}
+TZN = {
+	color = rgb { 13 188 159 }
+	color_ui = rgb { 13 188 159 }
+}
+CAR = {
+	color = rgb { 104 131 152 }
+	color_ui = rgb { 104 131 152 }
+}
+NGR = {
+	color = rgb { 202 177 108 }
+	color_ui = rgb { 202 177 108 }
+}
+NGR = {
+	color = rgb { 202 177 108 }
+	color_ui = rgb { 202 177 108 }
+}
+MRT = {
+	color = rgb { 150 181 136 }
+	color_ui = rgb { 150 181 136 }
+}
+SOM = {
+	color = rgb { 132 195 193 }
+	color_ui = rgb { 132 195 193 }
 }

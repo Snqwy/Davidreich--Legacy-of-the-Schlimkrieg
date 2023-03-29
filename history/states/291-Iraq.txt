@@ -33,7 +33,6 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = IRQ
 		add_core_of = SAU
 	}
 

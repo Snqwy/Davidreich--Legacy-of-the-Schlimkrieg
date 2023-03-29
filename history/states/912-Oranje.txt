@@ -1,0 +1,22 @@
+state={
+	id=912
+	name="STATE_912"
+	history={
+		owner = SAF
+		victory_points = {
+			10400 10 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SAF
+		add_core_of = CHA
+	}
+	provinces={
+		5231 12064 12648 
+	}
+	manpower=444489
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

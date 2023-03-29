@@ -8336,8 +8336,8 @@ focus_tree = {
 				limit = {
 					has_completed_focus = ITA_struggle_in_ethiopia
 				}
-				unlock_decision_tooltip = ITA_bop_slander_the_duce
-				unlock_decision_tooltip = ITA_bop_criticize_the_war
+				#unlock_decision_tooltip = ITA_bop_slander_the_duce
+				#unlock_decision_tooltip = ITA_bop_criticize_the_war
 			}
 		}
 	}
