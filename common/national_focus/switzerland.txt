@@ -423,9 +423,9 @@
 				modifier = SWI_dormant_citizen_militia
 				scope = SWI 
 			}
-			SWI_upgrade_template_and_divisions = yes
-			SWI_add_suspicious_prep_opinion = yes 
-			SWI_increase_militia_cap = yes 
+			#SWI_upgrade_template_and_divisions = yes
+			#SWI_add_suspicious_prep_opinion = yes 
+			#SWI_increase_militia_cap = yes 
 		}
 	}
 

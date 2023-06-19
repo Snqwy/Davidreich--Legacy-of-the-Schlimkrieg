@@ -1,7 +1,7 @@
 state={
 	id=126
 	name="STATE_126"
-	manpower=9824296
+	manpower=0
 	
 	state_category = megalopolis
 
@@ -20,13 +20,6 @@ state={
 			air_base = 10
 			11374 = {
 				naval_base = 10
-			}
-		}
-		add_core_of = ENG
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 4
-				industrial_complex = 4
 			}
 		}
 	}

@@ -10,7 +10,7 @@ state={
 
 		}
 		add_core_of = GEO
-		add_core_of = KAL
+		add_core_of = DON
 		victory_points = {
 			11724 1 
 		}

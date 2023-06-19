@@ -19,6 +19,7 @@ state={
 			}
 		}
 		add_core_of = MEX
+		add_claim_by = NIC
 		#victory_points = {
 		#	12715 3
 		#}

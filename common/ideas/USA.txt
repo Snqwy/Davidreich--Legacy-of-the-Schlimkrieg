@@ -1,2 +1,2 @@
 ideas={country={idea_quebecois_resistance_dr={picture=FRA_scw_intervention_republicans_focus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=0.1 stability_factor=-0.1 war_support_factor=-0.1}}
-}
+}}

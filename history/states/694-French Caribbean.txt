@@ -6,7 +6,6 @@ state={
 	state_category = rural
 
 	history={
-		add_core_of = GDL
 		add_core_of = DOM
 		owner = DOM
 		victory_points = {

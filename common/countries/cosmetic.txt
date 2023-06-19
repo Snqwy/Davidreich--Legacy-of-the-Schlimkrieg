@@ -43,9 +43,9 @@ GCO_UNIFIED = {
 	color_ui = rgb { 255 255 51 }
 }
 
-PLC_UNIFIED = {
-	color = rgb { 176 81 111 }
-	color_ui = rgb { 176 81 111 }
+PLC_UNIFIED = { #david plc
+	color = rgb { 119 66 73 }
+	color_ui = rgb { 119 66 73 }
 }
 
 UNL_UNIFIED = {
@@ -93,14 +93,14 @@ SYR_EYALET = {
 	color_ui = rgb { 26 138 4 }
 }
 
-EUR_UNIFIED = {
+EUR_UNIFIED = { #max's europe
 	color = rgb { 0 51 153 }
 	color_ui = rgb { 0 51 153 }
 }
 
-MUT_UNIFIED = {
-	color = rgb { 153 153 0 }
-	color_ui = rgb { 153 153 0 }
+MUT_UNIFIED = { #wakanda
+	color = rgb { 0 119 112 }
+	color_ui = rgb { 0 119 112 }
 }
 
 SPQR_UNIFIED = {
@@ -153,8 +153,8 @@ RAT_UNIFIED = {
 	color_ui = rgb { 255 255 51 }
 }
 
-HRE_UNIFIED = {
-	color = rgb { 128 128 128 }
+HRE_UNIFIED = { #david holy roman empire
+	color = rgb { 155 144 49 }
 	color_ui = rgb { 128 128 128 }
 }
 
@@ -281,7 +281,7 @@ USA_CSA = {
 	color_ui = rgb { 186 205 219 }
 }
 
-SOV_russia = {
+SOV_russia = { #democratic conner
     color = rgb { 72 143 68 }
     color_ui = rgb { 72 143 68 }
 }
@@ -380,8 +380,8 @@ KPB_kingdom_portugal_and_brazil = {
 }
 
 ESU_POR_unified = {
-	color = rgb { 253  232  129 }
-	color_ui = rgb { 253  232  129 }
+	color = rgb { 210 196 99 }
+	color_ui = rgb { 210 196 99 }
 }
 
 POR_empire = {
@@ -724,8 +724,8 @@ SLAVIC_UNIFIED = {
 }
 
 turkestan_united = {
-    color = rgb { 155 230 240 }
-    color_ui = rgb { 155 230 240 }
+    color = rgb { 106 151 171 }
+    color_ui = rgb { 106 151 171 }
 }
 
 EST_FIN = {
@@ -743,9 +743,9 @@ SOV_ROME = {
 	color_ui = rgb { 230 225 165 }
 }
 
-SOV_PANSLAVIC = {
-	color = rgb { 40 80 40 }
-	color_ui = rgb { 40 80 40 }
+SOV_PANSLAVIC = { #david panslavic
+	color = rgb { 38 78 58 }
+	color_ui = rgb { 38 78 58 }
 }
 
 LIVONIA = {
@@ -792,29 +792,32 @@ SOV_right_opposition = {
 	color = rgb { 230 0 0 }
 	color_ui = rgb { 255 51 51 }
 }
-russian_empire = {
-	color = rgb { 64 128 0 }
-	color_ui = rgb { 51 204 51 }
+russian_empire = { #church of irving
+	color = rgb { 118 104 73 }
+	color_ui = rgb { 118 104 73 }
 }
 SOV_ROME = {
 	color = rgb { 128 0 128 }
-	color_ui = rgb { 128 0 128 }
+	color_ui = rgb { 128 0 128 } 
 }
 cosmetic_tag_brg_dr={color=rgb{13 77 20}color_ui=rgb{13 77 20}}
 cosmetic_tag_david_commie_dr={color=rgb{149 0 0}color_ui=rgb{149 0 0}}
 cosmetic_tag_funland_dr={color=rgb{120 24 183}color_ui=rgb{120 24 183}}
-cosmetic_tag_freedom_dr={color=rgb{82 40 155}color_ui=rgb{82 40 155}}
+cosmetic_tag_freedom_dr={color=rgb{50 9 97}color_ui=rgb{50 9 97}}
 cosmetic_tag_jhukovian_soviet_dr={color=rgb{146 47 47}color_ui=rgb{146 47 47}}
 cosmetic_tag_inca_dr={color=rgb{174 130 105}color_ui=rgb{174 130 105}}
 cosmetic_tag_inca_fp_dr={color=rgb{172 98 60}color_ui=rgb{172 98 60}}
 cosmetic_tag_zhelto_dr={color=rgb{205 59 93}color_ui=rgb{205 59 93}}
 cosmetic_tag_zhelto_russia_dr={color=rgb{205 59 93}color_ui=rgb{205 59 93}}
-cosmetic_tag_anglo_slav_dr={color=rgb{46 76 102}color_ui=rgb{46 76 102}}
 cosmetic_tag_spaceballs_dr={color=rgb{158 178 176}color_ui=rgb{158 178 176}}
 cosmetic_tag_kaos_dr={color=rgb{116 122 138}color_ui=rgb{116 122 138}}
 cosmetic_tag_conner_mongol_dr={color=rgb{133 215 218}color_ui=rgb{133 215 218}}
-cosmetic_tag_french_union_dr={color=rgb{182 100 100}color_ui=rgb{182 100 100}}
+cosmetic_tag_french_union_dr={color=rgb{146 69 60}color_ui=rgb{146 69 60}}
 cosmetic_tag_moody_clique_nat_dr={color=rgb{47 104 181}color_ui=rgb{47 104 181}}
 cosmetic_tag_moody_clique_com_dr={color=rgb{189 57 42}color_ui=rgb{189 57 42}}
 cosmetic_tag_moody_china_nat_dr={color=rgb{47 104 181}color_ui=rgb{47 104 181}}
 cosmetic_tag_moody_china_com_dr={color=rgb{189 57 42}color_ui=rgb{189 57 42}}
+cosmetic_tag_colin_ancap_dr={color=rgb{101 91 0}color_ui=rgb{101 91 0}}
+cosmetic_tag_insane_juche_dr={color=rgb{85 0 0}color_ui=rgb{85 0 0}}
+cosmetic_tag_soc_commonwealth={color=rgb{129 58 79}color_ui=rgb{129 58 79}}
+cosmetic_tag_hetmanate={color=rgb{59 133 141}color_ui=rgb{59 133 141}}

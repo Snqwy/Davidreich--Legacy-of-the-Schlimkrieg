@@ -8,7 +8,9 @@ state=
 	
 	history=
 	{
-		owner = ENG
+		owner = ICE 
+		add_core_of = ICE
+		add_claim_by = DEN
 		buildings = {
 			infrastructure = 1
 			12512 ={

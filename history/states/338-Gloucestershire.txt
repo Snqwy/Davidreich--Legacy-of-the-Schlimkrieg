@@ -2,7 +2,7 @@
 state={
 	id=338
 	name="STATE_338"
-	manpower = 1800615
+	manpower = 0
 	resources={
 		steel=9 # was: 16
 	}
@@ -23,7 +23,6 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = ENG
 	}
 
 	provinces={

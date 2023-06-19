@@ -9,6 +9,7 @@ state={
 	history={
 		owner = RAJ
 		add_core_of = RAJ
+		add_claim_by = FRA
 		buildings = {
 			infrastructure = 3 #was: 5
 			10149 = {

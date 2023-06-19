@@ -21,11 +21,11 @@ state={
 		victory_points = {
 			8010 3 
 		}
-		add_core_of = BHU
 		add_core_of = TIB
 		add_core_of = CHI
 		add_core_of = PRC
-		add_claim_by=RAJ
+		add_core_of = RAJ
+		add_core_of = BHU
 	}
 
 	provinces={

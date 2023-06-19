@@ -2,7 +2,7 @@
 state={
 	id=133
 	name="STATE_133" # Lanark
-	manpower = 2257723
+	manpower = 0
 	
 	state_category = city
 	
@@ -11,7 +11,6 @@ state={
 	}
 
 	history={
-		add_core_of = SCO
 		owner = ENG
 		victory_points = {
 			3273 15
@@ -29,13 +28,6 @@ state={
 				naval_base = 2
 			}
 
-		}
-		add_core_of = ENG
-		1939.1.1 = {
-			buildings = {
-				dockyard = 5
-				industrial_complex = 2
-			}
 		}
 	}
 

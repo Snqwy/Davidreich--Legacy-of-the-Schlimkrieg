@@ -40,7 +40,6 @@ state={
 		victory_points = {
 			122 3
 		}
-		add_core_of = NOR
 	}
 
 	provinces={

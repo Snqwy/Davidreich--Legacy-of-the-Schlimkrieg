@@ -1,7 +1,11 @@
 ﻿capital = 681
 set_stability = 0.6
 set_war_support = 0.1
-add_ideas={idea_briish_dominion_dr idea_quelled_minorities_dr}
+add_ideas={idea_victor_of_the_schlimkrieg_dr idea_quelled_minorities_dr}
+give_guarantee=AST
+give_guarantee=IRE
+give_military_access=AST
+give_military_access=IRE
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1

@@ -20,15 +20,8 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = ALB
 		add_core_of = GRE
-
-		1939.4.12 = {
-			owner = ITA
-			controller = ITA
-			remove_claim_by = ITA
-		}
+		add_core_of = ALB
 	}
-
 	local_supplies=0.0 
 }

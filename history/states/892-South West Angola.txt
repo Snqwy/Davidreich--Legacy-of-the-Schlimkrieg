@@ -6,14 +6,14 @@ state={
 
 	history={
 		owner = COG
-		add_core_of = CHA
+		add_core_of = COG
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			10966 1 
 		}
-		add_core_of = COG
+		add_core_of = CHA
 
 	}
 

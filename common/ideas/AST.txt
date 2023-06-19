@@ -1,8 +1,8 @@
 ideas={country={
     
-idea_the_land_down_under_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=0.1 army_core_defence_factor=0.05}}
+idea_the_land_down_under_dr={picture=idea_yug_federal_defense_council allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=0.1 army_core_defence_factor=0.05}}
 
-idea_lingering_post_war_effects_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={training_time_factor=0.3 production_speed_buildings_factor=-0.1 consumer_goods_factor=0.05 production_factory_efficiency_gain_factor=-0.1 production_factory_max_efficiency_factor=-0.1 conscription_factor=-0.1}}
+idea_lingering_post_war_effects_dr={picture=great_depression allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={training_time_factor=0.3 production_speed_buildings_factor=-0.1 consumer_goods_factor=0.05 production_factory_efficiency_gain_factor=-0.1 production_factory_max_efficiency_factor=-0.1 conscription_factor=-0.1}}
 
-idea_the_emu_menace_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.2}}
+idea_the_emu_menace_dr={picture=FRA_matignon_agreements allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.2}}}
 }

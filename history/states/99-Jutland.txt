@@ -10,7 +10,7 @@ state= {
 
 	history=
 	{
-		owner = SWE
+		owner=SWE
 		victory_points = {
 			6364 3 
 		}
@@ -25,8 +25,8 @@ state= {
 				naval_base = 1
 			}
 		}
-		add_core_of = DEN
-		add_core_of = SWE
+		add_core_of=SWE
+		add_core_of=DEN
 	}
 	provinces=
 	{

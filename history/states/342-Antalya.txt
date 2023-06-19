@@ -20,8 +20,8 @@ state={
 				naval_base = 4
 			}
 		}
-		add_core_of = TUR
 		add_core_of = GRE
+		add_core_of = TUR
 	}
 
 	provinces={

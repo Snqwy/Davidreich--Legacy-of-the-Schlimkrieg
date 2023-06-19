@@ -35,7 +35,7 @@
 			has_dlc = "Waking the Tiger"
 		}
 
-		available = {
+		available = {always=no
 
 		}
 
@@ -972,7 +972,7 @@
 			factor = 4
 		}
 
-		available = {
+		available = {always=no
 
 		}
 
@@ -2511,7 +2511,7 @@
 			factor = 3
 		}
 
-		available = {
+		available = {always=no
 
 		}
 
@@ -3357,7 +3357,7 @@
 			has_dlc = "Waking the Tiger"
 		}
 
-		available = {
+		available = {always=no
 
 		}
 
@@ -4143,6 +4143,7 @@
 
 		available = {
 			MAN = { is_subject_of = ROOT }
+			always=no
 		}
 
 		bypass = {
@@ -4521,7 +4522,7 @@
 			}
 		}
 
-		available = {
+		available = {always=no
 
 		}
 
@@ -5139,7 +5140,7 @@
 			}
 		}
 
-		available = {
+		available = {always=no
 
 		}
 

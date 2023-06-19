@@ -3,7 +3,6 @@ state={
 	name="STATE_737"
 
 	history={
-		add_core_of = PNG
 		add_core_of = INS
 		owner = INS
 		buildings = {

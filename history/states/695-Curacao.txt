@@ -10,9 +10,9 @@ state={
 	}
 
 	history={
-		add_core_of = COL
-		owner = DOM
 		add_core_of = DOM
+		owner = DOM
+		add_core_of = COL
 		victory_points = {
 			153 1
 		}

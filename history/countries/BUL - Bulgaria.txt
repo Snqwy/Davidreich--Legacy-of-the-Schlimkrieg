@@ -39,14 +39,6 @@ if = { #DLC
 	#BUL_neutrality
 	set_cosmetic_tag = BUL_neutrality
 
-	#IDEAS SETUP
-	add_ideas = { #DLC
-		BUL_second_national_catastrophe
-		BUL_army_restrictions
-		BUL_imro_01
-		volunteer_only
-	}
-
 	#Army limitations due to Treaty of Neuilly sur Seine
 	set_rule = { #DLC
 		can_not_declare_war = yes

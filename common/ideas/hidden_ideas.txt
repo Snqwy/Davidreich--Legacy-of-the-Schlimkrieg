@@ -1,4 +1,4 @@
 ideas={hidden_ideas={
-    idea_hidden_debuff_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=-0.5}}
-    idea_hidden_debuff_2_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=-0.999}}
-}
+    idea_hidden_debuff_dr={allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=-0.5}}
+    idea_hidden_debuff_2_dr={allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=-0.999}}
+}}

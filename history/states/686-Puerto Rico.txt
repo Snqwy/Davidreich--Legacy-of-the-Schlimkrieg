@@ -6,7 +6,6 @@ state={
 	state_category = rural
 
 	history={
-		add_core_of = PUE
 		owner = DOM
 		add_core_of = DOM
 		victory_points = {

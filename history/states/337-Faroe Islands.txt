@@ -8,16 +8,17 @@ state=
 	
 	history=
 	{
-		owner = ENG
+		owner = ICE
 		buildings = {
 			infrastructure = 2
 			13003 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = ENG
+		add_core_of = ICE
+		add_claim_by = DEN
 	}
-	provinces= { 13003 }
+	provinces= { 6196 13003 }
 
 	local_supplies=0.0 
 }

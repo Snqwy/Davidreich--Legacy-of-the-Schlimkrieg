@@ -60,7 +60,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
+		available = {always=no}
 
 		}
 
@@ -185,7 +185,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
+		available = {always=no}
 			
 		}
 		
@@ -1913,7 +1913,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
+		available = {always=no}
 
 		}
 		
@@ -2432,7 +2432,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
+		available = {always=no}
 
 		}
 		
@@ -3922,7 +3922,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
+		available = {always=no}
 
 		}
 		
@@ -4586,7 +4586,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
+		available = {always=no}
 
 		}
 		
@@ -6501,7 +6501,7 @@ focus_tree = {
 			}
 		}
 
-		available = {
+		available = {always=no}
 
 		}
 		
@@ -14784,7 +14784,7 @@ ai_will_do = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
+		available = {always=no}
 			custom_trigger_tooltip = {
 				tooltip = SOV_no_major_purge_tt		
 				check_variable = { SOV_great_purge_counter < 1 }

@@ -6,8 +6,8 @@ state={
 
 	history={
 		owner = SPR
-		add_core_of = CHA
 		add_core_of = CAR
+		add_core_of = CHA
 		buildings = {
 			infrastructure = 1
 			13015 ={

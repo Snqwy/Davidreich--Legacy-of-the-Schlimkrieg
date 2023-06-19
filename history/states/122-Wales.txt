@@ -1,7 +1,7 @@
 state= {
 	id=122
 	name="STATE_122"
-	manpower = 2309230
+	manpower = 0
 	
 	state_category = city
 	
@@ -27,7 +27,6 @@ state= {
 				naval_base = 3
 			}
 		}
-		add_core_of = ENG
 	}
 
 	provinces=

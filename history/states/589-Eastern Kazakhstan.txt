@@ -4,20 +4,13 @@ state={
 
 	history={
 		owner = UZB
-		add_core_of = KAZ
+		add_core_of = UZB
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 
 		}
-		add_core_of = UZB
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 1
-
-			}
-
-		}
+		add_core_of = KAZ
 		victory_points = {
 			1668 1
 		}

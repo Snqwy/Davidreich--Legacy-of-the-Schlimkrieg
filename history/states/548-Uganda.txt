@@ -7,13 +7,14 @@ state={
 		rubber=3 # was: 4
 	}
 	history={
-		owner = ENG
+		owner = TZN
+		add_core_of = TZN
+		add_core_of = UGA
 		add_core_of = CHA
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_core_of = TZN
 		victory_points = {
 			12989 1
 		}

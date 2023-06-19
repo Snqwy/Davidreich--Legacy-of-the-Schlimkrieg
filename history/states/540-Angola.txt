@@ -7,7 +7,7 @@ state={
 
 	history={
 		owner = COG
-		add_core_of = CHA
+		add_core_of = COG
 		buildings = {
 			infrastructure = 1
 			8248 = {
@@ -17,7 +17,7 @@ state={
 		victory_points = {
 			8248 1 
 		}
-		add_core_of = COG
+		add_core_of = CHA
 	}
 
 	provinces={

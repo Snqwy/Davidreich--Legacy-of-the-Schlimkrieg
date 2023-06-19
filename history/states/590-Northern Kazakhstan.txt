@@ -8,14 +8,14 @@ state={
 
 	history={
 		owner = UZB
-		add_core_of = KAZ
+		add_core_of = UZB
 		victory_points = {
 			4333 1
 		}
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = UZB
+		add_core_of = KAZ
 
 	}
 

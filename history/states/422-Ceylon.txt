@@ -11,8 +11,8 @@ state=
 	}
 
 	history={
-		owner = ENG
-		add_claim_by = RAJ
+		owner = RAJ
+		add_core_of = RAJ
 		victory_points = {
 			10201 3 
 		}

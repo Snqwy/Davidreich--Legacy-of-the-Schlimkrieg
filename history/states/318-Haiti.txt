@@ -22,7 +22,6 @@ state=
 				naval_base = 3
 			}
 		}
-		add_core_of = HAI
 		victory_points = {
 			4641 5 
 		}

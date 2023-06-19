@@ -5,8 +5,8 @@ GER = {
 	color_ui = rgb { 71 71 71 }
 }
 ENG = {
-	color = rgb { 199 67 103 }
-	color_ui = rgb { 19 67 103 }
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 SOV = {
 	color = rgb { 184 22 22 }
@@ -34,8 +34,8 @@ CZE = {	color = rgb { 54 167 156 }
 		color_ui = rgb { 70 217 203 }
 }
 POL = {
-	color = rgb { 201 107 107 }
-	color_ui = rgb { 171 109 109 }
+	color = rgb { 193 93 93 }
+	color_ui = rgb { 193 93 93 }
 }
 AUS = {
 	color = rgb { 194 198 215 }
@@ -324,8 +324,8 @@ SHX = {
 }
 
 XSM = {
-	color = rgb { 86 86 129 }
-	color_ui = rgb { 86 86 129 }
+	color = rgb { 92 85 124 }
+	color_ui = rgb { 92 85 124 }
 }
 
 LBA = {
@@ -842,4 +842,12 @@ MRT = {
 SOM = {
 	color = rgb { 132 195 193 }
 	color_ui = rgb { 132 195 193 }
+}
+ZIM = {
+	color = rgb { 15 91 7 }
+	color_ui = rgb { 15 91 7 }
+}
+TRA = {
+	color = rgb { 172 110 172 }
+	color_ui = rgb { 172 110 172 }
 }

@@ -9,10 +9,10 @@ state={
 		rubber=2 # was: 3
 	}
 	history={
-		owner = ENG
-		add_core_of = CHA
+		owner = GNA
 		add_core_of = GNA
 		add_core_of = NGR
+		add_core_of = CHA
 		buildings = {
 			infrastructure = 2
 			arms_factory = 0

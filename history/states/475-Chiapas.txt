@@ -12,6 +12,7 @@ state={
 			infrastructure = 2
 		}
 		add_core_of = MEX
+		add_claim_by = NIC
 
 		victory_points = {
 			1900 3

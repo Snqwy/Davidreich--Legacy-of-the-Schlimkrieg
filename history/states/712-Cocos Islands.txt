@@ -6,7 +6,8 @@ state={
 	
 	history=
 	{
-		owner = ENG
+		owner = AST 
+		add_core_of = AST
 		buildings = {
 			infrastructure = 2
 			13002 = {

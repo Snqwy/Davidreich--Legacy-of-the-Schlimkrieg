@@ -29,7 +29,7 @@ state={
 
 		}
 		add_core_of = GEO
-		add_core_of = KUB
+		add_core_of = DON
 
 	}
 

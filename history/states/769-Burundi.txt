@@ -5,8 +5,9 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = ENG
+		owner = TZN
 		add_core_of = TZN
+		add_core_of = UGA
 		add_core_of = CHA
 		victory_points = {
 			2220 1

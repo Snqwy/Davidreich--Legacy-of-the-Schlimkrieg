@@ -2,7 +2,7 @@
 state={
 	id=127
 	name="STATE_127" # Sussex
-	manpower = 3193383
+	manpower = 0
 	state_category = large_city
 
 	history={
@@ -24,13 +24,6 @@ state={
 			}
 			9458 = {
 				naval_base = 10
-			}
-		}
-		add_core_of = ENG
-		1939.1.1 = {
-			buildings = {
-				dockyard = 3
-				industrial_complex = 2
 			}
 		}
 	}

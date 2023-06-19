@@ -14,6 +14,7 @@ form_scandinavia_category = {
 		}
 
 		available = {
+			always=no
 			is_subject = no
 			# Norway
 			custom_trigger_tooltip = {
@@ -101,6 +102,7 @@ form_nordic_league_category = {
 		icon = generic_form_nation
 
 		allowed = {
+			always=no
 			OR = {
 				original_tag = NOR
 				original_tag = DEN
@@ -354,6 +356,7 @@ form_gran_colombia_category = {
 		icon = generic_form_nation
 
 		allowed = {
+			always=no
 			OR = {
 				original_tag = PAN
 				original_tag = ECU
@@ -456,6 +459,7 @@ form_austria_hungary_category = {
 		icon = generic_form_nation
 
 		allowed = {
+			always=no
 			OR = {
 				original_tag = AUS
 				original_tag = CZE
@@ -660,6 +664,7 @@ form_commonwealth_category = {
 		icon = generic_form_nation
 
 		allowed = {
+			always=no
 			OR = {
 				original_tag = POL
 				original_tag = LIT
@@ -747,6 +752,7 @@ form_united_netherlands_category = {
 		icon = generic_form_nation
 
 		allowed = {
+			always=no
 			OR = {
 				original_tag = HOL
 				original_tag = BEL
@@ -5150,6 +5156,7 @@ form_majapahit_empire_category = {
 		icon = generic_form_nation
 
 		allowed = {
+			always=no
 			OR = {
 				original_tag = INS
 				original_tag = MAL
@@ -5232,6 +5239,7 @@ form_rattanakosin_kingdom_category = {
 		icon = generic_form_nation
 
 		allowed = {
+			always=no
 			original_tag = SIA
 			has_dlc = "Waking the Tiger"
 		}

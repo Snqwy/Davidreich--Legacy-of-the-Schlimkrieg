@@ -20,8 +20,9 @@ state={
 			}
 		}
 
-		add_core_of = SYR
 		add_core_of = ISR
+		add_core_of = SYR
+		add_core_of = JOR
 	}
 
 	provinces={

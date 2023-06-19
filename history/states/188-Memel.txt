@@ -19,9 +19,9 @@ state=
 				naval_base = 1
 			}
 		}
-		add_core_of = LAT
 		add_core_of = POL
 		add_core_of = GER
+		add_core_of = LAT
 	}
 	provinces={
 		3288 	

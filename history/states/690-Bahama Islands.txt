@@ -6,8 +6,8 @@ state={
 	state_category = tiny_island
 
 	history={
-		add_core_of = BAH
 		add_core_of = DOM
+		add_core_of = CUB
 		owner = DOM
 		victory_points = {
 			10254 1

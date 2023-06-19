@@ -1031,8 +1031,7 @@ HOL_gateway_to_europe_eng_category = {
 		}
 
 		available = {
-			has_government = democratic
-			GER = { has_government = fascism }
+			always=no
 		}
 
 		targets = { HOL }

@@ -7,6 +7,7 @@ state={
 	history=
 	{
 		owner = ARG
+		add_core_of = ARG
 		buildings = {
 			infrastructure = 1
 			10995 = {

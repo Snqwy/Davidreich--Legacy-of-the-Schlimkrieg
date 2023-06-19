@@ -6,9 +6,9 @@ state={
 	}
 
 	history={
-		add_core_of = VIN
-		owner = SIA 
 		add_core_of = SIA
+		owner = SIA 
+		add_core_of = VIN
 		add_core_of = CAM
 		victory_points = {
 			4401 3 

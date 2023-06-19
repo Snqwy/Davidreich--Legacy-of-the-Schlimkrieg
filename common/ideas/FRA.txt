@@ -11,4 +11,4 @@ ideas={country={
     idea_reformed_army_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
     idea_free_economy_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
     idea_international_brigades_dr={picture=generic_volunteer_expedition_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
-}
+}}

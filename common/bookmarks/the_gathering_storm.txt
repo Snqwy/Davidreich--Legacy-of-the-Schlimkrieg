@@ -14,6 +14,11 @@ bookmarks = {
 				idea_legacy_of_the_schlimkrieg_dr
 				idea_steady_economic_recovery_dr
 			}
+			focuses = {
+				focus_usa_the_new_manifesto_of_destiny
+				focus_usa_expansion_of_fbi_powers
+				focus_usa_expansion_of_fbi_powers
+			}
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
@@ -33,24 +38,21 @@ bookmarks = {
 				idea_post_schlimkrieg_demobilization_dr
 			}
 		}
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
-		}
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				idea_victor_of_the_schlimkrieg_dr
-			}
 		}
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism
 		}
-		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism
+		"SAF"={
+			history = "SAF_GATHERING_STORM_DESC"
+			ideology = democratic
 		}
 
 		"---"={
@@ -67,6 +69,21 @@ bookmarks = {
 				idea_countryside_banditry_dr
 			}
 		}
+		"AST"={
+			minor = yes
+			history = ""
+			ideology = democratic
+		}
+		"IRE"={
+			minor = yes
+			history = ""
+			ideology = democratic
+		}
+		"CSA"={
+			minor = yes
+			history = ""
+			ideology = neutrality
+		}
 		"MEX"={
 			minor = yes
 			history = ""
@@ -77,17 +94,32 @@ bookmarks = {
 			history = ""
 			ideology = fascism
 		}
-		"CSA"={
+		"POL"={
 			minor = yes
 			history = ""
 			ideology = neutrality
 		}
-		"SAF"={
+		"ETH"={
 			minor = yes
 			history = ""
-			ideology = democratic
+			ideology = neutrality
 		}
-		"ETH"={
+		"CHA"={
+			minor = yes
+			history = ""
+			ideology = neutrality
+		}
+		"KAZ"={
+			minor = yes
+			history = ""
+			ideology = neutrality
+		}
+		"MON"={
+			minor = yes
+			history = ""
+			ideology = neutrality
+		}
+		"BAY"={
 			minor = yes
 			history = ""
 			ideology = neutrality
