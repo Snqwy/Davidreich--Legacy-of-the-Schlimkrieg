@@ -465,7 +465,6 @@ on_actions = {
 							has_idea = american_protection_drift_democratic
 							has_idea = american_protection_drift_communism
 							has_idea = american_protection_drift_fascism
-							has_idea = american_protection_defence_democratic
 							has_idea = american_protection_defence_communism
 							has_idea = american_protection_defence_fascism
 						}
@@ -480,7 +479,6 @@ on_actions = {
 						has_idea = american_protection_drift_democratic
 						has_idea = american_protection_drift_communism
 						has_idea = american_protection_drift_fascism
-						has_idea = american_protection_defence_democratic
 						has_idea = american_protection_defence_communism
 						has_idea = american_protection_defence_fascism
 					}

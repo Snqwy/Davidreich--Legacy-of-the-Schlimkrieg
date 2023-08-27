@@ -238,31 +238,18 @@ ITA_missiolini_strengthen_heavy_industry_failure_effect = {
 ITA_missiolini_strengthen_heavy_industry_success_effect = {
 	add_political_power = 50
 	add_stability = 0.03
-
-	add_timed_idea = {
-		idea = ITA_strengthened_heavy_industry
-		days = 365
-	}
 }
 
 ### STRENGTHEN THE ARMY ###
 ITA_missiolini_strengthen_the_army_failure_effect = {
 	add_political_power = -25
 	add_war_support = -0.03
-	add_timed_idea = {
-		idea = ITA_disgruntlement_in_the_army
-		days = 180
-	}
 }
 
 ITA_missiolini_strengthen_the_army_success_effect = {
 	army_experience = 50
 	add_command_power = 25
 	add_war_support = 0.03
-	add_timed_idea = {
-		idea = ITA_strengthened_the_army
-		days = 365
-	}
 }
 
 ### STOCKPILE TRUCKS ###
@@ -3107,94 +3094,7 @@ ITA_peace_out_eth_on_startup_effect = {
 	set_global_flag = ITA_peace_with_eth_on_startup_flag
 }
 
-
 ITA_replace_designers_by_improved_version_north = {
-	#ARMOR
-	if = {
-		limit = {
-			has_idea =  fiat
-		}
-		swap_ideas = {
-			remove_idea = fiat
-			add_idea = ITA_fiat_improved
-		}
-	}
-
-	#NAVAL
-	if = {
-		limit = {
-			has_idea =  crda
-		}
-		swap_ideas = {
-			remove_idea = crda
-			add_idea = ITA_crda_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = ITA_cantiere_oto
-		}
-		swap_ideas = {
-			remove_idea = ITA_cantiere_oto
-			add_idea = ITA_cantiere_oto_improved
-		}
-	}
-
-	#AIRCRAFT
-	if = {
-		limit = {
-			has_idea = macchi
-		}
-		swap_ideas = {
-			remove_idea = macchi
-			add_idea = ITA_macchi_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = savoia_marchetti
-		}
-		swap_ideas = {
-			remove_idea = savoia_marchetti
-			add_idea = ITA_savoia_marchetti_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = caproni
-		}
-		swap_ideas = {
-			remove_idea = caproni
-			add_idea = ITA_caproni_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = piaggio
-		}
-		swap_ideas = {
-			remove_idea = piaggio
-			add_idea = ITA_piaggio_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = ITA_crda_cant
-		}
-		swap_ideas = {
-			remove_idea = ITA_crda_cant
-			add_idea = ITA_crda_cant_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = ITA_fiat_aviazione
-		}
-		swap_ideas = {
-			remove_idea = ITA_fiat_aviazione
-			add_idea = ITA_fiat_aviazione_improved
-		}
-	}
 
 	#MATERIEL
 	if = {
@@ -3264,67 +3164,7 @@ ITA_replace_designers_by_improved_version_north = {
 	}
 }
 
-ITA_replace_designers_by_improved_version_south = {
-	#NAVAL
-	if = {
-		limit = {
-			has_idea =  ITA_navalmeccanica
-		}
-		swap_ideas = {
-			remove_idea = ITA_navalmeccanica
-			add_idea = ITA_navalmeccanica_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = ITA_cantiere_navale_di_ancona
-		}
-		swap_ideas = {
-			remove_idea = ITA_cantiere_navale_di_ancona
-			add_idea = ITA_cantiere_navale_di_ancona_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = ITA_cantieri_navali_tosi
-		}
-		swap_ideas = {
-			remove_idea = ITA_cantieri_navali_tosi
-			add_idea = ITA_cantieri_navali_tosi_improved
-		}
-	}
-
-	#AIRCRAFT
-	if = {
-		limit = {
-			has_idea = ITA_imam
-		}
-		swap_ideas = {
-			remove_idea = ITA_imam
-			add_idea = ITA_imam_improved
-		}
-	}
-
-	#INDUSTRIAL
-	if = {
-		limit = {
-			has_idea = ITA_terni_industria_ed_elettricita
-		}
-		swap_ideas = {
-			remove_idea = ITA_terni_industria_ed_elettricita
-			add_idea = ITA_terni_industria_ed_elettricita_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = ITA_astaldi
-		}
-		swap_ideas = {
-			remove_idea = ITA_astaldi
-			add_idea = ITA_astaldi_improved
-		}
-	}
-}
+ITA_replace_designers_by_improved_version_south = {}}
 
 ########  ##          ###    ##    ## ########    ######## ######## ##     ## ########  ##          ###    ######## ########  ######
 ##     ## ##         ## ##   ###   ## ##             ##    ##       ###   ### ##     ## ##         ## ##      ##    ##       ##    ##

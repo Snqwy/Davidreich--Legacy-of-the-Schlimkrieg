@@ -118,7 +118,7 @@ capital = 219
 starting_train_buffer = 3.0
 
 set_research_slots=3
-set_stability=0.69
+set_stability=0.85
 set_war_support=0.5
 set_technology = { 
 	infantry_weapons = 1

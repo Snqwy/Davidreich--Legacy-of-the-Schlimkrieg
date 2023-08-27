@@ -4946,16 +4946,6 @@ country_event = {
 			base = 10
 		}
 
-		effect_tooltip = {
-			custom_effect_tooltip = ITA_cooperation_programs_deal_others_tt
-			FROM = {
-				add_timed_idea = {
-					idea = ITA_sold_obsolete_escort_ships_ns
-					days = 365
-				}
-			}
-		}
-
 		hidden_effect = {
 			FROM = {
 				set_country_flag = ITA_sold_obsolete_escort_ships_flag #Cannot sell ships again
@@ -5030,10 +5020,6 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = ITA_cooperation_programs_deal_others_tt
-		add_timed_idea = {
-			idea = ITA_sold_obsolete_escort_ships_ns
-			days = 365
-		}
 	}
 }
 
@@ -5755,11 +5741,6 @@ country_event = {
 		add_opinion_modifier = {
 			target = FROM
 			modifier = ITA_refused_to_grant_us_independence
-		}
-		
-		add_timed_idea = {
-			idea = ITA_independence_war
-			days = 365
 		}
 
 		add_war_support = 0.1

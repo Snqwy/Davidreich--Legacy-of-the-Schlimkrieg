@@ -9,6 +9,8 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	idea_house_of_lyons_dr
+	idea_army_navy_rivalry_dr
 }
 
 set_technology = {

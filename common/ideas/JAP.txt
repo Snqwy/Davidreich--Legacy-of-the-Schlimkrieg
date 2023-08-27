@@ -1,0 +1,13 @@
+ideas={country={
+    
+idea_house_of_lyons_dr={picture=idea_por_monarchist_uprising allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=0.15 war_support_factor=0.05}}
+
+idea_army_navy_rivalry_dr={picture=idea_jap_interservice_rivalry_balanced allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={planning_speed=-0.1 command_power_gain=-0.2}}
+
+idea_ichi_go_dr={picture=idea_jap_ichi_go allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+
+idea_zaibatsu_dr={picture=idea_jap_zaibatsu allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+
+idea_zaibatsu_control_dr={picture=idea_jap_zaibatsu_control allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+
+}}

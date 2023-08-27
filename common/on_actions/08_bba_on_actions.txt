@@ -968,13 +968,6 @@ on_actions = {
 				AUS = {
 					give_military_access = ITA
 				}
-
-				ITA = {
-					add_timed_idea = {
-						idea = ITA_alpine_defense
-						days = 360
-					}
-				}
 			}
 		}
 		effect = {
@@ -1179,51 +1172,7 @@ on_actions = {
 						original_tag = ITA
 					}
 				}
-				if = {
-					limit = {
-						has_idea = ITA_italian_confederation_member
-					}
-					swap_ideas = {
-						remove_idea = ITA_italian_confederation_member
-						add_idea = ITA_italian_confederation_member_improved
-					}
-				}
-				else = {
-					add_ideas = ITA_italian_confederation_member_improved
-				}
-				else_if = {
-					limit = {
-						NOT = { has_idea = ITA_italian_confederation_member }
-					}
-					add_ideas = ITA_italian_confederation_member
-				}
 			}
 		}
 	}
-
-	#used when puppeting through the occupied territories menu during peace time (or when releasing from non-core but owned territory, f.e. Britain releasing Egypt)
-	#ROOT = nation being released, FROM = overlord
-	on_release_as_puppet = {
-		#Italian Confederation -> Add NS to new subjects
-		effect = {
-				if = {
-					limit = {
-						has_idea = ITA_italian_confederation_member
-					}
-					swap_ideas = {
-						remove_idea = ITA_italian_confederation_member
-						add_idea = ITA_italian_confederation_member_improved
-					}
-				}
-				else = {
-					add_ideas = ITA_italian_confederation_member_improved
-				}
-				else_if = {
-					limit = {
-						NOT = { has_idea = ITA_italian_confederation_member }
-					}
-					add_ideas = ITA_italian_confederation_member
-				}
-			}
-		}
-	}
+}

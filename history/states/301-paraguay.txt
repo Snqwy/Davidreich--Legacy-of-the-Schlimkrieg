@@ -2,10 +2,7 @@
 state={
 	id=301
 	name="STATE_301"
-	manpower = 890100
-	
-	state_category = town
-	
+
 	history={
 		owner = ARG
 		add_core_of = ARG
@@ -14,6 +11,7 @@ state={
 			arms_factory = 1
 			industrial_complex = 3
 			air_base = 1
+
 		}
 		victory_points = {
 			2152 5 
@@ -22,9 +20,10 @@ state={
 	}
 
 	provinces={
-		2152 2173 2194 11023 12901 
+		2152 2173 2194 11007 11023 12901 
 	}
-	
-
-	local_supplies=0.0 
+	manpower=890100
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

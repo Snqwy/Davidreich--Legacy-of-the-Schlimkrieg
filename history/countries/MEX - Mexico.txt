@@ -1,15 +1,5 @@
 ﻿capital = 277
 
-oob = "MEX_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "MEX_1936_naval_mtg"
-	else = {
-		set_naval_oob = "MEX_1936_naval_legacy"
-	}
-}
-
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	gw_artillery = 1
@@ -93,19 +83,17 @@ recruit_character = MEX_alberto_pani
 recruit_character = MEX_juan_andreu
 recruit_character = MEX_plutarco_calles
 
-
 set_country_flag = monroe_doctrine
 
 set_convoys = 45
 set_stability = 0.2
 set_war_support = 0.1
 
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = {
-	}
+add_ideas = {
+	idea_history_of_humiliation_dr
+	idea_power_of_the_church_dr
+	idea_mexican_cartel_dr
+	idea_inadequate_army_dr
 }
 
 set_politics = {

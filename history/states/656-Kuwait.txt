@@ -12,6 +12,9 @@ state={
 		victory_points = {
 			8085 1 
 		}
+		victory_points = {
+			2089 5 
+		}
 		buildings = {
 			infrastructure = 2
 			8085 = {
@@ -21,7 +24,7 @@ state={
 
 	}
 	provinces={
-		8085
+		2089 8085
 	}
 
 	local_supplies=0.0 

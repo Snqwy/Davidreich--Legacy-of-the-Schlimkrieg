@@ -1,0 +1,99 @@
+﻿focus_tree={id=french_focus country={factor=0 modifier={add=10 tag=FRA}initial_show_position={x=0}default=no continuous_focus_position={x=3600 y=1100}
+
+focus={id=FRA_furry_economy_dr icon=GFX_goal_generic_consumer_goods x=23 y=1 cost=6 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=FRA_economy_focus_dr}
+mutually_exclusive={focus=FRA_pan_african_economy_dr}mutually_exclusive={focus=FRA_free_economy_dr}mutually_exclusive={focus=FRA_napoleonic_economy_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_furry_economy_dr}}
+
+focus={id=FRA_developing_the_metropole_dr icon=GFX_focus_spa_the_spanish_miracle x=45 y=1 cost=6 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=FRA_industrial_focus_dr}ai_will_do={factor=1}completion_reward={add_timed_idea=idea_developing_the_metropole_dr days=720}}
+
+focus={id=FRA_communism_never_worked_anyways_dr icon=GFX_focus_eng_liberate_the_home_of_marx x=16 y=12 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=FRA_international_protection_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=topple_government target=SOV}}}
+
+focus={id=FRA_bull_fuckers_dr icon=GFX_focus_generic_attack_greece x=6 y=12 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=fascism}available_if_capitulated=yes prerequisite={focus=FRA_the_furry_entente_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=GRE}}}
+
+focus={id=FRA_wolf_mom_fuckers_dr icon=GFX_focus_generic_befriend_turkey x=5 y=13 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=fascism}available_if_capitulated=yes prerequisite={focus=FRA_wolf_titty_suckers_dr focus=FRA_bull_fuckers_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=TUR}}}
+
+focus={id=FRA_wolf_titty_suckers_dr icon=GFX_focus_befriend_italy x=4 y=12 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=fascism}available_if_capitulated=yes prerequisite={focus=FRA_the_furry_entente_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=ITA}}}
+
+focus={id=FRA_continue_the_republic_dr icon=GFX_goal_support_democracy x=14 y=2 cost=6 available_if_capitulated=yes search_filters={FOCUS_FILTER_POLITICAL}prerequisite={focus=FRA_political_crisis_dr}mutually_exclusive={focus=FRA_do_the_impossible_dr}mutually_exclusive={focus=FRA_pan_africanism_dr}mutually_exclusive={focus=FRA_i_miss_having_power_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=democratic popularity=0.1}add_political_power=50}}
+
+focus={id=FRA_cheaper_artillery_dr icon=GFX_goal_generic_army_artillery x=55 y=3 cost=7 available_if_capitulated=yes prerequisite={focus=FRA_napoleon_would_be_proud_dr}ai_will_do={factor=1}
+completion_reward={add_ideas=idea_arms_production_dr}}
+
+focus={id=FRA_programme_de_luranium_dr icon=GFX_focus_research2 x=43 y=5 cost=10 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=FRA_biological_research_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_programme_de_luranium_dr add_tech_bonus={bonus=0.5 uses=1 category=nuclear}}}
+
+focus={id=FRA_the_furry_entente_dr icon=GFX_goal_generic_alliance x=3 y=11 cost=8 available={is_in_faction=no}available={has_government=fascism}available_if_capitulated=yes prerequisite={focus=FRA_furryism_is_solidified}ai_will_do={factor=1}completion_reward={create_faction="Furry Entente"}}
+
+focus={id=FRA_mountain_climbers_dr icon=GFX_focus_GRE_hellenic_armed_forces	x=49 y=7 cost=7 search_filters={FOCUS_FILTER_RESEARCH}available={has_completed_focus=FRA_special_forces_dr}available_if_capitulated=yes prerequisite={focus=FRA_the_meganot_line_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_special_forces_dr add_idea=idea_special_forces_2_dr}add_tech_bonus={bonus=0.5 uses=2 category=mountaineers_tech}}}
+
+focus={id=FRA_found_rgn_dr icon=GFX_goal_generic_scientific_exchange x=40 y=2 cost=5 available_if_capitulated=yes prerequisite={focus=FRA_industrial_focus_dr}prerequisite={focus=FRA_economy_focus_dr}ai_will_do={factor=1}completion_reward={add_political_power=30}}
+
+focus={id=FRA_the_second_invasion_dr icon=GFX_focus_mex_jefe_maximo x=23 y=13 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=FRA_the_continental_system_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=MEX}}}
+
+focus={id=FRA_the_continental_system_dr icon=GFX_focus_generic_diplomatic_treaty x=26 y=12 cost=8 available={is_in_faction=no has_government=neutrality}available_if_capitulated=yes prerequisite={focus=FRA_reign_in_iberia_dr focus=FRA_italian_ambition_dr focus=FRA_confederation_of_the_rhine_dr focus=FRA_restore_batavia_dr focus=FRA_provinces_in_illyria_dr}prerequisite={focus=FRA_align_the_yugoslavians_dr}prerequisite={focus=FRA_align_the_polish_dr}prerequisite={focus=FRA_duchy_of_warsaw_dr}ai_will_do={factor=1}completion_reward={create_faction="Continental System"}}
+
+focus={id=FRA_may_the_sun_set_dr icon=GFX_focus_eng_decolonization x=27 y=13 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=FRA_the_continental_system_dr}
+ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=SAF}create_wargoal={type=puppet_wargoal_focus target=AST}create_wargoal={type=puppet_wargoal_focus target=IRE}}}
+
+focus={id=FRA_slay_the_bear_dr icon=GFX_focus_eng_expose_the_belly_of_the_bear x=29 y=13 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=FRA_the_continental_system_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=SOV}}}
+
+focus={id=FRA_free_the_italians_dr icon=GFX_goal_generic_military_deal x=12 y=12 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=FRA_international_protection_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=topple_government target=ITA}}}
+
+focus={id=FRA_reform_the_entente_dr icon=GFX_goal_anschluss x=14 y=8 cost=8 available={is_in_faction=no has_government=democratic}available_if_capitulated=yes prerequisite={focus=FRA_democratic_party_wins}ai_will_do={factor=1}completion_reward={create_faction="Entente"}}
+
+focus={id=FRA_duchy_of_warsaw_dr icon=GFX_goal_generic_territory_or_war x=25 y=11 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=FRA_the_right_to_conquer_dr}mutually_exclusive={focus=FRA_align_the_polish_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=POL}}}
+
+focus={id=FRA_political_crisis_dr icon=GFX_goal_generic_more_territorial_claims x=11 y=0 cost=8 available_if_capitulated=yes ai_will_do={factor=1}completion_reward={FRA={country_event=dr.18}}}
+
+focus={id=FRA_pan_africanism_dr icon=GFX_focus_smiling_buddha x=8 y=2 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=FRA_political_crisis_dr}
+mutually_exclusive={focus=FRA_do_the_impossible_dr}mutually_exclusive={focus=FRA_continue_the_republic_dr}mutually_exclusive={focus=FRA_i_miss_having_power_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=communism popularity=0.1}add_political_power=50}}
+
+focus={id=FRA_army_focus_dr icon=GFX_goal_rhineland x=55 y=0 cost=5 available_if_capitulated=yes ai_will_do={factor=1}completion_reward={add_political_power=30}}
+
+focus={id=FRA_economy_focus_dr icon=GFX_goal_generic_consumer_goods x=29 y=0 cost=5 available_if_capitulated=yes ai_will_do={factor=1}completion_reward={add_political_power=30}}
+
+focus={id=FRA_free_economy_dr icon=GFX_goal_generic_consumer_goods x=31 y=1 cost=6 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=FRA_economy_focus_dr}mutually_exclusive={focus=FRA_furry_economy_dr}mutually_exclusive={focus=FRA_pan_african_economy_dr}mutually_exclusive={focus=FRA_napoleonic_economy_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_free_economy_dr}}
+
+focus={id=FRA_make_david_admit_dr icon=GFX_goal_generic_wolf_pack x=2 y=12 cost=4 available={has_government=fascism}search_filters={FOCUS_FILTER_ANNEXATION}available_if_capitulated=yes prerequisite={focus=FRA_the_furry_entente_dr}
+ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=GER}}}
+
+focus={id=FRA_cheaper_guns_dr icon=GFX_focus_focus_fra_maquis x=58 y=3 cost=7 available_if_capitulated=yes prerequisite={focus=FRA_casualy_conscript_a_quarter_of_france_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_arms_production_2_dr}}
+
+focus={id=FRA_italian_ambition_dr icon=GFX_focus_attack_italy x=31 y=11 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=FRA_the_right_to_conquer}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=ITA}114={add_core_of=FRA}}}
+
+focus={id=FRA_provinces_in_illyria_dr icon=GFX_focus_YUG_banovina_of_croatia x=21 y=11 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=FRA_the_right_to_conquer_dr}mutually_exclusive={focus=FRA_align_the_yugoslavians_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=YUG}736={add_core_of=FRA}852={add_core_of=FRA}103={add_core_of=FRA}163={add_core_of=FRA}}}
+
+focus={id=FRA_reign_in_iberia icon=GFX_focus_spr_maintain_the_republic x=33 y=11 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=FRA_the_right_to_conquer_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=SPR}}}
+
+focus={id=FRA_confederation_of_the_rhine_dr icon=GFX_focus_ger_oppose_hitler x=29 y=11 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=FRA_the_right_to_conquer}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=GER}51={add_core_of=FRA}42={add_core_of=FRA}}}
+
+focus={id=FRA_restore_batavia_dr icon=GFX_focus_hol_oranje_boven x=27 y=11 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=FRA_the_right_to_conquer_dr}
+ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=HOL}35={add_core_of=FRA}7={add_core_of=FRA}36={add_core_of=FRA}create_wargoal={type=annex_everything target=LUX}8={add_core_of=FRA}}}
+
+focus={id=FRA_make_eugene_admit_dr icon=GFX_goal_generic_wolf_pack x=0 y=12 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=fascism}available_if_capitulated=yes prerequisite={focus=FRA_the_furry_entente_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=SAF}}}
+
+focus={id=FRA_navy_focus_dr icon=GFX_goal_generic_navy_cruiser x=74 y=0 cost=5 available_if_capitulated=yes ai_will_do={factor=1}completion_reward={add_political_power=30}}
+
+focus={id=FRA_do_the_impossible_dr icon=GFX_goal_generic_wolf_pack x=3 y=2 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=FRA_political_crisis_dr}mutually_exclusive={focus=FRA_pan_africanism_dr}mutually_exclusive={focus=FRA_continue_the_republic_dr}mutually_exclusive={focus=FRA_i_miss_having_power_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=fascism popularity=0.1}add_political_power=50}}
+
+focus={id=FRA_i_miss_having_power_dr icon=GFX_focus_hun_elect_a_king x=19 y=2 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=FRA_political_crisis_dr}mutually_exclusive={focus=FRA_do_the_impossible_dr}mutually_exclusive={focus=FRA_pan_africanism_dr}mutually_exclusive={focus=FRA_continue_the_republic_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=neutrality popularity=0.1}add_political_power=50}}
+
+focus={id=FRA_contact_the_art_industry_dr icon=GFX_focus_eng_the_kings_party x=3 y=3 cost=5 available_if_capitulated=yes prerequisite={focus=FRA_do_the_impossible_dr}
+ai_will_do={factor=1}completion_reward={add_ideas=idea_furry_movie_project_dr}}
+
+focus={id=FRA_give_out_free_art_dr icon=GFX_focus_generic_concessions x=4 y=4 cost=5 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}available={has_completed_focus=FRA_expand_production_budget_dr}available_if_capitulated=yes prerequisite={focus=FRA_contact_the_art_industry_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=fascism popularity=0.05}swap_ideas={remove_idea=idea_furry_movie_project_3_dr add_idea=idea_furry_movie_project_4_dr}}}
+
+focus={id=FRA_expand_production_budget_dr icon=GFX_focus_mex_privatisation x=2 y=5 cost=5 available_if_capitulated=yes prerequisite={focus=FRA_contact_disney_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_furry_movie_project_2_dr add_idea=idea_furry_movie_project_3_dr}}}
+
+focus={id=FRA_merchandising_merchandising_dr icon=GFX_focus_generic_treaty x=3 y=8 cost=5 available_if_capitulated=yes prerequisite={focus=FRA_furryism_wins_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_furry_movie_project_6_dr add_idea=idea_furry_movie_project_7_dr}}}
+
+focus={id=FRA_contact_disney_dr icon=GFX_FRA_contact_disney_dr x=2 y=4 cost=5 available_if_capitulated=yes prerequisite={focus=FRA_contact_the_art_industry_dr}ai_will_do={factor=1}
+completion_reward={swap_ideas={remove_idea=idea_furry_movie_project_dr add_idea=idea_furry_movie_project_2_dr}}}
+
+focus={id=FRA_seize_the_porn_industry_dr icon=GFX_focus_usa_voter_registration_act x=4 y=5 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=FRA_give_out_free_art_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_furry_movie_project_4_dr add_idea=idea_furry_movie_project_5_dr}}}
+
+focus={id=FRA_the_best_furry_movie_that_the_world_has_seen_dr icon=GFX_focus_POL_support_global_falangism x=3 y=6 cost=6 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available_if_capitulated=yes prerequisite={focus=FRA_expand_production_budget_dr}prerequisite={focus=FRA_seize_the_porn_industry_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_furry_movie_project_5_dr add_idea=idea_furry_movie_project_6_dr}}}
+
+focus={id=FRA_shoots_the_monarchists_dr icon=GFX_goal_tfv_sever_ties_with_uk x=14 y=6 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=FRA_make_donations_to_charities_dr}prerequisite={focus=FRA_new_welfare_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=neutrality popularity=-0.1}add_political_power=30}}
+	
+focus={id=FRA_cum_bombs_dr icon=GFX_focus_wonderweapons x=43 y=6 cost=10 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=FRA_programme_de_luranium_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=nuclear}}
+
+}}}

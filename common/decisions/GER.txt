@@ -1,255 +1,3 @@
-#Category only allowed for GER
-GER_mefo_bills_category = {
-
-	GER_mefo_bills_mission = {
-
-		allowed = { always = no }
-
-		icon = ger_mefo_bills
-
-		available = {
-			always=no
-		}
-
-		#cost = GER_mefo_bill_counter?10
-
-		days_mission_timeout = 180
-		is_good = yes
-		fire_only_once = yes
-		days_remove = GER_extend_mefo_bills_days?0
-		remove_effect = {
-		}
-
-		complete_effect = {
-		}
-
-		timeout_effect = {
-			if = {
-				limit = {
-					has_country_flag = ger_has_cancelled_mefo
-				}
-				#1
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
-					}
-					add_political_power = -20
-				}
-				#2
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 20 compare = equals }
-					}
-					add_political_power = -40
-				}
-				#3
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 30 compare = equals }
-					}
-					add_political_power = -60
-				}
-				#4
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 40 compare = equals }
-					}
-					add_political_power = -80
-				}
-				#5
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 50 compare = equals }
-					}
-					add_political_power = -100
-				}
-				#6
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 60 compare = equals }
-					}
-					add_political_power = -120
-				}
-				#7
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 70 compare = equals }
-					}
-					add_political_power = -140
-				}
-				#8
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 80 compare = equals }
-					}
-					add_political_power = -160
-				}
-				#9
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 90 compare = equals }
-					}
-					add_political_power = -180
-				}
-				#10
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 100 compare = equals }
-					}
-					add_political_power = -200
-				}
-				#11
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 110 compare = equals }
-					}
-					add_political_power = -220
-				}
-				#12
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 120 compare = equals }
-					}
-					add_political_power = -240
-				}
-				#13
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 130 compare = equals }
-					}
-					add_political_power = -260
-				}
-				#14
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 140 compare = equals }
-					}
-					add_political_power = -280
-				}
-				#15
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 150 compare = equals }
-					}
-					add_political_power = -300
-				}
-				#16
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 160 compare = equals }
-					}
-					add_political_power = -320
-				}
-				#17
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 170 compare = equals }
-					}
-					add_political_power = -340
-				}
-				#18
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 180 compare = equals }
-					}
-					add_political_power = -360
-				}
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 180 compare = greater_than }
-					}
-					add_political_power = -380
-				}
-			}
-			else = {
-				custom_effect_tooltip = GER_mefo_bills_mission_tt
-				custom_effect_tooltip = GER_mefo_bills_effect_in_days
-				hidden_effect = {
-					set_variable = { GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission }
-					set_country_flag = paid_for_mefo
-				}
-				if = {
-					limit = {
-						check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
-					}
-					hidden_effect = { set_variable = { var = GER_mefo_bill_counter value = 10 } }
-				}
-				add_to_variable = { var = GER_mefo_bill_counter value = 10 }
-
-				hidden_effect = {
-					activate_mission = GER_mefo_bills_mission
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 200
-		}
-	}
-
-	GER_cancel_mefos = {
-
-		icon = ger_mefo_bills
-
-		available = {
-			hidden_trigger = {
-				NOT = { has_country_flag = ger_has_cancelled_mefo }
-			}
-		}
-
-		cost = 0
-
-		fire_only_once = no
-
-		visible = {
-			hidden_trigger = {
-				NOT = { has_country_flag = ger_has_cancelled_mefo }
-			}
-		}
-
-		cancel_if_not_visible = yes
-
-		remove_effect = {
-			set_country_flag = ger_has_cancelled_mefo
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	GER_renew_mefos = {
-
-		icon = ger_mefo_bills
-
-		available = {
-			hidden_trigger = {
-				has_country_flag = ger_has_cancelled_mefo
-			}
-		}
-
-		cost = 0
-
-		fire_only_once = no
-
-		visible = {
-			hidden_trigger = {
-				has_country_flag = ger_has_cancelled_mefo
-			}
-		}
-
-		cancel_if_not_visible = yes
-
-		remove_effect = {
-			clr_country_flag = ger_has_cancelled_mefo
-		}
-
-		ai_will_do = {
-			factor = 200
-		}
-	}
-}
-
 operations = {
 
 	GER_barbarossa_mission = {
@@ -385,7 +133,6 @@ GER_case_anton_category = {
 	}
 }
 
-#Category only allowed for GER
 GER_reichskommissariats = {
 	GER_reichskommissariat_norwegen = {
 
@@ -393,6 +140,17 @@ GER_reichskommissariats = {
 
 		available = {
 			has_completed_focus = GER_eastern_colonization_dr
+			controls_state=141
+			controls_state=139
+			controls_state=124
+			controls_state=138
+			controls_state=140
+			controls_state=110
+			controls_state=142
+			controls_state=143
+			controls_state=144
+			controls_state=38
+			controls_state=666
 		}
 
 		cost = 0
@@ -405,7 +163,7 @@ GER_reichskommissariats = {
 		}
 
 		visible = {
-			#has_completed_focus = GER_eastern_colonization_dr
+			has_completed_focus = GER_eastern_colonization_dr
 			has_government = fascism
 		}
 

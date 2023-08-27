@@ -1,0 +1,15 @@
+characters={
+	ISR_ben={
+		name="Ben Shapiro"
+		portraits={
+			civilian={
+				large="GFX_portrait_israel_neutrality"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

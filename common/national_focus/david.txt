@@ -1,12 +1,26 @@
-﻿focus_tree={id=german_focus country={factor=0 modifier={add=10 tag=GER}}default=no continuous_focus_position={x=50 y=1650}
+﻿focus_tree={id=german_focus country={factor=0 modifier={add=10 tag=GER}}default=no continuous_focus_position={x=50 y=1630}
 
-focus={id=GER_david_max_friendship_dr icon=GFX_GER_david_max_friendship_dr x=35 y=5 cost=10 available_if_capitulated=yes prerequisite={focus=GER_reaffirm_diplomacy_dr}ai_will_do={factor=1}completion_reward={}}
+focus={id=GER_claim_our_colonies_dr icon=GFX_focus_por_luso_tropicalism x=56 y=11 cost=10 available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=GER_rekindle_the_alliance_dr}ai_will_do={factor=1}completion_reward={add_state_claim=777 add_state_claim=773 add_state_claim=895 add_state_claim=894 add_state_claim=541 add_state_claim=893 add_state_claim=546 add_state_claim=769 add_state_claim=768 add_state_claim=743 add_state_claim=523 add_state_claim=737 add_state_claim=634 add_state_claim=647 add_state_claim=684 add_state_claim=646 add_state_claim=725 add_state_claim=633 add_state_claim=639}}
 
-focus={id=GER_thousand_year_david_reich_dr icon=GFX_goal_tfv_saf_support_ossebrandwag x=25 y=0 cost=1 ai_will_do={factor=1}available={has_government=fascism}continue_if_invalid=yes available_if_capitulated=no search_filters={FOCUS_FILTER_POLITICAL}completion_reward={add_political_power=10}}focus={id=GER_affairs_of_the_military_dr icon=GFX_goal_generic_military_sphere x=11 y=1 cost=2 ai_will_do={factor=1}available_if_capitulated=no search_filters={FOCUS_FILTER_POLITICAL}prerequisite={focus=GER_thousand_year_david_reich_dr}completion_reward={add_political_power=15}}focus={id=GER_der_davemacht_dr icon=GFX_focus_ger_oppose_hitler x=11 y=2 cost=5 ai_will_do={factor=1}available_if_capitulated=yes search_filters={FOCUS_FILTER_ARMY_XP}prerequisite={focus=GER_affairs_of_the_military_dr}completion_reward={army_experience=15 swap_ideas={remove_idea=idea_militarization_dr add_idea=idea_der_davemacht_dr}}}focus={id=GER_a_new_suggestion_dr icon=GFX_goal_generic_army_tanks x=9 y=3 cost=6 available_if_capitulated=yes search_filters={FOCUS_FILTER_ARMY_XP}search_filters={FOCUS_FILTER_RESEARCH}prerequisite={focus=GER_der_davemacht_dr}mutually_exclusive={focus=GER_a_storm_of_steel_dr}mutually_exclusive={focus=GER_the_old_turned_new_dr}ai_will_do={factor=1}completion_reward={army_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=armor}swap_ideas={remove_idea=idea_der_davemacht_dr add_idea=idea_der_davemacht_3_dr}custom_effect_tooltip=tank_prioritize_tooltip_dr}}focus={id=GER_a_storm_of_steel_dr icon=GFX_goal_generic_army_artillery2 x=13 y=3 cost=6 available_if_capitulated=yes search_filters={FOCUS_FILTER_ARMY_XP}search_filters={FOCUS_FILTER_RESEARCH}prerequisite={focus=GER_der_davemacht_dr}mutually_exclusive={focus=GER_the_old_turned_new_dr}mutually_exclusive={focus=GER_a_new_suggestion_dr}ai_will_do={factor=1}completion_reward={army_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=artillery}swap_ideas={remove_idea=idea_der_davemacht_dr add_idea=idea_der_davemacht_2_dr}custom_effect_tooltip=artillery_prioritize_tooltip_dr}}focus={id=GER_the_old_turned_new_dr icon=GFX_goal_rhineland x=11 y=3 cost=6 available_if_capitulated=yes search_filters={FOCUS_FILTER_ARMY_XP}search_filters={FOCUS_FILTER_RESEARCH}prerequisite={focus=GER_der_davemacht_dr}mutually_exclusive={focus=GER_a_storm_of_steel_dr}mutually_exclusive={focus=GER_a_new_suggestion_dr}ai_will_do={factor=1}completion_reward={army_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=infantry_tech}swap_ideas={remove_idea=idea_der_davemacht_dr add_idea=idea_der_davemacht_4_dr}custom_effect_tooltip=infantry_prioritize_tooltip_dr}}focus={id=GER_der_davesmarine_dr icon=GFX_goal_generic_navy_cruiser x=17 y=2 cost=5 search_filters={FOCUS_FILTER_NAVY_XP}available_if_capitulated=yes prerequisite={focus=GER_affairs_of_the_military_dr}ai_will_do={factor=1}completion_reward={navy_experience=15 add_ideas={idea_der_davesmarine_dr}}}focus={id=GER_der_luftdaffe_dr icon=GFX_goal_generic_build_airforce x=5 y=2 cost=5 search_filters={FOCUS_FILTER_AIR_XP}available_if_capitulated=yes prerequisite={focus=GER_affairs_of_the_military_dr}ai_will_do={factor=1}completion_reward={air_experience=15 add_ideas={idea_der_luftdaffe_dr}}}focus={id=GER_develop_our_airports_dr icon=GFX_goal_generic_build_airforce x=1 y=3 cost=9 available_if_capitulated=yes prerequisite={focus=GER_der_luftdaffe_dr}ai_will_do={factor=1}completion_reward={42={if={limit={is_controlled_by=GER}add_building_construction={type=air_base level=2 instant_build=yes}}56={if={limit={is_controlled_by=GER}add_building_construction={type=air_base level=2 instant_build=yes}}52={if={limit={is_controlled_by=GER}add_building_construction={type=air_base level=2 instant_build=yes}}60={if={limit={is_controlled_by=GER}add_building_construction={type=air_base level=2 instant_build=yes}}5={if={limit={is_controlled_by=GER}}custom_effect_tooltip=develop_our_airports_tooltip_dr}}}}}}}focus={id=GER_develop_our_dockyards_dr icon=GFX_goal_generic_construct_naval_dockyard x=21 y=3 cost=9 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=GER_der_davesmarine_dr}ai_will_do={factor=1}completion_reward={59={if={limit={is_controlled_by=GER}add_building_construction={type=dockyard level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}58={if={limit={is_controlled_by=GER}add_building_construction={type=dockyard level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}63={if={limit={is_controlled_by=GER}add_building_construction={type=dockyard level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}85={if={limit={is_controlled_by=GER}add_building_construction={type=dockyard level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}763={if={limit={is_controlled_by=GER}add_building_construction={type=dockyard level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}custom_effect_tooltip=develop_our_dockyards_tooltip_dr}}focus={id=GER_dominate_the_skies_dr icon=GFX_goal_generic_air_fighter2 x=7 y=3 cost=6 search_filters={FOCUS_FILTER_AIR_XP}available_if_capitulated=yes prerequisite={focus=GER_der_luftdaffe_dr}mutually_exclusive={focus=GER_strategic_targeting_dr}ai_will_do={factor=1}completion_reward={air_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=light_fighter}swap_ideas={remove_idea=idea_der_luftdaffe_dr add_idea=idea_der_luftdaffe_3_dr}custom_effect_tooltip=fighter_prioritize_tooltip_dr}}focus={id=GER_strategic_targeting_dr icon=GFX_goal_generic_air_fighter x=3 y=3 cost=6 search_filters={FOCUS_FILTER_AIR_XP}available_if_capitulated=yes prerequisite={focus=GER_der_luftdaffe_dr}mutually_exclusive={focus=GER_dominate_the_skies_dr}ai_will_do={factor=1}completion_reward={air_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=tactical_bomber}swap_ideas={remove_idea=idea_der_luftdaffe_dr add_idea=idea_der_luftdaffe_2_dr}custom_effect_tooltip=bomber_prioritize_tooltip_dr}}focus={id=GER_affairs_of_the_economy_dr icon=GFX_focus_generic_industry_3 x=30 y=1 cost=2 available_if_capitulated=yes prerequisite={focus=GER_thousand_year_david_reich_dr}search_filters={FOCUS_FILTER_POLITICAL}ai_will_do={factor=1}completion_reward={add_political_power=15}}focus={id=GER_university_of_david_dr icon=GFX_focus_research2 x=24 y=2 cost=6 available_if_capitulated=yes search_filters={FOCUS_FILTER_RESEARCH}search_filters={FOCUS_FILTER_POLITICAL}prerequisite={focus=GER_affairs_of_the_economy_dr}ai_will_do={factor=1}completion_reward={add_political_power=25 add_research_slot=1}}
+		focus={id=GER_davidsraum_dr icon=GFX_focus_spr_anarchism_knows_no_borders x=44 y=9 cost=8 available_if_capitulated=yes prerequisite={focus=GER_claim_greater_burgundy_dr focus=GER_liberate_the_danziggers_dr focus=GER_davidians_in_czechia_dr}prerequisite={focus=GER_czechoslovak_compromise_dr}ai_will_do={factor=1}completion_reward={}} 
+		
+focus={id=GER_locate_hyperborea_dr icon=GFX_focus_LAT_aizsargi x=42 y=10 cost=7 search_filters={FOCUS_FILTER_ANNEXATION}available_if_capitulated=yes prerequisite={focus=GER_davidsraum_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=SWE}}}
 
-	#Focus for Super Soldiers
-	focus = {
-		id = GER_super_soldiers_dr
+focus={id=GER_thousand_year_david_reich_dr icon=GFX_goal_tfv_saf_support_ossebrandwag x=25 y=0 cost=1 ai_will_do={factor=1}available={has_government=fascism}continue_if_invalid=yes available_if_capitulated=no completion_reward={add_political_power=10}}
+
+focus={id=GER_affairs_of_the_military_dr icon=GFX_goal_generic_military_sphere x=11 y=1 cost=2 ai_will_do={factor=1}available_if_capitulated=no prerequisite={focus=GER_thousand_year_david_reich_dr}completion_reward={add_political_power=15}}
+
+focus={id=GER_der_davemacht_dr icon=GFX_focus_ger_oppose_hitler x=11 y=2 cost=5 ai_will_do={factor=1}available_if_capitulated=yes search_filters={FOCUS_FILTER_ARMY_XP}prerequisite={focus=GER_affairs_of_the_military_dr}completion_reward={army_experience=15 swap_ideas={remove_idea=idea_militarization_dr add_idea=idea_der_davemacht_dr}}}
+
+focus={id=GER_a_new_suggestion_dr icon=GFX_goal_generic_army_tanks x=9 y=3 cost=6 available_if_capitulated=yes search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH}prerequisite={focus=GER_der_davemacht_dr}mutually_exclusive={focus=GER_a_storm_of_steel_dr}mutually_exclusive={focus=GER_the_old_turned_new_dr}ai_will_do={factor=1}completion_reward={army_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=armor}swap_ideas={remove_idea=idea_der_davemacht_dr add_idea=idea_der_davemacht_3_dr}custom_effect_tooltip=tank_prioritize_tooltip_dr}}
+
+focus={id=GER_a_storm_of_steel_dr icon=GFX_goal_generic_army_artillery2 x=13 y=3 cost=6 available_if_capitulated=yes search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH}prerequisite={focus=GER_der_davemacht_dr}mutually_exclusive={focus=GER_the_old_turned_new_dr}mutually_exclusive={focus=GER_a_new_suggestion_dr}ai_will_do={factor=1}completion_reward={army_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=artillery}swap_ideas={remove_idea=idea_der_davemacht_dr add_idea=idea_der_davemacht_2_dr}custom_effect_tooltip=artillery_prioritize_tooltip_dr}}
+
+focus={id=GER_the_old_turned_new_dr icon=GFX_goal_rhineland x=11 y=3 cost=6 available_if_capitulated=yes search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH}prerequisite={focus=GER_der_davemacht_dr}mutually_exclusive={focus=GER_a_storm_of_steel_dr}mutually_exclusive={focus=GER_a_new_suggestion_dr}ai_will_do={factor=1}completion_reward={army_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=infantry_tech}swap_ideas={remove_idea=idea_der_davemacht_dr add_idea=idea_der_davemacht_4_dr}custom_effect_tooltip=infantry_prioritize_tooltip_dr}}
+
+focus={id=GER_special_force_divisions_dr icon=GFX_goal_generic_special_forces x=11 y=4 cost=7 available_if_capitulated=yes prerequisite={focus=GER_a_storm_of_steel_dr focus=GER_a_new_suggestion_dr focus= GER_the_old_turned_new_dr}search_filters={FOCUS_FILTER_ARMY_XP}ai_will_do={factor=1}completion_reward={army_experience=10 add_tech_bonus={bonus=0.5 ahead_reduction=1 uses=2 category=cat_special_forces_generic}}}
+
+focus={id=GER_super_soldiers_dr
 		icon = GFX_focus_chi_army_reform
 		x = 11
 		y = 5
@@ -18,45 +32,13 @@ focus={id=GER_thousand_year_david_reich_dr icon=GFX_goal_tfv_saf_support_ossebra
 		}
 	}
 
-#temporary effect
-focus={id=GER_special_force_divisions_dr icon=GFX_goal_generic_special_forces x=11 y=4 cost=7 available_if_capitulated=yes prerequisite={focus=GER_a_storm_of_steel_dr focus=GER_a_new_suggestion_dr focus= GER_the_old_turned_new_dr}search_filters={FOCUS_FILTER_ARMY_XP}ai_will_do={factor=1}completion_reward={army_experience=1}}
+focus={id=GER_der_luftdaffe_dr icon=GFX_goal_generic_build_airforce x=5 y=2 cost=5 search_filters={FOCUS_FILTER_AIR_XP}available_if_capitulated=yes prerequisite={focus=GER_affairs_of_the_military_dr}ai_will_do={factor=1}completion_reward={air_experience=15 add_ideas={idea_der_luftdaffe_dr}}}
 
-focus={id=GER_destroyer_fleets_dr icon=GFX_focus_generic_destroyer x=18 y=4 cost=6 search_filters={FOCUS_FILTER_NAVY_XP}search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=GER_light_ship_focus_dr}ai_will_do={factor=1}completion_reward={navy_experience=15 add_tech_bonus={bonus=0.5 ahead_reduction=1 uses=2 category=dd_tech}}}
+focus={id=GER_develop_our_airports_dr icon=GFX_goal_generic_build_airforce x=1 y=3 cost=9 available_if_capitulated=yes prerequisite={focus=GER_der_luftdaffe_dr}ai_will_do={factor=1}completion_reward={42={if={limit={is_controlled_by=GER}add_building_construction={type=air_base level=2 instant_build=yes}}56={if={limit={is_controlled_by=GER}add_building_construction={type=air_base level=2 instant_build=yes}}52={if={limit={is_controlled_by=GER}add_building_construction={type=air_base level=2 instant_build=yes}}60={if={limit={is_controlled_by=GER}add_building_construction={type=air_base level=2 instant_build=yes}}5={if={limit={is_controlled_by=GER}}custom_effect_tooltip=develop_our_airports_tooltip_dr}}}}}}}
 
-	#Focus for Refine Our Doctrine
-	focus = {
-		id = GER_refine_our_doctrine_dr
-		icon = GFX_goal_generic_air_doctrine
-		x = 5
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = GER_dominate_the_skies_dr 
-			focus = GER_strategic_targeting_dr 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+focus={id=GER_dominate_the_skies_dr icon=GFX_goal_generic_air_fighter2 x=7 y=3 cost=6 search_filters={FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP}available_if_capitulated=yes prerequisite={focus=GER_der_luftdaffe_dr}mutually_exclusive={focus=GER_strategic_targeting_dr}ai_will_do={factor=1}completion_reward={air_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=light_fighter}swap_ideas={remove_idea=idea_der_luftdaffe_dr add_idea=idea_der_luftdaffe_3_dr}custom_effect_tooltip=fighter_prioritize_tooltip_dr}}
 
-focus={id=GER_develop_the_civilian_sector_dr icon=GFX_goal_generic_construct_civ_factory x=27 y=3 cost=5 available_if_capitulated=yes search_filters={FOCUS_FILTER_INDUSTRY}prerequisite={focus=GER_davewirtschaft_dr}ai_will_do={factor=1}completion_reward={64={if={limit={is_controlled_by=GER}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}60={if={limit={is_controlled_by=GER}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}}focus={id=GER_develop_the_military_sector_dr icon=GFX_goal_generic_construct_mil_factory x=29 y=3 cost=5 available_if_capitulated=yes search_filters={FOCUS_FILTER_INDUSTRY}prerequisite={focus=GER_davewirtschaft_dr}ai_will_do={factor=1}completion_reward={64={if={limit={is_controlled_by=GER}add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}60={if={limit={is_controlled_by=GER}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}}
-
-focus={id=GER_oil_dr icon=GFX_goal_generic_oil_refinery x=33 y=3 cost=6 available_if_capitulated=yes prerequisite={focus=GER_resource_efficiency_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=synth_resources}}}
-
-focus={id=GER_steal_tires_dr icon=GFX_goal_generic_army_motorized x=33 y=4 cost=5 available={owns_state=64}available_if_capitulated=yes prerequisite={focus=GER_oil_dr}ai_will_do={factor=1}completion_reward={add_resource={type=rubber amount=15 state=64}}}
-
-focus={id=GER_affairs_of_the_state_dr icon=GFX_focus_hol_the_foundations_of_defense x=42 y=1 cost=2 available_if_capitulated=yes prerequisite={focus=GER_thousand_year_david_reich_dr}search_filters={FOCUS_FILTER_POLITICAL}ai_will_do={factor=1}completion_reward={add_political_power=20}}
-
-focus={id=GER_assure_davidian_loyalty_dr icon=GFX_focus_spr_masters_of_our_own_fate x=39 y=2 cost=4 available_if_capitulated=yes search_filters={FOCUS_FILTER_POLITICAL}search_filters={FOCUS_FILTER_STABILITY}prerequisite={focus=GER_affairs_of_the_state_dr}mutually_exclusive={focus=GER_its_probably_fine_dr}ai_will_do={factor=1}completion_reward={add_political_power=30 add_stability=0.05 custom_effect_tooltip=ger_hist_tooltip_dr}}
-
-focus={id=GER_its_probably_fine_dr icon=GFX_goal_tfv_smiling_buddha x=45 y=2 cost=4 available_if_capitulated=yes prerequisite={focus=GER_affairs_of_the_state_dr}mutually_exclusive={focus=GER_assure_davidian_loyalty_dr}ai_will_do={factor=1}completion_reward={add_political_power=-30 add_stability=-0.05 custom_effect_tooltip=ger_althist_tooltip_dr}}
-
-focus={id=GER_resource_efficiency_dr icon=GFX_focus_generic_steel x=32 y=2 cost=4 available_if_capitulated=yes available={has_completed_focus=GER_davewirtschaft_dr}prerequisite={focus=GER_affairs_of_the_economy_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_davewirtschaft_dr add_idea=idea_davewirtschaft_2_dr}}}
-
-focus={id=GER_usw_dr icon=GFX_goal_generic_navy_anti_submarine x=20 y=4 cost=6 search_filters={FOCUS_FILTER_NAVY_XP} search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=GER_light_ship_focus_dr}ai_will_do={factor=1}completion_reward={navy_experience=15 add_tech_bonus={bonus=0.5 ahead_reduction=1 uses=2 category=ss_tech}}}
-
-focus={id=GER_davewirtschaft_dr icon=GFX_goal_generic_positive_trade_relations x=28 y=2 cost=4 available_if_capitulated=yes search_filters={FOCUS_FILTER_INDUSTRY}prerequisite={focus=GER_affairs_of_the_economy_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_davewirtschaft_dr}}
+focus={id=GER_strategic_targeting_dr icon=GFX_goal_generic_air_fighter x=3 y=3 cost=6 search_filters={FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP}available_if_capitulated=yes prerequisite={focus=GER_der_luftdaffe_dr}mutually_exclusive={focus=GER_dominate_the_skies_dr}ai_will_do={factor=1}completion_reward={air_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=tactical_bomber}swap_ideas={remove_idea=idea_der_luftdaffe_dr add_idea=idea_der_luftdaffe_2_dr}custom_effect_tooltip=bomber_prioritize_tooltip_dr}}
 
     #Focus for Air Raids
 	focus = {
@@ -110,6 +92,31 @@ focus={id=GER_davewirtschaft_dr icon=GFX_goal_generic_positive_trade_relations x
 			factor = 1
 		}
 	}
+	#Focus for Refine Our Doctrine
+	focus = {
+		id = GER_refine_our_doctrine_dr
+		icon = GFX_goal_generic_air_doctrine
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_dominate_the_skies_dr 
+			focus = GER_strategic_targeting_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=GER_der_davesmarine_dr icon=GFX_goal_generic_navy_cruiser x=17 y=2 cost=5 search_filters={FOCUS_FILTER_NAVY_XP}available_if_capitulated=yes prerequisite={focus=GER_affairs_of_the_military_dr}ai_will_do={factor=1}completion_reward={navy_experience=15 add_ideas={idea_der_davesmarine_dr}}}
+
+focus={id=GER_develop_our_dockyards_dr icon=GFX_goal_generic_construct_naval_dockyard x=21 y=3 cost=9 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=GER_der_davesmarine_dr}ai_will_do={factor=1}completion_reward={59={if={limit={is_controlled_by=GER}add_building_construction={type=dockyard level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}58={if={limit={is_controlled_by=GER}add_building_construction={type=dockyard level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}63={if={limit={is_controlled_by=GER}add_building_construction={type=dockyard level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}85={if={limit={is_controlled_by=GER}add_building_construction={type=dockyard level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}763={if={limit={is_controlled_by=GER}add_building_construction={type=dockyard level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}custom_effect_tooltip=develop_our_dockyards_tooltip_dr}}
+
+focus={id=GER_destroyer_fleets_dr icon=GFX_focus_generic_destroyer x=18 y=4 cost=6 search_filters={FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=GER_light_ship_focus_dr}ai_will_do={factor=1}completion_reward={navy_experience=10 add_tech_bonus={bonus=0.5 ahead_reduction=1 uses=2 category=dd_tech}}}
+
+focus={id=GER_usw_dr icon=GFX_goal_generic_navy_anti_submarine x=20 y=4 cost=6 search_filters={FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=GER_light_ship_focus_dr}ai_will_do={factor=1}completion_reward={navy_experience=10 add_tech_bonus={bonus=0.5 ahead_reduction=1 uses=2 category=ss_tech}}}
+
 	#Focus for Steel Whales
 	focus = {
 		id = GER_steel_whales_dr
@@ -123,25 +130,8 @@ focus={id=GER_davewirtschaft_dr icon=GFX_goal_generic_positive_trade_relations x
 			factor = 1
 		}
 	}
-focus={id=GER_further_research_funding_dr icon=GFX_focus_research2 x=25 y=6 cost=9 available={num_of_civilian_factories>69}available_if_capitulated=yes search_filters={FOCUS_FILTER_RESEARCH}prerequisite={focus=GER_consolidate_the_economy_dr}prerequisite={focus=GER_university_of_david_dr}ai_will_do={factor=1}completion_reward={add_research_slot=1}}
 
 focus={id=GER_heavy_ship_focus_dr icon=GFX_goal_generic_navy_battleship x=15 y=3 cost=5 search_filters={FOCUS_FILTER_NAVY_XP}available_if_capitulated=yes prerequisite={focus=GER_der_davesmarine_dr}mutually_exclusive={focus=GER_light_ship_focus_dr}ai_will_do={factor=1}completion_reward={navy_experience=10}add_ideas=idea_der_davesmarine_3_dr}
-
-focus={id=GER_rocketry_dr icon=GFX_focus_rocketry x=23 y=7 cost=8 available_if_capitulated=yes prerequisite={focus=GER_university_of_david_dr}prerequisite={focus=GER_refine_our_doctrine_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=rocketry}}}
-
-	#Focus for Cruiser Research
-	focus = {
-		id = GER_cruiser_research_dr
-		icon = GFX_focus_research2
-		x = 16
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_heavy_ship_focus_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 	#Focus for Expand Our Budget
 	focus = {
@@ -159,41 +149,167 @@ focus={id=GER_rocketry_dr icon=GFX_focus_rocketry x=23 y=7 cost=8 available_if_c
 			factor = 1
 		}
 	}
+
 focus={id=GER_light_ship_focus_dr icon=GFX_goal_generic_navy_submarine x=19 y=3 cost=5 search_filters={FOCUS_FILTER_NAVY_XP}available_if_capitulated=yes prerequisite={focus=GER_der_davesmarine_dr}mutually_exclusive={focus=GER_heavy_ship_focus_dr}ai_will_do={factor=1}completion_reward={navy_experience=10}add_idea={der_davesmarine_3_dr}}
 
-focus={id=GER_consolidate_the_economy_dr icon=GFX_focus_mex_privatisation x=28 y=5 cost=6 available={has_completed_focus=GER_resource_efficiency_dr}available_if_capitulated=yes search_filters={FOCUS_FILTER_INDUSTRY}prerequisite={focus=GER_continue_the_civilian_plan_dr focus=GER_continue_the_military_plan_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_steady_economic_recovery_dr add_idea=idea_consolidated_economy_dr}remove_ideas=idea_davewirtschaft_2_dr}}focus={id=GER_research_concordat_dr icon=GFX_goal_generic_scientific_exchange x=24 y=4 cost=5 available_if_capitulated=yes search_filters={FOCUS_FILTER_RESEARCH}prerequisite={focus=GER_university_of_david_dr}ai_will_do={factor=1}completion_reward={add_to_tech_sharing_group=axis_research}}
-
-focus={id=GER_denounce_the_peace_dr icon=GFX_goal_tfv_saf_anti_colonialist_crusade x=40 y=3 cost=6 available_if_capitulated=yes search_filters={FOCUS_FILTER_STABILITY}search_filters={FOCUS_FILTER_WAR_SUPPORT}prerequisite={focus=GER_assure_davidian_loyalty_dr}ai_will_do={factor=1}completion_reward={add_stability=0.05 swap_ideas={remove_idea=idea_legacy_of_the_schlimkrieg_dr add_idea=idea_legacy_of_the_schlimkrieg_2_dr}add_named_threat={threat=1 name=denounce_peace_threat_dr}}}
-
-focus={id=GER_fuck_dr icon=GFX_GER_fuck_dr x=47 y=3 cost=4 available_if_capitulated=yes prerequisite={focus=GER_its_probably_fine_dr}ai_will_do={factor=1}completion_reward={add_political_power=-100 add_stability=-0.3}}
-
-focus={id=GER_the_lost_territories_dr icon=GFX_goal_generic_territory_or_war x=45 y=4 cost=1 available_if_capitulated=yes search_filters={FOCUS_FILTER_POLITICAL}prerequisite={focus=GER_denounce_the_peace_dr focus=GER_fuck_dr}ai_will_do={factor=1}completion_reward={add_political_power=10}}focus={id=GER_indoctrinate_the_masses_dr icon=GFX_focus_spr_the_anti_fascist_workers_revolution x=40 y=4 cost=6 available_if_capitulated=yes search_filters={FOCUS_FILTER_POLITICAL}prerequisite={focus=GER_denounce_the_peace_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=fascism popularity=0.1}}}focus={id=GER_davidian_youth_movement_dr icon=GFX_focus_generic_military_academy x=41 y=5 cost=5 available_if_capitulated=yes search_filters={FOCUS_FILTER_MANPOWER}prerequisite={focus=GER_indoctrinate_the_masses_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_davidian_youth_movement_dr}}}focus={id=GER_secret_police_dr icon=GFX_focus_generic_military_mission x=39 y=5 cost=5 available_if_capitulated=yes prerequisite={focus=GER_indoctrinate_the_masses_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_secret_police_dr}}}focus={id=GER_knowledge_is_ignorance_dr icon=GFX_goal_generic_propaganda x=40 y=6 cost=9 available_if_capitulated=yes search_filters={FOCUS_FILTER_POLITICAL}search_filters={FOCUS_FILTER_WAR_SUPPORT}prerequisite={focus=GER_secret_police_dr}prerequisite={focus=GER_davidian_youth_movement_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_secret_police_dr add_idea=idea_knowledge_is_ignorance_dr}}}focus={id=GER_reaffirm_diplomacy_dr icon=GFX_goal_generic_intelligence_exchange x=36 y=4 cost=3 available_if_capitulated=yes search_filters={FOCUS_FILTER_POLITICAL}prerequisite={focus=GER_denounce_the_peace_dr}ai_will_do={factor=1}completion_reward={add_political_power=20}}focus={id=GER_political_chaos_dr icon=GFX_focus_generic_self_management x=50 y=4 cost=5 available_if_capitulated=yes prerequisite={focus=GER_fuck_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_political_chaos_dr}}}
-
-focus={id=GER_reestablish_elections_dr icon=GFX_goal_generic_neutrality_focus x=53 y=5 cost=10 available_if_capitulated=yes search_filters={FOCUS_FILTER_STABILITY}prerequisite={focus=GER_political_chaos_dr}ai_will_do={factor=1}completion_reward={add_political_power=40}GER={country_event=dr.1}}
-
-focus={id=GER_libtard_victory_dr icon=GFX_goal_support_democracy x=50 y=6 cost=0 available={always=no}prerequisite={focus=GER_reestablish_elections_dr}mutually_exclusive={focus=GER_royalist_victory_dr}mutually_exclusive={focus=GER_commie_victory_dr}ai_will_do={factor=1}}focus={id=GER_commie_victory_dr icon=GFX_goal_support_communism x=56 y=6 cost=0 available={always=no}prerequisite={focus=GER_reestablish_elections_dr}mutually_exclusive={focus=GER_royalist_victory_dr}mutually_exclusive={focus=GER_libtard_victory_dr}ai_will_do={factor=1}}focus={id=GER_royalist_victory_dr icon=GFX_focus_generic_home_defense x=53 y=6 cost=0 available={always=no}prerequisite={focus=GER_reestablish_elections_dr}mutually_exclusive={focus=GER_libtard_victory_dr}mutually_exclusive={focus=GER_commie_victory_dr}ai_will_do={factor=1}}
-
-focus={id=GER_continue_the_civilian_plan_dr icon=GFX_goal_generic_construct_civ_factory x=27 y=4 cost=8 available_if_capitulated=yes search_filters={FOCUS_FILTER_INDUSTRY}prerequisite={focus=GER_develop_the_civilian_sector_dr}mutually_exclusive={focus=GER_continue_the_military_plan_dr}ai_will_do={factor=1}completion_reward={64={if={limit={is_controlled_by=GER}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}60={if={limit={is_controlled_by=GER}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}66={if={limit={is_controlled_by=GER}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}}
-
-focus={id=GER_complete_the_autobahn_dr icon=GFX_goal_generic_construct_infrastructure x=28 y=7 cost=15 available={owns_state=64 owns_state=65 owns_state=60 owns_state=54 owns_state=52 owns_state=53 owns_state=55 owns_state=50 owns_state=51 owns_state=911 owns_state=57 owns_state=59 owns_state=56 owns_state=58}available_if_capitulated=yes prerequisite={focus=GER_the_peoples_car_dr}ai_will_do={factor=1}completion_reward={64={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}65={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}60={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}54={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}52={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}53={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}55={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}50={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}51={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}911={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}57={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}59={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}56={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}58={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}}}
-
-	#Focus for The People's Car
+	#Focus for Cruiser Research
 	focus = {
-		id = GER_the_peoples_car_dr
-		icon = GFX_goal_generic_army_motorized
-		x = 28
-		y = 6
+		id = GER_cruiser_research_dr
+		icon = GFX_focus_research2
+		x = 16
+		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = GER_consolidate_the_economy_dr }
+		prerequisite = { focus = GER_heavy_ship_focus_dr }
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
+focus={id=GER_affairs_of_the_economy_dr icon=GFX_focus_generic_industry_3 x=30 y=1 cost=2 available_if_capitulated=yes prerequisite={focus=GER_thousand_year_david_reich_dr}ai_will_do={factor=1}completion_reward={add_political_power=15}}
+
+focus={id=GER_davewirtschaft_dr icon=GFX_goal_generic_positive_trade_relations x=28 y=2 cost=4 available_if_capitulated=yes search_filters={FOCUS_FILTER_INDUSTRY}prerequisite={focus=GER_affairs_of_the_economy_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_davewirtschaft_dr}}
+
+focus={id=GER_develop_the_civilian_sector_dr icon=GFX_goal_generic_construct_civ_factory x=27 y=3 cost=5 available_if_capitulated=yes search_filters={FOCUS_FILTER_INDUSTRY}prerequisite={focus=GER_davewirtschaft_dr}ai_will_do={factor=1}completion_reward={64={if={limit={is_controlled_by=GER}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}60={if={limit={is_controlled_by=GER}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}}
+
+focus={id=GER_develop_the_military_sector_dr icon=GFX_goal_generic_construct_mil_factory x=29 y=3 cost=5 available_if_capitulated=yes search_filters={FOCUS_FILTER_INDUSTRY}prerequisite={focus=GER_davewirtschaft_dr}ai_will_do={factor=1}completion_reward={64={if={limit={is_controlled_by=GER}add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}60={if={limit={is_controlled_by=GER}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}}
+
+focus={id=GER_university_of_david_dr icon=GFX_focus_research2 x=24 y=2 cost=6 available_if_capitulated=yes search_filters={FOCUS_FILTER_RESEARCH}prerequisite={focus=GER_affairs_of_the_economy_dr}ai_will_do={factor=1}completion_reward={add_political_power=25 add_research_slot=1}}
+
+focus={id=GER_continue_the_civilian_plan_dr icon=GFX_goal_generic_construct_civ_factory x=27 y=4 cost=8 available_if_capitulated=yes search_filters={FOCUS_FILTER_INDUSTRY}prerequisite={focus=GER_develop_the_civilian_sector_dr}mutually_exclusive={focus=GER_continue_the_military_plan_dr}ai_will_do={factor=1}completion_reward={64={if={limit={is_controlled_by=GER}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}60={if={limit={is_controlled_by=GER}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}66={if={limit={is_controlled_by=GER}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}}
+
+focus={id=GER_continue_the_military_plan_dr icon=GFX_goal_generic_construct_mil_factory x=29 y=4 cost=8 available_if_capitulated=yes search_filters={FOCUS_FILTER_INDUSTRY}prerequisite={focus=GER_develop_the_military_sector_dr}mutually_exclusive={focus=GER_continue_the_civilian_plan_dr}ai_will_do={factor=1}completion_reward={64={if={limit={is_controlled_by=GER}add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}60={if={limit={is_controlled_by=GER}add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}66={if={limit={is_controlled_by=GER}add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}}
+
+focus={id=GER_research_concordat_dr icon=GFX_goal_generic_scientific_exchange x=24 y=4 cost=5 available={is_faction_leader=yes}available_if_capitulated=yes search_filters={FOCUS_FILTER_RESEARCH}prerequisite={focus=GER_university_of_david_dr}ai_will_do={factor=1}completion_reward={add_to_tech_sharing_group=axis_research}}
+
+focus={id=GER_complete_the_autobahn_dr icon=GFX_goal_generic_construct_infrastructure x=28 y=7 cost=15 available={owns_state=64 owns_state=65 owns_state=60 owns_state=54 owns_state=52 owns_state=53 owns_state=55 owns_state=50 owns_state=51 owns_state=911 owns_state=57 owns_state=59 owns_state=56 owns_state=58}available_if_capitulated=yes prerequisite={focus=GER_the_peoples_car_dr}ai_will_do={factor=1}completion_reward={64={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}65={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}60={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}54={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}52={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}53={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}55={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}50={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}51={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}911={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}57={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}59={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}56={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}58={add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}}}
+
+focus={id=GER_the_peoples_car_dr icon=GFX_goal_generic_army_motorized x=28 y=6 cost=5 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=GER_consolidate_the_economy_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=motorized_equipment}}}
+
+focus={id=GER_consolidate_the_economy_dr icon=GFX_focus_mex_privatisation x=28 y=5 cost=6 available={has_completed_focus=GER_resource_efficiency_dr}available_if_capitulated=yes search_filters={FOCUS_FILTER_INDUSTRY}prerequisite={focus=GER_continue_the_civilian_plan_dr focus=GER_continue_the_military_plan_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_steady_economic_recovery_dr add_idea=idea_consolidated_economy_dr}remove_ideas=idea_davewirtschaft_2_dr}}
+
+focus={id=GER_resource_efficiency_dr icon=GFX_focus_generic_steel x=32 y=2 cost=4 available_if_capitulated=yes available={has_completed_focus=GER_davewirtschaft_dr}prerequisite={focus=GER_affairs_of_the_economy_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_davewirtschaft_dr add_idea=idea_davewirtschaft_2_dr}}}
+
+focus={id=GER_further_research_funding_dr icon=GFX_focus_research2 x=25 y=6 cost=9 available={num_of_civilian_factories>69}available_if_capitulated=yes search_filters={FOCUS_FILTER_RESEARCH}prerequisite={focus=GER_consolidate_the_economy_dr}prerequisite={focus=GER_university_of_david_dr}ai_will_do={factor=1}completion_reward={add_research_slot=1}}
+
+focus={id=GER_rocketry_dr icon=GFX_focus_rocketry x=23 y=7 cost=8 available_if_capitulated=yes prerequisite={focus=GER_university_of_david_dr}prerequisite={focus=GER_refine_our_doctrine_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=rocketry}}}
+
 focus={id=GER_fart_bombs_dr icon=GFX_focus_wonderweapons x=22 y=8 cost=10 available_if_capitulated=yes prerequisite={focus=GER_rocketry_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_uranverein_dr}add_tech_bonus={bonus=0.5 uses=2 category=nuclear}}}
 
-	#Focus for Feed The Hungrians
+focus={id=GER_oil_dr icon=GFX_goal_generic_oil_refinery x=33 y=3 cost=6 available_if_capitulated=yes prerequisite={focus=GER_resource_efficiency_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=synth_resources}}}
+
+focus={id=GER_steal_tires_dr icon=GFX_goal_generic_army_motorized x=33 y=4 cost=5 available_if_capitulated=yes prerequisite={focus=GER_oil_dr}ai_will_do={factor=1}completion_reward={capital_scope{add_resource={type=rubber amount=15}}}}
+
+	#Focus for Constwall
+	focus = {
+		id = GER_constwall_dr
+		icon = GFX_goal_generic_fortify_city
+		x = 37
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_westwall_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=GER_westwall_dr icon=GFX_goal_generic_construct_military x=35 y=2 cost=70 available_if_capitulated=yes prerequisite={focus=GER_affairs_of_the_economy_dr}ai_will_do={factor=1}completion_reward={}}
+
+	#Focus for Davelantikwall
+	focus = {
+		id = GER_davelantikwall_dr
+		icon = GFX_focus_generic_coastal_fort
+		x = 35
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_westwall_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = GER_buildup_the_west_dr
+		icon = GFX_goal_generic_construct_civilian
+		x = 31
+		y = 3
+		cost = 10
+		available={owns_state=59 owns_state=51 owns_state=56 owns_state=57 owns_state=55 owns_state=911 owns_state=58 owns_state=42}
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_resource_efficiency_dr }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward={59={if={limit={is_controlled_by=GER add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}51={if={limit={is_controlled_by=GER}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}56={if={limit={is_controlled_by=GER}add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}57={if={limit={is_controlled_by=GER}add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}55={if={limit={is_controlled_by=GER}add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}911={if={limit={is_controlled_by=GER}add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}58={if={limit={is_controlled_by=GER}add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}42={if={limit={is_controlled_by=GER}add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}}}}
+		}}}}}}}
+	}
+
+	#Focus for Buildup The South
+	focus = {
+		id = GER_buildup_the_south_dr
+		icon = GFX_goal_generic_construct_civilian
+		x = 31
+		y = 4
+		cost = 9
+		available={owns_state=52 owns_state=50 owns_state=53 owns_state=54}
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_buildup_the_west_dr }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward={52={if={limit={is_controlled_by=GER}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}50={if={limit={is_controlled_by=GER}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}53={if={limit={is_controlled_by=GER}add_building_construction={type=infrastructure level=2 instant_build=yes}add_extra_state_shared_building_slots=1}54={if={limit={is_controlled_by=GER}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=2}}}}}
+		}}
+
+focus={id=GER_affairs_of_the_state_dr icon=GFX_focus_hol_the_foundations_of_defense x=42 y=1 cost=2 available_if_capitulated=yes prerequisite={focus=GER_thousand_year_david_reich_dr}ai_will_do={factor=1}completion_reward={add_political_power=20}}
+
+focus={id=GER_westphalia_dr icon=GFX_goal_generic_major_war x=44 y=5 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available_if_capitulated=yes prerequisite={focus=GER_the_lost_territories_dr}ai_will_do={factor=1}completion_reward={GER={country_event=dr.6}}}
+
+focus={id=GER_bavaria_dr icon=GFX_goal_generic_major_war x=46 y=5 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available_if_capitulated=yes prerequisite={focus=GER_the_lost_territories_dr}
+ai_will_do={factor=1}completion_reward={GER={country_event=dr.7}}}
+
+focus={id=GER_assure_davidian_loyalty_dr icon=GFX_focus_spr_masters_of_our_own_fate x=39 y=2 cost=4 available_if_capitulated=yes search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}prerequisite={focus=GER_affairs_of_the_state_dr}mutually_exclusive={focus=GER_its_probably_fine_dr}ai_will_do={factor=1}completion_reward={add_political_power=30 add_stability=0.05 custom_effect_tooltip=ger_hist_tooltip_dr}}
+
+focus={id=GER_its_probably_fine_dr icon=GFX_goal_tfv_smiling_buddha x=45 y=2 cost=4 available_if_capitulated=yes prerequisite={focus=GER_affairs_of_the_state_dr}mutually_exclusive={focus=GER_assure_davidian_loyalty_dr}ai_will_do={factor=1}completion_reward={add_political_power=-30 add_stability=-0.05 custom_effect_tooltip=ger_althist_tooltip_dr}}
+
+focus={id=GER_denounce_the_peace_dr icon=GFX_goal_tfv_saf_anti_colonialist_crusade x=40 y=3 cost=6 available_if_capitulated=yes search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}prerequisite={focus=GER_assure_davidian_loyalty_dr}ai_will_do={factor=1}completion_reward={add_stability=0.05 swap_ideas={remove_idea=idea_legacy_of_the_schlimkrieg_dr add_idea=idea_legacy_of_the_schlimkrieg_2_dr}add_named_threat={threat=1 name=denounce_peace_threat_dr}}}
+
+focus={id=GER_fuck_dr icon=GFX_GER_fuck_dr x=47 y=3 cost=4 available_if_capitulated=yes prerequisite={focus=GER_its_probably_fine_dr}ai_will_do={factor=1}completion_reward={add_political_power=-100 add_stability=-0.3}}
+
+focus={id=GER_the_lost_territories_dr icon=GFX_goal_generic_territory_or_war x=45 y=4 cost=1 available_if_capitulated=yes prerequisite={focus=GER_denounce_the_peace_dr focus=GER_fuck_dr}ai_will_do={factor=1}completion_reward={add_political_power=10}}
+
+focus={id=GER_indoctrinate_the_masses_dr icon=GFX_focus_spr_the_anti_fascist_workers_revolution x=40 y=4 cost=6 available_if_capitulated=yes search_filters={FOCUS_FILTER_POLITICAL}prerequisite={focus=GER_denounce_the_peace_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=fascism popularity=0.1}}}
+
+focus={id=GER_davidian_youth_movement_dr icon=GFX_focus_generic_military_academy x=41 y=5 cost=5 available_if_capitulated=yes search_filters={FOCUS_FILTER_MANPOWER}prerequisite={focus=GER_indoctrinate_the_masses_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_davidian_youth_movement_dr}}}
+
+focus={id=GER_secret_police_dr icon=GFX_focus_generic_military_mission x=39 y=5 cost=5 available_if_capitulated=yes prerequisite={focus=GER_indoctrinate_the_masses_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_secret_police_dr}}}
+
+focus={id=GER_knowledge_is_ignorance_dr icon=GFX_goal_generic_propaganda x=40 y=6 cost=9 available_if_capitulated=yes search_filters={FOCUS_FILTER_WAR_SUPPORT}prerequisite={focus=GER_secret_police_dr}prerequisite={focus=GER_davidian_youth_movement_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_secret_police_dr add_idea=idea_knowledge_is_ignorance_dr}}}
+
+focus={id=GER_reaffirm_diplomacy_dr icon=GFX_goal_generic_intelligence_exchange x=36 y=4 cost=3 available_if_capitulated=yes prerequisite={focus=GER_denounce_the_peace_dr}ai_will_do={factor=1}completion_reward={add_political_power=20}}focus={id=GER_political_chaos_dr icon=GFX_focus_generic_self_management x=50 y=4 cost=5 available_if_capitulated=yes prerequisite={focus=GER_fuck_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_political_chaos_dr}}}
+
+focus={id=GER_reestablish_elections_dr icon=GFX_goal_generic_neutrality_focus x=53 y=5 cost=10 available_if_capitulated=yes search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}prerequisite={focus=GER_political_chaos_dr}ai_will_do={factor=1}completion_reward={GER={country_event=dr.1}}}
+
+focus={id=GER_david_max_friendship_dr icon=GFX_GER_david_max_friendship_dr x=35 y=5 cost=10 available_if_capitulated=yes prerequisite={focus=GER_reaffirm_diplomacy_dr}ai_will_do={factor=1}completion_reward={}}
+
+focus={id=GER_libtard_victory_dr icon=GFX_goal_support_democracy x=50 y=6 cost=0 available={always=no}prerequisite={focus=GER_reestablish_elections_dr}mutually_exclusive={focus=GER_royalist_victory_dr}mutually_exclusive={focus=GER_commie_victory_dr}ai_will_do={factor=1}}
+
+focus={id=GER_commie_victory_dr icon=GFX_goal_support_communism x=56 y=6 cost=0 available={always=no}prerequisite={focus=GER_reestablish_elections_dr}mutually_exclusive={focus=GER_royalist_victory_dr}mutually_exclusive={focus=GER_libtard_victory_dr}ai_will_do={factor=1}}
+
+focus={id=GER_royalist_victory_dr icon=GFX_focus_generic_home_defense x=53 y=6 cost=0 available={always=no}prerequisite={focus=GER_reestablish_elections_dr}mutually_exclusive={focus=GER_libtard_victory_dr}mutually_exclusive={focus=GER_commie_victory_dr}ai_will_do={factor=1}}
+
+focus={id=GER_reinstate_political_freedoms_dr icon=GFX_focus_generic_treaty x=50 y=7 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=GER_libtard_victory_dr}ai_will_do={factor=1}completion_reward={add_political_power=15 add_popularity={ideology=democratic popularity=0.1}}}
+
+focus={id=GER_voting_is_overrated_dr icon=GFX_focus_usa_voter_registration_act x=53 y=7 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=GER_royalist_victory_dr}ai_will_do={factor=1}completion_reward={add_political_power=15 add_popularity={ideology=neutrality popularity=0.1}}}
+
+focus={id=GER_empower_the_unions_dr icon=GFX_goal_generic_war_with_comintern x=56 y=7 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=GER_commie_victory_dr}ai_will_do={factor=1}completion_reward={add_political_power=15 add_popularity={ideology=communism popularity=0.1}}}
+
+focus={id=GER_abolish_capitalism_dr icon=GFX_focus_eng_crush_the_dream x=58 y=8 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=GER_empower_the_unions_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_capitalism_abolished_dr}}}
+
+focus={id=GER_seize_the_means_of_production_dr icon=GFX_goal_generic_soviet_construction x=56 y=8 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=GER_empower_the_unions_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_seize_the_means_of_production_dr}}}
+
+		#Focus for Feed The Hungrians
 	focus = {
 		id = GER_feed_the_hungrians_dr
 		icon = GFX_focus_hol_abandon_the_gold_standard
@@ -208,10 +324,6 @@ focus={id=GER_fart_bombs_dr icon=GFX_focus_wonderweapons x=22 y=8 cost=10 availa
 		}
 	}
 
-focus={id=GER_reinstate_political_freedoms_dr icon=GFX_focus_generic_treaty x=50 y=7 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=GER_libtard_victory_dr}ai_will_do={factor=1}completion_reward={add_political_power=15 add_popularity={ideology=democratic popularity=0.1}}}focus={id=GER_voting_is_overrated_dr icon=GFX_focus_usa_voter_registration_act x=53 y=7 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=GER_royalist_victory_dr}ai_will_do={factor=1}completion_reward={add_political_power=15 add_popularity={ideology=neutrality popularity=0.1}}}focus={id=GER_empower_the_unions_dr icon=GFX_goal_generic_war_with_comintern x=56 y=7 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=GER_commie_victory_dr}ai_will_do={factor=1}completion_reward={add_political_power=15 add_popularity={ideology=communism popularity=0.1}}}focus={id=GER_abolish_capitalism_dr icon=GFX_focus_eng_crush_the_dream x=58 y=8 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=GER_empower_the_unions_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_capitalism_abolished_dr}}}focus={id=GER_seize_the_means_of_production_dr icon=GFX_goal_generic_soviet_construction x=56 y=8 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=GER_empower_the_unions_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_seize_the_means_of_production_dr}}}
-
-focus={id=GER_gender_equality_dr icon=GFX_goal_generic_major_alliance x=50 y=8 cost=6 search_filters={FOCUS_FILTER_MANPOWER}search_filters={FOCUS_FILTER_STABILITY}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=GER_reinstate_political_freedoms_dr}ai_will_do={factor=1}completion_reward={add_stability=0.05 add_ideas={idea_gender_equality_dr}}}
-
 focus={id=GER_starve_them_out_dr icon=GFX_focus_rom_parties_end x=31 y=5 cost=10 available={country_exists=HUN}available_if_capitulated=yes prerequisite={focus=GER_reaffirm_diplomacy_dr}mutually_exclusive={focus=GER_feed_the_hungrians_dr}ai_will_do={factor=1}completion_reward={HUN={add_idea={idea_starving_nation_dr}}}}
 
 focus={id=GER_indebt_them_to_us_dr icon=GFX_goal_generic_political_pressure x=33 y=6 cost=7 available={country_exists=HUN}available_if_capitulated=yes prerequisite={focus=GER_feed_the_hungrians_dr}ai_will_do={factor=1}completion_reward={puppet=HUN}}
@@ -219,10 +331,6 @@ focus={id=GER_indebt_them_to_us_dr icon=GFX_goal_generic_political_pressure x=33
 focus={id=GER_romanian_oil_dr icon=GFX_goal_generic_oil_refinery x=31 y=7 cost=10 available_if_capitulated=yes prerequisite={focus=GER_first_sussy_award_dr}ai_will_do={factor=1}completion_reward={event=dr.4}}
 
 focus={id=GER_first_sussy_award_dr icon=GFX_focus_generic_diplomatic_treaty x=31 y=6 cost=6 available_if_capitulated=yes prerequisite={focus=GER_starve_them_out_dr}ai_will_do={factor=1}completion_reward={ROM={event=dr.5}}}
-
-focus={id=GER_fourth_internationale_dr icon=GFX_goal_support_fourth_int x=58 y=9 cost=10 available={has_government=communism}available_if_capitulated=yes prerequisite={focus=GER_seize_the_means_of_production_dr}prerequisite={focus=GER_abolish_capitalism_dr}mutually_exclusive={focus=GER_turn_eastwards_dr}ai_will_do={factor=1}completion_reward={create_faction="Fourth Internationale"}custom_effect_tooltip=fourth_internationale_tooltip_dr}focus={id=GER_democracies_are_fucking_boring_dr icon=GFX_focus_generic_the_giant_wakes x=50 y=9 cost=8 available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=GER_gender_equality_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_democracies_are_fucking_boring_dr}}
-
-focus={id=GER_turn_eastwards_dr icon=GFX_focus_generic_join_comintern x=56 y=9 cost=10 available={has_government=communism}available={country_exists=SOV}available_if_capitulated=yes prerequisite={focus=GER_seize_the_means_of_production_dr}mutually_exclusive={focus=GER_fourth_internationale_dr}ai_will_do={factor=1}completion_reward={SOV={country_event=dr.3}}}
 
 	#Focus for Joint Military Excersises
 	focus = {
@@ -252,96 +360,10 @@ focus={id=GER_turn_eastwards_dr icon=GFX_focus_generic_join_comintern x=56 y=9 c
 		}
 	}
 
-focus={id=GER_westphalia_dr icon=GFX_goal_generic_major_war x=44 y=5 cost=5 available_if_capitulated=yes
-		prerequisite = { focus = GER_the_lost_territories_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+focus={id=GER_fourth_internationale_dr icon=GFX_goal_support_fourth_int x=58 y=9 cost=10 available={has_government=communism}available_if_capitulated=yes prerequisite={focus=GER_seize_the_means_of_production_dr}prerequisite={focus=GER_abolish_capitalism_dr}mutually_exclusive={focus=GER_turn_eastwards_dr}ai_will_do={factor=1}completion_reward={create_faction="Fourth Internationale"}custom_effect_tooltip=fourth_internationale_tooltip_dr}focus={id=GER_democracies_are_fucking_boring_dr icon=GFX_focus_generic_the_giant_wakes x=50 y=9 cost=8 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=GER_gender_equality_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_democracies_are_fucking_boring_dr}}
 
-	#Focus for Bavaria
-	focus = {
-		id = GER_bavaria_dr
-		icon = GFX_goal_generic_major_war
-		x = 46
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_the_lost_territories_dr}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+focus={id=GER_turn_eastwards_dr icon=GFX_focus_generic_join_comintern x=56 y=9 cost=10 available={has_government=communism}available={country_exists=SOV}available_if_capitulated=yes prerequisite={focus=GER_seize_the_means_of_production_dr}mutually_exclusive={focus=GER_fourth_internationale_dr}ai_will_do={factor=1}completion_reward={SOV={country_event=dr.3}}}
 
-	#Focus for Buildup The West
-	focus = {
-		id = GER_buildup_the_west_dr
-		icon = GFX_goal_generic_construct_civilian
-		x = 31
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_davewirtschaft_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Buildup The South
-	focus = {
-		id = GER_buildup_the_south_dr
-		icon = GFX_goal_generic_construct_civilian
-		x = 31
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_buildup_the_west_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Constwall
-	focus = {
-		id = GER_constwall_dr
-		icon = GFX_goal_generic_fortify_city
-		x = 37
-		y = 3
-		cost = 7
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_westwall_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Westwall
-	focus = {
-		id = GER_westwall_dr
-		icon = GFX_goal_generic_construct_military
-		x = 35
-		y = 2
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_affairs_of_the_economy_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Davelantikwall
-	focus = {
-		id = GER_davelantikwall_dr
-		icon = GFX_focus_generic_coastal_fort
-		x = 35
-		y = 3
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_westwall_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 	#Focus for Export The Revolution_dr
 	focus = {
@@ -357,68 +379,9 @@ focus={id=GER_westphalia_dr icon=GFX_goal_generic_major_war x=44 y=5 cost=5 avai
 		}
 	}
 
-	#Focus for Complete Reintegration
-	focus = {
-		id = GER_complete_reintegration_dr
-		icon = GFX_focus_generic_self_management
-		x = 45
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = GER_bavaria_dr
-		}
-		prerequisite = { 
-			focus = GER_westphalia_dr
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+focus={id=GER_daveschluss_dr icon=GFX_goal_anschluss x=44 y=7 cost=10 search_filters={FOCUS_FILTER_ANNEXATION}available_if_capitulated=yes prerequisite={focus=GER_complete_reintegration_dr}ai_will_do={factor=1}completion_reward={country_event=dr.9}}
 
-	#Focus for Daveschluss
-	focus = {
-		id = GER_daveschluss_dr
-		icon = GFX_goal_anschluss
-		x = 44
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_complete_reintegration_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Davidians in Czechia
-	focus = {
-		id = GER_davidians_in_czechia_dr
-		icon = GFX_goal_generic_major_war
-		x = 45
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_daveschluss_dr }
-		mutually_exclusive = { focus = GER_czechoslovak_compromise_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Czechoslovak Compromise
-	focus = {
-		id = GER_czechoslovak_compromise_dr
-		icon = GFX_goal_generic_dangerous_deal
-		x = 47
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_daveschluss_dr }
-		mutually_exclusive = { focus = GER_davidians_in_czechia_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+focus={id=GER_complete_reintegration_dr icon=GFX_focus_generic_self_management x=45 y=6 cost=6 search_filters={FOCUS_FILTER_ANNEXATION}search_filters={FOCUS_FILTER_STABILITY}available_if_capitulated=yes prerequisite={focus=GER_bavaria_dr}prerequisite={focus=GER_westphalia_dr}ai_will_do={factor=1}completion_reward={58={add_core_of=GER}59={add_core_of=GER}56={add_core_of=GER}57={add_core_of=GER}55={add_core_of=GER}911={add_core_of=GER}51={add_core_of=GER}42={add_core_of=GER}50={add_core_of=GER}54={add_core_of=GER}53={add_core_of=GER}52={add_core_of=GER}add_stability=0.1}}
 
 	#Focus for Liberate The Danziggers
 	focus = {
@@ -462,78 +425,16 @@ focus={id=GER_westphalia_dr icon=GFX_goal_generic_major_war x=44 y=5 cost=5 avai
 		}
 	}
 
-	#Focus for Davidsraum
-	focus = {
-		id = GER_davidsraum_dr
-		icon = GFX_focus_spr_anarchism_knows_no_borders
-		x = 44
-		y = 9
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = GER_claim_greater_burgundy_dr
-			focus = GER_liberate_the_danziggers_dr
-			focus = GER_davidians_in_czechia_dr
-		}
-		prerequisite = { 
-			focus = GER_czechoslovak_compromise_dr
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+focus={id=GER_davidians_in_czechia_dr icon=GFX_goal_generic_major_war x=45 y=8 cost=8 search_filters={FOCUS_FILTER_ANNEXATION}available_if_capitulated=yes prerequisite={focus=GER_daveschluss_dr}mutually_exclusive={focus=GER_czechoslovak_compromise_dr}ai_will_do={factor=1}completion_reward={CZE={country_event=dr.10}}}
 
-#Focus for Locate Hyperborea
-	focus = {
-		id = GER_locate_hyperborea_dr
-		icon = GFX_focus_LAT_aizsargi
-		x = 42
-		y = 10
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_davidsraum_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+focus={id=GER_across_the_channel_dr icon=GFX_focus_generic_navy_battleship2 x=36 y=9 cost=2 search_filters={FOCUS_FILTER_WAR_SUPPORT}available={has_war_with=SAF}available_if_capitulated=yes prerequisite={focus=GER_claim_greater_burgundy_dr}ai_will_do={factor=1}completion_reward={add_war_support=0.05}}
+
+focus={id=GER_marine_divisions_dr icon=GFX_goal_generic_amphibious_assault x=37 y=10 cost=8 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=GER_across_the_channel_dr}mutually_exclusive={focus=GER_parachute_divsions_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=marine_tech}}}
 
 focus={id=GER_parachute_divsions_dr icon=GFX_focus_generic_paratrooper x=35 y=10 cost=8 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=GER_across_the_channel_dr}mutually_exclusive={focus=GER_marine_divisions_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=para_tech}}}
 
-	#Focus for Across The Channel
-	focus = {
-		id = GER_across_the_channel_dr
-		icon = GFX_focus_generic_navy_battleship2
-		x = 36
-		y = 9
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_claim_greater_burgundy_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Marine Divisions
-	focus = {
-		id = GER_marine_divisions_dr
-		icon = GFX_goal_generic_amphibious_assault
-		x = 37
-		y = 10
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_across_the_channel_dr }
-		mutually_exclusive = { focus = GER_parachute_divsions_dr }
-		ai_will_do = {
-			factor = 1
-		}
-		
-    }
-
-focus={id=GER_betray_the_connerians_dr icon=GFX_goal_generic_major_war x=39 y=11 cost=10 available={country_exists=SOV}available_if_capitulated=yes prerequisite={focus=GER_davidsraum_dr}prerequisite={focus=GER_david_conner_pact_dr}ai_will_do={factor=1}}completion_reward={create_wargoal={type=annex_everything target=SOV}}
-
-focus={id=GER_claim_greater_burgundy_dr icon=GFX_goal_generic_major_war x=41 y=8 cost=9 search_filters={FOCUS_FILTER_ANNEXATION}available_if_capitulated=yes prerequisite={focus=GER_daveschluss_dr}ai_will_do={factor=1}completion_reward={add_named_threat={threat=5 name=burgundy_threat_dr}add_state_claim=8 add_state_claim=6 add_state_claim=34 add_state_claim=35 add_state_claim=7 add_state_claim=36 add_state_claim=28 add_state_claim=18 add_state_claim=17 add_state_claim=785 add_state_claim=29 add_state_claim=27 add_state_claim=20 add_state_claim=3 add_state_claim=845}}
-
-
+focus={id=GER_claim_greater_burgundy_dr icon=GFX_goal_generic_major_war x=41 y=8 cost=8 search_filters={FOCUS_FILTER_ANNEXATION}available_if_capitulated=yes prerequisite={focus=GER_daveschluss_dr}ai_will_do={factor=1}completion_reward={add_named_threat={threat=5 name=burgundy_threat_dr}add_state_claim=8 add_state_claim=6 add_state_claim=34 add_state_claim=35 add_state_claim=7 add_state_claim=36 add_state_claim=28 add_state_claim=18 add_state_claim=17 add_state_claim=785 add_state_claim=29 add_state_claim=27 add_state_claim=20 add_state_claim=3 add_state_claim=845}}
+ 
 	#Focus for To Ramscow!
 	focus = {
 		id = GER_to_ramscow_dr
@@ -556,6 +457,7 @@ focus={id=GER_claim_greater_burgundy_dr icon=GFX_goal_generic_major_war x=41 y=8
 		}
 	}
 
+	focus={id=GER_gender_equality_dr icon=GFX_goal_generic_major_alliance x=50 y=8 cost=6 search_filters={FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=GER_reinstate_political_freedoms_dr}ai_will_do={factor=1}completion_reward={add_stability=0.05 add_ideas={idea_gender_equality_dr}}}
 
 	#Focus for To Lennongrad!
 	focus = {
@@ -579,16 +481,11 @@ focus={id=GER_claim_greater_burgundy_dr icon=GFX_goal_generic_major_war x=41 y=8
 		}
 	}
 
-
-
-
-focus={id=GER_the_red_menace_dr icon=GFX_focus_ger_great_red_menace x=45 y=11 cost=10 available={country_exists=SOV}available_if_capitulated=yes prerequisite={focus=GER_rekindle_the_alliance_dr focus=GER_democracies_are_fucking_boring_dr focus=GER_fourth_internationale_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=SOV}}}
-
+focus={id=GER_the_red_menace_dr icon=GFX_focus_ger_great_red_menace x=45 y=11 cost=10 available={country_exists=SOV}available_if_capitulated=yes prerequisite={focus=GER_rekindle_the_alliance_dr focus=GER_democracies_are_fucking_boring_dr focus=GER_fourth_internationale_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=topple_government target=SOV}}}
 
 focus={id=GER_holy_roman_claimnant_dr icon=GFX_focus_ger_revive_kaiserreich x=55 y=13 cost=10 search_filters={FOCUS_FILTER_ANNEXATION}available_if_capitulated=yes prerequisite={focus=GER_rekindle_the_alliance_dr}ai_will_do={factor=1}completion_reward={add_named_threat={threat=15 name=hre_threat_dr}add_state_claim=8 add_state_claim=28 add_state_claim=34 add_state_claim=6 add_state_claim=35 add_state_claim=7 add_state_claim=36 add_state_claim=29 add_state_claim=845 add_state_claim=3 add_state_claim=847 add_state_claim=735 add_state_claim=158 add_state_claim=846 add_state_claim=158 add_state_claim=39 add_state_claim=159 add_state_claim=160 add_state_claim=850 add_state_claim=161 add_state_claim=162 add_state_claim=102 add_state_claim=9 add_state_claim=4 add_state_claim=151 add_state_claim=69 add_state_claim=72 add_state_claim=74 add_state_claim=75 add_state_claim=853 add_state_claim=736 add_state_claim=852 activate_mission=form_hre}}
-
-	#Focus for All For The Cause
-	focus = {
+	
+focus = {
 		id = GER_all_for_the_cause_dr
 		icon = GFX_GER_all_for_the_cause-144721
 		x = 42
@@ -599,7 +496,8 @@ focus={id=GER_holy_roman_claimnant_dr icon=GFX_focus_ger_revive_kaiserreich x=55
 		ai_will_do = {
 			factor = 1
 		}
-	}
+		completion_reward={add_timed_idea={idea=idea_all_for_the_cause_dr days=180
+}}}
 
 	#Focus for Negotiate Surrender
 	focus = {
@@ -639,20 +537,7 @@ focus={id=GER_holy_roman_claimnant_dr icon=GFX_focus_ger_revive_kaiserreich x=55
 		}
 	}
 
-    	#Focus for Eastern Colonization
-	focus = {
-		id = GER_eastern_colonization_dr
-		icon = GFX_focus_LAT_ostland
-		x = 44
-		y = 13
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_the_war_commences_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
+focus={id=GER_eastern_colonization_dr icon=GFX_focus_LAT_ostland x=44 y=13 cost=6 available={has_government=fascism}available_if_capitulated=yes prerequisite={focus=GER_the_war_commences_dr}ai_will_do={factor=1}completion_reward={custom_effect_tooltip=GER_reichskommissariats_tt}hidden_effect={unlock_decision_tooltip=GER_reichskommissariat_norwegen unlock_decision_tooltip=GER_reichskommissariat_niederlande unlock_decision_tooltip=GER_reichskommissariat_belgien_nordfrankreich unlock_decision_tooltip=GER_reichskommissariat_ostland unlock_decision_tooltip=GER_reichskommissariat_ukraine}}
 
 	#Focus for Total Victory
 	focus = {
@@ -677,6 +562,8 @@ focus={id=GER_holy_roman_claimnant_dr icon=GFX_focus_ger_revive_kaiserreich x=55
 			factor = 1
 		}
 	}
+
+focus={id=GER_betray_the_connerians_dr icon=GFX_goal_generic_major_war x=39 y=11 cost=10 available={country_exists=SOV}available_if_capitulated=yes prerequisite={focus=GER_davidsraum_dr}prerequisite={focus=GER_david_conner_pact_dr}ai_will_do={factor=1}}completion_reward={create_wargoal={type=annex_everything target=SOV}}
 
 focus={id=GER_the_war_commences_dr icon=GFX_goal_generic_secret_weapon x=42 y=12 cost=0 available={always=no}bypass={has_war_with=SOV}prerequisite={focus=GER_betray_the_connerians_dr focus=GER_the_red_menace_dr}ai_will_do={factor=1}}
 
@@ -719,19 +606,7 @@ focus={id=GER_endsieg_dr icon=GFX_focus_CZE_german_puppet x=39 y=15 cost=2 avail
 		}
 	}
 
-	#Focus for The Old Doctrine
-	focus = {
-		id = GER_the_old_doctrine_dr
-		icon = GFX_goal_generic_cavalry
-		x = 54
-		y = 11
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_rekindle_the_alliance_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+focus={id=GER_the_old_doctrine_dr icon=GFX_goal_generic_cavalry x=54 y=11 cost=6 has_government={neutrality}available_if_capitulated=yes prerequisite={focus=GER_rekindle_the_alliance_dr}ai_will_do={factor=1}}
 
 	#Focus for European Economic Unity
 	focus = {
@@ -761,33 +636,8 @@ focus={id=GER_endsieg_dr icon=GFX_focus_CZE_german_puppet x=39 y=15 cost=2 avail
 		}
 	}
 
-	
-	focus = {
-		id = GER_haskell_coal_agreements_dr
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 49
-		y = 11
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_democracies_are_fucking_boring_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+focus={id=GER_czechoslovak_compromise_dr icon=GFX_goal_generic_dangerous_deal x=47 y=8 cost=8 search_filters={FOCUS_FILTER_ANNEXATION}available_if_capitulated=yes prerequisite={focus=GER_daveschluss_dr}mutually_exclusive={focus=GER_davidians_in_czechia_dr}ai_will_do={factor=1}completion_reward={CZE={country_event=dr.8}}}
 
+focus={id=GER_haskell_coal_agreements_dr icon=GFX_goal_generic_positive_trade_relations x=49 y=11 cost=7 search_filters={FOCUS_FILTER_INDUSTRY}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=GER_democracies_are_fucking_boring_dr}ai_will_do={factor=1}completion_reward={FRA={country_event=dr.15}}
 
-	#Focus for Claim Our Colonies
-	focus = {
-		id = GER_claim_our_colonies_dr
-		icon = GFX_focus_por_luso_tropicalism
-		x = 56
-		y = 11
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_rekindle_the_alliance_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-focus={id=GER_continue_the_military_plan_dr icon=GFX_goal_generic_construct_mil_factory x=29 y=4 cost=8 available_if_capitulated=yes search_filters={FOCUS_FILTER_INDUSTRY}prerequisite={focus=GER_develop_the_military_sector_dr}mutually_exclusive={focus=GER_continue_the_civilian_plan_dr}ai_will_do={factor=1}completion_reward={64={if={limit={is_controlled_by=GER}add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}60={if={limit={is_controlled_by=GER}add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}66={if={limit={is_controlled_by=GER}add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}custom_effect_tooltip={military_industry_focus_tooltip_dr}}}}}
+}}

@@ -15,9 +15,9 @@ bookmarks = {
 				idea_steady_economic_recovery_dr
 			}
 			focuses = {
-				focus_usa_the_new_manifesto_of_destiny
-				focus_usa_expansion_of_fbi_powers
-				focus_usa_expansion_of_fbi_powers
+				GER_david_max_friendship_dr
+				GER_davidsraum_dr
+				GER_knowledge_is_ignorance_dr
 			}
 		}
 		"SOV"={
@@ -33,8 +33,8 @@ bookmarks = {
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				idea_victor_of_the_schlimkrieg_dr
 				idea_political_crisis_dr
+				idea_victor_of_the_schlimkrieg_dr
 				idea_post_schlimkrieg_demobilization_dr
 			}
 		}
@@ -45,6 +45,11 @@ bookmarks = {
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
+			ideas = {
+				idea_dust_bowl_dr
+				idea_the_great_game_dr
+				idea_quebecois_resistance_dr
+			}
 		}
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
@@ -53,6 +58,10 @@ bookmarks = {
 		"SAF"={
 			history = "SAF_GATHERING_STORM_DESC"
 			ideology = democratic
+			ideas = {
+				idea_victor_of_the_schlimkrieg_dr
+				idea_quelled_minorities_dr
+			}
 		}
 
 		"---"={
@@ -73,6 +82,11 @@ bookmarks = {
 			minor = yes
 			history = ""
 			ideology = democratic
+			ideas = {
+				idea_memories_of_the_empire_dr
+				idea_japanese_lapdog_dr
+				idea_countryside_banditry_dr
+			}
 		}
 		"IRE"={
 			minor = yes
@@ -83,6 +97,9 @@ bookmarks = {
 			minor = yes
 			history = ""
 			ideology = neutrality
+			ideas = {
+				idea_the_great_game_dr
+			}
 		}
 		"MEX"={
 			minor = yes
@@ -105,16 +122,6 @@ bookmarks = {
 			ideology = neutrality
 		}
 		"CHA"={
-			minor = yes
-			history = ""
-			ideology = neutrality
-		}
-		"KAZ"={
-			minor = yes
-			history = ""
-			ideology = neutrality
-		}
-		"MON"={
 			minor = yes
 			history = ""
 			ideology = neutrality

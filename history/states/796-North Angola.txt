@@ -16,6 +16,7 @@ state={
 			2115 1 
 		}
 		add_core_of = CAR
+		add_core_of = GAB
 		add_core_of = CHA
 	}
 	provinces={

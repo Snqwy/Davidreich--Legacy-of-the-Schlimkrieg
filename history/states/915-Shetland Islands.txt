@@ -1,0 +1,22 @@
+state={
+	id=915
+	name="STATE_915"
+	history={
+		owner = ICE
+		buildings = {
+			infrastructure = 2
+			6196 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = ICE 
+		add_claim_by=DEN
+	}
+	provinces={
+		6196 
+	}
+	manpower=27412
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -27,8 +27,6 @@ focus_tree = {
 		y = 0
 		cost = 5
 
-		available={always=no}
-
 		ai_will_do = {
 			factor = 10
 		}
@@ -1170,6 +1168,7 @@ focus_tree = {
 				value = 1
 			}
 			random_state = {
+				prioritize = { 10 }
 				limit = { has_state_flag = POL_warsaw_main_railway_station_1 }
 				add_building_construction = {
 					type = infrastructure
@@ -1253,8 +1252,6 @@ focus_tree = {
 		x = 23
 		y = 0
 		cost = 5
-
-		available={always=no}
 
 		ai_will_do = {
 			factor = 5
@@ -1891,8 +1888,6 @@ focus_tree = {
 		y = 0
 		cost = 10
 
-		available={always=no}
-
 		ai_will_do = {
 			factor = 10
 		}
@@ -1908,6 +1903,7 @@ focus_tree = {
 				NOT = {
 					OR = {
 						has_completed_focus = POL_organize_the_peasants_strike
+						has_completed_focus = POL_nationalist_constitution
 						has_completed_focus = POL_assemble_the_regency_council
 					}
 				}
@@ -3340,6 +3336,7 @@ focus_tree = {
 					is_subject_of = GER
 					is_in_faction_with = GER
 				}
+				has_completed_focus = POL_reach_out_to_underground_state
 			}
 			OR = {
 				NOT = { has_completed_focus = POL_plan_east }
@@ -4332,6 +4329,41 @@ focus_tree = {
 				#level = 2
 				start_province = 560
 				target_province = 6557
+
+			}
+
+			random_core_state = {
+				
+				limit = {
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_core_state = {
+				
+				limit = {
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -4455,6 +4487,7 @@ focus_tree = {
 					OR = {
 						has_completed_focus = POL_organize_the_peasants_strike
 						has_completed_focus = POL_assemble_the_regency_council
+						has_completed_focus = POL_nationalist_constitution
 					}
 				}
 			}
@@ -4462,6 +4495,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}
+		
+		bypass = {
+			has_completed_focus = POL_draw_closer_to_britain
 		}
 
 		available = {
@@ -4826,6 +4863,13 @@ focus_tree = {
 			784 = {
 				owns_or_subject_of = yes
 			}
+			GER = {
+				OR = {
+					has_completed_focus = GER_anschluss
+					has_completed_focus = GER_oppose_hitler
+					exists = no
+				}
+			}
 			has_army_manpower = { size > 399999 }
 		}
 
@@ -4867,8 +4911,6 @@ focus_tree = {
 		relative_position_id = POL_complete_april_constitution
 		cost = 10
 
-		available={always=no}
-
 		ai_will_do = {
 			factor = 2.5
 		}
@@ -4901,8 +4943,6 @@ focus_tree = {
 		x = 61
 		y = 0
 		cost = 10
-
-		available={always=no}
 		
 		allow_branch = {
 			if = {
@@ -4915,6 +4955,7 @@ focus_tree = {
 				NOT = {
 					OR = {
 						has_completed_focus = POL_complete_april_constitution
+						has_completed_focus = POL_nationalist_constitution
 						has_completed_focus = POL_assemble_the_regency_council
 						has_completed_focus = POL_restore_the_sejm
 					}
@@ -6970,6 +7011,7 @@ focus_tree = {
 					OR = {
 						has_completed_focus = POL_complete_april_constitution
 						has_completed_focus = POL_assemble_the_regency_council
+						has_completed_focus = POL_nationalist_constitution
 					}
 				}
 			}
@@ -7344,8 +7386,6 @@ focus_tree = {
 		y = 0
 		cost = 5
 
-		available={always=no}
-
 		ai_will_do = {
 			factor = 2.5
 		}
@@ -7360,6 +7400,7 @@ focus_tree = {
 				NOT = {
 					OR = {
 						has_completed_focus = POL_complete_april_constitution
+						has_completed_focus = POL_nationalist_constitution
 						has_completed_focus = POL_organize_the_peasants_strike
 						has_completed_focus = POL_restore_the_sejm
 					}
@@ -8337,6 +8378,40 @@ focus_tree = {
 			build_railway = {
 				path = { 6483 6460 9563 3548 }
 			}
+
+			random_core_state = {
+				prioritize = { 88 }
+				limit = {
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_core_state = {
+				prioritize = { 89 }
+				limit = {
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -8696,6 +8771,7 @@ focus_tree = {
 						has_completed_focus = POL_organize_the_peasants_strike
 						has_completed_focus = POL_restore_the_sejm
 						has_completed_focus = POL_complete_april_constitution
+						has_completed_focus = POL_nationalist_constitution
 					}
 				}
 			}
@@ -9113,6 +9189,7 @@ focus_tree = {
 						has_completed_focus = POL_organize_the_peasants_strike
 						has_completed_focus = POL_restore_the_sejm
 						has_completed_focus = POL_complete_april_constitution
+						has_completed_focus = POL_nationalist_constitution
 					}
 				}
 			}
@@ -9600,13 +9677,17 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			hidden_effect = {
-				LIT = { set_country_flag = POL_banned_monarchy_flag }
-				set_country_flag = POL_banned_monarchy_flag
-				hidden_effect = {
-					if = {
-						limit = { is_ai = yes }
-						save_event_target_as = POL_or_LIT_target
-						LIT = {country_event = LIT_monarchy_events.1 }
+				if = {
+					limit = {
+						LIT = { has_completed_focus = LIT_support_monarchism_in_POL }
+					}
+					LIT = { set_country_flag = POL_banned_monarchy_flag }
+					set_country_flag = POL_banned_monarchy_flag
+					hidden_effect = {
+						if = {
+							limit = { is_ai = yes }
+							save_event_target_as = POL_or_LIT_target
+							LIT = {country_event = LIT_monarchy_events.1 }
 						}
 						else = {
 							LIT = { save_event_target_as = POL_or_LIT_target }
@@ -9614,7 +9695,14 @@ focus_tree = {
 						}
 					}
 				}
+				else = {
+					LIT = {
+						country_event = NSB_poland_monarchist_events.1
+					}
+					save_global_event_target_as = pol_monarchy_claimer_target
+				}
 			}
+			custom_effect_tooltip = POL_support_monarchy_in_LIT_tt
 		}
 	}
 
@@ -9938,6 +10026,38 @@ focus_tree = {
 				#level = 3
 				path = { 6296 9357 9438 9374 }
 			}
+
+			random_core_state = {
+				limit = {
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_core_state = {
+				limit = {
+					is_in_home_area = yes					
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -10057,7 +10177,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2.5
@@ -10086,6 +10206,24 @@ focus_tree = {
 				#level = 2
 				path = { 3392 11528 6415 560 11503 6435 11543 3470 6593 441 3543 525 }
 			}
+
+			random_owned_controlled_state = {
+				prioritize = {93} 
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
 		}
 	}
 
@@ -10128,6 +10266,22 @@ focus_tree = {
 			build_railway = {
 				#level = 2
 				path = { 11670 3738 11703 11546 11683 3755 737 568 3722 705 3686 }
+			}
+			random_core_state = {
+				prioritize = {93} 
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -10963,7 +11117,7 @@ focus_tree = {
 		icon = GFX_goal_support_fascism
 		allow_branch = { has_dlc = "No Step Back" }
 
-		available = {always=no}
+		available = {
 			
 		}
 
@@ -11001,6 +11155,7 @@ focus_tree = {
 			x = -47
 			y = 0
 			trigger = {
+				has_completed_focus = POL_nationalist_constitution
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
@@ -11423,6 +11578,7 @@ focus_tree = {
 			x = -48
 			y = 0
 			trigger = {
+				has_completed_focus = POL_nationalist_constitution
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
@@ -11498,6 +11654,7 @@ focus_tree = {
 			x = -48
 			y = 0
 			trigger = {
+				has_completed_focus = POL_nationalist_constitution
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
@@ -13057,7 +13214,6 @@ focus_tree = {
 		id = POL_the_between_the_seas_concept
 		icon = GFX_goal_anschluss
 		available = {
-			available={always=no}
 			is_puppet = no
 			if = {
 				limit = {
@@ -13152,6 +13308,7 @@ focus_tree = {
 			x = -47
 			y = 0
 			trigger = {
+				has_completed_focus = POL_nationalist_constitution
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
@@ -13850,7 +14007,6 @@ focus_tree = {
 		id = POL_prepare_for_the_inevitable
 		icon = GFX_focus_POL_prepare_for_the_inevitable
 		available = {
-			available={always=no}
 			OR = {
 				has_capitulated = yes
 				AND = {
@@ -13922,6 +14078,7 @@ focus_tree = {
 			x = -47
 			y = 0
 			trigger = {
+				has_completed_focus = POL_nationalist_constitution
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
@@ -14650,7 +14807,6 @@ focus_tree = {
 		}
 		
 		available = {
-			available={always=no}
 			any_owned_state = {
 				NOT = { state = 85 }
 				is_controlled_by = ROOT
@@ -14708,7 +14864,6 @@ focus_tree = {
 		}
 		
 		available = {
-			available={always=no}
 			owns_state = 85
 		}
 		
@@ -15095,6 +15250,18 @@ focus_tree = {
 					path = { 279 3324 389 9263 }
 				}
 			}
+
+			random_owned_controlled_state = {
+				prioritize = { 85 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			add_political_power = 50
 		}
 	}
 	

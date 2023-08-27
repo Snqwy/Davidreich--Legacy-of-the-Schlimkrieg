@@ -1,4 +1,4 @@
-﻿capital=2 starting_train_buffer=1.5 set_research_slots=4 set_stability=0.85 set_war_support=0.7 add_ideas={limited_exports limited_conscription partial_economic_mobilisation}
+﻿capital=2 starting_train_buffer=1.5 set_research_slots=4 set_stability=0.85 set_war_support=0.7 add_ideas={limited_exports limited_conscription partial_economic_mobilisation idea_birthplace_of_maxism_dr}
 every_owned_state = { 
 	limit = {
 		is_core_of = LBA
@@ -153,8 +153,6 @@ set_variable = { ITA_military_industry_dm_industrial_capacity_dockyard = 0 }
 set_variable = { ITA_military_industry_air_equipment_upgrade_xp_cost = 0 }
 
 add_dynamic_modifier = { modifier = ITA_military_industry_dynamic_modifier }
-add_ideas = ITA_hidden_research_penalties_ns #TODO_Manu: Hidden NS to apply research penalties as part of the Military Industry Dynamic Modifier. Delete when code support is in
-
 
 #REGIO ESERCITO
 #set_variable = { ITA_re_army_experience_loss_factor = -0.1 }

@@ -7,6 +7,7 @@ state={
 	history={
 		owner = SPR
 		add_core_of = CAR
+		add_core_of = GAB
 		add_core_of = CHA
 		buildings = {
 			infrastructure = 1

@@ -34,7 +34,6 @@ if = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
 	}
-	add_ideas = bureau_of_ordnance_spirit
 }
 
 if = {
@@ -169,8 +168,9 @@ set_popularities = {
 	communism = 1
 }
 
+685={add_dynamic_modifier={modifier=state_modifier_canal_zone}}
 set_autonomy={target=MEX autonomous_state=autonomy_puppet}
-add_ideas={idea_quebecois_resistance_dr}
+add_ideas={idea_the_great_game_dr idea_dust_bowl_dr idea_quebecois_resistance_dr}
 
 if = {
 	limit = { has_dlc = "La Resistance" }

@@ -1,1 +1,11 @@
-spriteTypes={SpriteType={name="GFX_GER_fuck_dr"texturefile="gfx/focus_icons/GFX_GER_fuck_dr.dds"}SpriteType={name="GFX_GER_david_max_friendship_dr"texturefile="gfx/focus_icons/GFX_GER_david_max_friendship_dr.dds"}SpriteType={name="GFX_GER_to_ramscow_dr"texturefile="gfx/focus_icons/GFX_GER_to_ramscow_dr.dds"}}
+spriteTypes={
+    
+SpriteType={name="GFX_GER_fuck_dr"texturefile="gfx/focus_icons/GFX_GER_fuck_dr.dds"}
+
+SpriteType={name="GFX_GER_david_max_friendship_dr"texturefile="gfx/focus_icons/GFX_GER_david_max_friendship_dr.dds"}
+
+SpriteType={name="GFX_GER_to_ramscow_dr"texturefile="gfx/focus_icons/GFX_GER_to_ramscow_dr.dds"}
+
+SpriteType={name="GFX_FRA_contact_disney_dr"texturefile="gfx/focus_icons/GFX_FRA_contact_disney_dr.dds"}
+
+}

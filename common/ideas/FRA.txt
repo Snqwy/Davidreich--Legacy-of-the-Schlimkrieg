@@ -1,14 +1,50 @@
 ideas={country={
     idea_political_crisis_dr={picture=chi_war_of_resistance3 allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=-0.15 stability_factor=-0.15 drift_defence_factor=-0.20 surrender_limit=-0.25}}
-    idea_post_schlimkrieg_demobilization_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.3 land_doctrine_cost_factor=0.35 training_time_factor=0.1}}
-    idea_merchandising_merchandising_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+
+    idea_post_schlimkrieg_demobilization_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.4 land_doctrine_cost_factor=0.35 training_time_factor=0.1}}
+
     idea_social_welfare_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
     idea_french_republicanism_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
     idea_neo_feudalism_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
     idea_government_consulate_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
     idea_the_continental_system_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
     idea_the_right_to_conquer_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
-    idea_reformed_army_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
     idea_free_economy_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
     idea_international_brigades_dr={picture=generic_volunteer_expedition_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+    idea_gaslighting_the_population_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+    
+    idea_programme_de_luranium_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={nuclear_production_factor=0.05 research_speed_factor=0.1}}
+
+    idea_arms_production_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+
+    idea_special_forces_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1}
+
+    idea_developing_the_metropole_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+    
+    idea_furry_economy_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=-0.05 production_speed_buildings_factor=0.05}}
+
+    idea_napoleonic_economy_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=-0.05 production_speed_buildings_factor=0.05}}
+
+    idea_pan_african_economy_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=-0.05 production_speed_buildings_factor=0.05}}
+
+    idea_furry_economy_2_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=-0.05 production_speed_buildings_factor=0.05}}
+
+    idea_special_forces_2_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={mountaineer_attack_factor=0.5}}
+
+    idea_government_consulate_2_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+
+    idea_furry_movie_project_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=0.1}}
+
+    idea_furry_movie_project_2_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=0.2 political_power_factor=0.05}}
+
+    idea_furry_movie_project_3_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=0.3 political_power_factor=0.05 consumer_goods_factor=0.05}}
+
+    idea_furry_movie_project_4_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=0.4 political_power_factor=0.05 consumer_goods_factor=0.05 fascism_drift=0.05 war_support_factor=0.05}}
+
+    idea_furry_movie_project_5_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=0.1 consumer_goods_factor=-0.05 fascism_drift=0.05 war_support_factor=0.05}}
+
+    idea_furry_movie_project_6_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=0.1 consumer_goods_factor=-0.05 fascism_drift=0.05 war_support_factor=0.1 stability_factor=0.1 justify_war_goal_time=-0.05}}
+
+    idea_furry_movie_project_7_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=0.15 consumer_goods_factor=-0.1 fascism_drift=0.05 war_support_factor=0.1 stability_factor=0.1 justify_war_goal_time=-0.05}}
+
 }}

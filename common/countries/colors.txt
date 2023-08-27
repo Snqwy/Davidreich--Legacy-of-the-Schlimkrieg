@@ -118,7 +118,7 @@ AFG = {
 	color_ui = rgb { 83 208 217 }
 }
 ARG = {
-	color = rgb { 122 187 190 }
+	color = rgb { 107 136 169 }
 	color_ui = rgb { 122 187 190 }
 }
 AST = {
@@ -369,8 +369,8 @@ ICE = {
 }
 
 UKR = {
-	color = rgb { 89 142 161 }
-	color_ui = rgb { 89 142 161 }	
+	color = rgb { 81 153 195 }
+	color_ui = rgb { 81 153 195 }	
 }
 
 AZR = {
@@ -816,7 +816,7 @@ CHU = {
 	color_ui = rgb { 134 89 45 }
 }
 MAD = {
-	color = rgb { 164 209 86 }
+	color = rgb { 140 209 129 }
 	color_ui = rgb { 164 209 86 }
 }
 TZN = {

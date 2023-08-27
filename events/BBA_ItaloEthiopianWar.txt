@@ -80,11 +80,6 @@ unit_leader_event = { # THIS IS ACTUALLY THE FIRST MISSIOLINI!
 			}
 		}
 
-		# other effects for ITA 
-		add_timed_idea = {
-			idea = ITA_offensive_in_ethiopia
-			days = 180
-		}
 		ETH =  {
 			add_timed_idea = {
 				idea = ETH_italian_offensive_idea
@@ -1452,14 +1447,6 @@ country_event = {
 	option = { 
 		name = BBA_italo_ethiopian_war_events.301.a
 		add_ideas = ITA_army_of_africa_disheartened_idea
-		IF = {
-			limit = { has_idea = ITA_offensive_in_ethiopia }
-			remove_ideas = ITA_offensive_in_ethiopia
-		}
-		ELSE_IF = {
-			limit = { has_idea = ITA_logistics_in_ethiopia }
-			remove_ideas = ITA_logistics_in_ethiopia
-		}
 	}
 }
 

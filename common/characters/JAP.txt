@@ -8,7 +8,7 @@ characters={
 		}
 		country_leader={
 			ideology=fascism_ideology
-			traits={emperor_showa warrior_code}
+			traits={emperor_showa}
 			desc = leader_desc_dillon
 			expire="1989.1.1.1"
 			id=700

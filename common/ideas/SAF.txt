@@ -1,3 +1,7 @@
 ideas={country={
-   idea_way_down_south_the_land_of_traitors_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}idea_quelled_minorities_dr={picture=idea_saf_history_of_segregation allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=0.1 political_power_factor=0.05}}
+   
+idea_quelled_minorities_dr={picture=saf_history_of_segregation allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=0.1 political_power_factor=0.05}}
+
+idea_advances_of_south_africa_dr={picture=generic_research_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+
 }}

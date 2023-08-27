@@ -1,0 +1,16 @@
+characters={
+	ARG_guevara={
+		name="Ernesto 'Che' Guevara"
+		portraits={
+			civilian={
+				large="GFX_portrait_la_plata_communism"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+			traits={trait_revolutionary_militaryman_dr}
+			id=-1
+		}
+	}
+}

@@ -1,9 +1,55 @@
-﻿add_namespace=dr country_event={id=dr.1 title=dr.1.t desc=dr.1.d picture=report_event_election_vote is_triggered_only=yes option={name=dr.1.a add_political_power=30 add_popularity={ideology=fascism popularity=-0.15}add_popularity={ideology=democratic popularity=0.15}set_politics={ruling_party=democratic elections=yes}complete_national_focus=GER_libtard_victory_dr}set_cosmetic_tag={GER_german_monarchy}option={name=dr.1.b add_political_power=30 add_popularity={ideology=fascism popularity=-0.15}add_popularity={ideology=neutrality popularity=0.15}set_politics={ruling_party=neutrality elections=yes}complete_national_focus=GER_royalist_victory_dr}set_cosmetic_tag={GER_german_empire}option={name=dr.1.c add_political_power=30 add_popularity={ideology=fascism popularity=-0.15}add_popularity={ideology=communism popularity=0.15}set_politics={ruling_party=communism elections=yes}complete_national_focus=GER_commie_victory_dr}GER={set_cosmetic_tag={cosmetic_tag_david_commie_dr}}}
+﻿add_namespace=dr 
 
+#davidian elections
+country_event={id=dr.1 title=dr.1.t desc=dr.1.d picture=report_event_election_vote is_triggered_only=yes option={name=dr.1.a add_political_power=30 add_popularity={ideology=fascism popularity=-0.15}add_popularity={ideology=democratic popularity=0.15}set_politics={ruling_party=democratic elections=yes}complete_national_focus=GER_libtard_victory_dr}set_cosmetic_tag={GER_german_monarchy}option={name=dr.1.b add_political_power=30 add_popularity={ideology=fascism popularity=-0.15}add_popularity={ideology=neutrality popularity=0.15}set_politics={ruling_party=neutrality elections=yes}complete_national_focus=GER_royalist_victory_dr}set_cosmetic_tag={GER_german_empire}option={name=dr.1.c add_political_power=30 add_popularity={ideology=fascism popularity=-0.15}add_popularity={ideology=communism popularity=0.15}set_politics={ruling_party=communism elections=yes}complete_national_focus=GER_commie_victory_dr}hidden_effect={set_cosmetic_tag={cosmetic_tag_david_commie_dr}}}
+
+#the maxis forms
 country_event={id=dr.2 title=dr.2.t desc=dr.2.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.2.a add_political_power=30}}
 
+#david joins the connertern
 country_event={id=dr.3 title=dr.3.t desc=dr.3.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.3.a add_to_faction=GER}option={name=dr.3.b}}
 
-country_event={id=dr.4 title=dr.4.t desc=dr.4.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.4.a give_resource_rights={receiver=GER state=46 resources={oil}}}option={name=dr.4.b GER={create_wargoal={type=puppet_wargoal_focus target=ROM}}}}
+#romanian oil rights
+country_event={id=dr.4 title=dr.4.t desc=dr.4.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.4.a ROM={give_resource_rights={receiver=GER state=46 resources={oil}}}option={name=dr.4.b GER={create_wargoal={type=puppet_wargoal_focus target=ROM}}}}}
 
+#first sussy award
 country_event={id=dr.5 title=dr.5.t desc=dr.5.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.5.a ROM={set_state_owner=84 set_state_owner=83 set_state_owner=82 set_state_owner=764}option={name=dr.5.b GER={create_wargoal={type=puppet_wargoal_focus target=HUN}}}}}
+
+#annexation of westphalia
+country_event={id=dr.6 title=dr.6.t desc=dr.6.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.6.a GER={annex_country={target=HAN transfer_troops=yes}custom_effect_tooltip=transfer_troops_dr}}}
+
+#annexation of bavaria
+country_event={id=dr.7 title=dr.7.t desc=dr.7.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.7.a GER={annex_country={target=BAY transfer_troops=yes}custom_effect_tooltip=transfer_troops_dr}}}
+
+#czechoslovak compromise request
+country_event={id=dr.8 title=dr.8.t desc=dr.8.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.8.a GER={country_event=dr.12}option={name=dr.8.b GER={country_event={dr.11}}}}}
+
+#daveschluss
+country_event={id=dr.9 title=dr.9.t desc=dr.9.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.9.a 4={if={limit={is_owned_by=AUS}add_core_of=GER}}152={if={limit={is_owned_by=AUS}add_core_of=GER}}153={if={limit={is_owned_by=AUS}add_core_of=GER}}848={if={limit={is_owned_by=AUS}add_core_of=GER}}151={if={limit={is_owned_by=AUS}add_core_of=GER}}39={if={limit={is_owned_by=AUS}add_core_of=GER}}GER={annex_country={target=AUS transfer_troops=yes}add_political_power=75 add_stability=0.05 add_war_support=0.1}custom_effect_tooltip=transfer_troops_dr}}
+
+#german demands for czechoslovakia
+country_event={id=dr.10 title=dr.10.t desc=dr.10.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.10.a }}
+
+#czechoslovak compromise denied
+country_event={id=dr.11 title=dr.11.t desc=dr.11.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.11.a GER={create_wargoal={type=annex_everything target=CZE}69={if={limit={is_owned_by=CZE}add_core_of=GER}}74={if={limit={is_owned_by=CZE}add_core_of=GER}}}}}
+
+#czechoslovak compromise accepted
+country_event={id=dr.12 title=dr.12.t desc=dr.12.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.12.a GER={puppet=CZE}add_political_power=50}69={if={limit={is_owned_by=AUS}add_core_of=GER}}74={if={limit={is_owned_by=AUS}add_core_of=GER}}}if={limit={69={is_owned_by=CZE}}GER={transfer_state=69}}if={limit={74={is_owned_by=CZE}}GER={transfer_state=74}}
+
+#german demands for czechoslovakia accepted
+country_event={id=dr.13 title=dr.13.t desc=dr.13.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.13.a }}
+
+#german demands for czechoslovakia denied
+country_event={id=dr.14 title=dr.14.t desc=dr.14.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.14.a }}
+
+#coal agreement request
+country_event={id=dr.15 title=dr.15.t desc=dr.15.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.15.a GER={country_event=dr.16}}option={name=dr.15.a GER={country_event=dr.17}}}
+
+#coal agreement request accepted
+country_event={id=dr.16 title=dr.16.t desc=dr.16.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.16.a add_idea={idea_coal_agreement_dr}}FRA={add_idea={idea_coal_agreement_dr}}}
+
+#coal agreement request denied
+country_event={id=dr.17 title=dr.17.t desc=dr.17.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.17.a add_political_power=-50}}
+
+#french political crisis
+country_event={id=dr.18 title=dr.18.t desc=dr.18.d picture=report_event_election_vote is_triggered_only=yes option={name=dr.18.a }}

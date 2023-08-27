@@ -14,9 +14,6 @@ state={
 		victory_points = {
 			11467 5
 		}
-		victory_points = {
-			9511 3
-		}
 		owner = POL
 		buildings = {
 			infrastructure = 3
@@ -26,7 +23,7 @@ state={
 	}
 
 	provinces={
-		479 6512 9457 9511 11467 
+		479 9457 11467 
 	}
 
 	local_supplies=4.0 

@@ -1,3 +1,9 @@
 ideas={country={
-  idea_history_of_humiliation_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+  idea_history_of_humiliation_dr={picture=idea_tur_etatism_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+
+  idea_power_of_the_church_dr={picture=picture=spr_appropriate_church_riches allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+
+  idea_mexican_cartel_dr={picture=spr_political_violence allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+
+  idea_inadequate_army_dr={picture=idea_tur_disorganised_armed_forces allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
 }}

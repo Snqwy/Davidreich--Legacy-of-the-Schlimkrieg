@@ -24,6 +24,9 @@ state=
 		victory_points = {
 			4073 3
 		}
+		1936.1.1 = {
+			set_demilitarized_zone=yes
+		}
 
 		add_core_of = ISR
 		add_core_of = PAL

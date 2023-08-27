@@ -1,7 +1,9 @@
 ideas={country={
+   idea_birthplace_of_maxism_dr={picture=generic_fascism_drift_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=0.2 party_popularity_stability_factor=0.05}}
    idea_incompetent_army_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}   
    idea_roman_senate_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
    idea_a_people_united_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
    idea_pax_romana_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
    idea_by_blood_alone_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+   idea_opposition_to_rule_dr={picture=spr_anti_fascist_crusade allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
 }}
