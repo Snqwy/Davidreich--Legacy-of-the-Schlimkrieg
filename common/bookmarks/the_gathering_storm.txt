@@ -54,13 +54,18 @@ bookmarks = {
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism
+			ideas = {
+				idea_house_of_lyons_dr
+				idea_warrior_culture_dr
+				idea_army_navy_rivalry_dr
+			}
 		}
 		"SAF"={
 			history = "SAF_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				idea_victor_of_the_schlimkrieg_dr
 				idea_quelled_minorities_dr
+				idea_victor_of_the_schlimkrieg_dr
 			}
 		}
 
@@ -73,9 +78,9 @@ bookmarks = {
 			history = ""
 			ideology = fascism
 			ideas = {
-				idea_memories_of_the_empire_dr
-				idea_japanese_lapdog_dr
 				idea_countryside_banditry_dr
+				idea_japanese_lapdog_dr
+				idea_memories_of_the_empire_dr
 			}
 		}
 		"AST"={
@@ -83,9 +88,9 @@ bookmarks = {
 			history = ""
 			ideology = democratic
 			ideas = {
-				idea_memories_of_the_empire_dr
-				idea_japanese_lapdog_dr
-				idea_countryside_banditry_dr
+				idea_lingering_post_war_effects_dr
+				idea_victor_of_the_schlimkrieg_dr
+				idea_emu_australasian_cooperation_dr
 			}
 		}
 		"IRE"={
@@ -105,28 +110,37 @@ bookmarks = {
 			minor = yes
 			history = ""
 			ideology = fascism
+			ideas = {
+				idea_mexican_cartel_dr
+				idea_history_of_humiliation_dr
+				idea_inadequate_army_dr
+			}
 		}
 		"PRU"={
 			minor = yes
 			history = ""
 			ideology = fascism
 		}
-		"POL"={
+		"BHU"={
 			minor = yes
 			history = ""
-			ideology = neutrality
+			ideology = fascism
+			ideas = {
+				idea_feudal_society_dr
+				idea_thunder_dragon_nation_dr
+				idea_early_industrialization_dr
 		}
 		"ETH"={
 			minor = yes
 			history = ""
 			ideology = neutrality
 		}
-		"CHA"={
+		"BAY"={
 			minor = yes
 			history = ""
 			ideology = neutrality
 		}
-		"BAY"={
+		"POL"={
 			minor = yes
 			history = ""
 			ideology = neutrality

@@ -2,24 +2,18 @@
 state={
 	id=131
 	name="STATE_131"
-	manpower = 1
+	manpower = 2128860
 	
 	state_category = city
-	resources={
-		steel=38 # was: 60
-		aluminium=5 # was: 8
+	resources = {
+		steel = 18
+		
 	}
 
 	history={
 		owner = ENG
 		victory_points = {
-			351 10 
-		}
-		victory_points = {
-			11332 1 #Cockermouth
-		}
-		victory_points = {
-			3311 1 #Douglas
+			351 8 
 		}
 		buildings = {
 			infrastructure = 3 #was: 6
@@ -29,14 +23,11 @@ state={
 			351 = {
 				naval_base = 6
 			}
-			3311 = {
-				naval_base = 1
-			}
 		}
 	}
 
 	provinces={
-		219 351 3311 6399 9285 11270 11299 11332 
+		351 11270 11299 
 	}
 
 	local_supplies=14.0 

@@ -14,11 +14,6 @@
  GER_communism:0 "Davidian Socialist Republic"
  GER_communism_DEF:0 "the Davidian Socialist Republic"
  GER_communism_ADJ:0 "Davidian"
-
-
-
-
-
  SOV:0 "Russia"
  SOV_DEF:0 "Russia"
  SOV_ADJ:0 "Russian"
@@ -84,12 +79,6 @@
  LUX:0 "Luxembourg"
  LUX_DEF:0 "Luxembourg"
  LUX_ADJ:0 "Luxembourgish"
- LUX_fascism:0 "Irredentist Luxembourg"
- LUX_fascism_DEF:0 "Irredentist Luxembourg"
- LUX_democratic:0 "Luxembourg"
- LUX_democratic_DEF:0 "Luxembourg"
- LUX_neutrality:0 "Royalist Luxembourg"
- LUX_neutrality_DEF:0 "Royalist Luxembourg"
  LUX_communism:0 "Rosa Luxembourg"
  LUX_communism_DEF:0 "Rosa Luxembourg"
  LUX_fascism_ADJ:0 "Luxembourg"
@@ -672,3 +661,32 @@
  KHA:0 "Kickassia"
  KHA_DEF:0 "Kickassia"
  KHA_ADJ:0 "Kickassian"
+
+ SMI: "Sapmi Confederation"
+ SMI_DEF: "the Sapmi Confederation"
+ SMI_ADJ: "Sapmi"
+
+ GOT_neutrality: "Kingdom of Sweden"
+ GOT_neutrality_DEF: "The Kingdom of Sweden"
+ GOT_fascism: "The true Sweden"
+ GOT_fascism_DEF: "The true Sweden"
+ GOT_communism: "The island of workers strife"
+ GOT_communism_DEF: "$GOT_communism$"
+ GOT_democratic: "Swedish Exiles"
+ GOT_democratic_ADJ: "$GOT_democratic$"
+
+ GRN_fascism: "East Inuit Realm"
+ GRN_fascism_DEF: "the East Inuit Realm"
+ GRN_fascism_ADJ: "Kalaallit"
+ GRN_democratic: "Greenland"
+ GRN_democratic_DEF: "Greenland"
+ GRN_democratic_ADJ: "Kalaallit"
+ GRN_neutrality: "Kingdom of Greenland"
+ GRN_neutrality_DEF: "the Kingdom of Greenland"
+ GRN_neutrality_ADJ: "Kalaallit"
+ GRN_communism: "People's Community of Kalaallit Nunaat"
+ GRN_communism_DEF: "the People's Community of Kalaallit Nunaat"
+ GRN_communism_ADJ: "Kalaallit"
+ GRN: "Greenland"
+ GRN_DEF: "Greenland"
+ GRN_ADJ: "Kalaallit"

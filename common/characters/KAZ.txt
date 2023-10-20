@@ -416,25 +416,4 @@ characters={
 			}
 		}
 	}
-	KAZ_acgs={
-		advisor={
-			slot = air_chief
-			idea_token = KAZ_acgs
-			allowed  = {
-					original_tag  = KAZ
-				}
-				traits  = {
-					air_chief_ground_support_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_air_asia_3"
-			}
-		}
-	}
 }

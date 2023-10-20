@@ -1,0 +1,24 @@
+state={
+	id=937
+	name="STATE_937"
+	history={
+		owner = HAN
+		add_core_of = HAN
+		victory_points = {
+			6469 10 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+
+		}
+	}
+
+	provinces={
+		529 3512 6469 6570 9482 
+	}
+	manpower=2033464
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

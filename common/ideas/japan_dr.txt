@@ -1,0 +1,33 @@
+ideas={country={
+    
+idea_house_of_lyons_dr={picture=idea_por_monarchist_uprising allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=0.15 war_support_factor=0.05}}
+
+idea_army_navy_rivalry_dr={picture=idea_jap_interservice_rivalry_balanced allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={planning_speed=-0.15 command_power_gain=-0.2}}
+
+idea_ichi_go_dr={picture=idea_jap_ichi_go allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+
+idea_zaibatsus_dr={picture=idea_jap_zaibatsu allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=-0.05 consumer_goods_factor=-0.05 production_speed_buildings_factor=0.05}}
+
+idea_zaibatsus_control_dr={picture=idea_jap_zaibatsu_control allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=0.05 consumer_goods_factor=0.05 production_speed_buildings_factor=0.05}}
+
+idea_great_leap_forward_dr={picture=idea_por_monarchist_uprising allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=0.1 production_speed_buildings_factor=0.05}}
+
+idea_cultural_revolution_dr={picture=idea_por_monarchist_uprising allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=0.1 surrender_limit=0.1}}
+
+idea_new_economic_plan_dr={picture=idea_por_monarchist_uprising allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={production_speed_buildings_factor=0.1 consumer_goods_factor=-0.1}}
+
+idea_reeducation_programs_dr={picture=idea_por_monarchist_uprising allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={war_support_factor=0.1 research_speed_factor=0.1}}
+
+idea_share_the_wealth_dr={picture=idea_jap_ichi_go allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+
+idea_army_of_the_rising_sun_dr={picture=idea_jap_ichi_go allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_morale_factor=0.05}}
+
+idea_army_of_the_rising_sun_2_dr={picture=idea_jap_ichi_go allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_attack_factor=0.05}}
+
+idea_army_of_the_rising_sun_3_dr={picture=idea_jap_ichi_go allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_morale_factor=0.1 army_attack_factor=0.05 army_org_factor=0.05}}
+
+idea_army_of_the_rising_sun_4_dr={picture=idea_jap_ichi_go allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_attack_factor=0.1 army_morale_factor=0.05 army_org_factor=0.05}}
+
+idea_warrior_culture_dr={picture=idea_por_monarchist_uprising allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=1.0 army_core_defence_factor=0.15 war_support_factor=0.2}}
+
+}}

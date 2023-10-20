@@ -851,3 +851,7 @@ TRA = {
 	color = rgb { 172 110 172 }
 	color_ui = rgb { 172 110 172 }
 }
+GRN = {
+	color = rgb { 255 80 80 }
+	color_ui = rgb { 179 0 0 }
+}

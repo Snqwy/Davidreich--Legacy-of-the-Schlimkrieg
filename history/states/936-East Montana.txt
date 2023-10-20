@@ -1,0 +1,19 @@
+state={
+	id=936
+	name="STATE_936"
+		history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = USA
+
+	}
+	provinces={
+		1767 4857 4863 7760 7880 7883 10587 10624 10706 
+	}
+	manpower=137340
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

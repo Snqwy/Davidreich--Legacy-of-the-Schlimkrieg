@@ -1,0 +1,31 @@
+#mitteldaveuropa_decision_category_dr={}
+
+rekindle_alliance_decision_category_dr={
+	
+	rekindle_alliance_decision_1_dr={icon=GFX_decision_eng_ally_imperialist_coup available={ITA={has_government=neutrality}}cost=0 fire_only_once=yes ai_will_do={factor=200}complete_effect={ITA={country_event=dr.23}}
+
+	rekindle_alliance_decision_2_dr={icon=GFX_decision_eng_ally_imperialist_coup available={ITA={has_government=neutrality}}cost=0 fire_only_once=yes ai_will_do={factor=200}complete_effect={HUN={country_event=dr.23}}
+
+}}}
+
+local_collaboration_decision_category_dr={
+
+local_collaboration_decision_dr={
+        
+		icon = GFX_decision_generic_police_action
+
+		state_target=yes
+		target_trigger={FROM={is_owned_by=SOV}}
+		on_map_mode=map_only
+
+		available={GER={controls_state=FROM}}
+
+		cost=0
+
+		ai_will_do = {
+		    factor = 200
+		}
+
+		complete_effect = {FROM={add_state_modifier={state_modifier_local_collaboration}}
+        }
+    }}

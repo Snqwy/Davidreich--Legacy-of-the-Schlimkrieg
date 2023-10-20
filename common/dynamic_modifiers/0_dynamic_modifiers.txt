@@ -1239,3 +1239,8 @@ state_modifier_post_schlimkrieg={enable={always=yes}icon=GFX_modifiers_sabotaged
 }
 state_modifier_canal_zone={enable={always=yes}icon=GFX_modifiers_sabotaged_resource political_power_gain=0.05 industrial_capacity_dockyard=0.05 trade_opinion_factor=0.05
 }
+state_modifier_colonial_investments={enable={always=yes}icon=GFX_modifiers_sabotaged_resource production_speed_infrastructure_factor=0.05 compliance_growth=0.05 local_supply_impact_factor=0.05}
+
+state_modifier_local_collaboration={enable={always=yes}icon=GFX_modifiers_sabotaged_resource}
+
+state_modifier_dr_to={enable={always=yes}icon=GFX_modifiers_sabotaged_resource}

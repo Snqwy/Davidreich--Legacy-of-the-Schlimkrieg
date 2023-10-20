@@ -1,7 +1,0 @@
-ideas={country={
-    
-idea_victor_of_the_schlimkrieg_dr={picture=ENG_the_war_to_end_all_wars allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={guarantee_cost=0.3 mobilization_speed=-0.25 land_doctrine_cost_factor=0.15}}
-
-idea_the_great_game_dr={picture=generic_victors_of_ww1 allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.2 surrender_limit=0.15}rule={can_join_factions=no can_send_volunteers=no}}
-
-}}

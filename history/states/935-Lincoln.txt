@@ -1,0 +1,19 @@
+state={
+	id=935
+	name="STATE_935"
+	history={
+		owner = CSA
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = CSA
+	}
+	provinces={
+		7688 7888 12651 
+	}
+	manpower=25054
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}

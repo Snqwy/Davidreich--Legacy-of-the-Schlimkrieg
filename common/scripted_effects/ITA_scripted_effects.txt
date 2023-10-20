@@ -42,7 +42,24 @@ ITA_end_the_italo_ethiopian_war = {
 	}
 }
 
-ITA_manage_italian_defeat_in_ethiopia_effect = {}
+
+ITA_manage_italian_defeat_in_ethiopia_effect = {
+	#First missiolini focus (Struggle in ETH, AByssinian Fiasco and Solid Progress) are handled before this effect
+	if = {
+		limit = {
+			NOT = { has_completed_focus = ITA_servizio_informazione_militare }
+		}
+		unlock_national_focus = ITA_servizio_informazione_militare
+	}
+	unlock_national_focus = ITA_triumph_in_africa_bba
+	set_power_balance = {
+		id = ITA_power_balance
+		left_side = ITA_grand_council_side # will keep the last set side if not specified
+		right_side = ITA_mussolini_side # will keep the last set side if not specified
+		set_value = -0.15
+	}
+}
+
 
 ##     ## ####  ######   ######  ####  #######  ##       #### ##    ## ####  ######
 ###   ###  ##  ##    ## ##    ##  ##  ##     ## ##        ##  ###   ##  ##  ##    ##
@@ -118,6 +135,7 @@ ITA_missiolinis_add_to_failed_missions = {
 
 ITA_missiolinis_reroll_cost = {
 	add_political_power = -25
+	ITA_bop_very_low_decrease_effect = yes
 
 	custom_effect_tooltip = ITA_missiolinis_reroll_tt
 }
@@ -166,7 +184,11 @@ ITA_missiolini_progress_in_ethiopia_success_effect = {
 		}
 		set_country_flag = ITA_missiolini_progress_in_ethiopia_one_mission_successful_flag
 	}
-	else = { #Second mission to succeed
+	else_if = { #Second mission to succeed
+		limit = {
+			NOT = { has_completed_focus = ITA_the_abyssinian_fiasco }
+			NOT = { has_completed_focus = ITA_struggle_in_ethiopia }
+		}
 		complete_national_focus = ITA_solid_progress
 	}
 }
@@ -238,18 +260,31 @@ ITA_missiolini_strengthen_heavy_industry_failure_effect = {
 ITA_missiolini_strengthen_heavy_industry_success_effect = {
 	add_political_power = 50
 	add_stability = 0.03
+
+	add_timed_idea = {
+		idea = ITA_strengthened_heavy_industry
+		days = 365
+	}
 }
 
 ### STRENGTHEN THE ARMY ###
 ITA_missiolini_strengthen_the_army_failure_effect = {
 	add_political_power = -25
 	add_war_support = -0.03
+	add_timed_idea = {
+		idea = ITA_disgruntlement_in_the_army
+		days = 180
+	}
 }
 
 ITA_missiolini_strengthen_the_army_success_effect = {
 	army_experience = 50
 	add_command_power = 25
 	add_war_support = 0.03
+	add_timed_idea = {
+		idea = ITA_strengthened_the_army
+		days = 365
+	}
 }
 
 ### STOCKPILE TRUCKS ###
@@ -259,11 +294,24 @@ ITA_missiolini_stockpile_trucks_failure_effect = {
 }
 
 ITA_missiolini_stockpile_trucks_success_effect = {
-	add_political_power = 50
-	add_war_support = 0.03
+	if = { #DEFAULT
+		limit = {
+			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+		}
+		add_political_power = 50
+		add_war_support = 0.03
+		add_timed_idea = {
+			idea = ITA_efficient_supply_lines
+			days = 365
+		}
+	}
 	else = { # GREATER REWARD (from To Live as a Lion focus)
 		add_political_power = 75
 		add_war_support = 0.05
+		add_timed_idea = {
+			idea = ITA_efficient_supply_lines_lion_version
+			days = 365
+		}
 	}
 }
 
@@ -274,15 +322,28 @@ ITA_missiolini_stockpile_fuel_failure_effect = {
 }
 
 ITA_missiolini_stockpile_fuel_success_effect = {
-	army_experience = 25
-	navy_experience = 25
-	air_experience = 25
-	add_war_support = 0.03
-	else = {
+	if = { #DEFAULT
+		limit = {
+			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+		}
+		army_experience = 25
+		navy_experience = 25
+		air_experience = 25
+		add_war_support = 0.03
+		add_timed_idea = {
+			idea = ITA_fuel_reserves
+			days = 365
+		}
+	}
+	else = { # GREATER REWARD (from To Live as a Lion focus)
 		army_experience = 30
 		navy_experience = 30
 		air_experience = 30
 		add_war_support = 0.05
+		add_timed_idea = {
+			idea = ITA_fuel_reserves_lion_version
+			days = 365
+		}
 	}
 }
 
@@ -290,8 +351,37 @@ ITA_missiolini_stockpile_fuel_success_effect = {
 ITA_missiolini_strengthen_the_airforce_failure_effect = {
 	add_political_power = -25
 	add_war_support = -0.03
+	add_timed_idea = {
+		idea = ITA_disgruntlement_in_the_airforce
+		days = 365
+	}
 }
 
+ITA_missiolini_strengthen_the_airforce_success_effect = {
+	if = { #DEFAULT
+		limit = {
+			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+		}
+		air_experience = 50
+		add_command_power = 25
+		add_war_support = 0.03
+		add_timed_idea = {
+			idea = ITA_strengthened_the_airforce
+			days = 365
+		}
+	}
+	else = { # GREATER REWARD (from To Live as a Lion focus)
+		air_experience = 60
+		add_command_power = 35
+		add_war_support = 0.05
+		add_timed_idea = {
+			idea = ITA_strengthened_the_airforce_lion_Version
+			days = 365
+		}
+	}
+}
+
+### INDUSTRIAL RESEARCH ###
 ITA_missiolini_industrial_research_failure_effect = {
 	add_political_power = -25
 	add_popularity = {
@@ -321,6 +411,39 @@ ITA_missiolini_industrial_research_failure_effect = {
 }
 
 ITA_missiolini_industrial_research_success_effect = {
+	if = { #DEFAULT
+		limit = {
+			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+		}
+		add_political_power = 25
+		add_tech_bonus = {
+			name = ITA_missiolini_industrial_research
+			bonus = 0.5
+			uses = 2
+			category = industry
+			category = air_equipment
+			category = naval_equipment
+			category = artillery
+			category = armor
+			category = motorized_equipment
+		}
+	}
+	else = { # GREATER REWARD (from To Live as a Lion focus)
+		add_political_power = 35
+		add_tech_bonus = {
+			name = ITA_missiolini_industrial_research
+			bonus = 0.75
+			uses = 2
+			category = industry
+			category = air_equipment
+			category = naval_equipment
+			category = artillery
+			category = armor
+			category = motorized_equipment
+		}
+	}
+
+	#CLEAR FLAGS FOR NEXT TIME
 	if = {
 		limit = {
 			has_country_flag = ITA_missiolini_research_production_flag
@@ -353,6 +476,108 @@ ITA_missiolini_expand_intelligence_service_failure_effect = {
 	clr_country_flag = ITA_missiolini_upgrade_agency_goal_flag
 }
 
+ITA_missiolini_expand_intelligence_service_success_effect = {
+	if = { #DEFAULT
+		limit = {
+			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+		}
+		add_political_power = 25
+		#ASSIGN APPROPRIATE REWARD
+		if = { #Upgrade - Passive Defense
+			limit = {
+				has_country_flag = { flag = ITA_missiolini_upgrade_agency_goal_flag value = 5 } #Need to do checks in inverted order (ie. if value = 5, checking for value = 1 also returns true apparently)
+			}
+			add_timed_idea = {
+				idea = ITA_expanded_intelligence_service_passive_defense
+				days = 365
+			}
+		}
+		else_if = { #Upgrade - Anti-Partisan
+			limit = {
+				has_country_flag = { flag = ITA_missiolini_research_production_flag value = 4 }
+			}
+			add_timed_idea = {
+				idea = ITA_expanded_intelligence_service_anti_partisan
+				days = 365
+			}
+		}
+		else_if = { #Upgrade - Form Army Department
+			limit = {
+				has_country_flag = { flag = ITA_missiolini_research_production_flag value = 3 }
+			}
+			add_timed_idea = {
+				idea = ITA_expanded_intelligence_service_army_department
+				days = 365
+			}
+		}
+		else_if = { #Upgrade - Form Cryptology Department
+			limit = {
+				has_country_flag = { flag = ITA_missiolini_research_production_flag value = 2 }
+			}
+			add_timed_idea = {
+				idea = ITA_expanded_intelligence_service_cryptology_department
+				days = 365
+			}
+		}
+		else = { #Create Intel Agency + Fallback
+			add_timed_idea = {
+				idea = ITA_expanded_intelligence_service_basic
+				days = 365
+			}
+		}
+	}
+	else = { # GREATER REWARD (from To Live as a Lion focus)
+		add_political_power = 25
+		#ASSIGN APPROPRIATE REWARD
+		if = { #Upgrade - Passive Defense
+			limit = {
+				has_country_flag = { flag = ITA_missiolini_upgrade_agency_goal_flag value = 5 } #Need to do checks in inverted order (ie. if value = 5, checking for value = 1 also returns true apparently)
+			}
+			add_timed_idea = {
+				idea = ITA_expanded_intelligence_service_passive_defense_lion_version
+				days = 365
+			}
+		}
+		else_if = { #Upgrade - Anti-Partisan
+			limit = {
+				has_country_flag = { flag = ITA_missiolini_research_production_flag value = 4 }
+			}
+			add_timed_idea = {
+				idea = ITA_expanded_intelligence_service_anti_partisan_lion_version
+				days = 365
+			}
+		}
+		else_if = { #Upgrade - Form Army Department
+			limit = {
+				has_country_flag = { flag = ITA_missiolini_research_production_flag value = 3 }
+			}
+			add_timed_idea = {
+				idea = ITA_expanded_intelligence_service_army_department_lion_version
+				days = 365
+			}
+		}
+		else_if = { #Upgrade - Form Cryptology Department
+			limit = {
+				has_country_flag = { flag = ITA_missiolini_research_production_flag value = 2 }
+			}
+			add_timed_idea = {
+				idea = ITA_expanded_intelligence_service_cryptology_department_lion_version
+				days = 365
+			}
+		}
+		else = { #Create Intel Agency + Fallback
+			add_timed_idea = {
+				idea = ITA_expanded_intelligence_service_basic_lion_version
+				days = 365
+			}
+		}
+	}
+
+	#CLEAR FLAG FOR NEXT TIME
+	clr_country_flag = ITA_missiolini_upgrade_agency_goal_flag
+}
+
+
 ### OCCUPY ALBANIA ###
 ITA_missiolini_occupy_albania_failure_effect = {
 	add_political_power = -25
@@ -362,6 +587,193 @@ ITA_missiolini_occupy_albania_failure_effect = {
 	}
 }
 
+ITA_missiolini_occupy_albania_success_effect = {
+	if = { #DEFAULT
+		limit = {
+			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+		}
+		add_political_power = 50
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.05
+		}
+		custom_effect_tooltip = ITA_missiolini_occupy_albania_occupation_effects
+		effect_tooltip = {
+			44 = { #ALBANIA
+				add_compliance = 5
+				add_resistance = -5
+			}
+			805 = { #NORTHERN EPIRUS
+				add_compliance = 5
+				add_resistance = -5
+			}
+			934 = { #SHKÖDER
+				add_compliance = 5
+				add_resistance = -5
+			}
+		}
+
+		custom_effect_tooltip = ITA_missiolini_occupy_albania_subject_effects
+		effect_tooltip = {
+			ALB = {
+				add_autonomy_score = {
+					value = -35
+					localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+				}
+			}
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					44 = {
+						is_fully_controlled_by = ROOT
+						has_resistance = yes
+					}
+				}
+				44 = { #ALBANIA
+					add_compliance = 5
+					add_resistance = -5
+				}
+			}
+			if = {
+				limit = {
+					805 = {
+						is_fully_controlled_by = ROOT
+						has_resistance = yes
+					}
+				}
+				805 = { #NORTHERN EPIRUS
+					add_compliance = 5
+					add_resistance = -5
+				}
+			}
+			if = {
+				limit = {
+					934 = {
+						is_fully_controlled_by = ROOT
+						has_resistance = yes
+					}
+				}
+				934 = { #SHKÖDER
+					add_compliance = 5
+					add_resistance = -5
+				}
+			}
+			if = {
+				limit = {
+					has_subject_autonomy_feature = yes
+					any_other_country = {
+						original_tag = ALB
+						is_subject_of = ROOT
+					}
+				}
+				random_subject_country = {
+					limit = {
+						original_tag = ALB
+						is_subject_of = ROOT
+					}
+					add_autonomy_score = {
+						value = -35
+						localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+					}
+				}
+			}
+		}
+	}
+	else = { # GREATER REWARD (from To Live as a Lion focus)
+		add_political_power = 65
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.1
+		}
+		custom_effect_tooltip = ITA_missiolini_occupy_albania_occupation_effects
+		effect_tooltip = {
+			44 = { #ALBANIA
+				add_compliance = 5
+				add_resistance = -5
+			}
+			805 = { #NORTHERN EPIRUS
+				add_compliance = 5
+				add_resistance = -5
+			}
+			934 = { #SHKÖDER
+				add_compliance = 5
+				add_resistance = -5
+			}
+		}
+
+		custom_effect_tooltip = ITA_missiolini_occupy_albania_subject_effects
+		effect_tooltip = {
+			ALB = {
+				add_autonomy_score = {
+					value = -50
+					localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+				}
+			}
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					44 = {
+						is_fully_controlled_by = ROOT
+						has_resistance = yes
+					}
+				}
+				44 = { #ALBANIA
+					add_compliance = 5
+					add_resistance = -5
+				}
+			}
+			if = {
+				limit = {
+					805 = {
+						is_fully_controlled_by = ROOT
+						has_resistance = yes
+					}
+				}
+				805 = { #NORTHERN EPIRUS
+					add_compliance = 5
+					add_resistance = -5
+				}
+			}
+			if = {
+				limit = {
+					934 = {
+						is_fully_controlled_by = ROOT
+						has_resistance = yes
+					}
+				}
+				934 = { #SHKÖDER
+					add_compliance = 5
+					add_resistance = -5
+				}
+			}
+			if = {
+				limit = {
+					has_subject_autonomy_feature = yes
+					any_other_country = {
+						original_tag = ALB
+						is_subject_of = ROOT
+					}
+				}
+				random_subject_country = {
+					limit = {
+						original_tag = ALB
+						is_subject_of = ROOT
+					}
+					add_autonomy_score = {
+						value = -50
+						localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+					}
+				}
+			}
+		}
+	}
+}
+
+
 ### OCCUPY DALMATIA ###
 ITA_missiolini_occupy_dalmatia_failure_effect = {
 	add_political_power = -25
@@ -369,6 +781,170 @@ ITA_missiolini_occupy_dalmatia_failure_effect = {
 	add_popularity = {
 		ideology = ROOT
 		popularity = -0.05
+	}
+}
+
+ITA_missiolini_occupy_dalmatia_success_effect = {
+	if = { #DEFAULT
+		limit = {
+			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+		}
+		add_political_power = 50
+		add_war_support = 0.03
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.05
+		}
+		if = {
+			limit = {
+				103 = {
+					is_fully_controlled_by = ROOT
+					has_resistance = yes
+				}
+			}
+			103 = { #DALMATIA
+				add_compliance = 5 #WARNING CHANGING THESE NUMBERS REQUIRES CHANGING THE TOOLTIPS
+				add_resistance = -5
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = YUG
+					is_fully_controlled_by = ROOT
+					NOT = { state = 103 } #Dalmatia goes first above
+					has_resistance = yes
+				}
+				add_compliance = 5
+				add_resistance = -5
+			}
+		}
+		else = {
+			custom_effect_tooltip = ITA_missiolini_occupy_dalmatia_occupation_effects
+		}
+
+		if = {
+			limit = {
+				has_subject_autonomy_feature = yes
+			}
+			if = {
+				limit = {
+					103 = {
+						controller = {
+							has_full_control_of_state = PREV
+							is_subject_of = ROOT
+						}
+					}
+				}
+				103 = { #DALMATIA
+					controller = {
+						add_autonomy_score = {
+							value = -35
+							localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+						}
+						every_other_country = { #Also apply effects to any other Italian puppets formerly Yugoslavian
+							limit = {
+								is_subject_of = ROOT
+								capital_scope = {
+									is_core_of = YUG
+									is_fully_controlled_by = PREV
+								}
+							}
+							add_autonomy_score = {
+								value = -35
+								localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+							}
+						}
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = ITA_missiolini_occupy_dalmatia_subject_effects
+				effect_tooltip = {
+					add_autonomy_score = {
+						value = -35
+						localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+					}
+				}
+			}
+		}
+	}
+	else = { # GREATER REWARD (from To Live as a Lion focus)
+		add_political_power = 65
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.1
+		}
+		if = {
+			limit = {
+				103 = {
+					is_fully_controlled_by = ROOT
+					has_resistance = yes
+				}
+			}
+			103 = { #DALMATIA
+				add_compliance = 5 #WARNING CHANGING THESE NUMBERS REQUIRES CHANGING THE TOOLTIPS
+				add_resistance = -5
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = YUG
+					is_fully_controlled_by = ROOT
+					NOT = { state = 103 } #Dalmatia goes first above
+					has_resistance = yes
+				}
+				add_compliance = 5
+				add_resistance = -5
+			}
+		}
+		else = {
+			custom_effect_tooltip = ITA_missiolini_occupy_dalmatia_occupation_effects
+		}
+
+		if = {
+			limit = {
+				has_subject_autonomy_feature = yes
+			}
+			if = {
+				limit = {
+					103 = {
+						controller = {
+							has_full_control_of_state = PREV
+							is_subject_of = ROOT
+						}
+					}
+				}
+				103 = { #DALMATIA
+					controller = {
+						add_autonomy_score = {
+							value = -50
+							localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+						}
+						every_other_country = { #Also apply effects to any other Italian puppets formerly Yugoslavian
+							limit = {
+								is_subject_of = ROOT
+								capital_scope = {
+									is_core_of = YUG
+									is_fully_controlled_by = PREV
+								}
+							}
+							add_autonomy_score = {
+								value = -50
+								localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+							}
+						}
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = ITA_missiolini_occupy_dalmatia_subject_effects
+				effect_tooltip = {
+					add_autonomy_score = {
+						value = -50
+						localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -382,6 +958,111 @@ ITA_missiolini_occupy_greece_failure_effect = {
 	}
 }
 
+ITA_missiolini_occupy_greece_success_effect = {
+	if = { #DEFAULT
+		limit = {
+			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+		}
+		add_political_power = 50
+		add_war_support = 0.03
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.05
+		}
+
+		custom_effect_tooltip = ITA_missiolini_occupy_greece_occupation_effects
+		every_controlled_state = {
+			limit = {
+				is_core_of = GRE
+				is_fully_controlled_by = ROOT
+				has_resistance = yes
+			}
+			add_compliance = 5 #WARNING CHANGING THESE NUMBERS REQUIRES CHANGING THE TOOLTIPS
+			add_resistance = -5
+		}
+
+		if = {
+			limit = {
+				has_subject_autonomy_feature = yes
+			}
+			if = {
+				limit = {
+					GRE = {
+						is_subject_of = ROOT
+					}
+				}
+				GRE = {
+					add_autonomy_score = {
+						value = -35
+						localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = ITA_missiolini_occupy_greece_subject_effects
+				effect_tooltip = {
+					GRE = {
+						add_autonomy_score = {
+							value = -35
+							localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+						}
+					}
+				}
+			}
+		}
+	}
+	else = { # GREATER REWARD (from To Live as a Lion focus)
+		add_political_power = 65
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.1
+		}
+
+		custom_effect_tooltip = ITA_missiolini_occupy_greece_occupation_effects
+		every_controlled_state = {
+			limit = {
+				is_core_of = GRE
+				is_fully_controlled_by = ROOT
+				has_resistance = yes
+			}
+			add_compliance = 5 #WARNING CHANGING THESE NUMBERS REQUIRES CHANGING THE TOOLTIPS
+			add_resistance = -5
+		}
+
+		if = {
+			limit = {
+				has_subject_autonomy_feature = yes
+			}
+			if = {
+				limit = {
+					GRE = {
+						is_subject_of = ROOT
+					}
+				}
+				GRE = {
+					add_autonomy_score = {
+						value = -50
+						localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = ITA_missiolini_occupy_greece_subject_effects
+				effect_tooltip = {
+					GRE = {
+						add_autonomy_score = {
+							value = -50
+							localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
 ### OCCUPY TICINO ###
 ITA_missiolini_occupy_ticino_failure_effect = {
 	add_political_power = -25
@@ -389,6 +1070,110 @@ ITA_missiolini_occupy_ticino_failure_effect = {
 	add_popularity = {
 		ideology = ROOT
 		popularity = -0.05
+	}
+}
+
+ITA_missiolini_occupy_ticino_success_effect = {
+	if = { #DEFAULT
+		limit = {
+			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+		}
+		add_political_power = 50
+		add_war_support = 0.03
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.05
+		}
+
+		custom_effect_tooltip = ITA_missiolini_occupy_ticino_occupation_effects
+		every_controlled_state = {
+			limit = {
+				is_core_of = SWI
+				is_fully_controlled_by = ROOT
+				has_resistance = yes
+			}
+			add_compliance = 5 #WARNING CHANGING THESE NUMBERS REQUIRES CHANGING THE TOOLTIPS
+			add_resistance = -5
+		}
+
+		if = {
+			limit = {
+				has_subject_autonomy_feature = yes
+			}
+			if = {
+				limit = {
+					SWI = {
+						is_subject_of = ROOT
+					}
+				}
+				SWI = {
+					add_autonomy_score = {
+						value = -35
+						localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = ITA_missiolini_occupy_ticino_subject_effects
+				effect_tooltip = {
+					SWI = {
+						add_autonomy_score = {
+							value = -35
+							localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+						}
+					}
+				}
+			}
+		}
+	}
+	else = { # GREATER REWARD (from To Live as a Lion focus)
+		add_political_power = 65
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.1
+		}
+
+		custom_effect_tooltip = ITA_missiolini_occupy_ticino_occupation_effects
+		every_controlled_state = {
+			limit = {
+				is_core_of = SWI
+				is_fully_controlled_by = ROOT
+				has_resistance = yes
+			}
+			add_compliance = 5 #WARNING CHANGING THESE NUMBERS REQUIRES CHANGING THE TOOLTIPS
+			add_resistance = -5
+		}
+
+		if = {
+			limit = {
+				has_subject_autonomy_feature = yes
+			}
+			if = {
+				limit = {
+					SWI = {
+						is_subject_of = ROOT
+					}
+				}
+				SWI = {
+					add_autonomy_score = {
+						value = -50
+						localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = ITA_missiolini_occupy_ticino_subject_effects
+				effect_tooltip = {
+					SWI = {
+						add_autonomy_score = {
+							value = -50
+							localization = ITA_missiolini_firmly_established_italian_administration_autonomy_text
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -401,11 +1186,399 @@ ITA_missiolini_bolster_political_cabinet_failure_effect = {
 		popularity = -0.05
 	}
 }
+
+ITA_missiolini_bolster_political_cabinet_success_effect = {
+	if = { #DEFAULT
+		limit = {
+			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+		}
+		add_political_power = 50
+		add_stability = 0.03
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.05
+		}
+		add_timed_idea = {
+			idea = ITA_bolstered_political_cabinet
+			days = 365
+		}
+	}
+	else = { # GREATER REWARD (from To Live as a Lion focus)
+		add_political_power = 65
+		add_stability = 0.05
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.1
+		}
+		add_timed_idea = {
+			idea = ITA_bolstered_political_cabinet_lion_version
+			days = 365
+		}
+	}
+}
+
+### BOLSTER MILITARY HIGH COMMAND ###
+ITA_missiolini_bolster_military_high_command_failure_effect = {
+	add_political_power = -25
+	add_war_support = -0.03
+	add_popularity = {
+		ideology = ROOT
+		popularity = -0.05
+	}
+}
+
+ITA_missiolini_bolster_military_high_command_success_effect = {
+	if = { #DEFAULT
+		limit = {
+			NOT = { has_completed_focus = ITA_to_live_as_a_lion }
+		}
+		add_political_power = 25
+		add_command_power = 25
+		add_war_support = 0.03
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.05
+		}
+		add_timed_idea = { #First so that CP doesn't stack in case it's maxed out
+			idea = ITA_bolstered_political_cabinet
+			days = 365
+		}
+	}
+	else = { # GREATER REWARD (from To Live as a Lion focus)
+		add_political_power = 35
+		add_command_power = 35
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.1
+		}
+		add_timed_idea = { #First so that CP doesn't stack in case it's maxed out
+			idea = ITA_bolstered_political_cabinet_lion_version
+			days = 365
+		}
+	}
+}
+
+
+
+########   #######  ########
+##     ## ##     ## ##     ##
+##     ## ##     ## ##     ##
+########  ##     ## ########
+##     ## ##     ## ##
+##     ## ##     ## ##
+########   #######  ##
+
+
+ITA_initiate_balance_of_power_effect = {
+	set_power_balance = {
+		id = ITA_power_balance
+		left_side = ITA_grand_council_side # will keep the last set side if not specified
+		right_side = ITA_mussolini_side # will keep the last set side if not specified
+		set_default = yes # whether or not to reset the power balance to the initial value, default = no
+		#set_value = 0.25 # if specified will set the value of the power balance, this option will override the effect of set_default so the two options should not be used together. if neither set_default or set_value is specified the current value of the power balance will not change
+	}
+}
+
+ITA_bop_absurdly_high_increase_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 1
+	}
+}
+
+ITA_bop_very_high_increase_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.25
+	}
+}
+
+ITA_bop_high_increase_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.2
+	}
+}
+
+ITA_bop_medium_increase_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.15
+	}
+}
+
+ITA_bop_low_increase_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.1
+	}
+}
+
+ITA_bop_very_low_increase_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.05
+	}
+}
+
+ITA_bop_absurdly_high_decrease_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -1
+	}
+}
+
+ITA_bop_very_high_decrease_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -0.25
+	}
+}
+
+ITA_bop_high_decrease_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -0.2
+	}
+}
+
+ITA_bop_medium_decrease_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -0.15
+	}
+}
+
+ITA_bop_low_decrease_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -0.1
+	}
+}
+
+ITA_bop_very_low_decrease_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -0.05
+	}
+}
+
+ITA_bop_increase_lost_core_modifier = {
+	if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_4
+			}
+		}
+		add_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_3
+			}
+		}
+		add_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_2
+			}
+		}
+		add_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_1
+			}
+		}
+		add_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_2
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_power_balance_modifier = {
+					id = ITA_power_balance
+					modifier = ITA_power_balance_lost_core_5
+				}
+			}
+		}
+		add_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_1
+		}
+	}
+}
+
+ITA_bop_decrease_lost_core_modifier = {
+	if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_5
+			}
+		}
+		remove_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_4
+			}
+		}
+		remove_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_3
+			}
+		}
+		remove_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_2
+			}
+		}
+		remove_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_1
+			}
+		}
+		remove_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_1
+		}
+	}
+	else = {
+		#NOTHING cannot decrease
+	}
+}
+
+ITA_bop_remove_lost_core_modifier = {
+	if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_5
+			}
+		}
+		remove_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_5
+		}
+	}
+	if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_4
+			}
+		}
+		remove_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_4
+		}
+	}
+	if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_3
+			}
+		}
+		remove_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_3
+		}
+	}
+	if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_2
+			}
+		}
+		remove_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_2
+		}
+	}
+	if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_1
+			}
+		}
+		remove_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_1
+		}
+	}
+}
+
+ITA_bop_remove_bop_effect = {
+	remove_power_balance = { id = ITA_power_balance }
+}
+
+
+
+ ######  #### ##     ## #### ##          ##      ##    ###    ########
+##    ##  ##  ##     ##  ##  ##          ##  ##  ##   ## ##   ##     ##
+##        ##  ##     ##  ##  ##          ##  ##  ##  ##   ##  ##     ##
+##        ##  ##     ##  ##  ##          ##  ##  ## ##     ## ########
+##        ##   ##   ##   ##  ##          ##  ##  ## ######### ##   ##
+##    ##  ##    ## ##    ##  ##          ##  ##  ## ##     ## ##    ##
+ ######  ####    ###    #### ########     ###  ###  ##     ## ##     ##
+
+
 ITA_start_civil_war_effect = { #The one triggered via BoP
 
 	#log = "CIVIL WAR EFFECT"
 
 	#KILL BoP to prevent endless CW insde CW inside CW etc etc tack
+	ITA_bop_remove_bop_effect = yes
 
 	# Launch The Civil War
 	start_civil_war = {
@@ -628,11 +1801,38 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 			keep_completed = yes
 		}
 
+		if = { #MUSSOLINI BRANCH
+			limit = {
+				has_completed_focus = ITA_culto_del_duce
+			}
+			uncomplete_national_focus = {
+				focus = ITA_culto_del_duce
+				uncomplete_children = yes
+			}
+		}
 		if = { #Going COMMIE or DEMOCRATIC
 			limit = {
 				OR = {
 					has_global_flag = ITA_communist_cw_flag
 					has_global_flag = ITA_democratic_cw_flag
+				}
+			}
+			if = { #ALT-FASCIST/MONARCHIST BRANCH
+				limit = {
+					has_completed_focus = ITA_convene_the_grand_council
+				}
+				uncomplete_national_focus = {
+					focus = ITA_convene_the_grand_council
+					uncomplete_children = yes
+				}
+			}
+			if = { #FASCIST FOREIGN AFFAIRS BRANCH
+				limit = {
+					has_completed_focus = ITA_foreign_affairs
+				}
+				uncomplete_national_focus = {
+					focus = ITA_foreign_affairs
+					uncomplete_children = yes
 				}
 			}
 			if = { #ETH-ITA war focus
@@ -646,6 +1846,7 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 			}
 
 			#COMPLETE FOCUS
+			unlock_national_focus = ITA_unite_the_opposition
 			unlock_national_focus = ITA_defy_the_duce
 			hidden_effect = { #Just doing the key thing we're missing from the unlocked focus above
 				set_politics = {
@@ -653,6 +1854,57 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 				}
 			}
 		}
+		else = { #Going MONARCHIST
+			if = { #BALBO BRANCH
+				limit = {
+					has_completed_focus = ITA_italo_balbo_focus
+				}
+				uncomplete_national_focus = {
+					focus = ITA_italo_balbo_focus
+					uncomplete_children = yes
+				}
+			}
+			else_if = { #GRANDI BRANCH
+				limit = {
+					has_completed_focus = ITA_dino_grandi_focus
+				}
+				uncomplete_national_focus = {
+					focus = ITA_dino_grandi_focus
+					uncomplete_children = yes
+				}
+			}
+			if = { #PACT OF STEEL BRANCH
+				limit = {
+					has_completed_focus = ITA_pact_of_steel
+				}
+				uncomplete_national_focus = {
+					focus = ITA_pact_of_steel
+					uncomplete_children = yes
+				}
+			}
+			if = { #ETH-ITA war focus
+				limit = {
+					has_completed_focus = ITA_the_abyssinian_fiasco
+				}
+				uncomplete_national_focus = {
+					focus = ITA_the_abyssinian_fiasco
+				}
+				unlock_national_focus = ITA_struggle_in_ethiopia
+			}
+			#COMPLETE FOCUS
+			if = {
+				limit = {
+					NOT = { has_completed_focus = ITA_triumph_in_africa_bba }
+				}
+				unlock_national_focus = ITA_undermine_the_duce
+				unlock_national_focus = ITA_conspiracies_in_the_shadows
+			}
+			unlock_national_focus = ITA_convene_the_grand_council
+			unlock_national_focus = ITA_depose_mussolini
+			unlock_national_focus = ITA_monarchia_d_italia
+		}
+
+		ITA_manage_national_spirits_in_civil_war = yes
 	}
 
 	#FIRST FOCUS FROM CW BRANCH are completed via event after changing tag so that player will always get the appropriate popup for the focus completion
@@ -1430,6 +2682,63 @@ ITA_set_special_characters_as_fascist_effect = {
 	ITA_aldo_pellegrini = { #Goes with player
 		set_character_flag = ITA_cw_character_fascist_side_flag
 	}
+
+	#Promote appropriate Duce
+	if = {
+		limit = {
+			has_completed_focus = ITA_italo_balbo_focus
+		}
+		ITA_italo_balbo = { promote_character = yes }
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = ITA_dino_grandi_focus
+		}
+		ITA_dino_grandi = { promote_character = yes }
+	}
+	else = {
+		ITA_benito_mussolini = { promote_character = yes }
+	}
+
+	if = {
+		limit = {
+			NOT = { has_completed_focus = ITA_italo_balbo_focus }
+		}
+		ITA_italo_balbo = {
+			if = {
+				limit = {
+					has_character_flag = ITA_cw_character_fascist_side_flag
+				}
+				clr_character_flag = ITA_cw_character_fascist_side_flag
+				#log = "Removing character flag in Balbo"
+			}
+			if = {
+				limit = {
+					has_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
+				}
+				clr_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
+				#log = "Removing unit leader flag in Balbo"
+			}
+			set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+			set_character_flag = ITA_cw_character_monarchist_side_flag
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_completed_focus = ITA_dino_grandi_focus }
+		}
+		ITA_dino_grandi = {
+			if = {
+				limit = {
+					has_character_flag = ITA_cw_character_fascist_side_flag
+				}
+				clr_character_flag = ITA_cw_character_fascist_side_flag
+				#log = "Removing flag in Grandi"
+			}
+			set_character_flag = ITA_cw_character_monarchist_side_flag
+		}
+	}
+
 	#log = "Done with flags"
 }
 
@@ -1480,6 +2789,45 @@ ITA_set_special_characters_as_monarchist_effect = {
 	ITA_aldo_pellegrini = { #Goes with player
 		set_character_flag = ITA_cw_character_monarchist_side_flag
 	}
+
+	if = {
+		limit = {
+			NOT = { has_completed_focus = ITA_italo_balbo_focus }
+		}
+		ITA_italo_balbo = {
+			if = {
+				limit = {
+					has_character_flag = ITA_cw_character_fascist_side_flag
+				}
+				clr_character_flag = ITA_cw_character_fascist_side_flag
+				#log = "Removing character flag in Balbo"
+			}
+			if = {
+				limit = {
+					has_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
+				}
+				clr_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
+				#log = "Removing unit leader flag in Balbo"
+			}
+			set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+			set_character_flag = ITA_cw_character_monarchist_side_flag
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_completed_focus = ITA_dino_grandi_focus }
+		}
+		ITA_dino_grandi = {
+			if = {
+				limit = {
+					has_character_flag = ITA_cw_character_fascist_side_flag
+				}
+				clr_character_flag = ITA_cw_character_fascist_side_flag
+				#log = "Removing flag in Grandi"
+			}
+			set_character_flag = ITA_cw_character_monarchist_side_flag
+		}
+	}
 }
 
 ITA_set_special_characters_as_antifascists_effect = {
@@ -1528,6 +2876,414 @@ ITA_set_special_characters_as_antifascists_effect = {
 	}
 	ITA_aldo_pellegrini = { #Goes with player
 		set_character_flag = ITA_cw_character_antifascist_side_flag
+	}
+}
+
+ITA_civil_war_deal_with_militias = {
+	#SPAWN UNITS AND KILL BLACKSHIRTS TACK
+	delete_unit_template_and_units = {
+		division_template = "Camicie Nere"
+	}
+	ITA_add_redshirts_div_template = yes
+	if = {
+		limit = {
+			OR = {
+				has_completed_focus = ITA_organize_strikes_in_the_north
+				has_completed_focus = ITA_the_southern_farmlands
+			}
+		}
+		capital_scope = {
+			create_unit = {
+				division = "division_template = \"Camicie Rosse\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+				owner = ROOT
+				count = 3
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_controlled_by = ROOT
+			}
+			create_unit = {
+				division = "division_template = \"Camicie Rosse\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+				owner = ROOT
+				count = 2
+			}
+		}
+	}
+}
+
+ITA_start_anti_fascist_civil_war = { #The one triggered via focus
+	#KILL BoP to prevent endless CW insde CW inside CW etc etc tack
+	ITA_bop_remove_bop_effect = yes
+
+	if = {
+		limit = {
+			has_completed_focus = ITA_organize_strikes_in_the_north
+		}
+		every_owned_state = {
+			limit = {
+				OR = {
+					state = 159 #LOMBARDIA
+					state = 850 #TRENTINO
+					state = 39 #ALTO ADIGE
+					state = 160 #VENETO
+					state = 736 #LITORALE
+					state = 852 #ISTRIA
+				}
+				is_controlled_by = ROOT
+			}
+			set_state_flag = ITA_cw_state_split
+		}
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = ITA_the_southern_farmlands
+		}
+		every_owned_state = {
+			limit = {
+				OR = {
+					state = 2 #LAZIO
+					state = 849 #PUGLIA
+					state = 117 #CAMPANIA
+					state = 156 #CALABRIA
+					state = 114 #SARDEGNA
+				}
+				is_controlled_by = ROOT
+			}
+			set_state_flag = ITA_cw_state_split
+		}
+	}
+	else = {
+		every_owned_state = {
+			limit = {
+				OR = {
+					state = 2 #LAZIO
+					state = 157 #ABRUZZO
+					state = 114 #SARDEGNA
+				}
+				is_controlled_by = ROOT
+			}
+			set_state_flag = ITA_cw_state_split
+		}
+	}
+
+	#If at war with ETH (while ETH controls any state), make sure controlled ETH states go to fascist side (Part I)
+	hidden_effect = {
+		if = {
+			limit = {
+				has_war_with = ETH
+				any_state = {
+					is_core_of = ETH
+					is_controlled_by = ETH
+				}
+			}
+			every_controlled_state = {
+				limit = {
+					NOT = { is_owned_by = ROOT }
+					is_core_of = ETH
+				}
+				set_state_flag = ITA_controlled_ethiopian_state_for_fascists_flag
+				if = {
+					limit = {
+						ROOT = { NOT = { has_country_flag = ITA_manage_ethiopian_states_in_cw_flag } }
+					}
+					ROOT = { set_country_flag = ITA_manage_ethiopian_states_in_cw_flag }
+				}
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			has_completed_focus = ITA_unite_the_opposition
+		}
+		start_civil_war = {
+			ideology = fascism
+			ruling_party = communism #Original tag
+			size = 0.5
+			states = all
+			states_filter = {
+				NOT = { has_state_flag = ITA_cw_state_split }
+			}
+
+			#keep_unit_leaders_trigger = {
+			#	OR = {
+			#		has_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+			#		has_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+			#	}
+			#}
+
+			keep_all_characters = yes
+		}
+	}
+	else = {
+		start_civil_war = {
+			ideology = fascism
+			ruling_party = communism #Original tag
+			size = 0.6
+			states = all
+			states_filter = {
+				NOT = { has_state_flag = ITA_cw_state_split }
+			}
+
+			#keep_unit_leaders_trigger = {
+			#	OR = {
+			#		has_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+			#		has_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+			#	}
+			#}
+
+			keep_all_characters = yes
+		}
+	}
+
+	#If at war with ETH (while ETH controls any state), make sure controlled ETH states go to fascist side (Part II)
+	hidden_effect = {
+		if = {
+			limit = {
+				has_country_flag = ITA_manage_ethiopian_states_in_cw_flag
+			}
+			random_other_country = {
+				limit = {
+					original_tag = ITA
+					has_government = fascism
+					has_civil_war = yes
+				}
+				every_state = {
+					limit = {
+						has_state_flag = ITA_controlled_ethiopian_state_for_fascists_flag
+					}
+					set_state_controller_to = PREV
+					clr_state_flag = ITA_controlled_ethiopian_state_for_fascists_flag
+				}
+			}
+		}
+	}
+
+	#Now deal with Suez Canal access if necessary
+	hidden_effect = {
+		if = {
+			limit = {
+				has_country_flag = SUEZ_SANCTIONS_FLAG
+			}
+			clr_country_flag = SUEZ_SANCTIONS_FLAG
+			random_other_country = {
+				limit = {
+					original_tag = ITA
+					has_government = fascism
+					has_civil_war = yes
+				}
+				set_country_flag = SUEZ_SANCTIONS_FLAG
+			}
+		}
+	}
+}
+
+ITA_anti_fascist_civil_war_deal_with_fascist_side = {
+	#DEAL WITH FASCIST SIDE
+	random_other_country = {
+		limit = {
+			original_tag = ITA
+			has_government = fascism
+			has_civil_war = yes
+		}
+		remove_power_balance = { id = ITA_power_balance }
+
+		set_country_flag = ITA_rsi_cw_flag #SET AS RSI ALIAS
+		set_cosmetic_tag = ITA_rsi
+
+		#Manage NSs
+		ITA_manage_national_spirits_in_civil_war = yes
+
+		#DAMAGE FROM ANTIFA FOCUSES
+		if = {
+			limit = {
+				ROOT = { has_completed_focus = ITA_organize_strikes_in_the_north }
+			}
+			set_temp_variable = { temp_targets_index = 0 }
+			while_loop_effect = {
+				limit = {
+					check_variable = { temp_targets_index = 4 compare = less_than }
+					any_owned_state = {
+						NOT = { has_state_flag = ITA_sabotaged_state_flag }
+					}
+				}
+				random_owned_state = {
+					limit = {
+						NOT = { has_state_flag = ITA_sabotaged_state_flag }
+						is_core_of = PREV
+						OR = {
+							industrial_complex > 0
+							arms_factory > 0
+							dockyard > 0
+						}
+						#Exclude small states with low development
+						NOT = {
+							state = 114 # SARDEGNA
+							state = 852 # ISTRIA
+							#state = 39 # ALTO ADIGE
+							state = 850 # TRENTINO
+						}
+					}
+					if = {
+						limit = {
+							industrial_complex > 0
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 2
+						}
+					}
+					if = {
+						limit = {
+							arms_factory > 0
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 2.5
+						}
+					}
+					if = {
+						limit = {
+							dockyard > 0
+						}
+						damage_building = {
+							type = dockyard
+							damage = 1.5
+						}
+					}
+					set_state_flag = ITA_sabotaged_state_flag
+					#log = "Sabotage in [THIS.GetName]"
+				}
+				add_to_temp_variable = { temp_targets_index = 1 }
+			}
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						has_state_flag = ITA_sabotaged_state_flag
+					}
+					clr_state_flag = ITA_sabotaged_state_flag
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = { has_completed_focus = ITA_the_southern_farmlands }
+			}
+			set_temp_variable = { temp_targets_index = 0 }
+			while_loop_effect = {
+				limit = {
+					check_variable = { temp_targets_index = 5 compare = less_than }
+					any_owned_state = {
+						NOT = { has_state_flag = ITA_sabotaged_state_flag }
+					}
+				}
+				random_owned_state = {
+					limit = {
+						NOT = { has_state_flag = ITA_sabotaged_state_flag }
+						is_core_of = PREV
+						OR = {
+							industrial_complex > 0
+							arms_factory > 0
+							dockyard > 0
+						}
+						#Exclude small states with low development
+						NOT = {
+							state = 114 # SARDEGNA
+							state = 852 # ISTRIA
+							state = 39 # ALTO ADIGE
+							state = 850 # TRENTINO
+						}
+					}
+					damage_building = {
+						type = infrastructure
+						damage = 1.5
+					}
+					if = {
+						limit = {
+							supply_node > 0
+						}
+						damage_building = {
+							type = supply_node
+							damage = 1.5
+						}
+					}
+
+					damage_units = {
+						state = THIS
+						limit = { original_tag = ITA }
+						org_damage = 0.25
+						str_damage = 0.1
+						ratio = yes
+						army = yes
+					}
+
+					set_state_flag = ITA_sabotaged_state_flag
+				}
+				add_to_temp_variable = { temp_targets_index = 1 }
+				#log = "Sabotage in [THIS.GetName]"
+			}
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						has_state_flag = ITA_sabotaged_state_flag
+					}
+					clr_state_flag = ITA_sabotaged_state_flag
+				}
+			}
+			set_capital = { state = 159 } # LOMBARDY (Milano)
+		}
+		else = {
+			set_capital = { state = 159 } # LOMBARDY (Milano)
+		}
+
+		# SPAWN SOME BLACKSHIRTS TO HELP OUT AI
+		capital_scope = {
+			create_unit = {
+				division = "division_template = \"Camicie Nere\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+				owner = PREV
+				count = 3
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 115 # SICILIA
+			}
+			115 = {
+				create_unit = {
+					division = "division_template = \"Camicie Nere\" start_experience_factor = 0.15 start_equipment_factor = 0.8"
+					owner = PREV
+					prioritize_location = 4159 #Messina
+					count = 1
+				}
+				create_unit = {
+					division = "division_template = \"Camicie Nere\" start_experience_factor = 0.15 start_equipment_factor = 0.8"
+					owner = PREV
+					prioritize_location = 4014 #Catania
+					count = 1
+				}
+			}
+		}
+	}
+
+	hidden_effect = {
+		#CHARACTERS
+		every_character = {
+			limit = {
+				has_character_flag = ITA_cw_character_fascist_side_flag
+				#OR = {
+				#	has_character_flag = ITA_cw_character_monarchist_side_flag
+				#	has_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+				#	has_character_flag = ITA_cw_character_antifascist_side_flag
+				#	has_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+				#}
+			}
+			#log = "[THIS.GetName] shouldn't be in [ITA.GetName]"
+			set_nationality = RSI
+		}
+		RSI = {
+			retire_country_leader = yes #Retire random auto-generated character attempting to supplant Mussolini
+		}
 	}
 }
 
@@ -1782,7 +3538,7 @@ ITA_manage_national_spirits_in_civil_war = {
 	set_variable = { ITA_re_modifier_army_sub_unit_militia_attack_factor = ITA.ITA_re_modifier_army_sub_unit_militia_attack_factor }
 	set_variable = { ITA_re_modifier_army_sub_unit_militia_speed_factor = ITA.ITA_re_modifier_army_sub_unit_militia_speed_factor }
 	set_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = ITA.ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor }
-	set_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = ITA.ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor }
+	set_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_attack_factor = ITA.ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_attack_factor }
 	set_variable = { ITA_re_special_forces_out_of_supply_factor = ITA.ITA_re_special_forces_out_of_supply_factor }
 	set_variable = { ITA_re_conscription_factor = ITA.ITA_re_conscription_factor }
 	set_variable = { ITA_re_command_power_gain_mult = ITA.ITA_re_command_power_gain_mult }
@@ -1897,6 +3653,7 @@ ITA_remove_king_vittorio_emanuele_as_idea = {
 ITA_add_king_vittorio_emanuele_back_as_idea = { #After having removed him
 	if = {
 		limit = {
+			has_completed_focus = ITA_the_new_emperor_of_ethiopia
 			ITA_vittorio_emanuele_iii = { has_character_flag = ITA_king_of_albania_flag }
 		}
 		add_ideas = vittorio_emanuele_albania_ethiopia
@@ -1907,6 +3664,12 @@ ITA_add_king_vittorio_emanuele_back_as_idea = { #After having removed him
 			ITA_vittorio_emanuele_iii = { has_character_flag = ITA_king_of_albania_flag }
 		}
 		add_ideas = vittorio_emanuele_king_of_albania
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = ITA_the_new_emperor_of_ethiopia
+		}
+		add_ideas = vittorio_emanuele_emperor_of_ethiopia
 	}
 	else = {
 		add_ideas = vittorio_emanuele
@@ -2337,6 +4100,7 @@ ITA_add_correct_mafia_rising_modifier_version = {
 		limit = {
 			has_dlc = "La Resistance"
 		}
+		add_dynamic_modifier = { modifier = ITA_mafia_on_the_rise }
 	}
 	else = {
 		add_dynamic_modifier = { modifier = ITA_mafia_on_the_rise_no_lar }
@@ -2794,6 +4558,9 @@ ITA_promote_umberto_to_country_leader = {
 		}
 	}
 	else_if = {
+		limit = {
+			has_completed_focus = ITA_democratic_king
+		}
 		add_country_leader_role = {
 			character =  ITA_prince_umberto
 			promote_leader = yes
@@ -2817,6 +4584,11 @@ ITA_promote_umberto_to_country_leader = {
 			character = ITA_prince_umberto
 			name = ITA_prince_umberto_king
 		}
+		#BoP
+		set_power_balance = {
+			id = ITA_power_balance
+			right_side = ITA_king_umberto_side
+		}
 	}
 	else = {
 		add_country_leader_role = {
@@ -2833,6 +4605,12 @@ ITA_promote_umberto_to_country_leader = {
 			character = ITA_prince_umberto
 			name = ITA_prince_umberto_king
 		}
+		#BoP
+		set_power_balance = {
+			id = ITA_power_balance
+			right_side = ITA_king_umberto_side
+		}
+
 	}
 
 	if = {
@@ -3094,47 +4872,162 @@ ITA_peace_out_eth_on_startup_effect = {
 	set_global_flag = ITA_peace_with_eth_on_startup_flag
 }
 
-ITA_replace_designers_by_improved_version_north = {
 
-	#MATERIEL
+ITA_replace_designers_by_improved_version_north = {
 	if = {
 		limit = {
-			has_idea = beretta
+			has_dlc = "Arms Against Tyranny"
 		}
-		swap_ideas = {
-			remove_idea = beretta
-			add_idea = ITA_beretta_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = lancia
-		}
-		swap_ideas = {
-			remove_idea = lancia
-			add_idea = ITA_lancia_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = breda
-		}
-		swap_ideas = {
-			remove_idea = breda
-			add_idea = ITA_breda_improved
+		every_military_industrial_organization = {
+			limit = {
+				OR = {
+					is_military_industrial_organization = ITA_fiat_organization
+					is_military_industrial_organization = ITA_crda_organization
+					is_military_industrial_organization = ITA_cantiere_oto_organization
+					is_military_industrial_organization = ITA_macchi_organization
+					is_military_industrial_organization = ITA_savoia_marchetti_organization
+					is_military_industrial_organization = ITA_caproni_organization
+					is_military_industrial_organization = ITA_piaggio_organization
+					is_military_industrial_organization = ITA_crda_cant_organization
+					is_military_industrial_organization = ITA_fiat_aviazione_organization
+					is_military_industrial_organization = ITA_beretta_organization
+					is_military_industrial_organization = ITA_lancia_organization
+					is_military_industrial_organization = ITA_breda_organization
+					is_military_industrial_organization = ITA_brescia_arsenal_organization
+				}
+			}
+			complete_mio_trait = ITA_mio_trait_new_industrialization_program
 		}
 	}
-	else_if = {
-		limit = {
-			has_idea = ITA_brescia_arsenal
+	else = {
+		#ARMOR
+		if = {
+			limit = {
+				has_idea =  fiat
+			}
+			swap_ideas = {
+				remove_idea = fiat
+				add_idea = ITA_fiat_improved
+			}
 		}
-		swap_ideas = {
-			remove_idea = ITA_brescia_arsenal
-			add_idea = ITA_brescia_arsenal_improved
+
+		#NAVAL
+		if = {
+			limit = {
+				has_idea =  crda
+			}
+			swap_ideas = {
+				remove_idea = crda
+				add_idea = ITA_crda_improved
+			}
 		}
+		else_if = {
+			limit = {
+				has_idea = ITA_cantiere_oto
+			}
+			swap_ideas = {
+				remove_idea = ITA_cantiere_oto
+				add_idea = ITA_cantiere_oto_improved
+			}
+		}
+
+		#AIRCRAFT
+		if = {
+			limit = {
+				has_idea = macchi
+			}
+			swap_ideas = {
+				remove_idea = macchi
+				add_idea = ITA_macchi_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = savoia_marchetti
+			}
+			swap_ideas = {
+				remove_idea = savoia_marchetti
+				add_idea = ITA_savoia_marchetti_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = caproni
+			}
+			swap_ideas = {
+				remove_idea = caproni
+				add_idea = ITA_caproni_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = piaggio
+			}
+			swap_ideas = {
+				remove_idea = piaggio
+				add_idea = ITA_piaggio_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ITA_crda_cant
+			}
+			swap_ideas = {
+				remove_idea = ITA_crda_cant
+				add_idea = ITA_crda_cant_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ITA_fiat_aviazione
+			}
+			swap_ideas = {
+				remove_idea = ITA_fiat_aviazione
+				add_idea = ITA_fiat_aviazione_improved
+			}
+		}
+
+		#MATERIEL
+		if = {
+			limit = {
+				has_idea = beretta
+			}
+			swap_ideas = {
+				remove_idea = beretta
+				add_idea = ITA_beretta_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = lancia
+			}
+			swap_ideas = {
+				remove_idea = lancia
+				add_idea = ITA_lancia_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = breda
+			}
+			swap_ideas = {
+				remove_idea = breda
+				add_idea = ITA_breda_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ITA_brescia_arsenal
+			}
+			swap_ideas = {
+				remove_idea = ITA_brescia_arsenal
+				add_idea = ITA_brescia_arsenal_improved
+			}
+		}
+
 	}
 
-	#INDUSTRIAL
+	#INDUSTRIAL (Always regardless of AAT)
 	if = {
 		limit = {
 			has_idea = danieli
@@ -3164,7 +5057,85 @@ ITA_replace_designers_by_improved_version_north = {
 	}
 }
 
-ITA_replace_designers_by_improved_version_south = {}}
+ITA_replace_designers_by_improved_version_south = {
+	if = {
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+		}
+		every_military_industrial_organization = {
+			limit = {
+				OR = {
+					is_military_industrial_organization = ITA_navalmeccanica_organization
+					is_military_industrial_organization = ITA_cantiere_navale_di_ancona_organization
+					is_military_industrial_organization = ITA_cantieri_navali_tosi_organization
+					is_military_industrial_organization = ITA_imam_organization
+				}
+			}
+			complete_mio_trait = ITA_mio_trait_new_industrialization_program
+		}
+	}
+	else = {
+		#NAVAL
+		if = {
+			limit = {
+				has_idea =  ITA_navalmeccanica
+			}
+			swap_ideas = {
+				remove_idea = ITA_navalmeccanica
+				add_idea = ITA_navalmeccanica_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ITA_cantiere_navale_di_ancona
+			}
+			swap_ideas = {
+				remove_idea = ITA_cantiere_navale_di_ancona
+				add_idea = ITA_cantiere_navale_di_ancona_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ITA_cantieri_navali_tosi
+			}
+			swap_ideas = {
+				remove_idea = ITA_cantieri_navali_tosi
+				add_idea = ITA_cantieri_navali_tosi_improved
+			}
+		}
+
+		#AIRCRAFT
+		if = {
+			limit = {
+				has_idea = ITA_imam
+			}
+			swap_ideas = {
+				remove_idea = ITA_imam
+				add_idea = ITA_imam_improved
+			}
+		}
+	}
+
+	#INDUSTRIAL (Always regardless of AAT)
+	if = {
+		limit = {
+			has_idea = ITA_terni_industria_ed_elettricita
+		}
+		swap_ideas = {
+			remove_idea = ITA_terni_industria_ed_elettricita
+			add_idea = ITA_terni_industria_ed_elettricita_improved
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = ITA_astaldi
+		}
+		swap_ideas = {
+			remove_idea = ITA_astaldi
+			add_idea = ITA_astaldi_improved
+		}
+	}
+}
 
 ########  ##          ###    ##    ## ########    ######## ######## ##     ## ########  ##          ###    ######## ########  ######
 ##     ## ##         ## ##   ###   ## ##             ##    ##       ###   ### ##     ## ##         ## ##      ##    ##       ##    ##
@@ -3184,6 +5155,7 @@ ITA_add_citta_dell_aria_templates = {
 				fixed_main_weapon_slot = heavy_mg_2x
 				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
 				fixed_auxiliary_weapon_slot_2 = bomb_locks
+				fixed_auxiliary_weapon_slot_3 = empty
 				engine_type_slot = engine_2_2x
 			}
 		icon = "GFX_ITA_heavy_fighter1_medium"
@@ -3230,20 +5202,25 @@ ITA_add_reggianes_exports_templates = {
 
 ITA_naval_air_coordination_templates = {
 
-	create_equipment_variant = {
-		name = "CANT Z.1007 Alcione"
-		type = medium_plane_airframe_1
-		parent_version = 0
-		modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = bomb_locks
-				fixed_auxiliary_weapon_slot_2 = torpedo_mounting
-				fixed_auxiliary_weapon_slot_3 = torpedo_mounting
-				special_type_slot_1 = lmg_defense_turret_2x
-				special_type_slot_2 = hmg_defense_turret_2x
-				engine_type_slot = engine_1_3x
-			}
-		icon = "GFX_ITA_tactical_bomber1_medium"
+	if = { #CANT Z.1007 Alcione also unlocked in Bomber Designs focus
+		limit = {
+			NOT = { has_completed_focus = ITA_bomber_designs }
+		}
+		create_equipment_variant = {
+			name = "CANT Z.1007 Alcione"
+			type = medium_plane_airframe_1
+			parent_version = 0
+			modules = {
+					fixed_main_weapon_slot = medium_bomb_bay
+					fixed_auxiliary_weapon_slot_1 = bomb_locks
+					fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+					fixed_auxiliary_weapon_slot_3 = torpedo_mounting
+					special_type_slot_1 = lmg_defense_turret_2x
+					special_type_slot_2 = hmg_defense_turret_2x
+					engine_type_slot = engine_3_3x #Increased tier due to thrust/weight issues
+				}
+			icon = "GFX_ITA_tactical_bomber1_medium"
+		}
 	}
 }
 
@@ -3285,13 +5262,13 @@ ITA_add_long_range_aircraft_templates = {
 		modules = {
 				fixed_main_weapon_slot = torpedo_mounting
 				fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-				fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+				#fixed_auxiliary_weapon_slot_2 = torpedo_mounting #Removed due to thrust/weight issues
 				fixed_auxiliary_weapon_slot_3 = large_bomb_bay
 				special_type_slot_1 = hmg_defense_turret_2x
 				special_type_slot_2 = hmg_defense_turret_2x
 				special_type_slot_3 = hmg_defense_turret_2x
 				special_type_slot_4 = flying_boat_large
-				engine_type_slot = engine_3_4x
+				engine_type_slot = engine_3_4x #Increased tier due to thrust/weight issues
 
 			}
 		icon = "GFX_ITA_strategic_bomber1_medium"
@@ -3312,20 +5289,25 @@ ITA_add_bomber_designs_templates = {
 		icon = "GFX_ITA_CAS2_medium"
 	}
 
-	create_equipment_variant = {
-		name = "CANT Z.1007 Alcione"
-		type = medium_plane_airframe_1
-		parent_version = 0
-		modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = bomb_locks
-				fixed_auxiliary_weapon_slot_2 = torpedo_mounting
-				fixed_auxiliary_weapon_slot_3 = torpedo_mounting
-				special_type_slot_1 = lmg_defense_turret_2x
-				special_type_slot_2 = hmg_defense_turret_2x
-				engine_type_slot = engine_2_3x
-			}
-		icon = "GFX_ITA_tactical_bomber1_medium"
+	if = { #CANT Z.1007 Alcione also unlocked in Naval-Air Coordination focus
+		limit = {
+			NOT = { has_completed_focus = ITA_naval_air_coordination }
+		}
+		create_equipment_variant = {
+			name = "CANT Z.1007 Alcione"
+			type = medium_plane_airframe_1
+			parent_version = 0
+			modules = {
+					fixed_main_weapon_slot = medium_bomb_bay
+					fixed_auxiliary_weapon_slot_1 = bomb_locks
+					fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+					fixed_auxiliary_weapon_slot_3 = torpedo_mounting
+					special_type_slot_1 = lmg_defense_turret_2x
+					special_type_slot_2 = hmg_defense_turret_2x
+					engine_type_slot = engine_3_3x #Increased tier due to thrust/weight issues
+				}
+			icon = "GFX_ITA_tactical_bomber1_medium"
+		}
 	}
 }
 
@@ -3403,7 +5385,7 @@ ITA_add_supremacy_in_the_skies_templates = {
 				fixed_main_weapon_slot = medium_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = torpedo_mounting
 				fixed_auxiliary_weapon_slot_2 = torpedo_mounting
-				engine_type_slot = engine_2_3x
+				engine_type_slot = engine_3_3x #Increased tier due to thrust/weight issues
 				special_type_slot_1 = hmg_defense_turret_2x
 				special_type_slot_2 = hmg_defense_turret_2x
 				special_type_slot_3 = armor_plate_medium
@@ -3482,7 +5464,7 @@ ITA_add_the_king_of_the_skies_template_production_and_wing = {
 ITA_add_basic_light_flamethrower_template = {
 	create_equipment_variant = {
 		name = "L3 Lf"
-		type = light_tank_chassis_1
+		type = light_tank_flame_chassis_1
 		parent_version = 0
 		modules = {
 			main_armament_slot = flamethrower
@@ -3496,6 +5478,51 @@ ITA_add_basic_light_flamethrower_template = {
 			tank_nsb_armor_upgrade = 1
 		}
 		icon = "GFX_ITA_basic_light_tank_medium"
+	}
+}
+
+ITA_add_basic_light_tank_destroyer_template = {
+	#L3 cc
+	if = {
+		limit = {
+			has_dlc = "Axis Armor Pack"
+		}
+		create_equipment_variant = {
+			name = "L3 cc"
+			type = light_tank_destroyer_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon
+				turret_type_slot = tank_light_fixed_superstructure_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 1
+				tank_nsb_armor_upgrade = 1
+			}
+			icon = "GFX_ITA_basic_light_td_medium"
+		}
+	}
+	else = {
+		create_equipment_variant = {
+			name = "L3 cc"
+			type = light_tank_destroyer_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon
+				turret_type_slot = tank_light_fixed_superstructure_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 1
+				tank_nsb_armor_upgrade = 1
+			}
+			icon = "GFX_ITA_basic_light_tank_medium"
+		}
 	}
 }
 
@@ -3526,7 +5553,7 @@ ITA_add_improved_light_tank_templates = {
 		#L40 da 47/32
 		create_equipment_variant = {
 			name = "Semovente L40 da 47/32"
-			type = light_tank_destroyer_chassis_1
+			type = light_tank_destroyer_chassis_2
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_medium_cannon
@@ -3546,7 +5573,7 @@ ITA_add_improved_light_tank_templates = {
 		#L40 da 47/32
 		create_equipment_variant = {
 			name = "Semovente L40 da 47/32"
-			type = light_tank_destroyer_chassis_1
+			type = light_tank_destroyer_chassis_2
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_medium_cannon
@@ -3611,7 +5638,7 @@ ITA_add_basic_medium_tank_templates = {
 		}
 		create_equipment_variant = {
 			name = "Semovente da 75/18"
-			type = medium_tank_chassis_1
+			type = medium_tank_artillery_chassis_1
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_close_support_gun
@@ -3631,7 +5658,7 @@ ITA_add_basic_medium_tank_templates = {
 	else = {
 		create_equipment_variant = {
 			name = "Semovente da 75/18"
-			type = medium_tank_chassis_1
+			type = medium_tank_artillery_chassis_1
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_close_support_gun
@@ -3656,7 +5683,7 @@ ITA_add_basic_medium_tank_templates = {
 		}
 		create_equipment_variant = {
 			name = "Semovente da 90/53"
-			type = medium_tank_chassis_1
+			type = medium_tank_destroyer_chassis_1
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon_2
@@ -3669,13 +5696,15 @@ ITA_add_basic_medium_tank_templates = {
 				tank_nsb_engine_upgrade = 3
 				tank_nsb_armor_upgrade = 3
 			}
-			icon = "GFX_ITA_advanced_medium_td_medium"
+			icon = GFX_ITA_advanced_medium_td_medium
+			role_icon_index = 2
+			model = ITA_medium_tank_destroyer_brigade_2_entity
 		}
 	}
 	else = {
 		create_equipment_variant = {
 			name = "Semovente da 90/53"
-			type = medium_tank_chassis_1
+			type = medium_tank_destroyer_chassis_1
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon_2
@@ -3742,7 +5771,7 @@ ITA_add_improved_medium_tank_templates = {
 		}
 		create_equipment_variant = {
 			name = "Semovente da 75/34"
-			type = medium_tank_chassis_2
+			type = medium_tank_destroyer_chassis_2
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon
@@ -3756,13 +5785,13 @@ ITA_add_improved_medium_tank_templates = {
 				tank_nsb_engine_upgrade = 4
 				tank_nsb_armor_upgrade = 4
 			}
-			icon = "GFX_ITA_basic_light_td_medium"
+			icon = "GFX_ITA_improved_medium_td_medium"
 		}
 	}
 	else = {
 		create_equipment_variant = {
 			name = "Semovente da 75/34"
-			type = medium_tank_chassis_2
+			type = medium_tank_destroyer_chassis_2
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon
@@ -3787,10 +5816,10 @@ ITA_add_improved_medium_tank_templates = {
 		}
 		create_equipment_variant = {
 			name = "Semovente da 105/25"
-			type = medium_tank_chassis_2
+			type = medium_tank_artillery_chassis_2
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_high_velocity_cannon_2
+				main_armament_slot = tank_medium_howitzer_2
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_welded_armor
@@ -3802,16 +5831,16 @@ ITA_add_improved_medium_tank_templates = {
 				tank_nsb_engine_upgrade = 4
 				tank_nsb_armor_upgrade = 6
 			}
-			icon = "GFX_ITA_improved_medium_td_medium"
+			icon = "GFX_ITA_advanced_medium_art_medium"
 		}
 	}
 	else = {
 		create_equipment_variant = {
 			name = "Semovente da 105/25"
-			type = medium_tank_chassis_2
+			type = medium_tank_artillery_chassis_2
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_high_velocity_cannon_2
+				main_armament_slot = tank_medium_howitzer_2
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_welded_armor
@@ -3894,7 +5923,7 @@ ITA_add_improved_heavy_tank_templates = {
 }
 
 ITA_add_advanced_medium_tank_templates = {
-	#SEMOVENTE da 75/46 (Nedium AT)
+	#SEMOVENTE da 75/46 (Medium AT)
 	if = {
 		limit = {
 			has_dlc = "Axis Armor Pack"
@@ -3949,7 +5978,7 @@ ITA_add_advanced_medium_tank_templates = {
 			type = medium_tank_artillery_chassis_3
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_medium_howitzer_2
+				main_armament_slot = tank_medium_howitzer
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_riveted_armor
@@ -3968,7 +5997,7 @@ ITA_add_advanced_medium_tank_templates = {
 			type = medium_tank_artillery_chassis_3
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_medium_howitzer_2
+				main_armament_slot = tank_medium_howitzer
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_riveted_armor
@@ -3999,7 +6028,8 @@ ITA_add_advanced_medium_tank_templates = {
 			tank_nsb_engine_upgrade = 6
 			tank_nsb_armor_upgrade = 3
 		}
-		icon = "GFX_ITA_basic_medium_tank_medium"
+		icon = "GFX_ITA_improved_medium_tank_medium"
+		model = ITA_medium_armor_1_entity
 	}
 }
 
@@ -4296,6 +6326,365 @@ ITA_create_stefanina_moro_operative = { #COMMUNIST
 	}
 }
 
+
+
+
+
+#########################
+########## BOP ##########
+#########################
+
+########## INCREASE/DECREASE WITH TOOLTIPS FOR OTHER SIDES ##########
+
+# COMMUNISM (Negative since Communist side is on the left)
+ITA_bop_absurdly_high_increase_communism_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -1
+		tooltip_side = ITA_communism_side
+	}
+}
+
+ITA_bop_very_high_increase_communism_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -0.25
+		tooltip_side = ITA_communism_side
+	}
+}
+
+ITA_bop_high_increase_communism_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -0.2
+		tooltip_side = ITA_communism_side
+	}
+}
+
+ITA_bop_medium_increase_communism_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -0.15
+		tooltip_side = ITA_communism_side
+	}
+}
+
+ITA_bop_low_increase_communism_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -0.1
+		tooltip_side = ITA_communism_side
+	}
+}
+
+ITA_bop_very_low_increase_communism_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -0.05
+		tooltip_side = ITA_communism_side
+	}
+}
+
+# DEMOCRATIC
+ITA_bop_absurdly_high_increase_democratic_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 1
+		tooltip_side = ITA_democratic_side
+	}
+}
+
+ITA_bop_very_high_increase_democratic_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.25
+		tooltip_side = ITA_democratic_side
+	}
+}
+
+ITA_bop_high_increase_democratic_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.2
+		tooltip_side = ITA_democratic_side
+	}
+}
+
+ITA_bop_medium_increase_democratic_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.15
+		tooltip_side = ITA_democratic_side
+	}
+}
+
+ITA_bop_low_increase_democratic_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.1
+		tooltip_side = ITA_democratic_side
+	}
+}
+
+ITA_bop_very_low_increase_democratic_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.05
+		tooltip_side = ITA_democratic_side
+	}
+}
+
+#MONARCHIST - VITTORIO
+ITA_bop_absurdly_high_increase_king_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 1
+		tooltip_side = ITA_king_side
+	}
+}
+
+ITA_bop_very_high_increase_king_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.25
+		tooltip_side = ITA_king_side
+	}
+}
+
+ITA_bop_high_increase_king_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.2
+		tooltip_side = ITA_king_side
+	}
+}
+
+ITA_bop_medium_increase_king_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.15
+		tooltip_side = ITA_king_side
+	}
+}
+
+ITA_bop_low_increase_king_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.1
+		tooltip_side = ITA_king_side
+	}
+}
+
+ITA_bop_very_low_increase_king_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.05
+		tooltip_side = ITA_king_side
+	}
+}
+
+# MONARCHIST - UMBERTO
+ITA_bop_absurdly_high_increase_king_umberto_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 1
+		tooltip_side = ITA_king_umberto_side
+	}
+}
+
+ITA_bop_very_high_increase_king_umberto_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.25
+		tooltip_side = ITA_king_umberto_side
+	}
+}
+
+ITA_bop_high_increase_king_umberto_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.2
+		tooltip_side = ITA_king_umberto_side
+	}
+}
+
+ITA_bop_medium_increase_king_umberto_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.15
+		tooltip_side = ITA_king_umberto_side
+	}
+}
+
+ITA_bop_low_increase_king_umberto_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.1
+		tooltip_side = ITA_king_umberto_side
+	}
+}
+
+ITA_bop_very_low_increase_king_umberto_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.05
+		tooltip_side = ITA_king_umberto_side
+	}
+}
+
+# POPE (NEGATIVE BECAUSE IT'S ON THE LEFT SIDE)
+ITA_bop_absurdly_high_increase_pope_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -1
+		tooltip_side = ITA_pope_side
+	}
+}
+
+ITA_bop_very_high_increase_pope_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -0.25
+		tooltip_side = ITA_pope_side
+	}
+}
+
+ITA_bop_high_increase_pope_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -0.2
+		tooltip_side = ITA_pope_side
+	}
+}
+
+ITA_bop_medium_increase_pope_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -0.15
+		tooltip_side = ITA_pope_side
+	}
+}
+
+ITA_bop_low_increase_pope_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -0.1
+		tooltip_side = ITA_pope_side
+	}
+}
+
+ITA_bop_very_low_increase_pope_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = -0.05
+		tooltip_side = ITA_pope_side
+	}
+}
+
+#BALBO
+ITA_bop_absurdly_high_increase_balbo_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 1
+		tooltip_side = ITA_balbo_side
+	}
+}
+
+ITA_bop_very_high_increase_balbo_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.25
+		tooltip_side = ITA_balbo_side
+	}
+}
+
+ITA_bop_high_increase_balbo_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.2
+		tooltip_side = ITA_balbo_side
+	}
+}
+
+ITA_bop_medium_increase_balbo_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.15
+		tooltip_side = ITA_balbo_side
+	}
+}
+
+ITA_bop_low_increase_balbo_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.1
+		tooltip_side = ITA_balbo_side
+	}
+}
+
+ITA_bop_very_low_increase_balbo_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.05
+		tooltip_side = ITA_balbo_side
+	}
+}
+
+# GRANDI
+ITA_bop_absurdly_high_increase_grandi_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 1
+		tooltip_side = ITA_grandi_side
+	}
+}
+
+ITA_bop_very_high_increase_grandi_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.25
+		tooltip_side = ITA_grandi_side
+	}
+}
+
+ITA_bop_high_increase_grandi_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.2
+		tooltip_side = ITA_grandi_side
+	}
+}
+
+ITA_bop_medium_increase_grandi_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.15
+		tooltip_side = ITA_grandi_side
+	}
+}
+
+ITA_bop_low_increase_grandi_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.1
+		tooltip_side = ITA_grandi_side
+	}
+}
+
+ITA_bop_very_low_increase_grandi_side_effect = {
+	add_power_balance_value = {
+		id = ITA_power_balance
+		value = 0.05
+		tooltip_side = ITA_grandi_side
+	}
+}
+
+
+###########################################
+########## IDEOLOGY NAMES FOR NS ##########
+###########################################
+
+
 ITA_replace_stuff_based_on_ideology_effect = {
 	ROOT = {
 		if = { # No king
@@ -4438,6 +6827,148 @@ ITA_replace_stuff_based_on_ideology_effect = {
 				}
 				remove_dynamic_modifier = { modifier = ITA_regia_marina_3_alt_dynamic_modifier }
 				add_dynamic_modifier = { modifier = ITA_regia_marina_3_dynamic_modifier }
+			}
+		}
+	}
+}
+
+ITA_forced_italo_ethiopian_peace_deal = {
+	if = {
+		limit = {
+			OR = {
+				AND = {
+					ETH = {
+						any_core_state = {
+							is_controlled_by = ITA
+						}
+					}
+					ITA = {
+						any_owned_state = {
+							is_controlled_by = ETH
+						}
+					}
+				}
+				AND = {
+					ITA = { surrender_progress < 0.01 }
+					ETH = { surrender_progress < 0.01 }
+				}
+			}
+		}
+		ETH = {
+			white_peace = ITA
+		}
+	}
+	else_if = {
+		limit = {
+			ETH = {
+				all_core_state = {
+					is_controlled_by = ITA
+				}
+			}
+		}
+		ITA = {
+			start_peace_conference = {
+				tag = ETH
+				score_factor = 0.25
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ETH = { surrender_progress > 0.74 }
+		}
+		ITA = {
+			start_peace_conference = {
+				tag = ETH
+				score_factor = 0.20
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ETH = { surrender_progress > 0.49 }
+		}
+		ITA = {
+			start_peace_conference = {
+				tag = ETH
+				score_factor = 0.15
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ETH = { surrender_progress > 0.19 }
+		}
+		ITA = {
+			start_peace_conference = {
+				tag = ETH
+				score_factor = 0.1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ETH = { surrender_progress > 0 }
+		}
+		ITA = {
+			start_peace_conference = {
+				tag = ETH
+				score_factor = 0.05
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ITA = { surrender_progress > 0.74 }
+		}
+		ETH = {
+			start_peace_conference = {
+				tag = ITA
+				score_factor = 0.125
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ITA = { surrender_progress > 0.49 }
+		}
+		ETH = {
+			start_peace_conference = {
+				tag = ITA
+				score_factor = 0.1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ITA = { surrender_progress > 0.19 }
+		}
+		ETH = {
+			start_peace_conference = {
+				tag = ITA
+				score_factor = 0.075
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ITA = { surrender_progress > 0 }
+		}
+		ETH = {
+			start_peace_conference = {
+				tag = ITA
+				score_factor = 0.05
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ITA = { surrender_progress < 0.01 }
+		}
+		ETH = {
+			start_peace_conference = {
+				tag = ITA
+				score_factor = 0.025
 			}
 		}
 	}

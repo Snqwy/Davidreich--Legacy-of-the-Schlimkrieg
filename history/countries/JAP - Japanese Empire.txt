@@ -10,6 +10,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 	idea_house_of_lyons_dr
+	idea_warrior_culture_dr
 	idea_army_navy_rivalry_dr
 }
 

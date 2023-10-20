@@ -104,4 +104,4 @@ recruit_character = KAZ_coi
 recruit_character = KAZ_ai2
 recruit_character = KAZ_democratic_guy
 recruit_character = KAZ_ar
-recruit_character = KAZ_acgs
+#recruit_character = KAZ_acgs #character not in file

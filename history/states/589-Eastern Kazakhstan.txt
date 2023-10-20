@@ -11,6 +11,7 @@ state={
 
 		}
 		add_core_of = KAZ
+		add_core_of = ALT
 		victory_points = {
 			1668 1
 		}

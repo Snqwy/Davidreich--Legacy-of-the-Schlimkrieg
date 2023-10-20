@@ -9,7 +9,6 @@ state={
 		victory_points={11386 1}
 		buildings={infrastructure=3}
 		add_core_of=POL
-		add_core_of=GER
 	}
 	provinces={266 3351 3380 6375 6402 9327 9346 9372 9398 11245 11386}
 	local_supplies=12.0 
