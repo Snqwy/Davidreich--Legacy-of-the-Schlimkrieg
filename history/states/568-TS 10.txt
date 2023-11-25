@@ -15,6 +15,7 @@ state={
 			4724 1 
 		}
 		add_core_of = OVO
+		add_core_of = KHA
 	}
 
 	provinces={

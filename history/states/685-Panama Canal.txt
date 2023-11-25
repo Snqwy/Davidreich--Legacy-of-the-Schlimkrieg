@@ -18,6 +18,7 @@ state={
 			}
 		}
 		add_core_of = NIC
+		add_claim_by = COL
 	}
 	
 	provinces={ 7617 }

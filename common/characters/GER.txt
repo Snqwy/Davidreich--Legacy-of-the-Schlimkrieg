@@ -1368,9 +1368,6 @@ characters={
 			allowed = {
 				original_tag = GER
 			}
-			available = {
-				has_completed_focus = GER_westwall_dr
-			}
 			traits = {
 				fortification_engineer 
 			}
@@ -1777,7 +1774,7 @@ characters={
 				has_dlc = "Waking the Tiger"
 			}
 			available = {
-				has_completed_focus = GER_reestablish_free_elections 
+				#has_completed_focus = GER_reestablish_free_elections 
 			}
 			traits = {
 				liberal_journalist 

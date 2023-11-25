@@ -1,4 +1,9 @@
 ﻿capital=439 set_stability=0.6 set_war_support=0.1 set_technology={infantry_weapons=1 infantry_weapons1=1 tech_support=1 tech_engineers=1 tech_recon=1 trench_warfare=1 fleet_in_being=1 CAS1=1 early_fighter=1 fuel_silos=1 fuel_refining=1}
+
+set_autonomy = {
+	target = BRM
+	autonomous_state = autonomy_puppet
+}
 ##################################################
 recruit_character = RAJ_v_d_savarkar
 recruit_character = RAJ_p_krishna_pillai
@@ -48,4 +53,4 @@ if = {
 	recruit_character = RAJ_kodandera_subayya_thimayya
 	recruit_character = RAJ_jayanto_nath_chaudhuri
 }
-if={limit={not={has_dlc="Man the Guns"}}set_technology={transport=1}}if={limit={has_dlc="Man the Guns"}set_technology={ mtg_transport=1}}if={limit={has_dlc="Battle for the Bosporus"}set_technology={camelry=1}}if={limit={NOT={has_dlc="No Step Back"}}set_technology={gwtank=1}}if={limit={has_dlc="No Step Back"}set_technology={gwtank_chassis=1}}set_convoys=30 set_politics={ruling_party=neutrality last_election="1935.11.14"election_frequency=48 elections_allowed=no}set_popularities={democratic=17 fascism=2 communism=1 neutrality=80}if={limit={has_dlc="La Resistance"}create_operative_leader={name="Noor Inayat Khan"GFX=GFX_portrait_noor_inayat_khan bypass_recruitment=no available_to_spy_master=yes female=yes nationalities={RAJ}}
+if={limit={not={has_dlc="Man the Guns"}}set_technology={transport=1}}if={limit={has_dlc="Man the Guns"}set_technology={ mtg_transport=1}}if={limit={has_dlc="Battle for the Bosporus"}set_technology={camelry=1}}if={limit={NOT={has_dlc="No Step Back"}}set_technology={gwtank=1}}if={limit={has_dlc="No Step Back"}set_technology={gwtank_chassis=1}}set_convoys=30 set_politics={ruling_party=neutrality last_election="1935.11.14"election_frequency=48 elections_allowed=no}set_popularities={democratic=17 fascism=2 communism=1 neutrality=80}if={limit={has_dlc="La Resistance"}create_operative_leader={name="Noor Inayat Khan"GFX=GFX_portrait_noor_inayat_khan bypass_recruitment=no available_to_spy_master=yes female=yes nationalities={RAJ}}}

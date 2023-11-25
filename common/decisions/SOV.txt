@@ -4103,11 +4103,7 @@ SOV_gosproyektstroy_decision_category = {
 		fire_only_once = yes
 
 		visible = {
-			NOT = { has_country_flag = SOV_gosproyektstroy_level_2_flag }
-			NOT = { has_country_flag = SOV_gosproyektstroy_level_3_flag }
-			country_exists = FROM
-			NOT = { has_war_with = FROM }
-			FROM = { SOV_is_valid_subject = yes }
+			always=no
 		}
 
 		cost = SOV_gosproyektstroy_decision_cost

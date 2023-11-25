@@ -1093,7 +1093,7 @@ characters={
 				original_tag = JAP
 			}
 			available = {
-				has_completed_focus = JAP_army_expansion
+				#has_completed_focus = JAP_army_expansion
 			}
 			traits = {
 				army_chief_drill_3
@@ -1399,7 +1399,7 @@ characters={
 					limit = {
 						has_dlc = "Waking the Tiger"
 					}
-					has_completed_focus = JAP_the_unthinkable_option 
+					#has_completed_focus = JAP_the_unthinkable_option 
 				}
 				if = {
 					limit = {
@@ -1442,7 +1442,7 @@ characters={
 					limit = {
 						has_dlc = "Waking the Tiger"
 					}
-					has_completed_focus = JAP_strengthen_civilian_government 
+					#has_completed_focus = JAP_strengthen_civilian_government 
 				}
 				if = {
 					limit = {

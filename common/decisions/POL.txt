@@ -1393,16 +1393,7 @@ POL_miedzymorze_decisions = {
 		}
 
 		visible = {
-			FIN = {
-				is_ai = yes
-				exists = yes
-				NOT = {
-					is_in_faction = yes
-					has_war_with = ROOT
-					has_country_flag = rejected_miedzymorze_flag
-					has_country_flag = delegation_recieved_flag
-				}
-			}
+			always=no
 		}
 
 		cost = 10

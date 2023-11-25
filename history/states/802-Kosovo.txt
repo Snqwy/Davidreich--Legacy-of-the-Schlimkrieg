@@ -15,7 +15,7 @@ state={
 		add_core_of = ALB
 		add_core_of = YUG 
 		add_core_of = SER
-
+		add_claim_by = ITA
 	}
 
 	provinces={

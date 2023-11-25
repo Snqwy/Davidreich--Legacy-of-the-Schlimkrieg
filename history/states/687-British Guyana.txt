@@ -12,6 +12,7 @@ state={
 	history={
 		add_core_of = DOM
 		add_core_of = GYA
+		add_claim_by = COL
 		owner = DOM
 		victory_points = {
 			4982 1

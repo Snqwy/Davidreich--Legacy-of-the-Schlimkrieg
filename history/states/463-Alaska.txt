@@ -14,6 +14,7 @@ state={
 
 		}
 		add_core_of = CSA
+		add_claim_by = CAN
 		victory_points = {
 			13090 1 
 		}

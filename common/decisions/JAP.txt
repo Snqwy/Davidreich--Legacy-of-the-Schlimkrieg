@@ -1518,6 +1518,7 @@ operations = {
 		}
 
 		visible = {
+			always=no
 			NOT = {
 				has_global_flag = JAP_kalkin_gol
 			}

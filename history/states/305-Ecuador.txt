@@ -12,6 +12,7 @@ state={
 	history={
 		owner = PRU
 		add_core_of = PRU
+		add_claim_by = COL
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

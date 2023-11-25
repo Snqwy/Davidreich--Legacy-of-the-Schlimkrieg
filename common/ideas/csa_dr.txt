@@ -1,0 +1,5 @@
+ideas={country={
+    
+idea_brewing_radicalism_dr={picture=generic_shield_against_communism allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={communism_drift=0.05 fascism_drift=0.05}}
+
+}}

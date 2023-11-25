@@ -1,5 +1,3 @@
-#mitteldaveuropa_decision_category_dr={}
-
 rekindle_alliance_decision_category_dr={
 	
 	rekindle_alliance_decision_1_dr={icon=GFX_decision_eng_ally_imperialist_coup available={ITA={has_government=neutrality}}cost=0 fire_only_once=yes ai_will_do={factor=200}complete_effect={ITA={country_event=dr.23}}
@@ -8,9 +6,26 @@ rekindle_alliance_decision_category_dr={
 
 }}}
 
+ethiopia_decision_category_dr={
+	
+	ethiopia_decision_1_dr={icon=GFX_decision_generic_ignite_civil_war available={country_exists=ETH}cost=0 fire_only_once=yes ai_will_do={factor=200}}
+
+	ethiopia_decision_2_dr={icon=GFX_decision_generic_merge_plant_aircraft available={NOT={has_war_with=ETH}country_exists=ETH}cost=15 fire_only_once=yes ai_will_do={factor=200}}
+
+	ethiopia_decision_3_dr={icon=GFX_decision_ETH_chitet available={NOT={has_war_with=ETH}country_exists=ETH}cost=20 fire_only_once=yes ai_will_do={factor=200}complete_effect={hidden_effect={set_autonomy={target=AFA autonomy_state=autonomy_puppet end_wars=no}AFA={set_cosmetic_tag=afar_dr}}}}
+
+	ethiopia_decision_4_dr={icon=GFX_decision_ETH_chitet available={NOT={has_war_with=ETH}country_exists=ETH}cost=20 fire_only_once=yes ai_will_do={factor=200}complete_effect={hidden_effect={set_autonomy={target=SOM autonomy_state=autonomy_puppet end_wars=no}SOM={set_cosmetic_tag=somalia_dr}}}}
+
+	ethiopia_decision_5_dr={icon=GFX_decision_ger_military_buildup available={NOT={has_war_with=ETH}country_exists=ETH}cost=35 fire_only_once=yes ai_will_do={factor=200}}
+
+	ethiopia_decision_6_dr={icon=GFX_decision_generic_factory available={NOT={has_war_with=ETH}country_exists=ETH}cost=35 fire_only_once=yes ai_will_do={factor=200}}
+
+	ethiopia_decision_7_dr={icon=GFX_decision_generic_political_rally available={NOT={has_war_with=ETH}country_exists=ETH}cost=35 fire_only_once=yes ai_will_do={factor=200}}
+}
+
 local_collaboration_decision_category_dr={
 
-local_collaboration_decision_dr={
+#local_collaboration_decision_dr={
         
 		icon = GFX_decision_generic_police_action
 
@@ -28,4 +43,5 @@ local_collaboration_decision_dr={
 
 		complete_effect = {FROM={add_state_modifier={state_modifier_local_collaboration}}
         }
-    }}
+    }
+}

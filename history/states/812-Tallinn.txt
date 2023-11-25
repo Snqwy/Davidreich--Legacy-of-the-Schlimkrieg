@@ -4,11 +4,8 @@ state={
 	name="STATE_812"
 
 	history={
-		owner = FIN
-		add_core_of = FIN
-		victory_points = {
-			3152 5 
-		}
+		owner = LAT
+		add_core_of = LAT
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1
@@ -20,7 +17,7 @@ state={
 			}
 
 		}
-		add_core_of = LAT
+		add_core_of = FIN
 
 	}
 

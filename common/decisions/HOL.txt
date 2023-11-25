@@ -2073,6 +2073,7 @@ political_actions = {
 
 		visible = {
 			original_tag = HOL
+			always=no
 		}
 
 		complete_effect = {

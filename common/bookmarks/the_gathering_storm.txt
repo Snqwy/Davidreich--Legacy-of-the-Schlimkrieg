@@ -37,10 +37,24 @@ bookmarks = {
 				idea_victor_of_the_schlimkrieg_dr
 				idea_post_schlimkrieg_demobilization_dr
 			}
+			focuses = {
+				FRA_a_new_order_dr
+				FRA_reform_the_entente_dr
+				FRA_the_right_to_conquer_dr
+			}
 		}
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
+			ideas = {
+				idea_the_mafia_dr
+				idea_birthplace_of_maxism_dr
+			}
+			focuses = {
+				ITA_death_of_maxism_dr
+				ITA_spazio_vitale_dr
+				ITA_imperivm_romanvm_dr
+			}
 		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
@@ -97,6 +111,11 @@ bookmarks = {
 			minor = yes
 			history = ""
 			ideology = democratic
+			ideas = {
+				idea_irish_republican_army_dr
+				idea_memories_of_1929_dr
+				idea_the_end_nears_dr
+			}
 		}
 		"CSA"={
 			minor = yes
@@ -104,6 +123,7 @@ bookmarks = {
 			ideology = neutrality
 			ideas = {
 				idea_the_great_game_dr
+				idea_brewing_radicalism_dr
 			}
 		}
 		"MEX"={
@@ -129,6 +149,7 @@ bookmarks = {
 				idea_feudal_society_dr
 				idea_thunder_dragon_nation_dr
 				idea_early_industrialization_dr
+			}
 		}
 		"ETH"={
 			minor = yes

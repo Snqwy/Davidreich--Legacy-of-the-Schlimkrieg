@@ -1,1 +1,1 @@
-﻿capital=126 add_ideas={idea_snapped_dr}
+﻿capital=126 add_ideas={idea_snapped_dr}set_politics={ruling_party=neutrality last_election="1933.10.16" election_frequency=36 elections_allowed=yes}set_popularities={neutrality=100}

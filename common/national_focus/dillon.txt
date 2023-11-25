@@ -1,55 +1,8 @@
 ﻿focus_tree={id=japan_wtt_focus country={factor=0 modifier={add=20 tag=JAP}}default=no continuous_focus_position={x=3500 y=1200}
 
-focus={id=JAP_vanguard_faction_dr icon=GFX_focus_generic_join_comintern x=3 y=0 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes mutually_exclusive={focus=JAP_populist_faction_dr focus=JAP_militarist_faction_dr focus=JAP_emperors_faction_dr focus=JAP_furry_faction_dr}ai_will_do={factor=1}completion_reward={set_politics={ruling_party=communism elections=yes}add_popularity={ideology=communism popularity=0.2}}}
+focus={id=JAP_vanguard_faction_dr icon=GFX_focus_generic_join_comintern x=3 y=0 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes mutually_exclusive={focus=JAP_populist_faction_dr focus=JAP_militarist_faction_dr focus=JAP_emperors_faction_dr focus=JAP_furry_faction_dr}ai_will_do={factor=1}completion_reward={set_politics={ruling_party=communism elections=yes}add_popularity={ideology=communism popularity=0.2}}}focus={id=JAP_cleanse_the_military_dr icon=GFX_focus_SOV_military_purge x=4 y=2 cost=8 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=JAP_the_emperors_worsening_state_dr}ai_will_do={factor=1}completion_reward={add_command_power=-30 army_experience=-30 air_experience=-30 navy_experience=-30 add_manpower=-500000 add_stability=-0.1 add_popularity={ideology=communism popularity=0.05}}}focus={id=JAP_cleanse_the_government_dr icon=GFX_focus_SOV_the_last_purge x=2 y=2 cost=8 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=JAP_the_emperors_worsening_state_dr}ai_will_do={factor=1}completion_reward={add_political_power=-100 add_war_support=-0.15 add_stability=-0.15 add_popularity={ideology=communism popularity=0.05}}}focus={id=JAP_great_leap_forward_dr icon=GFX_focus_prc_infiltration x=2 y=5 cost=10 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=JAP_insanity_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_great_leap_forward_dr}add_popularity={ideology=communism popularity=0.05}add_political_power=50}}focus={id=JAP_cultural_revolution_dr icon=GFX_focus_prc_agrarian_socialism x=4 y=5 cost=10 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=JAP_insanity_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_cultural_revolution_dr}add_popularity={ideology=communism popularity=0.05}add_political_power=50}}focus={id=JAP_red_universities_dr icon=GFX_focus_generic_socialist_science x=3 y=6 cost=6 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=JAP_great_leap_forward_dr}prerequisite={focus=JAP_cultural_revolution_dr}ai_will_do={factor=1}completion_reward={add_research_slot=1}}focus={id=JAP_new_economic_plan_dr icon=GFX_goal_generic_soviet_construction x=1 y=6 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=JAP_great_leap_forward_dr}prerequisite={focus=JAP_cultural_revolution_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_new_economic_plan_dr}}}focus={id=JAP_reeducation_programs_dr icon=GFX_focus_generic_military_academy x=5 y=6 cost=5 search_filters={FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=JAP_great_leap_forward_dr}prerequisite={focus=JAP_cultural_revolution_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_reeducation_programs_dr}}}focus={id=JAP_a_new_era_dr icon=GFX_goal_support_communism x=3 y=7 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=JAP_new_economic_plan_dr}prerequisite={focus=JAP_red_universities_dr}prerequisite={focus=JAP_reeducation_programs_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=communism popularity=0.15}}}focus={id=JAP_fart_dr icon=GFX_focus_BUL_destroy_the_zveno x=3 y=8 cost=6 available_if_capitulated=yes bypass={is_in_faction=yes}prerequisite={focus=JAP_a_new_era_dr}ai_will_do={factor=1}completion_reward={create_faction="F.A.R.T."}}focus={id=JAP_reclaim_korea_dr icon=GFX_goal_generic_major_war x=2 y=9 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available_if_capitulated=yes prerequisite={focus=JAP_fart_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=KOR}}}focus={id=JAP_reclaim_manchuria_dr icon=GFX_goal_generic_major_war x=4 y=9 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available_if_capitulated=yes prerequisite={focus=JAP_fart_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=MAN}}}focus={id=JAP_formalize_the_alliance_dr icon=GFX_focus_por_workers_of_iberia x=4 y=11 cost=6 available_if_capitulated=yes prerequisite={focus=JAP_ally_with_the_ccp_dr}mutually_exclusive={focus=JAP_pledge_our_support_dr}ai_will_do={factor=1}completion_reward={JAP={add_to_faction=PRC}}}focus={id=JAP_far_eastern_communism_dr icon=GFX_goal_generic_attack_allies x=3 y=12 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available_if_capitulated=yes prerequisite={focus=JAP_formalize_the_alliance_dr focus=JAP_pledge_our_support_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=FER}}}focus={id=JAP_populist_faction_dr icon=GFX_goal_support_democracy x=8 y=0 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes mutually_exclusive={focus=JAP_vanguard_faction_dr focus=JAP_militarist_faction_dr focus=JAP_emperors_faction_dr focus=JAP_furry_faction_dr}ai_will_do={factor=1}completion_reward={set_politics={ruling_party=democratic elections=yes}add_popularity={ideology=democratic popularity=0.2}}}focus={id=JAP_militarist_faction_dr icon=GFX_focus_AST_war_japan x=13 y=0 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes mutually_exclusive={focus=JAP_vanguard_faction_dr focus=JAP_populist_faction_dr focus=JAP_emperors_faction_dr focus=JAP_furry_faction_dr}ai_will_do={factor=1}completion_reward={set_politics={ruling_party=fascism elections=yes}add_popularity={ideology=fascism popularity=0.2}}}focus={id=JAP_co_prosperity_sphere_dr icon=GFX_focus_jap_pacific_guardian x=15 y=6 cost=6 available_if_capitulated=yes bypass={is_in_faction=yes}prerequisite={focus=JAP_appease_the_militarists_dr focus=JAP_can_we_get_much_higher_dr}ai_will_do={factor=1}completion_reward={create_faction="Co-Prosperity Sphere"}}focus={id=JAP_secure_china_dr icon=GFX_goal_generic_major_war x=13 y=8 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={OR={country_exists=CHI country_exists=PRC country_exists=XSM}}available_if_capitulated=yes prerequisite={focus=JAP_northern_doctrine_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=CHI}create_wargoal={type=annex_everything target=PRC}create_wargoal={type=annex_everything target=XSM}}}focus={id=JAP_grasp_onto_meganesia_dr icon=GFX_focus_jap_strike_south x=17 y=9 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={country_exists=INS}available_if_capitulated=yes prerequisite={focus=JAP_align_siam_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=INS}}}focus={id=JAP_far_eastern_subjugation_dr icon=GFX_goal_generic_territory_or_war x=15 y=9 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available_if_capitulated=yes prerequisite={focus=JAP_secure_china_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=FER}}}focus={id=JAP_the_land_down_under_dr icon=GFX_focus_attack_australia x=17 y=10 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={country_exists=AST}available_if_capitulated=yes prerequisite={focus=JAP_grasp_onto_meganesia_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=AST}}}focus={id=JAP_the_high_castle_dr icon=GFX_focus_spa_the_war_of_vengeance x=14 y=12 cost=6 search_filters={FOCUS_FILTER_ANNEXATION}available={not={has_government=democratic}OR={country_exists=CSA country_exists=USA}}available_if_capitulated=yes prerequisite={focus=JAP_grip_on_south_america_dr}mutually_exclusive={focus=JAP_californian_ally_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=CSA}create_wargoal={type=puppet_wargoal_focus target=USA}}}focus={id=JAP_quell_the_hordes_dr icon=GFX_focus_TUR_reconfigure_turkish_foreign_policy x=20 y=7 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={OR={country_exists=MON country_exists=UZB}}available_if_capitulated=yes prerequisite={focus=JAP_mandate_of_heaven_dr focus=JAP_relinquish_our_claim_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=MON}create_wargoal={type=puppet_wargoal_focus target=UZB}}}focus={id=JAP_zaibatsus_dr icon=GFX_focus_jap_zaibatsu x=28 y=0 cost=6 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={if={limit={not={has_government=communism}}add_ideas={idea_zaibatsus_dr}}else={add_ideas={idea_zaibatsus_control_dr}}custom_effect_tooltip=zaibatsus_tooltip_dr}}
 
-focus={id=JAP_cleanse_the_military_dr icon=GFX_focus_SOV_military_purge x=4 y=2 cost=8 available={has_government=communism}available_if_capitulated=yes prerequisite={focus=JAP_the_emperors_worsening_state_dr}ai_will_do={factor=1}completion_reward={add_command_power=-30 army_experience=-30 air_experience=-30 navy_experience=-30 add_manpower=-500000 add_stability=-0.1}}
-
-focus={id=JAP_cleanse_the_government_dr icon=GFX_focus_SOV_the_last_purge x=2 y=2 cost=8 available={has_government=communism}available_if_capitulated=yes prerequisite={focus=JAP_the_emperors_worsening_state_dr}ai_will_do={factor=1}completion_reward={add_political_power=-100 add_war_support=-0.15 add_stability=-0.15}}
-
-focus={id=JAP_great_leap_forward_dr icon=GFX_focus_prc_infiltration x=2 y=5 cost=10 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=JAP_insanity_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_great_leap_forward_dr}add_popularity={ideology=communism popularity=0.05}add_political_power=50}}
-
-focus={id=JAP_cultural_revolution_dr icon=GFX_focus_prc_agrarian_socialism x=4 y=5 cost=10 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=JAP_insanity_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_cultural_revolution_dr}add_popularity={ideology=communism popularity=0.05}add_political_power=50}}
-
-focus={id=JAP_red_universities_dr icon=GFX_focus_generic_socialist_science x=3 y=6 cost=6 search_filters={FOCUS_FILTER_RESEARCH}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=JAP_great_leap_forward_dr}
-prerequisite={focus=JAP_cultural_revolution_dr}ai_will_do={factor=1}completion_reward={add_research_slot=1}}
-
-focus={id=JAP_new_economic_plan_dr icon=GFX_goal_generic_soviet_construction x=1 y=6 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=JAP_great_leap_forward_dr}prerequisite={focus=JAP_cultural_revolution_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_new_economic_plan_dr}}}
-
-focus={id=JAP_reeducation_programs_dr icon=GFX_focus_generic_military_academy x=5 y=6 cost=5 search_filters={FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_RESEARCH}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=JAP_great_leap_forward_dr}prerequisite={focus=JAP_cultural_revolution_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_reeducation_programs_dr}}}
-
-focus={id=JAP_a_new_era_dr icon=GFX_goal_support_communism x=3 y=7 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=JAP_new_economic_plan_dr}prerequisite={focus=JAP_red_universities_dr}prerequisite={focus=JAP_reeducation_programs_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=communism popularity=0.15}}}
-
-focus={id=JAP_fart_dr icon=GFX_focus_BUL_destroy_the_zveno x=3 y=8 cost=6 available={has_government=communism}available_if_capitulated=yes prerequisite={focus=JAP_a_new_era_dr}ai_will_do={factor=1}completion_reward={create_faction="F.A.R.T."}}
-
-focus={id=JAP_reclaim_korea_dr icon=GFX_goal_generic_major_war x=2 y=9 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=JAP_fart_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=KOR}}}
-
-focus={id=JAP_reclaim_manchuria_dr icon=GFX_goal_generic_major_war x=4 y=9 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=JAP_fart_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=MAN}}}
-
-focus={id=JAP_formalize_the_alliance_dr icon=GFX_focus_por_workers_of_iberia x=4 y=11 cost=6 available={has_government=communism}available_if_capitulated=yes prerequisite={focus=JAP_ally_with_the_ccp_dr}mutually_exclusive={focus=JAP_pledge_our_support_dr}ai_will_do={factor=1}completion_reward={JAP={add_to_faction=PRC}}}
-
-focus={id=JAP_far_eastern_communism_dr icon=GFX_goal_generic_attack_allies x=3 y=12 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=JAP_formalize_the_alliance_dr focus=JAP_pledge_our_support_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=FER}}}
-
-focus={id=JAP_populist_faction_dr icon=GFX_goal_support_democracy x=8 y=0 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes mutually_exclusive={focus=JAP_vanguard_faction_dr focus=JAP_militarist_faction_dr}ai_will_do={factor=1}completion_reward={set_politics={ruling_party=democratic elections=yes}add_popularity={ideology=democratic popularity=0.2}}}
-
-focus={id=JAP_militarist_faction_dr icon=GFX_focus_AST_war_japan x=13 y=0 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes mutually_exclusive={focus=JAP_vanguard_faction_dr focus=JAP_populist_faction_dr}ai_will_do={factor=1}completion_reward={set_politics={ruling_party=fascism elections=yes}add_popularity={ideology=fascism popularity=0.2}}}
-
-focus={id=JAP_co_prosperity_sphere_dr icon=GFX_focus_jap_pacific_guardian x=15 y=6 cost=6 available={not={has_government=communism}}available_if_capitulated=yes prerequisite={focus=JAP_appease_the_militarists_dr focus=JAP_can_we_get_much_higher_dr}ai_will_do={factor=1}completion_reward={create_faction="Co-Prosperity Sphere"}}
-
-focus={id=JAP_secure_china_dr icon=GFX_goal_generic_major_war x=13 y=8 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={not={has_government=communism}}available_if_capitulated=yes prerequisite={focus=JAP_northern_doctrine_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=CHI}create_wargoal={type=annex_everything target=PRC}create_wargoal={type=annex_everything target=XSM}}}
-
-focus={id=JAP_grasp_onto_meganesia_dr icon=GFX_focus_jap_strike_south x=17 y=9 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={not={has_government=communism}}available_if_capitulated=yes prerequisite={focus=JAP_align_siam_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=INS}}}
-
-focus={id=JAP_far_eastern_subjugation_dr icon=GFX_goal_generic_territory_or_war x=15 y=9 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={not={has_government=communism}}available_if_capitulated=yes prerequisite={focus=JAP_secure_china_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=FER}}}
-
-focus={id=JAP_the_land_down_under_dr icon=GFX_focus_attack_australia x=17 y=10 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={not={has_government=communism}}available_if_capitulated=yes prerequisite={focus=JAP_grasp_onto_meganesia_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=AST}}}
-
-focus={id=JAP_the_high_castle_dr icon=GFX_focus_spa_the_war_of_vengeance x=14 y=12 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={not={has_government=communism has_government=democratic}}available_if_capitulated=yes prerequisite={focus=JAP_grip_on_south_america_dr}mutually_exclusive={focus=JAP_californian_ally_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=CSA}create_wargoal={type=puppet_wargoal_focus target=USA}}}
-
-focus={id=JAP_quell_the_hordes_dr icon=GFX_focus_TUR_reconfigure_turkish_foreign_policy x=20 y=7 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={not={has_government=communism has_government=democratic}}available_if_capitulated=yes prerequisite={focus=JAP_mandate_of_heaven_dr focus=JAP_relinquish_our_claim}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=MON}create_wargoal={type=puppet_wargoal_focus target=UZB}}}
-
-focus={id=JAP_zaibatsus_dr icon=GFX_focus_jap_zaibatsu x=28 y=0 cost=6 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={if={limit={not={has_government=communism}}add_ideas={idea_zaibatsus_dr}}else={add_ideas={idea_zaibatsus_control_dr}}custom_effect_tooltip=zaibatsus_tooltip_dr}}
-
-focus={id=JAP_share_the_wealth_dr icon=GFX_focus_generic_royal_wedding x=8 y=2 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=JAP_a_democracy_without_democracy_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_share_the_wealth_dr}}}
+focus={id=JAP_share_the_wealth_dr icon=GFX_focus_generic_royal_wedding x=8 y=2 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=JAP_a_democracy_without_democracy_dr}ai_will_do={factor=1}completion_reward={add_ideas={idea_share_the_wealth_dr}}}
 
 focus={id=JAP_the_army_dr icon=GFX_goal_rhineland x=37 y=0 cost=2 search_filters={FOCUS_FILTER_ARMY_XP}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={army_experience=10}}
 
@@ -61,7 +14,7 @@ focus={id=JAP_supremacy_of_mind_dr icon=GFX_goal_generic_political_pressure x=36
 
 focus={id=JAP_supremacy_of_will_dr icon= GFX_goal_generic_political_pressure x=38 y=2 cost=6 search_filters={FOCUS_FILTER_ARMY_XP}available_if_capitulated=yes prerequisite={focus=JAP_strength_dr}ai_will_do={factor=1}completion_reward={army_experience=15 add_ideas={idea_army_of_the_rising_sun_4_dr}}}
 
-focus={id=JAP_battotai_dr icon=GFX_focus_chi_army_reform x=37 y=3 cost=6 search_filters={FOCUS_FILTER_ARMY_XP}available_if_capitulated=yes prerequisite={focus=JAP_supremacy_of_will_dr focus=JAP_supremacy_of_mind_dr}ai_will_do={factor=1}completion_reward={army_experience=15 add_command_power=40}}
+focus={id=JAP_battotai_dr icon=GFX_focus_chi_army_reform x=37 y=3 cost=8 search_filters={FOCUS_FILTER_ARMY_XP}available_if_capitulated=yes prerequisite={focus=JAP_supremacy_of_will_dr focus=JAP_supremacy_of_mind_dr}ai_will_do={factor=1}completion_reward={army_experience=40 add_command_power=40}}
 
 focus={id=JAP_the_airforce_dr icon=GFX_goal_generic_build_airforce x=32 y=3 cost=2 search_filters={FOCUS_FILTER_AIR_XP}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={air_experience=10}}
 
@@ -259,20 +212,7 @@ focus={id=JAP_the_emperors_worsening_state_dr icon=GFX_goal_tfv_burn_the_royal_p
 		}
 	}
 
-	#Focus for Abandon Imperialism
-	focus = {
-		id = JAP_abandon_imperialism_dr
-		icon = GFX_focus_jap_cast_the_die
-		x = 7
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_dismantle_the_militarists_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
+focus={id=JAP_abandon_imperialism_dr icon=GFX_focus_jap_cast_the_die x=7 y=5 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=JAP_dismantle_the_militarists_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=democratic popularity=0.05}country_event=dr.32 set_autonomy={target=MAN autonomy_state=autonomy_free}release=KOR FER={if={limit={JAP={owns_state=408 controls_state=408}}transfer_state=408}if={limit={JAP={owns_state=409 controls_state=409}}transfer_state=409}}}}
 
 	#Focus for Emperors' Faction
 	focus = {
@@ -282,14 +222,11 @@ focus={id=JAP_the_emperors_worsening_state_dr icon=GFX_goal_tfv_burn_the_royal_p
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
-		mutually_exclusive = { focus = JAP_militarist_faction_dr }
+		mutually_exclusive={focus=JAP_vanguard_faction_dr focus=JAP_populist_faction_dr focus=JAP_militarist_faction_dr focus=JAP_furry_faction_dr}
 		ai_will_do = {
 			factor = 1
 		}
 	}
-
-
-
 
 	#Focus for Insanity
 	focus = {
@@ -305,24 +242,7 @@ focus={id=JAP_the_emperors_worsening_state_dr icon=GFX_goal_tfv_burn_the_royal_p
 		}
 	}
 
-	#Focus for Dark, Yet Darker
-	focus = {
-		id = JAP_dark_yet_darker_dr
-		icon = GFX_focus_generic_strike_at_democracy2
-		x = 3
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = JAP_cleanse_the_government_dr 
-		}
-		prerequisite = { 
-			focus = JAP_cleanse_the_military_dr 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+focus={id=JAP_dark_yet_darker_dr icon=GFX_focus_generic_strike_at_democracy2 x=3 y=3 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=JAP_cleanse_the_government_dr}prerequisite={focus=JAP_cleanse_the_military_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=fascism popularity=-0.15}}}
 
 	#Focus for Rebirth Of The Shogunate
 	focus = {
@@ -372,13 +292,15 @@ focus={id=JAP_the_emperors_worsening_state_dr icon=GFX_goal_tfv_burn_the_royal_p
 		icon = GFX_focus_attack_japan
 		x = 7
 		y = 4
-		cost = 10
+		cost = 8
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		available_if_capitulated = yes
 		prerequisite = { focus = JAP_every_man_a_king_dr }
 		mutually_exclusive = { focus = JAP_appease_the_militarists_dr }
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward={add_popularity={ideology=fascism popularity=-0.8}}
 	}
 
 	#Focus for Appease The Militarists
@@ -520,14 +442,17 @@ focus={id=JAP_the_emperors_worsening_state_dr icon=GFX_goal_tfv_burn_the_royal_p
 		icon = GFX_focus_man_claim_the_mandate_of_heaven
 		x = 19
 		y = 6
-		cost = 10
+		cost = 15
+		search_filters={FOCUS_FILTER_ANNEXATION}
+		available={has_government=neutrality}
 		available_if_capitulated = yes
 		prerequisite = { focus = JAP_can_we_get_much_higher_dr }
 		mutually_exclusive = { focus = JAP_relinquish_our_claim_dr }
 		ai_will_do = {
 			factor = 1
 		}
-	}
+		completion_reward={
+			set_cosmetic_tag=cosmetic_tag_empire_of_the_great_sunrise_land_dr}hidden_effect={608={add_core_of=JAP}614={add_core_of=JAP}}}
 
 	#Focus for Align Siam_dr
 	focus = {
@@ -565,7 +490,7 @@ focus={id=JAP_the_emperors_worsening_state_dr icon=GFX_goal_tfv_burn_the_royal_p
 	#Focus for Relations With David And Max
 	focus = {
 		id = JAP_relations_with_david_and_max_dr
-		icon = GFX_JAP_relations_with_david_and_max-144155
+		icon = GFX_GER_david_max_friendship_dr
 		x = 11
 		y = 1
 		cost = 10
@@ -686,20 +611,7 @@ focus={id=JAP_the_emperors_worsening_state_dr icon=GFX_goal_tfv_burn_the_royal_p
 		}
 	}
 
-	#Focus for Relinquish Our Claim
-	focus = {
-		id = JAP_relinquish_our_claim_dr
-		icon = GFX_focus_CZE_german_puppet
-		x = 21
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_can_we_get_much_higher_dr }
-		mutually_exclusive = { focus = JAP_mandate_of_heaven_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+focus={id=JAP_relinquish_our_claim_dr icon=GFX_focus_CZE_german_puppet x=21 y=6 cost=2 available_if_capitulated=yes prerequisite={focus=JAP_can_we_get_much_higher_dr}mutually_exclusive={focus=JAP_mandate_of_heaven_dr}ai_will_do={factor=1}completion_reward={add_political_power=10}}
 
 	#Focus for Can We Get Much Higher?
 	focus = {
@@ -801,20 +713,7 @@ focus={id=JAP_the_emperors_worsening_state_dr icon=GFX_goal_tfv_burn_the_royal_p
 		}
 	}
 
-
-	#Focus for Furry Faction
-	focus = {
-		id = JAP_furry_faction_dr
-		icon = GFX_goal_generic_wolf_pack
-		x = 19
-		y = 0
-		cost = 10
-		available_if_capitulated = yes
-		mutually_exclusive = { focus = JAP_emperors_faction_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+focus={id=JAP_furry_faction_dr icon=GFX_goal_generic_wolf_pack x=19 y=0 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes mutually_exclusive={focus=JAP_vanguard_faction_dr focus=JAP_populist_faction_dr focus=JAP_militarist_faction_dr focus=JAP_emperors_faction_dr}ai_will_do={factor=1}completion_reward={set_politics={ruling_party=fascism elections=yes}add_popularity={ideology=fascism popularity=0.2}}}
 
 	#Focus for Dillon's Submission
 	focus = {
@@ -945,7 +844,6 @@ focus={id=JAP_improved_designing_dr icon=GFX_goal_continuous_repairments x=32 y=
 		}
 		mutually_exclusive = { 
 			focus = JAP_native_engineers_dr 
-			focus = JAP_ 
 		}
 		ai_will_do = {
 			factor = 1

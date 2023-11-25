@@ -74,9 +74,9 @@ idea_der_luftdaffe_6_dr={picture=generic_air_research allowed={always=no}allowed
 
 idea_der_luftdaffe_7_dr={picture=generic_air_research allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={air_superiority_efficiency=0.05 air_attack_factor=0.05 air_defence_factor=0.05 experience_gain_air=0.05 air_agility_factor=0.1 air_weather_penalty=0.05}}
 
-idea_coal_agreement_dr={allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=0.1 consumer_goods_factor=-0.05}}
+#idea_coal_agreement_dr={allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=0.1 consumer_goods_factor=-0.05}}
 
-idea_davidsraum_dr={allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
+idea_legacy_of_the_schlimkrieg_3_dr={picture=YUG_local_militias allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_org_Factor=0.05 war_support_factor=-0.1 drift_defence_factor=0.30 justify_war_goal_time=-0.15}rule={can_create_factions=yes}}
 
 #idea_the_old_doctrine_dr={allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
 

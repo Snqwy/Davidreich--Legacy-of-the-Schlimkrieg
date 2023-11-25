@@ -10,6 +10,7 @@ state=
 	{
 		owner = ETH
 		add_core_of = ETH
+		add_core_of = AFA
 		add_core_of = CHA
 		victory_points = {
 			12766 1

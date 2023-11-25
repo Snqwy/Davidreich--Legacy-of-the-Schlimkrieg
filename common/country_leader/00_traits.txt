@@ -16,7 +16,7 @@ leader_traits = {
 	
 	trait_i_hate_the_alps_dr = {
 		random = no
-
+		modifier_army_sub_unit_mountaineers_defence_factor = 0.1
 		ai_will_do = {
 			factor = 1
 		}
@@ -37,13 +37,15 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	trait_a_modern_napoleon_dr={random=no political_power_factor=0.2 stability_factor=0.15 war_support_factor=0.1 ai_will_do={factor=1}}trait_christ_himself_dr={random=no ai_will_do={factor=1}}trait_his_royal_majesty_dr={random=no ai_will_do={factor=1}}trait_holy_roman_emperor_dr={random=no ai_will_do={factor=1}}trait_sword_of_islam_dr={random=no ai_will_do={factor=1}}trait_walter_brown_dr={random=no ai_will_do={factor=1}}trait_crusader_dr={random=no ai_will_do={factor=1}}trait_savior_of_the_imperium_dr={random=no ai_will_do={factor=1}}trait_il_duce_dr={random=no ai_will_do={factor=1}}trait_hardcore_and_awesome_dr={random=no political_power_factor=0.05 stability_factor=0.05 ai_will_do={factor=1}}trait_hero_of_france_dr={random=no political_power_factor=0.1 stability_factor=0.1 army_core_defence_factor=0.1 ai_will_do={factor=1}}trait_the_red_walker_dr={random=no opinion_gain_monthly_same_ideology_factor=0.1 planning_speed=0.05 ai_will_do={factor=1}}trait_international_criminal_dr={random=no stability_factor=-0.05 trade_opinion_factor=-0.05 opinion_gain_monthly_factor=-0.15 ai_will_do={factor=1}}
+	trait_a_modern_napoleon_dr={random=no political_power_factor=0.1 stability_factor=0.15 war_support_factor=0.1 neutrality_drift=0.1 ai_will_do={factor=1}}trait_christ_himself_dr={random=no ai_will_do={factor=1}}trait_his_royal_majesty_dr={random=no ai_will_do={factor=1}}trait_holy_roman_emperor_dr={random=no ai_will_do={factor=1}}trait_sword_of_islam_dr={random=no ai_will_do={factor=1}}trait_walter_brown_dr={random=no ai_will_do={factor=1}}trait_crusader_dr={random=no ai_will_do={factor=1}}trait_savior_of_the_imperium_dr={random=no ai_will_do={factor=1}}trait_il_duce_dr={random=no ai_will_do={factor=1}}trait_hardcore_and_awesome_dr={random=no political_power_factor=0.05 stability_factor=0.05 ai_will_do={factor=1}}trait_hero_of_france_dr={random=no political_power_factor=0.1 stability_factor=0.1 army_core_defence_factor=0.1 ai_will_do={factor=1}}trait_the_red_walker_dr={random=no opinion_gain_monthly_same_ideology_factor=0.1 planning_speed=0.05 ai_will_do={factor=1}}trait_international_criminal_dr={random=no stability_factor=-0.05 trade_opinion_factor=-0.05 opinion_gain_monthly_factor=-0.15 ai_will_do={factor=1}}
 	#####
 	trait_savior_of_the_imperium_dr={random=no stability_factor=0.15 war_support_factor=0.05 ai_will_do={factor=1}}
 	
 	trait_submissive_and_breedable_dr={random=no autonomy_gain=-0.5 ai_will_do={factor=1}}trait_gigachad_dr={random=no stability_factor=1.0 political_power_factor=0.5 war_support_factor=1.0 army_core_attack_factor=0.3 ai_will_do={factor=1}}trait_black_dr={random=no stability_factor=-0.01 ai_will_do={factor=1}}trait_friendly_schnitzel_man_dr={random=no opinion_gain_monthly_factor=0.1 ai_will_do={factor=1}}trait_dislikes_riley_dr={random=no targeted_modifier={tag=CSA attack_bonus_against=0.1 defense_bonus_against=0.1}ai_will_do={factor=1}}trait_dislikes_colin_dr={random=no targeted_modifier={tag=USA attack_bonus_against=0.1 defense_bonus_against=0.1}ai_will_do={factor=1}}
 
 	trait_false_gringo_dr={random=no ai_will_do={factor=1}}
+
+	trait_a_modern_napoleon_2_dr={random=no political_power_factor=0.1 stability_factor=0.15 war_support_factor=0.1 neutrality_drift=0.1 justify_war_goal_time=-0.1 ai_will_do={factor=1}}
 
 	warrior_code = {
 		random = no
@@ -803,8 +805,7 @@ leader_traits = {
 	national_integralist = {
 		sprite = 13
 		random = yes
-		political_power_factor = 0.15
-		stability_weekly = 0.001
+		neutrality_drift = 0.1
 
 		ai_will_do = {
 			factor = 1

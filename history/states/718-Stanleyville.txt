@@ -11,6 +11,7 @@ state={
 	history={
 		owner = COG
 		add_core_of = COG
+		add_core_of = TZN
 		add_core_of = UGA
 		buildings = {
 			infrastructure = 1

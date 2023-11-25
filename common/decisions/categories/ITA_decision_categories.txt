@@ -30,7 +30,7 @@ ITA_balance_of_power_category = {
 	
 	priority = 90
 	
-	visible = {
+	visible = {always=no
 		
 	}
 }
@@ -68,6 +68,7 @@ ITA_naval_cooperation_programs_dec_cat = {
 	priority = 15
 	
 	visible = {
+		al
 		has_completed_focus = ITA_cooperation_programs
 	}
 }

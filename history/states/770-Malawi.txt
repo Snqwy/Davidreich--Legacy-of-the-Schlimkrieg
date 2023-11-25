@@ -4,6 +4,7 @@ state={
 
 	history={
 		owner = SPR
+		add_core_of = ZIM
 		add_core_of = TZN
 		add_core_of = CHA
 		victory_points = {
@@ -17,7 +18,7 @@ state={
 	}
 
 	provinces={
-		2255 12908 12986 13209 
+		2255 5221 12908 12950 12986 13209 
 	}
 	manpower=1603975
 	buildings_max_level_factor=1.000
