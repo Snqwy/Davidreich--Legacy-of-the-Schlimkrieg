@@ -57,29 +57,29 @@ ideas={country={
 
    idea_women_in_the_bedrooms_dr={picture=ITA_battaglie_per_la_nascite allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={monthly_population=0.05}}
 
-   idea_post_schlimkrieg_demobilization_2_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.4 land_doctrine_cost_factor=0.30 training_time_factor=0.1 army_defence_factor=0.05}}
+   idea_post_schlimkrieg_demobilization_2_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.4 land_doctrine_cost_factor=0.3 training_time_factor=0.1 army_defence_factor=0.05}}
 
-   idea_post_schlimkrieg_demobilization_3_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.35 land_doctrine_cost_factor=0.30 training_time_factor=0.1 army_defence_factor=0.05 max_dig_in_factor=0.05}}
+   idea_post_schlimkrieg_demobilization_3_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.35 land_doctrine_cost_factor=0.3 training_time_factor=0.1 army_defence_factor=0.05 max_dig_in_factor=0.05}}
 
-   idea_post_schlimkrieg_demobilization_4_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.35 land_doctrine_cost_factor=0.30 training_time_factor=0.1 army_defence_factor=0.05 dig_in_speed_factor=0.05}}
+   idea_post_schlimkrieg_demobilization_4_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.35 land_doctrine_cost_factor=0.3 training_time_factor=0.1 army_defence_factor=0.05 dig_in_speed_factor=0.05}}
 
-   idea_post_schlimkrieg_demobilization_5_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.3 land_doctrine_cost_factor=0.30 training_time_factor=0.1 army_defence_factor=0.05 dig_in_speed_factor=0.05 max_planning_factor=0.1}}
+   idea_post_schlimkrieg_demobilization_5_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.3 land_doctrine_cost_factor=0.3 training_time_factor=0.1 army_defence_factor=0.05 dig_in_speed_factor=0.05 max_planning_factor=0.1}}
 
-   idea_post_schlimkrieg_demobilization_6_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.3 land_doctrine_cost_factor=0.30 training_time_factor=0.1 army_defence_factor=0.05 max_dig_in_factor=0.05 planning_speed=0.1}}
+   idea_post_schlimkrieg_demobilization_6_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.3 land_doctrine_cost_factor=0.3 training_time_factor=0.1 army_defence_factor=0.05 max_dig_in_factor=0.05 planning_speed=0.1}}
 
-   idea_post_schlimkrieg_demobilization_7_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.4 land_doctrine_cost_factor=0.30 training_time_factor=0.1 army_attack_factor=0.05}}
+   idea_post_schlimkrieg_demobilization_7_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.4 land_doctrine_cost_factor=0.3 training_time_factor=0.1 army_attack_factor=0.05}}
 
-   idea_post_schlimkrieg_demobilization_8_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.35 land_doctrine_cost_factor=0.30 training_time_factor=0.1 army_attack_factor=0.05 army_artillery_attack_factor=0.05}}
+   idea_post_schlimkrieg_demobilization_8_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.35 land_doctrine_cost_factor=0.3 training_time_factor=0.1 army_attack_factor=0.05 army_artillery_attack_factor=0.05}}
 
-   idea_post_schlimkrieg_demobilization_9_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.35 land_doctrine_cost_factor=0.30 training_time_factor=0.1 army_attack_factor=0.05 army_artillery_attack_factor=0.05}equipment_bonus={artillery_equipment={instant=yes build_cost_ic=-0.05}}}
+   idea_post_schlimkrieg_demobilization_9_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.35 land_doctrine_cost_factor=0.3 training_time_factor=0.1 army_attack_factor=0.05 army_artillery_attack_factor=0.05}equipment_bonus={artillery_equipment={instant=yes build_cost_ic=-0.05}}}
 
-   idea_post_schlimkrieg_demobilization_10_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.35 land_doctrine_cost_factor=0.30 training_time_factor=0.1 army_attack_factor=0.05 local_manpower=0.05}}
+   idea_post_schlimkrieg_demobilization_10_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.35 land_doctrine_cost_factor=0.3 training_time_factor=0.1 army_attack_factor=0.05 local_manpower=0.05}}
 
-   idea_post_schlimkrieg_demobilization_11_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.35 land_doctrine_cost_factor=0.30 training_time_factor=0.1 army_attack_factor=0.05 local_manpower=0.05}equipment_bonus={infantry_equipment={instant=yes build_cost_ic=-0.05}}}
+   idea_post_schlimkrieg_demobilization_11_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.35 land_doctrine_cost_factor=0.3 training_time_factor=0.1 army_attack_factor=0.05 local_manpower=0.05}equipment_bonus={infantry_equipment={instant=yes build_cost_ic=-0.05}}}
 
-   idea_post_schlimkrieg_demobilization_12_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.35 land_doctrine_cost_factor=0.30 training_time_factor=0.1 army_attack_factor=0.05 army_armor_attack_factor=0.05}}
+   idea_post_schlimkrieg_demobilization_12_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.35 land_doctrine_cost_factor=0.3 training_time_factor=0.1 army_attack_factor=0.05 army_armor_attack_factor=0.05}}
 
-   idea_post_schlimkrieg_demobilization_13_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.35 land_doctrine_cost_factor=0.30 training_time_factor=0.1 army_attack_factor=0.05 army_armor_attack_factor=0.05 army_speed_factor=0.05}}
+   idea_post_schlimkrieg_demobilization_13_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.35 land_doctrine_cost_factor=0.3 training_time_factor=0.1 army_attack_factor=0.05 army_armor_attack_factor=0.05 army_speed_factor=0.05}}
 
     idea_post_schlimkrieg_demobilization_14_dr={picture=chi_incompetent_officers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=-0.3 recruitable_population_factor=-0.3 land_doctrine_cost_factor=0.25 training_time_factor=0.1 army_attack_factor=0.05 army_artillery_attack_factor=0.05}equipment_bonus={artillery_equipment={instant=yes build_cost_ic=-0.05}}}
 
@@ -127,8 +127,22 @@ ideas={country={
 
     idea_missions_abroad_2_dr={picture=hol_the_fourth_ally allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={opinion_gain_monthly_factor=0.1 send_volunteer_size=2 send_volunteer_divisions_required=-0.1}}
 
-    idea_post_schlimkrieg_recovery_2_dr={picture=POL_disjointed_industry allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=1.7 stability_factor=-0.10 war_support_factor=-0.3 industry_repair_factor=-0.1 send_volunteer_size=-10 industrial_capacity_factory=-0.2 industrial_capacity_dockyard=-0.2 production_speed_buildings_factor=-0.15}}
+    idea_post_schlimkrieg_recovery_2_dr={picture=POL_disjointed_industry allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=1.7 stability_factor=-0.1 war_support_factor=-0.3 industry_repair_factor=-0.1 send_volunteer_size=-10 industrial_capacity_factory=-0.2 industrial_capacity_dockyard=-0.2 production_speed_buildings_factor=-0.15}}
 
-    idea_post_schlimkrieg_recovery_3_dr={picture=POL_disjointed_industry allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=1.7 stability_factor=-0.10 war_support_factor=-0.3 industry_repair_factor=0.1 send_volunteer_size=-10 industrial_capacity_factory=-0.2 industrial_capacity_dockyard=-0.2 production_speed_buildings_factor=-0.05 production_speed_infrastructure_factor=0.05}}
+    idea_post_schlimkrieg_recovery_3_dr={picture=POL_disjointed_industry allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=1.5 stability_factor=-0.05 war_support_factor=-0.35 industry_repair_factor=-0.1 send_volunteer_size=-10 industrial_capacity_factory=-0.2 industrial_capacity_dockyard=-0.2 production_speed_buildings_factor=-0.05 production_speed_infrastructure_factor=0.05 cic_to_overlord_factor=-0.1 mic_to_overlord_factor=-0.1}}
+
+    idea_overseas_markets_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={min_export=0.05 trade_opinion_factor=0.1}}
+
+    idea_boats_are_overrated_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 equipment_bonus={infantry_equipment={build_cost_ic=-0.1}}}
+
+    idea_napoleonic_economy_3_dr={picture=NOR_printing_money allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=-0.05 production_speed_buildings_factor=0.05 production_speed_infrastructure_factor=0.05 industrial_capacity_factory=0.05}}
+
+    idea_napoleonic_economy_4_dr={picture=NOR_printing_money allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=-0.05 production_speed_buildings_factor=0.05 production_speed_infrastructure_factor=0.05 industrial_capacity_factory=0.05 production_lack_of_resource_penalty_factor=-0.05}}
+
+    idea_post_schlimkrieg_recovery_4_dr={picture=POL_disjointed_industry allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=1.5 stability_factor=-0.15 war_support_factor=-0.25 industry_repair_factor=-0.1 send_volunteer_size=-10 industrial_capacity_factory=-0.2 industrial_capacity_dockyard=-0.2 production_speed_buildings_factor=-0.15 cic_to_overlord_factor=0.1 mic_to_overlord_factor=0.1}}
+
+    idea_post_schlimkrieg_recovery_5_dr={picture=POL_disjointed_industry allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=1.5 stability_factor=-0.05 war_support_factor=-0.35 industry_repair_factor=-0.1 send_volunteer_size=-10 industrial_capacity_factory=-0.2 industrial_capacity_dockyard=-0.2 production_speed_buildings_factor=-0.15 cic_to_overlord_factor=-0.1 mic_to_overlord_factor=-0.1}}
+
+    idea_post_schlimkrieg_recovery_6_dr={picture=POL_disjointed_industry allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=1.5 stability_factor=-0.05 war_support_factor=-0.35 industry_repair_factor=-0.1 send_volunteer_size=-10 industrial_capacity_factory=-0.2 industrial_capacity_dockyard=-0.2 production_speed_buildings_factor=-0.05 cic_to_overlord_factor=-0.1 mic_to_overlord_factor=-0.1 production_speed_infrastructure_factor=0.05}}
 
 }}

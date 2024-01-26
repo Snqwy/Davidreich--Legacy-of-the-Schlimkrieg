@@ -1,0 +1,1 @@
+﻿capital=41 set_cosmetic_tag=ESU_POR_unified recruit_character=SPR_niceto_alcala_zamora set_politics={ruling_party=democratic last_election="1930.11.9" election_frequency=48 elections_allowed=no}set_popularities={neutrality=15 fascism=20 democratic=45 communism=20}

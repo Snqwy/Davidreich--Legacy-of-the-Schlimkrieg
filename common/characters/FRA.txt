@@ -24,7 +24,6 @@ characters={
 		}
 		country_leader={
 			ideology=socialism
-			traits={ stout_defender }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -39,7 +38,6 @@ characters={
 		}
 		country_leader={
 			ideology=centrism
-			traits={ editor eager_collaborator }
 			expire="1949.1.1.12"
 			id=-1
 		}
@@ -1533,4 +1531,3 @@ characters={
 			}
 		}
 	}
-}

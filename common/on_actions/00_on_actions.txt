@@ -412,13 +412,7 @@ on_actions = {
 			#make sure warlords don't use the same guy
 			if = {
 				limit = {
-					OR = {
-						original_tag = YUN
-						original_tag = SIK
-						original_tag = GXC
-						original_tag = SHX
-						original_tag = XSM
-					}
+					original_tag = XSM
 				}
 				if = {
 					limit = {
@@ -899,13 +893,11 @@ on_actions = {
 							is_historical_focus_on = no
 						}
 					}
-					add_timed_idea = { idea = SPA_recovering_from_civil_war days = 2190 }
 				}
 				if = {
 					limit = {
 						is_historical_focus_on = yes
 					}
-					add_ideas = SPA_recovering_from_civil_war #keep the spirit on historical mode, keeping them out of the war
 				}
 			}
 			#End of SCW
@@ -959,28 +951,6 @@ on_actions = {
 					}
 				}
 				news_event = { id = mtg_news.7 days = 4 random_days = 5 }
-			}
-			#End of Balkan war
-			if = {
-				limit = {
-					has_dlc = "Death or Dishonor"
-					original_tag = YUG
-				}
-				every_other_country = {
-					limit = {
-						has_country_flag = yugoslav_puppet_flag
-					}
-					white_peace = PREV
-					PREV = { puppet = PREV }
-					set_autonomy = { target = THIS autonomy_state = autonomy_integrated_puppet }
-				}
-				if = {
-					limit = {
-						FROM = { has_focus_tree = yugoslavian_focus }
-					}
-					load_focus_tree = { tree = yugoslavian_focus keep_completed = yes }
-					unlock_national_focus = YUG_end_the_regency
-				}
 			}
 			#End of ideology Civil War
 			if = {

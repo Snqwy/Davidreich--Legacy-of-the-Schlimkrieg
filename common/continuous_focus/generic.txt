@@ -94,51 +94,6 @@ continuous_focus_palette = {
 	}
 	
 	focus = {
-		id = SWI_build_up_military_readiness
-		
-		icon = GFX_focus_SWI_continuous_build_up_military_readiness
-		
-		available = {
-			hidden_trigger = { 
-				has_dlc = "By Blood Alone" 
-				original_tag = SWI 
-			}
-		}
-
-		enable = {
-			has_completed_focus = SWI_armed_neutrality
-		}
-
-		modifier = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0		
-				all_owned_state = { is_controlled_by = ROOT }
-			}
-		}
-		
-		supports_ai_strategy = ai_focus_military_advancements
-		
-		daily_cost = 1
-				
-		available_if_capitulated = yes
-
-		select_effect = {
-			activate_mission = SWI_building_up_military_readiness_mission
-			set_country_flag = SWI_building_up_mr_cont_focus_active
-		}
-		
-
-		cancel_effect = {
-			clr_country_flag = SWI_building_up_mr_cont_focus_active
-		}
-	}
-	
-	focus = {
 		id = SWI_support_active_militias_continuous_focus
 		
 		icon = GFX_focus_SWI_continuous_support_active_militias

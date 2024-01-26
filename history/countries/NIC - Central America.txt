@@ -1,0 +1,25 @@
+﻿capital=314
+
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+}
+
+set_war_support = 0.1
+set_convoys = 10
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 15
+	fascism = 5
+	communism = 10
+	neutrality = 70
+}
+set_cosmetic_tag=USC_UNIFIED

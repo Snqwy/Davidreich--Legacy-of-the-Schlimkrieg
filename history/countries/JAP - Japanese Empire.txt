@@ -183,7 +183,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 100
+	fascism = 25
+	neutrality = 25
+	democratic = 25
+	communism = 25
 }
 
 recruit_character = JAP_tetsu_katayama

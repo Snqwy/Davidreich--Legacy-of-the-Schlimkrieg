@@ -1,0 +1,1 @@
+﻿capital=271 set_politics={ruling_party=fascism last_election="1931.11.8"election_frequency=72 elections_allowed=no}set_popularities={fascism=100}

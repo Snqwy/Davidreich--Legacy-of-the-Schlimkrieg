@@ -1,0 +1,108 @@
+characters={
+	YUG_prince_paul={
+		name=YUG_prince_paul
+		portraits={
+			civilian={
+				large=GFX_portrait_YUG_prince_paul
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	YUG_milan_stojadinovic={
+		name=YUG_milan_stojadinovic
+		portraits={
+			civilian={
+				large=GFX_portrait_YUG_milan_stojadinovic
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	YUG_milan_grol={
+		name=YUG_milan_grol
+		portraits={
+			civilian={
+				large=GFX_portrait_YUG_milan_grol
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	YUG_peter_ii={
+		name=YUG_peter_ii
+		portraits={
+			civilian={
+				large="GFX_portrait_yugoslavia_peter_ii_young"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ underage_monarch }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ underage_monarch }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	YUG_josip_broz_tito={
+		name=YUG_josip_broz_tito
+		advisor={
+			slot = army_chief
+			idea_token = YUG_josip_broz_tito
+			allowed = {
+					OR = {
+						original_tag = YUG
+						original_tag = SWE
+					}
+				}
+				available = {
+					OR = {
+						AND = {
+							custom_trigger_tooltip = {
+								tooltip = tito_is_not_dead_tt
+								not = {
+									has_global_flag = Tito_killed
+								}
+							}
+						}
+
+						SWE_refuge_for_revolutionaries_trigger = yes
+					}
+				}
+				traits = {
+					army_chief_morale_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1966.1.1.1"
+			id=-1
+		}
+		portraits={
+			army={
+				small="GFX_idea_YUG_josip_broz_tito"
+			}
+			civilian={
+				large=GFX_portrait_YUG_josip_broz_tito
+			}
+		}
+	}
+}

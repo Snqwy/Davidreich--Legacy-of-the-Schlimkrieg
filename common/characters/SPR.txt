@@ -1,0 +1,22 @@
+characters={
+
+	SPR_niceto_alcala_zamora={
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPR_niceto_alcala_zamora
+			portraits={
+				civilian={
+					large="GFX_portrait_SPR_niceto_alcala_zamora"
+				}
+			}
+			country_leader={
+				ideology=conservatism
+				traits={ indecisive }
+				expire="1965.1.1.1"
+				id=-1
+			}
+		}
+	}
+}

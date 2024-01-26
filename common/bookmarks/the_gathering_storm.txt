@@ -10,8 +10,8 @@ bookmarks = {
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-				idea_militarization_dr
 				idea_legacy_of_the_schlimkrieg_dr
+				idea_militarization_dr
 				idea_steady_economic_recovery_dr
 			}
 			focuses = {
@@ -24,17 +24,17 @@ bookmarks = {
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-				idea_agrarian_society_dr
 				idea_a_fractured_motherland_dr
 				idea_home_of_the_revolution_dr
+				idea_agrarian_society_dr
 			}
 		}
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				idea_political_crisis_dr
 				idea_victor_of_the_schlimkrieg_dr
+				idea_political_crisis_dr
 				idea_post_schlimkrieg_demobilization_dr
 			}
 			focuses = {
@@ -47,8 +47,9 @@ bookmarks = {
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-				idea_the_mafia_dr
 				idea_birthplace_of_maxism_dr
+				idea_the_mafia_dr
+				idea_incompetent_military_dr
 			}
 			focuses = {
 				ITA_death_of_maxism_dr
@@ -60,8 +61,8 @@ bookmarks = {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				idea_dust_bowl_dr
 				idea_the_great_game_dr
+				idea_dust_bowl_dr
 				idea_quebecois_resistance_dr
 			}
 		}
@@ -73,13 +74,19 @@ bookmarks = {
 				idea_warrior_culture_dr
 				idea_army_navy_rivalry_dr
 			}
+			focuses = {
+				JAP_co_prosperity_sphere_dr
+				JAP_spiritual_awakening_dr
+				JAP_army_of_the_rising_sun_dr
+			}
 		}
 		"SAF"={
 			history = "SAF_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				idea_quelled_minorities_dr
 				idea_victor_of_the_schlimkrieg_dr
+				idea_quelled_minorities_dr
+				idea_advances_of_south_africa_dr
 			}
 		}
 
@@ -112,8 +119,8 @@ bookmarks = {
 			history = ""
 			ideology = democratic
 			ideas = {
+				idea_nationalist_backing_dr
 				idea_irish_republican_army_dr
-				idea_memories_of_1929_dr
 				idea_the_end_nears_dr
 			}
 		}

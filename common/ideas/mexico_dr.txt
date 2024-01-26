@@ -1,9 +1,9 @@
 ideas={country={
-  idea_history_of_humiliation_dr={picture=idea_tur_etatism_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+  idea_history_of_humiliation_dr={picture=tur_etatism_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.15 war_support_factor=0.15 can_master_build_for_us=1 cic_to_overlord_factor=0.15 mic_to_overlord_factor=0.15}}
 
-  idea_power_of_the_church_dr={picture=MEX_church_power_5 allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+  idea_power_of_the_church_dr={picture=MEX_church_power_5 allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=-0.2 neutrality_drift=0.05}}
 
-  idea_mexican_cartel_dr={picture=spr_political_violence allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+  idea_mexican_cartel_dr={picture=SPR_political_violence allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.1 consumer_goods_factor=0.1 political_power_factor=-0.05}}
 
-  idea_inadequate_army_dr={picture=mex_politicised_army allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+  idea_inadequate_army_dr={picture=MEX_politicised_army allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_org_factor=-0.15 army_morale_factor=-0.15 army_speed_factor=-0.15 army_defence_factor=-0.15 army_attack_factor=-0.15}}
 }}

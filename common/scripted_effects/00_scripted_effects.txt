@@ -179,27 +179,6 @@ GER_democratic_nations_ai_strategies = {
 		id = "FIN"
 		value = -200
 	}
-	# Estonia
-	add_ai_strategy = {
-		type = protect
-		id = "EST"
-		value = -200
-	}
-	add_ai_strategy = {
-		type = ignore
-		id = "EST"
-		value = 200
-	}
-	add_ai_strategy = {
-		type = befriend
-		id = "EST"
-		value = -200
-	}
-	add_ai_strategy = {
-		type = alliance
-		id = "EST"
-		value = -200
-	}
 	# Latvia
 	add_ai_strategy = {
 		type = protect
@@ -1200,47 +1179,6 @@ remove_fascist_spirits_effect = {
 	if = {
 		limit = { has_idea = GER_align_romania }
 		remove_ideas = GER_align_romania
-	}
-}
-
-#Should remove any and all communist foreign influence
-remove_communist_spirits_effect = {
-	if = {
-		limit = { has_idea = communist_pressure }
-		remove_ideas = communist_pressure
-	}
-	if = {
-		limit = { has_idea = american_influence_drift_communism }
-		remove_ideas = american_influence_drift_communism
-	}
-	if = {
-		limit = { has_idea = comintern_influence }
-		remove_ideas = comintern_influence
-	}
-	if = {
-		limit = { has_idea = pan_slavic_propaganda }
-		remove_ideas = pan_slavic_propaganda
-	}
-	if = {
-		limit = { has_idea = agitated_peasants }
-		remove_ideas = agitated_peasants
-	}
-	if = {
-		limit = { has_idea = armed_communist_militants }
-		remove_ideas = armed_communist_militants
-	}
-	if = {
-		limit = { has_idea = BALTIC_communist_propaganda }
-		remove_ideas = BALTIC_communist_propaganda
-	}
-	if = {
-		limit = { has_idea = BALTIC_communist_militancy }
-		remove_ideas = BALTIC_communist_militancy
-	}
-
-	if = {
-		limit = { has_idea = SWE_foreign_communist_influence }
-		remove_ideas = SWE_foreign_communist_influence
 	}
 }
 

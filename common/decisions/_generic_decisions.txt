@@ -1,5 +1,33 @@
 political_actions = {
 
+	fra_africa_new_era_decision_dr = {
+
+		allowed = {
+			always = yes
+		}
+
+		fire_only_once=yes
+
+		available={controls_state=290 controls_state=461 controls_state=462 controls_state=783 controls_state=699 controls_state=557 controls_state=272 controls_state=701 controls_state=899 controls_state=898 controls_state=786 controls_state=782 controls_state=514 controls_state=513 controls_state=459 controls_state=460 controls_state=458 controls=665}
+
+		visible = {
+			tag=FRA
+			has_completed_focus=FRA_a_new_era_dawns_dr
+			has_government=democratic 
+			NOT={country_exists=LBA country_exists=MRT}
+		}
+
+		complete_effect = {
+			FRA={add_state_core=459 add_state_core=460 puppet=LBA LBA={set_capital=458 transfer_state=290 transfer_state=461 transfer_state=462 transfer_state=783 transfer_state=514 transfer_state=513 transfer_state=665 transfer_state=458}FRA={puppet=MRT}MRT={transfer_state=699 transfer_state=557 transfer_state=272 transfer_state=701 transfer_state=899 transfer_state=898 transfer_state=786 transfer_state=782}
+			
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	targeted_race_for_the_bomb = {
 

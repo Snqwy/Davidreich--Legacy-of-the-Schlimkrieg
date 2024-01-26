@@ -1,7 +1,7 @@
 ideas={country={
-   idea_birthplace_of_maxism_dr={picture=generic_fascism_drift_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=0.2 party_popularity_stability_factor=0.05}}
+idea_birthplace_of_maxism_dr={picture=generic_fascism_drift_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=0.2 party_popularity_stability_factor=0.05}}
 
-   idea_incompetent_army_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}} 
+idea_incompetent_military_dr={picture=hol_expand_the_colonial_army allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={land_doctrine_cost_factor=0.15 naval_doctrine_cost_factor=0.15 air_doctrine_cost_factor=0.15 offence=-0.15 defence=-0.15}} 
 
    idea_roman_senate_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
 
@@ -9,38 +9,53 @@ ideas={country={
 
    idea_by_blood_alone_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
 
-   idea_italian_republicanism_dr={picture=ITA_italian_irredentism allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_weekly_factor=0.05 democratic_drift=0.05 neutrality_drift=-0.05 fascism_drift=-0.05 communism_drift=-0.05}}
+idea_italian_republicanism_dr={picture=ITA_italian_irredentism allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_weekly_factor=0.05 democratic_drift=0.05 neutrality_drift=-0.05 fascism_drift=-0.05 communism_drift=-0.05}}
 
-   idea_the_mafia_dr={picture=tur_kemalist_officers_disloyalty_effect allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.3 war_support_factor=-0.1 political_power_factor=-0.1}}
+idea_the_mafia_dr={picture=tur_kemalist_officers_disloyalty_effect allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.3 war_support_factor=-0.1 political_power_factor=-0.1}}
 
-   idea_implement_socialism_dr={picture=FIN_socialist_wellfare allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=0.5 consumer_goods_factor=-0.05 industrial_capacity_factory=0.05 communism_acceptance=50}}
+idea_implement_socialism_dr={picture=FIN_socialist_welfare allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=0.25 consumer_goods_factor=-0.05 industrial_capacity_factory=0.05 communism_acceptance=50}}
 
-   idea_organized_unions_dr={picture=FIN_finnish_federation_of_trade_unions_light allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={communism_drift=0.05 industrial_capacity_factory=0.05}}
+idea_organized_unions_dr={picture=FIN_finnish_federation_of_trade_unions_light allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={communism_drift=0.05 industrial_capacity_factory=0.05}}
 
-   idea_the_mafia_2_dr={picture= allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.1 political_power_factor=0.05 conscription_factor=0.05}}
+idea_the_mafia_2_dr={picture=tur_kemalism_with_socialist_characteristics allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.1 political_power_factor=0.05 conscription_factor=0.05}}
 
-   idea_papal_support_dr={picture=ITA_papal_state_ns allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=0.05 army_org_factor=0.05}}
+idea_papal_support_dr={picture=ITA_papal_state_ns allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=0.05 army_org_factor=0.05}}
 
-   idea_the_mafia_3_dr={picture=tur_kemalist_officers_disloyalty_effect allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.6 war_support_factor=-0.2 political_power_factor=-0.15 neutrality_drift=0.2}}
+idea_the_mafia_3_dr={picture=tur_kemalist_officers_disloyalty_effect allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.6 war_support_factor=-0.2 political_power_factor=-0.15 neutrality_drift=0.2}}
 
-   idea_the_mafia_4_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.2 war_support_factor=-0.15 political_power_factor=-0.15 neutrality_drift=0.2}}
+idea_the_mafia_4_dr={picture=tur_kemalist_officers_disloyalty_effect allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.2 war_support_factor=-0.15 political_power_factor=-0.15 neutrality_drift=0.2}}
 
-   idea_criminal_hierachy_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=-0.5 party_popularity_stability_factor=0.15}}
+idea_criminal_hierachy_dr={picture=tur_coordinated_balkan_armed_forces allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=-0.5 party_popularity_stability_factor=0.15}}
 
-   idea_corporatist_collectives_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={industrial_capacity_factory=0.05 industry_repair_factor=0.05}}
+idea_corporatist_collectives_dr={picture=generic_fascist_workers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={industrial_capacity_factory=0.05 industry_repair_factor=0.05}}
 
-   idea_party_devotion_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={party_popularity_stability_factor=0.05 war_stability_factor=0.05}}
+idea_party_devotion_dr={picture=SPA_crusade_against_democracy allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={party_popularity_stability_factor=0.05 war_stability_factor=0.05}}
 
-   idea_new_italian_spirit_dr={picture=ITA_italian_irredentism allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={war_support_factor=0.15 party_popularity_stability_factor=0.1 war_stability_factor=0.1 industrial_capacity_factory=0.1 industry_repair_factor=0.1 fascism_drift=0.2}}
+idea_new_italian_spirit_dr={picture=ITA_italian_irredentism allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={war_support_factor=0.15 party_popularity_stability_factor=0.1 war_stability_factor=0.1 industrial_capacity_factory=0.1 industry_repair_factor=0.1 fascism_drift=0.2}}
 
-      idea_spark_of_global_vanguardism_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={justify_war_goal_time=-0.15 offensive_war_stability_factor=0.1 defensive_war_stability_factor=0.1}}
+idea_spark_of_global_vanguardism_dr={picture=SOV_soviet_hegemony allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={justify_war_goal_time=-0.15 offensive_war_stability_factor=0.1 defensive_war_stability_factor=0.1}}
 
-      idea_the_mafia_5_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.25 war_support_factor=-0.15 political_power_factor=-0.1 political_power_cost=0.5 neutrality_drift=-0.1}}
+    idea_the_mafia_5_dr={picture=chi_wargaming_division allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.25 war_support_factor=-0.15 political_power_factor=-0.1 political_power_cost=0.5 neutrality_drift=-0.1}}
 
-idea_the_mafia_6_dr={picture=tur_kemalist_officers_disloyalty_effect allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.1 war_support_factor=-0.1 political_power_factor=-0.05 fascism_drift=0.05}}
+   idea_the_mafia_6_dr={picture=tur_kemalist_officers_disloyalty_effect allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.1 war_support_factor=-0.1 political_power_factor=-0.05 fascism_drift=0.05}}
 
-      idea_the_mafia_7_dr={llowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.1 war_support_factor=-0.1 political_power_factor=-0.05 fascism_drift=0.05 consumer_goods_factor=-0.15}}
+   idea_the_mafia_7_dr={picture=tur_kemalist_officers_disloyalty_effect allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.1 war_support_factor=-0.1 political_power_factor=-0.05 fascism_drift=0.05 consumer_goods_factor=-0.15}}
 
-      idea_spazio_vitale_dr={llowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={justify_war_goal_time=-0.2}}
+   idea_spazio_vitale_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={justify_war_goal_time=-0.2}}
 
+   idea_modern_calvary_tactics_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={cavalry_attack_factor=0.05 cavalry_defence_factor=0.05 army_speed_factor=0.05}}
+
+   idea_death_of_maxism_dr={picture=saf_ossewabrandwag_fascism allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.5 fascism_drift=-0.5 political_power_factor=-0.15}rule={can_not_declare_war=yes}}
+
+   idea_vanguardist_menace_dr={picture=generic_communism_banned allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={communism_drift=-1 communism_acceptance=-100}}
+      
+   idea_incompetent_military_2_dr={picture=picture=hol_expand_the_colonial_army allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={land_doctrine_cost_factor=0.1 naval_doctrine_cost_factor=0.1 air_doctrine_cost_factor=0.1 offence=-0.1 defence=-0.1}} 
+
+   idea_incompetent_military_3_dr={picture=picture=hol_expand_the_colonial_army allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={land_doctrine_cost_factor=0.05 naval_doctrine_cost_factor=0.05 air_doctrine_cost_factor=0.05 offence=-0.05 defence=-0.05}} 
+
+   idea_incompetent_military_4_dr={picture=picture=hol_expand_the_colonial_army allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1}
+
+   idea_incompetent_military_5_dr={picture=ITA_regia_marina_3 allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={offence=0.1 defence=0.1 experience_gain_army_factor=0.1 experience_gain_navy_factor=0.1 experience_gain_air_factor=0.1}} 
+
+   idea_five_year_plan_dr={picture=SOV_third_five_year_plan_civilian allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=-0.05 production_speed_buildings_factor=0.1 political_power_cost=0.50}} 
 }}

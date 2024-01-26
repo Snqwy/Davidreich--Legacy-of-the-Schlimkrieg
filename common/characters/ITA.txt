@@ -115,8 +115,7 @@ characters = {
 		}
 
 		country_leader = {
-			ideology = despotism
-			traits = { the_soldier_king }
+			ideology = oligarchism
 			expire = "1965.1.1.1"
 			id = -1
 		}

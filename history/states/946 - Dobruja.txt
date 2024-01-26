@@ -1,0 +1,33 @@
+state={
+	id=946
+	name="STATE_946"
+
+	history={
+		owner = ROM
+		add_core_of=ROM
+		add_claim_by=BUL
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 3
+			657 = {
+				naval_base = 8
+			}
+			687 = {
+				naval_base = 1
+			}
+			dockyard = 1
+		}
+		victory_points = {
+			657 3 
+		}
+	}
+	provinces={
+		657 687 3076 9635 
+	}
+	manpower=612748
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

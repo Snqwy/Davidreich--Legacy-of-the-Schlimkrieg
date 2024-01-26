@@ -16,7 +16,7 @@ characters={
 	}
 
 	JAP_kyuichi_tokuda={
-		name=JAP_emperor_hirohito
+		name=JAP_dillon
 		portraits={
 			civilian={
 				large="GFX_portrait_dillon_communist"
@@ -31,7 +31,7 @@ characters={
 	}
 
 	JAP_tetsu_katayama={
-		name=JAP_emperor_hirohito
+		name=JAP_dillon
 		portraits={
 			civilian={
 				large="GFX_portrait_dillon_democratic"

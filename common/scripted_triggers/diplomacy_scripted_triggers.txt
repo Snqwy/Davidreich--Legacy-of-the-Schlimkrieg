@@ -137,8 +137,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_BRITAIN_TOOLTIP
-			NOT = { FROM = { tag = MLT } }
-			NOT = { FROM = { tag = CYP } }
 			NOT = { FROM = { tag = PAL } }
 			NOT = { FROM = { tag = ISR } }
 			NOT = { FROM = { tag = JOR } }
@@ -148,32 +146,12 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 					is_ironman = no
 				}
 			}
-			NOT = { FROM = { tag = KUW } }
-			NOT = { FROM = { tag = QAT } }
-			NOT = { FROM = { tag = UAE } }
-			NOT = { FROM = { tag = BLZ } }
-			NOT = { FROM = { tag = BAH } }
-			NOT = { FROM = { tag = JAM } }
-			NOT = { FROM = { tag = TRI } }
-			NOT = { FROM = { tag = BAS } }
 			NOT = { FROM = { tag = GYA } }
-			NOT = { FROM = { tag = SRL } }
-			NOT = { FROM = { tag = MLD } }
-			NOT = { FROM = { tag = FIJ } }
 			NOT = { FROM = { tag = BRM } }
-			NOT = { FROM = { tag = SUD } }
 			NOT = { FROM = { tag = SOM } }
 			NOT = { FROM = { tag = UGA } }
-			NOT = { FROM = { tag = KEN } }
 			NOT = { FROM = { tag = TZN } }
-			NOT = { FROM = { tag = ZAM } }
-			NOT = { FROM = { tag = MLW } }
 			NOT = { FROM = { tag = ZIM } }
-			NOT = { FROM = { tag = BOT } }
-			NOT = { FROM = { tag = NGA } }
-			NOT = { FROM = { tag = GHA } }
-			NOT = { FROM = { tag = SIE } }
-			NOT = { FROM = { tag = GAM } }
 		}
 	}
 	if = {
@@ -189,13 +167,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_YUGOSLAVIA_TOOLTIP
 			NOT = { FROM = { tag = SER } }
-			NOT = { FROM = { tag = SLV } }
 			NOT = { FROM = { tag = CRO } }
-			NOT = { FROM = { tag = MNT } }
-			NOT = { FROM = { tag = KOS } }
-			NOT = { FROM = { tag = BOS } }
-			NOT = { FROM = { tag = HRZ } }
-			NOT = { FROM = { tag = MAC } }
 			NOT = { FROM = { tag = TRA } }
 		}
 	}
@@ -217,15 +189,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_ETHIOPIA_TOOLTIP
 			NOT = { FROM = { tag = SOM } }
-			NOT = { FROM = { tag = HAR } }
-			NOT = { FROM = { tag = TIG } }
 			NOT = { FROM = { tag = AFA } }
-			NOT = { FROM = { tag = BEG } }
-			NOT = { FROM = { tag = GBA } }
-			NOT = { FROM = { tag = SID } }
-			NOT = { FROM = { tag = ORO } }
-			NOT = { FROM = { tag = QEM } }
-			NOT = { FROM = { tag = ERI } }
 		}
 	}
 	if = {
@@ -290,7 +254,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_COSSACK_TOOLTIP
 			NOT = {
 				FROM = { tag = DON }
-				FROM = { tag = KUB }
 			}
 		}
 	}
@@ -418,7 +381,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			has_dlc = "By Blood Alone"
 			original_tag = ITA
 			FROM = { tag = PAP }
-			#has_completed_focus = ITA_seek_papal_support
+			has_completed_focus = ITA_seek_papal_support
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_ITALY_PAP_TOOLTIP
@@ -1371,10 +1334,8 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				original_tag = SOV
 				has_government = communism
 				FROM = { original_tag = SPR }
-				has_completed_focus = SOV_covert_support_for_spanish_poum
 				NOT = { has_completed_focus = SOV_coup_detat }
 				has_global_flag = SPR_anarchist_uprising_flag
-				SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
 			}
 			custom_trigger_tooltip = {
 				tooltip = RULE_VOLUNTEERS_SOVIET_SCW_COVERT_POUM_TT
@@ -1632,9 +1593,37 @@ DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			ROOT = {
+				original_tag = ICE
+				has_idea = neutrality_idea
+				is_subject = yes 
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ICELAND_HAS_DECLARED_NEUTRALITY_JOIN
+			always = no
+		}
+	}
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			ROOT = {
+				original_tag = DEN
+				has_country_flag = DEN_is_protectorate_flag
+				is_subject = yes 
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = DENMARK_IS_A_PUPPET_JOIN
+			always = no
+		}
+	}
 }
 DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
-	if = { # TODO_TA make more generic trigger
+	if = { 
 		limit = {
 			NOT = { has_global_flag = ethiopia_recognized_flag }
 			ROOT = {
@@ -1644,6 +1633,65 @@ DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = LON_NON_INTERFERENCE_RESOLUTION_CALL
+			always = no
+		}
+	}
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			FROM = {
+				original_tag = ICE
+				has_idea = neutrality_idea
+				is_subject = yes 
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ICELAND_HAS_DECLARED_NEUTRALITY_CALL
+			always = no
+		}
+	}
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			FROM = {
+				original_tag = DEN
+				has_country_flag = DEN_is_protectorate_flag
+				is_subject = yes 
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = DENMARK_IS_A_PUPPET_CALL
+			always = no
+		}
+	}
+}
+DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			original_tag = DEN
+			has_country_flag = DEN_is_protectorate_flag
+			is_subject = yes 
+
+		}
+		custom_trigger_tooltip = {
+			tooltip = DENMARK_IS_A_PUPPET_FACTION
+			always = no
+		}
+	}
+}
+DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			FROM = {
+				original_tag = DEN
+				has_country_flag = DEN_is_protectorate_flag
+				is_subject = yes 
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = DENMARK_IS_A_PUPPET_FACTION
 			always = no
 		}
 	}

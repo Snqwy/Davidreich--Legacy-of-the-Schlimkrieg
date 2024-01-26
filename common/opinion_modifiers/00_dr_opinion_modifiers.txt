@@ -4,4 +4,8 @@ hungry_bad_modifier_dr={value=-50}
 
 hungry_good_modifier_dr={value=50}
 
+italy_good_modifier_dr={value=80}
+
+italy_bad_modifier_dr={value=-30}
+
 }

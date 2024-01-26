@@ -1,8 +1,8 @@
 ideas={country={
     
-idea_house_of_lyons_dr={picture=por_monarchist_uprising allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=0.15 war_support_factor=0.05}}
+idea_house_of_lyons_dr={picture=por_monarchist_uprising allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=0.15 war_support_factor=0.15}}
 
-idea_army_navy_rivalry_dr={picture=jap_interservice_rivalry_balanced allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={planning_speed=-0.15 command_power_gain=-0.2}}
+idea_army_navy_rivalry_dr={picture=jap_interservice_rivalry_balanced allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={command_power_gain=-0.3 air_attack_factor=0.05 air_defence_factor=0.05 planning_speed=0.1}}
 
 idea_ichi_go_dr={picture=jap_ichi_go allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
 
@@ -18,7 +18,7 @@ idea_new_economic_plan_dr={picture=eng_spirit_of_the_industrial_revolution allow
 
 idea_reeducation_programs_dr={picture=generic_research_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={war_support_factor=0.1 research_speed_factor=0.1}}
 
-idea_share_the_wealth_dr={picture=tur_balkan_central_bank_wealthy_greece allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+idea_share_the_wealth_dr={picture=tur_balkan_central_bank_wealthy_greece allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=-0.1 democratic_drift=0.1}}
 
 idea_army_of_the_rising_sun_dr={picture=generic_japanese_conflict allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_morale_factor=0.05}}
 
@@ -28,6 +28,34 @@ idea_army_of_the_rising_sun_3_dr={picture=generic_japanese_conflict allowed={alw
 
 idea_army_of_the_rising_sun_4_dr={picture=generic_japanese_conflict allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_attack_factor=0.1 army_morale_factor=0.05 army_org_factor=0.05}}
 
-idea_warrior_culture_dr={picture=jap_militarism_showa allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=1.0 army_core_defence_factor=0.15 war_support_factor=0.2}}
+idea_warrior_culture_dr={picture=jap_militarism_showa allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=0.2 army_core_defence_factor=0.15 war_support_factor=0.2}}
+
+idea_army_navy_rivalry_2_dr={picture=jap_interservice_rivalry_army_dominant allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={planning_speed=0.1 command_power_gain=-0.3 industrial_capacity_factory=0.1 air_attack_factor=-0.05 air_defence_factor=-0.05 army_attack_factor=0.05 army_defence_factor=0.05 naval_damage_factor=-0.05 naval_defense_factor=-0.05}}
+
+idea_army_navy_rivalry_3_dr={picture=jap_interservice_rivalry_navy_dominant allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={planning_speed=0.1 command_power_gain=-0.3 industrial_capacity_dockyard=0.1 air_attack_factor=-0.05 air_defence_factor=-0.05 army_attack_factor=-0.05 army_defence_factor=-0.05 naval_damage_factor=0.05 naval_defense_factor=0.05}}
+
+idea_supply_line_advancements_dr={picture=generic_supply_lines allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={supply_factor=0.05 production_speed_rail_way_factor=0.05 production_speed_supply_node_factor=0.15}}
+
+idea_army_of_the_rising_sun_5_dr={picture=generic_japanese_conflict allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_morale_factor=0.1 army_attack_factor=0.05 army_org_factor=0.05 army_speed_factor=0.05}}
+
+idea_army_of_the_rising_sun_6_dr={picture=generic_japanese_conflict allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_morale_factor=0.1 army_attack_factor=0.05 army_org_factor=0.05 army_speed_factor=0.05}}
+
+idea_army_of_the_rising_sun_7_dr={picture=generic_japanese_conflict allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_morale_factor=0.1 army_attack_factor=0.05 army_org_factor=0.05 army_speed_factor=0.05 breakthrough_factor=0.05 pocket_penalty=-0.1}}
+
+idea_improved_designing_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={light_fighter_design_cost_factor=-0.10 tactical_bomber_design_cost_factor=-0.10 cas_bomber_design_cost_factor=-0.10}}
+
+idea_warrior_culture_2_dr={picture=jap_militarism_showa allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={surrender_limit=0.2 army_core_defence_factor=0.15 war_support_factor=0.2}rule={can_use_kamikaze_pilots=yes}}
+
+idea_enslaved_chinese_workforce_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.05 industrial_capacity_factory=0.05}}
+
+idea_democracy_without_democracy_dr={picture=ETH_corrupt_bureaucracy allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={fascism_acceptance=50 neutrality_acceptance=50}}
+
+idea_bulwark_against_communism_dr={picture=ger_bulwark_against_bolshevism allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={communism_acceptance=-100 communism_drift=-1.0}}
+
+idea_national_mobilization_dr={picture=generic_morale_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={conscription_factor=0.1}}
+
+idea_japanese_navy_dr={picture=generic_navy_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={naval_defense_factor=0.1}}
+
+idea_japanese_navy_2_dr={picture=generic_navy_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={naval_speed_factor=0.1}}
 
 }}

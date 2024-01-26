@@ -1047,7 +1047,20 @@ news_event = {
 news_event = {
 	id = news.32
 	title = news.32.t
-	desc = news.32.d
+	desc = {
+		text = news.32.d
+		trigger = {
+			NOT = { original_tag = FIN }
+		}
+	}
+
+	desc = {
+		text = news.32.d_finland
+		trigger = {
+			original_tag = FIN
+		}
+	}
+	
 	picture = GFX_news_event_017
 	
 	major = yes
@@ -1062,6 +1075,10 @@ news_event = {
 				TAG = SOV
 				is_in_faction_with = GER
 				is_in_faction_with = SOV
+				AND = {
+					original_tag = FIN
+					NOT = { is_in_faction_with = SOV }
+				}
 			}
 		}
 		if = {
@@ -1126,6 +1143,14 @@ news_event = {
 					is_in_faction_with = GER
 				}
 			}
+		}
+	}
+	option = {
+		name = news.32.f
+		trigger = { 
+			original_tag = FIN
+			NOT = { is_in_faction_with = GER }
+			NOT = { is_in_faction_with = SOV }
 		}
 	}
 }
@@ -1308,54 +1333,6 @@ news_event = {
 	major = yes
 	
 	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					tag = SOV
-				}
-				SOV_kill_trotsky_effect = yes
-			}
-		}
-	}
-	
-	option = {
-		name = news.37.a
-		trigger = { 
-			NOT = { 
-				TAG = SOV 
-				is_in_faction_with = SOV
-				tag = MEX
-			} 
-		}
-	}
-	option = {
-		name = news.37.a
-		trigger = {
-			tag = MEX
-			NOT = { is_in_faction_with = SOV }
-		}
-
-		effect_tooltip = {
-			retire_character = MEX_leon_trotsky
-		}
-	}
-
-	option = {
-		name = news.37.b
-		trigger = { TAG = SOV }
-	}
-
-	option = {
-		name = news.37.c
-		trigger = { 
-			is_in_faction_with = SOV
-			NOT = {
-				tag = SOV
-			} 
-		}
-	}
 }
 
 # Trotsky Survives Assassination
@@ -1877,46 +1854,6 @@ news_event = {
 	id = news.55
 	title = news.55.t
 	desc = news.55.d
-	picture = GFX_news_event_021
-
-	major = yes
-	fire_only_once = yes
-	
-	trigger = {
-		POL = {
-			is_in_faction_with = ENG
-			is_in_faction_with = FRA 
-			NOT = { is_in_faction_with = GER }
-		}
-	}
-	
-	option = {
-		name = news.55.a
-		trigger = {
-			NOT = {
-				TAG = GER
-				TAG = ENG
-				TAG = POL
-				TAG = FRA
-			}
-		}
-	}
-	option = {
-		name = news.55.b
-		trigger = { TAG = GER }
-	}
-	option = {
-		name = news.55.c
-		trigger = { TAG = ENG }
-	}
-	option = {
-		name = news.55.e
-		trigger = { TAG = POL }
-	}
-	option = {
-		name = news.55.f
-		trigger = { TAG = FRA }
-	}
 }
 
 # Munich Agreement
@@ -5061,39 +4998,6 @@ news_event = {
 	title = news.155.t
 	desc = news.155.d
 	picture = GFX_news_event_german_soldiers
-	
-	major = yes
-
-	trigger = {
-		NOT = { has_global_flag = rhineland_militarized_war }
-		GER = {
-			OR = {
-				has_country_flag = GER_rhineland_backed_down
-			}
-			has_offensive_war = yes
-		}
-		42 = {
-			is_demilitarized_zone = no
-		}
-	}
-
-	immediate = {
-		set_global_flag = rhineland_militarized_war
-	}
-	
-
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		trigger = { NOT = { tag = GER } }
-		name = news.155.a
-	}
-	option = {
-		trigger = { tag = GER } 
-		name = news.155.b
-	}
 }
 
 # Komet Sighted
@@ -5235,40 +5139,6 @@ news_event = {
 	title = news.160.t
 	desc = news.160.d
 	picture = GFX_news_event_german_soldiers
-	
-	major = yes
-
-	trigger = {
-		NOT = { has_global_flag = rhineland_militarized_war }
-		GER = {
-			OR = {
-				has_country_flag = GER_rhineland_backed_down
-			}
-			has_defensive_war = yes
-			NOT = { has_civil_war = yes }
-		}
-		42 = {
-			is_demilitarized_zone = no
-		}
-	}
-
-	immediate = {
-		set_global_flag = rhineland_militarized_war
-	}
-	
-
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		trigger = { NOT = { tag = GER } }
-		name = news.160.a
-	}	
-	option = {
-		trigger = { tag = GER }
-		name = news.160.b
-	}
 }
 
 # France bans communism
@@ -5904,6 +5774,7 @@ news_event = {
 ##		NOT = { has_global_flag = SOV_fourth_international_fired }
 ##		SOV = {
 ##			OR = {
+##				has_completed_focus = SOV_great_purge
 ##				NOT = { has_country_flag = SOV_purge_started }
 ##			}
 ##			has_government = communism
@@ -5920,6 +5791,7 @@ news_event = {
 #			#1
 #			if = {
 #				limit = {
+#					has_completed_focus = SOV_great_purge
 #					has_country_flag = no_political_purge
 #					has_country_flag = purge_1_no_purge
 #					has_country_flag = purge_2_no_purge
@@ -5929,6 +5801,7 @@ news_event = {
 #			#2
 #			if = {
 #				limit = {
+#					has_completed_focus = SOV_great_purge
 #					OR = {
 #						AND = {
 #							NOT = { has_country_flag = no_political_purge }
@@ -5952,6 +5825,7 @@ news_event = {
 #			#3
 #			if = {
 #				limit = {
+#					has_completed_focus = SOV_great_purge
 #					OR = {
 #						AND = {
 #							NOT = { has_country_flag = no_political_purge }
@@ -5976,6 +5850,7 @@ news_event = {
 #			if = {
 #				limit = {
 #					SOV = {
+#						has_completed_focus = SOV_great_purge
 #						NOT = { has_country_flag = no_political_purge }
 #						NOT = { has_country_flag = purge_1_no_purge }
 #						NOT = { has_country_flag = purge_2_no_purge	}
@@ -5994,6 +5869,7 @@ news_event = {
 #		trigger = {
 #			SOV = {
 #				OR = {
+#					NOT = { has_completed_focus = SOV_great_purge }
 #					has_country_flag = no_political_purge
 #					has_country_flag = purge_1_no_purge
 #					has_country_flag = purge_2_no_purge
@@ -6005,6 +5881,7 @@ news_event = {
 #		text = news.173.d_2
 #		trigger = {
 #			SOV = {
+#				has_completed_focus = SOV_great_purge
 #				NOT = { has_country_flag = no_political_purge }
 #				NOT = { has_country_flag = purge_1_no_purge }
 #				NOT = { has_country_flag = purge_2_no_purge	}
@@ -9500,14 +9377,17 @@ news_event = {
 		name = news.234.c
 		trigger = {
 			NOT = {
-				OR = {
+				tag = BEL
+				tag = LUX
+			}
+			OR = {
+				NOT = {
 					tag = HOL
-					tag = BEL
-					tag = LUX
 					is_in_faction_with = HOL
 					is_in_faction_with = LUX
 					is_in_faction_with = BEL
 				}
+				NOT = { has_war_with = GER }
 			}
 		}
 	}

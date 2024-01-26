@@ -291,15 +291,15 @@ HOL_benelux_unified = {
 	color_ui = rgb { 255 128 0 }
 }
 
-SPR_nationalist_spain = {
+SPR_nationalist_spain = { #cw tag
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }
 }
-SPR_carlist_spain = {
-	color = rgb { 255 128 0 }
-	color_ui = rgb { 255 255 122 }
+SPR_carlist_spain = { #cw tag
+	color = rgb { 209 157 2 }
+	color_ui = rgb { 209 157 2 }
 }
-SPR_anarchist_spain = {
+SPR_anarchist_spain = { #cw tag
 	color = rgb { 204 0 0 }
 	color_ui = rgb { 35 35 35 }
 }
@@ -876,4 +876,64 @@ SAF_reichskommissariat_dr = {
 BRM_PUP = {
 	color = rgb { 80  165  10 }
 	color_ui = rgb { 80  165  10 }
+}
+UK_form_dr = {
+	color = rgb { 148 35 65 }
+	color_ui = rgb { 148 35 65 }
+}
+UK_interallied_dr = {
+	color = rgb { 171 113 113 }
+	color_ui = rgb { 171 113 113 }
+}
+cosmetic_tag_greater_romania_dr = {
+	color = rgb { 73 98 156 }
+	color_ui = rgb { 73 98 156 }
+}
+cosmetic_tag_romania_bulgaria_dr = {
+	color = rgb { 59 105 69 }
+	color_ui = rgb { 59 105 69 }
+}
+cosmetic_tag_nazbol_dr = {
+	color = rgb { 74 32 32 }
+	color_ui = rgb { 74 32 32 }
+}
+cosmetic_tag_israel_arab_dr = {
+	color = rgb { 75 130 87 }
+	color_ui = rgb { 75 130 87 }
+}
+cosmetic_tag_riley_legion_dr = {
+	color = rgb { 153 70 70 }
+	color_ui = rgb { 153 70 70 }
+}
+cosmetic_tag_gaul_dr = {
+	color = rgb { 59 120 61 }
+	color_ui = rgb { 59 120 61 }
+}
+ENG_reichskommissariat_dr = {
+	color = rgb { 46 40 37 }
+	color_ui = rgb { 46 40 37 }
+}
+CAN_reichskommissariat_dr = {
+	color = rgb { 36 38 32 }
+	color_ui = rgb { 36 38 32 }
+}
+CKK_reichskommissariat_dr = {
+	color = rgb { 59 120 61 }
+	color_ui = rgb { 59 120 61 }
+}
+ITA_reichskommissariat_dr = {
+	color = rgb { 59 120 61 }
+	color_ui = rgb { 59 120 61 }
+}
+USA_reichskommissariat_dr = {
+	color = rgb { 59 120 61 }
+	color_ui = rgb { 59 120 61 }
+}
+MEX_reichskommissariat_dr = {
+	color = rgb { 59 120 61 }
+	color_ui = rgb { 59 120 61 }
+}
+iae_dr = {
+	color = rgb { 72 140 67 }
+	color_ui = rgb { 72 140 67 }
 }

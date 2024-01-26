@@ -1,1 +1,1 @@
-﻿capital=376 #####
+﻿capital=376

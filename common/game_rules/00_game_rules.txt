@@ -2063,7 +2063,7 @@ SWE_ai_behavior = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
-		allow_achievements = yes
+		allow_achievements = no
 	} 
 }
 

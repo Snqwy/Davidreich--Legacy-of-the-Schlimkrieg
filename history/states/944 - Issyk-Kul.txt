@@ -1,0 +1,22 @@
+state={
+	id=944
+	name="STATE_944"
+
+	history={
+		owner = UZB
+		victory_points = {
+			12583 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = UZB
+	}
+	provinces={
+		1675 1825 4224 4316 4391 4768 10408 10530 10660 12511 12583 13147
+	}
+	manpower=215304
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

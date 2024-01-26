@@ -10,4 +10,18 @@ idea_davidian_influence_dr={picture=generic_monarchist_uprising allowed={always=
 
 idea_starving_nation_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.3 political_power_factor=-0.15}}
 
+idea_food_imports_2_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=0.05 communism_drift=0.1}}
+
+idea_food_imports_3_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=0.05 neutrality_drift=0.1}}
+
+idea_food_imports_4_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=0.05 democratic_drift=0.1}}
+
+idea_military_sabotage_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_attack_factor=-0.15 command_power_gain_mult=-0.1 experience_gain_army_factor=-0.1 command_abilities_cost_factor=-0.1}}
+
+idea_industrial_sabotage_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={production_speed_buildings_factor=-0.15 industrial_capacity_factory=-0.1 industry_repair_factor=-0.1 consumer_goods_factor=0.1}}
+
+idea_political_sabotage_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=-0.15 fascism_drift=0.2 stability_weekly=-0.01 war_support_weekly=-0.01}}
+
+idea_coal_agreement_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1}
+
 }}

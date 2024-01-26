@@ -1,1 +1,1 @@
-﻿capital=430
+﻿capital=430 set_politics={ruling_party=democratic last_election="1930.11.9" election_frequency=48 elections_allowed=no}set_popularities={democratic=80 communism=15 neutrality=5}
