@@ -52,7 +52,7 @@ idea_davewirtschaft_2_dr={picture=generic_flexible_foreign_policy2 allowed={alwa
 
 idea_democracies_are_fucking_boring_dr={picture=generic_democratic_drift_bonus allowed={always=no}allowed_civil_war={always=no}removal_cost=-1 modifier={democratic_drift=0.05 annex_cost_factor=0.3 justify_war_goal_time=0.3 guarantee_cost=-0.3}}
 
-idea_david_four_year_plan_dr={picture=generic_exploit_mines allowed={always=no}allowed_civil_war={always=no}removal_cost=-1 modifier={political_power_cost=1.0 production_speed_industrial_complex_factor=0.1 production_speed_infrastructure_factor=0.15 production_speed_rail_way_factor=0.05 consumer_goods_factor=-0.05}}
+idea_david_four_year_plan_dr={picture=generic_exploit_mines allowed={always=no}allowed_civil_war={always=no}removal_cost=-1 modifier={political_power_cost=1.0 production_speed_industrial_complex_factor=0.1 production_speed_infrastructure_factor=0.15 production_speed_rail_way_factor=0.05 consumer_goods_factor=-0.05 political_advisor_cost_factor=-0.15 political_power_factor=0.15}}
 
 idea_der_davesmarine_2_dr={picture=generic_navy_bonus allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={experience_gain_navy=0.05 naval_damage_factor=0.05 naval_defense_factor=0.05 naval_coordination=0.05 navy_capital_ship_attack_factor=0.05}}
 
@@ -77,6 +77,8 @@ idea_der_luftdaffe_7_dr={picture=generic_air_research allowed={always=no}allowed
 idea_legacy_of_the_schlimkrieg_3_dr={picture=YUG_local_militias allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_org_Factor=0.05 war_support_factor=-0.1 drift_defence_factor=0.30 justify_war_goal_time=-0.15}rule={can_create_factions=yes}}
 
 idea_exporting_the_revolution_dr={picture=generic_democratic_drift_bonus allowed={always=no}allowed_civil_war={always=no}removal_cost=-1 modifier={justify_war_goal_time=-0.25}}
+
+    idea_endsiegdr={allowed={always=no}allowed_civil_war={always=no}removal_cost=-1 modifier={}}    
 
 #idea_the_old_doctrine_dr={allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={#}}
 

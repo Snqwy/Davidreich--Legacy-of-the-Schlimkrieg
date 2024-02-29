@@ -31,9 +31,22 @@ dr.9.d:0 "The Austrian people have voted overwhelmingly in favor of Daveschluss;
 dr.9.a:0 "The Davidian people rejoice!"
 dr.10.t:0 "Davidian Demands For Czechoslovakia"
 
+dr.11.t:0 "Question Of Austria"
+dr.11.d:0 "Ever since the Schlimkrieg, the Austrian people have resided in a weak, and unstable nation. Within the past several years we've already pursued closer bonds with Austria, along with Hungry, in an economic association between our governments.\n\nWith the rising Davidian power, the question now is how should we continue our policy on Austria going forward?\n\n1. We can progressively retract our business with Austria in favor of strengthening our alliance with the Davidians. This decision will ensure that Austria is inevitably annexed.\n\n2. We can double down on our Austrian ties, and guarantee their independence in the event of potential conflict. This decision will eventually allow us to either establish a full military alliance between our nations, or turn them into a satellite state, however this will surely lead to trouble with the Davidians."
+dr.11.a:0 "Austria isn't our domain."
+dr.11.b:0 "Austria must be protected!"
+
+dr.12.t:0 "Czechoslovak Compromise"
+dr.12.d:0 "The Czechoslovak government has given in to becoming a protectorate of the Reich. We'll gain the territories with an undeniable Davidian majority, and the rest of the country shall become our puppet."
+dr.12.a:0 "This is the death of freedom."
+
 dr.13.t:0 "Annexation Of Czechoslovakia"
 dr.13.d:0 "The Czechoslovak government has surrendered their sovereignty to us. We will annex the historic Bohemian region, and will offer Slovakia to the Hungrians. Unfortunately there is a high likelihood that the Polshkans will interfere in these arrangements and will seek to claim their own share of the territory. Regardless, this is a victory for us."
 dr.13.a:0 "Bye bye, Czechoslovakia."
+
+dr.14.t:0 "Czechoslovakia Defiant"
+  dr.14.d:0 "The Czechoslovak government stands defiantly against our annexation attempt. It seems the only option now is to intiate an invasion of the country."
+dr.14.a:0 "A grave mistake you've made."
 
 dr.19.t:0 "Our Territories Break Free"
 dr.19.d:0 "Due to the worsening state of Emperor Dillon, our holdings in Manchuria, Korea, and the Far East, have broken free from our grasp. Perhaps in the future we'll be able to reclaim them."
@@ -96,3 +109,48 @@ dr.47.a:0 "Permit the annexation."
 dr.47.b:0 "We want resource compensation!"
 dr.47.c:0 "We want territorial compensation!"
 dr.47.e:0 "There will be no Daveschluss!"
+
+dr.48.t:0 "Japan Withdraws"
+  dr.48.d:0 ""
+dr.48.a:0 ""
+
+dr.51.t:0 "Convening The Party"
+  dr.51.d:0 ""
+dr.51.a:0 "§RVanguardists"
+dr.51.b:0 "§OUtopianists"
+
+dr.53.t:0 "Connerians Offer An Alliance"
+  dr.53.d:0 "The Connerians have approached us over the matter of Mongolia's realm. No matter which option we choose, we'll have to make some concessions. We have three options to take in our efforts:\n\n1. We could exclude ourselves from involving in Mongolia, leaving it completely to Conner.\n\n2. We could demand minor border territories in order to establish a new puppet government.\n\n3. option 3."
+dr.53.a:0 "A closer relationship would mutually benefit us."
+dr.53.b:0 "We don't negotiate with communists."
+
+dr.56.t:0 "Partitioning Mongolia"
+  dr.56.d:0 "The Connerians have approached us over the matter of Mongolia's realm. No matter which option we choose, we'll have to make some concessions. We have three options to take in our efforts:\n\n1. We could exclude ourselves from involving in Mongolia, leaving it completely to Conner.\n\n2. We could demand minor border territories in order to establish a new puppet government.\n\n3. option 3."
+dr.56.a:0 "Take our core territories, and establish a satellite state."
+dr.56.b:0 "Approach the Japanese"
+dr.56.c:0 "Seize it all!"
+
+dr.57.t:0 "Partitioning Mongolia - Connerians Approach Us"
+  dr.57.d:0 "The Connerians have approached us over the matter of Mongolia's realm. No matter which option we choose, we'll have to make some concessions. Despite this fact any demands we make will be final, and won't be contested. We have three options to take in our efforts:\n\n1. We could exclude ourselves from involving in Mongolia, leaving it completely to Conner.\n\n2. We could demand minor border territories in order to establish a new puppet government.\n\n3. option 3."
+dr.57.a:0 "Mongolia is not our domain."
+dr.57.b:0 "Seek minor concessions."
+dr.57.c:0 "Mongolia belongs to Mengkukuo!"
+
+dr.58.t:0 "Vladivostok Conference"
+  dr.58.d:0 ""
+dr.58.a:0 "Sure, we'll accept."
+dr.58.b:0 "Remove your claims first."
+dr.58.c:0 "No way!"
+
+dr.59.t:0 "Stalin Makes His Move"
+  dr.59.d:0 ""
+dr.59.a:0 "That Georgian bastard!"
+
+dr.64.t:0 "Conner's Speech To The World"
+  dr.64.d:0 ""
+dr.64.a:0 ""
+
+dr.77.t:0 "Appeasing The Workers"
+  dr.77.d:0 ""
+dr.77.a:0 "Make reasonable concessions."
+dr.77.a:0 "Grant them extreme power."

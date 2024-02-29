@@ -1,1 +1,0 @@
-on_state_control_changed={effect={if={limit={FROM.FROM={state=86}}if={limit={tag=POL}FROM.FROM={reset_state_name=yes reset_province_name=6558}}}}}

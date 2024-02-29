@@ -1,1 +1,1 @@
-﻿capital=37 recruit_character=DEN_thorvald_stauning recruit_character=DEN_frits_clausen recruit_character=DEN_aksel_larsen set_politics={ruling_party=democratic last_election="1930.11.9" election_frequency=48 elections_allowed=no}set_popularities={neutrality=25 democratic=60 communism=10 fascism=5}
+﻿capital=37 recruit_character=DEN_thorvald_stauning set_politics={ruling_party=democratic last_election="1930.11.9" election_frequency=48 elections_allowed=no}set_popularities={neutrality=25 democratic=60 communism=10 fascism=5}

@@ -1,1 +1,1 @@
-﻿capital=6
+﻿capital=27

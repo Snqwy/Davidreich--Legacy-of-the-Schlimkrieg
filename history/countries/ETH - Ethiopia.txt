@@ -1,1 +1,1 @@
-﻿capital=271 recruit_character=ETH_mike_neutrality set_politics={ruling_party=neutrality last_election="1930.11.9" election_frequency=48 elections_allowed=no}set_popularities={neutrality=100}
+﻿capital=271 recruit_character=ETH_mike_neutrality set_politics={ruling_party=neutrality last_election="1930.11.9" election_frequency=48 elections_allowed=no}set_popularities={neutrality=100}add_ideas={idea_lion_of_africa_dr}

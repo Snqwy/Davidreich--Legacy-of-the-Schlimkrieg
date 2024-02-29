@@ -8,6 +8,7 @@ state={
 	history={
 		owner = DOM
 		add_core_of = DOM
+		add_claim_by = SAF
 		victory_points = {
 			1440 1 
 		}

@@ -149,9 +149,6 @@ characters = {
 			slot = theorist
 			idea_token = rodolfo_graziani
 			ledger = army
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
 			available = {
 				has_government = fascism
 			}
@@ -187,9 +184,6 @@ characters = {
 		advisor = {
 			slot = army_chief
 			idea_token = pietro_badoglio
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
 			traits = {
 				army_chief_morale_2
 			}
@@ -222,9 +216,6 @@ characters = {
 		advisor = {
 			slot = army_chief
 			idea_token = emilio_de_bono
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
 			traits = {
 				army_chief_defensive_1
 			}
@@ -260,15 +251,11 @@ characters = {
 		advisor = {
 			slot = air_chief
 			idea_token = italo_balbo
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
 			available = {
 				if =  {
 					limit = { 
 						has_dlc = "By Blood Alone"
 					}
-					ITA_is_advisor_available = yes
 				}
 			}
 			
@@ -289,9 +276,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = {
-				ITA_is_advisor_available = yes
-			}
 		}
 	}
 
@@ -309,9 +293,6 @@ characters = {
 			slot = theorist
 			idea_token = giovanni_messe
 			ledger = army
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
 			available = {
 				if = {
 					limit = { has_dlc = "By Blood Alone" }
@@ -348,9 +329,6 @@ characters = {
 		advisor = {
 			slot = army_chief
 			idea_token = ugo_cavallero
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
 			traits = {
 				army_chief_organizational_1 # Was army_chief_maneuver_2 (replaced by Alberto Pariani)
 			}
@@ -466,9 +444,7 @@ characters = {
 			slot = high_command
 			idea_token = vittorio_ambrosio
 			ledger = army
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			traits = {
 				army_cavalry_2
 			}
@@ -506,9 +482,7 @@ characters = {
 			slot = high_command
 			idea_token = alfredo_guzzoni
 			ledger = army
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			available = {
 				has_government = fascism
 			}
@@ -923,9 +897,6 @@ characters = {
 		advisor = {
 			slot = navy_chief
 			idea_token = inigo_campioni
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
 			traits = {
 				navy_chief_decisive_battle_1
 			}
@@ -959,9 +930,7 @@ characters = {
 			slot = high_command
 			idea_token = alberto_da_zara
 			ledger = navy
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			traits = {
 				navy_anti_submarine_1
 			}
@@ -1019,9 +988,7 @@ characters = {
 			slot = theorist
 			idea_token = guiseppe_fioravanzo
 			ledger = navy
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			traits = {
 				grand_fleet_proponent
 			}
@@ -1051,9 +1018,7 @@ characters = {
 			slot = high_command
 			idea_token = carlo_bergamini
 			ledger = navy
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			traits = {
 				navy_capital_ship_2
 			}
@@ -1088,9 +1053,6 @@ characters = {
 			slot = theorist
 			idea_token = angelo_iachino
 			ledger = navy
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
 			available = {
 				has_government = fascism
 			}
@@ -1173,9 +1135,7 @@ characters = {
 			slot = theorist
 			idea_token = amedeo_mecozzi
 			ledger = air
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			traits = {
 				assault_avaition
 			}
@@ -1195,9 +1155,7 @@ characters = {
 			slot = theorist
 			idea_token = renato_sandalli
 			ledger = air
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			traits = { air_warfare_theorist }
 		}		
 	}
@@ -1215,9 +1173,7 @@ characters = {
 			slot = theorist
 			idea_token = gaetano_crocco
 			ledger = air
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			research_bonus = {
 				rocketry = 0.150
 			}
@@ -1240,9 +1196,7 @@ characters = {
 			slot = theorist
 			idea_token = ITA_romeo_bernotti
 			ledger = navy
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+	
 			traits = {
 				naval_aviation_pioneer
 			}
@@ -1269,9 +1223,7 @@ characters = {
 		advisor = {
 			slot = army_chief
 			idea_token = ITA_alberto_pariani
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			traits = {
 				army_chief_maneuver_2
 			}
@@ -1298,9 +1250,7 @@ characters = {
 		advisor = {
 			slot = navy_chief
 			idea_token = domenico_cavagnari
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			traits = {
 				navy_chief_commerce_raiding_1
 			}
@@ -1322,9 +1272,7 @@ characters = {
 		advisor = {
 			slot = navy_chief
 			idea_token = arturo_riccardi
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			available = {
 				has_government = fascism
 			}
@@ -1349,12 +1297,7 @@ characters = {
 		advisor = {
 			slot = navy_chief
 			idea_token = ITA_raffaele_de_courten
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_government_is_somewhat_fascist = yes
-			}
+
 			traits = {
 				navy_chief_commerce_raiding_2
 			}
@@ -1381,9 +1324,7 @@ characters = {
 		advisor = {	
 			slot = air_chief
 			idea_token = rino_corso_fougier
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			traits = {
 				air_chief_safety_1
 			}
@@ -1405,9 +1346,7 @@ characters = {
 		advisor = {
 			slot = air_chief
 			idea_token = francesco_pricolo
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+	
 			traits = {
 				air_chief_reform_2
 			}
@@ -1429,9 +1368,7 @@ characters = {
 		advisor = {
 			slot = air_chief
 			idea_token = ITA_aldo_pellegrini
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			traits = {
 				air_chief_ground_support_1
 			}
@@ -1473,9 +1410,7 @@ characters = {
 			slot = high_command
 			idea_token = ettore_muti
 			ledger = air
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			available = {
 				has_government = fascism
 			}
@@ -1501,9 +1436,7 @@ characters = {
 			slot = high_command
 			idea_token = marziale_cerutti
 			ledger = air
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			available = {
 				has_government = fascism
 			}
@@ -1529,9 +1462,7 @@ characters = {
 			slot = high_command
 			idea_token = silvio_scaroni
 			ledger = air
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			available = {
 				has_government = fascism
 			}
@@ -1557,9 +1488,7 @@ characters = {
 			slot = high_command
 			idea_token = luigi_mascherpa
 			ledger = navy
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			available = {
 				has_government = fascism
 			}
@@ -1585,9 +1514,7 @@ characters = {
 			slot = high_command
 			idea_token = ITA_achille_starace
 			ledger = army
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			available = {
 				OR = {
 					has_government = fascism
@@ -1622,14 +1549,11 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_gian_galeazzo_ciano
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			available = {
 				NOT = {
 					has_country_leader_with_trait = mussolini_minister_of_foreign_affairs
 				}
-				ITA_government_is_somewhat_fascist = yes
 			}
 			cost = 75
 			traits = {
@@ -1638,11 +1562,6 @@ characters = {
 			ai_will_do = {
 				base = 0.3
 				modifier = {
-					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-					}
 				}
 			}
 		}
@@ -1662,19 +1581,15 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_dino_grandi
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			available = {
 				NOT = {
 					has_country_leader_with_trait = mussolini_minister_of_justice
 				}
-				ITA_government_is_somewhat_fascist = yes
 				if =  {
 					limit = { 
 						has_dlc = "By Blood Alone"
 					}
-					ITA_is_advisor_available = yes
 				}
 			}
 			
@@ -1686,10 +1601,6 @@ characters = {
 				base = 0.3
 				modifier = {
 					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-					}
 				}
 			}
 		}
@@ -1706,9 +1617,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_giuseppe_bottai
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			available = {
 				NOT = {
 					has_country_leader_with_trait = mussolini_minister_of_education
@@ -1722,10 +1631,6 @@ characters = {
 				base = 0.300
 				modifier = {
 					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-					}
 				}
 			}
 		}
@@ -1742,14 +1647,11 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_renato_ricci
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			available = {
 				NOT = {
 					has_country_leader_with_trait = mussolini_minister_of_corporations
 				}
-				ITA_government_is_really_fascist = yes
 			}
 			cost = 75
 			traits = {
@@ -1759,10 +1661,6 @@ characters = {
 				base = 0.300
 				modifier = {
 					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-					}
 				}
 			}
 		}
@@ -1786,12 +1684,7 @@ characters = {
 			slot = high_command
 			idea_token = mario_roatta
 			ledger = army
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_government_is_really_fascist = yes
-			}
+
 			traits = {
 				army_regrouping_1
 			}
@@ -1809,7 +1702,6 @@ characters = {
 			}
 			available = {
 				has_intelligence_agency = yes
-				ITA_government_is_really_fascist = yes
 			}
 			traits = {
 				head_of_intelligence 
@@ -1818,12 +1710,6 @@ characters = {
 				base = 1.000
 				modifier = {
 					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-						ITA_is_monarchist_ai = yes
-						ITA_is_christian_democracy_ai = yes
-					}
 				}
 			}
 		}
@@ -1836,7 +1722,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { ITA_government_is_really_fascist = yes }
 		}
 	}
 
@@ -1851,12 +1736,8 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_giovanni_marinelli
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_government_is_somewhat_fascist = yes
-			}
+
+	
 			traits = {
 				prince_of_terror
 			}
@@ -1864,10 +1745,7 @@ characters = {
 				base = 1.000
 				modifier = {
 					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-					}
+
 				}
 			}
 		}		
@@ -1884,12 +1762,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_giacomo_acerbo
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_government_is_really_fascist = yes
-			}
+
 			traits = {
 				war_industrialist 
 			}
@@ -1897,12 +1770,6 @@ characters = {
 				base = 3.000
 				modifier = {
 					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-						ITA_is_monarchist_ai = yes
-						ITA_is_christian_democracy_ai = yes
-					}
 				}
 			}
 		}
@@ -1919,12 +1786,8 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_paolo_thaon_di_revel
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_government_is_somewhat_fascist = yes
-			}
+
+
 			traits = {
 				quartermaster_general 
 			}
@@ -1933,12 +1796,7 @@ characters = {
 				base = 0.300
 				modifier = {
 					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-						ITA_is_monarchist_ai = yes
-						ITA_is_christian_democracy_ai = yes
-					}
+
 				}
 			}
 		}
@@ -1955,12 +1813,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_carlo_favagrossa
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_government_is_really_fascist = yes
-			}
+
 			traits = {
 				armaments_organizer
 			}
@@ -1969,12 +1822,7 @@ characters = {
 				base = 0.300
 				modifier = {
 					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-						ITA_is_monarchist_ai = yes
-						ITA_is_christian_democracy_ai = yes
-					}
+
 				}
 			}
 		}
@@ -1991,9 +1839,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_alberto_beneduce
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			available = {
 				OR = {
 					has_government = fascism
@@ -2013,10 +1859,7 @@ characters = {
 				base = 0.300
 				modifier = {
 					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-					}
+
 				}
 			}
 		}
@@ -2033,9 +1876,8 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_guido_jung
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+			
+
 			available = {
 				has_government = fascism
 				if = {
@@ -2052,13 +1894,7 @@ characters = {
 				base = 0.300
 				modifier = {
 					factor = 0
-					OR = {
-						ITA_is_historical_ai = yes
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-						ITA_is_monarchist_ai = yes
-						ITA_is_christian_democracy_ai = yes
-					}
+
 				}
 			}
 		}
@@ -2075,12 +1911,8 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_adelchi_serena
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_government_is_somewhat_fascist = yes
-			}
+
+
 			traits = {
 				silent_workhorse
 			}
@@ -2089,12 +1921,7 @@ characters = {
 				base = 0.300
 				modifier = {
 					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-						ITA_is_monarchist_ai = yes
-						ITA_is_christian_democracy_ai = yes
-					}
+
 				}
 			}
 		}
@@ -2111,9 +1938,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_curzio_malaparte
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			available = {
 				if = {
 					limit = {
@@ -2132,11 +1957,6 @@ characters = {
 				base = 0.300
 				modifier = {
 					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-						ITA_is_monarchist_ai = yes
-					}
 				}
 			}
 		}
@@ -2153,12 +1973,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_serafino_mazzolini
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_government_is_really_fascist = yes
-			}
+
 			traits = {
 				ideological_crusader 
 			}
@@ -2168,11 +1983,6 @@ characters = {
 				base = 0.500
 				modifier = {
 					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-						ITA_is_christian_democracy_ai = yes
-					}
 				}
 			}
 		}
@@ -2189,12 +1999,8 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ITA_roberto_farinacci
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				ITA_government_is_really_fascist = yes
-			}
+
+
 			traits = {
 				backroom_backstabber 
 			}
@@ -2202,12 +2008,7 @@ characters = {
 				base = 0.000
 				modifier = {
 					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-						ITA_is_monarchist_ai = yes
-						ITA_is_christian_democracy_ai = yes
-					}
+
 				}
 			}
 		}
@@ -2224,11 +2025,8 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = carlo_scorza
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			available = {
-				ITA_government_is_really_fascist = yes
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
@@ -2250,12 +2048,7 @@ characters = {
 				base = 0.000
 				modifier = {
 					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-						ITA_is_monarchist_ai = yes
-						ITA_is_christian_democracy_ai = yes
-					}
+
 				}
 			}
 		}		
@@ -2443,10 +2236,7 @@ characters = {
 				base = 0.300
 				modifier = {
 					factor = 0.5
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-					}
+
 				}
 			}
 		}
@@ -2502,10 +2292,7 @@ characters = {
 				base = 0
 				modifier = {
 					add = 100
-					OR = {
-						ITA_is_monarchist_ai = yes
-						ITA_is_christian_democracy_ai = yes
-					}
+
 				}
 			}
 		}
@@ -2549,9 +2336,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ivanoe_bonomi
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			available = {
 				if = {
 					limit = {
@@ -2561,7 +2346,6 @@ characters = {
 						has_autonomy_state = autonomy_supervised_state
 					}
 				}
-				ITA_is_going_antifascist_in_bba = yes
 				NOT = { 
 					has_country_leader = {
 						character = ITA_ivanoe_bonomi
@@ -2581,7 +2365,7 @@ characters = {
 				base = 0.000
 				modifier = {
 					factor = 0
-					ITA_is_socialist_ai = no
+
 				}
 			}
 		}
@@ -2638,7 +2422,7 @@ characters = {
 				base = 0
 				modifier = {
 					add = 0.1
-					ITA_is_socialist_ai = yes
+				
 				}
 			}
 		}
@@ -2674,7 +2458,7 @@ characters = {
 				base = 0.300
 				modifier = {
 					factor = 0
-					ITA_is_communist_ai = yes
+					
 				}
 			}
 		}
@@ -2710,7 +2494,7 @@ characters = {
 				base = 0.300
 				modifier = {
 					factor = 0
-					ITA_is_communist_ai = yes
+
 				}
 			}
 		}
@@ -2756,11 +2540,6 @@ characters = {
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
-			available = {
-				OR = {
-					ITA_is_in_liberation_war = yes
-				}
-			}
 			traits = {
 				anti_fascist_chaplain
 			}
@@ -2802,9 +2581,6 @@ characters = {
 			legacy_id = 0
 			visible = {
 				OR = {
-					ITA_is_in_liberation_war = yes
-				}
-				OR = {
 					has_government = communism
 					has_government = democratic
 				}
@@ -2830,9 +2606,6 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				OR = {
-					ITA_is_in_liberation_war = yes
-				}
 				OR = {
 					has_government = communism
 					has_government = democratic
@@ -2881,9 +2654,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				OR = {
-					ITA_is_in_liberation_war = yes
-				}
+
 				OR = {
 					has_government = communism
 					has_government = democratic
@@ -2904,10 +2675,7 @@ characters = {
 		advisor = {
 			slot = high_command
 			idea_token = ITA_randolfo_pacciardi
-			ledger = army
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+
 			available = {
 				OR = {
 					has_government = communism
@@ -2935,9 +2703,7 @@ characters = {
 			logistics_skill = 1
 			legacy_id = 0
 			visible = {
-				OR = {
-					ITA_is_in_liberation_war = yes
-				}
+
 				OR = {
 					has_government = communism
 					has_government = democratic
@@ -2957,11 +2723,9 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = amadeo_bordiga
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
+		
+
 			available = {
-				ITA_is_going_antifascist_in_bba = yes
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
@@ -3021,7 +2785,7 @@ characters = {
 				base = 0.800
 				modifier = {
 					factor = 0.1
-					ITA_is_socialist_ai = yes
+					
 				}
 			}
 		}
@@ -3084,7 +2848,7 @@ characters = {
 				}
 				modifier = {
 					factor = 0
-					ITA_is_socialist_ai = yes
+			
 				}
 			}
 		}
@@ -3130,7 +2894,7 @@ characters = {
 				base = 1.000
 				modifier = {
 					factor = 0
-					ITA_is_socialist_ai = yes
+				
 				}
 			}
 		}
@@ -3248,7 +3012,7 @@ characters = {
 				base = 0.300
 				modifier = {
 					factor = 0
-					ITA_is_socialist_ai = yes
+					
 				}
 			}
 		}

@@ -28,15 +28,6 @@ state={
 		}
 		add_core_of = GRE 
 		add_core_of = TUR
-		add_claim_by = BUL
-		if = {
-			limit = { has_dlc = "Battle for the Bosporus"}
-			set_demilitarized_zone = no
-		}
-		
-		1936.11.9 = {
-			set_demilitarized_zone = no
-		}
 	}
 
 	local_supplies=0.0 

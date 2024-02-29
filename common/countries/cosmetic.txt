@@ -44,8 +44,8 @@ GCO_UNIFIED = {
 }
 
 PLC_UNIFIED = { #david plc
-	color = rgb { 119 66 73 }
-	color_ui = rgb { 119 66 73 }
+	color = rgb { 176 81 111 }
+	color_ui = rgb { 176 81 111 }
 }
 
 UNL_UNIFIED = {
@@ -793,8 +793,8 @@ SOV_right_opposition = {
 	color_ui = rgb { 255 51 51 }
 }
 russian_empire = { #church of irving
-	color = rgb { 118 104 73 }
-	color_ui = rgb { 118 104 73 }
+	color = rgb { 138 122 88 }
+	color_ui = rgb { 138 122 88 }
 }
 SOV_ROME = {
 	color = rgb { 128 0 128 }
@@ -804,7 +804,7 @@ cosmetic_tag_brg_dr={color=rgb{13 77 20}color_ui=rgb{13 77 20}}
 cosmetic_tag_david_commie_dr={color=rgb{149 0 0}color_ui=rgb{149 0 0}}
 cosmetic_tag_funland_dr={color=rgb{120 24 183}color_ui=rgb{120 24 183}}
 cosmetic_tag_freedom_dr={color=rgb{50 9 97}color_ui=rgb{50 9 97}}
-cosmetic_tag_jhukovian_soviet_dr={color=rgb{146 47 47}color_ui=rgb{146 47 47}}
+cosmetic_tag_jhukovian_soviet_dr={color=rgb{110 31 31}color_ui=rgb{110 31 31}}
 cosmetic_tag_inca_dr={color=rgb{174 130 105}color_ui=rgb{174 130 105}}
 cosmetic_tag_inca_fp_dr={color=rgb{172 98 60}color_ui=rgb{172 98 60}}
 cosmetic_tag_zhelto_dr={color=rgb{205 59 93}color_ui=rgb{205 59 93}}
@@ -817,9 +817,8 @@ cosmetic_tag_moody_clique_nat_dr={color=rgb{47 104 181}color_ui=rgb{47 104 181}}
 cosmetic_tag_moody_clique_com_dr={color=rgb{189 57 42}color_ui=rgb{189 57 42}}
 cosmetic_tag_moody_china_nat_dr={color=rgb{47 104 181}color_ui=rgb{47 104 181}}
 cosmetic_tag_moody_china_com_dr={color=rgb{189 57 42}color_ui=rgb{189 57 42}}
-cosmetic_tag_colin_ancap_dr={color=rgb{101 91 0}color_ui=rgb{101 91 0}}
-	cosmetic_tag_insane_juche_dr={color=rgb{85 0 0}color_ui=rgb{85 0 0}} 
-cosmetic_tag_soc_commonwealth_dr={color=rgb{129 58 79}color_ui=rgb{129 58 79}}
+cosmetic_tag_colin_ancap_dr={color=rgb{181 179 29}color_ui=rgb{181 179 29}}
+cosmetic_tag_soc_commonwealth_dr={color=rgb{156 61 78}color_ui=rgb{156 61 78}}
 cosmetic_tag_hetmanate_dr={color=rgb{59 133 141}color_ui=rgb{59 133 141}}
 cosmetic_tag_neo_japan_dr={color=rgb{255 255 255}color_ui=rgb{255 255 255}}
 cosmetic_tag_empire_of_the_great_sunrise_land_dr={color=rgb{210 187 147}color_ui=rgb{210 187 147}}
@@ -878,23 +877,23 @@ BRM_PUP = {
 	color_ui = rgb { 80  165  10 }
 }
 UK_form_dr = {
-	color = rgb { 148 35 65 }
-	color_ui = rgb { 148 35 65 }
+	color = rgb { 163 75 85 }
+	color_ui = rgb { 163 75 85 }
 }
 UK_interallied_dr = {
 	color = rgb { 171 113 113 }
 	color_ui = rgb { 171 113 113 }
 }
 cosmetic_tag_greater_romania_dr = {
-	color = rgb { 73 98 156 }
-	color_ui = rgb { 73 98 156 }
+	color = rgb { 52 72 130 }
+	color_ui = rgb { 52 72 130 }
 }
 cosmetic_tag_romania_bulgaria_dr = {
-	color = rgb { 59 105 69 }
-	color_ui = rgb { 59 105 69 }
+	color = rgb { 54 141 60 }
+	color_ui = rgb { 54 141 60 }
 }
 cosmetic_tag_nazbol_dr = {
-	color = rgb { 74 32 32 }
+	color = rgb { 94 30 27 }
 	color_ui = rgb { 74 32 32 }
 }
 cosmetic_tag_israel_arab_dr = {
@@ -933,7 +932,83 @@ MEX_reichskommissariat_dr = {
 	color = rgb { 59 120 61 }
 	color_ui = rgb { 59 120 61 }
 }
-iae_dr = {
-	color = rgb { 72 140 67 }
-	color_ui = rgb { 72 140 67 }
+cosmetic_tag_uasr_dr = {
+	color = rgb { 153 47 57 }
+	color_ui = rgb { 153 47 57 }
+}
+cosmetic_tag_jhukovian_soviet_ordo_dr = {
+	color = rgb { 77 19 19 }
+	color_ui = rgb { 77 19 19 }
+}
+cosmetic_tag_swiss_dr = {
+	color = rgb { 224 5 5 }
+	color_ui = rgb { 224 5 5 }
+}
+papal_states = {
+	color = rgb { 224 222 159 }
+	color_ui = rgb { 224 222 159 }
+}
+cosmetic_tag_imperium_europa_dr = {
+	color = rgb { 28 19 97 }
+	color_ui = rgb { 28 19 97 }
+}
+cosmetic_tag_enclave_dr = {
+	color = rgb { 59 84 143 }
+	color_ui = rgb { 59 84 143 }
+}
+ethiopia_anarcho_communist = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+cosmetic_tag_uuar_dr = {
+	color = rgb { 173 50 28 }
+	color_ui = rgb { 173 50 28 }
+}
+cosmetic_tag_africa_federation_dr = {
+	color = rgb { 56 107 67 }
+	color_ui = rgb { 56 107 67 }
+}
+cosmetic_tag_volkstaat_dr = {
+	color = rgb { 191 126 29 }
+	color_ui = rgb { 191 126 29 }
+}
+cosmetic_tag_will_zhelto_dr = {
+	color = rgb { 76 112 68 }
+	color_ui = rgb { 76 112 68 }
+}
+cosmetic_tag_emu_com_dr = {
+	color = rgb { 120 43 43 }
+	color_ui = rgb { 120 43 43 }
+}
+cosmetic_tag_new_spain_dr = {
+	color = rgb { 179 151 62 }
+	color_ui = rgb { 179 151 62 }
+}
+cosmetic_tag_andean_com_dr = {
+	color = rgb { 122 56 50 }
+	color_ui = rgb { 122 56 50 }
+}
+cosmetic_tag_cusco_sultanate_dr = {
+	color = rgb { 31 87 23 }
+	color_ui = rgb { 31 87 23 }
+}
+cosmetic_tag_david_mittelafrika_dr = {
+	color = rgb { 56 29 54 }
+	color_ui = rgb { 56 29 54 }
+}
+empire_of_axum = {
+	color = rgb { 113 94 138 }
+	color_ui = rgb { 113 94 138 }
+}
+cosmetic_tag_stalin_dr = {
+	color = rgb { 125 13 24  }
+	color_ui = rgb { 125 13 24  }
+}
+cosmetic_tag_bavaria_empire_dr = {
+	color = rgb { 95 120 130 }
+	color_ui = rgb { 95 120 130 }
+}
+cosmetic_tag_east_asia_dr = {
+	color = rgb { 107 26 26 }
+	color_ui = rgb { 107 26 26 }
 }

@@ -28,7 +28,6 @@ state=
 			set_demilitarized_zone=yes
 		}
 
-		add_core_of = ISR
 		add_core_of = PAL
 		add_core_of = JOR
 		add_core_of = EGY

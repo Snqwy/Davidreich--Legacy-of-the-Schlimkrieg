@@ -237,9 +237,6 @@ ideas = {
 			available = { 
 				has_military_academy = yes 
 			}
-			visible = { 
-				NOR_AAT = yes 
-			}
 			modifier = {
 				army_leader_start_level = 2
 				promote_cost_factor = -0.3

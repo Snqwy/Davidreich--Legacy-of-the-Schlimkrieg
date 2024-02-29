@@ -125,7 +125,6 @@ check_has_focus_tree_to_switch_to_democratic = {
 	NOT = { tag = CAN }
 	NOT = { tag = SAF }
 	NOT = { tag = AST }
-	NOT = { tag = NZL }
 	NOT = { tag = RAJ }
 	NOT = { tag = CZE }
 	NOT = {
@@ -577,7 +576,6 @@ is_available_to_collaboration_government = { # occupied_countries.1 should be up
 			FROM = { original_tag = DNZ }
 			original_tag = POL
 		}
-		TUR_cannot_form_kurdish_collaboration_government = yes
 		any_country_with_original_tag = {
 			original_tag_to_check = FROM
 			is_puppet_of = PREV # if already created one do not create another
@@ -1065,75 +1063,13 @@ has_hide_rule = {
 }
 
 
-###########################################################################################
-###########################################################################################
-###########################################################################################
 
-							########    ###       ###    ######## 
-							   ##      ## ##     ## ##      ##    
-							   ##     ##   ##   ##   ##     ##    
-							   ##    ##     ## ##     ##    ##    
-							   ##    ######### #########    ##    
-							   ##    ##     ## ##     ##    ##    
-							   ##    ##     ## ##     ##    ##    
 
-###########################################################################################
-###########################################################################################
-###########################################################################################
+
+
 
 has_aat = {
 	has_dlc = "Arms Against Tyranny"
-}
-
-is_aat_sweden = {
-		has_aat = yes
-		original_tag = SWE
-}
-
-is_trotsky_valid_for_mexico = {
-	OR = {
-		has_government = communism
-		has_government = neutrality
-	}
-	has_global_flag = flag_mexico_invited_trotsky_to_government
-	NOT = {
-		OR = {
-			has_global_flag = trotsky_not_welcome_in_mexico
-			has_global_flag = flag_trotsky_dead
-			has_global_flag = flag_trotsky_has_returned_to_ussr_from_mexico
-		}
-	}
-	if = {
-		limit = {
-			OR = {
-				SOV_is_left_opposition = yes 
-				SOV_is_right_opposition = yes
-			}
-		}
-		SOV = { NOT = { has_idea = SOV_lev_trotsky } }
-		SOV = { NOT = { has_country_leader = { character = SOV_lev_trotsky } } }
-	}
-	if = {
-		limit = {
-			has_aat = yes 
-		}
-		has_global_flag = AAT_trotsky_in_mexico
-	}	
-}
-NOR_trotsky_not_in_sov = {
-	any_other_country = {
-		original_tag = SOV 
-		has_government = communism 
-		NOT = { has_completed_focus = SOV_the_left_opposition }
-	}
-}
-
-NOR_trotsky_not_in_mex = {
-	NOT = { 
-		has_global_flag = AAT_trotsky_in_mexico 
-		has_global_flag = flag_trotsky_dead
-		has_global_flag = flag_trotsky_has_returned_to_ussr_from_mexico
-	} 
 }
 
 has_any_tank_tech = {
@@ -1349,7 +1285,6 @@ trade_partner_not_at_war = {
 		}
 	}
 }
-
 is_democratic_seller_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = "Democratic Countries"
@@ -1358,22 +1293,17 @@ is_democratic_seller_trigger = {
 		}
 	}
 }
-
-#Subsidy Seller Triggers
 is_fascist_seller_trigger = {
 	NOT = { has_war_with = ROOT	}
 	has_government = fascism 
 }
-
 is_democracy_seller_trigger = {
 	NOT = { has_war_with = ROOT	}
 	has_government = democratic 
 }
-
 is_allied_seller_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = subsidy_allied_nation_tt
 		FROM = { is_in_faction_with = ROOT }
 	}
 }
-

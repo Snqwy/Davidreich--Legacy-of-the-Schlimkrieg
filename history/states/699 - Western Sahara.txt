@@ -9,6 +9,7 @@ state={
 		owner = FRA
 		add_core_of = MRT
 		add_core_of = CHA
+		add_claim_by = SPR
 		buildings = {
 			infrastructure = 1
 			8038 = {

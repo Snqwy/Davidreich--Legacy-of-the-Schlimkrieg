@@ -1,31 +1,3 @@
-#	Example:
-# 
-#	example_dynamic_modifier = {
-#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
-#		enable = { always = yes } #optional, the modifier won't apply if not enabled
-#		remove_trigger = { always = no } #optional, will remove the modifier if true
-#       attacker_modifier = no  # if yes this modifier will also be read in combat for 
-#                               # people engaging in the combat even if not in the state
-#
-#		# list of modifiers
-#		fuel_cost = 321
-#		max_fuel = var_max_fuel # will be taken from a variable
-#	}
-#
-#
-#	In a script file:
-#
-#	effect = {
-#		add_dynamic_modifier = {
-#			modifier = example_dynamic_modifier
-#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
-#			days = 14 # optional, will be removed after this many days passes
-#		}
-#	}
-#
-#	can be added to countries, states or unit leaders
-#	will only updated daily, unless forced by force_update_dynamic_modifier effect
-
 sabotaged_resources = {
 	remove_trigger = { 
 		ROOT = {
@@ -1235,6 +1207,7 @@ RAJ_industrialized_personnel = {
 	state_resources_factor = 0.15
 	state_production_speed_buildings_factor = 0.15
 }
+	#should probably add _dr to these
 state_modifier_post_schlimkrieg={enable={always=yes}icon=GFX_modifiers_sabotaged_resource state_resources_factor=-0.15 state_production_speed_buildings_factor=-0.8 attrition_for_controller=0.1 local_manpower=-0.3 local_supplies_for_controller=-0.05 resistance_growth=-0.15
 }
 state_modifier_canal_zone={enable={always=yes}icon=GFX_modifiers_sabotaged_resource industrial_capacity_dockyard=0.05 
@@ -1245,5 +1218,5 @@ state_modifier_local_collaboration={enable={always=yes}icon=GFX_modifiers_sabota
 }
 state_modifier_develop_italy={enable={always=yes}icon=GFX_modifiers_sabotaged_resource production_speed_buildings_factor=0.05 
 }
-
+state_modifier_union_breadbasket_dr={enable={always=yes}icon=GFX_modifiers_sabotaged_resource local_supply_impact_factor=0.1 weekly_manpower=25}
 }

@@ -13,6 +13,28 @@
 ###Todo remove commented advisor experience gains
 
 leader_traits = {
+trait_algebra_flashbacks_dr = {
+		research_speed_factor=-0.01
+		random = no
+		research_speed_factor=-0.01
+		ai_will_do = {
+			factor = 1
+		}
+	}
+trait_quantum_rizzics_phd_dr = {
+		research_speed_factor=0.01
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+trait_reawakened_dr = {
+		fascism_drift=0.5
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
 trait_caesar_dr = {
 		justify_war_goal_time=-0.1 ai_focus_aggressive_factor=0.5 production_speed_buildings_factor=0.05 stability_factor=0.15
 		random = no
@@ -61,9 +83,10 @@ trait_godfather_dr = {
 	#####
 	trait_savior_of_the_imperium_dr={random=no stability_factor=0.15 war_support_factor=0.05 ai_will_do={factor=1}}
 	
-	trait_submissive_and_breedable_dr={random=no autonomy_gain=-0.5 ai_will_do={factor=1}}trait_gigachad_dr={random=no stability_factor=1.0 political_power_factor=0.5 war_support_factor=1.0 army_core_attack_factor=0.3 ai_will_do={factor=1}}trait_black_dr={random=no stability_factor=-0.01 ai_will_do={factor=1}}trait_friendly_schnitzel_man_dr={random=no opinion_gain_monthly_factor=0.1 ai_will_do={factor=1}}trait_dislikes_riley_dr={random=no targeted_modifier={tag=CSA attack_bonus_against=0.1 defense_bonus_against=0.1}ai_will_do={factor=1}}trait_dislikes_colin_dr={random=no targeted_modifier={tag=USA attack_bonus_against=0.1 defense_bonus_against=0.1}ai_will_do={factor=1}}
+	trait_falso_gringo_dr={random=no war_support_factor=-0.05 ai_will_do={factor=1}}
 
-	trait_false_gringo_dr={random=no ai_will_do={factor=1}}
+	trait_submissive_and_breedable_dr={random=no surrender_limit=-0.01 autonomy_gain=-0.5 ai_will_do={factor=1}}trait_gigachad_dr={random=no stability_factor=1.0 political_power_factor=0.5 war_support_factor=1.0 army_core_attack_factor=0.3 ai_will_do={factor=1}}trait_black_dr={random=no stability_factor=-0.01 ai_will_do={factor=1}}trait_friendly_schnitzel_man_dr={random=no opinion_gain_monthly_factor=0.1 ai_will_do={factor=1}}trait_dislikes_riley_dr={random=no targeted_modifier={tag=CSA attack_bonus_against=0.1 defense_bonus_against=0.1}ai_will_do={factor=1}}trait_dislikes_colin_dr={random=no targeted_modifier={tag=USA attack_bonus_against=0.1 defense_bonus_against=0.1}ai_will_do={factor=1}}
+
 
 	trait_a_modern_napoleon_2_dr={random=no political_power_factor=0.1 stability_factor=0.15 war_support_factor=0.1 neutrality_drift=0.1 justify_war_goal_time=-0.1 ai_will_do={factor=1}}
 

@@ -801,10 +801,7 @@ characters={
 				has_DLC = "No Step Back"
 			}
 			available = {
-				OR = {
-					has_completed_focus = BALTIC_revolutionary_cabinet 
-					SWE_refuge_for_revolutionaries_trigger = yes
-				}
+				has_completed_focus = BALTIC_revolutionary_cabinet 
 			}
 			traits = {
 				revolutionary_poet 
@@ -831,10 +828,9 @@ characters={
 				has_dlc = "No Step Back"
 			}
 			available = {
-				OR = {
+
 					has_completed_focus = BALTIC_revolutionary_cabinet 
-					SWE_refuge_for_revolutionaries_trigger = yes
-				}
+
 			}
 			traits = {
 				socialist_justice 
@@ -860,10 +856,10 @@ characters={
 				has_dlc = "No Step Back"
 			}
 			available = {
-				OR = {
+
 					has_completed_focus = BALTIC_revolutionary_cabinet 
-					SWE_refuge_for_revolutionaries_trigger = yes
-				}
+			
+	
 			}
 			traits = {
 				marxist_fundamentalist 

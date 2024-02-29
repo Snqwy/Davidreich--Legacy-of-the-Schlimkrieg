@@ -149,13 +149,6 @@ ideas = {
 						original_tag = TUR
 						has_dlc = "Battle for the Bosporus"
 					}
-					NOT = {
-						OR = {
-							has_active_mission = TUR_etatism_crisis_2
-							has_active_mission = TUR_etatism_crisis_3
-							has_active_mission = TUR_etatism_crisis_4
-						}
-					}
 				}
 			}
 			on_add = {
@@ -241,13 +234,6 @@ ideas = {
 						original_tag = TUR
 						has_dlc = "Battle for the Bosporus"
 					}
-					NOT = {
-						OR = {
-							has_active_mission = TUR_etatism_crisis_1
-							has_active_mission = TUR_etatism_crisis_3
-							has_active_mission = TUR_etatism_crisis_4
-						}
-					}
 				}
 			}
 
@@ -331,13 +317,6 @@ ideas = {
 					limit = {
 						original_tag = TUR
 						has_dlc = "Battle for the Bosporus"
-					}
-					NOT = {
-						OR = {
-							has_active_mission = TUR_etatism_crisis_1
-							has_active_mission = TUR_etatism_crisis_2
-							has_active_mission = TUR_etatism_crisis_4
-						}
 					}
 				}
 			}
@@ -437,13 +416,6 @@ ideas = {
 					limit = {
 						original_tag = TUR
 						has_dlc = "Battle for the Bosporus"
-					}
-					NOT = {
-						OR = {
-							has_active_mission = TUR_etatism_crisis_1
-							has_active_mission = TUR_etatism_crisis_2
-							has_active_mission = TUR_etatism_crisis_3
-						}
 					}
 				}
 			}

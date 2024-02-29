@@ -12,7 +12,6 @@ state= {
 	{
 		owner = ISR
 		add_core_of = GRE
-		add_claim_by=TUR
 		victory_points = {
 			11984 5
 		}

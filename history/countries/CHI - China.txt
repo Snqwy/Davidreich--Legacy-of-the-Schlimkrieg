@@ -1,1 +1,1 @@
-﻿capital=613 give_guarantee=XSM give_military_access=XSM recruit_character=CHI_chiang_kaishek set_politics={ruling_party=neutrality last_election="1930.11.9" election_frequency=48 elections_allowed=no}set_popularities={neutrality=65 fascism=10 democratic=25}
+﻿capital=613 give_guarantee=XSM give_military_access=XSM recruit_character=CHI_chiang_kaishek set_politics={ruling_party=neutrality last_election="1930.11.9" election_frequency=48 elections_allowed=no}set_popularities={neutrality=65 fascism=10 democratic=25}add_ideas={idea_warlordism_dr}

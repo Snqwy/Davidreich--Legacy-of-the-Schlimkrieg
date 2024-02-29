@@ -534,7 +534,6 @@ characters={
 					limit  = {
 						has_dlc = "Death or Dishonor"
 					}
-					has_completed_focus  = CZE_democratic_bastion 
 				}
 				if  = {
 					limit  = {
@@ -572,7 +571,7 @@ characters={
 					limit  = {
 						has_dlc = "Death or Dishonor"
 					}
-					has_completed_focus  = CZE_go_left 
+
 				}
 				if  = {
 					limit  = {
@@ -620,7 +619,6 @@ characters={
 					limit  = {
 						has_dlc = "Death or Dishonor"
 					}
-					has_completed_focus  = CZE_go_right 
 				}
 				if  = {
 					limit  = {

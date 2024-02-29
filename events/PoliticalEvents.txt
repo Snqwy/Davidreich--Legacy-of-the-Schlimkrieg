@@ -781,12 +781,12 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
+					#original_tag = EST
 					original_tag = LAT
-					original_tag = LIT
+					#original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						#EST = { has_completed_focus = EST_national_pride_in_finland }
 					}
 				}
 			}
@@ -920,12 +920,12 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
+					#original_tag = EST
 					original_tag = LAT
-					original_tag = LIT
+					#original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						#EST = { has_completed_focus = EST_national_pride_in_finland }
 					}
 				}
 			}
@@ -1017,12 +1017,12 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
+					#original_tag = EST
 					original_tag = LAT
-					original_tag = LIT
+					#original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						#EST = { has_completed_focus = EST_national_pride_in_finland }
 					}
 				}
 			}
@@ -1093,12 +1093,12 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
+					#original_tag = EST
 					original_tag = LAT
-					original_tag = LIT
+					#original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						#EST = { has_completed_focus = EST_national_pride_in_finland }
 					}
 				}
 			}
@@ -1392,12 +1392,12 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
+					#original_tag = EST
 					original_tag = LAT
-					original_tag = LIT
+					#original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						#EST = { has_completed_focus = EST_national_pride_in_finland }
 					}
 				}
 			}
@@ -1546,12 +1546,12 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
+					#original_tag = EST
 					original_tag = LAT
-					original_tag = LIT
+					#original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						#EST = { has_completed_focus = EST_national_pride_in_finland }
 					}
 				}
 			}
@@ -1695,12 +1695,12 @@ country_event = {
 				has_dlc = "No Step Back"
 				OR = {
 					original_tag = POL
-					original_tag = EST
+					#original_tag = EST
 					original_tag = LAT
-					original_tag = LIT
+					#original_tag = LIT
 					AND = {
 						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
+						#EST = { has_completed_focus = EST_national_pride_in_finland }
 					}
 				}
 			}
@@ -1940,55 +1940,6 @@ country_event = {
 	trigger = {
 		is_subject = no
 		has_civil_war = yes
-		NOT = { has_country_flag = ENG_communist_civil_war }
-		NOT = {
-			AND = {
-				has_dlc = "La Resistance"
-				original_tag = SPR
-				SPR_scw_in_progress = yes
-			}
-			AND = {
-				has_dlc = "La Resistance"
-				original_tag = POR
-				has_global_flag = SPR_portuguese_anarchism_flag
-			}
-			AND = {
-				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
-				OR = {
-					has_country_flag = BUL_zveno_coup_flag
-					has_country_flag = BUL_zveno_bulgaria_flag
-				}
-			}
-			AND = {
-				has_dlc = "No Step Back"
-				OR = {
-					original_tag = POL
-					original_tag = EST
-					original_tag = LAT
-					original_tag = LIT
-					original_tag = ROM
-					AND = {
-						original_tag = FIN
-						EST = { has_completed_focus = EST_national_pride_in_finland }
-					}
-					original_tag = BLR #Baltic Belarus civil war
-				}
-			}
-			AND = {
-				original_tag = SOV
-				has_global_flag = SOV_soviet_civil_war # Stalin doesn't really want to reconciliate with Trotsky/Bukharin at this point
-			}
-			AND = {
-				has_dlc = "Battle for the Bosporus"
-				original_tag = TUR
-			}
-			AND = {
-				has_dlc = "By Blood Alone"
-				original_tag = ETH
-				has_country_flag = ETH_communist_civil_war
-			}
-		}
 		any_other_country = {
 			NOT = { tag = ROOT }
 			original_tag = ROOT

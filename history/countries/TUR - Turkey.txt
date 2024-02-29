@@ -1,1 +1,1 @@
-﻿capital=49 set_politics={ruling_party=neutrality last_election="1930.11.9" election_frequency=48 elections_allowed=no}set_popularities={neutrality=30 fascism=30 democratic=30 communism=10}
+﻿capital=49 set_politics={ruling_party=neutrality last_election="1930.11.9" election_frequency=48 elections_allowed=no}set_popularities={neutrality=30 fascism=30 democratic=30 communism=10}add_ideas={idea_dead_man_of_europe_dr idea_tense_political_situation_dr}

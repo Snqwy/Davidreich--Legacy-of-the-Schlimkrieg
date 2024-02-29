@@ -1,0 +1,1264 @@
+focus_tree={id=soviet_focus country={factor=0 modifier={add=10 tag=SOV}}default=no continuous_focus_position={x=1100 y=1900}focus={id=SOV_connerian_briish_accord_dr icon=GFX_focus_chi_british_cooperation x=28 y=15 cost=5 available={has_government=communism}available_if_capitulated=yes bypass={OR={NOT={country_exists=ENG}has_war_with=ENG is_subject_of=SOV}}prerequisite={focus=SOV_alliance_with_max_dr focus=SOV_haskell_conner_friendship_dr}ai_will_do={factor=1}completion_reward={ENG={country_event=dr.53}}}focus={id=SOV_conners_speech_to_the_world_dr icon=GFX_focus_ETH_callout_to_the_world x=27 y=19 cost=10 available_if_capitulated=yes prerequisite={focus=SOV_united_in_friendship_and_labor_dr focus=SOV_fulfill_the_eurasian_ambition_dr}ai_will_do={factor=1}completion_reward={country_event=dr.64}}focus={id=SOV_a_note_to_collington_dr icon=GFX_focus_generic_treaty x=30 y=15 cost=5 available={has_government=communism}available_if_capitulated=yes bypass={OR={NOT={country_exists=USA}has_war_with=USA is_subject_of=SOV}}prerequisite={focus=SOV_alliance_with_max_dr focus=SOV_haskell_conner_friendship_dr}ai_will_do={factor=1}completion_reward={USA={country_event=dr.53}}}focus={id=SOV_balkan_cooperation_dr icon=GFX_focus_BUL_the_unification_of_the_balkans x=30 y=13 cost=8 available={has_government=communism}available_if_capitulated=yes bypass={OR={NOT={country_exists=ROM}has_war_with=ROM is_subject_of=SOV}OR={NOT={country_exists=HUN}has_war_with=HUN is_subject_of=SOV}OR={NOT={country_exists=YUG}has_war_with=YUG is_subject_of=SOV}OR={NOT={country_exists=ALB}has_war_with=ALB is_subject_of=SOV}OR={NOT={country_exists=GRE}has_war_with=GRE is_subject_of=SOV}OR={NOT={country_exists=BUL}has_war_with=BUL is_subject_of=SOV}}prerequisite={focus=SOV_expand_the_bloc_dr}ai_will_do={factor=1}completion_reward={ROM={country_event=dr.53}HUN={country_event=dr.53}YUG={country_event=dr.53}ALB={country_event=dr.53}GRE={country_event=dr.53}BUL={country_event=dr.53}}}focus={id=SOV_reach_out_to_david_dr icon=GFX_goal_tripartite_pact x=28 y=13 cost=5 available={has_government=communism}available_if_capitulated=yes bypass={OR={NOT={country_exists=GER}has_war_with=GER is_subject_of=SOV}}prerequisite={focus=SOV_expand_the_bloc_dr}ai_will_do={factor=1}completion_reward={GER={country_event=dr.53}}}focus={id=SOV_alliance_with_max_dr icon=GFX_focus_befriend_italy x=28 y=14 cost=5 available={has_government=communism}available_if_capitulated=yes bypass={OR={NOT={country_exists=ITA}has_war_with=ITA is_subject_of=SOV}}prerequisite={focus=SOV_reach_out_to_david_dr focus=SOV_balkan_cooperation_dr}ai_will_do={factor=1}completion_reward={ITA={country_event=dr.53}}}focus={id=SOV_haskell_conner_friendship_dr icon=GFX_focus_chi_reach_out_to_france x=30 y=14 cost=5 available={has_government=communism}available_if_capitulated=yes bypass={OR={NOT={country_exists=FRA}has_war_with=FRA is_subject_of=SOV}}prerequisite={focus=SOV_reach_out_to_david_dr focus=SOV_balkan_cooperation_dr}ai_will_do={factor=1}completion_reward={FRA={country_event=dr.53}}}focus={id=SOV_no_step_back_dr icon=GFX_focus_focus_fra_revolution_utmost x=45 y=9 cost=6 search_filters={FOCUS_FILTER_STABILITY}available={NOT={has_government=fascism}}available_if_capitulated=yes bypass={NOT={has_war_with=GER}}prerequisite={focus=SOV_unleash_the_partisans_dr}prerequisite={focus=SOV_relocate_the_industry_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_no_step_back_dr}}focus={id=SOV_march_westwards_dr icon=GFX_focus_up_joan_of_arc x=46 y=10 cost=5 available_if_capitulated=yes prerequisite={focus=SOV_no_step_back_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_no_step_back_dr add_idea=idea_no_step_back_2_dr}}}focus={id=SOV_lennongrad_shipyards_dr icon=GFX_focus_POL_develop_polish_shipbuilding x=6 y=9 cost=7 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=195}available_if_capitulated=yes prerequisite={focus=SOV_jumpstart_military_production_dr}ai_will_do={factor=1}completion_reward={195={add_building_construction={type=dockyard level=3 instant_build=yes}add_extra_state_shared_building_slots=3}}}
+
+	focus={id=SOV_airport_construction_dr icon=GFX_goal_generic_build_airforce x=8 y=9 cost=10 available_if_capitulated=yes prerequisite={focus=SOV_jumpstart_military_production_dr}ai_will_do={factor=1}completion_reward={260={if={limit={is_controlled_by=SOV}add_building_construction={type=air_base level=2 instant_build=yes}}255={if={limit={is_controlled_by=SOV}add_building_construction={type=air_base level=2 instant_build=yes}}407={if={limit={is_controlled_by=SOV}add_building_construction={type=air_base level=2 instant_build=yes}}249={if={limit={is_controlled_by=SOV}add_building_construction={type=air_base level=2 instant_build=yes}}351={if={limit={is_controlled_by=SOV}add_building_construction={type=air_base level=2 instant_build=yes}}214={if={limit={is_controlled_by=SOV}add_building_construction={type=air_base level=2 instant_build=yes}}397={if={limit={is_controlled_by=SOV}add_building_construction={type=air_base level=2 instant_build=yes}}572={if={limit={is_controlled_by=SOV}add_building_construction={type=air_base level=2 instant_build=yes}}580={if={limit={is_controlled_by=SOV}add_building_construction={type=air_base level=2 instant_build=yes}}570={if={limit={is_controlled_by=SOV}add_building_construction={type=air_base level=2 instant_build=yes}}576={if={limit={is_controlled_by=SOV}add_building_construction={type=air_base level=2 instant_build=yes}}329={if={limit={is_controlled_by=SOV}add_building_construction={type=air_base level=2 instant_build=yes}}874={if={limit={is_controlled_by=SOV}add_building_construction={type=air_base level=2 instant_build=yes}}custom_effect_tooltip=develop_our_airports_sov_tooltip_dr}}}}}}}}}}}}}}}
+
+	focus = {
+		id = SOV_restore_the_cocksex_dr 
+		icon = GFX_focus_SOV_restore_cossack_units
+		x = 24
+		y = 5
+		cost = 10
+		available={always=no}
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_reinstate_noble_titles_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {}}
+
+focus={id=SOV_bureau_of_industry_dr icon=GFX_focus_generic_industry_1 x=9 y=4 cost=3 available_if_capitulated=yes prerequisite={focus=SOV_breed_more_dammit_dr}ai_will_do={factor=1}completion_reward={add_political_power=15}}focus={id=SOV_connerian_vanguardism_dr icon=GFX_focus_generic_join_comintern x=7 y=2 cost=0 available={has_country_flag=vanguard_flag_dr has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_convene_the_party_dr}mutually_exclusive={focus=SOV_connerian_utopianism_dr}ai_will_do={factor=1}completion_reward={add_political_power=5 custom_effect_tooltip=ger_hist_tooltip_dr}}focus={id=SOV_convene_the_party_dr icon=GFX_focus_SWE_socialist_reforms x=9 y=1 cost=3 available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_our_union_dr}mutually_exclusive={focus=SOV_invite_the_royalists_dr}ai_will_do={factor=1}completion_reward={country_event=dr.51 custom_effect_tooltip=ger_hist_tooltip_dr}}focus={id=SOV_breed_more_dammit_dr icon=GFX_focus_generic_military_academy x=9 y=3 cost=5 search_filters={FOCUS_FILTER_MANPOWER}available_if_capitulated=yes prerequisite={focus=SOV_connerian_vanguardism_dr focus=SOV_connerian_utopianism_dr focus=SOV_monarcho_vanguard_compromise_dr focus=SOV_the_church_of_irving_dr focus=SOV_the_great_khanner_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_breeding_initiative_dr}}focus={id=SOV_purge_the_party_dr icon=GFX_focus_spr_masters_of_our_own_fate x=6 y=3 cost=5 available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_connerian_vanguardism_dr}ai_will_do={factor=1}completion_reward={add_political_power=-40 add_timed_idea={idea=idea_political_purges_dr days=1825}}}focus={id=SOV_5_year_plans_dr icon=GFX_goal_generic_construct_civ_factory x=9 y=5 cost=10 search_filters={FOCUS_FILTER_INDUSTRY}available={date>1937.1.1}available_if_capitulated=yes prerequisite={focus=SOV_bureau_of_industry_dr}ai_will_do={factor=1}completion_reward={add_timed_idea={idea=idea_5_year_plans_dr days=1825}}}focus={id=SOV_purge_the_people_dr icon=GFX_focus_spr_class_war x=6 y=4 cost=5 available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_purge_the_party_dr}ai_will_do={factor=1}completion_reward={add_political_power=-20 remove_ideas=idea_political_purges_dr add_timed_idea={idea=idea_political_purges_2_dr days=1825}}}focus={id=SOV_total_loyalty_dr icon=GFX_goal_generic_propaganda x=4 y=5 cost=5 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_purge_the_people_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_home_of_the_revolution_dr add_idea=idea_home_of_the_revolution_2_dr}}}focus={id=SOV_connerian_army_tactics_dr icon=GFX_goal_rhineland x=40 y=0 cost=2 search_filters={FOCUS_FILTER_ARMY_XP}available={OR={has_completed_focus=SOV_our_union_dr has_completed_focus=SOV_reawakening_dr}}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={army_experience=5}}focus={id=SOV_found_the_cidd_dr icon=GFX_goal_generic_intelligence_exchange x=3 y=7 cost=4 search_filters={FOCUS_FILTER_STABILITY}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_total_loyalty_dr focus=SOV_a_utopia_at_all_costs_dr focus=SOV_the_peoples_tsar_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_cidd_dr}}focus={id=SOV_jumpstart_military_production_dr icon=GFX_goal_generic_construct_mil_factory x=6 y=7 cost=7 search_filters={FOCUS_FILTER_INDUSTRY}available={OR={threat>.15 has_war=yes}}available_if_capitulated=yes prerequisite={focus=SOV_5_year_plans_dr}ai_will_do={factor=1}completion_reward={add_ideas=low_economic_mobilisation add_ideas=idea_jumpstarted_military_production_dr}}focus={id=SOV_rebuild_the_transiberian_railway_dr icon=GFX_goal_generic_construct_infrastructure x=14 y=6 cost=6 search_filters={FOCUS_FILTER_INDUSTRY}available={NOT={country_exists=OVO country_exists=FER}has_completed_focus=SOV_reintegrate_the_western_railways_dr}available_if_capitulated=yes prerequisite={focus=SOV_5_year_plans_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_reintegrate_railways_dr add_idea=idea_reintegrate_railways_2_dr}}}focus={id=SOV_reintegrate_the_western_railways_dr icon=GFX_goal_generic_construct_infrastructure x=12 y=6 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=SOV_5_year_plans_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_reintegrate_railways_dr}}focus={id=SOV_foreign_industrial_aid_dr icon=GFX_goal_tripartite_pact x=8 y=6 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=SOV_5_year_plans_dr}mutually_exclusive={focus=SOV_connerian_ingenuity_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_foreign_industrial_aid_dr add_offsite_building={type=industrial_complex level=5}}}focus={id=SOV_connerian_ingenuity_dr icon=GFX_goal_continuous_naval_production x=10 y=6 cost=8 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=SOV_5_year_plans_dr}mutually_exclusive={focus=SOV_foreign_industrial_aid_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=5 category=industry}}}focus={id=SOV_wealth_of_the_union_dr icon=GFX_goal_generic_construction2 x=16 y=6 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=SOV_5_year_plans_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_wealth_of_the_union_dr}}
+
+	#Focus for Human Wave Offensives
+	focus = {
+		id = SOV_human_wave_offensives_dr
+		icon = GFX_focus_SOV_mobilization_plan
+		x = 40
+		y = 1
+		cost = 10
+		available={always=no}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_connerian_army_tactics_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_the_red_fleet_dr icon=GFX_goal_generic_navy_battleship x=59 y=0 cost=2 available={OR={has_completed_focus=SOV_our_union_dr has_completed_focus=SOV_reawakening_dr}}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={navy_experience=5}}
+
+	#Focus for The Peoples' Airforce
+	focus = {
+		id = SOV_the_peoples_airforce_dr
+		icon = GFX_focus_SOV_flying_clubs
+		x = 52
+		y = 0
+		cost = 10
+		available={always=no}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_target_enemy_industry_dr icon=GFX_goal_generic_air_bomber x=50 y=3 cost=5 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=SOV_independent_air_force_dr}mutually_exclusive={focus=SOV_combat_air_support_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=cat_strategic_bomber}}}focus={id=SOV_integrate_the_air_command_dr icon=GFX_focus_generic_combined_arms x=53 y=1 cost=4 search_filters={FOCUS_FILTER_AIR_XP}available_if_capitulated=yes prerequisite={focus=SOV_the_peoples_airforce_dr}mutually_exclusive={focus=SOV_independent_air_force_dr}ai_will_do={factor=1}completion_reward={air_experience=15}}
+
+	#Focus for Centralized Units
+	focus = {
+		id = SOV_centralized_units_dr
+		icon = GFX_focus_generic_military_mission
+		x = 41
+		y = 3
+		cost = 10
+		available={always=no}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_human_wave_offensives_dr }
+		mutually_exclusive = { focus = SOV_division_autonomy_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Division Autonomy
+	focus = {
+		id = SOV_division_autonomy_dr
+		icon = GFX_focus_generic_manpower
+		x = 39
+		y = 3
+		cost = 10
+		available={always=no}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_human_wave_offensives_dr }
+		mutually_exclusive = { focus = SOV_centralized_units_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_form_the_dwp_dr icon=GFX_goal_generic_production2 x=2 y=8 cost=4 search_filters={FOCUS_FILTER_INDUSTRY}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_found_the_cidd_dr}prerequisite={focus=SOV_conner_tration_camps_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_dwp_dr}}focus={id=SOV_centralize_the_economy_dr icon=GFX_goal_generic_positive_trade_relations x=10 y=7 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available={num_of_civilian_factories>30}available_if_capitulated=yes prerequisite={focus=SOV_foreign_industrial_aid_dr focus=SOV_connerian_ingenuity_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_agrarian_society_dr add_idea=idea_agrarian_society_2_dr}}}focus={id=SOV_combat_air_support_dr icon=GFX_goal_generic_CAS x=54 y=3 cost=5 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=SOV_integrate_the_air_command_dr}mutually_exclusive={focus=SOV_target_enemy_industry_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=cas_bomber}}}focus={id=SOV_the_union_rules_the_skies_dr icon=GFX_focus_FIN_expand_air_force_academy x=52 y=5 cost=7 search_filters={FOCUS_FILTER_AIR_XP FOCUS_FILTER_WAR_SUPPORT}available_if_capitulated=yes prerequisite={focus=SOV_heavy_aircrafts_dr focus=SOV_light_aircrafts_dr}ai_will_do={factor=1}completion_reward={air_experience=40 add_war_support=.05}}focus={id=SOV_finish_the_5_year_plan_dr icon=GFX_focus_spa_the_spanish_miracle x=8 y=11 cost=15 search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}available={has_government=communism date>1943.1.1}available_if_capitulated=yes prerequisite={focus=SOV_form_the_dwp_dr}prerequisite={focus=SOV_rostov_shipyards_dr}prerequisite={focus=SOV_airport_construction_dr}prerequisite={focus=SOV_war_connerianism_dr}prerequisite={focus=SOV_reintegrate_the_western_railways_dr}prerequisite={focus=SOV_rebuild_the_transiberian_railway_dr}prerequisite={focus=SOV_wealth_of_the_union_dr}ai_will_do={factor=1}completion_reward={add_political_power=200 remove_ideas=idea_agrarian_society_2_dr}}focus={id=SOV_our_union_dr icon=GFX_focus_SOV_the_supreme_soviet x=12 y=0 cost=2 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=communism}available_if_capitulated=yes mutually_exclusive={focus=SOV_reawakening_dr}ai_will_do={factor=1}completion_reward={add_political_power=10 custom_effect_tooltip=ger_hist_tooltip_dr}}focus={id=SOV_war_connerianism_dr icon=GFX_goal_generic_soviet_construction x=10 y=8 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available={has_government=communism threat>.3 has_war=yes}available_if_capitulated=yes prerequisite={focus=SOV_jumpstart_military_production_dr}prerequisite={focus=SOV_centralize_the_economy_dr}ai_will_do={factor=1}completion_reward={add_ideas=war_economy}}focus={id=SOV_the_georgian_menace_dr icon=GFX_focus_fra_loyalty_stalin x=27 y=6 cost=6 search_filters={FOCUS_FILTER_ANNEXATION}available={date>1937.6.1 OR={controls_state=218 controls_state=245 controls_state=217 controls_state=236}}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=GEO}}}focus={id=SOV_to_the_west_dr icon=GFX_focus_usa_focus_on_europe x=25 y=7 cost=1 available={NOT={country_exists=GEO}}available_if_capitulated=yes prerequisite={focus=SOV_the_georgian_menace_dr}ai_will_do={factor=1}completion_reward={add_political_power=10}}focus={id=SOV_to_the_east_dr icon=GFX_focus_usa_focus_on_asia x=29 y=7 cost=1 available={NOT={country_exists=GEO}}available_if_capitulated=yes prerequisite={focus=SOV_the_georgian_menace_dr}ai_will_do={factor=1}completion_reward={add_political_power=10}}focus={id=SOV_rubber_production_dr icon=GFX_focus_generic_rubber x=17 y=7 cost=6 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=SOV_wealth_of_the_union_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=cat_synth_rubber}}}focus={id=SOV_oil_production_dr icon=GFX_focus_generic_stockpile_fuel x=15 y=7 cost=6 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=SOV_wealth_of_the_union_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=cat_synth_oil}}}focus={id=SOV_schools_of_thought_dr icon=GFX_focus_generic_socialist_science x=19 y=7 cost=4 search_filters={FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_foreign_industrial_aid_dr focus=SOV_connerian_ingenuity_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_schools_of_thought_dr}}focus={id=SOV_prioritize_armament_production_dr icon=GFX_focus_generic_license_production x=4 y=9 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_jumpstart_military_production_dr}prerequisite={focus=SOV_form_the_dwp_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_dwp_dr add_idea=idea_dwp_2_dr}}}focus={id=SOV_mongol_submission_dr icon=GFX_focus_smiling_buddha x=31 y=8 cost=6 search_filters={FOCUS_FILTER_ANNEXATION}available={OR={controls_state=40 controls_state=569 controls_state=567 controls_state=566 controls_state=575 controls_state=574 controls_state=561}}available_if_capitulated=yes bypass={OR={NOT={country_exists=MON}has_war_with=MON}}prerequisite={focus=SOV_to_the_east_dr}ai_will_do={factor=1}completion_reward={country_event=dr.56}}focus={id=SOV_national_connerian_academy_dr icon=GFX_focus_research2 x=20 y=8 cost=6 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=SOV_schools_of_thought_dr focus=SOV_third_enlightenment_dr}ai_will_do={factor=1}completion_reward={add_research_slot=1}}
+
+	#Focus for Connercon
+	focus = {
+		id = SOV_connercon_dr
+		icon = GFX_focus_SOV_the_comecon
+		x = 8
+		y = 13
+		cost = 10
+		available={always=no}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_finish_the_5_year_plan_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_central_asian_conquest_dr icon=GFX_goal_generic_secret_weapon x=27 y=8 cost=6 search_filters={FOCUS_FILTER_ANNEXATION}available={OR={controls_state=407 controls_state=652 controls_state=582 controls_state=572 controls_state=403 controls_state=571 controls_state=570 controls_state=40 controls_state=654 controls_state=818 controls_state=817}}available_if_capitulated=yes prerequisite={focus=SOV_continue_southwards_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=UZB}add_state_core=406 add_state_core=402 add_state_core=587 add_state_core=823 add_state_core=831 add_state_core=832 add_state_core=585 add_state_core=830 add_state_core=742 add_state_core=943 add_state_core=732 add_state_core=405 add_state_core=404 add_state_core=944 add_state_core=586 add_state_core=589 add_state_core=588 add_state_core=882 add_state_core=590 add_state_core=583 add_state_core=881}}focus={id=SOV_vladivostok_conference_dr icon=GFX_goal_generic_improve_relations x=29 y=9 cost=6 search_filters={FOCUS_FILTER_ANNEXATION}available={OR={controls_state=611 controls_state=612 controls_state=819 controls_state=563 controls_state=561 controls_state=560 controls_state=657}}available_if_capitulated=yes bypass={owns_state=408 owns_state=409}prerequisite={focus=SOV_dominate_the_far_east_dr focus=SOV_mongol_submission_dr}mutually_exclusive={focus=SOV_claim_zheltorossiya_dr}ai_will_do={factor=1}completion_reward={JAP={country_event=dr.58}}}focus={id=SOV_the_finnish_question_dr icon=GFX_focus_FIN_integrate_kola_and_karelia x=25 y=8 cost=6 search_filters={FOCUS_FILTER_ANNEXATION}available={OR={controls_state=195 controls_state=244 controls_state=264 controls_state=351 controls_state=879}}available_if_capitulated=yes prerequisite={focus=SOV_to_the_west_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=FIN}add_state_core=146 add_state_core=216 add_state_core=215 add_state_core=147 add_state_core=213 add_state_core=722}}
+
+	focus={id=SOV_baltic_reclamation_dr icon=GFX_focus_generic_baltic_entente
+		x = 23
+		y = 8
+		cost = 6
+		available={always=no}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_to_the_west_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_extend_our_claims_dr icon=GFX_focus_spr_anarchism_knows_no_borders x=24 y=9 cost=6 search_filters={FOCUS_FILTER_ANNEXATION}available_if_capitulated=yes prerequisite={focus=SOV_baltic_reclamation_dr}prerequisite={focus=SOV_the_finnish_question_dr}ai_will_do={factor=1}completion_reward={custom_effect_tooltip=sov_claims_tooltip_dr hidden_effect={add_state_claim=137 add_state_claim=196 add_state_claim=200 add_state_claim=221 add_state_claim=259 add_state_claim=225 add_state_claim=193 add_state_claim=202 add_state_claim=203 add_state_claim=226 add_state_claim=197 add_state_claim=192 add_state_claim=766 add_state_claim=78 add_state_claim=834 add_state_claim=198 add_state_claim=198 add_state_claim=201 add_state_claim=199 add_state_claim=93 add_state_claim=941 add_state_claim=194 add_state_claim=942 add_state_claim=204 add_state_claim=206 add_state_claim=207 add_state_claim=96 add_state_claim=784 add_state_claim=95 add_state_claim=94 add_state_claim=92 add_state_claim=91 add_state_claim=89 add_state_claim=88 add_state_claim=90 add_state_claim=762 add_state_claim=67 add_state_claim=10 add_state_claim=87 add_state_claim=86 add_state_claim=807 add_state_claim=85 add_state_claim=5 add_state_claim=98 add_state_claim=97 add_state_claim=763 add_state_claim=188 add_state_claim=80}}}
+
+	#Focus for Conner-tration Camps
+	focus = {
+		id = SOV_conner_tration_camps_dr
+		icon = GFX_goal_generic_construct_military
+		x = 1
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_total_loyalty_dr
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Subservient Work Force
+	focus = {
+		id = SOV_subservient_work_force_dr
+		icon = GFX_focus_CZE_german_puppet
+		x = 1
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_conner_tration_camps_dr 
+		}
+		prerequisite = { 
+			focus = SOV_conner_tration_camps_dr
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_the_great_davetriotic_war_dr icon=GFX_focus_ger_great_red_menace x=45 y=5 cost=4 search_filters={FOCUS_FILTER_WAR_SUPPORT}available={has_war_with=GER}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={add_war_support=.15}}
+
+	#Focus for Hold The Line!
+	focus = {
+		id = SOV_hold_the_line_dr
+		icon = GFX_focus_prc_infiltration
+		x = 46
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_great_davetriotic_war_dr }
+		mutually_exclusive = { focus = SOV_scorched_earth_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Scorched Earth
+	focus = {
+		id = SOV_scorched_earth_dr
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 44
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_great_davetriotic_war_dr }
+		mutually_exclusive = { focus = SOV_hold_the_line_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Relocate The Industry
+	focus = {
+		id = SOV_relocate_the_industry_dr
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 44
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_hold_the_line_dr
+			focus = SOV_scorched_earth_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Unleash The Partisans
+	focus = {
+		id = SOV_unleash_the_partisans_dr
+		icon = GFX_focus_BUL_support_macedonian_organizations
+		x = 46
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_hold_the_line_dr 
+			focus = SOV_scorched_earth_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Defend Ramscow!
+	focus = {
+		id = SOV_defend_ramscow_dr
+		icon = GFX_focus_SOV_the_defense_of_moscow
+		x = 49
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_great_davetriotic_war_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Siege Of Lennongrad
+	focus = {
+		id = SOV_the_siege_of_lennongrad_dr
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 42
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_great_davetriotic_war_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Battle Of Connergrad
+	focus = {
+		id = SOV_the_battle_of_connergrad_dr
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		x = 49
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_defend_ramscow_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_rostov_shipyards_dr icon=GFX_focus_POL_develop_polish_shipbuilding x=6 y=10 cost=7 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=218}available_if_capitulated=yes prerequisite={focus=SOV_lennongrad_shipyards_dr}ai_will_do={factor=1}completion_reward={218={add_building_construction={type=dockyard level=3 instant_build=yes}add_extra_state_shared_building_slots=3}}}focus={id=SOV_continue_southwards_dr icon=GFX_focus_generic_strike_at_democracy1 x=27 y=7 cost=1 available={NOT={country_exists=GEO}}available_if_capitulated=yes prerequisite={focus=SOV_the_georgian_menace_dr}ai_will_do={factor=1}completion_reward={add_political_power=10}}focus={id=SOV_dominate_the_far_east_dr icon=GFX_focus_eng_expose_the_belly_of_the_bear x=29 y=8 cost=6 search_filters={FOCUS_FILTER_ANNEXATION}available={OR={controls_state=878 controls_state=575 controls_state=565 controls_state=563 controls_state=761}}available_if_capitulated=yes prerequisite={focus=SOV_to_the_east_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=FER}add_state_core=876 add_state_core=877 add_state_core=574 add_state_core=561 add_state_core=657 add_state_core=560 add_state_core=562 add_state_core=874 add_state_core=644 add_state_core=822 add_state_core=875 add_state_core=637 add_state_core=650 add_state_claim=408 add_state_claim=409 add_state_claim=655 add_state_claim=537 add_state_claim=555}}
+
+	#Focus for Steel Horses
+	focus = {
+		id = SOV_steel_horses_dr
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		x = 45
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_connerian_army_tactics_dr }
+		mutually_exclusive = { focus = SOV_outmatch_our_enemy_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_connerian_utopianism_dr icon=GFX_goal_generic_war_with_comintern x=11 y=2 cost=0 available={has_country_flag=utopia_flag_dr has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_convene_the_party_dr}mutually_exclusive={focus=SOV_connerian_vanguardism_dr}ai_will_do={factor=1}completion_reward={add_political_power=5 custom_effect_tooltip=ger_althist_tooltip_dr}}focus={id=SOV_socialist_technocrats_dr icon=GFX_goal_tfv_generic_tech_sharing x=12 y=3 cost=5 search_filters={FOCUS_FILTER_RESEARCH}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_connerian_utopianism_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_socialist_technocrats_dr}}
+
+	focus={id=SOV_a_utopia_at_all_costs_dr icon=GFX_focus_hol_legacy_of_the_de_zeven_provincien_mutin x=12 y=4 cost=5 search_filters={FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_socialist_technocrats_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_socialist_technocrats_dr add_idea=idea_socialist_technocrats_2_dr}}}
+	
+focus={id=SOV_repeal_the_religious_laws_dr icon=GFX_focus_GRE_an_orthodox_state x=20 y=4 cost=5 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}available={OR={has_country_flag=monarch_vanguard_flag_dr has_government=neutrality}}available_if_capitulated=yes prerequisite={focus=SOV_monarcho_vanguard_compromise_dr focus=SOV_the_church_of_irving_dr}mutually_exclusive={focus=SOV_retain_the_religious_laws_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_connerian_orthodox_church_dr}}focus={id=SOV_the_church_of_irving_dr icon=GFX_focus_SOV_patriarch_of_all_russia x=19 y=2 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_invite_the_royalists_dr}mutually_exclusive={focus=SOV_monarcho_vanguard_compromise_dr}ai_will_do={factor=1}completion_reward={set_politics={ruling_party=neutrality elections=yes}add_popularity={ideology=neutrality popularity=0.3}set_country_flag=irving_dr hidden_effect={set_cosmetic_tag=russian_empire}}}focus={id=SOV_reinstate_noble_titles_dr icon=GFX_focus_generic_monarchy_1 x=22 y=4 cost=4 search_filters={FOCUS_FILTER_POLITICAL}available={OR={has_country_flag=monarch_vanguard_flag_dr has_government=neutrality}}available_if_capitulated=yes prerequisite={focus=SOV_the_church_of_irving_dr focus=SOV_monarcho_vanguard_compromise_dr}ai_will_do={factor=1}completion_reward={add_political_power=15 add_popularity={ideology=neutrality popularity=.1}}}focus={id=SOV_third_enlightenment_dr icon=GFX_focus_SOV_rebuild_the_savior_cathedral x=21 y=6 cost=4 search_filters={FOCUS_FILTER_RESEARCH}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=SOV_connerian_rebirth_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_schools_of_thought_2_dr}}focus={id=SOV_true_heirs_of_rome_dr icon=GFX_focus_SOV_my_brothers_keeper x=33 y=10 cost=8 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={has_country_flag=irving_flag_dr has_government=neutrality controls_state=219 controls_state=570 controls_state=657}available_if_capitulated=yes prerequisite={focus=SOV_extend_our_claims_dr}prerequisite={focus=SOV_central_asian_conquest_dr}prerequisite={focus=SOV_vladivostok_conference_dr focus=SOV_claim_zheltorossiya_dr}mutually_exclusive={focus=SOV_spirit_of_genghis_dr focus=SOV_the_union_consolidated_dr}ai_will_do={factor=1}completion_reward={remove_ideas=idea_a_fractured_motherland_dr}}focus={id=SOV_connerian_rebirth_dr icon=GFX_focus_generic_monarchy_2 x=21 y=5 cost=7 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={OR={has_country_flag=monarch_vanguard_flag_dr has_government=neutrality}}available_if_capitulated=yes prerequisite={focus=SOV_repeal_the_religious_laws_dr}prerequisite={focus=SOV_reinstate_noble_titles_dr}ai_will_do={factor=1}completion_reward={add_stability=.1 add_war_support=.1}}focus={id=SOV_the_final_partition_dr icon=GFX_goal_generic_territory_or_war x=31 y=11 cost=7 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=SOV_true_heirs_of_rome_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=POL}add_state_core=10 add_state_core=92 add_state_core=90 add_state_core=87 add_state_core=98 add_state_core=97}}focus={id=SOV_seize_romanian_crownlands_dr icon=GFX_focus_rom_handle_king x=33 y=11 cost=6 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=SOV_true_heirs_of_rome_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=ROM}add_state_core=78 add_state_core=766}}focus={id=SOV_pannonian_invasion_dr icon=GFX_goal_generic_occupy_states_ongoing_war x=32 y=12 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes bypass={OR={NOT={country_exists=HUN}has_war_with=HUN HUN={is_subject_of=SOV}SOV={has_wargoal_against=HUN}}}prerequisite={focus=SOV_the_final_partition_dr}prerequisite={focus=SOV_seize_romanian_crownlands_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=HUN}}}focus={id=SOV_slay_the_turks_dr icon=GFX_focus_generic_attack_turkey x=35 y=11 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=SOV_true_heirs_of_rome_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=TUR}add_state_core=354}}focus={id=SOV_death_of_the_persians_dr icon=GFX_goal_generic_secret_weapon x=37 y=11 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes bypass={OR={NOT={country_exists=PER}has_war_with=PER PER={is_subject_of=SOV}SOV={has_wargoal_against=PER}}}prerequisite={focus=SOV_true_heirs_of_rome_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=PER}}}focus={id=SOV_pacify_afghanistan_dr icon=GFX_goal_generic_occupy_states_ongoing_war x=36 y=12 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes bypass={OR={NOT={country_exists=AFG}has_war_with=AFG AFG={is_subject_of=SOV}SOV={has_wargoal_against=AFG}}}prerequisite={focus=SOV_slay_the_turks_dr}prerequisite={focus=SOV_death_of_the_persians_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=AFG}}}
+
+	#Focus for Our Southern Brotheren
+	focus = {
+		id = SOV_our_southern_brethren_dr
+		icon = GFX_focus_YUG_dissolve_serbia
+		x = 34
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_pannonian_invasion_dr 
+		}
+		prerequisite = { 
+			focus = SOV_pacify_afghanistan_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_constantinople_not_istanbul_dr icon=GFX_focus_GRE_byzantine_themata x=34 y=14 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=SOV_our_southern_brethren_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=GRE}add_state_core=797}}focus={id=SOV_topple_the_larpers_dr icon=GFX_focus_generic_italy_first x=34 y=15 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality}available_if_capitulated=yes bypass={OR={NOT={country_exists=ITA}has_war_with=ITA ITA={is_subject_of=SOV}SOV={has_wargoal_against=ITA}}}prerequisite={focus=SOV_constantinople_not_istanbul_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=ITA}}}focus={id=SOV_outmatch_our_enemy_dr icon=GFX_goal_generic_army_artillery2 x=35 y=1 cost=6 search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=SOV_connerian_army_tactics_dr}mutually_exclusive={focus=SOV_human_wave_offensives_dr focus=SOV_steel_horses_dr}ai_will_do={factor=1}completion_reward={army_experience=15 add_doctrine_cost_reduction={cost_reduction=0.5 uses=2 category=cat_superior_firepower}}}
+
+	#Focus for Organization Is Key
+	focus = {
+		id = SOV_organization_is_key_dr
+		icon = GFX_goal_generic_small_arms
+		x = 36
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_outmatch_our_enemy_dr }
+		mutually_exclusive = { focus = SOV_planning_effort_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Support The Spanish Communists
+	focus = {
+		id = SOV_support_the_spanish_communists_dr
+		icon = GFX_focus_generic_befriend_republican_spain
+		x = 33
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_volunteer_deployment_dr
+		}
+		mutually_exclusive = { focus = SOV_support_the_spanish_nationalists_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Planning Effort
+	focus = {
+		id = SOV_planning_effort_dr
+		icon = GFX_goal_generic_position_armies
+		x = 34
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_outmatch_our_enemy_dr }
+		mutually_exclusive = { focus = SOV_organization_is_key_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Army Of The People
+	focus = {
+		id = SOV_army_of_the_people_dr
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		x = 42
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_division_autonomy_dr 
+			focus = SOV_centralized_units_dr
+			focus = SOV_organization_is_key_dr 
+			focus = SOV_planning_effort_dr 
+			focus = SOV_armored_brigades_dr 
+			focus = SOV_katyushas_dr
+		}
+		mutually_exclusive = { focus = SOV_imperial_army_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Katyushas
+	focus = {
+		id = SOV_katyushas_dr
+		icon = GFX_focus_rocketry
+		x = 46
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_steel_horses_dr }
+		mutually_exclusive = { focus = SOV_armored_brigades_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Armored Brigades
+	focus = {
+		id = SOV_armored_brigades_dr
+		icon = GFX_goal_generic_build_tank
+		x = 44
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_steel_horses_dr }
+		mutually_exclusive = { focus = SOV_katyushas_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Templar Divisions
+	focus = {
+		id = SOV_templar_divisions_dr
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = 39
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_true_heirs_of_rome_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Crusade Against Islam
+	focus = {
+		id = SOV_crusade_against_islam_dr
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+		x = 38
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_templar_divisions_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Secure The Airspace
+	focus = {
+		id = SOV_secure_the_airspace_dr
+		icon = GFX_goal_generic_air_fighter2
+		x = 52
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_independent_air_force_dr 
+			focus = SOV_integrate_the_air_command_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_a_flexible_navy_dr icon=GFX_goal_generic_navy_submarine x=57 y=1 cost=4 search_filters={FOCUS_FILTER_NAVY_XP}available_if_capitulated=yes prerequisite={focus=SOV_the_red_fleet_dr}mutually_exclusive={focus=SOV_a_hardy_navy_dr}ai_will_do={factor=1}completion_reward={navy_experience=15}}focus={id=SOV_a_hardy_navy_dr icon=GFX_focus_generic_navy_battleship2 x=61 y=1 cost=4 search_filters={FOCUS_FILTER_NAVY_XP}available_if_capitulated=yes prerequisite={focus=SOV_the_red_fleet_dr}mutually_exclusive={focus=SOV_a_flexible_navy_dr}ai_will_do={factor=1}completion_reward={navy_experience=15}}focus={id=SOV_submarine_effort_dr icon=GFX_goal_generic_navy_anti_submarine x=58 y=2 cost=5 search_filters={FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=SOV_a_flexible_navy_dr}ai_will_do={factor=1}completion_reward={navy_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=ss_tech}}}focus={id=SOV_destroyer_effort_dr icon=GFX_focus_generic_navy_battleship2 x=56 y=2 cost=5 search_filters={FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=SOV_a_flexible_navy_dr}ai_will_do={factor=1}completion_reward={navy_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=dd_tech}}}focus={id=SOV_carrier_effort_dr icon=GFX_goal_generic_navy_carrier x=62 y=2 cost=5 search_filters={FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=SOV_a_hardy_navy_dr}ai_will_do={factor=1}completion_reward={navy_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=cv_tech}}}focus={id=SOV_capital_ship_effort_dr icon=GFX_goal_generic_navy_battleship x=60 y=2 cost=5 search_filters={FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=SOV_a_hardy_navy_dr}ai_will_do={factor=1}completion_reward={navy_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=bb_tech}}}
+
+	#Focus for Victory Day
+	focus = {
+		id = SOV_victory_day_dr
+		icon = GFX_focus_usa_union_representation_act
+		x = 44
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_march_westwards_dr }
+		mutually_exclusive = { focus = SOV_the_march_never_stops_dr focus = SOV_total_collapse_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Total Collapse
+	focus = {
+		id = SOV_total_collapse_dr
+		icon = GFX_focus_CZE_german_puppet
+		x = 48
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_march_westwards_dr }
+		mutually_exclusive = { focus = SOV_victory_day_dr focus = SOV_the_march_never_stops_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The March Never Stops
+	focus = {
+		id = SOV_the_march_never_stops_dr
+		icon = GFX_focus_ger_great_red_menace
+		x = 46
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_march_westwards_dr }
+		mutually_exclusive = { 
+			focus = SOV_victory_day_dr 
+		}
+		mutually_exclusive = { 
+			focus = SOV_total_collapse_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Imperial Army
+	focus = {
+		id = SOV_imperial_army_dr
+		icon = GFX_focus_generic_little_entente
+		x = 38
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_division_autonomy_dr
+			focus = SOV_centralized_units_dr 
+			focus = SOV_organization_is_key_dr 
+			focus = SOV_planning_effort_dr 
+			focus = SOV_armored_brigades_dr 
+			focus = SOV_katyushas_dr 
+			focus = SOV_reinstate_noble_titles_dr 
+			focus = SOV_repeal_the_religious_laws_dr 
+		}
+		mutually_exclusive = { focus = SOV_army_of_the_people_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Terms Of Surrender
+	focus = {
+		id = SOV_terms_of_surrender_dr
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		x = 49
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_total_collapse_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Concede To The Separatists
+	focus = {
+		id = SOV_concede_to_the_separatists_dr
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 49
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_terms_of_surrender_dr }
+		mutually_exclusive = { focus = SOV_a_desperate_hold_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Desperate Hold
+	focus = {
+		id = SOV_a_desperate_hold_dr
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 52
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_terms_of_surrender_dr }
+		mutually_exclusive = { 
+			focus = SOV_concede_to_the_separatists_dr
+		}
+		mutually_exclusive = { 
+			focus = SOV_the_one_place_that_hasnt_been_corrupted_by_capitalism_dr
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for End The Colonial Hegemons
+	focus = {
+		id = SOV_end_the_colonial_hegemons_dr
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+		x = 46
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_march_never_stops_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Side With The Left Kuomintang
+	focus = {
+		id = SOV_side_with_the_left_kuomintang_dr
+		icon = GFX_focus_chi_cooperation_with_the_communists
+		x = 37
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_volunteer_deployment_dr
+		}
+		mutually_exclusive = { focus = SOV_side_with_the_right_kuomintang_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_death_to_capitalism_dr icon=GFX_focus_spa_the_war_of_vengeance x=46 y=13 cost=4 available={has_government=communism}available_if_capitulated=yes bypass={OR={NOT={country_exists=USA}has_war_with=USA USA={is_subject_of=SOV}}}prerequisite={focus=SOV_end_the_colonial_hegemons_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=USA}}}
+
+	#Focus for Connisthian Global Alignment
+	focus = {
+		id = SOV_connisthian_global_alignment_dr
+		icon = GFX_SOV_connisthian_global_alignment-144050
+		x = 46
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_death_to_capitalism_dr 
+			focus = SOV_a_cold_war_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Accordance With The West
+	focus = {
+		id = SOV_accordance_with_the_west_dr
+		icon = GFX_focus_hol_the_fourth_ally
+		x = 41
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_victory_day_dr }
+		mutually_exclusive = { focus = SOV_a_cold_war_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Cold War
+	focus = {
+		id = SOV_a_cold_war_dr
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 43
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_victory_day_dr }
+		mutually_exclusive = { focus = SOV_accordance_with_the_west_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Penal Battalions
+	focus = {
+		id = SOV_penal_battalions_dr
+		icon = GFX_focus_SOV_penal_battalions
+		x = 47
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_scorched_earth_dr 
+			focus = SOV_hold_the_line_dr
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ukrainian Paramilitaries
+	focus = {
+		id = SOV_ukrainian_paramilitaries_dr
+		icon = GFX_focus_POL_ukrainian_army
+		x = 31
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_repeal_the_religious_laws_dr
+			focus = SOV_reinstate_noble_titles_dr
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Complete Isolationism
+	focus = {
+		id = SOV_complete_isolationism_dr
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 52
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_a_desperate_hold_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Connerian Twilight
+	focus = {
+		id = SOV_a_connerian_twilight_dr
+		icon = GFX_SOV_a_connerian_twilight-146072
+		x = 49
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_concede_to_the_separatists_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Heavy Aircrafts
+	focus = {
+		id = SOV_heavy_aircrafts_dr
+		icon = GFX_goal_generic_air_fighter2
+		x = 50
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_target_enemy_industry_dr
+			focus = SOV_secure_the_airspace_dr
+			focus = SOV_combat_air_support_dr
+		}
+		mutually_exclusive = { focus = SOV_light_aircrafts_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Light Aircrafts
+	focus = {
+		id = SOV_light_aircrafts_dr
+		icon = GFX_goal_generic_air_fighter2
+		x = 54
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_target_enemy_industry_dr 
+			focus = SOV_secure_the_airspace_dr
+			focus = SOV_combat_air_support_dr
+		}
+		mutually_exclusive = { focus = SOV_heavy_aircrafts_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Cult Of Aviation
+	focus = {
+		id = SOV_cult_of_aviation_dr
+		icon = GFX_goal_generic_build_airforce
+		x = 52
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_independent_air_force_dr 
+			focus = SOV_integrate_the_air_command_dr
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Independent Air Force
+	focus = {
+		id = SOV_independent_air_force_dr
+		icon = GFX_focus_eng_special_air_service
+		x = 51
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_peoples_airforce_dr }
+		mutually_exclusive = { focus = SOV_integrate_the_air_command_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for State And Church As One
+	focus = {
+		id = SOV_state_and_church_as_one_dr
+		icon = GFX_focus_BUL_restore_the_bulgarian_patriarchate
+		x = 19
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_repeal_the_religious_laws_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Centralized Union
+	focus = {
+		id = SOV_centralized_union_dr
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 26
+		y = 11
+		cost = 10
+		available={OR={has_country_flag=vanguard_flag_dr has_country_flag=monarch_vanguard_flag_dr}}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_union_consolidated_dr }
+		mutually_exclusive = { focus = SOV_autonomous_republics_dr }
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	#Focus for Autonomous Republics
+	focus = {
+		id = SOV_autonomous_republics_dr
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 28
+		y = 11
+		cost = 10
+		available={OR={has_country_flag=utopia_flag_dr has_country_flag=monarch_vanguard_flag_dr}}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_union_consolidated_dr }
+		mutually_exclusive = { focus = SOV_centralized_union_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The One Place That Hasn't Been Corrupted By Capitalism
+	focus = {
+		id = SOV_the_one_place_that_hasnt_been_corrupted_by_capitalism_dr
+		icon = GFX_SOV_the_one_place_that_hasnt_been_corrupted_by_capitalism-144375
+		x = 55
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_terms_of_surrender_dr }
+		mutually_exclusive = { focus = SOV_a_desperate_hold_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Stellaris When?
+	focus = {
+		id = SOV_stellaris_when_dr
+		icon = GFX_SOV_stellaris_when-144835
+		x = 55
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_one_place_that_hasnt_been_corrupted_by_capitalism_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_reawakening_dr icon=GFX_goal_support_fascism x=19 y=0 cost=4 search_filterS={FOCUS_FILTER_POLITICAL}available={has_government=communism}available_if_capitulated=yes mutually_exclusive={focus=SOV_our_union_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=fascism popularity=.05}add_trait={character=SOV_iosif_stalin ideology=vanguardism trait=trait_reawakened_dr}custom_effect_tooltip=ger_althist_tooltip_dr}}
+
+	#Focus for Demise Of Communism
+	focus = {
+		id = SOV_demise_of_communism_dr
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 23
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_reawakening_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Pseudo-Nomadism
+	focus = {
+		id = SOV_pseudo_nomadism_dr
+		icon = GFX_focus_generic_support_the_left_right
+		x = 21
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_reawakening_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Great Khanner
+	focus = {
+		id = SOV_the_great_khanner_dr
+		icon = GFX_SOV_the_great_khanner-144968
+		x = 22
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_demise_of_communism_dr  
+		}
+		prerequisite = { 
+			focus = SOV_pseudo_nomadism_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward={set_country_flag=khanner_dr}
+	}
+
+focus={id=SOV_onwards_and_upwards_dr icon=GFX_focus_research2 x=18 y=9 cost=6 search_filters={FOCUS_FILTER_RESEARCH}available={num_of_civilian_factories>85}available_if_capitulated=yes prerequisite={focus=SOV_national_connerian_academy_dr}ai_will_do={factor=1}completion_reward={add_research_slot=1}}focus={id=SOV_claim_zheltorossiya_dr icon=GFX_focus_jap_manchurian_project x=31 y=9 cost=6 search_filters={FOCUS_FILTER_ANNEXATION}available={OR={controls_state=611 controls_state=612 controls_state=819 controls_state=563 controls_state=561 controls_state=560 controls_state=657}}available_if_capitulated=yes bypass={MAN={is_subject_of=SOV}}prerequisite={focus=SOV_dominate_the_far_east_dr}prerequisite={focus=SOV_mongol_submission_dr}mutually_exclusive={focus=SOV_vladivostok_conference_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=MAN}add_state_claim=761 add_state_claim=714 add_state_claim=717 add_state_claim=328 add_state_claim=715 add_state_claim=716 add_state_claim=745 add_state_claim=610 add_state_claim=609}}focus={id=SOV_spirit_of_genghis_dr icon=GFX_goal_generic_attack_allies x=22 y=10 cost=8 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={has_country_flag=khanner_flag_dr has_government=fascism controls_state=219 controls_state=570 controls_state=657}available_if_capitulated=yes prerequisite={focus=SOV_extend_our_claims_dr}prerequisite={focus=SOV_central_asian_conquest_dr}prerequisite={focus=SOV_vladivostok_conference_dr focus=SOV_claim_zheltorossiya_dr}mutually_exclusive={focus=SOV_the_union_consolidated_dr focus=SOV_true_heirs_of_rome_dr}ai_will_do={factor=1}completion_reward={remove_ideas=idea_a_fractured_motherland_dr}}focus={id=SOV_the_union_consolidated_dr icon=GFX_focus_YUG_pan_slavic_congress x=27 y=10 cost=8 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={has_government=communism controls_state=219 controls_state=570 controls_state=657}available_if_capitulated=yes prerequisite={focus=SOV_extend_our_claims_dr}prerequisite={focus=SOV_central_asian_conquest_dr}prerequisite={focus=SOV_vladivostok_conference_dr focus=SOV_claim_zheltorossiya_dr}mutually_exclusive={focus=SOV_spirit_of_genghis_dr focus=SOV_true_heirs_of_rome_dr}ai_will_do={factor=1}completion_reward={remove_ideas=idea_a_fractured_motherland_dr}}focus={id=SOV_reclaim_the_ilkhanate_dr icon=GFX_focus_eng_imperial_federation x=20 y=11 cost=8 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=fascism has_completed_focus=SOV_the_great_khanner_dr}available_if_capitulated=yes bypass={OR={NOT={country_exists=TUR}has_war_with=TUR TUR={is_subject_of=SOV}SOV={has_wargoal_against=TUR}}OR={NOT={country_exists=PER}has_war_with=PER PER={is_subject_of=SOV}SOV={has_wargoal_against=PER}}OR={NOT={country_exists=AFG}has_war_with=AFG AFG={is_subject_of=SOV}SOV={has_wargoal_against=AFG}}}prerequisite={focus=SOV_spirit_of_genghis_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=annex_everything target=TUR}create_wargoal={type=annex_everything target=PER}create_wargoal={type=annex_everything target=AFG}custom_effect_tooltip=rome_expansion_tooltip_dr hidden_effect={add_state_claim=354 add_state_claim=353 add_state_claim=355 add_state_claim=349 add_state_claim=348 add_state_claim=349 add_state_claim=798 add_state_claim=356 add_state_claim=49 add_state_claim=343 add_state_claim=346 add_state_claim=345 add_state_claim=800 add_state_claim=352 add_state_claim=419 add_state_claim=676 add_state_claim=291 add_state_claim=421 add_state_claim=420 add_state_claim=417 add_state_claim=411 add_state_claim=413 add_state_claim=412 add_state_claim=414 add_state_claim=418 add_state_claim=266 add_state_claim=416 add_state_claim=410 add_state_claim=444 add_state_claim=415 add_state_claim=267 add_state_claim=445 add_state_claim=443 add_state_claim=442 add_state_claim=787 add_state_claim=440}}}
+
+	#Focus for The Yuan Throne
+	focus = {
+		id = SOV_the_yuan_throne_dr
+		icon = GFX_focus_man_claim_the_mandate_of_heaven
+		x = 23
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_spirit_of_genghis_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Conquest Of Middle East
+	focus = {
+		id = SOV_conquest_of_middle_east_dr
+		icon = GFX_goal_generic_major_war
+		x = 18
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_reclaim_the_ilkhanate_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Conquest Of Indochina
+	focus = {
+		id = SOV_conquest_of_indochina_dr
+		icon = GFX_goal_generic_major_war
+		x = 22
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_yuan_throne_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Conquest Of India
+	focus = {
+		id = SOV_conquest_of_india_dr 
+		icon = GFX_goal_generic_major_war
+		x = 20
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_the_yuan_throne_dr  
+		}
+		prerequisite = { 
+			focus = SOV_reclaim_the_ilkhanate_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_tackle_the_tsunami_dr icon=GFX_focus_attack_japan x=20 y=13 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=fascism}available_if_capitulated=yes bypass={OR={NOT={country_exists=JAP}has_war_with=JAP JAP={is_subject_of=SOV}SOV={has_wargoal_against=JAP}}prerequisite={focus=SOV_conquest_of_middle_east_dr}prerequisite={focus=SOV_conquest_of_india_dr}prerequisite={focus=SOV_conquest_of_indochina_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=JAP}}}}
+	
+	#Focus for Support The Spanish Nationalists
+	focus = {
+		id = SOV_support_the_spanish_nationalists_dr
+		icon = GFX_focus_generic_befriend_nationalist_spain
+		x = 35
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_volunteer_deployment_dr
+		}
+		mutually_exclusive = { focus = SOV_support_the_spanish_communists_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Side With The Right Kuomintang
+	focus = {
+		id = SOV_side_with_the_right_kuomintang_dr
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		x = 39
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_volunteer_deployment_dr
+		}
+		mutually_exclusive = { focus = SOV_side_with_the_left_kuomintang_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Formalize The Spanish Alliance
+	focus = {
+		id = SOV_formalize_the_spanish_alliance_dr 
+		icon = GFX_goal_generic_major_alliance
+		x = 34
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_support_the_spanish_communists_dr 
+			focus = SOV_support_the_spanish_nationalists_dr  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus={id=SOV_formalize_the_chinese_alliance_dr icon=GFX_goal_generic_major_alliance x=38 y=7 cost=5 available_if_capitulated=yes prerequisite={focus=SOV_side_with_the_left_kuomintang_dr focus=SOV_side_with_the_right_kuomintang_dr}ai_will_do={factor=1}completion_reward={if={limit={has_completed_focus=SOV_side_with_the_left_kuomintang_dr}add_to_faction=PRC}if={limit={has_completed_focus=SOV_side_with_the_right_kuomintang_dr CHI={NOT={has_government=communism}}}add_to_faction=CHI}}}
+
+focus={id=SOV_invite_the_royalists_dr icon=GFX_focus_rom_royal_dictatorship x=15 y=1 cost=3 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_our_union_dr}mutually_exclusive={focus=SOV_convene_the_party_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_royalist_cooperation_dr custom_effect_tooltip=ger_althist_tooltip_dr}}
+
+	#Focus for Monarcho-Vanguard Compromise
+	focus = {
+		id = SOV_monarcho_vanguard_compromise_dr
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		x = 15
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_invite_the_royalists_dr }
+		mutually_exclusive={focus=SOV_the_church_of_irving_dr}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward={set_country_flag=monarch_vanguard_flag_dr}
+	}
+
+	focus = {
+		id = SOV_appease_the_workers_dr
+		icon = GFX_focus_ITA_il_sol_dell_avvenire
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_monarcho_vanguard_compromise_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_retain_the_religious_laws_dr icon=GFX_focus_mex_triumph_over_the_cristeros x=18 y=4 cost=5 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=SOV_monarcho_vanguard_compromise_dr}mutually_exclusive={focus=SOV_repeal_the_religious_laws_dr}ai_will_do={factor=1}completion_reward={add_stability=.05 add_popularity={ideology=neutrality popularity=-.1}}}
+
+	#Focus for The People's Tsar
+	focus = {
+		id = SOV_the_peoples_tsar_dr
+		icon = GFX_focus_SOV_the_true_tsars
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_appease_the_workers_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Road Of Life
+	focus = {
+		id = SOV_road_of_life_dr
+		icon = GFX_focus_SOV_the_road_of_life
+		x = 42
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_the_siege_of_lennongrad_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Lick Our Wounds
+	focus = {
+		id = SOV_lick_our_wounds_dr
+		icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit
+		x = 43
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_a_cold_war_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Extend Supply Chains
+	focus = {
+		id = SOV_extend_supply_chains_dr
+		icon = GFX_SOV_extend_supply_chains-151072
+		x = 28
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_found_the_cwi_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_construct_the_war_machine_dr icon=GFX_goal_generic_construct_mil_factory x=26 y=2 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=219 controls_state=195}available_if_capitulated=yes prerequisite={focus=SOV_found_the_cwi_dr}ai_will_do={factor=1}completion_reward={219={add_building_construction={type=arms_factory level=2 instant_build=yes}add_extra_state_shared_building_slots=2}195={add_building_construction={type=arms_factory level=2 instant_build=yes}add_extra_state_shared_building_slots=2}}}focus={id=SOV_found_the_cwi_dr icon=GFX_goal_generic_defence x=28 y=1 cost=4 available={has_completed_focus=SOV_jumpstart_military_production_dr}available_if_capitulated=yes prerequisite={focus=SOV_connerian_army_tactics_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_cwi_dr}}
+
+	#Focus for Mining Industry
+	focus = {
+		id = SOV_mining_industry_dr
+		icon = GFX_focus_generic_steel
+		x = 25
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_construct_the_war_machine_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Central Rail Network
+	focus = {
+		id = SOV_central_rail_network_dr
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 27
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_extend_supply_chains_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_connergrad_tank_factory_dr icon=GFX_goal_generic_construct_civ_factory x=30 y=2 cost=6 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=217}available_if_capitulated=yes prerequisite={focus=SOV_found_the_cwi_dr}ai_will_do={factor=1}completion_reward={217={add_building_construction={type=arms_factory level=1 instant_build=yes}add_extra_state_shared_building_slots=1}swap_ideas={remove_idea=idea_cwi_dr add_idea=idea_cwi_2_dr}}}focus={id=SOV_ural_plants_dr icon=GFX_focus_GRE_a_land_of_mountains x=31 y=3 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=573 controls_state=582}available_if_capitulated=yes prerequisite={focus=SOV_connergrad_tank_factory_dr}ai_will_do={factor=1}completion_reward={573={add_building_construction={type=arms_factory level=2 instant_build=yes}add_extra_state_shared_building_slots=2}582={add_building_construction={type=arms_factory level=2 instant_build=yes}add_extra_state_shared_building_slots=2}}}
+
+	#Focus for Merge The Plants
+	focus = {
+		id = SOV_merge_the_plants_dr
+		icon = GFX_focus_SOV_merge_plants
+		x = 28
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_mining_industry_dr 
+		}
+		prerequisite = { 
+			focus = SOV_central_rail_network_dr 
+		}
+		prerequisite = { 
+			focus = SOV_out_of_the_farms_into_the_cities_dr 
+		}
+		prerequisite = { 
+			focus = SOV_ural_plants_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_annihilate_the_italians_dr icon=GFX_focus_attack_italy x=26 y=14 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=communism}available_if_capitulated=yes bypass={OR={NOT={country_exists=ITA}has_war_with=ITA OR={ITA={has_government=communism is_subject_of=SOV}}SOV={has_wargoal_against=ITA}}}prerequisite={focus=SOV_free_the_balkans_dr focus=SOV_destroy_the_davidians_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=ITA}}}
+	
+	focus = {
+		id = SOV_out_of_the_farms_into_the_cities_dr
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 29
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_extend_supply_chains_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_expand_the_soviets_dr icon=GFX_goal_support_communism x=25 y=12 cost=2 available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_centralized_union_dr}ai_will_do={factor=1}completion_reward={add_political_power=15}}focus={id=SOV_expand_the_bloc_dr icon=GFX_goal_generic_intelligence_exchange x=29 y=12 cost=2 available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_autonomous_republics_dr}ai_will_do={factor=1}completion_reward={add_political_power=15}}focus={id=SOV_free_the_balkans_dr icon=GFX_focus_BUL_free_balkan_states x=24 y=13 cost=8 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=communism}available_if_capitulated=yes bypass={OR={NOT={country_exists=ROM}has_war_with=ROM OR={ROM={has_government=communism is_subject_of=SOV}}SOV={has_wargoal_against=ROM}}OR={NOT={country_exists=HUN}has_war_with=HUN OR={HUN={has_government=communism is_subject_of=SOV}}SOV={has_wargoal_against=HUN}}OR={NOT={country_exists=YUG}has_war_with=YUG OR={YUG={has_government=communism is_subject_of=SOV}}SOV={has_wargoal_against=YUG}}OR={NOT={country_exists=ALB}has_war_with=ALB OR={ALB={has_government=communism is_subject_of=SOV}}SOV={has_wargoal_against=ALB}}OR={NOT={country_exists=GRE}has_war_with=GRE OR={GRE={has_government=communism is_subject_of=SOV}}SOV={has_wargoal_against=GRE}}OR={NOT={country_exists=BUL}has_war_with=BUL OR={BUL={has_government=communism is_subject_of=SOV}}SOV={has_wargoal_against=BUL}}}prerequisite={focus=SOV_expand_the_soviets_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=ROM}create_wargoal={type=puppet_wargoal_focus target=HUN}create_wargoal={type=puppet_wargoal_focus target=YUG}create_wargoal={type=puppet_wargoal_focus target=ALB}create_wargoal={type=puppet_wargoal_focus target=GRE}create_wargoal={type=puppet_wargoal_focus target=BUL}}}focus={id=SOV_destroy_the_davidians_dr icon=GFX_goal_generic_major_war x=26 y=13 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=communism}available_if_capitulated=yes bypass={OR={NOT={country_exists=GER}has_war_with=GER OR={GER={has_government=communism is_subject_of=SOV}}SOV={has_wargoal_against=GER}}}prerequisite={focus=SOV_expand_the_soviets_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=GER}}}focus={id=SOV_crush_the_french_dr icon=GFX_focus_attack_france x=24 y=14 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=communism}available_if_capitulated=yes bypass={OR={NOT={country_exists=FRA}has_war_with=FRA OR={FRA={has_government=communism is_subject_of=SOV}}SOV={has_wargoal_against=FRA}}}prerequisite={focus=SOV_free_the_balkans_dr focus=SOV_destroy_the_davidians_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=FRA}}}focus={id=SOV_end_the_imperium_dr icon=GFX_goal_tfv_saf_anti_colonialist_crusade x=24 y=15 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=communism}available_if_capitulated=yes bypass={OR={NOT={country_exists=USA}has_war_with=USA OR={USA={has_government=communism is_subject_of=SOV}}SOV={has_wargoal_against=USA}}}prerequisite={focus=SOV_crush_the_french_dr focus=SOV_annihilate_the_italians_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=USA}}}
+
+	focus = {
+		id = SOV_fulfill_the_eurasian_ambition_dr
+		icon = GFX_focus_POL_support_global_falangism
+		x = 25
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_dusk_on_the_rising_sun_dr }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward={}
+	}
+
+focus={id=SOV_never_another_schlimkrieg_dr icon=GFX_goal_continuous_boost_freedom x=41 y=13 cost=7 search_filters={FOCUS_FILTER_STABILITY}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_accordance_with_the_west_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_never_another_schlimkrieg_dr}}focus={id=SOV_united_in_friendship_and_labor_dr icon=GFX_focus_BUL_cooperate_with_the_zveno x=29 y=18 cost=10 search_filters={FOCUS_FILTER_STABILITY}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_the_east_at_peace_dr}ai_will_do={factor=1}completion_reward={remove_trait={character=SOV_iosif_stalin ideology=communism trait=trait_international_criminal_dr}}}
+
+	focus={id=SOV_attain_arctic_oil_dr icon=GFX_goal_generic_oil_refinery x=15 y=8 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=SOV_oil_production_dr}ai_will_do={factor=1}completion_reward={214={if={limit={is_controlled_by=SOV}add_resource={type=oil amount=4}}825={if={limit={is_controlled_by=SOV}add_resource={type=oil amount=2}}579={if={limit={is_controlled_by=SOV}add_resource={type=oil amount=4}}824={if={limit={is_controlled_by=SOV}add_resource={type=oil amount=2}}custom_effect_tooltip=arctic_oil_tooltip_dr}}}}}}
+
+focus={id=SOV_bring_down_the_imperialists_dr icon=GFX_focus_attack_britain x=26 y=15 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=communism}available_if_capitulated=yes bypass={OR={NOT={country_exists=ENG}has_war_with=ENG OR={ENG={has_government=communism is_subject_of=SOV}}SOV={has_wargoal_against=ENG}}}prerequisite={focus=SOV_crush_the_french_dr focus=SOV_annihilate_the_italians_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=ENG}}}focus={id=SOV_dusk_on_the_rising_sun_dr icon=GFX_focus_attack_japan x=25 y=16 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=communism}available_if_capitulated=yes bypass={OR={NOT={country_exists=JAP}has_war_with=JAP OR={JAP={has_government=communism is_subject_of=SOV}}SOV={has_wargoal_against=JAP}}}prerequisite={focus=SOV_end_the_imperium_dr focus=SOV_bring_down_the_imperialists_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=JAP}}}focus={id=SOV_the_east_at_peace_dr icon=GFX_focus_chi_collaboration_with_the_japanese x=29 y=16 cost=5 available={has_government=communism}available_if_capitulated=yes bypass={OR={NOT={country_exists=JAP}has_war_with=JAP}}prerequisite={focus=SOV_connerian_briish_accord_dr focus=SOV_a_note_to_collington_dr}ai_will_do={factor=1}completion_reward={JAP={country_event=dr.53}}}focus={id=SOV_the_peoples_project_dr icon=GFX_focus_wonderweapons x=17 y=10 cost=10 search_filters={FOCUS_FILTER_RESEARCH}available={date>1945.1.1}available_if_capitulated=yes prerequisite={focus=SOV_onwards_and_upwards_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=nuclear}}}focus={id=SOV_aid_the_liberated_dr icon=GFX_goal_generic_national_unity x=42 y=14 cost=7 search_filters={FOCUS_FILTER_INDUSTRY}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=SOV_lick_our_wounds_dr focus=SOV_never_another_schlimkrieg_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_aid_the_liberated_dr}}
+
+	#Focus for Rape Europe
+	focus = {
+		id = SOV_rape_europe_dr
+		icon = GFX_focus_smiling_buddha
+		x = 20
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_tackle_the_tsunami_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_red_navy_reforms_dr icon=GFX_goal_generic_navy_doctrines_tactics x=59 y=3 cost=10 search_filters={FOCUS_FILTER_NAVY_XP}available={has_completed_focus=SOV_cult_of_aviation_dr}available_if_capitulated=yes prerequisite={focus=SOV_destroyer_effort_dr focus=SOV_submarine_effort_dr focus=SOV_capital_ship_effort_dr focus=SOV_carrier_effort_dr}ai_will_do={factor=1}completion_reward={add_political_power=20 navy_experience=25 remove_ideas=idea_red_airforce_and_navy_dr}}
+
+	#Focus for Revitalize Tachankas
+	focus = {
+		id = SOV_revitalize_tachankas_dr
+		icon = GFX_SOV_revitalize_tachankas-151070
+		x = 47
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_armored_brigades_dr
+			focus = SOV_katyushas_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=SOV_never_another_baltic_fleet_dr icon=GFX_focus_POL_colonial_league x=59 y=4 cost=7 search_filters={FOCUS_FILTER_NAVY_XP FOCUS_FILTER_WAR_SUPPORT}available_if_capitulated=yes prerequisite={focus=SOV_red_navy_reforms_dr}ai_will_do={factor=1}completion_reward={navy_experience=40 add_war_support=.05}}focus={id=SOV_volunteer_deployment_dr icon=GFX_focus_ETH_peacekeeping_forces x=36 y=5 cost=3 search_filters={FOCUS_FILTER_WAR_SUPPORT}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={add_war_support=.05}}
+
+	focus={id=SOV_the_unions_breadbasket_dr icon=GFX_focus_SOV_breadbasket_of_the_union x=1 y=10 cost=10 search_filters={FOCUS_FILTER_MANPOWER}available_if_capitulated=yes prerequisite={focus=SOV_subservient_work_force_dr}ai_will_do={factor=1}completion_reward={}}
+		
+	focus={id=SOV_cleansing_the_state_dr icon=GFX_focus_BUL_condemn_macedonian_organizations x=13 y=10 cost=1 allow_branch={has_country_flag=conner_dem_flag_dr}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=SOV_nyet_sovyetskikh_dr}ai_will_do={factor=1}completion_reward={add_political_power=25}}
+
+	focus={id=SOV_crackdown_on_the_bureaucracy_dr icon=GFX_focus_eng_move_to_secure_the_dominions x=15 y=11 cost=7 allow_branch={has_country_flag=conner_dem_flag_dr}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=SOV_cleansing_the_state_dr}ai_will_do={factor=1}}
+		#completion_reward={add_timed_idea={idea_crackdown_on_bureaucracy_dr days=360}}
+
+	focus={id=SOV_crackdown_on_the_military_dr icon=GFX_focus_eng_move_to_secure_the_dominions x=11 y=11 cost=7 allow_branch={has_country_flag=conner_dem_flag_dr}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=SOV_cleansing_the_state_dr}ai_will_do={factor=1}}
+		#completion_reward={add_timed_idea={idea_crackdown_on_military_dr days=360}}
+
+	focus={id=SOV_nyet_sovyetskikh_dr icon=GFX_focus_SOV_the_last_purge x=13 y=9 cost=8 search_filters={FOCUS_FILTER_POLITICAL}allow_branch={has_country_flag=conner_dem_flag_dr}available={has_government=communism}available_if_capitulated=yes
+	ai_will_do={factor=1}completion_reward={mark_focus_tree_layout_dirty=yes set_politics={ruling_party=democratic elections=yes}add_popularity={ideology=democratic popularity=0.15}}}
+}

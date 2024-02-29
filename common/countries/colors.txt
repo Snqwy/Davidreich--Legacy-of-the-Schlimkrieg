@@ -600,3 +600,7 @@ AOI = {
 	color = rgb { 72 140 67 }
 	color_ui = rgb { 72 140 67 }
 }
+MEN = {
+	color = rgb { 185  255  152 }
+	color_ui = rgb { 165  230  132 }
+}

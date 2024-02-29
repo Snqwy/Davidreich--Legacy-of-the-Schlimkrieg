@@ -1,33 +1,8 @@
-political_actions = {
+political_actions={
 
-	fra_africa_new_era_decision_dr = {
+	fra_africa_new_era_decision_dr={allowed={always=yes}fire_only_once=yes available={controls_state=290 controls_state=461 controls_state=462 controls_state=783 controls_state=699 controls_state=557 controls_state=272 controls_state=701 controls_state=899 controls_state=898 controls_state=786 controls_state=782 controls_state=514 controls_state=513 controls_state=459 controls_state=460 controls_state=458 controls=665}visible={tag=FRA has_completed_focus=FRA_a_new_era_dawns_dr has_government=democratic NOT={country_exists=LBA country_exists=MRT}}complete_effect={FRA={add_state_core=459 add_state_core=460 puppet=LBA LBA={set_capital=458 transfer_state=290 transfer_state=461 transfer_state=462 transfer_state=783 transfer_state=514 transfer_state=513 transfer_state=665 transfer_state=458}FRA={puppet=MRT}MRT={transfer_state=699 transfer_state=557 transfer_state=272 transfer_state=701 transfer_state=899 transfer_state=898 transfer_state=786 transfer_state=782}ai_will_do={factor=1}}}}
 
-		allowed = {
-			always = yes
-		}
-
-		fire_only_once=yes
-
-		available={controls_state=290 controls_state=461 controls_state=462 controls_state=783 controls_state=699 controls_state=557 controls_state=272 controls_state=701 controls_state=899 controls_state=898 controls_state=786 controls_state=782 controls_state=514 controls_state=513 controls_state=459 controls_state=460 controls_state=458 controls=665}
-
-		visible = {
-			tag=FRA
-			has_completed_focus=FRA_a_new_era_dawns_dr
-			has_government=democratic 
-			NOT={country_exists=LBA country_exists=MRT}
-		}
-
-		complete_effect = {
-			FRA={add_state_core=459 add_state_core=460 puppet=LBA LBA={set_capital=458 transfer_state=290 transfer_state=461 transfer_state=462 transfer_state=783 transfer_state=514 transfer_state=513 transfer_state=665 transfer_state=458}FRA={puppet=MRT}MRT={transfer_state=699 transfer_state=557 transfer_state=272 transfer_state=701 transfer_state=899 transfer_state=898 transfer_state=786 transfer_state=782}
-			
-			}
-
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	ma_turkestan_decision_dr={allowed={always=yes}fire_only_once=yes available={SOV={has_war_with=UZB}UZB={controls_state=760 controls_state=618 controls_state=617 controls_state=287 controls_state=619}}visible={tag=XSM country_exists=UZB NOT={UZB={is_subject_of=XSM}}}days_remove=10 remove_effect={XSM={add_state_core=760 add_state_core=618 add_state_core=617 add_state_core=287 add_state_core=619 transfer_state=760 transfer_state=618 transfer_state=617 transfer_state=287 transfer_state=619}ai_will_do={factor=1}}}}
 	
 	targeted_race_for_the_bomb = {
 
@@ -96,14 +71,6 @@ political_actions = {
 
 		available = {
 			has_stability < 1.0
-			if = {
-				limit = {
-					tag = SPR
-				}
-				NOT = {
-					has_idea = SPR_political_violence
-				}
-			}
 		}
 
 		visible = {
@@ -134,27 +101,9 @@ political_actions = {
 				has_stability < 0.6
 				has_political_power > 155 #Spend on other things first
 			}
-			modifier = {
-				factor = 0
-				original_tag = SPR
-				NOT = { has_global_flag = spanish_civil_war }
-			}
-			modifier = {
-				factor = 0 
-				tag = ICE
-				has_completed_focus = ICE_not_our_king
-				NOT = { has_completed_focus = ICE_break_with_the_crown }
-			}
-
-			modifier = {
-				add = 1000
-				has_stability < 0.76
-				original_tag = SWE
-				has_idea = SWE_hungershield
-			}
 		}
 	}
-}
+
 
 economy_decisions = {
 
@@ -173,13 +122,6 @@ economy_decisions = {
 
 		available = {
 			controls_state = 28
-			if = {
-				limit = {
-					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
-				}
-				controls_state = 18
-				controls_state = 29
-			}
 		}
 
 		visible = {

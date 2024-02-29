@@ -1,1 +1,1 @@
-capital=604 recruit_character=XSM_ma_bufang set_politics={ruling_party=neutrality last_election="1936.1.1"election_frequency=48 elections_allowed=no}set_popularities={neutrality=90 democratic=10}give_guarantee=CHI give_military_access=CHI
+capital=604 recruit_character=XSM_ma_bufang set_politics={ruling_party=neutrality last_election="1936.1.1"election_frequency=48 elections_allowed=no}set_popularities={neutrality=90 democratic=10}give_guarantee=CHI give_military_access=CHI add_ideas={idea_warlordism_dr}

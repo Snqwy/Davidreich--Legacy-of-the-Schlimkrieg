@@ -25,6 +25,8 @@ set_popularities = {
 	neutrality = 35
 }
 
+add_ideas={idea_homeland_of_many_dr}
+
 create_country_leader = {
 	name = "David Ben-Gurion"
 	desc = ""

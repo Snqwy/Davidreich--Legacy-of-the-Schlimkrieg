@@ -83,7 +83,6 @@ foreign_influence = {
 							tag = SAF
 							tag = RAJ
 							tag = AST
-							tag = NZL
 						}
 						has_government = communism
 					}
@@ -148,7 +147,7 @@ foreign_influence = {
 							tag = SAF
 							tag = RAJ
 							tag = AST
-							tag = NZL
+
 						}
 						has_government = fascism
 					}
@@ -320,7 +319,7 @@ foreign_influence = {
 							tag = SAF
 							tag = RAJ
 							tag = AST
-							tag = NZL
+						
 						}
 					}
 				}
@@ -390,7 +389,7 @@ foreign_influence = {
 							tag = SAF
 							tag = RAJ
 							tag = AST
-							tag = NZL
+						
 						}
 					}
 				}

@@ -86,11 +86,6 @@ technology_sharing_group = {
 
 	research_sharing_per_country_bonus = 0.05
 
-    available = {
-     	#NORDIC_basic_joint_trigger = yes 
-        #has_completed_focus = NORDIC_nordic_research
-    }
-
 }
 
 technology_sharing_group = {

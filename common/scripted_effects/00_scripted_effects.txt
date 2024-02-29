@@ -1632,21 +1632,6 @@ set_add_unaligned_game_weight_large = {
 	}
 }
 
-set_add_communist_weight_large = {
-	GER = {
-		if = {
-			limit = {
-				NOT = {
-					has_variable = communist_game_weight
-				}
-			}
-			set_variable = { var = communist_game_weight value = 20 }
-		}
-		else = {
-			add_to_variable = { var = communist_game_weight value = 20 }
-		}
-	}
-}
 
 set_add_fascist_weight_small = {
 	GER = {
@@ -1696,21 +1681,6 @@ set_add_unaligned_weight_small = {
 	}
 }
 
-set_add_communist_weight_small = {
-	GER = {
-		if = {
-			limit = {
-				NOT = {
-					has_variable = communist_game_weight
-				}
-			}
-			set_variable = { var = communist_game_weight value = 8 }
-		}
-		else = {
-			add_to_variable = { var = communist_game_weight value = 8 }
-		}
-	}
-}
 
 leave_the_league_of_nations = {
 	custom_effect_tooltip = leave_the_league_of_nations_tt

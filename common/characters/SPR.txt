@@ -3,7 +3,7 @@ characters={
 	SPR_niceto_alcala_zamora={
 		instance = {
 			allowed = {
-				has_dlc = "La Resistance"
+				always=yes
 			}
 			name=SPR_niceto_alcala_zamora
 			portraits={
@@ -13,7 +13,6 @@ characters={
 			}
 			country_leader={
 				ideology=conservatism
-				traits={ indecisive }
 				expire="1965.1.1.1"
 				id=-1
 			}

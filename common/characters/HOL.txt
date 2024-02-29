@@ -600,10 +600,7 @@ characters={
 					has_dlc = "Man the Guns"
 				}
 				available  = {
-					OR = {
-						has_government  = communism 
-						SWE_refuge_for_revolutionaries_trigger = yes
-					}
+					has_government  = communism 
 				}
 				traits  = {
 					council_communist 
@@ -684,7 +681,6 @@ characters={
 							has_government  = communism 
 							has_completed_focus  = HOL_decolonization 
 						}
-						SWE_refuge_for_revolutionaries_trigger = yes
 					}
 				}
 				traits  = {

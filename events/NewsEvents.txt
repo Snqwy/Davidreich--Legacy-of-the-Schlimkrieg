@@ -1854,6 +1854,7 @@ news_event = {
 	id = news.55
 	title = news.55.t
 	desc = news.55.d
+	is_triggered_only = yes
 }
 
 # Munich Agreement
@@ -2737,11 +2738,9 @@ news_event = {
 	title = news.105.t
 	desc = {
 		text = news.105.d
-		trigger = { NOT = { SOV_is_opposition = yes } }
 	}
 	desc = {
 		text = news.105.d_alt
-		trigger = { SOV_is_opposition = yes }
 	}
 
 	picture = GFX_news_event_soviet_soldiers_ruins
@@ -3921,7 +3920,6 @@ news_event = {
 			2 = { is_controlled_by = USA }
 			2 = { is_controlled_by = AST }
 			2 = { is_controlled_by = CAN }
-			2 = { is_controlled_by = NZL }
 			2 = { is_controlled_by = SAF }
 		}
 		OR = {
@@ -3947,7 +3945,7 @@ news_event = {
 				TAG = USA
 				TAG = AST
 				TAG = CAN
-				TAG = NZL
+
 				TAG = SAF
 				TAG = ITA
 				TAG = GER
@@ -3962,7 +3960,7 @@ news_event = {
 				TAG = USA
 				TAG = AST
 				TAG = CAN
-				TAG = NZL
+
 				TAG = SAF
 			}
 		}
@@ -4050,7 +4048,7 @@ news_event = {
 				TAG = AST
 				TAG = FRA
 				TAG = CAN
-				TAG = NZL
+
 				TAG = SAF
 				TAG = GER
 			}
@@ -4065,7 +4063,7 @@ news_event = {
 				TAG = AST
 				TAG = FRA
 				TAG = CAN
-				TAG = NZL
+
 				TAG = SAF
 			}
 		}
@@ -4134,7 +4132,7 @@ news_event = {
 			219 = { is_controlled_by = USA }
 			219 = { is_controlled_by = AST }
 			219 = { is_controlled_by = CAN }
-			219 = { is_controlled_by = NZL }
+
 			219 = { is_controlled_by = SAF }
 			219 = { is_controlled_by = FRA }
 		}
@@ -4158,7 +4156,7 @@ news_event = {
 				TAG = USA
 				TAG = AST
 				TAG = CAN
-				TAG = NZL
+
 				TAG = SAF
 				TAG = SOV
 			}
@@ -4172,7 +4170,7 @@ news_event = {
 				TAG = USA
 				TAG = AST
 				TAG = CAN
-				TAG = NZL
+
 				TAG = SAF
 			}
 		}
@@ -5138,7 +5136,10 @@ news_event = {
 	id = news.160
 	title = news.160.t
 	desc = news.160.d
-	picture = GFX_news_event_german_soldiers
+	is_triggered_only=yes
+	picture = GFX_news_event_german_soldiers 	option = {
+		name = news.160.a
+	}	
 }
 
 # France bans communism
@@ -9193,16 +9194,10 @@ news_event = {
 
 	option = {
 		name = news.231.a
-		trigger = {
-			is_independent_china_or_warlord = yes
-		}
 	}
 
 	option = {
 		name = news.231.b
-		trigger = {
-			is_independent_china_or_warlord = no
-		}
 	}
 }
 
@@ -9679,14 +9674,13 @@ news_event = {
 		name = news.241.a
 		trigger = {
 			NOT = {
-				TAG = NZL
+
 				TAG = AST
 			}
 		}
 	}
 	option = {
 		name = news.241.b
-		trigger = { TAG = NZL }
 	}
 	option = {
 		name = news.241.c
@@ -10457,29 +10451,13 @@ news_event = {
 	major = yes
 
 	fire_only_once = yes
-	
-	trigger = {
-		NZL = { 
-			OR = {
-				has_tech = basic_light_tank 
-				has_tech = basic_light_tank_chassis
-			}
-		}
-	}
+
 	
 	option = {
 		name = news.270.a
-		trigger = {
-			TAG = NZL
-		}
 	}
 	option = {
 		name = news.270.b
-		trigger = { 
-			NOT = {
-				TAG = NZL	
-			}
-		}
 	}
 
 }
@@ -10495,23 +10473,12 @@ news_event = {
 
 	fire_only_once = yes
 	
-	trigger = {
-	NZL = { has_tech = super_heavy_tank }
-	}
 	
 	option = {
 		name = news.271.a
-		trigger = {
-			TAG = NZL
-		}
 	}
 	option = {
 		name = news.271.b
-		trigger = { 
-			NOT = {
-				TAG = NZL	
-			}
-		}
 	}
 
 }
@@ -11751,22 +11718,6 @@ news_event = {
 	title = news.309.t
 	desc = {
 		text = news.309.desc.a
-		trigger = { 
-			OR = {
-				NOT = { country_exists = SLO }
-				AND = {
-					country_exists = SLO
-					SLO = { is_subject = yes }
-				}
-			}
-		}
-	}
-	desc = {
-		text = news.309.desc.b
-		trigger = { 
-			country_exists = SLO
-			SLO = { is_subject = no }
-		}
 	}
 	picture = GFX_news_event_hungary_refused
 	
@@ -11782,38 +11733,16 @@ news_event = {
 	}
 	option = {
 		name = news.309.b
-		trigger = { 
-			TAG = CZE
-			OR = {
-				NOT = { country_exists = SLO }
-				AND = {
-					country_exists = SLO
-					SLO = { is_subject = yes }
-				}
-			}
-		}
 	}
 	option = {
 		name = news.309.c
-		trigger = { 
-			AND = {
-				TAG = SLO
-				SLO = { is_subject = no }
-			}
-		}
+	
+		
 	}
 	option = {
 		name = news.300.c
-		trigger = { 
-			NOT = {
-				TAG = HUN
-				TAG = CZE
-				AND = {
-					TAG = SLO
-					SLO = { is_subject = yes }
-				}
-			}
-		}
+
+	
 	}
 }
 
@@ -11823,22 +11752,9 @@ news_event = {
 	title = news.310.t
 	desc = {
 		text = news.310.desc.a
-		trigger = { 
-			OR = {
-				NOT = { country_exists = SLO }
-				AND = {
-					country_exists = SLO
-					SLO = { is_subject = yes }
-				}
-			}
-		}
 	}
 	desc = {
 		text = news.310.desc.b
-		trigger = { 
-			country_exists = SLO
-			SLO = { is_subject = no }
-		}
 	}
 	picture = GFX_news_event_generic_sign_treaty1
 	
@@ -11875,22 +11791,9 @@ news_event = {
 	title = news.311.t
 	desc = {
 		text = news.311.desc.a
-		trigger = { 
-			OR = {
-				NOT = { country_exists = SLO }
-				AND = {
-					country_exists = SLO
-					SLO = { is_subject = yes }
-				}
-			}
-		}
 	}
 	desc = {
 		text = news.311.desc.b
-		trigger = { 
-			country_exists = SLO
-			SLO = { is_subject = no }
-		}
 	}
 	picture = GFX_news_event_hungarian_soldiers
 	
@@ -11907,10 +11810,7 @@ news_event = {
 	option = {
 		name = news.311.b
 		trigger = { 
-			OR = {
-				TAG = CZE
-				TAG = SLO
-			}
+			TAG = CZE
 		}
 	}
 	option = {
@@ -11919,7 +11819,6 @@ news_event = {
 			NOT = {
 				TAG = HUN
 				TAG = CZE
-				TAG = SLO
 			}
 		}
 	}
@@ -13173,7 +13072,3 @@ news_event = {
 		}
 	}
 }
-
-
-
-

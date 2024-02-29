@@ -64,10 +64,7 @@ characters={
 			slot = army_chief
 			idea_token = YUG_josip_broz_tito
 			allowed = {
-					OR = {
-						original_tag = YUG
-						original_tag = SWE
-					}
+					original_tag = YUG
 				}
 				available = {
 					OR = {
@@ -79,8 +76,6 @@ characters={
 								}
 							}
 						}
-
-						SWE_refuge_for_revolutionaries_trigger = yes
 					}
 				}
 				traits = {

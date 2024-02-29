@@ -28,7 +28,7 @@ SpriteType={name="GFX_FRA_the_first_video_game_dr"texturefile="gfx/focus_icons/G
 
 SpriteType={name="GFX_FRA_tonks_dr"texturefile="gfx/focus_icons/GFX_FRA_the_first_video_game_dr.dds"}
 
-SpriteType={name="GFX_FRA_wedge_dr"texturefile="gfx/focus_icons/GFX_FRA_the_first_video_game_dr.dds"}
+SpriteType={name="GFX_FRA_wedge_dr"texturefile="gfx/focus_icons/GFX_FRA_wedge_dr.dds"}
 
 SpriteType={name="GFX_JAP_can_we_get_much_higher_dr"texturefile="gfx/focus_icons/GFX_JAP_can_we_get_much_higher_dr.dds"}
 

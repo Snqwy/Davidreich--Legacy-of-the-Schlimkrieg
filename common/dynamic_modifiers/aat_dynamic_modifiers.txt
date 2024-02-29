@@ -90,9 +90,6 @@ NOR_prep_his_dmod_1 = {
 	enable = {
 		NOR = {	has_government = democratic }
 	}
-	remove_trigger = {
-		NOR_prep_his_mod_remove_trigger = yes
-	}
 	icon = GFX_modifiers_generic_construction   
 	# Positive 
 	state_production_speed_industrial_complex_factor = 0.25
@@ -105,9 +102,6 @@ NOR_prep_his_dmod_1 = {
 NOR_prep_his_dmod_2 = {
 	enable = {
 		NOR = {	has_government = democratic }
-	}
-	remove_trigger = {
-		NOR_prep_his_mod_remove_trigger = yes
 	}
 	icon = GFX_modifiers_generic_construction  
 	# Positive
@@ -125,9 +119,6 @@ NOR_prep_his_dmod_2 = {
 NOR_prep_his_dmod_3 = {
 	enable = {
 		NOR = {	has_government = democratic }
-	}
-	remove_trigger = {
-		NOR_prep_his_mod_remove_trigger = yes
 	}
 	icon = GFX_modifiers_generic_construction   
 	# Positive
@@ -184,9 +175,6 @@ NOR_prep_fasc_dmod_1 = {
 	enable = {
 		always = yes   
 	}
-	remove_trigger = {
-		NOR_prep_fasc_mod_remove_trigger = yes
-	}
 	icon = GFX_modifiers_NOR_fascism
 	# Positive
 	recruitable_population_factor = 0.05
@@ -201,9 +189,6 @@ NOR_prep_fasc_dmod_2 = {
 	enable = {
 		always = yes  
 	}
-	remove_trigger = {
-		NOR_prep_fasc_mod_remove_trigger = yes
-	}
 	icon = GFX_modifiers_NOR_fascism
 	# Positive
 	recruitable_population_factor = 0.05
@@ -216,9 +201,6 @@ NOR_prep_fasc_dmod_2 = {
 NOR_prep_fasc_dmod_3 = {
 	enable = {
 		always = yes  
-	}
-	remove_trigger = {
-		NOR_prep_fasc_mod_remove_trigger = yes
 	}
 	icon = GFX_modifiers_NOR_fascism  
 	# Positive
@@ -252,9 +234,6 @@ NOR_royal_defenses = {
 ### Country Modifiers ###
 
 NOR_independent_norway_dmod = { # Added at the start of the Civilian Industrial branch and improved throughout it
-	enable = {
-		NOR_AAT = yes 
-	}
 
 	remove_trigger = {
 		NOR = { is_subject = yes }
@@ -275,9 +254,6 @@ NOR_independent_norway_dmod = { # Added at the start of the Civilian Industrial 
 }
 
 NOR_army_air_force_dmod = { # Remeber to copy any change to the royal version. 
-	enable = {
-		NOR_AAT = yes 
-	}
 
 	icon = GFX_idea_air_support_focus 
 
@@ -298,9 +274,6 @@ NOR_royal_air_force_dmod = { #This is a duplicate of the army arforce one right 
 	
 	icon = GFX_idea_NOR_luftforsvaret_ns
 
-	enable = {
-		NOR_AAT = yes 
-	}
 
 	icon = GFX_idea_NOR_luftforsvaret_ns
 
@@ -320,10 +293,7 @@ NOR_royal_air_force_dmod = { #This is a duplicate of the army arforce one right 
 NOR_royal_navy_dmod = {
 	
 	icon = GFX_idea_NOR_royal_navy_dmod
-	
-	enable = {
-		NOR_AAT = yes 
-	}
+
 
 	icon =  GFX_idea_NOR_royal_navy_dmod 
 	
@@ -343,9 +313,7 @@ NOR_royal_navy_dmod = {
 }
 
 NOR_administrative_council_dmod = { # Added in the Historical side of the Fascist Path 
-	enable = {
-		NOR_AAT = yes 
-	}
+
 
 	remove_trigger = {
 		NOR = { 
@@ -361,9 +329,7 @@ NOR_administrative_council_dmod = { # Added in the Historical side of the Fascis
 }
 
 NOR_oppressed_civilians_dmod = {
-		enable = {
-			NOR_AAT = yes 
-		}
+
 		remove_trigger = {
 			NOT = { has_government = fascism }
 		}
@@ -378,9 +344,7 @@ NOR_oppressed_civilians_dmod = {
 }
 
 NOR_kingdom_of_norway_dmod = {
-	enable = {
-		NOR_AAT = yes 
-	}
+
 	remove_trigger = {
 		NOT = {	has_government = neutrality	}
 	}
@@ -1259,7 +1223,6 @@ NORDIC_airforces_originator_dmod = {
 	enable = { always = yes }
 	icon = GFX_idea_generic_air_bonus
 
-	remove_trigger = { NORDIC_basic_joint_trigger = no }
 
 	experience_gain_air = 0.2
 	air_cas_present_factor = NORDIC_airforces_originator_dmod_cas_factor #0.25
@@ -1277,7 +1240,6 @@ NORDIC_airforces_member_dmod = {
 	enable = { always = yes }
 	icon = GFX_idea_generic_air_bonus
 
-	remove_trigger = { NORDIC_basic_joint_trigger = no }
 
 	experience_gain_air = 0.1
 	air_cas_present_factor = NORDIC_airforces_member_dmod_cas_factor #0.15
@@ -1295,7 +1257,6 @@ NORDIC_navy_originator_dmod = {
 	enable = { always = yes }
 	icon = GFX_idea_generic_navy_bonus
 
-	remove_trigger = { NORDIC_basic_joint_trigger = no }
 
 	experience_gain_navy = 0.2
 	naval_doctrine_cost_factor = NORDIC_navy_originator_dmod_naval_doctrine_cost_factor #-0.10
@@ -1307,7 +1268,6 @@ NORDIC_navy_member_dmod = {
 	enable = { always = yes }
 	icon = GFX_idea_generic_navy_bonus
 
-	remove_trigger = { NORDIC_basic_joint_trigger = no }
 
 	experience_gain_navy = 0.1
 	naval_doctrine_cost_factor = NORDIC_navy_member_dmod_naval_doctrine_cost_factor # -0.075
@@ -1319,7 +1279,6 @@ NORDIC_mil_industry_originator_dmod = {
 	enable = { always = yes }
 	icon = GFX_idea_generic_production_bonus
 
-	remove_trigger = { NORDIC_basic_joint_trigger = no }
 
 	production_factory_max_efficiency_factor = 0.1
 	production_speed_arms_factory_factor = NORDIC_mil_industry_originator_production_speed_arms_factory_factor # 0.15
@@ -1332,7 +1291,6 @@ NORDIC_mil_industry_member_dmod = {
 	enable = { always = yes }
 	icon = GFX_idea_generic_production_bonus
 
-	remove_trigger = { NORDIC_basic_joint_trigger = no }
 
 	production_factory_max_efficiency_factor = 0.1
 	production_speed_arms_factory_factor = NORDIC_mil_industry_member_production_speed_arms_factory_factor # 0.1
@@ -1346,7 +1304,6 @@ NORDIC_democratic_alliance_leader_dmod = {
 	enable = { always = yes }
 	 icon = GFX_idea_NORDIC_nordic_council
 
-	remove_trigger = { NORDIC_basic_joint_trigger = no }
 
 	democratic_drift = 0.025
 	production_speed_buildings_factor = 0.15
@@ -1361,7 +1318,6 @@ NORDIC_democratic_alliance_member_dmod = {
 	enable = { always = yes }
 	 icon = GFX_idea_NORDIC_nordic_council
 
-	remove_trigger = { NORDIC_basic_joint_trigger = no }
 
 	democratic_drift = 0.015
 	production_speed_buildings_factor = 0.10
@@ -1376,7 +1332,6 @@ NORDIC_communist_alliance_leader_dmod = {
 	enable = { always = yes }
 	icon = GFX_idea_NORDIC_northern_union 
 
-	remove_trigger = { NORDIC_basic_joint_trigger = no }
 
 	communism_drift = 0.025
 	weekly_manpower = 350
@@ -1391,7 +1346,6 @@ NORDIC_communist_alliance_member_dmod = {
 	enable = { always = yes }
 	 icon = GFX_idea_NORDIC_northern_union
 
-	remove_trigger = { NORDIC_basic_joint_trigger = no }
 
 	communism_drift = 0.015
 	weekly_manpower = 200
@@ -1405,7 +1359,6 @@ NORDIC_monarchist_alliance_leader_dmod = {
 	enable = { always = yes }
 	icon = GFX_idea_NORDIC_kalmar_league
 
-	remove_trigger = { NORDIC_basic_joint_trigger = no }
 
 	neutrality_drift = 0.015
 	political_power_gain = 0.7
@@ -1420,7 +1373,6 @@ NORDIC_monarchist_alliance_member_dmod = {
 	enable = { always = yes }
 	icon = GFX_idea_NORDIC_kalmar_league 
 
-	remove_trigger = { NORDIC_basic_joint_trigger = no }
 
 	neutrality_drift = 0.015
 	political_power_gain = 0.4

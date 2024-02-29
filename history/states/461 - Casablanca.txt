@@ -14,6 +14,7 @@ state={
 		owner = FRA
 		add_core_of = LBA
 		add_core_of = CHA
+		add_claim_by = SPR
 		victory_points = {
 			7069 10 
 		}

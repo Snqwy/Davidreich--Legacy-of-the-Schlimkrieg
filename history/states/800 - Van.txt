@@ -6,8 +6,6 @@ state={
 		owner = PER
 		add_core_of = PER
 		add_core_of = TUR
-		add_core_of = KUR
-		add_claim_by = GEO
 		victory_points = {
 			6935 5 
 		}

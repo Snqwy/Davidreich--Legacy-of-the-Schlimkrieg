@@ -40,6 +40,7 @@ characters={
 		country_leader={
 			ideology=liberalism
 			expire="1989.1.1.1"
+			traits={trait_kingfish_dr}
 			id=-1
 		}
 	}

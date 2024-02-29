@@ -15,17 +15,10 @@ characters = {
 					original_tag = SWE
 				}
 			}
-			available = {
-				OR = {
-					has_anarchist_government = yes 
-					SWE_refuge_for_revolutionaries_trigger = yes
-				}
-			}
 			visible = { 
 				OR = { 
 					has_country_flag = IA_anarchists_recruited_flag 
 					has_country_flag =  IA_emma_goldman_recruited_flag
-					SWE_refuge_for_revolutionaries_trigger = yes
 				}
 			}
 			traits  = {
@@ -39,10 +32,6 @@ characters = {
 							has_power_balance = {
 								id = ETH_centralization_balance
 							}
-						}
-						
-						hidden_effect = {
-							ETH_BOP_decentralization_large_effect = yes
 						}
 					}				
 				}
@@ -65,39 +54,11 @@ characters = {
 					original_tag = SWE
 				}
 			}
-			available = {
-				OR = {
-					SWE_refuge_for_revolutionaries_trigger = yes
-					AND = {
-						has_anarchist_government = yes 
-						NOT = { has_idea = IA_sanshiro_ishikawa }
-					}
-				}
-			}
 			visible = { 
-				OR = {
-					has_country_flag = IA_anarchists_recruited_flag 
-					SWE_refuge_for_revolutionaries_trigger = yes
-				}
+				has_country_flag = IA_anarchists_recruited_flag 
 			}
 			traits  = {
 				anti_unionist_pure_anarchist
-			}
-			on_add = {
-				owner = {
-					IF = {
-						limit = {
-							NOT = { original_tag = SWE }
-							has_power_balance = {
-								id = ETH_centralization_balance
-							}
-						}
-						
-						hidden_effect = {
-							ETH_BOP_decentralization_large_effect = yes
-						}
-					}				
-				}
 			}
 		}
 	}
@@ -117,39 +78,12 @@ characters = {
 					original_tag = SWE
 				}
 			}
-			available = {	
-				OR = {
-					SWE_refuge_for_revolutionaries_trigger = yes
-					AND = {
-						has_anarchist_government = yes 
-						NOT = { has_idea = IA_sakutaro_iwasa }
-					}
-				}
-			}
-			visible = {
-				OR ={ 
-					has_country_flag = IA_anarchists_recruited_flag 
-					SWE_refuge_for_revolutionaries_trigger = yes
-				}
+
+			visible = { 
+				has_country_flag = IA_anarchists_recruited_flag 
 			}
 			traits  = {
 				transnational_anarchist
-			}
-			on_add = {
-				owner = {
-					IF = {
-						limit = {
-							NOT = { original_tag = SWE }
-							has_power_balance = {
-								id = ETH_centralization_balance
-							}
-						}
-						
-						hidden_effect = {
-							ETH_BOP_decentralization_large_effect = yes
-						}
-					}				
-				}
 			}
 		}
 	}

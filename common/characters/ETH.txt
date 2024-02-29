@@ -845,7 +845,6 @@ characters = {
 			}
 			available = {
 				has_government = neutrality
-				has_completed_focus = ETH_the_abuna		
 			}
 			traits = {
 				archbishop_of_ethiopian_orthodox_tewahedo_church
@@ -1004,7 +1003,6 @@ characters = {
 						limit = {
 							has_cosmetic_tag = jimma
 						}
-						has_completed_focus = ETH_assertiveness
 					}
 					OR = {
 						has_government = neutrality

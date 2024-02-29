@@ -25,8 +25,8 @@ state={
 			air_base = 4
 		}
 		add_core_of = PER
-		add_core_of = SAU
 		add_core_of = IRQ
+		add_claim_by=SAU
 	}
 
 	provinces={

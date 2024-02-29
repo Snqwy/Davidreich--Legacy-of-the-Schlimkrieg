@@ -73,9 +73,6 @@ characters={
 					has_government  = communism 
 				}
 			}
-			on_add  = {
-				FRA_right_wing_riot_effect = yes 
-			}
 			ai_will_do  = {
 				factor  = 0.000
 			}
@@ -165,9 +162,6 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
-			available = {
-				has_completed_focus = FRA_aggressive_focus
-			}
 			cost = 100.000
 			traits = {
 				army_chief_offensive_2
@@ -204,9 +198,6 @@ characters={
 			idea_token = maxime_weygand
 			allowed = {
 				original_tag = FRA
-			}
-			available = {
-				has_completed_focus = FRA_defensive_focus
 			}
 			cost = 100.000
 			traits = {
@@ -301,9 +292,6 @@ characters={
 			ledger = army
 			allowed = {
 				original_tag = FRA
-			}
-			available = {
-				has_completed_focus = FRA_battle_of_maneuver
 			}
 			
 			traits = {
@@ -1104,11 +1092,6 @@ characters={
 			traits  = {
 				democratic_reformer 
 			}
-			do_effect  = {
-				NOT  = {
-					has_government  = democratic 
-				}
-			}
 			ai_will_do  = {
 				factor  = 0.000
 			}
@@ -1130,7 +1113,7 @@ characters={
 			}
 			available = {
 				OR={has_government=fascism has_completed_focus=FRA_do_the_impossible_dr
-			}
+			}}
 			traits  = {
 				fascist_demagogue 
 			}

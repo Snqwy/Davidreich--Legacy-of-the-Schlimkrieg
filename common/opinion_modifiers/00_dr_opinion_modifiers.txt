@@ -8,4 +8,6 @@ italy_good_modifier_dr={value=80}
 
 italy_bad_modifier_dr={value=-30}
 
+italy_good_modifier_2_dr={value=20}
+
 }
