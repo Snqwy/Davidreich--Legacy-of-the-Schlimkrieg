@@ -1,0 +1,26 @@
+state={
+	id=989
+	name="STATE_989"
+	provinces={
+		1972 5044 10645 10914 12552 12791
+	}
+	history={
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			10914 1 
+		}
+		victory_points = {
+			1972 1 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+	}
+
+	manpower=357016
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

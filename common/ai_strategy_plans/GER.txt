@@ -1,0 +1,123 @@
+German_historical={name="David Reich historical plan" desc="David Reich historical plan" allowed={original_tag=GER}enable={OR={is_historical_focus_on=yes has_game_rule={rule=GER_ai_behavior option=DEFAULT}}}
+			
+	ai_national_focuses={
+		GER_thousand_year_david_reich_dr
+		GER_affairs_of_the_state_dr
+		GER_assure_davidian_loyalty_dr 
+		GER_affairs_of_the_economy_dr
+		GER_davewirtschaft_dr
+		GER_develop_the_civilian_sector_dr
+		GER_affairs_of_the_military_dr
+		GER_der_davemacht_dr
+		GER_der_davesmarine_dr
+		GER_der_luftdaffe_dr
+		GER_denounce_the_peace_dr
+		GER_the_lost_territories_dr
+		GER_westphalia_dr
+		GER_bavaria_dr
+		GER_complete_reintegration_dr
+		GER_continue_the_civilian_plan_dr
+		GER_resource_efficiency_dr
+		GER_consolidate_the_economy_dr
+		GER_university_of_david_dr
+		GER_indoctrinate_the_masses_dr
+		GER_secret_police_dr
+		GER_reaffirm_diplomacy_dr
+		GER_david_max_friendship_dr
+		GER_daveschluss_dr
+		GER_buildup_the_west_dr 
+		GER_buildup_the_south_dr
+		GER_westwall_dr
+		GER_davidians_in_czechia_dr
+		GER_liberate_the_danziggers_dr
+		GER_davidsraum_dr
+		GER_locate_hyperborea_dr
+		GER_claim_greater_burgundy_dr
+			#continue on from here
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 111
+	}
+}
+GER_minor_allies = { #used to make minor European nations like Axis more
+	name = "Minor German Allies"
+
+	allowed = {
+		OR = {
+			original_tag = ROM
+			original_tag = HUN
+			original_tag = BUL
+			original_tag = YUG
+			original_tag = ITA
+			original_tag = CZE
+			original_tag = DEN
+			original_tag = NOR
+			original_tag = SWE
+			original_tag = FIN
+			original_tag = SPR
+			original_tag = HOL
+			original_tag = BEL
+			original_tag = LUX
+			original_tag = POL
+			original_tag = LAT
+			original_tag = CRO
+		}
+	}
+	enable = {
+		OR = {
+			has_government = fascism
+			fascism > 0.5
+		}
+		is_in_faction = no
+		GER = {
+			has_government = fascism
+		}
+		OR = {
+			original_tag = ROM
+			original_tag = HUN
+			original_tag = BUL
+			original_tag = YUG
+			original_tag = ITA
+			original_tag = CZE
+			original_tag = DEN
+			original_tag = NOR
+			original_tag = SWE
+			original_tag = FIN
+			original_tag = SPR
+			original_tag = POR
+			original_tag = HOL
+			original_tag = BEL
+			original_tag = LUX
+			original_tag = POL
+			original_tag = LAT
+			original_tag = LIT
+			#original_tag = EST
+			original_tag = CRO
+			original_tag = SLO
+			original_tag = VIC
+		}
+	}
+	abort = {
+		GER = {
+			NOT = {
+				has_government = fascism
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "JAP"
+		value = -500
+	}
+}

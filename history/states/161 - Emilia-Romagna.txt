@@ -15,8 +15,14 @@ state={
 		victory_points = {
 			6606 3 
 		}
+		victory_points = { #Ferrara
+			6793 3
+		}
+		victory_points = { #Parma
+			9752 1
+		}
 		buildings = {
-			infrastructure = 4 #was: 7
+			infrastructure = 4 
 			industrial_complex = 1
 			air_base = 2
 			782 = {

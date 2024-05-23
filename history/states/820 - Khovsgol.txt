@@ -6,15 +6,15 @@ state={
 	}
 
 	history={
+		victory_points = {
+			7717 2
+		}
+		victory_points = {
+			7676 1
+		}
 		owner = MON
 		buildings = {
 			infrastructure = 1
-		}
-		victory_points = {
-			1791 1 #Darkhan
-		}
-		victory_points = {
-			1834 1 #Erdenet
 		}
 		add_core_of = MON
 		add_core_of = CHI 

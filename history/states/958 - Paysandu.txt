@@ -1,0 +1,33 @@
+
+state = {
+	id = 958
+	name = "STATE_958"
+	manpower = 320000
+	
+	state_category = rural
+	
+	resources = {
+		oil = 3 
+	}
+
+	history = {
+
+		owner = URG
+		victory_points={10502 3}
+		add_core_of = URG
+		add_claim_by = ARG
+		add_claim_by = BRA
+
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+
+	}
+
+	provinces = {
+		1613 1626 10502 12440 12468
+	}
+
+	local_supplies = 0.0 
+}

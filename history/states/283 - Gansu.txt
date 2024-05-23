@@ -11,6 +11,9 @@ state={
 		add_core_of = XSM
 		add_core_of = CHI
 		add_core_of = PRC
+		victory_points = {
+			2022 3 #Was in 12732, but is now here
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

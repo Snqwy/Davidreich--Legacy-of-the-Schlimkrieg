@@ -8,12 +8,13 @@ state={
 
 	history={
 		owner = DOM
+		add_core_of = DOM
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = DOM
 		add_core_of = COL
+		add_core_of = GYA 
 		victory_points = {
 			10879 1
 		}

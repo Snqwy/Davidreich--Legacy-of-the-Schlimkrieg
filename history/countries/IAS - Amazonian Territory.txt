@@ -1,0 +1,59 @@
+﻿capital = 495
+
+IF = {
+	limit = { has_dlc = "By Blood Alone" }
+	ELSE = {
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+		}
+	}
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+}
+
+IF = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+	}
+}
+IF = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+	}
+}
+
+give_military_access=PRU
+give_military_access=DOM 
+give_military_access=GYA 
+give_military_access=GAR
+give_military_access=URG
+give_military_access=ARG
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.2.11"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 20
+	communism = 20
+	neutrality = 60
+	fascism = 0
+}

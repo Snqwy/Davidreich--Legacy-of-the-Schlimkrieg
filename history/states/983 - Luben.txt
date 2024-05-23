@@ -1,0 +1,18 @@
+state={
+	id=983
+	name="STATE_983"
+	provinces={
+		3438 3572 6595 11517 
+	}
+	history={
+		victory_points = {
+			11517 1 
+		}
+		owner = GER
+		add_core_of = GER
+	}
+	manpower=971426
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

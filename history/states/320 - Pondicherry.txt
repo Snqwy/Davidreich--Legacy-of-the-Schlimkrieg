@@ -10,6 +10,9 @@ state={
 		owner = RAJ
 		add_core_of = RAJ
 		add_claim_by = FRA
+		victory_points = {
+			10149 3
+		}
 		buildings = {
 			infrastructure = 3 #was: 5
 			10149 = {

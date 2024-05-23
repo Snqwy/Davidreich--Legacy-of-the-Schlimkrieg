@@ -1,0 +1,35 @@
+
+state = {
+	id = 947
+	name = "STATE_947"
+	manpower = 2582000 
+
+	state_category = town
+
+	history = {
+
+		owner = GAR
+		add_core_of = GAR
+		add_core_of = BRA
+
+		buildings = {
+			infrastructure = 2 
+			industrial_complex = 1
+
+			5107 = {
+				naval_base = 3
+			}
+		}
+
+		victory_points = {
+			5107 2 
+		}
+	}
+
+	provinces = {
+		2132 2178 5107 8179
+	}
+	
+
+	local_supplies = 0.0 
+}

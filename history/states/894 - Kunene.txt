@@ -6,6 +6,9 @@ state={
 
 	history={
 		owner = SAF
+		victory_points = {
+			10957 1 
+		}
 		buildings = {
 			infrastructure = 2
 

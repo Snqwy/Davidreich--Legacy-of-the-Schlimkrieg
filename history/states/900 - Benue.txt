@@ -9,6 +9,9 @@ state={
 		add_core_of = CAR
 		add_core_of	= NGR
 		add_core_of = CHA
+		victory_points = {
+			1992 1 
+		}
 		buildings = {
 			infrastructure = 2
 		}

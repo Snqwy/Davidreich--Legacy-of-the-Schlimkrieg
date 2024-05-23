@@ -8,23 +8,18 @@ state={
 
 	history={
 		owner = USA
-		buildings = {
-			infrastructure = 1
-			3691 = {
-				naval_base = 1
-
-			}
-
-		}
 		add_core_of = USA
 		add_core_of = CAN
+		add_core_of = QUE
+		add_core_of = INU
 
 	}
 
 	provinces={
-		490 1712 3208 3691 6740 7364 7813 10176 12147 13162 13166 13181 13184 13186 13196 
+		490 1712 3208 3691 6740 7364 7813 10176 12147 13162 13166 13181 13184 13186 13196 13314
 	}
 	manpower=8860
+	impassable=yes
 	buildings_max_level_factor=1.000
 	state_category=rural
 

@@ -8,7 +8,9 @@ state={
 		owner = FRA
 		add_core_of = MRT
 		add_core_of = CHA
-		
+		victory_points = {
+			10915 1 
+		}
 		buildings = {
 			infrastructure = 2
 

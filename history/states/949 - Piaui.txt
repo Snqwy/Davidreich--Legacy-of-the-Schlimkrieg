@@ -1,0 +1,34 @@
+
+state = {
+	id = 949
+	name = "STATE_949"
+	manpower = 1800000
+	
+	state_category = rural
+	
+	resources = {
+	}
+
+	history = {
+
+		owner = GAR
+		add_core_of = GAR
+		add_core_of = BRA
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+
+		victory_points = {
+			5153 1 
+		}
+
+	}
+
+	provinces = {
+		2228 5153 5204 10984 13275
+	}
+
+	local_supplies = 0.0 
+}

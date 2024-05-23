@@ -1,63 +1,18 @@
-﻿add_namespace=dr 
+﻿add_namespace=dr country_event={id=dr.1 title=dr.1.t desc=dr.1.d picture=GFX_report_event_election_vote is_triggered_only=yes option={name=dr.1.a add_political_power=30 add_popularity={ideology=fascism popularity=-.15}add_popularity={ideology=democratic popularity=.15}set_politics={ruling_party=democratic elections=yes}complete_national_focus=GER_libtard_victory_dr custom_effect_tooltip=available_political_advisor show_ideas_tooltip=GER_hans_oster show_ideas_tooltip=kurt_schumacher show_ideas_tooltip=GER_julius_leber show_ideas_tooltip=GER_theodor_heuss hidden_effect={set_cosmetic_tag=GER_german_monarchy}}option={name=dr.1.b add_political_power=30 add_popularity={ideology=fascism popularity=-.15}add_popularity={ideology=neutrality popularity=.15}set_politics={ruling_party=neutrality elections=yes}complete_national_focus=GER_royalist_victory_dr custom_effect_tooltip=available_political_advisor show_ideas_tooltip=GER_hans_oster show_ideas_tooltip=GER_alfred_hugenberg show_ideas_tooltip=GER_carl_friedrich_goerdeler hidden_effect={set_cosmetic_tag=GER_german_empire}}option={name=dr.1.c add_political_power=30 add_popularity={ideology=fascism popularity=-.15}add_popularity={ideology=communism popularity=.15}set_politics={ruling_party=communism elections=yes}complete_national_focus=GER_commie_victory_dr custom_effect_tooltip=available_political_advisor show_ideas_tooltip=GER_hans_oster show_ideas_tooltip=ernst_thalmann hidden_effect={set_cosmetic_tag=cosmetic_tag_david_commie_dr}}}country_event={id=dr.2 title=dr.2.t desc=dr.2.d picture=GFX_report_event_gre_fascism is_triggered_only=yes option={name=dr.2.a add_political_power=30 ITA={country_event=dr.21}}option={name=dr.2.b ITA={country_event=dr.20}}}country_event={id=dr.3 title=dr.3.t desc=dr.3.d picture=GFX_report_event_communists_cheer is_triggered_only=yes option={name=dr.3.a GER={country_event=dr.28}}option={name=dr.3.b GER={country_event=dr.29}}}country_event={id=dr.4 title=dr.4.t desc=dr.4.d picture=GFX_report_event_romanian_soldiers is_triggered_only=yes option={name=dr.4.a GER={country_event=dr.26}}option={name=dr.4.b GER={country_event=dr.27}}}country_event={id=dr.5 title=dr.5.t desc=dr.5.d picture=report_event_romanian_parliament is_triggered_only=yes option={name=dr.5.a ROM={set_state_owner=82 set_state_owner=764 set_state_owner=83 set_state_owner=945 set_state_owner=76}add_stability=.15 add_war_support=.15 add_popularity={ideology=fascism popularity=.15}if={limit={GER={is_in_faction=yes}add_to_faction=ROM}}}}country_event={id=dr.6 title=dr.6.t desc=dr.6.d picture=GFX_report_event_german_troops_paris is_triggered_only=yes option={name=dr.6.a GER={annex_country={target=HAN transfer_troops=yes}custom_effect_tooltip=transfer_troops_dr}}}country_event={id=dr.7 title=dr.7.t desc=dr.7.d picture=GFX_report_event_german_troops_paris is_triggered_only=yes option={name=dr.7.a GER={annex_country={target=BAY transfer_troops=yes}custom_effect_tooltip=transfer_troops_dr}}}country_event={id=dr.8 title=dr.8.t desc=dr.8.d is_triggered_only=yes option={name=dr.8.a GER={country_event=dr.12}}}country_event={id=dr.9 title=dr.9.t desc=dr.9.d picture=GFX_report_event_hol_cabinet_gerbrandy is_triggered_only=yes option={name=dr.9.a 4={if={limit={is_owned_by=AUS}add_core_of=GER}}152={if={limit={is_owned_by=AUS}add_core_of=GER}}153={if={limit={is_owned_by=AUS}add_core_of=GER}}848={if={limit={is_owned_by=AUS}add_core_of=GER}}151={if={limit={is_owned_by=AUS}add_core_of=GER}}39={if={limit={is_owned_by=AUS}add_core_of=GER}}GER={annex_country={target=AUS transfer_troops=yes}add_political_power=75 add_stability=.05 add_war_support=.1}custom_effect_tooltip=transfer_troops_dr}}country_event={id=dr.10 title=dr.10.t desc=dr.10.d is_triggered_only=yes option={name=dr.10.a GER={country_event=dr.13}}option={name=dr.10.b GER={country_event=dr.14}}}country_event={id=dr.11 title=dr.11.t desc=dr.11.d picture=GFX_report_event_generic_italian_celebration is_triggered_only=yes option={name=dr.11.a}option={name=dr.11.b ITA={give_guarantee=AUS}}}country_event={id=dr.12 title=dr.12.t desc=dr.12.d picture=GFX_report_event_czech_soldiers_01 is_triggered_only=yes option={name=dr.12.a GER={puppet=CZE}add_political_power=30 69={if={limit={is_owned_by=CZE}add_core_of=GER}}74={if={limit={is_owned_by=CZE}add_core_of=GER}}if={limit={69={is_owned_by=CZE}}GER={transfer_state=69}}if={limit={74={is_owned_by=CZE}}GER={transfer_state=74}}}}country_event={id=dr.13 title=dr.13.t desc=dr.13.d picture=GFX_report_event_czech_soldiers_01 is_triggered_only=yes option={name=dr.13.a 69={add_core_of=GER}74={add_core_of=GER}9={add_core_of=GER}75={add_core_of=GER}if={limit={69={is_owned_by=CZE}}GER={transfer_state=69}}if={limit={74={is_owned_by=CZE}}GER={transfer_state=74}}if={limit={9={is_owned_by=CZE}}GER={transfer_state=9}}if={limit={75={is_owned_by=CZE}}GER={transfer_state=75}GER={add_state_claim=72}add_political_power=60 add_war_support=.05 664={add_core_of=HUN}70={add_core_of=HUN}71={add_core_of=HUN}73={add_core_of=HUN}if={limit={664={is_owned_by=CZE}}HUN={transfer_state=664}}if={limit={70={is_owned_by=CZE}}HUN={transfer_state=70}}if={limit={71={is_owned_by=CZE}}HUN={transfer_state=71}}if={limit={73={is_owned_by=CZE}}HUN={transfer_state=73}}72={add_core_of=POL}if={limit={72={is_owned_by=CZE}}POL={transfer_state=72}}}}}country_event={id=dr.14 title=dr.14.t desc=dr.14.d picture=GFX_report_event_czech_soldiers_01 is_triggered_only=yes option={name=dr.14.a 69={add_core_of=GER}74={add_core_of=GER}9={add_core_of=GER}75={add_core_of=GER}GER={add_state_claim=72}GER={create_wargoal={type=annex_everything target=CZE}}HUN={create_wargoal={type=annex_everything target=CZE}}}}
 
-#davidian elections
-country_event={id=dr.1 title=dr.1.t desc=dr.1.d picture=GFX_report_event_election_vote is_triggered_only=yes option={name=dr.1.a add_political_power=30 add_popularity={ideology=fascism popularity=-.15}add_popularity={ideology=democratic popularity=.15}set_politics={ruling_party=democratic elections=yes}complete_national_focus=GER_libtard_victory_dr hidden_effect={set_cosmetic_tag=GER_german_monarchy}}option={name=dr.1.b add_political_power=30 add_popularity={ideology=fascism popularity=-.15}add_popularity={ideology=neutrality popularity=.15}set_politics={ruling_party=neutrality elections=yes}complete_national_focus=GER_royalist_victory_dr hidden_effect={set_cosmetic_tag=GER_german_empire}}option={name=dr.1.c add_political_power=30 add_popularity={ideology=fascism popularity=-.15}add_popularity={ideology=communism popularity=.15}set_politics={ruling_party=communism elections=yes}complete_national_focus=GER_commie_victory_dr hidden_effect={set_cosmetic_tag=cosmetic_tag_david_commie_dr}}}
-
-#the maxis request
-country_event={id=dr.2 title=dr.2.t desc=dr.2.d picture=GFX_report_event_gre_fascism is_triggered_only=yes option={name=dr.2.a add_political_power=30 ITA={country_event=dr.21}}option={name=dr.2.b ITA={country_event=dr.20}}}
-    
-#commie david connertern request
-country_event={id=dr.3 title=dr.3.t desc=dr.3.d picture=GFX_report_event_communists_cheer is_triggered_only=yes option={name=dr.3.a GER={country_event=dr.28}}option={name=dr.3.b GER={country_event=dr.29}}}
-
-#david demands romanian oil
-country_event={id=dr.4 title=dr.4.t desc=dr.4.d picture=GFX_report_event_romanian_soldiers is_triggered_only=yes option={name=dr.4.a GER={country_event=dr.26}}option={name=dr.4.b GER={country_event=dr.27}}}
-
-#first sussy award
-country_event={id=dr.5 title=dr.5.t desc=dr.5.d picture=report_event_romanian_parliament is_triggered_only=yes option={name=dr.5.a ROM={set_state_owner=84 set_state_owner=82 set_state_owner=764 set_state_owner=83 set_state_owner=945 set_state_owner=76}add_stability=.15 add_war_support=.15 add_popularity={ideology=fascism popularity=.15}if={limit={GER={is_in_faction=yes}add_to_faction=ROM}}}}
-
-#annexation of westphalia
-country_event={id=dr.6 title=dr.6.t desc=dr.6.d picture=GFX_report_event_german_troops_paris is_triggered_only=yes option={name=dr.6.a GER={annex_country={target=HAN transfer_troops=yes}custom_effect_tooltip=transfer_troops_dr}}}
-    
-#annexation of westphalia
-country_event={id=dr.7 title=dr.7.t desc=dr.7.d picture=GFX_report_event_german_troops_paris is_triggered_only=yes option={name=dr.7.a GER={annex_country={target=BAY transfer_troops=yes}custom_effect_tooltip=transfer_troops_dr}}}
-
-#davidians establish protectorate
-country_event={id=dr.8 title=dr.8.t desc=dr.8.d is_triggered_only=yes option={name=dr.8.a GER={country_event=dr.12}}}
-    
-    #add a news event for this
-#daveschluss 
-country_event={id=dr.9 title=dr.9.t desc=dr.9.d picture=GFX_report_event_hol_cabinet_gerbrandy is_triggered_only=yes option={name=dr.9.a 4={if={limit={is_owned_by=AUS}add_core_of=GER}}152={if={limit={is_owned_by=AUS}add_core_of=GER}}153={if={limit={is_owned_by=AUS}add_core_of=GER}}848={if={limit={is_owned_by=AUS}add_core_of=GER}}151={if={limit={is_owned_by=AUS}add_core_of=GER}}39={if={limit={is_owned_by=AUS}add_core_of=GER}}GER={annex_country={target=AUS transfer_troops=yes}add_political_power=75 add_stability=.05 add_war_support=.1}custom_effect_tooltip=transfer_troops_dr}}
-    
-#annexation of czechoslovakia request
-country_event={id=dr.10 title=dr.10.t desc=dr.10.d is_triggered_only=yes option={name=dr.10.a GER={country_event=dr.13}}option={name=dr.10.b GER={country_event=dr.14}}}
-
-#question of austria
-country_event={id=dr.11 title=dr.11.t desc=dr.11.d picture=GFX_report_event_generic_italian_celebration is_triggered_only=yes option={name=dr.11.a}option={name=dr.11.b ITA={give_guarantee=AUS}}}
-
-#czechoslovak compromise
-country_event={id=dr.12 title=dr.12.t desc=dr.12.d picture=GFX_report_event_czech_soldiers_01 is_triggered_only=yes option={name=dr.12.a GER={puppet=CZE}add_political_power=30 69={if={limit={is_owned_by=CZE}add_core_of=GER}}74={if={limit={is_owned_by=CZE}add_core_of=GER}}if={limit={69={is_owned_by=CZE}}GER={transfer_state=69}}if={limit={74={is_owned_by=CZE}}GER={transfer_state=74}}}}
-    
-#annexation of czechoslovakia accepted
-    country_event={id=dr.13 title=dr.13.t desc=dr.13.d picture=GFX_report_event_czech_soldiers_01 is_triggered_only=yes option={name=dr.13.a 69={add_core_of=GER}74={add_core_of=GER}9={add_core_of=GER}75={add_core_of=GER}if={limit={69={is_owned_by=CZE}}GER={transfer_state=69}}if={limit={74={is_owned_by=CZE}}GER={transfer_state=74}}if={limit={9={is_owned_by=CZE}}GER={transfer_state=9}}if={limit={75={is_owned_by=CZE}}GER={transfer_state=75}GER={add_state_claim=72}add_political_power=60 add_war_support=.05 664={add_core_of=HUN}70={add_core_of=HUN}71={add_core_of=HUN}73={add_core_of=HUN}if={limit={664={is_owned_by=CZE}}HUN={transfer_state=664}}if={limit={70={is_owned_by=CZE}}HUN={transfer_state=70}}if={limit={71={is_owned_by=CZE}}HUN={transfer_state=71}}if={limit={73={is_owned_by=CZE}}HUN={transfer_state=73}72={add_core_of=POL}if={limit={72={is_owned_by=CZE}POL={transfer_state=72}}}}}}}
-    
-#annexation of czechoslovakia denied
-country_event={id=dr.14 title=dr.14.t desc=dr.14.d picture=GFX_report_event_czech_soldiers_01 is_triggered_only=yes option={name=dr.14.a 69={add_core_of=GER}74={add_core_of=GER}9={add_core_of=GER}75={add_core_of=GER}GER={add_state_claim=72}GER={create_wargoal={type=annex_everything target=CZE}}HUN={create_wargoal={type=annex_everything target=CZE}}}}
-
-#coal agreement request
-    country_event={id=dr.15 title=dr.15.t desc=dr.15.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.15.a GER={country_event=dr.16}FRA={add_ideas=idea_coal_agreement_dr}}option={name=dr.15.b GER={country_event=dr.17}}}
+#coal agreement proposal
+    country_event={id=dr.15 title=dr.15.t desc=dr.15.d picture=report_event_tur_industry is_triggered_only=yes option={name=dr.15.a GER={country_event=dr.16}FRA={add_ideas=idea_coal_agreement_dr}}option={name=dr.15.b GER={country_event=dr.17}}}
 
 #coal agreement accepted
-    #coal agreement request accepted
-    country_event={id=dr.16 title=dr.16.t desc=dr.16.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.16.a add_idea={idea_coal_agreement_dr}}}
+    country_event={id=dr.16 title=dr.16.t desc=dr.16.d picture=report_event_tur_industry is_triggered_only=yes option={name=dr.16.a add_ideas=idea_coal_agreement_dr}}
 
 #coal agreement request denied
-    country_event={id=dr.17 title=dr.17.t desc=dr.17.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.17.a add_political_power=-50}}
+    country_event={id=dr.17 title=dr.17.t desc=dr.17.d picture=report_event_tur_industry is_triggered_only=yes option={name=dr.17.a add_political_power=-30}}
 
 #french political crisis
-    country_event={id=dr.18 title=dr.18.t desc=dr.18.d picture=report_event_election_vote is_triggered_only=yes option={name=dr.18.a}}
+    country_event={id=dr.18 title=dr.18.t desc=dr.18.d picture=report_report_event_gre_political_upheaval is_triggered_only=yes option={name=dr.18.a set_country_flag=fra_democratic_flag_dr}option={name=dr.18.b set_country_flag=fra_furry_flag_dr}option={name=dr.18.c set_country_flag=fra_commie_flag_dr}option={name=dr.18.e set_country_flag=fra_bonaparte_flag_dr}}
 
-#japan territories break free
-    country_event={id=dr.19 title=dr.19.t desc=dr.19.d picture=GFX_report_event_japanese_chinese_surrender is_triggered_only=yes option={name=dr.19.a}}
+country_event={id=dr.19 title=dr.19.t desc=dr.19.d picture=GFX_report_event_japanese_chinese_surrender is_triggered_only=yes option={name=dr.19.a}}
 
 #the maxis denied
     country_event={id=dr.20 title=dr.20.t desc=dr.20.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.20.a}}
@@ -65,8 +20,7 @@ country_event={id=dr.14 title=dr.14.t desc=dr.14.d picture=GFX_report_event_czec
 #the maxis accepted
     country_event={id=dr.21 title=dr.21.t desc=dr.21.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.21.a add_political_power=30 create_faction=Maxis add_to_faction=ITA}}
 
-#david and italy successful military exercises
-    country_event={id=dr.22 title=dr.22.t desc=dr.22.d picture=GFX_report_event_polish_army is_triggered_only=yes option={name=dr.22.a army_experience=20 add_tech_bonus={bonus=0.5 uses=1 category=infantry_weapons}}}
+country_event={id=dr.22 title=dr.22.t desc=dr.22.d picture=GFX_report_event_polish_army is_triggered_only=yes option={name=dr.22.a army_experience=20 add_tech_bonus={bonus=0.5 uses=1 category=infantry_weapons}}}
 
 #central powers request
     country_event={id=dr.23 title=dr.23.t desc=dr.23.d picture=GFX_report_event_american_hunger_march is_triggered_only=yes option={name=dr.23.a GER={country_event=dr.24}}option={name=dr.23.a GER={country_event=dr.25}}}
@@ -108,7 +62,7 @@ country_event={id=dr.14 title=dr.14.t desc=dr.14.d picture=GFX_report_event_czec
     country_event={id=dr.35 title=dr.35.t desc=dr.35.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.35.a GER={country_event=dr.36}}option={name=dr.35.b GER={country_event=dr.37}}}
 
     #david-conner pact - accept
-    country_event={id=dr.36 title=dr.36.t desc=dr.36.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.36.a diplomatic_relation={country=SOV relation=non_aggression_pact active=yes}}}
+    country_event={id=dr.36 title=dr.36.t desc=dr.36.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.36.a diplomatic_relation={country=SOV relation=non_aggression_pact active=yes}set_country_flag=david_conner_pact_flag_dr}}
 
     #david-conner pact - deny
     country_event={id=dr.37 title=dr.37.t desc=dr.37.d picture=report_event_american_hunger_march is_triggered_only=yes option={name=dr.37.a}}
@@ -117,12 +71,11 @@ country_event={id=dr.14 title=dr.14.t desc=dr.14.d picture=GFX_report_event_czec
     
     country_event={id=dr.39 title=dr.39.t desc=dr.39.d picture=GFX_report_event_poland_rejects is_triggered_only=yes option={name=dr.39.a 85={if={limit={is_owned_by=POL}GER={transfer_state=85}add_core_of=GER}}807={if={limit={is_owned_by=POL}GER={transfer_state=807}add_core_of=GER}}86={if={limit={is_owned_by=POL}GER={transfer_state=86}add_core_of=GER}}67={if={limit={is_owned_by=POL}GER={transfer_state=67}add_core_of=GER}}762={if={limit={is_owned_by=POL}GER={transfer_state=762}add_core_of=GER}}5={if={limit={is_owned_by=POL}GER={transfer_state=5}add_core_of=GER}}763={if={limit={is_owned_by=POL}GER={transfer_state=763}add_core_of=GER}}188={if={limit={is_owned_by=POL}GER={transfer_state=188}add_core_of=GER}}}}
     
-    country_event={id=dr.40 title=dr.40.t desc=dr.40.d picture=GFX_report_event_poland_rejects is_triggered_only=yes option={name=dr.40.a GER={create_wargoal={type=annex_everything target=POL}}85={if={limit={is_owned_by=POL}add_core_of=GER}}807={if={limit={is_owned_by=POL}add_core_of=GER}}86={if={limit={is_owned_by=POL}add_core_of=GER}}67={if={limit={is_owned_by=POL}add_core_of=GER}}762={if={limit={is_owned_by=POL}add_core_of=GER}}5={if={limit={is_owned_by=POL}add_core_of=GER}}763={if={limit={is_owned_by=POL}add_core_of=GER}}188={if={limit={is_owned_by=POL}add_core_of=GER}}}}
+country_event={id=dr.40 title=dr.40.t desc=dr.40.d picture=GFX_report_event_poland_rejects is_triggered_only=yes option={name=dr.40.a GER={create_wargoal={type=annex_everything target=POL}}85={if={limit={is_owned_by=POL}add_core_of=GER}}807={if={limit={is_owned_by=POL}add_core_of=GER}}86={if={limit={is_owned_by=POL}add_core_of=GER}}67={if={limit={is_owned_by=POL}add_core_of=GER}}762={if={limit={is_owned_by=POL}add_core_of=GER}}5={if={limit={is_owned_by=POL}add_core_of=GER}}763={if={limit={is_owned_by=POL}add_core_of=GER}}188={if={limit={is_owned_by=POL}add_core_of=GER}}}}
 
     #david-conner pact - poland request
-    country_event={id=dr.41 title=dr.41.t desc=dr.41.d picture=report_event_poland_rejects mean_time_to_happen={days=1 fire_only_once=yes}is_triggered_only=yes trigger={original_tag=GER has_government=fascism NOT={country_exists=POL}97={is_controlled_by=GER}91={is_controlled_by=GER}89={is_controlled_by=GER}}option={name=dr.41.a SOV={transfer_state=97 transfer_state=91 transfer_state=89}}option={name=dr.41.a}}
+    country_event={id=dr.41 title=dr.41.t desc=dr.41.d picture=report_event_poland_rejects mean_time_to_happen={days=30 fire_only_once=yes}trigger={original_tag=GER has_country_flag=david_conner_pact_flag_dr 97={is_controlled_by=GER}91={is_controlled_by=GER}89={is_controlled_by=GER}}option={name=dr.41.a SOV={transfer_state=97 transfer_state=91 transfer_state=89}}option={name=dr.41.b transfer_state=97 transfer_state=91 transfer_state=89}}
 
-#fate of east africa
 country_event={id=dr.42 title=dr.42.t desc=dr.42.d picture=GFX_report_event_japanese_reply is_triggered_only=yes option={name=dr.42.a JAP={country_event=dr.45}}option={name=dr.42.b JAP={country_event=dr.46}}}country_event={id=dr.43 title=dr.43.t desc=dr.43.d is_triggered_only=yes mean_time_to_happen={days=1 fire_only_once=yes}trigger={original_tag=ITA country_exists=AFA country_exists=SOM NOT={has_war_with=ETH}}option={name=dr.43.a hidden_effect={SOM={drop_cosmetic_tag=yes}AFA={drop_cosmetic_tag=yes}ITA={annex_country={target=AFA}}ITA={annex_country={target=SOM}}if={limit={country_exists=ETH}ITA={annex_country={target=ETH}}}}}option={name=dr.43.b hidden_effect={SOM={drop_cosmetic_tag=yes}AFA={drop_cosmetic_tag=yes}ITA={annex_country={target=AFA}}ITA={annex_country={target=SOM}}ITA={annex_country={target=ETH}AOI={transfer_state=559 transfer_state=844 transfer_state=837 transfer_state=903 transfer_state=838 transfer_state=836 transfer_state=835 transfer_state=269 transfer_state=906 transfer_state=268 transfer_state=550 transfer_state=908 transfer_state=842 transfer_state=841 transfer_state=843 transfer_state=840 transfer_state=839 transfer_state=271}ITA={puppet=AOI}}}}option={name=dr.43.c hidden_effect={SOM={transfer_state=906 transfer_state=269 transfer_state=835 transfer_state=836 drop_cosmetic_tag=yes}AFA={drop_cosmetic_tag=yes}ETH={transfer_state=841 transfer_state=843 transfer_state=271 transfer_state=840 transfer_state=839 transfer_state=838}ITA={puppet=ETH}}}}country_event={id=dr.44 title=dr.44.t desc=dr.44.d picture=GFX_report_event_chinese_japanese_handshake is_triggered_only=yes option={name=dr.44.a SOV={408={add_core_of=SOV}409={add_core_of=SOV}transfer_state=408 transfer_state=409}}}
 
     #alliance of free nations accept
@@ -137,12 +90,7 @@ country_event={id=dr.42 title=dr.42.t desc=dr.42.d picture=GFX_report_event_japa
     #manchukuo becomes free
     country_event={id=dr.48 title=dr.48.t desc=dr.48.d is_triggered_only=yes option={name=dr.48.a}}
 
-    #iberian civil war
-    country_event={id=dr.49 title=dr.49.t desc=dr.49.d fire_only_once=yes is_triggered_only=yes trigger={tag=SPR has_defensive_war=no has_government=democratic date>1936.2.16}mean_time_to_happen={days=151}option={name=dr.49.a 
-    
-    #SPA={transfer_state=167 transfer_state=166 transfer_state=794 set_capital=167 set_popularities={fascism=5 democratic=25 neutrality=10 communism=60}}SPB={transfer_state=171 transfer_state=174 transfer_state=791 transfer_state=179 transfer_state=181 transfer_state=788 transfer_state=169 transfer_state=118 transfer_state=180 set_capital=171 set_popularities={fascism=60 democratic=10 neutrality=25 communism=5}}SPC={transfer_state=176 transfer_state=172 transfer_state=792 transfer_state=793 set_capital=176 set_popularities={fascism=25 democratic=10 neutrality=60 communism=5}}
-    
-    }}
+country_event={id=dr.49 title=dr.49.t desc=dr.49.d fire_only_once=yes trigger={tag=SPR has_defensive_war=no has_government=democratic date<1936.7.1}option={name=dr.49.a set_cosmetic_tag=SPR_nationalist_spain set_popularities={neutrality=35 fascism=65}set_capital={state=176}start_civil_war={ruling_party=fascism ideology=communism size=0.5 capital=41 states={41 112 165 167 168 173 175 179 790 792 793 794}}random_other_country={limit={original_tag=SPR has_government=communism}add_popularity={ideology=democratic popularity=.3} set_cosmetic_tag=ESU_POR_unified}set_global_flag=icw_dr}}
 
     #take over the front - failure 
     country_event={id=dr.50 title=dr.50.t desc=dr.50.d is_triggered_only=yes option={name=dr.50.a}}
@@ -172,10 +120,10 @@ country_event={id=dr.42 title=dr.42.t desc=dr.42.d picture=GFX_report_event_japa
     country_event={id=dr.58 title=dr.58.t desc=dr.58.d picture=GFX_report_event_chinese_japanese_handshake is_triggered_only=yes option={name=dr.58.a SOV={country_event=dr.65}option={name=dr.58.b SOV={country_event=dr.66}option={name=dr.58.c SOV={country_event=dr.67}}}}}
 
     #james civil war - stalin makes a move
-    country_event={id=dr.59 title=dr.59.t desc=dr.59.d fire_only_once=yes is_triggered_only=yes option={name=dr.59.a GEO={transfer_state=217 transfer_state=236 add_state_core=217 add_state_core=236 set_capital={state=217}}217={set_state_name="Stalingrad"}set_province_name={id=3529 name="Stalingrad"}SOV={country_event=dr.60}}}
+    country_event={id=dr.59 title=dr.59.t desc=dr.59.d fire_only_once=yes is_triggered_only=yes option={name=dr.59.a GEO={transfer_state=217 transfer_state=236 add_state_core=217 add_state_core=236 set_capital={state=217}217={set_state_name="Stalingrad"}set_province_name={id=3529 name="Stalingrad"}SOV={country_event=dr.60}}}}
 
     #james civil war - siege of rostov
-    country_event={id=dr.60 title=dr.60.t desc=dr.60.d fire_only_once=yes is_triggered_only=yes option={name=dr.60.a start_border_war={change_state_after_war=yes attacker={state=218 num_provinces=2 modifier=0.1 dig_in_factor=0 terrain_factor=0}}defender={state=218 num_provinces=2 on_win=dr.61 on_lose=dr.62 on_cancel=dr.63}}
+    country_event={id=dr.60 title=dr.60.t desc=dr.60.d fire_only_once=yes is_triggered_only=yes option={name=dr.60.a start_border_war={change_state_after_war=yes attacker={state=218 num_provinces=2 modifier=0.1 dig_in_factor=0 terrain_factor=0}}defender={state=218 num_provinces=2 on_win=dr.61 on_lose=dr.62 on_cancel=dr.63}}}
 
     #james civil war - stalin wins rostov
     country_event={id=dr.61 title=dr.61.t desc=dr.61.d fire_only_once=yes is_triggered_only=yes option={name=dr.61.a }}
@@ -230,4 +178,101 @@ country_event={id=dr.42 title=dr.42.t desc=dr.42.d picture=GFX_report_event_japa
 
     #peru join faction request
     country_event={id=dr.78 title=dr.78.t desc=dr.78.d fire_only_once=yes is_triggered_only=yes option={name=dr.78.a }option={name=dr.78.b }}
-}
+
+    #the clans grasp event
+    country_event={id=dr.79 title=dr.79.t desc=dr.79.d fire_only_once=yes is_triggered_only=yes option={name=dr.79.a set_country_flag=clan_enemy_flag_dr}option={name=dr.79.b set_country_flag=clan_friend_flag_dr}}
+
+    #mike becomes emperor
+    country_event={id=dr.80 title=dr.80.t desc=dr.80.d fire_only_once=yes is_triggered_only=yes option={name=dr.80.a}}
+
+    #ethiopia demands yemen
+    country_event={id=dr.81 title=dr.81.t desc=dr.81.d fire_only_once=yes is_triggered_only=yes option={name=dr.81.a ETH={country_event=dr.83}}option={name=dr.81.b ETH={country_event=dr.82}}}
+
+    #ethiopia demands yemen - success
+    country_event={id=dr.82 title=dr.82.t desc=dr.82.d fire_only_once=yes is_triggered_only=yes option={name=dr.82.a transfer_state=293 transfer_state=659 add_state_core=293 add_state_core=659}}
+
+    #ethiopia demands yemen - failure
+    country_event={id=dr.83 title=dr.83.t desc=dr.83.d fire_only_once=yes is_triggered_only=yes option={name=dr.83.a create_wargoal={type=puppet_wargoal_focus target=SAU}add_state_core=293 add_state_core=659}}
+  
+    #aftershock of loss in ethiopia
+    country_event={id=dr.84 title=dr.84.t desc=dr.84.d fire_only_once=yes is_triggered_only=yes option={name=dr.84.a add_war_support=-0.1 add_stability=-0.1 add_popularity={ideology=fascism popularity=-0.1}}}
+
+    #catalonia demilitarized
+    country_event={id=dr.85 title=dr.85.t desc=dr.85.d mean_time_to_happen={days=10 fire_only_once=yes}trigger={tag=FRA has_global_flag=icw_dr}option={name=dr.85.a 165={set_demilitarized_zone=yes}}option={name=dr.85.b CAT={transfer_state=165 add_state_core=165}declare_war_on={target=CAT type=annex_everything}}}
+
+    #escalate catalonia
+    country_event={id=dr.86 title=dr.86.t desc=dr.86.d fire_only_once=yes trigger={tag=FRA has_global_flag=icw_dr has_war_with=CAT}option={name=dr.86.a SPR={declare_war_on={target=CAT type=annex_everything}}random_other_country={limit={original_tag=SPR has_government=communism}declare_war_on={target=CAT type=annex_everything}CAT={set_cosmetic_tag=SPR_anarchist_spain transfer_state=167 transfer_state=794 transfer_state=166 add_state_core=167 add_state_core=794 add_state_core=166 add_state_core=172 add_state_core=792 add_state_core=176 add_state_core=791 add_state_core=174 add_state_core=790 add_state_core=171 add_state_core=180 add_state_core=181 add_state_core=112 add_state_core=795 add_state_core=179 add_state_core=169 add_state_core=118 add_state_core=173 add_state_core=789 add_state_core=175 add_state_core=170 add_state_core=788 add_state_core=41 add_state_core=793 add_state_core=168 add_state_core=177}}}}
+
+    #ethiopia demand libya
+    country_event={id=dr.87 title=dr.87.t desc=dr.87.d fire_only_once=yes is_triggered_only=yes option={name=dr.87.a ETH={country_event=dr.88}}option={name=dr.87.b ETH={country_event=dr.89}}}
+
+    #ethiopia demand libya - success
+    country_event={id=dr.88 title=dr.88.t desc=dr.88.d fire_only_once=yes is_triggered_only=yes option={name=dr.88.a LBA={transfer_state=448 transfer_state=661 transfer_state=449 transfer_state=662 transfer_state=273 transfer_state=663 transfer_state=450 transfer_state=451}puppet=LBA}}
+
+    #ethiopia demand libya - failure
+    country_event={id=dr.89 title=dr.89.t desc=dr.89.d fire_only_once=yes is_triggered_only=yes option={name=dr.89.a add_state_claim=448 add_state_claim=661 add_state_claim=449 add_state_claim=662 add_state_claim=273 add_state_claim=663 add_state_claim=450 add_state_claim=451 create_wargoal={target=ITA type=puppet_wargoal_focus}}}
+
+    #birth of hurgundy
+    country_event={id=dr.90 title=dr.90.t desc=dr.90.d picture=report_event_german_parade_paris fire_only_once=yes is_triggered_only=yes option={name=dr.90.a}option={name=dr.90.b BEL={change_tag_from=GER}}}
+
+    #east africa takes iberian colonies
+    country_event={id=dr.91 title=dr.91.t desc=dr.91.d mean_time_to_happen={days=30 fire_only_once=yes}trigger={tag=TZN has_global_flag=icw_dr SPR={controls_state=770 controls_state=897}}option={name=dr.91.a transfer_state=770 transfer_state=897 SPR={add_state_claim=770 add_state_claim=897}}}
+
+    #south africa iberian question
+    country_event={id=dr.92 title=dr.92.t desc=dr.92.d mean_time_to_happen={days=50 fire_only_once=yes}trigger={tag=SAF has_global_flag=icw_dr SPR={controls_state=545 controls_state=876 controls_state=544 controls_state=703 controls_state=704 country_exists=GAB}}option={name=dr.92.a add_political_power=-20 transfer_state=703 transfer_state=704 SPR={add_state_claim=703 add_state_claim=704}}option={name=dr.92.b add_political_power=-50 transfer_state=703 transfer_state=704 transfer_state=545 transfer_state=896 transfer_state=544 SPR={add_state_claim=703 add_state_claim=704 add_state_claim=545 add_state_claim=896 add_state_claim=544}}option={name=dr.92.c add_political_power=-100 transfer_state=703 transfer_state=704 transfer_state=545 transfer_state=896 transfer_state=544 puppet=GAB SPR={add_state_claim=703 add_state_claim=704 add_state_claim=545 add_state_claim=896 add_state_claim=544}}}
+
+    #gabon becomes independent
+    country_event={id=dr.93 title=dr.93.t desc=dr.93.d mean_time_to_happen={days=30 fire_only_once=yes}trigger={tag=SPR has_global_flag=icw_dr SPR={controls_state=297 controls_state=705 controls_state=539 controls_state=772 controls_state=796}}option={name=dr.92.a GAB={transfer_state=297 transfer_state=705 transfer_state=539 transfer_state=772 transfer_state=796}}}
+
+    #californian ally request
+    country_event={id=dr.94 title=dr.94.t desc=dr.94.d fire_only_once=yes is_triggered_only=yes option={name=dr.94.a JAP={country_event=dr.95}}option={name=dr.94.b JAP={country_event=dr.96}}}
+
+    #californian ally accept
+    country_event={id=dr.95 title=dr.95.t desc=dr.95.d fire_only_once=yes is_triggered_only=yes option={name=dr.95.a}}
+
+    #californian ally deny
+    country_event={id=dr.96 title=dr.96.t desc=dr.96.d fire_only_once=yes is_triggered_only=yes option={name=dr.96.a}}
+
+    #1936 mexican convention
+    country_event={id=dr.97 title=dr.97.t desc=dr.97.d fire_only_once=yes is_triggered_only=yes option={name=dr.97.a}}
+
+    #greater mexico solution
+    country_event={id=dr.98 title=dr.98.t desc=dr.98.d fire_only_once=yes is_triggered_only=yes option={name=dr.98.a}}
+
+    #mexico sends us aid
+    country_event={id=dr.99 title=dr.99.t desc=dr.99.d fire_only_once=yes is_triggered_only=yes option={name=dr.99.a add_ideas=idea_mexican_aid_dr}}
+
+    #anti-colin pact
+    country_event={id=dr.100 title=dr.100.t desc=dr.100.d fire_only_once=yes is_triggered_only=yes option={name=dr.100.a MEX={create_faction="Anti-Colin Pact" add_to_faction=CSA set_country_flag=anti_colin_flag_dr}}option={name=dr.100.b }}
+
+    #imperium - mexican change in government
+    country_event={id=dr.101 title=dr.101.t desc=dr.101.d fire_only_once=yes is_triggered_only=yes option={name=dr.101.a }}
+
+
+################################################################
+
+    #mexico entente membership
+    country_event={id=dr.102 title=dr.102.t desc=dr.102.d fire_only_once=yes is_triggered_only=yes option={name=dr.102.a MEX={country_event=dr.104}}option={name=dr.102.a MEX={country_event=dr.105}}}
+
+    #mexico maxis membership
+    country_event={id=dr.103 title=dr.103.t desc=dr.103.d fire_only_once=yes is_triggered_only=yes option={name=dr.103.a MEX={country_event=dr.104}}option={name=dr.103.a MEX={country_event=dr.105}}}
+
+    #mexico entente membership - yes
+    country_event={id=dr.104 title=dr.104.t desc=dr.104.d fire_only_once=yes is_triggered_only=yes option={name=dr.104.a }}
+
+    #mexico entente membership - no
+    country_event={id=dr.105 title=dr.105.t desc=dr.105.d fire_only_once=yes is_triggered_only=yes option={name=dr.105.a }}
+
+   #mexico maxis membership - yes
+    country_event={id=dr.106 title=dr.106.t desc=dr.103.d fire_only_once=yes is_triggered_only=yes option={name=dr.103.a }}
+
+   #mexico maxis membership - no
+    country_event={id=dr.107 title=dr.107.t desc=dr.107.d fire_only_once=yes is_triggered_only=yes option={name=dr.107.a }}
+
+    #ustase revolt
+    country_event={id=dr.108 title=dr.108.t desc=dr.108.d fire_only_once=yes trigger={tag=YUG is_subject=no date<1936.1.1}option={name=dr.108.a CRO={if={limit={YUG={controls_state=109}transfer_state=109}}if={limit={YUG={controls_state=103}transfer_state=103}}if={limit={YUG={controls_state=163}transfer_state=163}}if={limit={YUG={controls_state=104}transfer_state=104}}if={limit={YUG={controls_state=804}transfer_state=804}}if={limit={YUG={controls_state=852}transfer_state=852}}if={limit={YUG={controls_state=736}transfer_state=736}}if={limit={YUG={controls_state=853}transfer_state=853}}if={limit={YUG={controls_state=102}transfer_state=102}}declare_war_on=YUG}}}
+
+    #brazil-bahia war
+    country_event={id=dr.109 title=dr.109.t desc=dr.109.d fire_only_once=yes trigger={tag=BRA is_subject=no country_exist=IAS NOT={has_war_with=IAS}date<1936.5.1}option={name=dr.109.a BRA={declare_war_on=IAS}}}
+
+#add news events for daveschluss, iberian civil war, french intervention in iberian civil war, japan's colonies breaking free, death of brazilian democracy, and czechoslovakia's fate

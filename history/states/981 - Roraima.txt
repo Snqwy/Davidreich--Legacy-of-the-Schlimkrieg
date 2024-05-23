@@ -1,0 +1,17 @@
+state={
+	id=981
+	name="STATE_981"
+	provinces={
+		5214 13340 13361 13362
+	}
+	history={
+		owner = IAS
+		victory_points = {5214 1}
+		add_core_of = IAS
+		add_core_of = BRA
+	}
+	manpower=8953
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = pastoral
+}

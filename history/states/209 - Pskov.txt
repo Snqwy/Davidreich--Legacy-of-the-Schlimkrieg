@@ -1,7 +1,7 @@
 
 state={
 	id=209
-	name="STATE_209" # Pskov
+	name="STATE_209" 
 	manpower = 639587
 	
 	state_category = town
@@ -12,7 +12,7 @@ state={
 			11202 3
 		}
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 3
 			air_base = 4
 		}
 		add_core_of = SOV

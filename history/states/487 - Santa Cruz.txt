@@ -12,7 +12,11 @@ state={
 		}
 		add_core_of = PRU
 		add_claim_by=ARG
-
+		add_claim_by = BRA
+		victory_points = {
+			2160 5 
+		}
+		
 	}
 
 	provinces={

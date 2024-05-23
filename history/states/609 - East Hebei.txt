@@ -11,6 +11,9 @@ state={
 		add_core_of = MAN
 		add_core_of = CHI
 		add_core_of = PRC
+		victory_points = {
+			900 2 
+		}
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1

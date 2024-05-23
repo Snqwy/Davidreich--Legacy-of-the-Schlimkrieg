@@ -5,8 +5,8 @@ state={
 	
 	state_category = town
 	resources={
-		steel=20 # was: 112
-		aluminium=4 # was: 22
+		steel=20 
+		aluminium=4 
 	}
 	
 	history={
@@ -16,7 +16,7 @@ state={
 		owner = FRA
 		add_core_of = FRA
 		buildings = {
-			infrastructure = 4 #was: 8
+			infrastructure = 4 
 			industrial_complex = 1
 		}
 	}

@@ -9,6 +9,9 @@ state={
 		rubber=5 # was: 5
 	}
 	history={
+		victory_points = {
+			10071 1 
+		}
 		owner = COG
 		add_core_of = COG
 		buildings = {

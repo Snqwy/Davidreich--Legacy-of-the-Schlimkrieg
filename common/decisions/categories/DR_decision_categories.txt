@@ -9,6 +9,7 @@ GER_reichskommissariats = {
 		has_government=fascism
 	}
 }
+
 rekindle_alliance_decision_category_dr={
 
 	icon = GFX_decision_category_eng_appeal_to_imperial_loyalists
@@ -122,6 +123,32 @@ manchuria_projects_decision_category_dr={
 	}
 }
 
+ITA_puppets_category_dr = {
+	
+	allowed = {
+		tag = ITA
+	}
+
+	priority = {
+		base = 10
+	}
+	
+	visible={OR={has_completed_focus=ITA_funding_the_colonial_society_dr has_completed_focus=ITA_vive_italia_dr}}
+}
+
+italy_alliance_decision_category_dr = {
+	
+	allowed = {
+		tag = ITA
+	}
+
+	priority = {
+		base = 10
+	}
+	
+	visible={OR={has_completed_focus=ITA_balkan_entente_dr has_completed_focus=ITA_latin_alliance_dr has_completed_focus=ITA_pact_of_islam_dr}}
+}
+
 eec_decision_category_dr = {
 	
 	allowed = {
@@ -147,6 +174,43 @@ sov_claims_decision_category_dr = {
 	priority = {
 		base = 10
 	}
+}
+
+northern_reintegration_decision_category_dr = {
+
+	allowed = {
+		original_tag = MEX
+	}
+	priority = {
+		base = 10
+	}
+
+	visible={has_completed_focus=MEX_northern_reintegration_dr}
+}
+
+connerian_balance_category_dr = {
+	
+	icon=GFX_decision_category_saf_anti_colonialist_crusade
+
+	allowed = {
+		tag = SOV
+	}
+ 
+	priority = {
+		base = 10
+	}
+}
+
+france_spain_decision_category_dr = {
+
+	allowed = {
+		original_tag = FRA 
+	}
+	priority = {
+		base = 10
+	}
+
+	visible={has_global_flag=icw_flag_dr}
 }
 
 mitteldaveuropa_decision_category_dr={

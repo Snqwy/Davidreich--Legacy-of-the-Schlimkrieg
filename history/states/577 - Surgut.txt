@@ -12,6 +12,7 @@ state={
 
 		}
 		add_core_of = OVO
+		victory_points = {1768 1}
 		owner = OVO
 
 	}

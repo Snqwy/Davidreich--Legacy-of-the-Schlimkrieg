@@ -2,14 +2,13 @@ state = {
 	id = 827
 	name = "STATE_827"
 	resources = {
-		chromium = 17 # was: 35 in the caucasus, but was split
+		chromium = 17 
 	}
 
 	history = {
 		owner = GEO
 		buildings = {
 			infrastructure = 2
-
 		}
 		add_core_of = GEO
 		victory_points = {

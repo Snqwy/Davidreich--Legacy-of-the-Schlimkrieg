@@ -5,6 +5,9 @@ state = {
 	state_category = pastoral
 	history = {
 		owner = EGY
+		victory_points = {
+			12862 1 
+		}
 		add_core_of = EGY
 		add_core_of = CHA
 		buildings = {
@@ -12,7 +15,7 @@ state = {
 		}
 	}
 	provinces = {
-		1914 4918 10743 10784 12862 12887 
+		1914 2088 4918 10743 10784 12862 12887 
 	}
 	
 	buildings_max_level_factor = 1.000

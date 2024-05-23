@@ -10,6 +10,40 @@ idea_home_of_the_brave_dr={picture=eng_service_overseas allowed={always=yes}allo
 
 idea_land_of_the_free_home_of_the_brave_dr={picture=generic_volunteer_expedition_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={party_popularity_stability_factor=0.2 stability_factor=0.15 war_support_factor=0.15 political_power_gain=0.15 democratic_drift=0.05 surrender_limit=0.1 army_core_defence_factor=0.05}}
 
-idea_great_davepression_dr={picture=raj_risk_of_famine allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={production_speed_buildings_factor=-0.3 consumer_goods_factor=0.5 industrial_capacity_factory=-0.3 stability_factor=-0.3}}
+idea_great_davepression_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={production_speed_buildings_factor=-0.3 consumer_goods_factor=0.5 industrial_capacity_factory=-0.3 stability_factor=-0.3}}
+
+    idea_lend_lease_act_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={war_support_factor=0.05 lend_lease_tension=-1 embargo_threshold_factor=-1}}
+
+    idea_revolutionary_telecoms_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={decryption_factor=0.1 encryption_factor=0.1 intel_network_gain_factor=0.15 operation_risk=-0.05}}
+
+    idea_revolutionary_telecoms_2_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={decryption_factor=0.05 encryption_factor=0.05 intel_network_gain_factor=0.05}}
+
+    idea_land_air_integration_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={ground_attack_factor=0.1 air_close_air_support_org_damage_factor=0.05}}
+
+    idea_two_ocean_strategy_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={navy_max_range_factor=0.1 repair_speed_factor=0.05}}
+
+    idea_desperate_defense_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_core_defence_factor=0.15 max_dig_in_factor=0.05}}
+
+    idea_never_another_panama_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={experience_gain_navy_factor=-0.15}}
+
+    idea_military_energizers_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={command_abilities_cost_factor=-0.05 naval_torpedo_cooldown_factor=-0.05 air_ace_bonuses_factor=0.05}}
+
+    idea_great_davepression_2_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={production_speed_buildings_factor=-0.25 consumer_goods_factor=0.45 industrial_capacity_factory=-0.25 stability_factor=-0.25}}
+
+    idea_great_davepression_3_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={production_speed_buildings_factor=-0.2 consumer_goods_factor=0.4 industrial_capacity_factory=-0.2 stability_factor=-0.2}}
+
+idea_dust_bowl_2_dr={picture=raj_risk_of_famine allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={production_speed_buildings_factor=-0.05 consumer_goods_factor=0.05 industrial_capacity_factory=-0.15 political_power_factor=-0.1 stability_factor=-0.1}}
+
+    idea_strengthened_congress_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=0.05 political_power_factor=-0.05}}
+
+    idea_weakened_congress_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.05 political_power_factor=0.05}}
+
+    idea_tax_reform_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=0.05 industrial_capacity_factory=0.05}}
+
+    idea_empowered_irs_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=-0.05 industrial_capacity_factory=-0.05}}
+
+    idea_democratic_institutions_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={war_support_factor=-0.05 political_advisor_cost_factor=-0.05}}
+
+    idea_solidified_keeganocracy_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={war_support_factor=0.05 political_advisor_cost_factor=0.05}}
 
 }}

@@ -6,6 +6,9 @@ state={
 	history={
 		owner = LAT
 		add_core_of = LAT
+		victory_points = {
+			3152 5 
+		}
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1

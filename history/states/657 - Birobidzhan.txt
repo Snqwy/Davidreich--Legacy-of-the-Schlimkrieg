@@ -8,12 +8,19 @@ state={
 
 	history={
 		owner = FER
+		victory_points = {
+			12263 1
+		}
+		victory_points = {
+			12678 1
+		}
 		buildings = {
 			infrastructure = 2
 			air_base = 2
 
 		}
 		add_core_of = FER
+		add_claim_by = MAN
 
 	}
 

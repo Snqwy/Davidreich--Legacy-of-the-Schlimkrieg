@@ -108,6 +108,8 @@
  VIN_reichskommissariat_dr_DEF:0 "the Davekommissariat Ostasien"
  VIN_reichskommissariat_dr_ADJ:0 "Ostasien"
 
+#latin union color
+
  SCA_UNIFIED:0 "Scandinavia"
  SCA_UNIFIED_DEF:0 "Scandinavia"
  SCA_UNIFIED_ADJ:0 "Scandinavia"
@@ -269,6 +271,17 @@
  cosmetic_tag_swiss_dr:0 "Switzerland"
  cosmetic_tag_swiss_dr_DEF:0 "Switzerland"
  cosmetic_tag_swiss_dr_ADJ:0 "Swiss"
+ cosmetic_tag_france_iberia_dr:0 "Franco-Iberian Federation"
+ cosmetic_tag_france_iberia_dr_DEF:0 "the Franco-Iberian Federation"
+ cosmetic_tag_france_iberia_dr_ADJ:0 "Franco-Iberian"
+ cosmetic_tag_france_iberia_african_dr:0 "Franco-Ibero-African Union"
+ cosmetic_tag_france_iberia_african_dr_DEF:0 "the Franco-Ibero-African Union"
+ cosmetic_tag_france_iberia_african_dr_ADJ:0 "Franco-Afro-Iberian"
+ cosmetic_tag_france_iberia_bonaparte_dr:0 "Franco-Iberian Empire"
+ cosmetic_tag_france_iberia_bonaparte_dr_DEF:0 "the Franco-Iberian Empire"
+ cosmetic_tag_france_iberia_swiss_dr:0 "Swiss-Iberian Federal Republic"
+ cosmetic_tag_france_iberia_swiss_dr_DEF:0 "the Swiss-Iberian Federal Republic"
+ cosmetic_tag_france_iberia_swiss_dr_DEF:0 "Swiss-Iberian"
 
  EUR_UNIFIED:0 "European Union"
  EUR_UNIFIED_DEF:0 "the European Union"
@@ -394,9 +407,9 @@
  cosmetic_tag_new_spain_dr:0 "New Spain" ##FIX
  cosmetic_tag_new_spain_dr_DEF:0 "New Spain"
  cosmetic_tag_new_spain_dr_ADJ:0 "New Spanish"
- cosmetic_tag_spanish_empire_dr:0 "Spanish Empire"
- cosmetic_tag_spanish_empire_dr_DEF:0 "the Spanish Empire"
- cosmetic_tag_spanish_empire_dr_ADJ:0 "Spanish"
+ cosmetic_tag_spanish_empire_dr:0 "Empire of Iberia"
+ cosmetic_tag_spanish_empire_dr_DEF:0 "the Empire of Iberia"
+ cosmetic_tag_spanish_empire_dr_ADJ:0 "Iberian"
 
  cosmetic_tag_inca_dr:0 "Incan Empire"
  cosmetic_tag_inca_dr_DEF:0 "the Incan Empire"
@@ -454,6 +467,9 @@
  empire_of_axum_ADJ:0 "Aksumite"
  empire_of_axum_communism:0 "Aksumite People's Federation"
  empire_of_axum_communism_DEF:0 "the Aksumite People's Federation"
+ cosmetic_tag_aksum_africa_dr:0 "African Empire"
+ cosmetic_tag_aksum_africa_dr_DEF:0 "the African Empire"
+ cosmetic_tag_aksum_africa_dr_ADJ:0 "African"
 
  cosmetic_tag_greater_romania_dr:0 "Greater Romania" ##CHANGE
  cosmetic_tag_greater_romania_DEF_dr:0 "Greater Romania"
@@ -473,9 +489,12 @@
  ESU_POR_unified:0 "Iberia"
  ESU_POR_unified_DEF:0 "Iberia"
  ESU_POR_unified_ADJ:0 "Iberian" 
- SPR_anarchist_spain:0 "Iberian Commune"
+ ESU_POR_unified_communism:0 "Socialist Federation of Iberia"
+ ESU_POR_unified_communism_DEF:0 "the Socialist Federation of Iberia"
  SPR_nationalist_spain:0 "Iberian State"
  SPR_carlist_spain:0 "Kingdom of Iberia"
+ SPR_anarchist_spain:0 "Iberian Commune"
+ SPR_anarchist_catalonia:0 "Catalan Commune"
 
  transcaucasia_unified:0 "Transcaucasia"
  transcaucasia_unified_DEF:0 "Transcaucasia"
@@ -527,12 +546,17 @@
 
  cosmetic_tag_lux_earth_dr:0 "Grand Duchy of Earth"
  cosmetic_tag_lux_earth_dr_DEF:0 "the Grand Duchy of Earth"
- cosmetic_tag_lux_earth_dr_ADJ:0 "Human"
+ cosmetic_tag_lux_earth_dr_ADJ:0 "Earthling"
 
  cosmetic_tag_bavaria_empire_dr:0 "German Empire"
  cosmetic_tag_bavaria_empire_dr_DEF:0 "the German Empire"
  cosmetic_tag_bavaria_empire_dr_ADJ:0 "German"
 
+##########################################################################possible new cosmetic tags
+
 #cosmetic_tag_jps_dr:0 "Japanese Pacific States"
 #cosmetic_tag_jps_dr_DEF:0 "the Japanese Pacific States"
 #cosmetic_tag_jps_dr_ADJ:0 "Japanese-American"
+
+#federal commonwealth of brazil
+#australasian mandate of china

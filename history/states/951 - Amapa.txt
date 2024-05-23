@@ -1,0 +1,35 @@
+
+state={
+	id=951
+	name="STATE_951"
+	resources={
+		aluminium=4.000
+	}
+
+	history={
+		owner = GAR 
+		add_core_of = GAR
+		add_core_of = BRA
+		add_core_of = GYA
+		buildings = {
+			infrastructure = 1
+			4980 = {
+				naval_base = 2
+
+			}
+
+		}
+		victory_points = {
+			4980 2 
+		}
+
+	}
+
+	provinces={
+		4980 13276 
+	}
+	manpower=350000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

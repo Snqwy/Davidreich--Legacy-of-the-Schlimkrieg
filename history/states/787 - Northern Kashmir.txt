@@ -1,6 +1,6 @@
 state={
 	id=787
-	name="STATE_787" # Northern Kashmir
+	name="STATE_787"
 	manpower = 1415800
 	
 	state_category = rural

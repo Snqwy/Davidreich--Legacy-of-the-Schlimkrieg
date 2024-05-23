@@ -1,7 +1,7 @@
 
 state={
 	id=204
-	name="STATE_204" # Bobruysk
+	name="STATE_204" 
 	manpower = 1041084
 	
 	state_category = rural
@@ -15,7 +15,7 @@ state={
 		}
 		owner = BLR
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 3
 		}
 		add_core_of = BLR
 	}

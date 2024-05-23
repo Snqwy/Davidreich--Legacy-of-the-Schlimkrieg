@@ -1,0 +1,31 @@
+
+state = {
+	id = 39
+	name = "STATE_39"
+	manpower = 298290
+	
+	state_category = town
+	
+	resources = {
+		aluminium = 14 
+	}
+
+	history = {
+		victory_points = { 
+			11598 1
+		}
+		owner = AUS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = AUS	 
+		add_core_of = ITA
+	}
+
+	provinces = {
+		656 6675 9630 11598 11615
+	}
+
+	local_supplies = 0.0 
+}

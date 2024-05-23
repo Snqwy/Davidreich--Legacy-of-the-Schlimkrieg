@@ -1,7 +1,7 @@
 
 state={
 	id=208
-	name="STATE_208" # Luga
+	name="STATE_208"
 	manpower = 341819
 	
 	state_category = rural
@@ -9,7 +9,7 @@ state={
 	history={
 		owner = SOV
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 3
 			air_base = 3
 		}
 		add_core_of = SOV

@@ -9,6 +9,9 @@ state = {
 	}
 
 	history = {
+	    victory_points = {
+            6196 1 
+        }
 		owner = ICE
 		add_core_of = ICE
 		add_claim_by = DEN

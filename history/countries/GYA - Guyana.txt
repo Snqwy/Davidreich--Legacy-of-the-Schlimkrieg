@@ -1,1 +1,14 @@
 ﻿capital=687
+
+give_guarantee=IAS 
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1934.2.11"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 60
+	neutrality = 40
+}

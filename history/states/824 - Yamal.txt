@@ -1,13 +1,16 @@
 
 state = {
 	id = 824
-	name = "STATE_824" # Yamalia
+	name = "STATE_824"
 	manpower = 21974
 	
 	state_category = pastoral
 
 	history = {
 		owner = OVO
+		victory_points = {
+			10536 1 
+		}
 		buildings = {
 			infrastructure = 1
 		}

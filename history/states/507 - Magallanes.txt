@@ -9,13 +9,20 @@ state={
 	history={
 		owner = ARG
 		add_core_of = ARG
+		victory_points = {
+			5215 2
+		}
+
+		victory_points = {
+			5201 1
+		}
 		buildings = {
 			infrastructure = 1
 		}
 	}
 
 	provinces={
-		2161 5118 5159 5201 5209 5215 8198 8218 8913 10961 
+		5201 5215 8218 
 	}
 
 	local_supplies=0.0 

@@ -1,0 +1,17 @@
+state={
+	id=977
+	name="STATE_977"
+	provinces={
+		2147 5232 
+	}
+	history={
+		owner = IAS
+		add_core_of = IAS
+		add_core_of = BRA
+	}
+	manpower=21987
+	impassable = yes
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=wasteland
+}

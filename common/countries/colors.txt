@@ -604,3 +604,23 @@ MEN = {
 	color = rgb { 185  255  152 }
 	color_ui = rgb { 165  230  132 }
 }
+QUE = {
+	color = rgb { 91 103 199 }
+	color_ui = rgb { 91 103 199 }
+}
+IAS = {
+	color = rgb { 148 196 180 }
+	color_ui = rgb { 148 196 180 }
+}
+INU = {
+	color = rgb { 212 209 172 }
+	color_ui = rgb { 212 209 172 }
+}
+GAR = {
+	color = rgb { 72 201 189 }
+	color_ui = rgb { 72 201 189 }
+}
+URG = {
+	color = rgb { 171 190 152 }
+	color_ui = rgb { 171 190 152 }
+}

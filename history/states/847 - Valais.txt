@@ -7,6 +7,9 @@ state={
 	resources={
 	}
 	history={
+		victory_points = { 
+			9587 1
+		}
 		owner = FRA
 		buildings = {
 			infrastructure = 1 

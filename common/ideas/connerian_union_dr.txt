@@ -24,9 +24,10 @@ idea_schools_of_thought_dr={picture=socialist_science_focus allowed={always=no}a
 
 idea_5_year_plans_dr={picture=SOV_fourth_five_year_plan allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={production_speed_buildings_factor=0.1 production_factory_max_efficiency_factor=0.1 production_factory_efficiency_gain_factor=0.1 industrial_capacity_factory=0.1 consumer_goods_factor=-0.15 political_power_cost=1.5}}
 
-    idea_jumpstarted_military_production_dr={allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={industrial_capacity_factory=0.15 production_factory_max_efficiency_factor=0.05 conversion_cost_civ_to_mil_factor=-0.2}}
+#CHECK
+    idea_jumpstarted_military_production_dr={picture=hun_secret_rearmament allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={industrial_capacity_factory=0.15 production_factory_max_efficiency_factor=0.05 conversion_cost_civ_to_mil_factor=-0.2}}
 
-    idea_wealth_of_the_union_dr={allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={local_resources_factor=0.15}}
+    idea_wealth_of_the_union_dr={allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={local_resources_factor=0.15 consumer_goods_factor=-0.05}}
 
 idea_agrarian_society_2_dr={picture=generic_agrarian_society allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={economy_cost_factor=1.5 research_speed_factor=-0.1 production_speed_buildings_factor=-0.05 production_factory_max_efficiency_factor=-0.2 production_factory_efficiency_gain_factor=-0.1 industrial_capacity_factory=-0.1 consumer_goods_factor=0.1}}
 
@@ -56,5 +57,13 @@ idea_foreign_industrial_aid_dr={picture=generic_flexible_foreign_policy allowed=
     idea_cwi_dr={picture=man_five_year_plan_tank allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
 
     idea_cwi_2_dr={picture=man_five_year_plan_tank allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+
+    idea_ukrainian_breadbasket_dr={allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={weekly_manpower=500 consumer_goods_factor=-0.15}}
+
+    idea_revitalized_tachankas_dr={allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
+ 
+    idea_wealth_of_the_union_2_dr={allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={local_resources_factor=0.1}}
+
+    idea_lick_our_wounds_dr={allowed={always=no}allowed_civil_war={always=yes}removal_cost=-1 modifier={industry_free_repair_factor=0.1 repair_speed_factor=0.1 stability_weekly_factor=0.05}}
 
 }}

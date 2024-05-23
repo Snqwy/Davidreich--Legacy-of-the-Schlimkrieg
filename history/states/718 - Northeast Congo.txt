@@ -5,10 +5,11 @@ state={
 	state_category = pastoral
 
 	resources={
-		rubber=5 # was: 6.000
+		rubber=5 
 	}
 
 	history={
+		victory_points={6027 1}
 		owner = COG
 		add_core_of = COG
 		add_core_of = TZN

@@ -4,9 +4,9 @@ state = {
 
 	history = {
 		owner = FER
-		victory_points = {
-			12549 1 
-		}
+		#victory_points = {
+			#12549 1 
+		#}
 		buildings = {
 			infrastructure = 1
 		}

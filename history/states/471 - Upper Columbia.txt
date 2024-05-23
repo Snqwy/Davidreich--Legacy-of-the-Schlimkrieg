@@ -4,6 +4,9 @@ state={
 
 	history={
 		owner = CSA
+		victory_points = {
+			1799 1 
+		}
 		buildings = {
 			infrastructure = 1
 			10548 = {
@@ -13,6 +16,7 @@ state={
 
 		}
 		add_core_of = CSA
+		add_core_of = INU
 		add_claim_by = CAN
 
 	}

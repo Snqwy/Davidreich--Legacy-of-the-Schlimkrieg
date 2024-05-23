@@ -1,0 +1,31 @@
+
+state = {
+	id = 954
+	name = "STATE_954"
+	manpower = 120000
+	
+	state_category = pastoral
+
+	history = {
+
+		owner = IAS
+		add_core_of = IAS
+		add_core_of = BRA
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			12939 2 
+		}
+
+	}
+
+	provinces = {
+		12939 13283 13284
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.0 
+}

@@ -1,12 +1,12 @@
 state={
 	id=771
-	name="STATE_771" # Zambia
+	name="STATE_771"
 	
 	state_category = rural
 
 	resources={
-		chromium=35 # was: 64.000
-		tungsten=8 # was: 16.000
+		chromium=35
+		tungsten=8 
 	}
 
 	history={

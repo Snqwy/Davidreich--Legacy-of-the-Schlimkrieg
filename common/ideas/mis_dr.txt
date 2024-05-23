@@ -22,7 +22,7 @@ idea_industrial_sabotage_dr={picture=FRA_factory_strikes allowed={always=yes}all
 
 idea_political_sabotage_dr={picture=chi_war_of_resistance3 allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=-0.15 fascism_drift=0.2 stability_weekly=-0.01 war_support_weekly=-0.01}}
 
-idea_coal_agreement_dr={picture=NOR_printing_money allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1}
+    idea_coal_agreement_dr={picture=NOR_printing_money allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1}
 
     #add idea_
     connerians_influencing_us_dr={picture=generic_neutrality_drift_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={communism_drift=0.25}}
@@ -32,17 +32,34 @@ idea_coal_agreement_dr={picture=NOR_printing_money allowed={always=yes}allowed_c
     connerians_influencing_us_3_dr={picture=generic_neutrality_drift_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={democratic_drift=0.25}}
 
     connerians_influencing_us_4_dr={picture=generic_neutrality_drift_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={fascism_drift=0.25}}
-#
-    idea_warlordism_dr={picture=chi_warlord_integration allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={}}
 
-    idea_dead_man_of_europe_dr={picture=raj_marginalized_muslim_community_angry allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={war_support_factor=-0.25 conscription_factor=-0.15 consumer_goods_factor=0.15}}
+    idea_warlordism_dr={picture=chi_warlord_integration allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_attack_factor=-0.3 army_defence_factor=-0.3 mobilization_speed=-0.3 conscription_factor=-0.35 command_power_gain_mult=-0.7}set_rule={can_join_factions=no can_send_volunteers=no}}
 
-    idea_tense_political_situation_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.1 drift_defence_factor=-0.05 political_power_factor=-0.15}}
+idea_dead_man_of_europe_dr={picture=raj_marginalized_muslim_community_angry allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={war_support_factor=-0.25 conscription_factor=-0.15 consumer_goods_factor=0.15}}
 
-    idea_homeland_of_many_dr={picture=tur_sectarian_woes allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={resistance_activity=0.05 stability_factor=-0.15}}
+idea_tense_political_situation_dr={picture=tur_funkplan allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.1 drift_defence_factor=-0.05 political_power_factor=-0.15}}
 
-    idea_lion_of_africa_dr={picture=SWE_the_lion_of_the_north allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={war_support_factor=0.1 surrender_limit=0.1}}
+idea_homeland_of_many_dr={picture=tur_sectarian_woes allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={resistance_activity=0.05 stability_factor=-0.15}}
 
-    idea_jewish_settlement_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={weekly_manpower=150}}
+idea_lion_of_africa_dr={picture=SWE_the_lion_of_the_north allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={war_support_factor=0.1 surrender_limit=0.1}}
 
+#CHECK
+    idea_jewish_settlement_dr={picture=generic_morale_bonus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={weekly_manpower=150}}
+
+idea_italian_investors_dr={picture=ARG_public_works_investment allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=0.1 production_speed_buildings_factor=0.1}}
+
+idea_lion_of_africa_2_dr={picture=SWE_the_lion_of_the_north allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={war_support_factor=0.2 surrender_limit=0.15 army_core_defence_factor=0.1 army_core_attack_factor=0.1}}
+    
+idea_ethiopia_defense_dr={picture=ETH_army allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_defence_factor=0.05 dig_in_speed_factor=0.05}}
+
+idea_ethiopia_offense_dr={picture=ETH_army allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_attack_factor=0.05 army_speed_factor=0.05}}
+
+    idea_settle_italians_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={weekly_manpower=300 war_support_factor=-0.05}}
+
+    idea_amazonian_territory_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={min_export=0.5}set_rule={can_join_factions=no can_send_volunteers=no}}
+
+    idea_mexican_aid_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=0.05 army_attack_factor=0.05 army_defence_factor=0.05}}
+
+    idea_czech_markets_dr={allowed={always=yes}allowed_civil_war={always=yes is_subject_of=MEX}removal_cost=-1 modifier={cic_to_overlord_factor=0.75 extra_trade_to_overlord_factor=0.75}}
+    
 }}

@@ -11,6 +11,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			12854 1
+		}
 		owner = RAJ
 		add_core_of = RAJ
 		buildings = {

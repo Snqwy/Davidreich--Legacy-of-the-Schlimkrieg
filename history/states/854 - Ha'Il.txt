@@ -5,6 +5,12 @@ state={
 		1544 1631 2057 4440 4974 5027 7970 8101 10815 10901 
 	}
 	history = {
+		victory_points = {
+			2057 1 
+		}
+		victory_points = {
+			10815 1 
+		}
 		owner = SAU
 		add_core_of = SAU
 		add_core_of = JOR

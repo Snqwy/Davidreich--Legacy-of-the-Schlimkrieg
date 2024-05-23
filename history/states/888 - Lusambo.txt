@@ -6,6 +6,9 @@ state={
 
 	history = {
 		owner = COG
+		victory_points = {
+			2024 1 
+		}
 		buildings = {
 			infrastructure = 1
 

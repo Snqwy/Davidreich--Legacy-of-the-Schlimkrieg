@@ -5,11 +5,11 @@ characters={
 			civilian={
 				large = GFX_portrait_Thorvald_Stauning
 			}
-			country_leader = {
-				ideology = socialism
-				expire = "1965.1.1.1"
-				id = -1
-			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1965.1.1.1"
+			id = -1
 		}
 	}
 }

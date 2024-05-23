@@ -1,0 +1,1073 @@
+focus_tree={id=usa_focus default=no initial_show_position={focus=USA_goofy_ahh_politics_dr}country={factor=0 modifier={add=10 tag=USA}}continuous_focus_position={x=2900 y=1000}focus={id=USA_lend_lease_act_dr icon=GFX_focus_generic_treaty x=29 y=4 cost=10 search_filters={FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}available={date>1939.9.1 has_government=democratic OR={FRA={has_war=yes}IRE={has_war=yes}SAF={has_war=yes}AST={has_war=yes}}}available_if_capitulated=yes prerequisite={focus=USA_french_friendship_dr focus=USA_irish_friendship_dr focus=USA_south_african_friendship_dr focus=USA_australasian_friendship_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_lend_lease_act_dr}}focus={id=USA_better_supply_chains_dr icon=GFX_focus_SOV_the_road_of_life x=69 y=4 cost=6 search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_standardized_organization_dr}ai_will_do={factor=1}completion_reward={army_experience=15 add_tech_bonus={bonus=0.5 uses=1 category=motorized_equipment}add_tech_bonus={bonus=0.5 uses=1 category=logistics_tech}}}focus={id=USA_imperium_special_forces_dr icon=GFX_goal_generic_special_forces x=67 y=4 cost=6 search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_standardized_organization_dr}ai_will_do={factor=1}completion_reward={army_experience=15 if={limit={NOT={has_dlc="Arms Against Tyranny"}}add_tech_bonus={bonus=0.5 uses=2 category=cat_special_forces_generic}}else={add_tech_bonus={bonus=0.5 uses=2 category=special_forces_doctrine}}custom_effect_tooltip=dlc_tooltip_dr}}focus={id=USA_revolutionary_telecoms_dr icon=GFX_focus_SWE_radiotjanst x=60 y=5 cost=10 available_if_capitulated=yes prerequisite={focus=USA_cryptologic_bomb_dr}prerequisite={focus=USA_energizer_technology_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_revolutionary_telecoms_2_dr add_idea=idea_revolutionary_telecoms_dr}}}focus={id=USA_land_air_integration_dr icon=GFX_goal_poland_goal x=71 y=5 cost=7 available_if_capitulated=yes prerequisite={focus=USA_better_supply_chains_dr}prerequisite={focus=USA_cas_kills_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_land_air_integration_dr}}focus={id=USA_capital_ship_supremacy_dr icon=GFX_goal_generic_navy_battleship x=77 y=3 cost=8 search_filters={FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_reformed_naval_bureau_dr}mutually_exclusive={focus=USA_destroyer_supremacy_dr}ai_will_do={factor=1}completion_reward={navy_experience=25 add_tech_bonus={bonus=0.5 uses=2 category=bb_tech}add_doctrine_cost_reduction={cost_reduction=0.5 uses=2 category=cat_fleet_in_being}}}focus={id=USA_pacific_bases_dr icon=GFX_goal_generic_construct_naval_dockyard x=79 y=4 cost=7 available={controls_state=629 controls_state=631 controls_state=630 controls_state=727}available_if_capitulated=yes prerequisite={focus=USA_two_ocean_strategy_dr}ai_will_do={factor=1}completion_reward={629={add_building_construction={type=dockyard level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}631={add_building_construction={type=dockyard level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}630={add_building_construction={type=dockyard level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}727={add_building_construction={type=dockyard level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=USA_destroyer_supremacy_dr icon=GFX_focus_generic_destroyer x=75 y=3 cost=8 search_filters={FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_reformed_naval_bureau_dr}mutually_exclusive={focus=USA_capital_ship_supremacy_dr}ai_will_do={factor=1}completion_reward={navy_experience=25 add_tech_bonus={bonus=0.5 uses=2 category=dd_tech}add_doctrine_cost_reduction={cost_reduction=0.5 uses=2 category=cat_trade_interdiction}add_doctrine_cost_reduction={cost_reduction=0.5 uses=2 category=cat_base_strike}}}focus={id=USA_cas_kills_dr icon=GFX_goal_generic_CAS x=72 y=4 cost=6 search_filters={FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_aeronautical_innovations_dr}ai_will_do={factor=1}completion_reward={air_experience=15 add_tech_bonus={bonus=0.5 uses=2 category=cas_bomber}}}focus={id=USA_arsenal_of_democracy_dr icon=GFX_goal_generic_construct_mil_factory x=56 y=2 cost=12 search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_INDUSTRY}available={has_government=democratic has_country_flag=great_game_ended_flag_dr}available_if_capitulated=yes prerequisite={focus=USA_war_department_dr}ai_will_do={factor=1}completion_reward={army_experience=20 navy_experience=20 air_experience=20 random_owned_controlled_state={limit={is_core_of=USA free_building_slots={building=arms_factory size>1 include_locked=yes}NOT={is_core_of=MEX}}add_extra_state_shared_building_slots=2 add_building_construction={type=arms_factory level=2 instant_build=yes}}random_owned_controlled_state={limit={is_core_of=USA free_building_slots={building=arms_factory size>1 include_locked=yes}NOT={is_core_of=MEX}}add_extra_state_shared_building_slots=2 add_building_construction={type=arms_factory level=2 instant_build=yes}}random_owned_controlled_state={limit={is_core_of=USA free_building_slots={building=arms_factory size>1 include_locked=yes}NOT={is_core_of=MEX}}add_extra_state_shared_building_slots=2 add_building_construction={type=arms_factory level=2 instant_build=yes}}random_owned_controlled_state={limit={is_core_of=USA free_building_slots={building=dockyard size>1 include_locked=yes}NOT={is_core_of=MEX}}add_extra_state_shared_building_slots=2 add_building_construction={type=dockyard level=2 instant_build=yes}}random_owned_controlled_state={limit={is_core_of=USA free_building_slots={building=dockyard size>1 include_locked=yes}NOT={is_core_of=MEX}}add_extra_state_shared_building_slots=2 add_building_construction={type=dockyard level=2 instant_build=yes}}custom_effect_tooltip=arsenal_tooltip_dr}}focus={id=USA_standardized_organization_dr icon=GFX_goal_generic_small_arms x=68 y=3 cost=7 search_filters={FOCUS_FILTER_ARMY_XP}available_if_capitulated=yes prerequisite={focus=USA_good_ol_arty_dr focus=USA_armor_centric_warfare_dr}ai_will_do={factor=1}completion_reward={army_experience=35}}focus={id=USA_aeronautical_innovations_dr icon=GFX_goal_generic_air_production x=72 y=3 cost=7 search_filters={FOCUS_FILTER_AIR_XP}available_if_capitulated=yes prerequisite={focus=USA_carpet_bombing_dr focus=USA_air_support_dr}ai_will_do={factor=1}completion_reward={air_experience=35}}focus={id=USA_reformed_naval_bureau_dr icon=GFX_goal_generic_navy_doctrines_tactics x=76 y=2 cost=7 search_filters={FOCUS_FILTER_NAVY_XP}available_if_capitulated=yes prerequisite={focus=USA_imperium_navy_dr}ai_will_do={factor=1}completion_reward={navy_experience=35}}focus={id=USA_two_ocean_strategy_dr icon=GFX_focus_ARG_study_the_battle_of_the_river_plate x=79 y=3 cost=7 available={has_country_flag=great_game_ended_flag_dr}available_if_capitulated=yes prerequisite={focus=USA_reformed_naval_bureau_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_two_ocean_strategy_dr}}focus={id=USA_set_the_sun_dr icon=GFX_focus_attack_japan x=25 y=7 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=democratic country_exists=JAP NOT={has_wargoal_against=JAP JAP={has_government=democratic is_in_faction_with=USA is_subject_of=USA}}}available_if_capitulated=yes bypass={has_war_with=JAP}prerequisite={focus=USA_colins_triumph_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=topple_government target=JAP}}}
+
+	focus={id=USA_hawaiian_invasion_dr icon=GFX_goal_generic_major_war x=27 y=7 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={country_exists=HAW HAW={is_subject=no}}available_if_capitulated=yes prerequisite={focus=USA_colins_triumph_dr}ai_will_do={factor=1}completion_reward={if={limit={HAW={controls_state=629 controls_state=631 controls_state=630 controls_state=727}}annex_country={tag=HAW}}}}
+
+	focus={id=USA_sniper_monkeys_dr icon=GFX_goal_unknown x=63 y=5 cost=4 search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_mortar_monkeys_dr focus=USA_dartling_gunners_dr}ai_will_do={factor=1}completion_reward={army_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=recon_tech}}}
+
+	focus={id=USA_engineer_monkeys_dr icon=GFX_goal_unknown x=65 y=5 cost=4 search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_mortar_monkeys_dr focus=USA_dartling_gunners_dr}ai_will_do={factor=1}completion_reward={army_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=engineers_tech}}}
+
+	focus={id=USA_heli_pilots_dr icon=GFX_goal_unknown x=64 y=6 cost=4 search_filters={FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_sniper_monkeys_dr}prerequisite={focus=USA_engineer_monkeys_dr}ai_will_do={factor=1}completion_reward={air_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=jet_technology}}}
+
+	focus = {
+		id = USA_hire_jones_dr
+		icon = GFX_goal_unknown
+		x = 63
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_introduce_monkey_conscription_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = USA_hire_churchill_dr
+		icon = GFX_goal_unknown
+		x = 65
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_introduce_monkey_conscription_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus={id=USA_monkey_intelligence_bureau_dr icon=GFX_goal_unknown x=59 y=2 cost=5 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_the_role_of_monkeys_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_revolutionary_telecoms_2_dr}}
+
+	focus={id=USA_mortar_monkeys_dr icon=GFX_goal_unknown x=63 y=4 cost=4 search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_hire_jones_dr}ai_will_do={factor=1}completion_reward={army_experience=10 add_tech_bonus={bonus=0.5 uses=2 category=cat_anti_air}}}
+
+	#Focus for Every Man A Millionaire
+	focus = {
+		id = USA_every_man_a_millionaire_dr
+		icon = GFX_focus_mex_privatisation
+		x = 18
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_burger_healthcare_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_the_yankee_king_dr icon=GFX_focus_generic_monarchy_1 x=12 y=8 cost=6 search_filters={FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}available={has_government=democratic neutrality>.2}available_if_capitulated=yes prerequisite={focus=USA_solidifying_the_keeganocracy_dr}ai_will_do={factor=1}completion_reward={add_trait={character=USA_franklin_delano_roosevelt ideology=liberalism trait=trait_yankee_king_dr}add_political_power=20}}focus={id=USA_president_colin_dr icon=GFX_focus_generic_diplomatic_treaty x=8 y=8 cost=6 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}available={has_government=democratic neutrality<.2}available_if_capitulated=yes prerequisite={focus=USA_democratic_institutions_dr}ai_will_do={factor=1}completion_reward={add_trait={character=USA_franklin_delano_roosevelt ideology=liberalism trait=trait_president_dr}add_political_power=20}}
+
+	#Focus for Third Industrial Revolution
+	focus = {
+		id = USA_third_industrial_revolution_dr
+		icon = GFX_focus_generic_industry_3
+		x = 41
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_sea_to_shining_sea_dr 
+			focus = USA_the_modern_american_man_dr 
+			focus = USA_completion_of_autarky_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Banana Salvage
+	focus = {
+		id = USA_banana_salvage_dr
+		icon = GFX_goal_unknown
+		x = 53
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_ez_collect_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Marketplace
+	focus = {
+		id = USA_marketplace_dr
+		icon = GFX_goal_unknown
+		x = 53
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_banana_salvage_dr }
+		mutually_exclusive = { focus = USA_banana_plantation_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Central Market
+	focus = {
+		id = USA_central_market_dr
+		icon = GFX_goal_unknown
+		x = 53
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_marketplace_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus={id=USA_the_modern_american_man_dr icon=GFX_focus_usa_guarantee_the_american_dream x=41 y=6 cost=7 search_filters={FOCUS_FILTER_STABILITY}available_if_capitulated=yes prerequisite={focus=USA_rust_belt_model_dr}ai_will_do={factor=1}completion_reward={add_stability=.05}}
+	
+focus={id=USA_financial_relief_programs_dr icon=GFX_goal_generic_consumer_goods x=41 y=3 cost=7 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY}available_if_capitulated=yes prerequisite={focus=USA_tackle_economic_retardation_dr}ai_will_do={factor=1}completion_reward={add_political_power=25 swap_ideas={remove_idea=idea_great_davepression_2_dr add_idea=idea_great_davepression_3_dr}}}
+
+	#Focus for Western Prospecting
+	focus = {
+		id = USA_western_prospecting_dr
+		icon = GFX_goal_generic_construction2
+		x = 43
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_northeastern_steel_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_alleviating_the_dust_bowl_dr icon=GFX_focus_hol_abandon_the_gold_standard x=43 y=4 cost=7 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY}available_if_capitulated=yes prerequisite={focus=USA_western_prospecting_dr}ai_will_do={factor=1}completion_reward={add_political_power=25 remove_ideas=idea_dust_bowl_dr_dr add_timed_idea={idea=idea_dust_bowl_2_dr days=274}}}
+
+	#Focus for Completion Of Autarky
+	focus = {
+		id = USA_completion_of_autarky_dr
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		x = 43
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_ukraine_of_america_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sea To Shining Sea
+	focus = {
+		id = USA_sea_to_shining_sea_dr
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		x = 39
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_life_is_a_highway_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_american_research_cooperative_dr icon=GFX_goal_continuous_research x=46 y=3 cost=5 search_filters={FOCUS_FILTER_RESEARCH}available={is_in_faction=yes}available_if_capitulated=yes prerequisite={focus=USA_nerd_ahh_science_dr}ai_will_do={factor=1}completion_reward={add_to_tech_sharing_group=us_research}}focus={id=USA_assemble_the_nerd_council_dr icon=GFX_focus_research2 x=46 y=4 cost=6 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_american_research_cooperative_dr}ai_will_do={factor=1}completion_reward={add_research_slot=1}}
+
+	#Focus for Life Is A Highway
+	focus = {
+		id = USA_life_is_a_highway_dr
+		icon = GFX_USA_life_is_a_highway-160128
+		x = 39
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_nationwide_highways_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = USA_pave_new_roads_dr
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 39
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_canadian_deforestation_dr }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward={if={limit={any_core_state={infrastructure<2}}ROOT={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}}
+		#fix this code
+
+	#Focus for Nationwide Highways
+	focus = {
+		id = USA_nationwide_highways_dr
+		icon = GFX_USA_nationwide_highways-146272
+		x = 39
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_pave_new_roads_dr }
+		mutually_exclusive = { 
+			focus = USA_big_city_expansion_dr 
+		}
+		mutually_exclusive = { 
+			focus = USA_alleviating_the_dust_bowl_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_northeastern_steel_dr icon=GFX_focus_generic_steel x=43 y=2 cost=7 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=360 controls_state=358 controls_state=357}available_if_capitulated=yes prerequisite={focus=USA_northern_industry_dr}ai_will_do={factor=1}completion_reward={360={add_resource={type=steel amount=5}358={add_resource={type=steel amount=10}357={add_resource={type=steel amount=5}}}}}}focus={id=USA_tackle_economic_retardation_dr icon=GFX_focus_rom_parties_end x=41 y=2 cost=7 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY}available_if_capitulated=yes prerequisite={focus=USA_northern_industry_dr}ai_will_do={factor=1}completion_reward={add_political_power=25 swap_ideas={remove_idea=idea_great_davepression_dr add_idea=idea_great_davepression_2_dr}}}
+
+	#Focus for Rust Belt Model
+	focus = {
+		id = USA_rust_belt_model_dr
+		icon = GFX_goal_generic_production
+		x = 41
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_big_city_expansion_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Big City Expansion
+	focus = {
+		id = USA_big_city_expansion_dr
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 41
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_financial_relief_programs_dr }
+		mutually_exclusive = { focus = USA_nationwide_highways_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Worlds Greatest BTD6 Jew Maxer
+	focus = {
+		id = USA_worlds_greatest_btd6_jew_maxer_dr
+		icon = GFX_goal_unknown
+		x = 51
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_banana_central_dr
+			focus = USA_monkeynomics_dr 
+			focus = USA_monkey_wall_street_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Irish Friendship
+	focus = {
+		id = USA_irish_friendship_dr
+		icon = GFX_goal_generic_improve_relations
+		x = 32
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_meeting_in_cape_town_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Australasian Friendship
+	focus = {
+		id = USA_australasian_friendship_dr
+		icon = GFX_goal_generic_improve_relations
+		x = 36
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_meeting_in_cape_town_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Assisting Recolonization
+	focus = {
+		id = USA_assisting_recolonization_dr
+		icon = GFX_focus_eng_decolonization
+		x = 34
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_irish_friendship_dr 
+		}
+		prerequisite = { 
+			focus = USA_south_african_friendship_dr 
+		}
+		prerequisite = { 
+			focus = USA_australasian_friendship_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Align With The Entente
+	focus = {
+		id = USA_align_with_the_entente_dr
+		icon = GFX_goal_generic_alliance
+		x = 32
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_assisting_recolonization_dr 
+		}
+		prerequisite = { 
+			focus = USA_french_friendship_dr 
+		}
+		prerequisite = { 
+			focus = USA_lend_lease_act_dr 
+		}
+		mutually_exclusive = { focus = USA_a_new_entente_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A New Entente
+	focus = {
+		id = USA_a_new_entente_dr
+		icon = GFX_goal_generic_forceful_treaty
+		x = 36
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_assisting_recolonization_dr 
+		}
+		prerequisite = { 
+			focus = USA_french_friendship_dr 
+		}
+		prerequisite = { 
+			focus = USA_lend_lease_act_dr 
+		}
+		mutually_exclusive = { 
+			focus = USA_align_with_the_entente_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_question_of_stability_dr icon=GFX_goal_generic_neutrality_focus x=28 y=1 cost=2 search_filters={FOCUS_FILTER_STABILITY}available_if_capitulated=yes prerequisite={focus=USA_manifest_destiny_dr}ai_will_do={factor=1}completion_reward={add_stability=.05}}focus={id=USA_icelandic_friendship_dr icon=GFX_goal_generic_improve_relations x=30 y=2 cost=4 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=USA_securing_alliances_dr}ai_will_do={factor=1}completion_reward={add_opinion_modifier={target=USA modifier=iceland_good_modifier_dr}ICE={add_opinion_modifier={target=USA modifier=iceland_good_modifier_dr}}}}
+
+	#Focus for Meeting In Cape Town
+	focus = {
+		id = USA_meeting_in_cape_town_dr
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 34
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_securing_alliances_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_french_friendship_dr icon=GFX_goal_generic_improve_relations x=30 y=3 cost=4 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=USA_icelandic_friendship_dr}ai_will_do={factor=1}completion_reward={add_opinion_modifier={target=USA modifier=france_good_modifier_dr}FRA={add_opinion_modifier={target=USA modifier=france_good_modifier_dr}}}}focus={id=USA_south_african_friendship_dr icon=GFX_goal_generic_improve_relations x=34 y=3 cost=4 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=USA_meeting_in_cape_town_dr}ai_will_do={factor=1}completion_reward={add_opinion_modifier={target=USA modifier=south_africa_good_modifier_dr}SAF={add_opinion_modifier={target=USA modifier=south_africa_good_modifier_dr}}}}focus={id=USA_suspend_democracy_dr icon=GFX_focus_usa_voter_registration_act x=21 y=4 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=fascism}available_if_capitulated=yes prerequisite={focus=USA_martial_law_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=democratic popularity=-1}}}
+
+	#Focus for North American Imperium
+	focus = {
+		id = USA_north_american_imperium_dr
+		icon = GFX_focus_usa_union_representation_act
+		x = 21
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_handle_collaborators_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Formalize Pax Americana
+	focus = {
+		id = USA_formalize_pax_americana_dr
+		icon = GFX_goal_continuous_increase_nu
+		x = 18
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_make_mexico_pay_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Handle Collaborators
+	focus = {
+		id = USA_handle_collaborators_dr
+		icon = GFX_USA_handle_collaborators-159398
+		x = 21
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_war_on_cringe_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_securing_alliances_dr icon=GFX_goal_molotov_ribbentrop_pact x=32 y=1 cost=3 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=USA_manifest_destiny_dr}ai_will_do={factor=1}completion_reward={add_political_power=15}}
+
+	focus={id=USA_democratic_institutions_dr icon=GFX_USA_democratic_institutions-145977 x=8 y=7 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=USA_tax_reform_dr focus=USA_empower_the_irs_dr}mutually_exclusive={focus=USA_solidifying_the_keeganocracy_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_democratic_institutions_dr add_popularity={ideology=democratic popularity=.05}}}
+
+	focus={id=USA_solidifying_the_keeganocracy_dr icon=GFX_goal_unknown x=12 y=7 cost=5 search_filters={FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=USA_tax_reform_dr focus=USA_empower_the_irs_dr}mutually_exclusive={focus=USA_democratic_institutions_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_solidified_keeganocracy_dr add_popularity={ideology=neutrality popularity=.05}}}
+
+	#Focus for American Way To Socialism
+	focus = {
+		id = USA_american_way_to_socialism_dr
+		icon = GFX_focus_por_workers_of_iberia
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_deal_with_the_pigs_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_weaken_congress_dr icon=GFX_goal_continuous_restrict_freedom x=12 y=5 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=USA_the_emperors_reforms_dr}mutually_exclusive={focus=USA_strengthen_congress_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_weakened_congress_dr add_popularity={ideology=neutrality popularity=.05}}}
+
+	#Focus for Suck The Chinese Tit
+	focus = {
+		id = USA_suck_the_chinese_tit_dr
+		icon = GFX_focus_chi_one_china_policy
+		x = 18
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_we_will_build_a_great_wall_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_the_emperors_reforms_dr icon=GFX_focus_hol_the_foundations_of_defense x=10 y=4 cost=4 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=USA_uniting_the_nation_dr}ai_will_do={factor=1}completion_reward={add_political_power=20}}
+
+	focus={id=USA_strengthen_congress_dr icon=GFX_USA_strengthen_congress-144392 x=8 y=5 cost=5 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=USA_the_emperors_reforms_dr}mutually_exclusive={focus=USA_weaken_congress_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_strengthened_congress_dr add_popularity={ideology=democratic popularity=.05}}}
+
+	#Focus for The Western International
+	focus = {
+		id = USA_the_western_international_dr
+		icon = GFX_goal_anschluss
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_mr_ramsdell_whip_out_that_cock_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = USA_retake_the_west_dr
+		icon = GFX_goal_anti_comintern_pact
+		x = 24
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_westward_expansion_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Banana Research Facility
+	focus = {
+		id = USA_banana_research_facility_dr
+		icon = GFX_USA_banana_research_facility-159308
+		x = 49
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_banana_plantation_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Colin's Triumph
+	focus = {
+		id = USA_colins_triumph_dr
+		icon = GFX_goal_unknown
+		x = 25
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_great_plains_strategy_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Greater Production
+	focus = {
+		id = USA_greater_production_dr
+		icon = GFX_USA_greater_production-159306
+		x = 49
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_increased_production_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Banana Plantation
+	focus = {
+		id = USA_banana_plantation_dr
+		icon = GFX_USA_banana_plantation-159307
+		x = 49
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_greater_production_dr }
+		mutually_exclusive = { 
+			focus = USA_monkey_bank_dr 
+		}
+		mutually_exclusive = { 
+			focus = USA_marketplace_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus={id=USA_energizer_technology_dr icon=GFX_goal_unknown x=61 y=4 cost=5 available_if_capitulated=yes prerequisite={focus=USA_hire_brickell_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_military_energizers_dr}}
+
+	#Focus for Hire Brickell
+	focus = {
+		id = USA_hire_brickell_dr
+		icon = GFX_goal_unknown
+		x = 61
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_introduce_monkey_conscription_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Nerd Ahh Science
+	focus = {
+		id = USA_nerd_ahh_science_dr
+		icon = GFX_USA_nerd_ahh_science-160140
+		x = 46
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_invest_in_public_schooling_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Valuble Bananas
+	focus = {
+		id = USA_valuble_bananas_dr
+		icon = GFX_USA_valuble_bananas-159293
+		x = 51
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_long_life_bananas_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Long Life Bananas
+	focus = {
+		id = USA_long_life_bananas_dr
+		icon = GFX_USA_long_life_bananas-159292
+		x = 51
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_southern_banana_farms_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Monkey Bank
+	focus = {
+		id = USA_monkey_bank_dr
+		icon = GFX_USA_monkey_bank-159294
+		x = 51
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_valuble_bananas_dr }
+		mutually_exclusive = { focus = USA_banana_plantation_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for IMF Loan
+	focus = {
+		id = USA_imf_loan_dr
+		icon = GFX_USA_imf_loan-159296
+		x = 51
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_monkey_bank_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Monkey-Nomics
+	focus = {
+		id = USA_monkeynomics_dr
+		icon = GFX_USA_monkeynomics-159297
+		x = 51
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_imf_loan_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increased Production
+	focus = {
+		id = USA_increased_production_dr
+		icon = GFX_USA_increased_production-159305
+		x = 49
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_southern_banana_farms_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for EZ Collect
+	focus = {
+		id = USA_ez_collect_dr
+		icon = GFX_USA_ez_collect-159310
+		x = 53
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_southern_banana_farms_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_canadian_deforestation_dr icon=GFX_focus_CHL_expand_the_forestry x=39 y=2 cost=7 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=469 controls_state=467 controls_state=682 controls_state=862 controls_state=863 controls_state=860}available_if_capitulated=yes prerequisite={focus=USA_northern_industry_dr}ai_will_do={factor=1}completion_reward={469={add_extra_state_shared_building_slots=1}467={add_extra_state_shared_building_slots=1}682={add_extra_state_shared_building_slots=1}862={add_extra_state_shared_building_slots=1}863={add_extra_state_shared_building_slots=1}860={add_extra_state_shared_building_slots=1}}}focus={id=USA_northern_industry_dr icon=GFX_focus_generic_modernize_industry x=41 y=1 cost=3 search_filters={FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=USA_build_some_shit_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=1 category=industry}}}
+
+	focus={id=USA_southern_banana_farms_dr icon=GFX_goal_unknown x=51 y=1 cost=3 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=USA_build_some_shit_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=1 category=industry}}}
+	
+focus={id=USA_build_some_shit_dr icon=GFX_focus_generic_public_works x=46 y=0 cost=2 search_filters={FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}available={OR={has_completed_focus=USA_colin_doesnt_change_his_mind_dr has_completed_focus=USA_colin_changes_his_mind_dr}}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=1 category=construction_tech}}}
+
+	focus={id=USA_clan_war_dr icon=GFX_USA_clan_war_dr x=5 y=2 cost=4 search_filters={FOCUS_FILTER_POLITICAL}available={has_country_flag=clan_friend_flag_dr OR={has_government=democratic has_government=communism}}available_if_capitulated=yes prerequisite={focus=USA_the_clans_grasp_dr}mutually_exclusive={focus=USA_work_with_the_clan_dr}ai_will_do={factor=1}completion_reward={add_political_power=20}}
+
+focus={id=USA_work_with_the_clan_dr icon=GFX_USA_work_with_the_clan_dr x=1 y=2 cost=4 search_filters={FOCUS_FILTER_POLITICAL}available={has_country_flag=clan_enemy_flag_dr OR={has_government=neutrality has_government=fascism}}available_if_capitulated=yes prerequisite={focus=USA_the_clans_grasp_dr}mutually_exclusive={focus=USA_clan_war_dr}ai_will_do={factor=1}completion_reward={add_political_power=20}}
+
+	#Focus for Martial Law
+	focus = {
+		id = USA_martial_law_dr
+		icon = GFX_goal_demand_sudetenland
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_american_caesar_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Abolish Private Property
+	focus = {
+		id = USA_abolish_private_property_dr
+		icon = GFX_focus_eng_crush_the_dream
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_doin_communism_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Slavery Makes The World Go 'Round
+	focus = {
+		id = USA_slavery_makes_the_world_go_round_dr
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 1
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_repeal_the_13th_amendment_dr }
+	}
+
+	#Focus for Steal Clan Elixirs
+	focus = {
+		id = USA_steal_clan_elixirs_dr
+		icon = GFX_USA_steal_clan_elixirs-145381
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_clan_war_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Clan's Contribution
+	focus = {
+		id = USA_the_clans_contribution_dr
+		icon = GFX_USA_the_clans_contribution-145368
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_work_with_the_clan_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_the_clans_grasp_dr icon=GFX_focus_smiling_buddha x=3 y=1 cost=5 available={OR={has_completed_focus=USA_colin_doesnt_change_his_mind_dr has_completed_focus=USA_colin_changes_his_mind_dr}}available_if_capitulated=yes prerequisite={focus=USA_goofy_ahh_politics_dr}ai_will_do={factor=1}completion_reward={country_event=dr.79}}
+
+	#Focus for Clan Funding
+	focus = {
+		id = USA_clan_funding_dr
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 1
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_assist_the_clan_dr
+			focus = USA_the_clans_contribution_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus={id=USA_doin_communism_dr icon=GFX_USA_doin_communism-145380 x=15 y=2 cost=7 search_filters={FOCUS_FILTER_POLITICAL}bypass={has_government=communism}available_if_capitulated=yes prerequisite={focus=USA_colin_changes_his_mind_dr}mutually_exclusive={focus=USA_make_america_great_again_dr focus=USA_the_american_caesar_dr}ai_will_do={factor=1}completion_reward={set_politics={ruling_party=communism elections=yes}add_popularity={ideology=communism popularity=.1}}}
+
+	#Focus for Repeal The 13th Amendment
+	focus = {
+		id = USA_repeal_the_13th_amendment_dr
+		icon = GFX_goal_generic_forceful_treaty
+		x = 1
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_my_lawyer_has_advised_me_not_to_finish_this_joke_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Screw The Clan!
+	focus = {
+		id = USA_screw_the_clan_dr
+		icon = GFX_USA_screw_the_clan-145602
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_infiltrate_their_ranks_dr 
+			focus = USA_steal_clan_elixirs_dr
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus={id=USA_goofy_ahh_politics_dr icon=GFX_USA_goofy_ahh_politics-145599 x=14 y=0 cost=2 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={add_political_power=10}}
+
+	#Focus for African-American Support
+	focus = {
+		id = USA_africanamerican_support_dr
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_screw_the_clan_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Black Lives Matter
+	focus = {
+		id = USA_black_lives_matter_dr
+		icon = GFX_goal_generic_demand_territory
+		x = 5
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_africanamerican_support_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Assist The Clan
+	focus = {
+		id = USA_assist_the_clan_dr
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 0
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_work_with_the_clan_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Melting Pot Of Cultures
+	focus = {
+		id = USA_melting_pot_of_cultures_dr
+		icon = GFX_focus_generic_royal_wedding
+		x = 5
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_black_lives_matter_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Infiltrate Their Ranks
+	focus = {
+		id = USA_infiltrate_their_ranks_dr
+		icon = GFX_USA_infiltrate_their_ranks-150421
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_clan_war_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_the_serious_militard_bullshit_dr icon=GFX_goal_generic_army_doctrines x=65 y=0 cost=3 search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_AIR_XP}available={OR={has_completed_focus=USA_colin_doesnt_change_his_mind_dr has_completed_focus=USA_colin_doesnt_change_his_mind_dr}}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={army_experience=5 navy_experience=5 air_experience=5}}focus={id=USA_imperium_army_dr icon=GFX_goal_rhineland x=68 y=1 cost=3 search_filters={FOCUS_FILTER_ARMY_XP}available_if_capitulated=yes prerequisite={focus=USA_the_serious_militard_bullshit_dr}ai_will_do={factor=1}completion_reward={army_experience=10}}focus={id=USA_imperium_airforce_dr icon=GFX_goal_generic_build_airforce x=72 y=1 cost=3 search_filters={FOCUS_FILTER_AIR_XP}available_if_capitulated=yes prerequisite={focus=USA_the_serious_militard_bullshit_dr}ai_will_do={factor=1}completion_reward={air_experience=10}}focus={id=USA_imperium_navy_dr icon=GFX_goal_generic_navy_cruiser x=76 y=1 cost=3 search_filters={FOCUS_FILTER_NAVY_XP}available_if_capitulated=yes prerequisite={focus=USA_the_serious_militard_bullshit_dr}ai_will_do={factor=1}completion_reward={navy_experience=10}}focus={id=USA_manifest_destiny_dr icon=GFX_goal_generic_territory_or_war x=28 y=0 cost=3 available={OR={has_completed_focus=USA_colin_doesnt_change_his_mind_dr has_completed_focus=USA_colin_changes_his_mind_dr}}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={add_political_power=15}}
+
+	#Focus for Fuck it, We Ball
+	focus = {
+		id = USA_fuck_it_we_ball_dr
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 24
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_second_american_civil_war_dr }
+		mutually_exclusive = { focus = USA_war_what_is_it_good_for_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for We Will Build A Great Wall
+	focus = {
+		id = USA_we_will_build_a_great_wall_dr
+		icon = GFX_goal_generic_fortify_city
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_make_america_great_again_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_land_of_the_free_dr icon=GFX_goal_continuous_boost_freedom x=8 y=2 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=USA_colin_doesnt_change_his_mind_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_land_of_the_free_dr}}focus={id=USA_home_of_the_brave_dr icon=GFX_focus_eng_expose_the_belly_of_the_bear x=12 y=2 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=USA_colin_doesnt_change_his_mind_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_home_of_the_brave_dr}}
+
+	#Focus for War On Cringe
+	focus = {
+		id = USA_war_on_cringe_dr
+		icon = GFX_focus_generic_support_the_left_right
+		x = 21
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_suspend_democracy_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_tax_reform_dr icon=GFX_goal_generic_forceful_treaty x=8 y=6 cost=5 search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=USA_strengthen_congress_dr focus=USA_weaken_congress_dr}mutually_exclusive={focus=USA_empower_the_irs_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_tax_reform_dr add_popularity={ideology=democratic popularity=.05}}}focus={id=USA_empower_the_irs_dr icon=GFX_focus_eng_move_to_secure_the_dominions x=12 y=6 cost=5 search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=USA_strengthen_congress_dr focus=USA_weaken_congress_dr}mutually_exclusive={focus=USA_tax_reform_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_empowered_irs_dr add_popularity={ideology=neutrality popularity=.05}}}
+
+	focus={id=USA_the_american_caesar_dr icon=GFX_USA_the_american_caesar-146275 x=21 y=2 cost=7 search_filters={FOCUS_FILTER_POLITICAL}bypass={has_government=fascism}available_if_capitulated=yes prerequisite={focus=USA_colin_changes_his_mind_dr}mutually_exclusive={focus=USA_doin_communism_dr focus=USA_the_make_america_great_again_dr}ai_will_do={factor=1}completion_reward={set_politics={ruling_party=fascism elections=yes}add_popularity={ideology=fascism popularity=.1}}}
+
+	focus = {
+		id = USA_my_lawyer_has_advised_me_not_to_finish_this_joke_dr
+		icon = GFX_goal_generic_secret_weapon
+		x = 1
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_clan_funding_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_colin_changes_his_mind_dr icon=GFX_focus_generic_strike_at_democracy2 x=18 y=1 cost=7 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=USA_goofy_ahh_politics_dr}mutually_exclusive={focus=USA_colin_doesnt_change_his_mind_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=democratic popularity=-.1}custom_effect_tooltip=ger_althist_tooltip_dr}}focus={id=USA_colin_doesnt_change_his_mind_dr icon=GFX_goal_support_democracy x=10 y=1 cost=7 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=USA_goofy_ahh_politics_dr}mutually_exclusive={focus=USA_colin_changes_his_mind_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=democratic popularity=.1}custom_effect_tooltip=ger_hist_tooltip_dr}}
+
+	focus = {
+		id = USA_introduce_monkey_conscription_dr
+		icon = GFX_goal_unknown
+		x = 63
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_role_of_monkeys_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = USA_westward_expansion_dr
+		icon = GFX_goal_unknown
+		x = 24
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_manifest_destiny_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_second_american_civil_war_dr icon=GFX_goal_generic_attack_allies x=25 y=3 cost=0 available={always=no}available_if_capitulated=yes bypass={has_war_with=CSA}prerequisite={focus=USA_retake_the_west_dr}ai_will_do={factor=1}}
+
+	focus = {
+		id = USA_great_plains_strategy_dr
+		icon = GFX_goal_generic_defence
+		x = 25
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_war_what_is_it_good_for_dr
+			focus = USA_fuck_it_we_ball_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = USA_mr_ramsdell_whip_out_that_cock_dr
+		icon = GFX_goal_unknown
+		x = 15
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_american_way_to_socialism_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_make_america_great_again_dr icon=GFX_focus_usa_recruit_the_free_corps x=18 y=2 cost=7 search_filters={FOCUS_FILTER_POLITICAL}bypass={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=USA_colin_changes_his_mind_dr}mutually_exclusive={focus=USA_doin_communism_dr focus=USA_the_american_caesar_dr}ai_will_do={factor=1}completion_reward={set_politics={ruling_party=neutrality elections=yes}add_popularity={ideology=neutrality popularity=.1}}}focus={id=USA_destroyer_of_worlds_dr icon=GFX_focus_wonderweapons x=46 y=5 cost=10 search_filters={FOCUS_FILTER_RESEARCH}available={date>1942.1.1}available_if_capitulated=yes prerequisite={focus=USA_assemble_the_nerd_council_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=3 category=nuclear}}}
+
+	focus={id=USA_delete_women_dr icon=GFX_goal_unknown x=18 y=5 cost=8 search_filters={FOCUS_FILTER_MANPOWER}available_if_capitulated=yes prerequisite={focus=USA_suck_the_chinese_tit_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_restricted_womans_rights_dr}}
+
+focus={id=USA_anti_d_boat_cracking_dr icon=GFX_goal_generic_navy_anti_submarine x=77 y=4 cost=6 search_filters={FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_capital_ship_supremacy_dr}ai_will_do={factor=1}completion_reward={navy_experience=15 add_tech_bonus={bonus=0.5 uses=2 category=cl_tech}}}focus={id=USA_cryptologic_bomb_dr icon=GFX_focus_generic_cryptologic_bomb x=59 y=4 cost=7 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_5g_towers_that_give_babies_autism_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=encryption_tech}add_tech_bonus={bonus=0.5 uses=2 category=decryption_tech}}}focus={id=USA_5g_towers_that_give_babies_autism_dr icon=GFX_goal_generic_radar x=59 y=3 cost=5 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_monkey_intelligence_bureau_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=radar_tech}}}focus={id=USA_war_what_is_it_good_for_dr icon=GFX_goal_generic_consumer_goods x=26 y=4 cost=3 search_filters={FOCUS_FILTER_INDUSTRY}available={has_war_with=CSA}available_if_capitulated=yes bypass={NOT={country_exists=CSA}}prerequisite={focus=USA_second_american_civil_war_dr}mutually_exclusive={focus=USA_fuck_it_we_ball_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_war_what_is_it_good_for_dr}}focus={id=USA_never_another_panama_dr icon=GFX_focus_hol_daf x=73 y=5 cost=7 search_filters={FOCUS_FILTER_NAVY_XP}available_if_capitulated=yes prerequisite={focus=USA_cas_kills_dr}prerequisite={focus=USA_d_boat_emulation_dr focus=USA_anti_d_boat_cracking_dr}ai_will_do={factor=1}completion_reward={remove_ideas=idea_never_another_panama_dr}}
+
+	focus = {
+		id = USA_banana_central_dr
+		icon = GFX_USA_banana_central-159309
+		x = 49
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_banana_research_facility_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_uniting_the_nation_dr icon=GFX_focus_spr_torchbearers_of_tomorrow x=10 y=3 cost=8 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={has_government=democratic}available_if_capitulated=yes prerequisite={focus=USA_land_of_the_free_dr}prerequisite={focus=USA_home_of_the_brave_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_home_of_the_brave_dr add_idea=idea_land_of_the_free_home_of_the_brave_dr}remove_ideas=idea_land_of_the_free_dr}}focus={id=USA_deal_with_the_pigs_dr icon=GFX_goal_generic_war_with_comintern x=15 y=4 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=USA_abolish_private_property_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=democratic popularity=-.1}add_popularity={ideology=neutrality popularity=-.1}add_popularity={ideology=fascism popularity=-.1}}}
+
+	focus = {
+		id = USA_make_mexico_pay_dr
+		icon = GFX_focus_mex_jefe_maximo
+		x = 18
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_delete_women_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+focus={id=USA_quebecois_negotiations_dr icon=GFX_goal_tfv_can_compromise_with_quebec x=27 y=2 cost=10 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={has_stability>.59}available_if_capitulated=yes prerequisite={focus=USA_question_of_stability_dr}ai_will_do={factor=1}completion_reward={remove_ideas=idea_quebecois_resistance_dr QUE={remove_state_core=468 remove_state_core=862 remove_state_core=863 remove_state_core=860 remove_state_core=861 remove_state_core=466}}}
+
+	focus = {
+		id = USA_ukraine_of_america_dr
+		icon = GFX_USA_ukraine_of_america-151066
+		x = 43
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_alleviating_the_dust_bowl_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus={id=USA_invest_in_public_schooling_dr icon=GFX_focus_generic_concessions x=46 y=1 cost=5 search_filters={FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=USA_build_some_shit_dr}ai_will_do={factor=1}}
+
+	focus = {
+		id = USA_monkey_wall_street_dr
+		icon = GFX_goal_unknown
+		x = 53
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_central_market_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus={id=USA_the_role_of_monkeys_dr icon=GFX_goal_unknown x=61 y=1 cost=2 search_filters={FOCUS_FILTER_POLITICAL}available={has_completed_focus=USA_southern_banana_farms_dr}available_if_capitulated=yes prerequisite={focus=USA_the_serious_militard_bullshit_dr}ai_will_do={factor=1}completion_reward={add_political_power=15}}
+
+	focus={id=USA_dartling_gunners_dr icon=GFX_goal_unknown x=65 y=4 cost=4 search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_hire_churchill_dr}ai_will_do={factor=1}completion_reward={army_experience=15 add_tech_bonus={bonus=0.5 uses=2 category=cat_anti_tank}}}
+
+focus={id=USA_carpet_bombing_dr icon=GFX_goal_generic_air_bomber x=71 y=2 cost=6 search_filters={FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_imperium_airforce_dr}mutually_exclusive={focus=USA_air_support_dr}ai_will_do={factor=1}completion_reward={air_experience=15 add_tech_bonus={bonus=0.5 uses=2 category=tactical_bomber}add_doctrine_cost_reduction={cost_reduction=0.5 uses=2 category=cat_strategic_destruction}}}focus={id=USA_air_support_dr icon=GFX_goal_generic_air_fighter2 x=73 y=2 cost=6 search_filters={FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_imperium_airforce_dr}mutually_exclusive={focus=USA_carpet_bombing_dr}ai_will_do={factor=1}completion_reward={air_experience=15 add_tech_bonus={bonus=0.5 uses=2 category=light_fighter}add_doctrine_cost_reduction={cost_reduction=0.5 uses=2 category=cat_battlefield_support}add_doctrine_cost_reduction={cost_reduction=0.5 uses=2 category=cat_operational_integrity}}}focus={id=USA_war_department_dr icon=GFX_focus_usa_build_the_pentagon x=57 y=1 cost=3 search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_AIR_XP}available={threat>.19}available_if_capitulated=yes prerequisite={focus=USA_the_serious_militard_bullshit_dr}ai_will_do={factor=1}completion_reward={add_command_power=30}}focus={id=USA_desperate_defense_dr icon=GFX_goal_generic_fortify_city x=56 y=3 cost=5 search_filters={FOCUS_FILTER_WAR_SUPPORT}available={surrender_progress>.69}available_if_capitulated=yes prerequisite={focus=USA_arsenal_of_democracy_dr}ai_will_do={factor=1}completion_reward={add_stability=-.15 add_war_support=.1 add_ideas=idea_desperate_defense_dr}}focus={id=USA_d_boat_emulation_dr icon=GFX_goal_generic_navy_submarine x=75 y=4 cost=6 search_filters={FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_destroyer_supremacy_dr}ai_will_do={factor=1}completion_reward={navy_experience=15 add_tech_bonus={bonus=0.5 uses=2 category=ss_tech}}}focus={id=USA_good_ol_arty_dr icon=GFX_goal_generic_army_artillery2 x=67 y=2 cost=8 search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_imperium_army_dr}mutually_exclusive={focus=USA_armor_centric_warfare_dr}ai_will_do={factor=1}completion_reward={army_experience=25 add_tech_bonus={bonus=0.5 uses=2 category=artillery}add_doctrine_cost_reduction={cost_reduction=0.5 uses=2 category=cat_superior_firepower}add_doctrine_cost_reduction={cost_reduction=0.5 uses=2 category=cat_mass_assault}}}focus={id=USA_armor_centric_warfare_dr icon=GFX_goal_generic_build_tank x=69 y=2 cost=8 search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=USA_imperium_army_dr}mutually_exclusive={focus=USA_good_ol_arty_dr}ai_will_do={factor=1}completion_reward={army_experience=25 add_tech_bonus={bonus=0.5 uses=2 category=armor}add_doctrine_cost_reduction={cost_reduction=0.5 uses=2 category=cat_mobile_warfare}add_doctrine_cost_reduction={cost_reduction=0.5 uses=2 category=cat_grand_battle_plan}}}}

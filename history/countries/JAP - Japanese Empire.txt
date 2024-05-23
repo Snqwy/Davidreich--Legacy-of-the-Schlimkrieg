@@ -39,7 +39,7 @@ if = {
 		gwtank = 1
 		basic_light_tank = 1
 	}
-	set_oob = "JAP_1936"
+	#set_oob = "JAP_1936"
 }
 if = {
 	limit = {
@@ -49,7 +49,7 @@ if = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
 	}
-	set_oob = "JAP_1936_nsb"
+	#set_oob = "JAP_1936_nsb"
 }
 if = {
 	limit = {
@@ -80,7 +80,7 @@ if = {
 		cruiser_submarines = 1
 		basic_dp_light_battery = 1
 	}
-	set_naval_oob = "JAP_1936_naval"
+	#set_naval_oob = "JAP_1936_naval"
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -99,11 +99,11 @@ if = {
 		basic_carrier = 1
 		transport = 1
 	}
-	set_naval_oob = "JAP_1936_naval_legacy"
+	#set_naval_oob = "JAP_1936_naval_legacy"
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "JAP_1936_air_bba"
+		#set_air_oob = "JAP_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
 			engines_1 = 1
@@ -115,7 +115,7 @@ if = {
 			basic_small_airframe = 1
 		}
 	else = {
-		set_air_oob = "JAP_1936_air_legacy"
+		#set_air_oob = "JAP_1936_air_legacy"
 		set_technology = {
 			cv_early_fighter = 1
 			cv_CAS1 = 1

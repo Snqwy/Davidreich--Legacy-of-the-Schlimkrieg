@@ -5,6 +5,9 @@ state={
 
 	history={
 		owner = UZB
+		victory_points = {
+			1312 1
+		}
 		add_core_of = UZB
 		buildings = {
 			infrastructure = 1

@@ -1,1 +1,6 @@
-﻿capital=361 starting_train_buffer=5 set_research_slots=4 set_stability=.75 set_war_support=.1 give_guarantee=MEX give_guarantee=DOM give_guarantee=NIC give_guarantee=PRU give_guarantee=BRA give_guarantee=ARG give_guarantee=CSA recruit_character=USA_earl_browder recruit_character=USA_william_dudley_pelley recruit_character=USA_franklin_delano_roosevelt set_politics={ruling_party=democratic last_election="1930.11.9"election_frequency=48 elections_allowed=no}set_popularities={democratic=80 communism=5 fascism=5 neutrality=10}685={add_dynamic_modifier={modifier=state_modifier_canal_zone}}set_autonomy={target=MEX autonomous_state=autonomy_puppet}add_ideas={idea_the_great_game_dr idea_dust_bowl_dr idea_quebecois_resistance_dr}
+﻿capital=361 starting_train_buffer=5 set_research_slots=4 set_stability=.75 set_war_support=.1 
+
+give_guarantee=MEX give_guarantee=DOM give_guarantee=NIC give_guarantee=PRU give_guarantee=BRA give_guarantee=ARG give_guarantee=CSA give_guarantee=URG give_guarantee=GYA give_guarantee=IAS give_guarantee=GAR
+
+
+recruit_character=USA_earl_browder recruit_character=USA_william_dudley_pelley recruit_character=USA_franklin_delano_roosevelt set_politics={ruling_party=democratic last_election="1930.11.9"election_frequency=48 elections_allowed=no}set_popularities={democratic=80 communism=5 fascism=5 neutrality=10}685={add_dynamic_modifier={modifier=state_modifier_canal_zone}}set_autonomy={target=MEX autonomous_state=autonomy_puppet}add_ideas={idea_the_great_game_dr idea_dust_bowl_dr idea_quebecois_resistance_dr}

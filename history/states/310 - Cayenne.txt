@@ -7,9 +7,10 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = DOM
-		add_core_of = DOM
+		owner = GYA
 		add_core_of = GYA
+		add_claim_by = BRA
+		add_claim_by = FRA
 		buildings = {
 			infrastructure = 1
 			12885 = {

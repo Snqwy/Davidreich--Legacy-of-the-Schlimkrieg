@@ -1,7 +1,7 @@
 
 state={
 	id=210
-	name="STATE_210" # Nevel
+	name="STATE_210"
 	manpower = 830133
 	
 	state_category = rural
@@ -9,7 +9,7 @@ state={
 	history={
 		owner = SOV
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 3 
 		}
 		add_core_of = SOV
 		victory_points = {

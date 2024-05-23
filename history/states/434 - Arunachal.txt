@@ -10,6 +10,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			12322 1
+		}
 		owner = BHU
 		add_core_of = BHU
 		add_core_of = CHI

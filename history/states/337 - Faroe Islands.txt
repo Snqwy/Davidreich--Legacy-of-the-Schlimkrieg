@@ -5,6 +5,9 @@ state={
 
 	history={
 		owner = ICE
+		victory_points = { #Torshavn
+			13003 1
+		}
 		buildings = {
 			infrastructure = 2
 			13003 = {

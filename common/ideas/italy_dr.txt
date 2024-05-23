@@ -13,7 +13,7 @@ idea_italian_republicanism_dr={picture=ITA_italian_irredentism allowed={always=y
 
 idea_the_mafia_dr={picture=tur_kemalist_officers_disloyalty_effect allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.3 war_support_factor=-0.1 political_power_factor=-0.1}}
 
-idea_implement_socialism_dr={picture=FIN_socialist_welfare allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=0.25 consumer_goods_factor=-0.05 industrial_capacity_factory=0.05 communism_acceptance=50}}
+idea_implement_socialism_dr={picture=FIN_socialist_welfare allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=0.5 consumer_goods_factor=-0.1 industrial_capacity_factory=0.1 communism_acceptance=30}}
 
 idea_organized_unions_dr={picture=FIN_finnish_federation_of_trade_unions_light allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={communism_drift=0.05 industrial_capacity_factory=0.05}}
 
@@ -25,7 +25,7 @@ idea_the_mafia_3_dr={picture=tur_kemalist_officers_disloyalty_effect allowed={al
 
 idea_the_mafia_4_dr={picture=tur_kemalist_officers_disloyalty_effect allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={stability_factor=-0.2 war_support_factor=-0.15 political_power_factor=-0.15 neutrality_drift=0.2}}
 
-idea_criminal_hierachy_dr={picture=tur_coordinated_balkan_armed_forces allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=-0.5 party_popularity_stability_factor=0.15}}
+idea_criminal_hierachy_dr={picture=tur_coordinated_balkan_armed_forces allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_cost=-1.0 party_popularity_stability_factor=0.15}}
 
 idea_corporatist_collectives_dr={picture=generic_fascist_workers allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={industrial_capacity_factory=0.05 industry_repair_factor=0.05}}
 
@@ -60,5 +60,8 @@ idea_incompetent_military_5_dr={picture=ITA_regia_marina_3 allowed={always=yes}a
 idea_five_year_plan_dr={picture=SOV_third_five_year_plan_civilian allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=-0.05 production_speed_buildings_factor=0.1 political_power_cost=0.50}} 
 
 idea_mare_nostrvm_dr={picture=liberty_ships_focus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={experience_gain_navy_factor=0.15 industrial_capacity_dockyard=0.15}} 
+
+#CHECK
+    idea_breaking_through_the_lines_dr={picture=generic_artillery_regiments allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_artillery_attack_factor=0.05 breakthrough_factor=0.1}}
 
 }}

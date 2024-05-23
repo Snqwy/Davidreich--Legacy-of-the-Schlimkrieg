@@ -1,0 +1,17 @@
+state={
+	id=976
+	name="STATE_976"
+	provinces={
+		2198 5216 8185 8254 
+	}
+	history={
+		owner = IAS
+		add_core_of = IAS
+		add_core_of = BRA
+	}
+	manpower=13541
+	impassable = yes
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=wasteland
+}

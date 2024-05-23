@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = ARG
+		owner = PRU
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -20,7 +20,7 @@ state={
 	}
 
 	provinces={
-		2136 2224 8195 8216 8253 11001 12928 12978 
+		8195 8216 13308 13310
 	}
 
 	local_supplies=0.0 

@@ -1,0 +1,18 @@
+state={
+	id=980
+	name="STATE_980"
+	provinces={
+		5008 13277 13338 
+	}
+	history={
+		owner = GYA
+		add_core_of = GYA 
+		add_core_of = IAS
+		add_core_of = BRA
+	}
+	manpower=12300
+	impassable = yes
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=wasteland
+}

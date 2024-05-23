@@ -5,9 +5,13 @@ state={
 		1356 4419 4769 7893 12223 13160 
 	}
 	history = {
+		victory_points = {
+			1356 1 
+		}
 		owner = USA 
 		add_core_of = USA
 		add_core_of = CAN
+		add_core_of = QUE
 	}
 	manpower=70000
 	state_category = pastoral

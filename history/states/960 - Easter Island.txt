@@ -1,0 +1,31 @@
+state = {
+	id = 960
+	name = "STATE_960"
+	manpower = 6600
+	state_category = small_island
+	
+	history = {
+
+		owner = AST
+		add_core_of = AST
+		add_core_of = PRU
+		add_claim_by = ARG
+
+		buildings = {
+			infrastructure = 1
+			13294 = {
+				naval_base = 1
+			}
+		}
+
+		victory_points = {
+			13294 1
+		}
+	}
+
+	provinces = {
+		13294
+	}
+
+	local_supplies = 0.0 
+}

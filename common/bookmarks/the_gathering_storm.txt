@@ -162,6 +162,14 @@ bookmarks = {
 			minor = yes
 			history = ""
 			ideology = neutrality
+			ideas = {
+				idea_lion_of_africa_dr
+			}
+			focuses = {
+				ETH_aksums_legacy_dr
+				ETH_the_lion_of_africa_dr
+				ETH_africa_united_dr
+			}
 		}
 		"BAY"={
 			minor = yes

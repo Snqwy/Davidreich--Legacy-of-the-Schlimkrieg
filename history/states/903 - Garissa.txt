@@ -10,7 +10,9 @@ state={
 			infrastructure = 1
 
 		}
-		
+		victory_points = {
+			10761 1 
+		}
 		add_core_of = ETH
 		add_core_of = SOM
 		add_core_of = TZN

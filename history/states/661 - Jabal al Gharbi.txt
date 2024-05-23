@@ -6,6 +6,9 @@ state={
 	state_category = wasteland
 	
 	history={
+		victory_points = {
+			11940 1 
+		}
 		owner = ITA
 		buildings = {
 			infrastructure = 1

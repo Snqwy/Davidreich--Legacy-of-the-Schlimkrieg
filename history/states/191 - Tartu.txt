@@ -10,10 +10,10 @@ state={
 			9221 1 
 		}
 		victory_points = {
-			592 1 #Voru
+			592 1 
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 3 
 
 		}
 		add_core_of = FIN

@@ -1,0 +1,35 @@
+state = {
+	id = 965
+	name = "STATE_965"
+	manpower = 80765
+	
+	state_category = pastoral
+	
+	resources = {
+		oil = 1
+	}
+
+	history = {
+
+		owner = ARG
+		add_core_of = ARG
+
+		buildings = {
+			infrastructure = 0
+			13300 = {
+				naval_base = 1
+			}
+		}
+
+		victory_points = {
+			13300 1 
+		}
+		
+	}
+
+	provinces = {
+		5209 11009 13299 13300
+	}
+
+	local_supplies = 0.0 
+}

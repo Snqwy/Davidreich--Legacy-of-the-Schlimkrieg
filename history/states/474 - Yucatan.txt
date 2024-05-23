@@ -20,15 +20,15 @@ state={
 		}
 		add_core_of = MEX
 		add_claim_by = NIC
-		#victory_points = {
-		#	12715 3
-		#}
+		victory_points = {
+			12715 3
+		}
 		victory_points = {
 			4904 1
 		}
-		#victory_points = {
-		#	4965 5
-		#}
+		victory_points = {
+			4965 5
+		}
 	}
 
 	provinces={

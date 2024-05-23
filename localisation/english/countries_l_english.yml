@@ -495,9 +495,9 @@
  CUB:0 "Cuba"
  CUB_DEF:0 "Cuba"
  CUB_ADJ:0 "Cuban"
- COL:0 "Colombia"
- COL_DEF:0 "Colombia"
- COL_ADJ:0 "Colombian"
+ COL:0 "Bolivaria"
+ COL_DEF:0 "Bolivaria"
+ COL_ADJ:0 "Bolivarian"
  GYA:0 "Guyana"
  GYA_DEF:0 "Guyana"
  GYA_ADJ:0 "Guyanese"
@@ -505,3 +505,25 @@
  AOI:0 "Italian East Africa"
  AOI_DEF:0 "Italian East Africa"
  AOI_ADJ:0 "Italian East African"
+
+ GAR:0 "Bahia"
+ GAR_DEF:0 "Bahia"
+ GAR_ADJ:0 "Bahian"
+
+ INU:0 "Inuit Confederation"
+ INU_DEF:0 "the Inuit Confederation"
+ INU_ADJ:0 "Inuit"
+
+ QUE:0 "Quebec"
+ QUE_DEF:0 "Quebec"
+ QUE_ADJ:0 "Quebecois"
+
+ IAS:0 "Amazonian Territory"
+ IAS_DEF:0 "Amazonian Territory"
+ IAS_ADJ:0 "Amazonian Territory"
+ IAS_communism:0 "Amazonian Free Territory"
+ IAS_communism_DEF:0 "the Amazonian Free Territory"
+
+ URG:0 "Urgay"
+ URG_DEF:0 "Urgay"
+ URG_ADJ:0 "Urgayan"

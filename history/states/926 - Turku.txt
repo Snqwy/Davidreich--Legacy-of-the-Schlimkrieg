@@ -21,10 +21,6 @@ state = {
 		victory_points = { #Rauma
 			169 1 
 		}
-
-		victory_points = {
-			3083 1 
-		}
 		
 		buildings = {
 			infrastructure = 2 #TODO_Manu: Was 3

@@ -58,6 +58,7 @@ add_ideas = {
 	idea_history_of_humiliation_dr
 	idea_power_of_the_church_dr
 	idea_mexican_cartel_dr
+	idea_economic_stagnation_dr
 	idea_inadequate_army_dr
 }
 

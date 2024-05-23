@@ -6,6 +6,9 @@ state={
 	state_category = pastoral
 	history={
 		owner = AUS
+		victory_points = { 
+			6680 1
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

@@ -1162,23 +1162,10 @@ join_allies_effect = {
 	}
 }
 
-#Should remove any and all fascist foreign influence, to be updated
 remove_fascist_spirits_effect = {
 	if = {
 		limit = { has_idea = fascist_influence }
 		remove_ideas = fascist_influence
-	}
-	if = {
-		limit = { has_idea = american_influence_drift_fascism }
-		remove_ideas = american_influence_drift_fascism
-	}
-	if = {
-		limit = { has_idea = GER_align_hungary }
-		remove_ideas = GER_align_hungary
-	}
-	if = {
-		limit = { has_idea = GER_align_romania }
-		remove_ideas = GER_align_romania
 	}
 }
 

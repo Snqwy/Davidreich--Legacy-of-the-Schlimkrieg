@@ -11,7 +11,7 @@ state={
 		add_core_of = RAJ
 		add_claim_by = SPR
 		victory_points = {
-			1273 1 
+			1273 3 
 		}
 		buildings = {
 			infrastructure = 3 #was: 5

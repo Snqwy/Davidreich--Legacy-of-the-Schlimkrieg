@@ -11,6 +11,7 @@ state={
 
 		}
 		add_core_of = FER
+		add_claim_by = MAN
 
 	}
 

@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = PRU
+		victory_points ={13289 2}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -18,7 +19,7 @@ state={
 	}
 
 	provinces={
-		8149 10942 
+		8149 10942 13289 13290
 	}
 
 	local_supplies=6.0 

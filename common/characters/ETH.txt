@@ -1325,9 +1325,7 @@ characters = {
 
 	ETH_domenico_mondelli  = {
 		name = ETH_domenico_mondelli
-		allowed_civil_war = {
-			has_government = fascism
-		}
+
 		portraits = {
 			army = {
 				small = GFX_portrait_ETH_domenico_mondelli_small
@@ -1353,6 +1351,7 @@ characters = {
 		}
 	}
 
+#fix this
 	ETH_random_sud_advisor = {
 		advisor = {
 			slot = political_advisor
@@ -1375,6 +1374,7 @@ characters = {
 		}
 	}
 
+#fix this
 	ETH_random_som_advisor = {
 		advisor = {
 			slot = political_advisor
@@ -1759,7 +1759,6 @@ characters = {
 		}
 	}
 	
-	
 	ETH_bedjironde_tekle_hawariate={
 		advisor={
 			slot = political_advisor
@@ -1767,6 +1766,7 @@ characters = {
 			allowed  = {
 					original_tag  = ETH
 				}
+			available={NOT={has_government=communism}}
 				traits  = {
 					prince_of_terror 
 				}
@@ -1779,6 +1779,7 @@ characters = {
 		}
 	}
 
+#fix this
 	ETH_random_leader_1 = {
 		advisor = {
 			slot = political_advisor
@@ -1801,6 +1802,7 @@ characters = {
 		}
 	}
 
+#fix this
 	ETH_random_leader_2 = {
 		advisor = {
 			slot = political_advisor
@@ -1823,6 +1825,7 @@ characters = {
 		}		
 	}
 
+#fix this
 	ETH_random_leader_3 = {
 		advisor = {
 			slot = political_advisor
@@ -1846,6 +1849,7 @@ characters = {
 		gender = female 
 	}
 
+#fix this
 	ETH_random_leader_4 = {
 		advisor = {
 			slot = political_advisor
@@ -1869,6 +1873,7 @@ characters = {
 		
 	}
 
+#fix this
 	ETH_random_leader_5 = {
 		advisor = {
 			slot = political_advisor
@@ -1892,6 +1897,7 @@ characters = {
 		gender = female 
 	}
 
+#fix this
 	ETH_random_leader_6 = {
 		advisor = {
 			slot = political_advisor
@@ -1906,7 +1912,6 @@ characters = {
 				patriotic_socialist
 			}
 		}
-		#name=ETH_random_leader_2
 		portraits={
 			army={
 				small="GFX_portrait_ETH_generic_female_1_small"
@@ -1922,14 +1927,11 @@ characters = {
 			allowed = {
 				original_tag = ETH
 			}
-			visible = {
-				has_character_flag = ETH_visible_advisor_flag			
-			}
+			available={NOT={has_government=fascism}}
 			traits = {
 				rebellious_educator
 			}
 		}
-		#name=ETH_random_leader_2
 		portraits={
 			civilian={
 				small="GFX_portrait_ETH_senedu_gebru_small"

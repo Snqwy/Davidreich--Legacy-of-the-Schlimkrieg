@@ -7,6 +7,9 @@ state={
 	state_category = rural
 
 	history={
+		victory_points = {
+			12080 1
+		}
 		owner = RAJ
 		add_core_of = RAJ
 		buildings = {

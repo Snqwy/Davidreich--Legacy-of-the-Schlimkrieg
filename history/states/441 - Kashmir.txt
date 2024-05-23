@@ -7,6 +7,9 @@ state={
 	state_category = rural
 
 	history={
+		victory_points = {
+			8005 1
+		}
 		owner = RAJ
 		buildings = {
 			infrastructure = 1

@@ -44,7 +44,7 @@ autonomy_state = {
 					original_tag = POL
 					original_tag = LIT
 					original_tag = LAT
-					original_tag = EST
+					#original_tag = EST
 				}
 				has_dlc = "No Step Back"
 			}

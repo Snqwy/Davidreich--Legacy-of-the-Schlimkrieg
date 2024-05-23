@@ -11,11 +11,16 @@ state={
 	}
 
 	history={
-		owner = ARG
+		owner = PRU
+		victory_points = {
+			2195 1 
+		}
 		buildings = {
 			infrastructure = 1
 		}
+		add_core_of = URG
 		add_core_of = ARG
+		
 	}
 	
 	provinces={

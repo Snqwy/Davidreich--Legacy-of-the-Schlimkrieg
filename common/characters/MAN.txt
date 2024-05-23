@@ -3,18 +3,12 @@ characters={
 		name=MAN_aisin_gioro_puyi
 		portraits={
 			civilian={
-				large=GFX_portrait_MAN_aisin_gioro_puyi
+				large=GFX_portrait_will_fascist
 			}
 		}
 		country_leader={
 			ideology=rexism
-			traits={ warrior_code }
-			expire="1960.1.1.1"
-			id=-1
-		}
-		country_leader={
-			ideology=despotism
-			traits={ warrior_code }
+			desc="leader_desc_will"
 			expire="1960.1.1.1"
 			id=-1
 		}
@@ -383,9 +377,6 @@ characters={
 			idea_token = MAN_songgotu_zhanshan
 			allowed = {
 				original_tag = MAN
-			}
-			available = {
-				has_completed_focus = MAN_invite_japanese_investors
 			}
 			cost = 150
 			traits = { economist }

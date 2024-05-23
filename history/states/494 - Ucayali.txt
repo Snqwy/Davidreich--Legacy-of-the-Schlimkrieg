@@ -10,16 +10,23 @@ state={
 	history={
 		owner = PRU
 		add_core_of = PRU
+		add_claim_by = BRA
 		victory_points={
 			5166 15 
 		} 
+		victory_points = {
+			8191 1
+		}
+		victory_points = {
+			2226 2
+		}
 		buildings = {
 			infrastructure = 2
 		}
 	}
 
 	provinces={
-		2212 2226 5166 8160 8191 10940 
+		2212 2226 5166 8160 8191 10940 13316
 	}
 
 	local_supplies=0.0 

@@ -15,26 +15,8 @@ characters = {
 					original_tag = SWE
 				}
 			}
-			visible = { 
-				OR = { 
-					has_country_flag = IA_anarchists_recruited_flag 
-					has_country_flag =  IA_emma_goldman_recruited_flag
-				}
-			}
 			traits  = {
 				international_anarchist 
-			}
-			on_add = {
-				owner = {
-					IF = {
-						limit = {
-							NOT = { original_tag = SWE }
-							has_power_balance = {
-								id = ETH_centralization_balance
-							}
-						}
-					}				
-				}
 			}
 		}
 	}

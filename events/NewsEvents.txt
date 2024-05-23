@@ -4996,6 +4996,7 @@ news_event = {
 	title = news.155.t
 	desc = news.155.d
 	picture = GFX_news_event_german_soldiers
+	is_triggered_only=yes
 }
 
 # Komet Sighted

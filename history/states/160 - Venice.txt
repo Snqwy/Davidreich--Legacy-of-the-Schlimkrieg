@@ -2,8 +2,8 @@ state={
 	id=160
 	name="STATE_160"
 	resources={
-		steel=20 # was: 32.000
-		aluminium=11 # was: 18.000
+		steel=20 
+		aluminium=11 
 	}
 	
 	state_category = large_city
@@ -13,28 +13,23 @@ state={
 		victory_points = {
 			11584 10 
 		}
+		victory_points = { #Padova
+			3604 3 
+		}
+		victory_points = { #Verona
+			603 1
+		}
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 3
 			arms_factory = 2
 			industrial_complex = 4
 			dockyard = 1
 			air_base = 3
 			11584 = {
 				naval_base = 6
-
 			}
-
 		}
 		add_core_of = ITA
-		1939.1.1 = {
-			buildings = {
-				dockyard = 2
-				industrial_complex = 5
-
-			}
-
-		}
-
 	}
 
 	provinces={
