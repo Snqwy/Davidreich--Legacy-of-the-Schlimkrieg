@@ -8,7 +8,54 @@ characters={
 		}
 		country_leader={
 			ideology=conservatism
-			traits={trait_submissive_and_breedable_dr trait_falso_gringo_dr}
+			traits={trait_submissive_and_breedable_dr trait_falso_gringo_dr trait_algebra_flashbacks_dr}
+			desc = leader_desc_eugene
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	eugene_fascist_character_dr={
+		name=SAF_j_b_m_hertzog
+		portraits={
+			civilian={ #fix portrait
+				large="GFX_portrait_eugene_democratic"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={trait_submissive_and_breedable_dr trait_falso_gringo_dr trait_algebra_flashbacks_dr}
+			desc = leader_desc_eugene
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	eugene_commie_character_dr={
+		name=SAF_j_b_m_hertzog
+		portraits={
+			civilian={ #fix portrait
+				large="GFX_portrait_eugene_democratic"
+			}
+		}
+		country_leader={
+			ideology=utopianism
+			traits={trait_submissive_and_breedable_dr trait_falso_gringo_dr trait_algebra_flashbacks_dr}
+			desc = leader_desc_eugene
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	eugene_anarchy_character_dr={
+		name=SAF_j_b_m_hertzog
+		portraits={
+			civilian={ #fix portrait
+				large="GFX_portrait_eugene_democratic"
+			}
+		}
+		country_leader={
+			ideology=anarchism
+			traits={trait_submissive_and_breedable_dr trait_falso_gringo_dr trait_algebra_flashbacks_dr}
 			desc = leader_desc_eugene
 			expire="1965.1.1.1"
 			id=-1

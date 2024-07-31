@@ -201,6 +201,18 @@ connerian_balance_category_dr = {
 	}
 }
 
+ITA_colonial_integration_category_dr = {
+
+	allowed = {
+		original_tag = ITA
+	}
+
+	visible = {
+		has_completed_focus=ITA_colonial_integration_dr
+		NOT={has_government=communism}
+	}
+}
+
 france_spain_decision_category_dr = {
 
 	allowed = {

@@ -1,0 +1,1 @@
+﻿capital=613 set_cosmetic_tag=PRC_reichskommissariat_dr create_country_leader={name="Hans von Seeckt" picture=GFX_idea_europe_generic_1 expire="1965.1.1" ideology=nazism}

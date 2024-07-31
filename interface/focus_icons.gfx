@@ -28,8 +28,6 @@ SpriteType={name="GFX_FRA_the_first_video_game_dr"texturefile="gfx/focus_icons/G
 
 SpriteType={name="GFX_FRA_tonks_dr"texturefile="gfx/focus_icons/GFX_FRA_the_first_video_game_dr.dds"}
 
-SpriteType={name="GFX_FRA_wedge_dr"texturefile="gfx/focus_icons/GFX_FRA_wedge_dr.dds"}
-
 SpriteType={name="GFX_JAP_can_we_get_much_higher_dr"texturefile="gfx/focus_icons/GFX_JAP_can_we_get_much_higher_dr.dds"}
 
 SpriteType={name="GFX_JAP_dillons_submission_dr"texturefile="gfx/focus_icons/GFX_JAP_dillons_submission_dr.dds"}
@@ -67,5 +65,47 @@ SpriteType={name="GFX_USA_the_clans_contribution_dr"texturefile="gfx/focus_icons
 SpriteType={name="GFX_USA_valuable_bananas_dr"texturefile="gfx/focus_icons/GFX_USA_valuable_bananas_dr.dds"}
 
 SpriteType={name="GFX_USA_work_with_the_clan_dr"texturefile="gfx/focus_icons/GFX_USA_work_with_the_clan_dr.dds"}
+
+SpriteType={name="GFX_AST_the_empire_strikes_back_dr"texturefile="gfx/focus_icons/GFX_AST_the_empire_strikes_back_dr.dds"}
+
+SpriteType={name="GFX_AST_the_lucrative_tea_industry_dr"texturefile="gfx/focus_icons/GFX_AST_the_lucrative_tea_industry_dr.dds"}
+
+SpriteType={name="GFX_SAF_a_changed_race_dr"texturefile="gfx/focus_icons/GFX_SAF_a_changed_race_dr.dds"}
+
+SpriteType={name="GFX_SAF_join_the_davidians_dr"texturefile="gfx/focus_icons/GFX_SAF_join_the_davidians_dr.dds"}
+
+SpriteType={name="GFX_SAF_power_breeds_parasites_dr"texturefile="gfx/focus_icons/GFX_SAF_power_breeds_parasites_dr.dds"}
+
+SpriteType={name="GFX_SAF_the_devils_lettuce_dr"texturefile="gfx/focus_icons/GFX_SAF_the_devils_lettuce_dr.dds"}
+
+SpriteType={name="GFX_USA_banana_central_dr"texturefile="gfx/focus_icons/GFX_USA_banana_central_dr.dds"}
+
+SpriteType={name="GFX_USA_banana_plantation_dr"texturefile="gfx/focus_icons/GFX_USA_banana_plantation_dr.dds"}
+
+SpriteType={name="GFX_USA_banana_research_facility_dr"texturefile="gfx/focus_icons/GFX_USA_banana_research_facility_dr.dds"}
+
+SpriteType={name="GFX_USA_burger_healthcare_dr"texturefile="gfx/focus_icons/GFX_USA_burger_healthcare_dr.dds"}
+
+SpriteType={name="GFX_USA_doin_communism_dr"texturefile="gfx/focus_icons/GFX_USA_doin_communism_dr.dds"}
+
+SpriteType={name="GFX_USA_goofy_ahh_politics_dr"texturefile="gfx/focus_icons/GFX_USA_goofy_ahh_politics_dr.dds"}
+
+SpriteType={name="GFX_USA_ez_collect_dr"texturefile="gfx/focus_icons/GFX_USA_ez_collect_dr.dds"}
+
+SpriteType={name="GFX_USA_greater_production_dr"texturefile="gfx/focus_icons/GFX_USA_greater_production_dr.dds"}
+
+SpriteType={name="GFX_USA_imf_loan_dr"texturefile="gfx/focus_icons/GFX_USA_imf_loan_dr.dds"}
+
+SpriteType={name="GFX_USA_increased_production_dr"texturefile="gfx/focus_icons/GFX_USA_increased_production_dr.dds"}
+
+SpriteType={name="GFX_USA_infiltrate_their_ranks_dr"texturefile="gfx/focus_icons/GFX_USA_infiltrate_their_ranks_dr.dds"}
+
+SpriteType={name="GFX_USA_life_is_a_highway_dr"texturefile="gfx/focus_icons/GFX_USA_life_is_a_highway_dr.dds"}
+
+SpriteType={name="GFX_USA_long_life_bananas_dr"texturefile="gfx/focus_icons/GFX_USA_long_life_bananas_dr.dds"}
+
+SpriteType={name="GFX_USA_monkey_bank_dr"texturefile="gfx/focus_icons/GFX_USA_monkey_bank_dr.dds"}
+
+SpriteType={name="GFX_USA_monkeynomics_dr"texturefile="gfx/focus_icons/GFX_USA_monkeynomics_dr.dds"}
 
 }

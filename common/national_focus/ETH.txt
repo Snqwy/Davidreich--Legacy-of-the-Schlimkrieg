@@ -1,98 +1,19 @@
 focus_tree={id=ethiopia_tree country={factor=0 modifier={add=10 tag=ETH}}
 
-	focus={id=ETH_emperor_of_the_black_continent_dr icon=GFX_ETH_emperor_of_the_black_continent-146258 x=15 y=4 cost=6 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}available={has_government=neutrality is_subject=no any_allied_country={controls_state=842 controls_state=271 controls_state=907 controls_state=547}}available_if_capitulated=yes prerequisite={focus=ETH_invade_east_africa_dr}ai_will_do={factor=1}completion_reward={country_event=dr.80}}
+	focus={id=ETH_emperor_of_the_black_continent_dr icon=GFX_focus_ETH_rally_around_the_emperor x=15 y=4 cost=6 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}available={has_government=neutrality is_subject=no any_allied_country={controls_state=842 controls_state=271 controls_state=907 controls_state=547}}available_if_capitulated=yes prerequisite={focus=ETH_invade_east_africa_dr}ai_will_do={factor=1}completion_reward={country_event=dr.80}}
 
-	focus={id=ETH_the_lion_of_africa_dr icon=GFX_ETH_the_lion_of_africa-146074 x=4 y=6 cost=10 available={has_country_flag=ethiopia_win_flag_dr is_subject=no}available_if_capitulated=yes prerequisite={focus=ETH_old_tactics_dr focus=ETH_modern_tactics_dr focus=ETH_scavenger_tactics_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_lion_of_africa_dr add_idea=idea_lion_of_africa_2_dr}}}
+	focus={id=ETH_the_lion_of_africa_dr icon=GFX_focus_SWE_the_lion_of_the_north x=4 y=6 cost=10 available={has_country_flag=ethiopia_win_flag_dr is_subject=no}available_if_capitulated=yes prerequisite={focus=ETH_old_tactics_dr focus=ETH_modern_tactics_dr focus=ETH_scavenger_tactics_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_lion_of_africa_dr add_idea=idea_lion_of_africa_2_dr}}}
 
-	focus={id=ETH_aksums_legacy_dr icon=GFX_ETH_aksums_legacy-145975 x=11 y=2 cost=8 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}available={is_subject=no}available_if_capitulated=yes prerequisite={focus=ETH_italians_stay_losing_dr}ai_will_do={factor=1}completion_reward={add_political_power=100 add_stability=0.15 set_cosmetic_tag=empire_of_axum set_capital={state=842 remember_old_capital=no}set_victory_points={province=13237 value=5}}}
+focus={id=ETH_aksums_legacy_dr icon=GFX_focus_ETH_restore_the_empire_of_axum x=11 y=2 cost=8 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}available={is_subject=no}available_if_capitulated=yes prerequisite={focus=ETH_italians_stay_losing_dr}ai_will_do={factor=1}completion_reward={add_political_power=100 add_stability=0.15 set_cosmetic_tag=empire_of_axum set_capital={state=842 remember_old_capital=no}set_victory_points={province=13237 value=5}}}focus={id=ETH_defensive_approach_dr icon=GFX_goal_generic_defence x=2 y=2 cost=2 available_if_capitulated=yes prerequisite={focus=ETH_defiant_we_stand_dr}mutually_exclusive={focus=ETH_offensive_approach_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_ethiopia_defense_dr}}focus={id=ETH_italians_stay_losing_dr icon=GFX_focus_generic_anti_fascist_diplomacy x=10 y=1 cost=3 available_if_capitulated=yes bypass={NOT={country_exists=ITA}}prerequisite={focus=ETH_victory_achieved_dr}ai_will_do={factor=1}completion_reward={ITA={country_event=dr.84}}}focus={id=ETH_a_model_for_africa_dr icon=GFX_focus_ETH_pan_africanism x=16 y=3 cost=6 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}available={is_subject=no}available_if_capitulated=yes prerequisite={ focus=ETH_invest_in_powerlines_dr focus=ETH_invest_in_transportation_dr}mutually_exclusive={focus=ETH_a_foreign_model_dr}ai_will_do={factor=1}completion_reward={add_political_power=50 add_stability=0.05}}focus={id=ETH_settle_italians_dr icon=GFX_focus_ETH_invite_italian_settlers x=20 y=4 cost=4 search_filters={FOCUS_FILTER_MANPOWER}available={is_subject_of=ITA}available_if_capitulated=yes prerequisite={focus=ETH_a_foreign_model_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_settle_italians_dr}}focus={id=ETH_develop_the_east_dr icon=GFX_focus_ETH_invest_in_the_east x=14 y=1 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=836 controls_state=835 controls_state=268 controls_state=908}available_if_capitulated=yes prerequisite={focus=ETH_nationwide_investments_dr}ai_will_do={factor=1}completion_reward={836={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}835={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}268={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}908={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=ETH_develop_the_north_dr icon=GFX_focus_ETH_invest_in_the_north x=16 y=1 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=550 controls_state=842 controls_state=841 controls_state=843}available_if_capitulated=yes prerequisite={focus=ETH_nationwide_investments_dr}ai_will_do={factor=1}completion_reward={550={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}842={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}841={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}842={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=ETH_develop_the_west_dr icon=GFX_focus_ETH_invest_in_the_west x=18 y=1 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=840 controls_state=839 controls_state=838 controls_state=837}available_if_capitulated=yes prerequisite={focus=ETH_nationwide_investments_dr}ai_will_do={factor=1}completion_reward={840={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}839={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}838={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}837={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=ETH_second_italo_ethiopian_war_dr icon=GFX_goal_generic_military_sphere x=4 y=0 cost=0 available={always=no}bypass={has_war_with=ITA}ai_will_do={factor=1}}focus={id=ETH_offensive_approach_dr icon=GFX_goal_generic_position_armies x=6 y=2 cost=2 available_if_capitulated=yes prerequisite={focus=ETH_defiant_we_stand_dr}mutually_exclusive={focus=ETH_defensive_approach_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_ethiopia_offense_dr}}
 
-focus={id=ETH_defensive_approach_dr icon=GFX_goal_generic_defence x=2 y=2 cost=2 available_if_capitulated=yes prerequisite={focus=ETH_defiant_we_stand_dr}mutually_exclusive={focus=ETH_offensive_approach_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_ethiopia_defense_dr}}
+	focus={id=ETH_local_levies_dr icon=GFX_focus_ETH_expand_the_levy x=1 y=4 cost=6 search_filters={FOCUS_FILTER_ARMY_XP}available_if_capitulated=yes prerequisite={focus=ETH_offensive_approach_dr focus=ETH_defensive_approach_dr}mutually_exclusive={focus=ETH_a_national_army_dr focus=ETH_irregular_units_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_local_levies_dr army_experience=15}}
 
-	focus={id=ETH_italians_stay_losing_dr icon=GFX_focus_generic_anti_fascist_diplomacy x=10 y=1 cost=3 available_if_capitulated=yes bypass={NOT={country_exists=ITA}}prerequisite={focus=ETH_victory_achieved_dr}ai_will_do={factor=1}completion_reward={ITA={country_event=dr.84}}}
+focus={id=ETH_a_national_army_dr icon=GFX_focus_ETH_ecole_militaire_haile_selassie_1er x=4 y=4 cost=6 search_filters={FOCUS_FILTER_ARMY_XP}available_if_capitulated=yes prerequisite={focus=ETH_defensive_approach_dr focus=ETH_offensive_approach_dr}mutually_exclusive={focus=ETH_local_levies_dr focus=ETH_irregular_units_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_a_national_army_dr army_experience=15}}
 
-focus={id=ETH_a_model_for_africa_dr icon=GFX_focus_ETH_pan_africanism x=16 y=3 cost=6 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}available={is_subject=no}available_if_capitulated=yes prerequisite={ focus=ETH_invest_in_powerlines_dr focus=ETH_invest_in_transportation_dr}mutually_exclusive={focus=ETH_a_foreign_model_dr}ai_will_do={factor=1}completion_reward={add_political_power=50 add_stability=0.05}}focus={id=ETH_settle_italians_dr icon=GFX_focus_ETH_invite_italian_settlers x=20 y=4 cost=4 search_filters={FOCUS_FILTER_MANPOWER}available={is_subject_of=ITA}available_if_capitulated=yes prerequisite={focus=ETH_a_foreign_model_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_settle_italians_dr}}focus={id=ETH_develop_the_east_dr icon=GFX_focus_ETH_invest_in_the_east x=14 y=1 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=836 controls_state=835 controls_state=268 controls_state=908}available_if_capitulated=yes prerequisite={focus=ETH_nationwide_investments_dr}ai_will_do={factor=1}completion_reward={836={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}835={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}268={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}908={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=ETH_develop_the_north_dr icon=GFX_focus_ETH_invest_in_the_north x=16 y=1 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=550 controls_state=842 controls_state=841 controls_state=843}available_if_capitulated=yes prerequisite={focus=ETH_nationwide_investments_dr}ai_will_do={factor=1}completion_reward={550={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}842={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}841={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}842={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=ETH_develop_the_west_dr icon=GFX_focus_ETH_invest_in_the_west x=18 y=1 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=840 controls_state=839 controls_state=838 controls_state=837}available_if_capitulated=yes prerequisite={focus=ETH_nationwide_investments_dr}ai_will_do={factor=1}completion_reward={840={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}839={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}838={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}837={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=ETH_second_italo_ethiopian_war_dr icon=GFX_goal_generic_military_sphere x=4 y=0 cost=0 available={always=no}bypass={has_war_with=ITA}ai_will_do={factor=1}}focus={id=ETH_offensive_approach_dr icon=GFX_goal_generic_position_armies x=6 y=2 cost=2 available_if_capitulated=yes prerequisite={focus=ETH_defiant_we_stand_dr}mutually_exclusive={focus=ETH_defensive_approach_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_ethiopia_offense_dr}}
+	focus={id=ETH_irregular_units_dr icon=GFX_focus_ETH_keep_the_chitet x=7 y=4 cost=6 search_filters={FOCUS_FILTER_ARMY_XP}available_if_capitulated=yes prerequisite={focus=ETH_defensive_approach_dr focus=ETH_offensive_approach_dr}mutually_exclusive={focus=ETH_a_national_army_dr focus=ETH_a_national_army_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_irregular_units_dr}}
 
-	#Focus for Local Levies
-	focus = {
-		id = ETH_local_levies_dr
-		icon = GFX_ETH_local_levies-146274
-		x = 1
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ETH_offensive_approach_dr 
-			focus = ETH_defensive_approach_dr 
-		}
-		mutually_exclusive = { focus = ETH_a_national_army_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+focus={id=ETH_scavenger_tactics_dr icon=GFX_focus_ETH_scavenging_tactics x=7 y=5 cost=6 available_if_capitulated=yes prerequisite={focus=ETH_local_levies_dr focus=ETH_a_national_army_dr focus=ETH_irregular_units_dr}mutually_exclusive={focus=ETH_old_tactics_dr focus=ETH_modern_tactics_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_scavenger_tactics_dr army_experience=15 add_doctrine_cost_reduction={cost_reduction=0.5 uses=1 category=cat_mass_assault}}}focus={id=ETH_victory_achieved_dr icon=GFX_focus_ETH_the_patriots x=10 y=0 cost=5 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={has_country_flag=ethiopia_win_flag_dr}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={add_stability=0.1 add_war_support=0.1}}
 
-	#Focus for A National Army
-	focus = {
-		id = ETH_a_national_army_dr
-		icon = GFX_ETH_a_national_army-146275
-		x = 4
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ETH_defensive_approach_dr 
-			focus = ETH_offensive_approach_dr 
-		}
-		mutually_exclusive = { 
-			focus = ETH_local_levies_dr 
-		}
-		mutually_exclusive = { 
-			focus = ETH_irregular_units_dr 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Irregular Units
-	focus = {
-		id = ETH_irregular_units_dr
-		icon = GFX_ETH_irregular_units-146276
-		x = 7
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ETH_offensive_approach_dr
-			focus = ETH_defensive_approach_dr
-		}
-		mutually_exclusive = { focus = ETH_a_national_army_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for Scavenger Tactics
-	focus = {
-		id = ETH_scavenger_tactics_dr
-		icon = GFX_ETH_scavenger_tactics-146277
-		x = 7
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ETH_a_national_army_dr
-			focus = ETH_local_levies_dr 
-			focus = ETH_irregular_units_dr 
-		}
-		mutually_exclusive = { focus = ETH_modern_tactics_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-focus={id=ETH_victory_achieved_dr icon=GFX_focus_ETH_the_patriots x=10 y=0 cost=5 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={has_country_flag=ethiopia_win_flag_dr}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={add_stability=0.1 add_war_support=0.1}}
-
-	#Focus for Invest In Powerlines
 	focus = {
 		id = ETH_invest_in_powerlines_dr
 		icon = GFX_ETH_invest_in_powerlines-146279
@@ -114,56 +35,9 @@ focus={id=ETH_victory_achieved_dr icon=GFX_focus_ETH_the_patriots x=10 y=0 cost=
 		}
 	}
 
-	focus={id=ETH_nationwide_investments_dr icon=GFX_ETH_nationwide_investments-146280 x=16 y=0 cost=5 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={add_political_power=-20 add_stability=.1}}
+	focus={id=ETH_nationwide_investments_dr icon=GFX_focus_generic_develop_ethiopia x=16 y=0 cost=5 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={add_political_power=-20 add_stability=.1}}
 
-focus={id=ETH_defiant_we_stand_dr icon=GFX_focus_ETH_the_lion_stands_firm x=4 y=1 cost=1 search_filters={FOCUS_FILTER_WAR_SUPPORT}bypass={NOT={has_war_with=ITA}}available_if_capitulated=yes prerequisite={focus=ETH_second_italo_ethiopian_war_dr}ai_will_do={factor=1}completion_reward={add_war_support=.05}}
-
-	#Focus for Modern Tactics
-	focus = {
-		id = ETH_modern_tactics_dr
-		icon = GFX_goal_generic_army_artillery2
-		x = 4
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ETH_a_national_army_dr
-			focus = ETH_local_levies_dr 
-			focus = ETH_irregular_units_dr 
-		}
-		mutually_exclusive = { 
-			focus = ETH_scavenger_tactics_dr 
-		}
-		mutually_exclusive = { 
-			focus = ETH_old_tactics_dr 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-focus={id=ETH_shewa_fortifications_dr icon=GFX_goal_generic_fortify_city x=4 y=3 cost=6 available={controls_state=271}available_if_capitulated=yes prerequisite={focus=ETH_defiant_we_stand_dr}ai_will_do={factor=1}completion_reward={271={add_building_construction={type=bunker level=2 province=5010 instant_build=yes}add_building_construction={type=bunker level=1 province=13239 instant_build=yes}add_building_construction={type=bunker level=1 province=8036 instant_build=yes}add_building_construction={type=bunker level=1 province=10734 instant_build=yes}}}}
-
-	#Focus for Old Tactics
-	focus = {
-		id = ETH_old_tactics_dr
-		icon = GFX_goal_generic_cavalry
-		x = 1
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ETH_a_national_army_dr 
-			focus = ETH_local_levies_dr 
-			focus = ETH_irregular_units_dr 
-		}
-		mutually_exclusive = { focus = ETH_modern_tactics_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-focus={id=ETH_invade_east_africa_dr icon=GFX_goal_generic_occupy_states_ongoing_war x=12 y=3 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={is_subject=no}available_if_capitulated=yes bypass={OR={NOT={country_exists=TZN}TZN={is_subject=yes}}}prerequisite={focus=ETH_aksums_legacy_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=TZN}}}focus={id=ETH_demand_yemen_dr icon=GFX_goal_generic_political_pressure x=10 y=3 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={is_subject=no}available_if_capitulated=yes bypass={OR={NOT={country_exists=SAU}SAU={is_subject_of=ETH}}controls_state=293 controls_state=659}prerequisite={focus=ETH_aksums_legacy_dr}ai_will_do={factor=1}completion_reward={if={limit={SAU={owns_state=293 owns_state=659}}SAU={country_event=dr.81}}add_state_core=293 add_state_core=659}}focus={id=ETH_invade_egypt_dr icon=GFX_goal_generic_occupy_states_ongoing_war x=11 y=4 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={is_subject=no}available_if_capitulated=yes bypass={OR={NOT={country_exists=EGY}EGY={is_subject_of=ETH}}controls_state=884 controls_state=886}prerequisite={focus=ETH_demand_yemen_dr focus=ETH_invade_east_africa_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=EGY}add_state_core=884 add_state_core=886}}focus={id=ETH_jerusalem_in_the_palm_of_our_hands_dr icon=GFX_goal_generic_territory_or_war x=11 y=5 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={is_subject=no NOT={owns_state=454}}available_if_capitulated=yes prerequisite={focus=ETH_invade_egypt_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=ISR}add_state_claim=454}}
+focus={id=ETH_defiant_we_stand_dr icon=GFX_focus_ETH_the_lion_stands_firm x=4 y=1 cost=1 search_filters={FOCUS_FILTER_WAR_SUPPORT}bypass={NOT={has_war_with=ITA}}available_if_capitulated=yes prerequisite={focus=ETH_second_italo_ethiopian_war_dr}ai_will_do={factor=1}completion_reward={add_war_support=.05}}focus={id=ETH_modern_tactics_dr icon=GFX_goal_generic_army_artillery2 x=4 y=5 cost=6 search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=ETH_local_levies_dr focus=ETH_a_national_army_dr focus=ETH_irregular_units_dr}mutually_exclusive={focus=ETH_scavenger_tactics_dr focus=ETH_old_tactics_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_modern_tactics_dr army_experience=15 add_doctrine_cost_reduction={cost_reduction=0.5 uses=1 category=cat_mobile_warfare}add_doctrine_cost_reduction={cost_reduction=0.5 uses=1 category=cat_superior_firepower}}}focus={id=ETH_shewa_fortifications_dr icon=GFX_goal_generic_fortify_city x=4 y=3 cost=6 available={controls_state=271}available_if_capitulated=yes prerequisite={focus=ETH_defiant_we_stand_dr}ai_will_do={factor=1}completion_reward={271={add_building_construction={type=bunker level=2 province=5010 instant_build=yes}add_building_construction={type=bunker level=1 province=13239 instant_build=yes}add_building_construction={type=bunker level=1 province=8036 instant_build=yes}add_building_construction={type=bunker level=1 province=10734 instant_build=yes}}}}focus={id=ETH_old_tactics_dr icon=GFX_goal_generic_cavalry x=1 y=5 cost=6 search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=ETH_local_levies_dr focus=ETH_a_national_army_dr focus=ETH_irregular_units_dr}mutually_exclusive={focus=ETH_modern_tactics_dr focus=ETH_scavenger_tactics_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_old_tactics_dr army_experience=15 add_doctrine_cost_reduction={cost_reduction=0.5 uses=1 category=cat_grand_battle_plan}}}focus={id=ETH_invade_east_africa_dr icon=GFX_goal_generic_occupy_states_ongoing_war x=12 y=3 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={is_subject=no}available_if_capitulated=yes bypass={OR={NOT={country_exists=TZN}TZN={is_subject=yes}}}prerequisite={focus=ETH_aksums_legacy_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=TZN}}}focus={id=ETH_demand_yemen_dr icon=GFX_goal_generic_political_pressure x=10 y=3 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={is_subject=no}available_if_capitulated=yes bypass={OR={NOT={country_exists=SAU}SAU={is_subject_of=ETH}}controls_state=293 controls_state=659}prerequisite={focus=ETH_aksums_legacy_dr}ai_will_do={factor=1}completion_reward={if={limit={SAU={owns_state=293 owns_state=659}}SAU={country_event=dr.81}}add_state_core=293 add_state_core=659}}focus={id=ETH_invade_egypt_dr icon=GFX_goal_generic_occupy_states_ongoing_war x=11 y=4 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={is_subject=no}available_if_capitulated=yes bypass={OR={NOT={country_exists=EGY}EGY={is_subject_of=ETH}}controls_state=884 controls_state=886}prerequisite={focus=ETH_demand_yemen_dr focus=ETH_invade_east_africa_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=EGY}add_state_core=884 add_state_core=886}}focus={id=ETH_jerusalem_in_the_palm_of_our_hands_dr icon=GFX_goal_generic_territory_or_war x=11 y=5 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={is_subject=no NOT={owns_state=454}}available_if_capitulated=yes prerequisite={focus=ETH_invade_egypt_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=ISR}add_state_claim=454}}
 
 	focus={id=ETH_death_of_gigachad_dr icon=GFX_goal_unknown x=16 y=5 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality is_subject=no}available_if_capitulated=yes bypass={NOT={country_exists=CHA}CHA={is_subject=yes}}prerequisite={focus=ETH_emperor_of_the_black_continent_dr}ai_will_do={factor=1}completion_reward={create_wargoal={type=puppet_wargoal_focus target=CHA}}}
 
@@ -172,44 +46,8 @@ focus={id=ETH_knock_knock_congo_dr icon=GFX_goal_generic_secret_weapon x=14 y=5 
 	focus={id=ETH_claim_iberian_colonies_dr icon=GFX_goal_tfv_saf_anti_colonialist_crusade x=13 y=6 cost=4 search_filters={FOCUS_FILTER_ANNEXATION}available={has_government=neutrality is_subject=no}available_if_capitulated=yes bypass={NOT={SPR={owns_state=290 owns_state=461 owns_state=462 owns_state=783 owns_state=699 owns_state=296 owns_state=297 owns_state=705 owns_state=539 owns_state=772 owns_state=796 owns_state=770 owns_state=897 owns_state=896 owns_state=545 owns_state=544}}}prerequisite={focus=ETH_knock_knock_congo_dr}ai_will_do={factor=1}completion_reward={if={limit={SPR={owns_state=290}}ETH={add_state_claim=290}if={limit={SPR={owns_state=461}}ETH={add_state_claim=461}if={limit={SPR={owns_state=462}}ETH={add_state_claim=462}if={limit={SPR={owns_state=783}}ETH={add_state_claim=783}if={limit={SPR={owns_state=699}}ETH={add_state_claim=699}if={limit={SPR={owns_state=296}}ETH={add_state_claim=296}if={limit={SPR={owns_state=297}}ETH={add_state_claim=297}if={limit={SPR={owns_state=705}}ETH={add_state_claim=705}if={limit={SPR={owns_state=539}}ETH={add_state_claim=539}if={limit={SPR={owns_state=772}}ETH={add_state_claim=772}if={limit={SPR={owns_state=796}}ETH={add_state_claim=796}if={limit={SPR={owns_state=770}}ETH={add_state_claim=770}if={limit={SPR={owns_state=897}}ETH={add_state_claim=897}if={limit={SPR={owns_state=896}}ETH={add_state_claim=896}if={limit={SPR={owns_state=545}}ETH={add_state_claim=545}if={limit={SPR={owns_state=544}}ETH={add_state_claim=544}custom_effect_tooltip=iberia_colonies_tooltip_dr}}}}}}}}}}}}}}}}}}
 		#fix this code
 
-	#Focus for South African Ultimatum
-	focus = {
-		id = ETH_south_african_ultimatum_dr
-		icon = GFX_goal_generic_major_war
-		x = 11
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ETH_claim_iberian_colonies_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+focus={id=ETH_south_african_ultimatum_dr icon=GFX_goal_generic_major_war x=11 y=7 cost=4 search_filters={}available={has_government=neutrality is_subject=no}available_if_capitulated=yes bypass={NOT={country_exists=SAF}SAF={is_subject=yes}}prerequisite={focus=ETH_claim_iberian_colonies_dr}ai_will_do={factor=1}completion_reward={SAF={country_event=dr.114}}}focus={id=ETH_acquire_madagascar_dr icon=GFX_goal_generic_forceful_treaty x=13 y=7 cost=4 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=neutrality is_subject=no}available_if_capitulated=yes bypass={NOT={country_exists=MAD}MAD={is_subject=yes}}prerequisite={focus=ETH_claim_iberian_colonies_dr}ai_will_do={factor=1}completion_reward={puppet=MAD}}focus={id=ETH_demand_italian_libya_dr icon=GFX_focus_attack_italy x=17 y=6 cost=4 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION}available={has_government=neutrality is_subject=no}available_if_capitulated=yes prerequisite={focus=ETH_death_of_gigachad_dr}ai_will_do={factor=1}completion_reward={ITA={country_event=dr.87}}}
 
-	#Focus for Malagasy Annexation
-	focus = {
-		id = ETH_malagasy_annexation_dr
-		icon = GFX_goal_generic_forceful_treaty
-		x = 13
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ETH_claim_iberian_colonies_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	focus={id=ETH_demand_italian_libya_dr icon=GFX_focus_attack_italy x=17 y=6 cost=4
-		available_if_capitulated = yes
-		prerequisite = { focus = ETH_death_of_gigachad_dr }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward={}
-	}
-
-	#Focus for Claim French Colonies
 	focus = {
 		id = ETH_claim_french_colonies_dr
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
@@ -223,29 +61,4 @@ focus={id=ETH_knock_knock_congo_dr icon=GFX_goal_generic_secret_weapon x=14 y=5 
 		}
 	}
 
-	focus={id=ETH_africa_united_dr icon=GFX_focus_ETH_the_african_union x=15 y=8
-		cost=10 available_if_capitulated=yes
-		prerequisite={ 
-			focus=ETH_south_african_ultimatum_dr
-		}
-		prerequisite = { 
-			focus = ETH_malagasy_annexation_dr 
-		}
-		prerequisite = { 
-			focus = ETH_claim_french_colonies_dr 
-		}
-		prerequisite = { 
-			focus = ETH_liberian_inheritance_dr 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-focus={id=ETH_liberian_inheritance_dr icon=GFX_focus_generic_monarchy_1 x=19 y=7 cost=4 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=neutrality is_subject=no}available_if_capitulated=yes bypass={NOT={country_exists=LIB}LIB={is_subject=yes}}prerequisite={focus=ETH_demand_italian_libya_dr}ai_will_do={factor=1}completion_reward={puppet=LIB}}
-
-	focus={id=ETH_invest_in_transportation_dr icon=GFX_goal_generic_construct_infrastructure x=17 y=2 cost=6 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=271 controls_state=837 controls_state=839 controls_state=843}available_if_capitulated=yes prerequisite={focus=ETH_develop_the_east_dr}prerequisite={focus=ETH_develop_the_north_dr}prerequisite={focus=ETH_develop_the_west_dr}ai_will_do={factor=1}completion_reward={271={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}837={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}839={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}843={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}
-
-	focus={id=ETH_a_foreign_model_dr icon=GFX_focus_ITA_ministry_of_italian_africa x=19 y=3 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available={is_subject_of=ITA}available_if_capitulated=yes mutually_exclusive={focus=ETH_a_model_for_africa_dr}ai_will_do={factor=1}completion_reward={add_political_power=30}}
-
-focus={id=ETH_invite_italian_investors_dr icon=GFX_goal_generic_intelligence_exchange x=18 y=4 cost=4 search_filters={FOCUS_FILTER_INDUSTRY}available={is_subject_of=ITA}available_if_capitulated=yes prerequisite={focus=ETH_a_foreign_model_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_italian_investors_dr}}focus={id=ETH_guinean_ultimatum_dr icon=GFX_goal_generic_major_war x=15 y=7 cost=4 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=neutrality is_subject=no}available_if_capitulated=yes bypass={NOT={country_exists=GNA}GNA={is_subject=yes}}prerequisite={focus=ETH_demand_italian_libya_dr focus=ETH_claim_iberian_colonies_dr}ai_will_do={factor=1}completion_reward={puppet=GNA}}}
+focus={id=ETH_africa_united_dr icon=GFX_focus_ETH_the_african_union x=15 y=8 cost=10 search_filters={FOCUS_FILTER_ANNEXATION FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={has_government=neutrality is_subject=no}available_if_capitulated=yes prerequisite={focus=ETH_south_african_ultimatum_dr}prerequisite={focus=ETH_acquire_madagascar_dr}prerequisite={focus=ETH_guinean_ultimatum_dr}prerequisite={focus=ETH_claim_french_colonies_dr}prerequisite={focus=ETH_liberian_inheritance_dr}ai_will_do={factor=1}completion_reward={set_cosmetic_tag=cosmetic_tag_aksum_africa_dr add_stability=.1 add_war_support=.1 custom_effect_tooltip=eth_core_tooltip_dr if={limit={AFA={is_subject_of=ETH}}annex_country={target=AFA}}if={limit={SOM={is_subject_of=ETH}}annex_country={target=SOM}}if={limit={EGY={is_subject_of=ETH}}annex_country={target=EGY}}if={limit={LBA={is_subject_of=ETH}}annex_country={target=LBA}}if={limit={TZN={is_subject_of=ETH}}annex_country={target=TZN}}if={limit={UGA={is_subject_of=ETH}}annex_country={target=UGA}}if={limit={COG={is_subject_of=ETH}}annex_country={target=COG}}if={limit={GAB={is_subject_of=ETH}}annex_country={target=GAB}}if={limit={CAR={is_subject_of=ETH}}annex_country={target=CAR}}if={limit={CHA={is_subject_of=ETH}}annex_country={target=CHA}}if={limit={NGR={is_subject_of=ETH}}annex_country={target=NGR}}if={limit={GNA={is_subject_of=ETH}}annex_country={target=GNA}}if={limit={LIB={is_subject_of=ETH}}annex_country={target=LIB}}if={limit={MRT={is_subject_of=ETH}}annex_country={target=MRT}}if={limit={ZIM={is_subject_of=ETH}}annex_country={target=ZIM}}if={limit={MAD={is_subject_of=ETH}}annex_country={target=MAD}}if={limit={SAF={is_subject_of=ETH}}annex_country={target=SAF}}hidden_effect={178={add_core_of=ETH}702={add_core_of=ETH}513={add_core_of=ETH}296={add_core_of=ETH}780={add_core_of=ETH}700={add_core_of=ETH}298={add_core_of=ETH}556={add_core_of=ETH}779={add_core_of=ETH}274={add_core_of=ETH}778={add_core_of=ETH}777={add_core_of=ETH}776={add_core_of=ETH}558={add_core_of=ETH}900={add_core_of=ETH}773={add_core_of=ETH}660={add_core_of=ETH}774={add_core_of=ETH}901={add_core_of=ETH}902={add_core_of=ETH}781={add_core_of=ETH}515={add_core_of=ETH}775={add_core_of=ETH}273={add_core_of=ETH}448={add_core_of=ETH}661={add_core_of=ETH}449={add_core_of=ETH}662={add_core_of=ETH}663={add_core_of=ETH}450={add_core_of=ETH}451={add_core_of=ETH}452={add_core_of=ETH}447={add_core_of=ETH}907={add_core_of=ETH}446={add_core_of=ETH}457={add_core_of=ETH}456={add_core_of=ETH}552={add_core_of=ETH}767={add_core_of=ETH}551={add_core_of=ETH}883={add_core_of=ETH}549={add_core_of=ETH}887={add_core_of=ETH}885={add_core_of=ETH}547={add_core_of=ETH}904={add_core_of=ETH}905={add_core_of=ETH}546={add_core_of=ETH}769={add_core_of=ETH}768={add_core_of=ETH}548={add_core_of=ETH}890={add_core_of=ETH}718={add_core_of=ETH}538={add_core_of=ETH}295={add_core_of=ETH}796={add_core_of=ETH}772={add_core_of=ETH}539={add_core_of=ETH}297={add_core_of=ETH}705={add_core_of=ETH}703={add_core_of=ETH}704={add_core_of=ETH}888={add_core_of=ETH}889={add_core_of=ETH}540={add_core_of=ETH}892={add_core_of=ETH}891={add_core_of=ETH}771={add_core_of=ETH}770={add_core_of=ETH}897={add_core_of=ETH}896={add_core_of=ETH}545={add_core_of=ETH}544={add_core_of=ETH}940={add_core_of=ETH}719={add_core_of=ETH}938={add_core_of=ETH}275={add_core_of=ETH}542={add_core_of=ETH}895={add_core_of=ETH}894={add_core_of=ETH}541={add_core_of=ETH}893={add_core_of=ETH}939={add_core_of=ETH}681={add_core_of=ETH}708={add_core_of=ETH}543={add_core_of=ETH}706={add_core_of=ETH}707={add_core_of=ETH}709={add_core_of=ETH}459={add_core_of=ETH}460={add_core_of=ETH}272={add_core_of=ETH}701={add_core_of=ETH}899={add_core_of=ETH}898={add_core_of=ETH}782={add_core_of=ETH}786={add_core_of=ETH}557={add_core_of=ETH}699={add_core_of=ETH}514={add_core_of=ETH}462={add_core_of=ETH}461={add_core_of=ETH}290={add_core_of=ETH}458={add_core_of=ETH}665={add_core_of=ETH}}}}focus={id=ETH_liberian_inheritance_dr icon=GFX_focus_generic_monarchy_1 x=19 y=7 cost=4 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=neutrality is_subject=no}available_if_capitulated=yes bypass={NOT={country_exists=LIB}LIB={is_subject=yes}}prerequisite={focus=ETH_demand_italian_libya_dr}ai_will_do={factor=1}completion_reward={puppet=LIB}}focus={id=ETH_invest_in_transportation_dr icon=GFX_goal_generic_construct_infrastructure x=17 y=2 cost=6 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=271 controls_state=837 controls_state=839 controls_state=843}available_if_capitulated=yes prerequisite={focus=ETH_develop_the_east_dr}prerequisite={focus=ETH_develop_the_north_dr}prerequisite={focus=ETH_develop_the_west_dr}ai_will_do={factor=1}completion_reward={271={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}837={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}839={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}843={add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=ETH_a_foreign_model_dr icon=GFX_focus_ITA_ministry_of_italian_africa x=19 y=3 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available={is_subject_of=ITA}available_if_capitulated=yes mutually_exclusive={focus=ETH_a_model_for_africa_dr}ai_will_do={factor=1}completion_reward={add_political_power=30}}focus={id=ETH_invite_italian_investors_dr icon=GFX_goal_generic_intelligence_exchange x=18 y=4 cost=4 search_filters={FOCUS_FILTER_INDUSTRY}available={is_subject_of=ITA}available_if_capitulated=yes prerequisite={focus=ETH_a_foreign_model_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_italian_investors_dr}}focus={id=ETH_guinean_ultimatum_dr icon=GFX_goal_generic_major_war x=15 y=7 cost=4 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=neutrality is_subject=no}available_if_capitulated=yes bypass={NOT={country_exists=GNA}GNA={is_subject=yes}}prerequisite={focus=ETH_demand_italian_libya_dr focus=ETH_claim_iberian_colonies_dr}ai_will_do={factor=1}completion_reward={puppet=GNA}}}

@@ -1,0 +1,1 @@
+﻿capital=454 set_cosmetic_tag=PAL_reichskommissariat_dr create_country_leader={name="Hans Jeschonnek" picture=GFX_idea_europe_generic_1 expire="1965.1.1" ideology=nazism}

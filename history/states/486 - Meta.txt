@@ -9,6 +9,7 @@ state={
 	history={
 		owner = DOM 
 		victory_points = {2007 1}
+		victory_points = {12729 1}
 		add_core_of = DOM
 		add_core_of = COL
 		add_claim_by = BRA

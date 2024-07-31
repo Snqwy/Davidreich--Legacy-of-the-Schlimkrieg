@@ -12,7 +12,10 @@ state={
 		add_core_of = SOV
 		add_core_of = KAZ
 		victory_points = {
-			11537 1 
+			11537 2 
+		}
+		victory_points = {
+			6525 1 
 		}
 
 	}

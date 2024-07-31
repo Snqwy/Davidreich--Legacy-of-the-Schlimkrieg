@@ -666,7 +666,7 @@
  STATE_653:0 "Yekaterinburg"
  STATE_654:1 "Oirat"
  STATE_655:0 "North Sakhalin"
- STATE_656:0 "Kuwait"
+ STATE_656:0 "Basrah"
  STATE_657:0 "Birobidzhan"
  STATE_658:0 "Abu Dhabi"
  STATE_659:0 "Aden"
@@ -961,7 +961,7 @@
  STATE_941:0 "Polesie"
  STATE_942:0 "Netech"
  STATE_943:0 "Badakhshan"
- STATE_944:0 "Kyrgyz"
+ STATE_944:0 "Pishpek"
  STATE_945:0 "Cluj"
  STATE_946:0 "Dobruja"
 
@@ -1010,6 +1010,8 @@ STATE_987:0 "Massachusetts"
 STATE_988:0 "Rhode Island"
 STATE_989:0 "Western New Mexico"
 STATE_990:0 "Eastern New Mexico"
+STATE_991:0 "Aksai"
+STATE_992:0 "North Alberta"
 
   #david congo
 #STATE_295_dav_:0 "Neu-Berschlim"

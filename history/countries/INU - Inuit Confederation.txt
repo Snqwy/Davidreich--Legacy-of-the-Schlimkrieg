@@ -38,8 +38,6 @@ IF = {
 	}
 }
 
-recruit_character = INU_inuit_council
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.2.11"
@@ -49,3 +47,8 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
+
+create_country_leader={name="Inuit Council" picture=GFX_portrait_INU_council expire="1965.1.1" ideology=despotism}
+create_country_leader={name="Inuit Council" picture=GFX_portrait_INU_council expire="1965.1.1" ideology=conservatism}
+create_country_leader={name="Inuit Council" picture=GFX_portrait_INU_council expire="1965.1.1" ideology=marxism}
+create_country_leader={name="Inuit Council" picture=GFX_portrait_INU_council expire="1965.1.1" ideology=fascism_ideology}

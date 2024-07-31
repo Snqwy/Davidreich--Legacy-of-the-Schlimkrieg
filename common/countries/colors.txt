@@ -6,7 +6,7 @@ ENG = {
 	color = rgb { 166 72 72 }
 	color_ui = rgb { 166 72 72 }
 }
-SOV = {
+SOV = { 
 	color = rgb { 184 22 22 }
 	color_ui = rgb { 184 22 22 }
 }

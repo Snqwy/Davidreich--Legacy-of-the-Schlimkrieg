@@ -1,6 +1,6 @@
 characters={
 	MAN_aisin_gioro_puyi={
-		name=MAN_aisin_gioro_puyi
+		name=MAN_will
 		portraits={
 			civilian={
 				large=GFX_portrait_will_fascist

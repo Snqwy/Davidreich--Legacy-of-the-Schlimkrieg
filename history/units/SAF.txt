@@ -1,0 +1,23 @@
+﻿#maybe reorganize units based on location
+
+division_template={name="Infantry-Divsion" division_names_group=SAF_INF_01 regiments={infantry={x=0 y=0}infantry={x=0 y=1}infantry={x=0 y=2}infantry={x=0 y=3}infantry={x=1 y=0}infantry={x=1 y=1}infantry={x=1 y=2}infantry={x=1 y=3}}support={engineer={x=0 x=0}artillery={x=0 x=1}recon={x=0 x=2}}}division_template={name="District Brigade" division_names_group=SAF_GAR_01 regiments={infantry={x=0 y=0}infantry={x=0 y=1}infantry={x=0 y=2}}support={military_police={x=0 y=0}}priority=0}division_template={name="Armored-Division" division_names_group=SAF_ARM_01 regiments={light_armor={x=0 y=0}light_armor={x=0 y=1}motorized={x=1 y=0}motorized={x=1 y=1}motorized={x=1 y=2}infantry={x=2 y=0}infantry={x=2 y=1}}support={engineer={x=0 y=0}}}division_template={name="Marine-Division" division_names_group=SAF_MAR_01 regiments={marine={x=0 y=0}marine={x=0 y=1}marine={x=1 y=0}marine={x=1 y=1}}support={artillery={x=0 y=0}}priority=2}
+
+units={
+	division={division_name={is_name_ordered=yes name_order=1}location=12589 division_template="Infantry-Divsion" start_experience_factor=0.2}
+	division={division_name={is_name_ordered=yes name_order=1}location=12589 division_template="Infantry-Divsion" start_experience_factor=0.2}
+	division={division_name={is_name_ordered=yes name_order=1}location=12589 division_template="Armored-Division" start_experience_factor=0.2}
+	division={division_name={is_name_ordered=yes name_order=1}location=12589 division_template="Marine-Division" start_experience_factor=0.3}
+	division={division_name={is_name_ordered=yes name_order=1}location=10415 division_template="District Brigade" start_experience_factor=0.05}
+	division={division_name={is_name_ordered=yes name_order=1}location=4696 division_template="Marine-Division" start_experience_factor=0.3}
+	division={division_name={is_name_ordered=yes name_order=1}location=1468 division_template="District Brigade" start_experience_factor=0.05}
+	division={division_name={is_name_ordered=yes name_order=1}location=8245 division_template="District Brigade" start_experience_factor=0.05}
+	division={division_name={is_name_ordered=yes name_order=1}location=1509 division_template="District Brigade" start_experience_factor=0.05}
+	division={division_name={is_name_ordered=yes name_order=1}location=5154 division_template="District Brigade" start_experience_factor=0.05}
+	division={division_name={is_name_ordered=yes name_order=1}location=4879 division_template="Infantry-Divsion" start_experience_factor=0.2}
+	division={division_name={is_name_ordered=yes name_order=1}location=10957 division_template="District Brigade" start_experience_factor=0.05}
+	division={division_name={is_name_ordered=yes name_order=1}location=12963 division_template="District Brigade" start_experience_factor=0.05}
+	division={division_name={is_name_ordered=yes name_order=1}location=10400 division_template="Infantry-Divsion" start_experience_factor=0.2}
+	division={division_name={is_name_ordered=yes name_order=1}location=10400 division_template="District Brigade" start_experience_factor=0.05}
+	division={division_name={is_name_ordered=yes name_order=1}location=12648 division_template="Infantry-Divsion" start_experience_factor=0.2}
+	division={division_name={is_name_ordered=yes name_order=1}location=12648 division_template="District Brigade" start_experience_factor=0.05}
+}

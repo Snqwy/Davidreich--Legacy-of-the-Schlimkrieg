@@ -4,14 +4,8 @@ state = {
 
 	history = {
 		owner = FER
-		victory_points = {
-			13204 1 
-		}
 		buildings = {
-			infrastructure = 1
-			13204 ={
-				naval_base = 1
-			}
+			infrastructure = 0
 		}
 		add_core_of = FER
 
@@ -22,7 +16,8 @@ state = {
 	}
 	manpower = 30000
 	buildings_max_level_factor = 1
-	state_category = "pastoral"
+	state_category = wasteland 
+	impassable=yes
 
 	local_supplies = 0.0 
 }

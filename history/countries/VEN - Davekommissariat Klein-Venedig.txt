@@ -1,0 +1,1 @@
+﻿capital=307 set_cosmetic_tag=VEN_reichskommissariat_dr create_country_leader={name="Placeholder Leader" picture=GFX_idea_europe_generic_1 expire="1965.1.1" ideology=nazism}

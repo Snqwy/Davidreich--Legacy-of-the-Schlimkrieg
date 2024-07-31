@@ -1,1 +1,1 @@
-﻿capital=10
+﻿capital=10 set_cosmetic_tag=POL_reichskommissariat_dr create_country_leader={name="Hans Frank" picture=GFX_idea_europe_generic_1 expire="1965.1.1" ideology=nazism}

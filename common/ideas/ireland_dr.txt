@@ -1,7 +1,1 @@
-ideas={country={
-    idea_the_end_nears_dr={picture=SWE_neither_death_nor_dishonor allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_org_factor=-0.1 army_morale_factor=-0.1 stability_factor=-0.2 war_support_factor=-0.50}}
-
-    idea_nationalist_backing_dr={picture=FRA_scw_intervention_nationalists_focus allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={party_popularity_stability_factor=0.1 neutrality_drift=0.05 fascism_drift=0.05 communism_drift=-0.05}}
-
-    idea_irish_republican_army_dr={picture=generic_reserve_divisions allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=-0.1 stability_factor=-0.05 surrender_limit=0.1 experience_gain_army=0.15 send_volunteer_divisions_required=-0.2}}
-}}
+ideas={country={idea_the_end_nears_dr={picture=SWE_neither_death_nor_dishonor allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={army_org_factor=-0.1 army_morale_factor=-0.1 stability_factor=-0.2 war_support_factor=-0.50}}idea_nationalist_backing_dr={picture=FRA_scw_intervention_nationalists_focus allowed={always=yes}allowed_civil_war={always=yes}cancel={NOT={has_government=communism}}removal_cost=-1 modifier={party_popularity_stability_factor=0.1 neutrality_drift=0.05 fascism_drift=0.05 communism_drift=-0.05}}idea_irish_republican_army_dr={picture=generic_reserve_divisions allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={political_power_factor=-0.1 stability_factor=-0.05 surrender_limit=0.1 experience_gain_army=0.15 send_volunteer_divisions_required=-0.2}}}}

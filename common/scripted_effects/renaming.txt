@@ -1,0 +1,3 @@
+rename_86_ger_dr={if={limit={GER={controls_state=86}}set_state_name="Posen"}if={limit={GER={controls_province=6558}}set_state_name="Posen"}}
+
+rename_86_pol_dr={if={limit={GER={controls_state=86}}set_state_name="Poznan"}if={limit={GER={controls_province=6558}}set_state_name="Poznan"}}

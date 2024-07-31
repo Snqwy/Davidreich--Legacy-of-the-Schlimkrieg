@@ -1,1 +1,24 @@
-﻿capital=681 set_stability=.6 set_war_support=.1 add_ideas={idea_victor_of_the_schlimkrieg_dr idea_quelled_minorities_dr idea_advances_of_south_africa_dr}give_guarantee=ENG give_guarantee=IRE give_guarantee=AST give_military_access=ENG give_military_access=IRE give_military_access=AST if={limit={has_dlc="Together for Victory"}add_to_tech_sharing_group=commonwealth_research}set_politics={ruling_party=democratic last_election="1933.5.17" election_frequency=60 elections_allowed=no}set_popularities={democratic=60 fascism=25 communism=5 neutrality=10}create_country_leader={name="Eugene"picture="gfx/leaders/SAF/Portrait_Eugene_Democratic.dds"expire="1965.1.1"traits={trait_submissive_and_breedable_dr trait_falso_gringo_dr}ideology=conservatism}
+﻿capital=681 set_stability=.6 set_war_support=.1 add_ideas={idea_victor_of_the_schlimkrieg_dr idea_quelled_minorities_dr idea_advances_of_south_africa_dr}give_guarantee=ENG give_guarantee=IRE give_guarantee=AST give_military_access=ENG give_military_access=IRE give_military_access=AST set_politics={ruling_party=democratic last_election="1933.5.17" election_frequency=60 elections_allowed=no}set_popularities={democratic=60 fascism=25 communism=5 neutrality=10}set_research_slots=4 recruit_character=SAF_j_b_m_hertzog recruit_character=eugene_fascist_character_dr recruit_character=eugene_commie_character_dr recruit_character=eugene_anarchy_character_dr oob="SAF" set_technology={infantry_weapons=1 infantry_weapons1=1 support_weapons=1 tech_recon=1 tech_support=1 tech_engineers=1 tech_mountaineers=1 marines=1 tech_trucks=1 motorised_infantry=1 tech_military_police=1 gw_artillery=1 interwar_antiair=1 early_fighter=1 early_bomber=1 CAS1=1 naval_bomber1=1 basic_train=1 grand_battle_plan=1 fleet_in_being=1 formation_flying=1 electronic_mechanical_engineering=1 synth_oil_experiments=1 fuel_silos=1 fuel_refining=1}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		engine_tech_1 = 1
+		armor_tech_1=1
+	}
+}

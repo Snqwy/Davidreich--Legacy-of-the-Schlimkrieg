@@ -1,0 +1,1 @@
+﻿capital=378 set_cosmetic_tag=CSA_reichskommissariat_dr create_country_leader={name="Evil Riley" picture=GFX_idea_europe_generic_1 expire="1965.1.1" ideology=nazism}

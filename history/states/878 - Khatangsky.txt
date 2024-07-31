@@ -1,7 +1,7 @@
 
 state = {
 	id = 878
-	name = "STATE_878" # Khatangsky
+	name = "STATE_878"
 	manpower = 15974
 	
 	state_category = wasteland
@@ -10,7 +10,7 @@ state = {
 	history = {
 		owner = OVO
 		buildings = {
-			infrastructure = 1
+			infrastructure = 0
 		}
 		add_core_of = OVO
 	}

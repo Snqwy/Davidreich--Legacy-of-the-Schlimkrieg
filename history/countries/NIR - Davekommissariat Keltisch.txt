@@ -1,0 +1,1 @@
+﻿capital=113 set_cosmetic_tag=IRE_reichskommissariat_dr create_country_leader={name="Evil Amelia" picture=GFX_idea_europe_generic_1 expire="1965.1.1" ideology=nazism}

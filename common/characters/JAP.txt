@@ -15,6 +15,22 @@ characters={
 		}
 	}
 
+	JAP_emperor_hirohito_2={ #copy of fascist dillon
+		name=JAP_dillon
+		portraits={
+			civilian={
+				large="GFX_portrait_dillon_fascist"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={emperor_showa}
+			desc = leader_desc_dillon
+			expire="1989.1.1.1"
+			id=700
+		}
+	}
+
 	JAP_kyuichi_tokuda={
 		name=JAP_dillon
 		portraits={

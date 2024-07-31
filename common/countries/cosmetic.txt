@@ -163,12 +163,12 @@ NOR_reichskommissariat = {
 	color_ui = rgb { 36 39 44 }
 }
 
-HOL_reichskommissariat = {
+HOL_reichskommissariat = { #unused
 	color = rgb { 77 77 77 }
 	color_ui = rgb { 77 77 77 }
 }
 
-BEL_reichskommissariat = { #hurgundy
+BEL_reichskommissariat = {
 	color = rgb { 90 62 92 }
 	color_ui = rgb { 90 62 92 }
 }
@@ -178,9 +178,9 @@ BLR_reichskommissariat = {
 	color_ui = rgb { 39 46 58 }
 }
 
-UKR_reichskommissariat = {
-	color = rgb { 39 57 58 }
-	color_ui = rgb { 39 57 58 }
+UKR_reichskommissariat = { #NOT BLUE ENOUGH
+	color = rgb { 47 52 71 }
+	color_ui = rgb { 47 52 71 }
 }
 
 SPR_civil_war = {
@@ -844,7 +844,7 @@ SOV_reichskommissariat_dr = {
 	color = rgb { 56 73 50 }
 	color_ui = rgb { 56 73 50 }
 }
-POL_reichskommissariat_dr = {
+POL_reichskommissariat_dr = { #NOT RED ENOUGH
 	color = rgb { 88 88 88 }
 	color_ui = rgb { 88 88 88 }
 }
@@ -908,29 +908,29 @@ cosmetic_tag_gaul_dr = {
 	color = rgb { 59 120 61 }
 	color_ui = rgb { 59 120 61 }
 }
-ENG_reichskommissariat_dr = {
-	color = rgb { 46 40 37 }
-	color_ui = rgb { 46 40 37 }
+ENG_reichskommissariat_dr = { 
+	color = rgb { 82 82 82 }
+	color_ui = rgb { 82 82 82 }
 }
-CAN_reichskommissariat_dr = {
-	color = rgb { 36 38 32 }
-	color_ui = rgb { 36 38 32 }
+CAN_reichskommissariat_dr = { 
+	color = rgb { 64 35 36 }
+	color_ui = rgb { 64 35 36 }
 }
-CKK_reichskommissariat_dr = {
-	color = rgb { 59 120 61 }
-	color_ui = rgb { 59 120 61 }
+CKK_reichskommissariat_dr = { #CHECK
+	color = rgb { 61 95 70 }
+	color_ui = rgb { 61 95 70 }
 }
-ITA_reichskommissariat_dr = {
-	color = rgb { 59 120 61 }
-	color_ui = rgb { 59 120 61 }
+ITA_reichskommissariat_dr = { #CHECK
+	color = rgb { 69 118 84 }
+	color_ui = rgb { 69 118 84 }
 }
-USA_reichskommissariat_dr = {
-	color = rgb { 59 120 61 }
-	color_ui = rgb { 59 120 61 }
+USA_reichskommissariat_dr = { 
+	color = rgb { 41 62 69 }
+	color_ui = rgb { 41 62 69 }
 }
-MEX_reichskommissariat_dr = {
-	color = rgb { 59 120 61 }
-	color_ui = rgb { 59 120 61 }
+MEX_reichskommissariat_dr = { 
+	color = rgb { 46 64 37 }
+	color_ui = rgb { 46 64 37 }
 }
 cosmetic_tag_uasr_dr = {
 	color = rgb { 153 47 57 }
@@ -1011,4 +1011,116 @@ cosmetic_tag_bavaria_empire_dr = {
 cosmetic_tag_east_asia_dr = {
 	color = rgb { 107 26 26 }
 	color_ui = rgb { 107 26 26 }
+}
+TUR_reichskommissariat_dr = { 
+	color = rgb { 71 56 42 }
+	color_ui = rgb { 71 56 42 }
+}
+IRQ_reichskommissariat_dr = { 
+	color = rgb { 66 61 39 }
+	color_ui = rgb { 66 61 39 }
+}
+PAL_reichskommissariat_dr = {
+	color = rgb { 61 69 50 }
+	color_ui = rgb { 61 69 50 }
+}
+SAU_reichskommissariat_dr = { 
+	color = rgb { 65 77 50 }
+	color_ui = rgb { 65 77 50 }
+}
+PER_reichskommissariat_dr = { 
+	color = rgb { 35 54 38 }
+	color_ui = rgb { 35 54 38 }
+}
+VIN_reichskommissariat_dr = { 
+	color = rgb { 41 52 71 }
+	color_ui = rgb { 41 52 71 }
+}
+LBA_reichskommissariat_dr = { 
+	color = rgb { 71 58 36 }
+	color_ui = rgb { 71 58 36 }
+}
+GNA_reichskommissariat_dr = { 
+	color = rgb { 40 74 61 }
+	color_ui = rgb { 40 74 61 }
+}
+TZN_reichskommissariat_dr = { 
+	color = rgb { 66 79 74 }
+	color_ui = rgb { 66 79 74 }
+}
+MAD_reichskommissariat_dr = { 
+	color = rgb { 52 58 59 }
+	color_ui = rgb { 52 58 59 }
+}
+RAJ_reichskommissariat_dr = {
+	color = rgb { 52 58 59 }
+	color_ui = rgb { 52 58 59 }
+}
+BHU_reichskommissariat_dr = { #CHECK
+	color = rgb { 59 91 94 }
+	color_ui = rgb { 59 91 94 }
+}
+XSM_reichskommissariat_dr = { 
+	color = rgb { 48 47 54 }
+	color_ui = rgb { 48 47 54 }
+}
+PRC_reichskommissariat_dr = { 
+	color = rgb { 68 69 59 }
+	color_ui = rgb { 68 69 59 }
+}
+CHI_reichskommissariat_dr = { 
+	color = rgb { 48 52 56 }
+	color_ui = rgb { 48 52 56 }
+}
+MAN_reichskommissariat_dr = { 
+	color = rgb { 69 54 34 }
+	color_ui = rgb { 69 54 34 }
+}
+MON_reichskommissariat_dr = {
+	color = rgb { 51 61 35 }
+	color_ui = rgb { 51 61 35 }
+}
+SPR_reichskommissariat_dr = { #CHECK
+	color = rgb { 103 105 74 }
+	color_ui = rgb { 103 105 74 }
+}
+IRE_reichskommissariat_dr = { #CHECK
+	color = rgb { 68 101 78 }
+	color_ui = rgb { 68 101 78 }
+}
+CRO_reichskommissariat_dr = { #CHECK
+	color = rgb { 109 100 131 }
+	color_ui = rgb { 109 100 131 }
+}
+GRE_reichskommissariat_dr = { #CHECK
+	color = rgb { 113 134 135 }
+	color_ui = rgb { 113 134 135 }
+}
+SOV_reichskommissariat_merge_dr = { #CHECK
+	color = rgb { 91 112 66 }
+	color_ui = rgb { 91 112 66 }
+}
+OMA_reichskommissariat_merge_dr = { #CHECK
+	color = rgb { 96 111 66 }
+	color_ui = rgb { 96 111 66 }
+}
+OMA_reichskommissariat_merge_2_dr = { #CHECK
+	color = rgb { 108 127 70 }
+	color_ui = rgb { 108 127 70 }
+}
+SHX_reichskommissariat_merge_dr = { #CHECK
+	color = rgb { 94 98 71 }
+	color_ui = rgb { 94 98 71 }
+}
+JAP_reichskommissariat_dr = { #CHECK
+	color = rgb { 124 124 124 }
+	color_ui = rgb { 124 124 124 }
+}
+CAY_reichskommissariat_dr = { #CHECK
+	color = rgb { 122 124 96 }
+	color_ui = rgb { 122 124 9 }
+}
+INC_reichskommissariat_dr = { #CHECK
+	color = rgb { 110 87 66 }
+	color_ui = rgb { 110 87 66 }
 }

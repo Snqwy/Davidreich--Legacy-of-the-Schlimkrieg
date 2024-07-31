@@ -1,4 +1,7 @@
 ﻿capital=2 starting_train_buffer=1.5 set_research_slots=4 set_stability=0.85 set_war_support=0.7 add_ideas={limited_exports limited_conscription partial_economic_mobilisation idea_birthplace_of_maxism_dr idea_the_mafia_dr idea_incompetent_military_dr}
+
+oob="ITA"
+
 every_owned_state = { 
 	limit = {
 		is_core_of = LBA

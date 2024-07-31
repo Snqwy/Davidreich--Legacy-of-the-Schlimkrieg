@@ -1,0 +1,22 @@
+state={
+	id=991
+	name="STATE_991"
+	provinces={
+		5042 7273 10821
+	}
+	history={
+		owner = UZB
+		add_core_of = UZB
+		add_core_of = CHI	
+		add_core_of = PRC 
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	manpower=150
+	state_category = wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

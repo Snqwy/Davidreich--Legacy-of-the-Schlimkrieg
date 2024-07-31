@@ -1,6 +1,6 @@
 characters={ITA_benito_mussolini={name=ITA_max portraits={civilian={large="GFX_portrait_max_fascist"}}country_leader={ideology=maxism expire="1965.1.1.1" traits={il_duce}desc=leader_desc_max id=-1}}
 
-	ITA_papa_pio_xi = {
+	ITA_papa_pio_xi = { #pope max
 		name = ITA_papa_pio_xi
 		portraits = {
 			civilian = {
@@ -10,7 +10,7 @@ characters={ITA_benito_mussolini={name=ITA_max portraits={civilian={large="GFX_p
 	}
 
 	ITA_ferruccio_parri = {
-		name = ITA_ferruccio_parri
+		name = ITA_max
 		portraits = {
 			civilian = {
 				large = GFX_portrait_italy_ferruccio_parri
@@ -19,14 +19,13 @@ characters={ITA_benito_mussolini={name=ITA_max portraits={civilian={large="GFX_p
 
 		country_leader = {
 			ideology = socialism
-			traits = { resistance_leader }
 			expire = "1965.1.1.1"
 			id = -1
 		}
 	}
 
-	ITA_vittorio_emanuele_iii = {
-		name = ITA_vittorio_emanuele_iii
+	ITA_vittorio_emanuele_iii = { #godfather max
+		name = ITA_max
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ITA_vittorio_emanuele_III

@@ -1,4 +1,31 @@
-﻿capital=16 set_research_slots=3 set_stability=.5 6={add_dynamic_modifier={modifier=state_modifier_post_schlimkrieg}}34={add_dynamic_modifier={modifier=state_modifier_post_schlimkrieg}}8={add_dynamic_modifier={modifier=state_modifier_post_schlimkrieg}}29={add_dynamic_modifier={modifier=state_modifier_post_schlimkrieg}}18={add_dynamic_modifier={modifier=state_modifier_post_schlimkrieg}}785={add_dynamic_modifier={modifier=state_modifier_post_schlimkrieg}}6={add_dynamic_modifier={modifier=state_modifier_post_schlimkrieg}}
+﻿capital=16 set_research_slots=4 set_stability=.5 6={add_dynamic_modifier={modifier=state_modifier_post_schlimkrieg}}34={add_dynamic_modifier={modifier=state_modifier_post_schlimkrieg}}8={add_dynamic_modifier={modifier=state_modifier_post_schlimkrieg}}29={add_dynamic_modifier={modifier=state_modifier_post_schlimkrieg}}18={add_dynamic_modifier={modifier=state_modifier_post_schlimkrieg}}785={add_dynamic_modifier={modifier=state_modifier_post_schlimkrieg}}6={add_dynamic_modifier={modifier=state_modifier_post_schlimkrieg}}
+
+set_technology={infantry_weapons=1 infantry_weapons1=1 support_weapons=1 tech_recon=1 tech_support=1 tech_engineers=1 tech_mountaineers=1 tech_trucks=1 motorised_infantry=1 armor_tech_1=1 gw_artillery=1 interwar_antiair=1 early_fighter=1 fighter1=1 early_bomber=1 tactical_bomber1=1 strategic_bomber1=1 CAS1=1 naval_bomber1=1 basic_train=1 grand_battle_plan=1 fleet_in_being=1 formation_flying=1}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		engine_tech_1 = 1
+		armor_tech_1=1
+	}
+}
+
+set_oob="FRA"
+
+set_country_flag=fr_idea_flag_dr
 
 set_politics = {
 	ruling_party = democratic

@@ -18,4 +18,24 @@ italy_middle_east_modifier_dr={value=20}
 
 italy_latin_modifier_dr={value=20}
 
+commonwealth_modifier_dr={value=50}
+
+coal_modifier_dr={value=20}
+
+coal_bad_modifier_dr={value=-20}
+
+french_furry_modifier_dr={value=20}
+
+japanese_furry_modifier_dr={value=20}
+
+iceland_good_modifier_dr={value=30}
+
+france_good_modifier_dr={value=30}
+
+south_africa_good_modifier_dr={value=30}
+
+deny_dc_pact_modifier_dr={value=-50}
+
+dillon_isr_modifier_dr={value=-100}
+
 }

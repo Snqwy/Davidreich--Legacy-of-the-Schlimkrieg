@@ -1,0 +1,1 @@
+﻿capital=41 set_cosmetic_tag=SPR_reichskommissariat_dr create_country_leader={name="Ferdinand Schaal" picture=GFX_idea_europe_generic_1 expire="1965.1.1" ideology=nazism}

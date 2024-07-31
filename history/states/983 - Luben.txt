@@ -5,6 +5,9 @@ state={
 		3438 3572 6595 11517 
 	}
 	history={
+		buildings = {
+			infrastructure = 2
+		}
 		victory_points = {
 			11517 1 
 		}

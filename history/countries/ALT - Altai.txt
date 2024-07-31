@@ -1,10 +1,7 @@
-﻿capital = 654 #Oyrot/Gorno-Altaysk
-
-#oob = "ALT_1936"
+﻿capital = 654 
 
 set_research_slots = 2
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -16,9 +13,6 @@ set_technology = {
 	motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
-
-
-	
 	mass_assault = 1
 	fleet_in_being = 1
 }
@@ -87,7 +81,7 @@ if = {
 	}
 }
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -99,12 +93,3 @@ set_popularities = {
 	communism = 30
 	neutrality = 10
 }
-
-recruit_character = ALT_grigory_gurkin
-recruit_character = ALT_samuil_yufit
-
-
-
-
-
-

@@ -1,1 +1,1 @@
-capital=295
+capital=295 set_cosmetic_tag=COG_reichskommissariat_dr create_country_leader={name="Hans Huttig" picture=GFX_idea_europe_generic_1 expire="1965.1.1" ideology=nazism}

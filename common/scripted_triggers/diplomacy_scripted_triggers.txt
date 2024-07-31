@@ -24,7 +24,7 @@ DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
 				option = LIMITED
 			}
 		}
-		always = yes # Handled by game logic.
+		always = yes 
 	}
 	if = {
 		limit = {
@@ -74,22 +74,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				rule = allow_release_nations
 				option = FREE
 			}
-			OR = {
-				NOT = { has_dlc = "Man the Guns" }
-				NOT = { original_tag = ENG }
-			}
-			OR = {
-				NOT = { has_dlc = "La Resistance" }
-				NOT = { original_tag = SPR }
-			}
-			OR = {
-				NOT = { has_dlc = "Death or Dishonor" }
-				AND = {
-					NOT = { original_tag = ROM }
-					NOT = { original_tag = YUG }
-				}
-			}
-			NOT = { original_tag = SOV }
 		}
 		always = yes
 	}
@@ -377,7 +361,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			}
 			has_dlc = "La Resistance"
 			original_tag = SPR
-			has_completed_focus = SPR_masters_of_our_own_fate
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_ANARCHIST_SPAIN_TOOLTIP

@@ -1,20 +1,16 @@
 
 state = {
 	id = 516
-	name = "STATE_516" # Taymyria
+	name = "STATE_516"
 	manpower = 6004
 	
 	state_category = wasteland
 	impassable = yes
 
 	history = {
-		
-		#victory_points = {
-			#4859 1
-		#}
 		owner = OVO
 		buildings = {
-			infrastructure = 1
+			infrastructure = 0
 		}
 		add_core_of = OVO
 	}

@@ -14,6 +14,8 @@ add_ideas = {
 	idea_army_navy_rivalry_dr
 }
 
+add_opinion_modifier={target=ISR modifier=dillon_isr_modifier_dr}
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1

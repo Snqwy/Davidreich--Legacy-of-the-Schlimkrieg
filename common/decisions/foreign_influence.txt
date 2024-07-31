@@ -1,9 +1,5 @@
 foreign_influence = {
 
-	# Decisions for masters to push their ideology onto puppets
-	# Note that subject status is not checked due to those only appearing in DLC
-	# (Subjects are puppets with high autonomy)
-
 	nation_building = {
 
 		icon = eng_propaganda_campaigns
@@ -73,21 +69,6 @@ foreign_influence = {
 
 		visible = {
 			has_government = communism
-			NOT = {
-				AND = {
-					tag = ENG
-					has_completed_focus = ENG_concessions_to_the_trade_unions
-					FROM = {
-						OR = {
-							tag = CAN
-							tag = SAF
-							tag = RAJ
-							tag = AST
-						}
-						has_government = communism
-					}
-				}
-			}
 			FROM = {
 				is_puppet_of = ROOT
 				communism < 0.99
@@ -137,22 +118,6 @@ foreign_influence = {
 
 		visible = {
 			has_government = fascism
-			NOT = {
-				AND = {
-					tag = ENG
-					has_completed_focus = ENG_organize_the_blackshirts
-					FROM = {
-						OR = {
-							tag = CAN
-							tag = SAF
-							tag = RAJ
-							tag = AST
-
-						}
-						has_government = fascism
-					}
-				}
-			}
 			FROM = {
 				is_puppet_of = ROOT
 				fascism < 0.99
@@ -285,145 +250,145 @@ foreign_influence = {
 		}
 	}
 
-	fraternal_republic = {
+	#fraternal_republic = {
 
-		icon = generic_prepare_civil_war
+		#icon = generic_prepare_civil_war
 
-		cost = 50
+		#cost = 50
 
-		available = {
+		#available = {
+			#FROM = {
+				#is_puppet_of = ROOT
+			#}
+			#FROM = {
+				#communism > 0.6
+			#}
 			FROM = {
-				is_puppet_of = ROOT
-			}
-			FROM = {
-				communism > 0.6
-			}
-			FROM = {
-				NOT = { has_government = communism }
-			}
-		}
+				#NOT = { has_government = communism }
+			#}
+		#}
 
-		visible = {
-			has_government = communism
-			FROM = {
-				is_puppet_of = ROOT
-				NOT = { has_government = communism }
-			}
-			NOT = {
-				AND = {
-					tag = ENG
-					has_completed_focus = ENG_concessions_to_the_trade_unions
-					FROM = {
-						OR = {
-							tag = CAN
-							tag = SAF
-							tag = RAJ
-							tag = AST
+		#visible = {
+			#has_government = communism
+			#FROM = {
+				#is_puppet_of = ROOT
+				#NOT = { has_government = communism }
+			#}
+			#NOT = {
+				#AND = {
+					#tag = ENG
+					#has_completed_focus = ENG_concessions_to_the_trade_unions
+					#FROM = {
+						#OR = {
+							#tag = CAN
+							#tag = SAF
+							#tag = RAJ
+							#tag = AST
 						
-						}
-					}
-				}
-			}
-		}
+						#}
+					#}
+				#}
+			#}
+		#}
 
-		target_array = subjects
+		#target_array = subjects
 
-		target_trigger = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-		}
+		#target_trigger = {
+			#FROM = {
+				#is_puppet_of = ROOT
+			#}
+		#}
 
-		complete_effect = {
-			FROM = { country_event = { id = mtg_generic.1 } }
-			FROM = {
-				add_timed_idea = {
-					idea = political_turmoil
-					days = 365
-				}
-			}
-			FROM = {
-				set_politics = {
-					ruling_party = communism
-					elections_allowed = no
-				}
-			}
-		}
+		#complete_effect = {
+			#FROM = { country_event = { id = mtg_generic.1 } }
+			#FROM = {
+				#add_timed_idea = {
+					#idea = political_turmoil
+					#days = 365
+				#}
+			#}
+			#FROM = {
+				#set_politics = {
+					#ruling_party = communism
+					#elections_allowed = no
+				#}
+			#}
+		#}
 
-		ai_will_do = {
-			factor = 0
-		}
-	}
+		#ai_will_do = {
+			#factor = 0
+		#}
+	#}
 
-	ultranationalist_coup = {
+	#ultranationalist_coup = {
 
-		icon = generic_prepare_civil_war
+		#icon = generic_prepare_civil_war
 
-		cost = 50
+		#cost = 50
 
-		available = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-			FROM = {
-				fascism > 0.6
-			}
-			FROM = {
-				NOT = { has_government = fascism }
-			}
-		}
+		#available = {
+			#FROM = {
+				#is_puppet_of = ROOT
+			#}
+			#FROM = {
+				#fascism > 0.6
+			#}
+			#FROM = {
+				#NOT = { has_government = fascism }
+			#}
+		#}
 
-		visible = {
-			has_government = fascism
-			FROM = {
-				is_puppet_of = ROOT
-				NOT = { has_government = fascism }
-			}
-			NOT = {
-				AND = {
-					tag = ENG
-					has_completed_focus = ENG_organize_the_blackshirts
-					FROM = {
-						OR = {
-							tag = CAN
-							tag = SAF
-							tag = RAJ
-							tag = AST
+		#visible = {
+			#has_government = fascism
+			#FROM = {
+				#is_puppet_of = ROOT
+				#NOT = { has_government = fascism }
+			#}
+			#NOT = {
+				#AND = {
+					#tag = ENG
+					#has_completed_focus = ENG_organize_the_blackshirts
+					#FROM = {
+						#OR = {
+							#tag = CAN
+							#tag = SAF
+							#tag = RAJ
+							#tag = AST
 						
-						}
-					}
-				}
-			}
-		}
+						#}
+					#}
+				#}
+			#}
+		#}
 
-		target_array = subjects
+		#target_array = subjects
 
-		target_trigger = {
-			FROM = {
-				is_puppet_of = ROOT
-			}
-		}
+		#target_trigger = {
+			#FROM = {
+				#is_puppet_of = ROOT
+			#}
+		#}
 
-		complete_effect = {
-			FROM = { country_event = { id = mtg_generic.1 } }
-			FROM = {
-				add_timed_idea = {
-					idea = political_turmoil
-					days = 365
-				}
-			}
-			FROM = {
-				set_politics = {
-					ruling_party = fascism
-					elections_allowed = no
-				}
-			}
-		}
+		#complete_effect = {
+			#FROM = { country_event = { id = mtg_generic.1 } }
+			#FROM = {
+				#add_timed_idea = {
+					#idea = political_turmoil
+					#days = 365
+				#}
+			#}
+			#FROM = {
+				#set_politics = {
+					#ruling_party = fascism
+					#elections_allowed = no
+				#}
+			#}
+		#}
 
-		ai_will_do = {
-			factor = 0
-		}
-	}
+		#ai_will_do = {
+			#factor = 0
+		#}
+	#}
 
 	military_dictatorship = {
 

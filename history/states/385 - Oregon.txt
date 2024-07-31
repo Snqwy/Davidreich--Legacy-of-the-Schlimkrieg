@@ -18,7 +18,10 @@ state={
 		}
 		add_core_of = CSA
 		victory_points = {
-			3513 1 
+			3513 2 
+		}
+		victory_points = {
+			3471 1 
 		}
 
 	}

@@ -1,1 +1,1 @@
-﻿capital=110
+﻿capital=110 set_cosmetic_tag=NOR_reichskommissariat create_country_leader={name="Josef Terboven" picture=GFX_portrait_Josef_Terboven expire="1965.1.1" ideology=nazism}
