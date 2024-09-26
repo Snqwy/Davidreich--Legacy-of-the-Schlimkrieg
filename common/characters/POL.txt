@@ -1,49 +1,6 @@
 characters = {
-	POL_anna_andersson = {
-		name="Anastasia Romanov"
-		portraits = {
-			civilian = {
-				large="GFX_portrait_POL_anna_anderson"
-			}
-		}
-		country_leader = {
-			ideology=despotism
-			traits = { the_last_romanov_maybe }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 
-	POL_karl_albrecht = {
-		name=POL_karl_albrecht
-		portraits = {
-			civilian = {
-				large="GFX_portrait_POL_karl_albrecht"
-			}
-		}
-		country_leader = {
-			ideology=despotism
-			traits = { patriot_king }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	POL_friedrich_christian = {
-		name=POL_friedrich_christian
-		portraits = {
-			civilian = {
-				large="GFX_portrait_POL_friedrich_christian"
-			}
-		}
-		country_leader = {
-			ideology=despotism
-			expire="1965.1.1.1"
-			id=-1
-			traits = { royal_legitimist }
-		}
-	}
-
+#determine whether this is being used
 	POL_sejmik_regency = {
 		name=POL_sejmik_regency
 		portraits = {
@@ -58,68 +15,11 @@ characters = {
 		}
 	}
 
-	POL_boleslaw_wieniawa_glugoszowski = {
-		name=POL_boleslaw_wieniawa_glugoszowski
-		portraits = {
-			civilian = {
-				large="GFX_portrait_POL_boleslaw_wieniawa_dlugoszowski"
-			}
-			army = {
-				large="GFX_portrait_POL_boleslaw_wieniawa_dlugoszowski"
-				small = "GFX_idea_POL_boleslaw_wieniawa_dlugoszowski"
-			}
-		}
-
-		corps_commander = {
-			traits = { cavalry_officer war_hero politically_connected }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
-			legacy_id=-1
-		}
-		country_leader = {
-			ideology=oligarchism
-			traits = { polish_legionary }
-		}
-	}
-
-	POL_witold_pilecki = {
-		name=POL_witold_pilecki
-		portraits = {
-			civilian = {
-				large="GFX_portrait_POL_witold_pilecki"
-			}
-			army = {
-				large="GFX_portrait_POL_witold_pilecki"
-				small = "GFX_idea_POL_witold_pilecki"
-			}
-		}
-
-		corps_commander = {
-			traits = { cavalry_officer POL_sanation_left_leader }
-			skill=2
-			attack_skill=1
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=1
-			legacy_id=-1
-		}
-		country_leader = {
-			ideology=oligarchism
-			traits = { polish_legionary }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
+POL_boleslaw_wieniawa_glugoszowski={name=POL_boleslaw_wieniawa_glugoszowski portraits={army={large="GFX_portrait_POL_boleslaw_wieniawa_dlugoszowski" small="GFX_idea_POL_boleslaw_wieniawa_dlugoszowski"}}corps_commander={traits={cavalry_officer war_hero politically_connected}skill=2 attack_skill=2 defense_skill=2 planning_skill=2 logistics_skill=1 legacy_id=-1}}POL_witold_pilecki={name=POL_witold_pilecki portraits={army={large="GFX_portrait_POL_witold_pilecki" small="GFX_idea_POL_witold_pilecki"}}corps_commander={traits={cavalry_officer}skill=2 attack_skill=1 defense_skill=3 planning_skill=2 logistics_skill=1 legacy_id=-1}}
 
 	POL_wladyslaw_sikorski = {
 		name=POL_wladyslaw_sikorski
 		portraits = {
-			civilian = {
-				large=GFX_portrait_POL_wladyslaw_sikorski
-			}
 			army = {
 				large=GFX_portrait_POL_wladyslaw_sikorski
 				small = GFX_portrait_POL_wladyslaw_sikorski_small
@@ -127,7 +27,7 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { POL_sanation_left_leader defensive_doctrine }
+			traits = { defensive_doctrine }
 			skill=3
 			attack_skill=2
 			defense_skill=3
@@ -135,14 +35,9 @@ characters = {
 			logistics_skill=3
 			legacy_id=-1
 		}
-		country_leader = {
-			ideology=oligarchism
-			traits = { patriotic_guerilla }
-			expire="1965.1.1.1"
-			id=-1
-		}
 	}
 
+#add to connerian union maybe?
 	POL_vladislav_korchits = {
 		name = POL_vladislav_korchits
 		portraits = {
@@ -161,141 +56,21 @@ characters = {
 		}
 	}
 
-	POL_ignacy_moscicki = {
-		name=POL_ignacy_moscicki
-		portraits = {
-			army={
-				small=GFX_portrait_POL_ignacy_moscicki_small
-			}
-			civilian = {
-				large="GFX_portrait_POL_ignacy_moscicki"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_ignacy_moscicki
-			available = {
-				NOT={has_government=communism}
-			}
-			allowed = {
-				original_tag = POL
-			}
-			traits = {
-				the_king_of_the_castle 
-			}
-		}
-		
-		country_leader = {
-			ideology=oligarchism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
+POL_irena_anders={name=POL_irena_anders portraits={army={small="GFX_idea_POL_irena_anders"}}gender=female advisor={cost=50 slot=political_advisor idea_token=POL_irena_anders allowed={original_tag=POL has_country_flag=david_pol_flag_dr}available={has_capitulated=yes has_dlc="Man the Guns"}traits={resistance_artist}}}POL_aleksander_kakowski={name=POL_aleksander_kakowski portraits={army={small="GFX_idea_POL_aleksander_kakowski"}}advisor={cost=75 slot=political_advisor idea_token=POL_aleksander_kakowski allowed={original_tag=POL has_country_flag=david_pol_flag_dr}available={NOT={has_government=communism}}traits={autocratic_archbishop}}}POL_roman_dmowski={name=POL_roman_dmowski portraits={civilian={large="GFX_portrait_POL_roman_dmowski"}army={small=GFX_portrait_POL_roman_dmowski_small}}advisor={slot=political_advisor idea_token=POL_roman_dmowski allowed={original_tag=POL has_country_flag=david_pol_flag_dr}available={NOT={has_government=communism}}traits={trait_national_idealogue_dr}}}
 
-	POL_walery_slawek = {
-		name=POL_walery_slawek
-		portraits = {
-			civilian = {
-				large="GFX_portrait_POL_walery_slawek"
-			}
-			army={
-				small="GFX_idea_POL_walery_slawek"
-			}
-		}
-		advisor={	
-			cost = 100
-			slot = political_advisor
-			idea_token = POL_walery_slawek
-			available = {
-				NOT={has_government=communism}
-			}
-			allowed = {
-				original_tag = POL
-			}
-			traits = {
-				left_sanationist_minister 
-			}
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
+#fix appearing
+	POL_tadeusz_bielecki={name=POL_tadeusz_bielecki portraits={army={small="GFX_portrait_POL_tadeusz_bielecki_small" large="GFX_portrait_POL_tadeusz_bielecki"}}available={NOT={has_government=communism}has_idea=idea_roman_dmowski}advisor={cost=50 slot=political_advisor idea_token=POL_tadeusz_bielecki allowed={original_tag=POL has_country_flag=david_pol_flag_dr}traits={nationalist_journalist trait_dmowskis_secretary_dr}}}
+	
+POL_joachim_stefan_bartoszewicz={name=POL_joachim_stefan_bartoszewicz portraits={army={small="GFX_idea_POL_joachim_stefan_bartoszewicz"}}advisor={slot=political_advisor idea_token=POL_joachim_stefan_bartoszewicz available={NOT={has_government=communism}}allowed={original_tag=POL has_country_flag=david_pol_flag_dr}traits={national_determinist}}}POL_jerzy_rutkowski={name=POL_jerzy_rutkowski portraits={army={small="GFX_idea_POL_jerzy_rutkowski"}}advisor={cost=75 slot=political_advisor idea_token=POL_jerzy_rutkowski allowed={original_tag=POL has_country_flag=david_pol_flag_dr}available={NOT={has_government=communism}has_capitulated=yes}traits={falangist_militarist}}}
 
-	POL_maria_koszutska = {
-		name=POL_maria_koszutska
-		portraits = {
-			civilian = {
-				large="GFX_portrait_POL_maria_koszutska"
-			}
-		}
-		gender = female 
-		country_leader = {
-			ideology=marxism
-			traits = { leftist_independent }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
+#fix local
+	POL_ignacy_moscicki={name=POL_ignacy_moscicki portraits={army={small=GFX_portrait_POL_ignacy_moscicki_small}civilian={large="GFX_portrait_POL_ignacy_moscicki"}}advisor={slot=political_advisor idea_token=POL_ignacy_moscicki available={NOT={has_government=communism has_government=fascism}}allowed={original_tag=POL has_country_flag=david_pol_flag_dr}traits={the_king_of_the_castle}}country_leader={ideology=oligarchism expire="1965.1.1.1" id=-1 traits={the_king_of_the_castle}}}
 
-	POL_wladyslaw_gomulka = {
-		name=POL_wladyslaw_gomulka
-		portraits = {
-			civilian = {
-				large=GFX_portrait_POL_wladyslaw_gomulka
-			}
-		}
-		country_leader = {
-			ideology=leninism
-			traits = { soviet_thaw }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
+	POL_stanislaw_wojciechowski={name=POL_stanislaw_wojciechowski portraits={army={small="GFX_idea_POL_stanislaw_wojciechowski"}}advisor={slot=political_advisor idea_token=POL_stanislaw_wojciechowski available={NOT={has_government=communism has_government=fascism}}allowed={original_tag=POL has_country_flag=david_pol_flag_dr}traits={noble_beurocrat}}}
 
-	POL_wladyslaw_raczkiewicz = {
-		name=POL_wladyslaw_raczkiewicz
-		portraits = {
-			civilian = {
-				large="GFX_portrait_POL_wladyslaw_raczkiewicz"
-			}
-		}
-		country_leader = {
-			ideology=liberalism
-			traits = { democratic_restorationist }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
+	POL_wincenty_witos={name=POL_wincenty_witos portraits={army={small="GFX_idea_unknown"}}advisor={slot=political_advisor idea_token=POL_wincenty_witos available={NOT={has_government=communism has_government=fascism}}allowed={original_tag=POL has_country_flag=david_pol_flag_dr}traits={morges_champion}}}
 
-	POL_wincenty_witos = {
-		name=POL_wincenty_witos
-		portraits = {
-			civilian = {
-				large="GFX_POL_wincenty_witos"
-			}
-		}
-		country_leader = {
-			ideology=socialism
-			traits = { morges_champion }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	POL_stanislaw_mikolajczyk = {
-		name=POL_stanislaw_mikolajczyk
-		portraits = {
-			civilian = {
-				large="GFX_portrait_POL_stanislaw_mikolajczyk"
-			}
-		}
-		country_leader = {
-			ideology=socialism
-			traits = { polish_peasant_champion }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
+	POL_stanislaw_mikolajczyk={name=POL_stanislaw_mikolajczyk portraits={army={small="GFX_idea_unknown"}}advisor={slot=political_advisor idea_token=POL_stanislaw_mikolajczyk available={NOT={has_government=communism has_government=fascism}}allowed={original_tag=POL has_country_flag=david_pol_flag_dr}traits={polish_peasant_champion}}}
 
 	POL_pavel_bermondt_avalov = {
 		name=POL_pavel_bermondt_avalov
@@ -312,45 +87,6 @@ characters = {
 			expire="1965.1.1.1"
 			traits = { POL_cossack_king }
 			id=-1
-		}
-	}
-
-	POL_roman_dmowski = {
-		name=POL_roman_dmowski
-		portraits={
-			civilian = {
-				large="GFX_portrait_POL_roman_dmowski"
-			}
-			army={
-				small=GFX_portrait_POL_roman_dmowski_small
-			}
-		}
-		advisor={
-			cost = 100
-			slot = political_advisor
-			idea_token = POL_roman_dmowski
-			allowed = {
-				original_tag = POL
-			}
-			available = {
-				NOT={has_government=communism}
-			}
-			traits = {
-				trait_national_idealogue_dr
-			}
-			ai_will_do = {
-				factor = 0.000
-				modifier = {
-					add = 100.000
-				}
-			}
-		}
-		
-		country_leader = {
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
-			traits = { father_of_polish_nationalism }
 		}
 	}
 
@@ -508,35 +244,18 @@ characters = {
 		}
 	}
 
-	POL_jozef_haller = {
-		name=POL_jozef_haller
-		portraits = {
-			army = {
-				large="GFX_portrait_POL_jozef_haller"
-				small="GFX_idea_POL_jozef_haller"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_jozef_haller
-			allowed = {
-				original_tag = POL
-			}
-			traits = {
-				war_industrialist 
-			}
-		}
-		
-		corps_commander = {
-			traits = { old_guard POL_sanation_left_leader }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
+POL_jozef_beck={name=POL_jozef_beck portraits={army={small="GFX_idea_POL_jozef_beck"}}advisor={slot=political_advisor idea_token=POL_jozef_beck available={NOT={has_government=communism has_government=fascism}}allowed={original_tag=POL has_country_flag=david_pol_flag_dr}traits={trait_ambitious_statesman_dr}}}POL_jozef_haller={name=POL_jozef_haller portraits={army={large="GFX_portrait_POL_jozef_haller" small="GFX_idea_POL_jozef_haller"}}advisor={cost=100 slot=political_advisor idea_token=POL_jozef_haller available={NOT={has_government=communism has_government=fascism}}allowed={original_tag=POL has_country_flag=david_pol_flag_dr}traits={trait_harcmistrz_dr}}corps_commander={traits={old_guard}skill=3 attack_skill=2 defense_skill=3 planning_skill=3 logistics_skill=2 legacy_id=-1}}
+
+#fix local
+	POL_walery_slawek={name=POL_walery_slawek portraits={civilian={large="GFX_portrait_POL_walery_slawek"}army={small="GFX_idea_POL_walery_slawek"}}advisor={slot=political_advisor idea_token=POL_walery_slawek available={NOT={has_government=communism has_government=fascism has_idea=POL_kazimierz_switalski}}allowed={original_tag=POL has_country_flag=david_pol_flag_dr}traits={left_sanationist_minister}}}
+
+#add icon
+	POL_kazimierz_switalski={name=POL_kazimierz_switalski portraits={army={small="GFX_idea_unknown"}}advisor={slot=political_advisor idea_token=POL_kazimierz_switalski available={NOT={has_government=communism has_government=fascism has_idea=POL_walery_slawek}}allowed={original_tag=POL has_country_flag=david_pol_flag_dr}traits={leftist_legionary}}}
+
+#add icon
+	POL_wladyslaw_raczkiewicz={name=POL_wladyslaw_raczkiewicz portraits={army={small="GFX_idea_unknown"}}advisor={slot=political_advisor idea_token=POL_wladyslaw_raczkiewicz available={NOT={has_government=communism has_government=fascism}has_capitulated=yes has_dlc="Man the Guns"}allowed={original_tag=POL has_country_flag=david_pol_flag_dr}traits={democratic_restorationist}}}
+
+POL_mieczyslaw_michalowicz={name=POL_mieczyslaw_michalowicz portraits={army={small="GFX_idea_POL_mieczyslaw_michalowicz"}}advisor={slot=political_advisor idea_token=POL_mieczyslaw_michalowicz allowed={original_tag=POL has_country_flag=david_pol_flag_dr}available={NOT={has_government=fascism}}traits={socdem_reformist}}}
 
 	POL_stanislaw_sosabowski = {
 		name=POL_stanislaw_sosabowski
@@ -979,134 +698,56 @@ characters = {
 		}
 	}
 
-	### POLITICAL ADVISORS ###
-	
-	POL_wanda_wasilewska = {
-		name=POL_wanda_wasilewska
+POL_zdzislaw_lubomirski={name=POL_zdzislaw_lubomirski portraits={army={small="GFX_idea_POL_zdzislaw_lubomirski"}}advisor={slot=political_advisor idea_token=POL_zdzislaw_lubomirski allowed={original_tag=POL has_country_flag=david_pol_flag_dr}available={has_government=neutrality}traits={staunch_aristocrat}}}
+
+#add icon
+	POL_friedrich_christian={name=POL_friedrich_christian portraits={army={small="GFX_idea_unknown"}}advisor={slot=political_advisor idea_token=POL_friedrich_christian allowed={original_tag=POL has_country_flag=david_pol_flag_dr}available={has_government=neutrality NOT={has_idea=POL_karl_albrecht has_idea=POL_anna_anderson}}traits={popular_figurehead}}}
+
+#add icon
+	POL_karl_albrecht={name=POL_karl_albrecht portraits={army={small="GFX_idea_unknown"}}advisor={slot=political_advisor idea_token=POL_karl_albrecht allowed={original_tag=POL has_country_flag=david_pol_flag_dr}available={has_government=neutrality NOT={has_idea=POL_friedrich_christian has_idea=POL_anna_anderson}}traits={popular_figurehead}}}
+
+#add icon
+	POL_anna_anderson={name=POL_anna_anderson portraits={army={small="GFX_idea_unknown"}}advisor={slot=political_advisor idea_token=POL_anna_anderson allowed={original_tag=POL has_country_flag=david_pol_flag_dr}available={has_government=neutrality NOT={has_idea=POL_friedrich_christian has_idea=POL_karl_albrecht}}traits={the_last_romanov_definitely}}}
+
+POL_edward_osobka_morawski={name=POL_edward_osobka_morawski portraits={army={small="GFX_idea_POL_edward_osobka_morawski"}}advisor={slot=political_advisor idea_token=POL_edward_osobka_morawski allowed={original_tag=POL has_country_flag=david_pol_flag_dr}available={OR={has_government=democratic has_government=communism}}traits={patriotic_socialist}}}
+
+#add icon
+	POL_wladyslaw_gomulka_advisor_dr={name=POL_wladyslaw_gomulka portraits={army={small="GFX_idea_unknown"}}advisor={slot=political_advisor idea_token=POL_wladyslaw_gomulka_advisor_dr available={has_government=communism}allowed={original_tag=POL has_country_flag=david_pol_flag_dr}traits={soviet_thaw}}}
+
+	POL_wladyslaw_gomulka = {
+		name=POL_wladyslaw_gomulka
 		portraits = {
-			army = {
-				small="GFX_idea_POL_wanda_wasilewska"
+			civilian = {
+				large=GFX_portrait_POL_wladyslaw_gomulka
 			}
 		}
-		gender = female
-		advisor = {
-			cost = 100
-			slot = political_advisor
-			idea_token = POL_wanda_wasilewska
-			ledger = army
-			available = {
-				has_government=communism
-			}
-			allowed = {
-				original_tag = POL
-			}
-			traits = {
-				leftist_intellectual
-			}
+		country_leader = {
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
 		}
 	}
 
-	POL_jan_mosdorf={
-		name=POL_jan_mosdorf
-		portraits={
-			army={
-				small="GFX_idea_POL_jan_mosdorf"
+POL_stanislaw_radkiewicz={name=POL_stanislaw_radkiewicz portraits={army={small="GFX_idea_POL_stanislaw_radkiewicz"}}advisor={slot=political_advisor idea_token=POL_stanislaw_radkiewicz allowed={original_tag=POL has_country_flag=david_pol_flag_dr}available={has_government=communism}traits={trait_red_terror_dr}}}POL_wanda_wasilewska={name=POL_wanda_wasilewska portraits={army={small="GFX_idea_POL_wanda_wasilewska"}}gender=female advisor={slot=political_advisor idea_token=POL_wanda_wasilewska available={has_government=communism}allowed={original_tag=POL has_country_flag=david_pol_flag_dr}traits={leftist_intellectual}}}
+
+#make advisor
+	POL_maria_koszutska = {
+		name=POL_maria_koszutska
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_maria_koszutska"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_jan_mosdorf
-			available = {
-				has_government=fascism
-			}
-			allowed = {
-				original_tag = POL
-			}
-			traits = {
-				national_propagandist 
-			}
+		gender = female 
+		country_leader = {
+			ideology=marxism
+			traits = { leftist_independent }
+			expire="1965.1.1.1"
+			id=-1
 		}
 	}
 
-	POL_irena_anders={
-		name=POL_irena_anders
-		portraits={
-			army={
-				small="GFX_idea_POL_irena_anders"
-			}
-		}
-		gender = female
-		advisor={
-			slot = political_advisor
-			idea_token = POL_irena_anders
-			allowed = {
-				original_tag = POL
-			}
-			available = {
-				has_capitulated = yes 
-				has_dlc="Man the Guns"
-			}
-			traits = {
-				resistance_artist 
-			}
-			ai_will_do = {
-				factor = 100.000
-			}
-		}
-	}
-
-	POL_mieczyslaw_michalowicz={
-		instance = {
-			allowed = {
-				has_dlc = "No Step Back"
-			}
-			name=POL_mieczyslaw_michalowicz
-			portraits={
-				army={
-					small="GFX_idea_POL_mieczyslaw_michalowicz"
-				}
-			}
-			advisor={
-				slot = political_advisor
-				idea_token = POL_mieczyslaw_michalowicz
-				allowed = {
-					original_tag = POL
-					has_dlc = "No Step Back"
-				}
-				available = {
-					NOT={has_government=fascism}
-				}
-				traits = {
-					socdem_reformist 
-				}
-				ai_will_do = {
-					factor = 0.000
-				}
-			}			
-		}
-	}
-
-	POL_henryk_floyar_rajchman={
-		name=POL_henryk_floyar_rajchman
-		portraits={
-			army={
-				small="GFX_idea_POL_henryk_floyar_rajchman"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_henryk_floyar_rajchman
-			available = {
-			
-			}
-			allowed = {
-				original_tag=POL
-			}
-			traits = {
-				right_industrialist 
-			}
-		}
-	}
+POL_jan_mosdorf={name=POL_jan_mosdorf portraits={army={small="GFX_idea_POL_jan_mosdorf"}}advisor={slot=political_advisor idea_token=POL_jan_mosdorf available={has_government=fascism}allowed={original_tag=POL has_country_flag=david_pol_flag_dr}traits={national_propagandist}}}POL_eugeniusz_kwiatkowiski={name=POL_eugeniusz_kwiatkowiski portraits={army={small="GFX_idea_POL_eugeniusz_kwiatkowiski"}}advisor={slot=political_advisor idea_token=POL_eugeniusz_kwiatkowiski allowed={original_tag=POL has_country_flag=david_pol_flag_dr}available={NOT={has_government=communism}}traits={captain_of_industry}}}POL_henryk_floyar_rajchman={name=POL_henryk_floyar_rajchman portraits={army={small="GFX_idea_POL_henryk_floyar_rajchman"}}advisor={slot=political_advisor idea_token=POL_henryk_floyar_rajchman available={NOT={has_government=communism has_government=fascism}}allowed={original_tag=POL has_country_flag=david_pol_flag_dr}traits={right_industrialist}}}
 
 	POL_boleslaw_bierut={
 		name=POL_boleslaw_bierut
@@ -1119,10 +760,8 @@ characters = {
 			slot = political_advisor
 			idea_token = POL_boleslaw_bierut
 			allowed = {
-				OR = {
-					original_tag = POL
-					original_tag = SWE
-				}
+				original_tag=POL
+				always=no
 			}
 			available = {
 				has_government=communism
@@ -1139,286 +778,13 @@ characters = {
 		}
 	}
 
-	POL_edward_osobka_morawski={
-		name=POL_edward_osobka_morawski
-		portraits={
-			army={
-				small="GFX_idea_POL_edward_osobka_morawski"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_edward_osobka_morawski
-			allowed = {
-				original_tag=POL
-			}
-			available = {
-				has_government=communism
-			}
-			traits = {
-				patriotic_socialist 
-			}
-			ai_will_do = {
-				factor = 1.000
-				modifier = {
-					factor = 0.000
-				}
-			}
-		}
-	}
-
-	POL_kazimierz_switalski = {
-		name=POL_kazimierz_switalski
-		portraits = {
-			army = {
-				small="GFX_idea_generic_political_advisor_europe_5" #No Portrait
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = POL_kazimierz_switalski
-			available = {
-				NOT={has_government=communism}
-			}
-			allowed = {
-				original_tag = POL
-			}
-			traits = {
-				leftist_legionary
-			}
-		}
-	}
-
-	POL_jozef_beck={
-		name=POL_jozef_beck
-		portraits={
-			army={
-				small="GFX_idea_POL_jozef_beck"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_jozef_beck
-			available={NOT={has_government=communism}}
-			allowed = {
-				original_tag = POL
-			}
-			traits = {
-				smooth_talking_charmer 
-			}
-		}		
-	}
-
-	POL_zdzislaw_lubomirski={
-		name=POL_zdzislaw_lubomirski
-		portraits={
-			army={
-				small="GFX_idea_POL_zdzislaw_lubomirski"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_zdzislaw_lubomirski
-			allowed = {
-				original_tag = POL
-			}
-			available = {
-				OR={has_government=neutrality has_government=democratic}
-			}
-			traits = {
-				staunch_aristocrat 
-			}
-			ai_will_do = {
-				factor = 1.000
-				modifier = {
-					factor = 0.000
-				}
-			}
-		}		
-	}
-
-	POL_tadeusz_bielecki={
-		name=POL_tadeusz_bielecki
-		portraits={
-			army={
-				small="GFX_portrait_POL_tadeusz_bielecki_small"
-				large = "GFX_portrait_POL_tadeusz_bielecki" #Country Leader role not implemented
-			}
-			civilian = {
-				large = "GFX_portrait_POL_tadeusz_bielecki"
-			}
-		}
-		available={NOT={has_government=communism}}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_tadeusz_bielecki
-			allowed = {
-				original_tag = POL
-			}
-			traits = {
-				nationalist_journalist 
-			}
-		}		
-	}
-
-	POL_joachim_stefan_bartoszewicz={
-		name=POL_joachim_stefan_bartoszewicz
-		portraits={
-			army={
-				small="GFX_idea_POL_joachim_stefan_bartoszewicz"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_joachim_stefan_bartoszewicz
-			available = {
-				NOT={has_government=communism}
-			}
-			allowed = {
-				original_tag = POL	
-			}
-			traits = {
-				national_determinist 
-			}
-		}
-	}
-
-	POL_aleksander_kakowski={
-		name=POL_aleksander_kakowski
-		portraits={
-			army={
-				small="GFX_idea_POL_aleksander_kakowski"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_aleksander_kakowski
-			allowed = {
-				original_tag = POL
-			}
-			available = {
-				has_government=neutrality
-				always=no
-			}
-			traits = {
-				autocratic_archbishop 
-			}
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
-
-	POL_stanislaw_radkiewicz={
-		name=POL_stanislaw_radkiewicz
-		portraits={
-			army={
-				small="GFX_idea_POL_stanislaw_radkiewicz"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_stanislaw_radkiewicz
-			allowed = {
-				original_tag = POL
-			}
-			available = {
-				has_government=communism
-			}
-			traits = {
-				communist_revolutionary 
-			}
-			ai_will_do = {
-				factor = 0.000
-			}
-		}
-	}
-
-	POL_eugeniusz_kwiatkowiski={
-		name=POL_eugeniusz_kwiatkowiski
-		portraits={
-			army={
-				small="GFX_idea_POL_eugeniusz_kwiatkowiski"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_eugeniusz_kwiatkowiski
-			allowed = {
-				original_tag = POL
-			}
-			available={NOT={has_government=communism}}
-			traits = {
-				captain_of_industry 
-			}
-		}
-	}
-	
-	POL_stanislaw_wojciechowski={
-		name=POL_stanislaw_wojciechowski
-		portraits={
-			army={
-				small="GFX_idea_POL_stanislaw_wojciechowski"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_stanislaw_wojciechowski
-			available = {
-				NOT={has_government=communism}
-			}
-			allowed = {
-				original_tag = POL
-			}
-			traits = {
-				noble_beurocrat 
-			}
-		}
-	}
-
-	POL_jerzy_rutkowski={
-		name=POL_jerzy_rutkowski
-		portraits={
-			army={
-				small="GFX_idea_POL_jerzy_rutkowski"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_jerzy_rutkowski
-			allowed = {
-				original_tag = POL
-			}
-			available = {
-				has_capitulated=yes
-			}
-			traits = {
-				falangist_militarist 
-			}
-			ai_will_do = {
-				factor = 1.000
-				modifier = {
-					factor = 0.000
-				}
-			}
-		}		
-	}
-
-	POL_jan_kowalewski={
-		name=POL_jan_kowalewski
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_3" #No Portrait
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_jan_kowalewski
-			available = {
+	POL_jan_kowalewski={name=POL_jan_kowalewski portraits={army={small="GFX_idea_unknown"}}advisor={slot=political_advisor idea_token=POL_jan_kowalewski
+			available={
 				has_intelligence_agency = yes 
 			}
 			allowed = {
 				original_tag = POL
+				always=no
 			}
 			traits = {
 				head_of_intelligence 
@@ -1426,25 +792,4 @@ characters = {
 		}
 	}
 
-	POL_marian_rejewski={
-		name=POL_marian_rejewski
-		portraits={
-			army={
-				small="GFX_idea_POL_marian_rejewski"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = POL_marian_rejewski
-			available = {
-				NOT={has_government=fascism}
-			}
-			allowed = {
-				original_tag = POL
-			}
-			traits = {
-				mastermind_code_cracker 
-			}
-		}		
-	}
-}
+POL_marian_rejewski={name=POL_marian_rejewski portraits={army={small="GFX_idea_POL_marian_rejewski"}}advisor={slot=political_advisor idea_token=POL_marian_rejewski available={NOT={has_government=fascism}has_intelligence_agency=yes has_dlc="La Resistance"}allowed={original_tag=POL has_country_flag=david_pol_flag_dr}traits={mastermind_code_cracker}}}}

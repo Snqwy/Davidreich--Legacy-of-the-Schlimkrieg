@@ -1,1 +1,1 @@
-﻿capital=856 if={limit={has_dlc="Battle for the Bosporus"}set_technology={camelry=1}}set_cosmetic_tag=SAU_reichskommissariat_dr create_country_leader={name="Axel von Blomberg" picture=GFX_idea_europe_generic_1 expire="1965.1.1" ideology=nazism}
+﻿capital=856 if={limit={has_dlc="Battle for the Bosporus"}set_technology={camelry=1}}set_cosmetic_tag=SAU_reichskommissariat_dr create_country_leader={name="Axel von Blomberg" picture=GFX_idea_europe_generic_1 expire="1965.1.1" ideology=nazism}add_ideas=idea_davekommissariat_dr

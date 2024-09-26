@@ -1,4 +1,4 @@
-﻿capital=681 set_stability=.6 set_war_support=.1 add_ideas={idea_victor_of_the_schlimkrieg_dr idea_quelled_minorities_dr idea_advances_of_south_africa_dr}give_guarantee=ENG give_guarantee=IRE give_guarantee=AST give_military_access=ENG give_military_access=IRE give_military_access=AST set_politics={ruling_party=democratic last_election="1933.5.17" election_frequency=60 elections_allowed=no}set_popularities={democratic=60 fascism=25 communism=5 neutrality=10}set_research_slots=4 recruit_character=SAF_j_b_m_hertzog recruit_character=eugene_fascist_character_dr recruit_character=eugene_commie_character_dr recruit_character=eugene_anarchy_character_dr oob="SAF" set_technology={infantry_weapons=1 infantry_weapons1=1 support_weapons=1 tech_recon=1 tech_support=1 tech_engineers=1 tech_mountaineers=1 marines=1 tech_trucks=1 motorised_infantry=1 tech_military_police=1 gw_artillery=1 interwar_antiair=1 early_fighter=1 early_bomber=1 CAS1=1 naval_bomber1=1 basic_train=1 grand_battle_plan=1 fleet_in_being=1 formation_flying=1 electronic_mechanical_engineering=1 synth_oil_experiments=1 fuel_silos=1 fuel_refining=1}
+﻿capital=681 set_stability=.6 set_war_support=.1 add_ideas={idea_victor_of_the_schlimkrieg_dr idea_quelled_minorities_dr idea_advances_of_south_africa_dr}give_guarantee=ENG give_guarantee=IRE give_guarantee=AST give_military_access=ENG give_military_access=IRE give_military_access=AST set_politics={ruling_party=democratic last_election="1933.5.17" election_frequency=60 elections_allowed=no}set_popularities={democratic=60 fascism=25 communism=5 neutrality=10}set_research_slots=4 oob="SAF" set_technology={infantry_weapons=1 infantry_weapons1=1 support_weapons=1 tech_recon=1 tech_support=1 tech_engineers=1 tech_mountaineers=1 marines=1 tech_trucks=1 motorised_infantry=1 tech_military_police=1 gw_artillery=1 interwar_antiair=1 early_fighter=1 early_bomber=1 CAS1=1 naval_bomber1=1 basic_train=1 grand_battle_plan=1 fleet_in_being=1 formation_flying=1 electronic_mechanical_engineering=1 synth_oil_experiments=1 fuel_silos=1 fuel_refining=1}
 
 if = {
 	limit = {
@@ -22,3 +22,19 @@ if = {
 		armor_tech_1=1
 	}
 }
+recruit_character=SAF_j_b_m_hertzog 
+recruit_character=eugene_fascist_character_dr 
+recruit_character=eugene_commie_character_dr 
+recruit_character=eugene_anarchy_character_dr 
+recruit_character=HOL_dirk_jan_de_geer_advisor
+recruit_character=HOL_pieter_sjoerds_gerbrandy_advisor
+recruit_character=HOL_jacob_adriaan_de_wilde_advisor
+recruit_character=HOL_willem_schermerhorn_advisor
+recruit_character=HOL_lou_de_visser_advisor
+recruit_character=HOL_antonie_pannekoek_advisor
+recruit_character=HOL_saul_de_groot_advisor
+recruit_character=HOL_anton_de_kom_advisor
+recruit_character=HOL_anton_mussert_advisor
+recruit_character=HOL_jan_goudriaan_advisor
+recruit_character=HOL_adriaan_dijxhoorn_advisor
+recruit_character=HOL_walraven_van_hall_advisor

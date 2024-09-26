@@ -8,6 +8,9 @@ state = {
 		victory_points = {
 			10877 1 
 		}
+		victory_points = {
+			2096 1 
+		}
 		owner = EGY
 		add_core_of = EGY
 		add_core_of = CHA

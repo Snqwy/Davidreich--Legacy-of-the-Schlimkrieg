@@ -1,29 +1,15 @@
-focus_tree={id=bavaria_focus country={factor=0 modifier={add=10 tag=BAY}}
-
-focus={id=BAY_french_assistance_dr icon=GFX_focus_chi_reach_out_to_france x=5 y=2 cost=5 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}bypass={OR={NOT={country_exists=FRA}has_war_with=FRA}}available_if_capitulated=yes prerequisite={focus=BAY_the_friendly_schnitzel_man_dr}ai_will_do={factor=1}completion_reward={FRA={country_event=dr.156}}}focus={id=BAY_westphalian_assistance_dr icon=GFX_goal_molotov_ribbentrop_pact x=7 y=2 cost=5 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}bypass={OR={NOT={country_exists=HAN}has_war_with=HAN}}available_if_capitulated=yes prerequisite={focus=BAY_the_friendly_schnitzel_man_dr}ai_will_do={factor=1}completion_reward={HAN={country_event=dr.156}}}focus={id=BAY_voice_to_the_imperium_dr icon=GFX_goal_generic_propaganda x=6 y=3 cost=5 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}bypass={OR={NOT={country_exists=USA}has_war_with=USA}}available_if_capitulated=yes prerequisite={focus=BAY_french_assistance_dr focus=BAY_westphalian_assistance_dr}ai_will_do={factor=1}completion_reward={USA={country_event=dr.156}}}focus={id=BAY_western_plan_dr icon=GFX_focus_generic_industry_1 x=11 y=4 cost=10 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=42 controls_state=51 controls_state=937 controls_state=57 controls_state=55}available_if_capitulated=yes prerequisite={focus=BAY_northern_plan_dr}ai_will_do={factor=1}completion_reward={42={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}51={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}937={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}57={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}55={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=BAY_construction_initiative_dr icon=GFX_goal_generic_construct_civ_factory x=9 y=1 cost=2 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=BAY_cuck_the_davidians_dr}ai_will_do={factor=1}completion_reward={add_political_power=10}}focus={id=BAY_northern_plan_dr icon=GFX_focus_generic_industry_2 x=10 y=3 cost=9 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=56 controls_state=59 controls_state=58 controls_state=909 controls_state=61 controls_state=62}available_if_capitulated=yes prerequisite={focus=BAY_southern_plan_dr}ai_will_do={factor=1}completion_reward={56={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}59={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}58={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}909={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}61={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}62={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=BAY_eastern_plan_dr icon=GFX_focus_generic_industry_1 x=9 y=4 cost=12 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=60 controls_state=65 controls_state=64 controls_state=983 controls_state=66 controls_state=68 controls_state=982 controls_state=63}available_if_capitulated=yes prerequisite={focus=BAY_northern_plan_dr}ai_will_do={factor=1}completion_reward={60={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}65={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}64={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}983={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}66={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}68={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}982={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}63={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}
+focus_tree={id=bavaria_focus country={factor=0 modifier={add=10 tag=BAY}}focus={id=BAY_cuck_the_davidians_dr icon=GFX_goal_generic_demand_territory x=6 y=0 cost=4 search_filters={FOCUS_FILTER_WAR_SUPPORT}available_if_capitulated=yes bypass={is_subject_of=GER}ai_will_do={factor=1}completion_reward={add_war_support=.1}}focus={id=BAY_french_assistance_dr icon=GFX_focus_chi_reach_out_to_france x=5 y=2 cost=5 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}bypass={OR={NOT={country_exists=FRA}has_war_with=FRA FRA={is_subject_of=GER}}}available_if_capitulated=yes prerequisite={focus=BAY_the_friendly_schnitzel_man_dr}ai_will_do={factor=1}completion_reward={FRA={country_event=dr.156}}}focus={id=BAY_westphalian_assistance_dr icon=GFX_goal_molotov_ribbentrop_pact x=7 y=2 cost=5 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}bypass={OR={NOT={country_exists=HAN}has_war_with=HAN HAN={is_subject_of=GER}}}available_if_capitulated=yes prerequisite={focus=BAY_the_friendly_schnitzel_man_dr}ai_will_do={factor=1}completion_reward={HAN={country_event=dr.156}}}focus={id=BAY_voice_to_the_imperium_dr icon=GFX_goal_generic_propaganda x=6 y=3 cost=5 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}bypass={OR={NOT={country_exists=USA}has_war_with=USA USA={is_subject_of=GER}}}available_if_capitulated=yes prerequisite={focus=BAY_french_assistance_dr focus=BAY_westphalian_assistance_dr}ai_will_do={factor=1}completion_reward={USA={country_event=dr.156}}}focus={id=BAY_war_among_us_dr icon=GFX_focus_generic_conspiracy x=3 y=1 cost=2 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=BAY_cuck_the_davidians_dr}ai_will_do={factor=1}completion_reward={add_political_power=10}}focus={id=BAY_the_friendly_schnitzel_man_dr icon=GFX_goal_generic_improve_relations x=6 y=1 cost=2 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=BAY_cuck_the_davidians_dr}ai_will_do={factor=1}completion_reward={add_political_power=10}}focus={id=BAY_construction_initiative_dr icon=GFX_goal_generic_construct_civ_factory x=9 y=1 cost=2 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=BAY_cuck_the_davidians_dr}ai_will_do={factor=1}completion_reward={add_political_power=10}}focus={id=BAY_new_bavarian_army_dr icon=GFX_goal_generic_small_arms x=1 y=3 cost=7 search_filters={FOCUS_FILTER_ARMY_XP}available_if_capitulated=yes prerequisite={focus=BAY_holding_the_line_dr}ai_will_do={factor=1}completion_reward={army_experience=25 swap_ideas={remove_idea=idea_bavaria_army_2_dr add_idea=idea_bavaria_army_dr}}}focus={id=BAY_holding_the_line_dr icon=GFX_goal_generic_defence x=2 y=2 cost=6 search_filters={FOCUS_FILTER_ARMY_XP FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=BAY_war_among_us_dr}ai_will_do={factor=1}completion_reward={army_experience=10 add_ideas=idea_bavaria_army_2_dr}}focus={id=BAY_war_austerity_dr icon=GFX_goal_generic_consumer_goods x=3 y=3 cost=4 search_filters={FOCUS_FILTER_INDUSTRY}available={has_war=yes}available_if_capitulated=yes prerequisite={focus=BAY_holding_the_line_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_war_austerity_dr}}focus={id=BAY_exploit_davidian_weakness_dr icon=GFX_focus_CZE_german_puppet x=2 y=4 cost=6 available={has_war_with=GER}available_if_capitulated=yes prerequisite={focus=BAY_new_bavarian_army_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_exploit_davidian_weakness_dr}}
 
 
 
-	focus={id=BAY_new_bavarian_army_dr icon=GFX_goal_generic_small_arms x=1 y=3 cost=5 available_if_capitulated=yes prerequisite = { focus = BAY_holding_the_line_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
-	focus={id=BAY_holding_the_line_dr icon=GFX_goal_generic_defence x=2 y=2 cost=2 search_filters={FOCUS_FILTER_ARMY_EXPERIENCE}available_if_capitulated=yes prerequisite={focus=BAY_war_among_us_dr}ai_will_do={factor=1}completion_reward={army_experience=5 add_ideas=idea_bavaria_army_dr custom_effect_tooltip=update_tooltip_dr}}
 
-	focus = {
-		id = BAY_war_austerity_dr
-		icon = GFX_goal_generic_consumer_goods
-		x = 3
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BAY_holding_the_line_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+
+
+
+focus={id=BAY_a_new_empire_dr icon=GFX_focus_ger_return_of_the_kaiser x=6 y=5 cost=8 search_filters={FOCUS_FILTER_POLITICAL	FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION}available={has_government=neutrality NOT={country_exists=HAN country_exists=GER}}available_if_capitulated=no prerequisite={focus=BAY_the_unification_plan_dr}ai_will_do={factor=1}completion_reward={set_cosmetic_tag=cosmetic_tag_bavaria_empire_dr add_political_power=75 add_stability=.1 add_war_support=.1}}
+
+focus={id=BAY_western_plan_dr icon=GFX_focus_generic_industry_1 x=11 y=4 cost=10 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=42 controls_state=51 controls_state=937 controls_state=57 controls_state=55}available_if_capitulated=yes prerequisite={focus=BAY_northern_plan_dr}ai_will_do={factor=1}completion_reward={42={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}51={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}937={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}57={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}55={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=BAY_northern_plan_dr icon=GFX_focus_generic_industry_2 x=10 y=3 cost=9 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=56 controls_state=59 controls_state=58 controls_state=909 controls_state=61 controls_state=62}available_if_capitulated=yes prerequisite={focus=BAY_southern_plan_dr}ai_will_do={factor=1}completion_reward={56={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}59={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}58={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}909={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}61={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}62={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=BAY_eastern_plan_dr icon=GFX_focus_generic_industry_1 x=9 y=4 cost=12 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=60 controls_state=65 controls_state=64 controls_state=983 controls_state=66 controls_state=68 controls_state=982 controls_state=63}available_if_capitulated=yes prerequisite={focus=BAY_northern_plan_dr}ai_will_do={factor=1}completion_reward={60={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}65={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}64={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}983={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}66={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}68={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}982={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}63={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}
 
 	focus = {
 		id = BAY_finish_industrial_initiative_dr
@@ -31,6 +17,7 @@ focus={id=BAY_french_assistance_dr icon=GFX_focus_chi_reach_out_to_france x=5 y=
 		x = 10
 		y = 5
 		cost = 10
+		available={always=no}
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = BAY_eastern_plan_dr 
@@ -41,47 +28,18 @@ focus={id=BAY_french_assistance_dr icon=GFX_focus_chi_reach_out_to_france x=5 y=
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward={custom_effect_tooltip=update_tooltip_dr}
 	}
 
-	focus = {
-		id = BAY_the_unification_plan_dr
-		icon = GFX_focus_ger_revive_kaiserreich
-		x = 6
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BAY_voice_to_the_imperium_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+#fix if code
+	focus={id=BAY_the_unification_plan_dr icon=GFX_focus_ger_revive_kaiserreich x=6 y=4 cost=6 search_filters={FOCUS_FILTER_ANNEXATION}available={is_ai=no has_government=neutrality}available_if_capitulated=yes prerequisite={focus=BAY_voice_to_the_imperium_dr}ai_will_do={factor=1}completion_reward={add_state_core=909 add_state_core=58 add_state_core=59 add_state_core=56 add_state_core=57 add_state_core=937 add_state_core=51 add_state_core=42 add_state_core=55 add_state_core=60 add_state_core=65 add_state_core=64 add_state_core=61 add_state_core=62 add_state_core=982 add_state_core=63 add_state_core=68 add_state_core=983 add_state_core=66 if={limit={country_exists=HAN NOT={OR={has_wargoal_against=HAN has_war_with=HAN HAN={is_subject_of=BAY}}}}create_wargoal={type=annex_everything target=HAN}}if={limit={country_exists=GER NOT={OR={has_wargoal_against=GER has_war_with=GER HAN={is_subject_of=BAY}}}}create_wargoal={type=annex_everything target=GER}}}}
 
-	focus = {
-		id = BAY_exploit_davidian_weakness_dr
-		icon = GFX_focus_CZE_german_puppet
-		x = 2
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BAY_new_bavarian_army_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	
-focus={id=BAY_cuck_the_davidians_dr icon=GFX_goal_generic_demand_territory x=6 y=0 cost=4 search_filters={FOCUS_FILTER_WAR_SUPPORT}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={add_war_support=.1}}focus={id=BAY_war_among_us_dr icon=GFX_goal_unknown x=3 y=1 cost=2 available_if_capitulated=yes prerequisite={focus=BAY_cuck_the_davidians_dr}ai_will_do={factor=1}completion_reward={add_political_power=10}}focus={id=BAY_southern_plan_dr icon=GFX_focus_generic_industry_2 x=10 y=2 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=52 controls_state=53 controls_state=54 controls_state=50}available_if_capitulated=yes prerequisite={focus=BAY_construction_initiative_dr}ai_will_do={factor=1}completion_reward={52={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}53={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}54={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}50={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}
 
 
-	focus={id=BAY_the_friendly_schnitzel_man_dr icon=GFX_goal_unknown x=6 y=1 cost=2 search_filters={FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=BAY_cuck_the_davidians_dr}ai_will_do={factor=1}completion_reward={add_political_power=10}}
 
-	focus={id=BAY_a_new_empire_dr icon=GFX_focus_ger_return_of_the_kaiser x=6 y=5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = BAY_the_unification_plan_dr }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+
+focus={id=BAY_southern_plan_dr icon=GFX_focus_generic_industry_2 x=10 y=2 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available={controls_state=52 controls_state=53 controls_state=54 controls_state=50}available_if_capitulated=yes prerequisite={focus=BAY_construction_initiative_dr}ai_will_do={factor=1}completion_reward={52={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}53={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}54={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}50={add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}
 
 	focus = {
 		id = BAY_fate_of_david_dr
@@ -89,10 +47,12 @@ focus={id=BAY_cuck_the_davidians_dr icon=GFX_goal_generic_demand_territory x=6 y
 		x = 2
 		y = 5
 		cost = 10
+		available={always=no}
 		available_if_capitulated = yes
 		prerequisite = { focus = BAY_exploit_davidian_weakness_dr }
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward={custom_effect_tooltip=update_tooltip_dr}
 	}
 }

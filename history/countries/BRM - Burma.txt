@@ -1,1 +1,1 @@
-﻿capital=288 recruit_character=BRM_orwell set_politics={ruling_party=communism last_election="1936.1.1"election_frequency=48 elections_allowed=no}set_popularities={democratic=15 fascism=5 communism=65 neutrality=15}
+﻿capital=288 recruit_character=BRM_orwell set_politics={ruling_party=communism last_election="1936.1.1"election_frequency=48 elections_allowed=no}set_popularities={democratic=15 fascism=5 communism=65 neutrality=15}set_cosmetic_tag=BRM_PUP

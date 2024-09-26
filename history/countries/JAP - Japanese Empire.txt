@@ -259,6 +259,7 @@ recruit_character = JAP_kingoro_hashimoto
 recruit_character = JAP_sanzo_nosaka
 recruit_character = JAP_hiroshi_oshima
 recruit_character = JAP_kijuro_shidehara
+recruit_character = JAP_emperor_hirohito_2
 
 
 if = {

@@ -1,1 +1,1 @@
-﻿capital=266 set_cosmetic_tag=PER_reichskommissariat_dr create_country_leader={name="Mohammad-Hosayn Ayrom" picture=GFX_idea_europe_generic_1 expire="1965.1.1" ideology=nazism}
+﻿capital=266 set_cosmetic_tag=PER_reichskommissariat_dr create_country_leader={name="Mohammad-Hosayn Ayrom" picture=GFX_idea_europe_generic_1 expire="1965.1.1" ideology=nazism}add_ideas=idea_davekommissariat_dr

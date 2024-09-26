@@ -1,1 +1,1 @@
-﻿capital=206 set_cosmetic_tag=BLR_reichskommissariat create_country_leader={name="Hinrich Lohse" picture=GFX_portrait_Hinrich_Lohse expire="1965.1.1" ideology=nazism}
+﻿capital=206 set_cosmetic_tag=BLR_reichskommissariat create_country_leader={name="Hinrich Lohse" picture=GFX_portrait_Hinrich_Lohse expire="1965.1.1" ideology=nazism}add_ideas=idea_davekommissariat_dr

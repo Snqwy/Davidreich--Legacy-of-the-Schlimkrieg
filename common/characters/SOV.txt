@@ -1976,43 +1976,47 @@ characters = {
 			
 		}
 	}
+
+SOV_aleksey_rykov={name=SOV_aleksey_rykov portraits={army={small="GFX_idea_SOV_aleksey_rykov"}}advisor={slot=political_advisor idea_token=SOV_aleksey_rykov allowed={original_tag=SOV}available={has_government=communism}traits={peoples_commissar_for_posts_and_telegraphs}}}SOV_genrikh_yagoda={name=SOV_genrikh_yagoda portraits={army={small="GFX_idea_SOV_genrikh_yagoda"}}advisor={slot=political_advisor idea_token=SOV_genrikh_yagoda allowed={original_tag=SOV}available={has_government=communism NOT={has_idea=SOV_nikolay_yezhov}NOT={has_idea=SOV_lavrenty_beriya}}traits={head_of_the_nkvd_yagoda}}}
+
+	#check in game	
+SOV_mikhail_kalinin={name=SOV_mikhail_kalinin portraits={army={small="GFX_idea_mikhail_kalinin"}}advisor={cost=75 slot=political_advisor idea_token=mikhail_kalinin allowed={original_tag=SOV}available={has_government=communism NOT={has_idea=idea_stalinist_plot_dr OR={country_exists=GEO GEO={has_government=communism}}}traits={popular_figurehead}}}
+
+	#make them start with transcaucasia
+SOV_lazar_kaganovich={name=SOV_lazar_kaganovich portraits={army={small="GFX_idea_SOV_lazar_kaganovich"}}advisor={slot=political_advisor idea_token=SOV_lazar_kaganovich allowed={original_tag=SOV}available={has_government=communism NOT={has_idea=idea_stalinist_plot_dr OR={country_exists=GEO GEO={has_government=communism}}}traits={iron_lazar}}}
+
+	#check in game
+SOV_nikita_khrushchyov={name=SOV_nikita_khrushchyov portraits={army={small="GFX_idea_nikita_khrushchev"}}advisor={slot=political_advisor idea_token=nikita_khrushchyov allowed={original_tag=SOV}available={has_government=communism NOT={has_idea=idea_stalinist_plot_dr OR={country_exists=GEO GEO={has_government=communism}}}traits={political_commissar}}}
+
+	#check in game
+SOV_vyacheslav_molotov={name=SOV_vyacheslav_molotov portraits={army={small="GFX_idea_SOV_vyacheslav_molotov"}}advisor={slot=political_advisor idea_token=SOV_vyacheslav_molotov allowed={original_tag=SOV}available={has_government=communism has_country_flag=vanguard_flag_dr}NOT={has_idea=idea_stalinist_plot_dr country_exists=GEO GEO={has_government=communism}}}traits={pc_for_foreign_affairs_molotov}}}
+
+	#check in game
+SOV_nikolay_yezhov={name=SOV_nikolay_yezhov portraits={army={small="GFX_idea_SOV_nikolay_yezhov"}}advisor={slot=political_advisor idea_token=SOV_nikolay_yezhov allowed={original_tag=SOV}available={has_government=communism has_country_flag=vanguard_flag_dr}NOT={has_idea=idea_stalinist_plot_dr has_idea=SOV_genrikh_yagoda has_idea=SOV_lavrenty_beriya country_exists=GEO GEO={has_government=communism}}traits={head_of_the_nkvd_yezhov}}}
 	
+	#check in game
+SOV_lavrenty_beriya={name=SOV_lavrenty_beriya portraits={civilian={large="GFX_portrait_SOV_lavrenty_beriya"}army={small="GFX_idea_SOV_lavrenty_beriya"}}advisor={slot=political_advisor idea_token=SOV_lavrenty_beriya allowed={original_tag=SOV}available={has_government=communism has_country_flag=vanguard_flag_dr}NOT={has_idea=idea_stalinist_plot_dr has_idea=SOV_genrikh_yagoda has_idea=SOV_nikolay_yezhov country_exists=GEO}traits={head_of_the_nkvd_beriya}}}
 
-#add tooltips for the respective advisors
-
-	#make them start with transcaucasia
-SOV_mikhail_kalinin={name=SOV_mikhail_kalinin portraits={army={small="GFX_idea_mikhail_kalinin"}}advisor={cost=75 slot=political_advisor idea_token=mikhail_kalinin allowed={original_tag=SOV}available={has_government=communism NOT={has_idea=idea_stalinist_plot_dr}}traits={popular_figurehead}}}
-
-	#make them start with transcaucasia
-SOV_nikita_khrushchyov={name=SOV_nikita_khrushchyov portraits={army={small="GFX_idea_nikita_khrushchev"}}advisor={slot=political_advisor idea_token=nikita_khrushchyov allowed={original_tag=SOV}available={has_government=communism NOT={has_idea=idea_stalinist_plot_dr}NOT={has_idea=SOV_ivar_smilga}}traits={political_commissar}}}
-
-SOV_ivar_smilga={name=SOV_ivar_smilga portraits={army={small="GFX_idea_SOV_ivar_smilga"}}advisor={slot=political_advisor idea_token=SOV_ivar_smilga allowed={original_tag=SOV}available={has_government=communism has_completed_focus=SOV_socialist_technocrats_dr NOT={has_idea=nikita_khrushchyov}}traits={political_commissar trait_bolshevik_intellectual_dr}}}
-
-SOV_genrikh_yagoda={name=SOV_genrikh_yagoda portraits={army={small="GFX_idea_SOV_genrikh_yagoda"}}advisor={slot=political_advisor idea_token=SOV_genrikh_yagoda allowed={original_tag=SOV}available={has_government=communism NOT={has_idea=SOV_nikolay_yezhov}NOT={has_idea=SOV_lavrenty_beriya}}traits={head_of_the_nkvd_yagoda}}}
-
-	#make them start with transcaucasia
-SOV_nikolay_yezhov={name=SOV_nikolay_yezhov portraits={army={small="GFX_idea_SOV_nikolay_yezhov"}}advisor={slot=political_advisor idea_token=SOV_nikolay_yezhov allowed={original_tag=SOV}available={has_government=communism NOT={has_country_flag=utopia_flag_dr}NOT={has_idea=idea_stalinist_plot_dr}NOT={has_idea=SOV_genrikh_yagoda}NOT={has_idea=SOV_lavrenty_beriya}}traits={head_of_the_nkvd_yezhov}}}
-
-	#make them start with transcaucasia
-SOV_lavrenty_beriya={name=SOV_lavrenty_beriya portraits={civilian={large="GFX_portrait_SOV_lavrenty_beriya"}army={small="GFX_idea_SOV_lavrenty_beriya"}}advisor={slot=political_advisor idea_token=SOV_lavrenty_beriya allowed={original_tag=SOV}available={has_government=communism NOT={has_country_flag=utopia_flag_dr}NOT={has_idea=idea_stalinist_plot_dr}NOT={has_idea=SOV_genrikh_yagoda}NOT={has_idea=SOV_nikolay_yezhov}}traits={head_of_the_nkvd_beriya}}}
-
-	#make them start with transcaucasia
-SOV_vyacheslav_molotov={name=SOV_vyacheslav_molotov portraits={army={small="GFX_idea_SOV_vyacheslav_molotov"}}advisor={slot=political_advisor idea_token=SOV_vyacheslav_molotov allowed={original_tag=SOV}available={has_government=communism NOT={has_country_flag=utopia_flag_dr}NOT={has_idea=idea_stalinist_plot_dr}}traits={pc_for_foreign_affairs_molotov}}}
-
-SOV_maksim_litvinov={name=SOV_maksim_litvinov portraits={army={small="GFX_idea_SOV_maksim_litvinov"}}advisor={slot=political_advisor idea_token=SOV_maksim_litvinov allowed={original_tag=SOV}available={has_government=communism NOT={has_country_flag=vanguard_flag_dr}}traits={pc_for_foreign_affairs_litvinov}}}
-
-SOV_aleksey_rykov={name=SOV_aleksey_rykov portraits={army={small="GFX_idea_SOV_aleksey_rykov"}}advisor={slot=political_advisor idea_token=SOV_aleksey_rykov allowed={original_tag=SOV}available={has_government=communism}traits={peoples_commissar_for_posts_and_telegraphs}}}
-
-SOV_lev_trotsky={name=SOV_lev_trotsky portraits={civilian={large=GFX_portrait_SOV_lev_trotsky}army={small="GFX_idea_SOV_lev_trotsky"}}advisor={slot=political_advisor idea_token=SOV_lev_trotsky allowed={original_tag=SOV}available={has_government=communism NOT={has_country_flag=monarch_vanguard_flag_dr}}traits={pc_military_naval_affairs}}}
-
-SOV_grigory_zinovyev={name=SOV_grigory_zinovyev portraits={army={small="GFX_idea_SOV_grigory_zinovyev"}}advisor={slot=political_advisor idea_token=SOV_grigory_zinovyev allowed={original_tag=SOV}available={has_government=communism NOT={has_country_flag=monarch_vanguard_flag_dr}}traits={communist_theorist}}}
-
+	#check in game
 SOV_lev_kamenev={name=SOV_lev_kamenev portraits={army={small="GFX_idea_SOV_lev_kamenev"}}advisor={slot=political_advisor idea_token=SOV_lev_kamenev allowed={original_tag=SOV}available={has_government=communism has_country_flag=utopia_flag_dr}traits={appeasing_technocrat}}}
 
+	#check in game
+SOV_ivar_smilga={name=SOV_ivar_smilga portraits={army={small="GFX_idea_SOV_ivar_smilga"}}advisor={slot=political_advisor idea_token=SOV_ivar_smilga allowed={original_tag=SOV}available={has_government=communism has_country_flag=utopia_flag_dr NOT={has_idea=nikita_khrushchyov}}traits={trait_bolshevik_intellectual_dr}}}
+
+	#check in game
+SOV_maksim_litvinov={name=SOV_maksim_litvinov portraits={army={small="GFX_idea_SOV_maksim_litvinov"}}advisor={slot=political_advisor idea_token=SOV_maksim_litvinov allowed={original_tag=SOV}available={has_government=communism NOT={has_country_flag=vanguard_flag_dr}}traits={pc_for_foreign_affairs_litvinov}}}
+
+	#check in game
+SOV_lev_trotsky={name=SOV_lev_trotsky portraits={civilian={large=GFX_portrait_SOV_lev_trotsky}army={small="GFX_idea_SOV_lev_trotsky"}}advisor={slot=political_advisor idea_token=SOV_lev_trotsky allowed={original_tag=SOV}available={has_government=communism NOT={has_country_flag=monarch_vanguard_flag_dr}}traits={pc_military_naval_affairs}}}
+
+	#check in game
+SOV_grigory_zinovyev={name=SOV_grigory_zinovyev portraits={army={small="GFX_idea_SOV_grigory_zinovyev"}}advisor={slot=political_advisor idea_token=SOV_grigory_zinovyev allowed={original_tag=SOV}available={has_government=communism NOT={has_country_flag=monarch_vanguard_flag_dr}}traits={communist_theorist}}}
+
+	#check in game
 SOV_karl_radek={name=SOV_karl_radek portraits={army={small="GFX_idea_SOV_karl_radek"}}advisor={slot=political_advisor idea_token=SOV_karl_radek allowed={original_tag=SOV}available={has_government=communism NOT={has_country_flag=monarch_vanguard_flag_dr}}traits={international_revolutionary}}}
 
-	#make them start with transcaucasia
-SOV_lazar_kaganovich={name=SOV_lazar_kaganovich portraits={army={small="GFX_idea_SOV_lazar_kaganovich"}}advisor={slot=political_advisor idea_token=SOV_lazar_kaganovich allowed={original_tag=SOV}available={has_government=communism NOT={has_idea=idea_stalinist_plot_dr}}traits={iron_lazar}}}
+
+
 
 SOV_grigory_sokolnikov={name=SOV_grigory_sokolnikov portraits={army={small="GFX_idea_SOV_grigory_sokolnikov"}}advisor={slot=political_advisor idea_token=SOV_grigory_sokolnikov allowed={original_tag=SOV}available={has_government=communism}traits={peoples_commissar_of_finance}}}
 

@@ -27,7 +27,7 @@ characters={
 			traits={emperor_showa}
 			desc = leader_desc_dillon
 			expire="1989.1.1.1"
-			id=700
+			id=-1
 		}
 	}
 

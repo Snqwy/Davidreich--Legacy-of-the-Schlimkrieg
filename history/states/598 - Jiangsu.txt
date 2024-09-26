@@ -9,13 +9,13 @@ state={
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 2
-
 		}
-		1938.10.25 = {
-			controller = JAP
-
+		victory_points = {
+			7142 3 
 		}
-
+		victory_points = {
+			1029 2 
+		}
 	}
 
 	provinces={

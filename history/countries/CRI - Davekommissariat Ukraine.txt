@@ -1,1 +1,1 @@
-﻿capital=202 set_cosmetic_tag=UKR_reichskommissariat create_country_leader={name="Erich Koch" picture=GFX_portrait_Erich_Koch expire="1965.1.1" ideology=nazism}
+﻿capital=202 set_cosmetic_tag=UKR_reichskommissariat create_country_leader={name="Erich Koch" picture=GFX_portrait_Erich_Koch expire="1965.1.1" ideology=nazism}add_ideas=idea_davekommissariat_dr

@@ -1,1 +1,60 @@
-﻿division_template={name="Strelkovaya Diviziya" division_names_group=SOV_INF_01 regiments={infantry={x=0 y=0}infantry={x=0 y=1}infantry={x=0 y=2}infantry={x=1 y=0}infantry={x=1 y=1}infantry={x=1 y=2}infantry={x=2 y=0}infantry={x=2 y=1}infantry={x=2 y=2}}support={artillery={x=0 y=0}}}
+﻿#maybe reorganize units based on location
+
+division_template={name="Strelkovaya Diviziya" division_names_group=SOV_INF_01 regiments={infantry={x=0 y=0}infantry={x=0 y=1}infantry={x=0 y=2}infantry={x=1 y=0}infantry={x=1 y=1}infantry={x=1 y=2}infantry={x=2 y=0}infantry={x=2 y=1}infantry={x=2 y=2}}support={artillery={x=0 y=0}}}division_template={name="Motostrelkovaya Diviziya" division_names_group=SOV_MOT_01 regiments={motorized={x=0 y=0}motorized={x=0 y=1}motorized={x=0 y=2}motorized={x=1 y=0}motorized={x=1 y=1}motorized={x=1 y=2}motorized={x=2 y=0}motorized={x=2 y=1}motorized={x=2 y=2}}support={engineer={x=0 y=0}}}division_template={name="Mekhanizirovaniy Korpus" division_names_group=SOV_MEC_01 regiments={light_armor={x=0 y=0}light_armor={x=0 y=1}light_armor={x=0 y=2}light_armor={x=1 y=0}light_armor={x=1 y=1}light_armor={x=1 y=2}motorized={x=2 y=0}motorized={x=2 y=1}motorized={x=2 y=2}motorized={x=2 y=3}}support={engineer={x=0 y=0}}}division_template={name="Gornostrelkovaya Diviziya" division_names_group=SOV_MNT_01 regiments={mountaineers={x=0 y=0}mountaineers={x=0 y=1}mountaineers={x=0 y=2}mountaineers={x=1 y=0}mountaineers={x=1 y=1}mountaineers={x=1 y=2}mountaineers={x=2 y=0}mountaineers={x=2 y=1}mountaineers={x=2 y=2}}support={engineer={x=0 y=0}artillery={x=0 y=1}}}division_template={name="Kavaleriyskaya Diviziya" division_names_group=SOV_CAV_01 regiments={cavalry={x=0 y=0}cavalry={x=0 y=1}cavalry={x=0 y=2}cavalry={x=1 y=0}cavalry={x=1 y=1}cavalry={x=1 y=2}}}division_template={name="Pogranichnaya Diviziya" division_names_group=SOV_GAR_01 regiments={infantry={x=0 y=0}infantry={x=0 y=1}infantry={x=0 y=2}infantry={x=1 y=0}infantry={x=1 y=1}infantry={x=1 y=2}}support={military_police={x=0 y=0}}priority=0 is_locked=yes}
+
+#cock-sex WIP
+    #division_template={name="Banda Indigena Irregolare" division_names_group=ITA_COL_02 override_model=ITA_irregular_infantry_alt_1_entity is_locked=yes template_counter=66 regiments={irregular_infantry={x=0 y=0}irregular_infantry={x=0 y=1}irregular_infantry={x=0 y=2}irregular_infantry={x=1 y=0}irregular_infantry={x=1 y=1}irregular_infantry={x=1 y=2}artillery={x=2 y=0}}support={military_police={x=0 y=0}}}
+
+units={
+    division={division_name={is_name_ordered=yes name_order=1}location=3151 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=3151 division_template="Motostrelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=3151 division_template="Pogranichnaya Diviziya" start_experience_factor=0.05}
+    division={division_name={is_name_ordered=yes name_order=1}location=9190 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=3086 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=3338 division_template="Pogranichnaya Diviziya" start_experience_factor=0.05}
+    division={division_name={is_name_ordered=yes name_order=1}location=117 division_template="Mekhanizirovaniy Korpus" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=11202 division_template="Kavaleriyskaya Diviziya" start_experience_factor=0.1}
+    division={division_name={is_name_ordered=yes name_order=1}location=3333 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=387 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=306 division_template="Motostrelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=6233 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=9288 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=6245 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=6380 division_template="Motostrelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=6380 division_template="Mekhanizirovaniy Korpus" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=6380 division_template="Pogranichnaya Diviziya" start_experience_factor=0.05}
+    division={division_name={is_name_ordered=yes name_order=1}location=121 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=9131 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=3580 division_template="Mekhanizirovaniy Korpus" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=6474 division_template="Motostrelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=6420 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=6474 division_template="Pogranichnaya Diviziya" start_experience_factor=0.05}
+    division={division_name={is_name_ordered=yes name_order=1}location=9417 division_template="Motostrelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=570 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=11476 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=9459 division_template="Gornostrelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=3529 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=3529 division_template="Pogranichnaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=3529 division_template="Mekhanizirovaniy Korpus" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=9753 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=11429 division_template="Kavaleriyskaya Diviziya" start_experience_factor=0.1}
+    division={division_name={is_name_ordered=yes name_order=1}location=11375 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=6124 division_template="Kavaleriyskaya Diviziya" start_experience_factor=0.1}
+    division={division_name={is_name_ordered=yes name_order=1}location=6338 division_template="Motostrelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=9355 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=3335 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=11537 division_template="Kavaleriyskaya Diviziya" start_experience_factor=0.1}
+    division={division_name={is_name_ordered=yes name_order=1}location=12242 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=4261 division_template="Motostrelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=1821 division_template="Pogranichnaya Diviziya" start_experience_factor=0.05}
+    division={division_name={is_name_ordered=yes name_order=1}location=9292 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=12696 division_template="Kavaleriyskaya Diviziya" start_experience_factor=0.1}
+    division={division_name={is_name_ordered=yes name_order=1}location=1278 division_template="Gornostrelkovaya Diviziya" start_experience_factor=0.1}
+    division={division_name={is_name_ordered=yes name_order=1}location=11225 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=392 division_template="Strelkovaya Diviziya" start_experience_factor=0.2} 
+    division={division_name={is_name_ordered=yes name_order=1}location=3578 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}   
+    division={division_name={is_name_ordered=yes name_order=1}location=11351 division_template="Mekhanizirovaniy Korpus" start_experience_factor=0.2}
+    division={division_name={is_name_ordered=yes name_order=1}location=413 division_template="Strelkovaya Diviziya" start_experience_factor=0.2}   
+    division={division_name={is_name_ordered=yes name_order=1}location=6262 division_template="Strelkovaya Diviziya" start_experience_factor=0.2} 
+    division={division_name={is_name_ordered=yes name_order=1}location=11248 division_template="Strelkovaya Diviziya" start_experience_factor=0.2} 
+}

@@ -1,0 +1,25 @@
+state={
+	id=995
+	name="STATE_995"
+
+	history={
+		owner = MAN
+		add_core_of = MAN
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+			6852 2 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		846 3934 4514 6852 6893 6951 9788 9831 9835 9927 11815 11836 
+	}
+	manpower=976239 
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,1 +1,1 @@
-﻿capital=605 set_cosmetic_tag=XSM_reichskommissariat_dr create_country_leader={name="Chao Kung" picture=GFX_idea_europe_generic_1 expire="1965.1.1" ideology=nazism}
+﻿capital=605 set_cosmetic_tag=XSM_reichskommissariat_dr create_country_leader={name="Chao Kung" picture=GFX_idea_europe_generic_1 expire="1965.1.1" ideology=nazism}add_ideas=idea_davekommissariat_dr

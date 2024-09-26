@@ -1,7 +1,7 @@
 
-	connerian_balance_dr={initial_value=0.3 left_side=connerian_conner_side_dr right_side=connerian_james_side_dr decision_category=connerian_balance_category_dr range={id=connerian_balance_range_dr min=-0.10 max=0.10}
+	connerian_balance_dr={initial_value=0.3 left_side=connerian_conner_side_dr right_side=connerian_james_side_dr decision_category=connerian_balance_category_dr range={id=connerian_balance_range_dr min=-0.1 max=0.1}
 
-	side={id=connerian_conner_side_dr icon=GFX_bop_ITA_grand_council_side 
+	side={id=connerian_conner_side_dr icon=GFX_bop_ITA_communism_side
 	
 		range={id=connerian_conner_side_low_dr min=-0.3 max=-0.1}
 	
@@ -12,7 +12,7 @@
 		range={
 			id=connerian_conner_side_total_dr min=-1 max=-0.9}}
 
-	side={id=connerian_james_side_dr
+	side={id=connerian_james_side_dr icon=GFX_bop_ETH_communist_side
 
 		range={id=connerian_james_side_low_dr min=0.1 max=0.3}
 

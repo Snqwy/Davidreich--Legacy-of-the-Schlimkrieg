@@ -38,4 +38,24 @@ deny_dc_pact_modifier_dr={value=-50}
 
 dillon_isr_modifier_dr={value=-100}
 
+weeb_modifier_dr={value=15}
+
+weeb_modifier_2_dr={value=25}
+
+dfi_modifier_dr={value=25}
+
+kec_modifier_dr={value=25}
+
+jet_modifier_dr={value=25}
+
+arr_modifier_dr={value=-50}
+
+african_alliance_modifier_dr={value=20}
+
+french_furry_modifier_2_dr={value=20}
+
+dillon_david_modifier_dr={value=80}
+
+dillon_max_modifier_dr={value=80}
+
 }

@@ -32,4 +32,37 @@ ideas={country={idea_quebecois_resistance_dr={picture=FRA_scw_intervention_repub
 
     idea_the_clan_9_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={fascism_drift=0.25 surrender_limit=0.1 consumer_goods_factor=-0.1 war_support_factor=0.1 stability_factor=0.1}}
 
+    idea_war_what_is_it_good_for_dr={allowed={always=yes}allowed_civil_war={always=yes}cancel={has_war=no}removal_cost=-1 modifier={consumer_goods_factor=-0.1}}
+
+    idea_war_on_cringe_dr={allowed={always=yes}allowed_civil_war={always=yes}cancel={has_war=no}removal_cost=-1 modifier={democratic_drift=-0.15 communism_drift=-0.15 neutrality_drift=-0.15 war_support_factor=0.05}}
+
+    idea_banana_1_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={industrial_capacity_factory=0.025}}
+    
+    idea_banana_2_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={industrial_capacity_factory=0.05}}
+    
+    idea_banana_3_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={industrial_capacity_factory=0.075 political_power_cost=-0.1}}
+
+    idea_banana_4_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={industrial_capacity_factory=0.075 political_power_cost=-0.15 research_speed_factor=0.025}}
+
+    idea_banana_5_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={industrial_capacity_factory=0.1 political_power_cost=-0.2 research_speed_factor=0.05}}
+
+    idea_banana_6_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=-0.025}}
+   
+    idea_banana_7_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=-0.05}}
+
+    idea_banana_8_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=-0.075 political_power_cost=-0.1}}
+
+    idea_banana_9_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=-0.075 political_power_cost=-0.15 production_factory_max_efficiency_factor=0.025}}
+
+    idea_banana_10_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={consumer_goods_factor=-0.1 political_power_cost=-0.2 production_factory_max_efficiency_factor=0.05}}
+
+    idea_banana_11_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={production_speed_buildings_factor=0.025}}
+
+    idea_banana_12_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={production_speed_buildings_factor=0.05}}
+
+    idea_banana_13_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={production_speed_buildings_factor=0.075 political_power_cost=-0.1}}
+
+    idea_banana_14_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={production_speed_buildings_factor=0.075 political_power_cost=-0.15 global_building_slots_factor=0.025}}
+
+    idea_banana_15_dr={allowed={always=yes}allowed_civil_war={always=yes}removal_cost=-1 modifier={production_speed_buildings_factor=0.1 political_power_cost=-0.2 global_building_slots_factor=0.05}}
 }}

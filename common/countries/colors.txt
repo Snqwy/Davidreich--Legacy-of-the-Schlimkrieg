@@ -205,8 +205,8 @@ DOM = {
 	color_ui = rgb { 198 169 248 }
 }
 RAJ = {
-	color = rgb { 226  135  40 }
-	color_ui = rgb { 226  135  40 }
+	color = rgb { 226 135 40 }
+	color_ui = rgb { 226 135 40 }
 }
 
 CRO = {
@@ -624,3 +624,14 @@ URG = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 171 190 152 }
 }
+DON = {
+	color = rgb { 156 65 111 }
+	color_ui = rgb { 156 65 111 }
+}
+
+#mountainous_republics_unified = { 
+    #color = rgb { 128 212 255 }
+   # color_ui = rgb { 0 102 153 }
+#}
+#use for stanislaws host 47 36 115
+#use for novgorod 81 142 55

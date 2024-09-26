@@ -1,0 +1,407 @@
+focus_tree={id=manchukuo_focus country={factor=0 modifier={add=10 tag=MAN}}initial_show_position={x=0}default=no continuous_focus_position={x=3600 y=1100}
+
+focus={id=MAN_five_races_under_one_banner_dr icon=GFX_focus_jap_manchurian_project x=8 y=0 cost=5 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={add_stability=.05 add_war_support=.05}}focus={id=MAN_independence_war_dr icon=GFX_goal_generic_territory_or_war x=13 y=2 cost=10 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}available={is_subject_of=JAP}available_if_capitulated=yes bypass_if_unavailable=yes prerequisite={focus=MAN_disobedience_dr}ai_will_do={factor=1}completion_reward={JAP={end_puppet=MAN}set_politics={ruling_party=neutrality elections_allowed=no}add_popularity={ideology=neutrality popularity=.4}add_popularity={ideology=democratic popularity=.15}add_popularity={ideology=communism popularity=.05}add_stability=-.1 add_war_support=.05 declare_war_on={target=JAP type=independence_wargoal}}}focus={id=MAN_expel_japanese_collaborators_dr icon=GFX_focus_generic_anti_fascist_diplomacy x=11 y=3 cost=5 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={has_war_with=JAP}available_if_capitulated=yes bypass_if_unavailable=yes prerequisite={focus=MAN_independence_war_dr}ai_will_do={factor=1}completion_reward={add_manpower=-600000 add_popularity={ideology=fascism popularity=-.5}add_political_power=25 add_stability=.05 add_war_support=.05 JAP={country_event=dr.181}custom_effect_tooltip=expel_tooltip_dr country_event=dr.180 custom_effect_tooltip=expel_tooltip_2_dr}}focus={id=MAN_for_freedom_we_fight_dr icon=GFX_focus_generic_manpower x=13 y=3 cost=5 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={has_war_with=JAP}available_if_capitulated=yes bypass_if_unavailable=yes prerequisite={focus=MAN_independence_war_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_for_freedom_we_fight_dr add_war_support=.1}}focus={id=MAN_nationalist_collaboration_dr icon=GFX_focus_chi_cooperation_with_the_nationalists x=10 y=6 cost=8 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}available={is_subject=no OR={NOT={has_government=fascism}has_country_flag=japan_withdraw_flag_dr}country_exists=CHI NOT={CHI={is_subject=yes has_government=communism}}}available_if_capitulated=yes bypass_if_unavailable=yes prerequisite={focus=MAN_we_stand_victorious_dr}mutually_exclusive={focus=MAN_communist_collaboration_dr}mutually_exclusive={focus=MAN_rise_of_the_restorationists_dr}ai_will_do={factor=1}completion_reward={CHI={puppet=MAN set_autonomy={target=MAN autonomy_state=autonomy_integrated_puppet}}set_cosmetic_tag=cosmetic_tag_moody_clique_nat_dr add_ideas=idea_distinguished_clique_dr set_power_balance={id=will_balance_dr left_side=national_leadership_side_dr right_side=clique_leadership_side_dr}if={limit={country_exists=XSM}give_guarantee=XSM give_military_access=XSM XSM={give_guarantee=MAN give_military_access=MAN}}}}focus={id=MAN_communist_collaboration_dr icon=GFX_focus_chi_cooperation_with_the_communists x=6 y=6 cost=8 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}available={is_subject=no OR={NOT={has_government=fascism}has_country_flag=japan_withdraw_flag_dr}country_exists=PRC NOT={PRC={is_subject=yes}}PRC={has_government=communism}}available_if_capitulated=yes bypass_if_unavailable=yes prerequisite={focus=MAN_we_stand_victorious_dr}mutually_exclusive={focus=MAN_nationalist_collaboration_dr}ai_will_do={factor=1}completion_reward={PRC={puppet=MAN set_autonomy={target=MAN autonomy_state=autonomy_integrated_puppet}}set_cosmetic_tag=cosmetic_tag_moody_clique_com_dr add_ideas=idea_distinguished_clique_dr set_power_balance={id=will_balance_dr left_side=national_leadership_side_dr right_side=clique_leadership_side_dr}}}focus={id=MAN_end_banditry_dr icon=GFX_goal_generic_occupy_states_ongoing_war x=8 y=2 cost=7 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}available={has_idea=idea_countryside_banditry_dr}available_if_capitulated=yes bypass_if_unavailable=yes prerequisite={focus=MAN_obedience_dr focus=MAN_disobedience_dr}ai_will_do={factor=1}completion_reward={remove_ideas=idea_countryside_banditry_dr custom_effect_tooltip=bandit_tooltip_dr}}focus={id=MAN_obedience_dr icon=GFX_focus_CZE_german_puppet x=4 y=1 cost=3 search_filters={FOCUS_FILTER_POLITICAL}available={is_subject_of=JAP}available_if_capitulated=yes prerequisite={focus=MAN_five_races_under_one_banner_dr}mutually_exclusive={focus=MAN_disobedience_dr}ai_will_do={factor=1}completion_reward={add_political_power=15 custom_effect_tooltip=ger_hist_tooltip_dr}}focus={id=MAN_disobedience_dr icon=GFX_goal_generic_demand_territory x=12 y=1 cost=3 search_filters={FOCUS_FILTER_POLITICAL}available={is_subject_of=JAP}available_if_capitulated=yes bypass_if_unavailable=yes prerequisite={focus=MAN_five_races_under_one_banner_dr}mutually_exclusive={focus=MAN_obedience_dr}ai_will_do={factor=1}completion_reward={add_political_power=15 custom_effect_tooltip=ger_althist_tooltip_dr}}focus={id=MAN_weebist_indoctrination_dr icon=GFX_focus_SOV_womens_fascist_movement X=8 y=3 search_filters={FOCUS_FILTER_POLITICAL}cost=5 available_if_capitulated=yes prerequisite={focus=MAN_end_banditry_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_weebist_indoctrination_dr add_popularity={ideology=fascism popularity=.05}if={limit={country_exists=JAP}JAP={add_opinion_modifier={target=MAN modifier=weeb_modifier_dr}}}custom_effect_tooltip=opinion_tooltip_dr}}focus={id=MAN_the_war_effort_dr icon=GFX_goal_continuous_naval_production x=15 y=3 cost=5 search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT}available={has_war_with=JAP}available_if_capitulated=yes bypass_if_unavailable=yes prerequisite={focus=MAN_independence_war_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_war_effort_dr add_war_support=.05}}focus={id=MAN_we_stand_victorious_dr icon=GFX_focus_spr_torchbearers_of_tomorrow x=13 y=5 cost=0 available={always=no}available_if_capitulated=yes bypass={NOT={has_war_with=JAP}}prerequisite={focus=MAN_expel_japanese_collaborators_dr focus=MAN_for_freedom_we_fight_dr focus=MAN_the_war_effort_dr}ai_will_do={factor=1}}focus={id=MAN_land_reform_dr icon=GFX_focus_eng_crush_the_dream x=6 y=7 cost=6 search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=MAN_communist_collaboration_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_land_reform_dr add_popularity={ideology=communism popularity=.05}}}focus={id=MAN_three_principles_dr icon=GFX_focus_generic_china1 x=10 y=7 cost=6 available={OR={has_government=neutrality has_government=democratic}}available_if_capitulated=yes prerequisite={focus=MAN_nationalist_collaboration_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_the_three_principles_dr add_popularity={ideology=neutrality popularity=.05}}}focus={id=MAN_agrarian_socialism_dr icon=GFX_goal_generic_war_with_comintern x=6 y=8 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=MAN_land_reform_dr}ai_will_do={factor=1}completion_reward={add_political_power=25 add_popularity={ideology=communism popularity=.05}}}focus={id=MAN_foundations_of_democracy_dr icon=GFX_focus_generic_military_academy x=10 y=8 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available={OR={has_government=neutrality has_government=democratic}}available_if_capitulated=yes prerequisite={focus=MAN_three_principles_dr}ai_will_do={factor=1}completion_reward={add_political_power=25 add_popularity={ideology=democratic popularity=.05}}}focus={id=MAN_learn_from_the_best_dr icon=GFX_goal_continuous_research x=3 y=3 cost=9 search_filters={FOCUS_FILTER_RESEARCH}available={is_subject_of=JAP}available_if_capitulated=yes prerequisite={focus=MAN_forever_a_subject_dr}ai_will_do={factor=1}completion_reward={add_research_slot=1 swap_ideas={remove_idea=idea_japanese_lapdog_dr add_idea=idea_japanese_lapdog_2_dr}}}focus={id=MAN_resource_extraction_dr icon=GFX_goal_generic_construction2 x=1 y=3 cost=6 search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}available={is_subject_of=JAP controls_state=328 controls_state=716}available_if_capitulated=yes prerequisite={focus=MAN_forever_a_subject_dr}ai_will_do={factor=1}completion_reward={328={add_resource={type=aluminium amount=10}}716={add_resource={type=steel amount=15}}add_tech_bonus={bonus=0.5 uses=2 category=excavation_tech}}}focus={id=MAN_japanese_settlement_dr icon=GFX_focus_jap_pacific_guardian x=5 y=3 cost=6 search_filters={FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT}available={is_subject_of=JAP}available_if_capitulated=yes prerequisite={focus=MAN_forever_a_subject_dr}ai_will_do={factor=1}completion_reward={add_manpower=10000 add_war_support=.05}}focus={id=MAN_a_model_colony_dr icon=GFX_goal_generic_intelligence_exchange x=3 y=4 cost=7 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={is_subject_of=JAP}available_if_capitulated=yes prerequisite={focus=MAN_resource_extraction_dr}prerequisite={focus=MAN_learn_from_the_best_dr}prerequisite={focus=MAN_japanese_settlement_dr}ai_will_do={factor=1}completion_reward={add_political_power=25 swap_ideas={remove_idea=idea_japanese_lapdog_2_dr add_idea=idea_japanese_lapdog_3_dr}}}focus={id=MAN_proposition_for_equality_dr icon=GFX_focus_chi_collaboration_with_the_japanese x=3 y=5 cost=7 search_filters={FOCUS_FILTER_POLITICAL}available={has_country_flag=jap_deny_flag_dr is_subject_of=JAP}available_if_capitulated=no prerequisite={focus=MAN_a_model_colony_dr}ai_will_do={factor=1}completion_reward={JAP={country_event=dr.170}custom_effect_tooltip=equality_tooltip_dr}}focus={id=MAN_the_chinese_sengoku_dr icon=GFX_focus_chi_one_china_policy x=21 y=0 cost=3 search_filters={FOCUS_FILTER_WAR_SUPPORT}available_if_capitulated=yes ai_will_do={factor=1}completion_reward={add_war_support=.05}}focus={id=MAN_foreign_assistance_dr icon=GFX_goal_molotov_ribbentrop_pact x=32 y=0 cost=6 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}available={has_completed_focus=MAN_disobedience_dr}available_if_capitulated=yes mutually_exclusive={focus=MAN_investments_from_the_mitsubishi_dr focus=MAN_prioritize_local_help_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_foreign_assistance_dr add_political_power=15}}focus={id=MAN_prioritize_local_help_dr icon=GFX_goal_generic_construction2 x=29 y=0 cost=6 search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}available={NOT={is_subject_of=JAP}has_completed_focus=MAN_disobedience_dr}available_if_capitulated=yes mutually_exclusive={focus=MAN_investments_from_the_mitsubishi_dr focus=MAN_foreign_assistance_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_prioritize_local_help_dr add_political_power=15}}focus={id=MAN_department_of_foreign_investments_dr icon=GFX_focus_spa_the_spanish_miracle x=32 y=1 cost=6 search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}available={is_subject=no}available_if_capitulated=yes prerequisite={focus=MAN_foreign_assistance_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_foreign_assistance_dr add_idea=idea_foreign_assistance_2_dr}add_political_power=25 if={limit={country_exists=GER}GER={add_opinion_modifier={target=MAN modifier=dfi_modifier_dr}}}if={limit={country_exists=SOV}SOV={add_opinion_modifier={target=MAN modifier=dfi_modifier_dr}}}if={limit={country_exists=FRA}FRA={add_opinion_modifier={target=MAN modifier=dfi_modifier_dr}}}if={limit={country_exists=ITA}ITA={add_opinion_modifier={target=MAN modifier=dfi_modifier_dr}}if={limit={country_exists=USA}USA={add_opinion_modifier={target=MAN modifier=dfi_modifier_dr}}}if={limit={country_exists=JAP}JAP={add_opinion_modifier={target=MAN modifier=dfi_modifier_dr}}}if={limit={country_exists=SAF}SAF={add_opinion_modifier={target=MAN modifier=dfi_modifier_dr}}}if={limit={country_exists=AST}AST={add_opinion_modifier={target=MAN modifier=dfi_modifier_dr}}}if={limit={country_exists=IRE}IRE={add_opinion_modifier={target=MAN modifier=dfi_modifier_dr}}}if={limit={country_exists=CSA}CSA={add_opinion_modifier={target=MAN modifier=dfi_modifier_dr}}if={limit={country_exists=MEX}MEX={add_opinion_modifier={target=MAN modifier=dfi_modifier_dr}}}if={limit={country_exists=PRU}PRU={add_opinion_modifier={target=MAN modifier=dfi_modifier_dr}}}if={limit={country_exists=BHU}BHU={add_opinion_modifier={target=MAN modifier=dfi_modifier_dr}}}custom_effect_tooltip=opinion_tooltip_dr}}}}focus={id=MAN_kuomintang_economic_cooperation_dr icon=GFX_focus_chi_whampoa_military_academy x=29 y=1 cost=6 search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}available={OR={is_subject_of=CHI is_subject_of=PRC has_country_flag=national_leadership_flag_dr}}available_if_capitulated=yes prerequisite={focus=MAN_prioritize_local_help_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_prioritize_local_help_dr add_idea=idea_prioritize_local_help_2_dr}add_political_power=25 if={limit={country_exists=CHI}CHI={add_opinion_modifier={target=MAN modifier=kec_modifier_dr}}}if={limit={country_exists=PRC}PRC={add_opinion_modifier={target=MAN modifier=kec_modifier_dr}}}if={limit={country_exists=XSM}XSM={add_opinion_modifier={target=MAN modifier=kec_modifier_dr}}}if={limit={has_power_balance={id=will_balance_dr}}add_power_balance_value={id=will_balance_dr value=-0.1}}custom_effect_tooltip=opinion_tooltip_dr custom_effect_tooltip=nat_tooltip_dr}}focus={id=MAN_japanese_economic_ties_dr icon=GFX_focus_jap_zaibatsu x=26 y=1 cost=6 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}available={OR={is_subject_of=JAP has_completed_focus=MAN_two_empires_one_system_dr}}available_if_capitulated=yes prerequisite={focus=MAN_investments_from_the_mitsubishi_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_investments_from_the_mitsubishi_dr add_idea=idea_investments_from_the_mitsubishi_2_dr}add_political_power=25 if={limit={country_exists=JAP}JAP={add_opinion_modifier={target=MAN modifier=jet_modifier_dr}}}custom_effect_tooltip=opinion_tooltip_dr}}focus={id=MAN_buildup_public_services_dr icon=GFX_goal_generic_consumer_goods x=32 y=2 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=MAN_department_of_foreign_investments_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_foreign_assistance_2_dr add_idea=idea_foreign_assistance_3_dr}}}focus={id=MAN_expand_railway_network_dr icon=GFX_goal_generic_construct_infrastructure x=26 y=2 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=MAN_japanese_economic_ties_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_investments_from_the_mitsubishi_2_dr add_idea=idea_investments_from_the_mitsubishi_3_dr}}}focus={id=MAN_industrial_planning_dr icon=GFX_goal_generic_construct_civilian x=29 y=2 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=MAN_kuomintang_economic_cooperation_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_prioritize_local_help_2_dr add_idea=idea_prioritize_local_help_3_dr}}}focus={id=MAN_three_year_plan_dr icon=GFX_goal_generic_production x=29 y=3 cost=8 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=MAN_expand_railway_network_dr focus=MAN_industrial_planning_dr focus=MAN_buildup_public_services_dr}ai_will_do={factor=1}completion_reward={add_timed_idea={idea=idea_three_year_plan_dr days=1095}}}focus={id=MAN_dispersed_production_dr icon=GFX_focus_generic_reorient_production x=30 y=4 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available={OR={has_tech=dispersed_industry NOT={has_tech=concentrated_industry has_tech=dispersed_industry}}}available_if_capitulated=yes prerequisite={focus=MAN_three_year_plan_dr}mutually_exclusive={focus=MAN_concentrated_production_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=dispersed_industry_category}}}focus={id=MAN_civilian_industry_dr icon=GFX_goal_generic_construct_civ_factory x=27 y=5 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=MAN_concentrated_production_dr focus=MAN_dispersed_production_dr}ai_will_do={factor=1}completion_reward={random_owned_controlled_state={limit={free_building_slots={building=industrial_complex size>0}}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_extra_state_shared_building_slots=1}random_owned_controlled_state={limit={free_building_slots={building=industrial_complex size>0}}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=MAN_military_industry_dr icon=GFX_goal_generic_construct_mil_factory x=31 y=5 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=MAN_concentrated_production_dr focus=MAN_dispersed_production_dr}ai_will_do={factor=1}completion_reward={random_owned_controlled_state={limit={free_building_slots={building=arms_factory size>0}}add_building_construction={type=arms_factory level=1 instant_build=yes}add_extra_state_shared_building_slots=1}random_owned_controlled_state={limit={free_building_slots={building=arms_factory size>0}}add_building_construction={type=arms_factory level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=MAN_military_industry_ii_dr icon=GFX_goal_generic_construct_mil_factory x=32 y=6 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=MAN_military_industry_dr}ai_will_do={factor=1}completion_reward={random_owned_controlled_state={limit={free_building_slots={building=arms_factory size>0}}add_building_construction={type=arms_factory level=1 instant_build=yes}add_extra_state_shared_building_slots=1}random_owned_controlled_state={limit={free_building_slots={building=arms_factory size>0}}add_building_construction={type=arms_factory level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=MAN_civilian_industry_ii_dr icon=GFX_goal_generic_construct_civ_factory x=26 y=6 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=MAN_civilian_industry_dr}ai_will_do={factor=1}completion_reward={random_owned_controlled_state={limit={free_building_slots={building=industrial_complex size>0}}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_extra_state_shared_building_slots=1}random_owned_controlled_state={limit={free_building_slots={building=industrial_complex size>0}}add_building_construction={type=industrial_complex level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=MAN_steel_mills_dr icon=GFX_focus_generic_steel x=32 y=7 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=MAN_military_industry_ii_dr}ai_will_do={factor=1}completion_reward={random_owned_controlled_state={add_resource={type=steel amount=5}}random_owned_controlled_state={add_resource={type=steel amount=5}}}}focus={id=MAN_infrastructure_construction_dr icon=GFX_goal_generic_construct_infrastructure x=26 y=7 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=MAN_civilian_industry_ii_dr}ai_will_do={factor=1}completion_reward={random_owned_controlled_state={limit={free_building_slots={building=infrastructure size>0}}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}random_owned_controlled_state={limit={free_building_slots={building=infrastructure size>0}}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=1}}}focus={id=MAN_advanced_farming_methods_dr icon=GFX_focus_generic_agricultural_subsidies x=29 y=6 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=MAN_develop_capital_region_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=construction_tech}}}focus={id=MAN_advanced_resource_extraction_dr icon=GFX_goal_generic_oil_refinery x=29 y=7 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=MAN_advanced_farming_methods_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=synth_resources}}}focus={id=MAN_reformed_national_bank_dr icon=GFX_focus_usa_reestablish_the_gold_standard x=35 y=4 cost=5 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}available={has_country_flag=national_leadership_flag_dr}available_if_capitulated=yes prerequisite={focus=MAN_three_year_plan_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_reformed_national_bank_dr}}focus={id=MAN_ban_the_opium_trade_dr icon=GFX_goal_generic_trade x=34 y=5 cost=6 search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=MAN_reformed_national_bank_dr}mutually_exclusive={focus=MAN_tax_the_opium_trade_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_opium_trade_2_dr add_political_power=25}}focus={id=MAN_tax_the_opium_trade_dr icon=GFX_goal_generic_forceful_treaty x=36 y=5 cost=6 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}available_if_capitulated=yes prerequisite={focus=MAN_reformed_national_bank_dr}mutually_exclusive={focus=MAN_ban_the_opium_trade_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_opium_trade_dr add_political_power=-25}}focus={id=MAN_education_funding_dr icon=GFX_focus_usa_guarantee_the_american_dream x=35 y=6 cost=5 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=MAN_ban_the_opium_trade_dr focus=MAN_tax_the_opium_trade_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_education_funding_dr}}focus={id=MAN_research_programs_dr icon=GFX_focus_research2 x=35 y=7 cost=10 search_filters={FOCUS_FILTER_RESEARCH}available_if_capitulated=yes prerequisite={focus=MAN_education_funding_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_education_funding_dr add_idea=idea_education_funding_2_dr}add_research_slot=1}}focus={id=MAN_great_minds_of_asia_dr icon=GFX_focus_research2 x=35 y=8 cost=10 search_filters={FOCUS_FILTER_RESEARCH}available={is_subject=no num_of_civilian_factories>99}available_if_capitulated=yes prerequisite={focus=MAN_research_programs_dr}ai_will_do={factor=1}completion_reward={add_research_slot=1}}focus={id=MAN_rise_of_the_restorationists_dr icon=GFX_focus_spr_crush_the_revolution x=18 y=6 cost=4 search_filters={FOCUS_FILTER_POLITICAL}available={OR={has_government=neutrality has_government=fascism}}available_if_capitulated=yes prerequisite={focus=MAN_we_stand_victorious_dr}mutually_exclusive={focus=MAN_nationalist_collaboration_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=neutrality popularity=.1}}}focus={id=MAN_seek_japanese_permission_dr icon=GFX_goal_generic_dangerous_deal x=20 y=1 cost=3 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}available={is_subject_of=JAP has_completed_focus=MAN_obedience_dr}available_if_capitulated=yes prerequisite={focus=MAN_the_chinese_sengoku_dr}mutually_exclusive={focus=MAN_the_path_to_reunification_dr}ai_will_do={factor=1}completion_reward={JAP={country_event=dr.171}}}focus={id=MAN_the_path_to_reunification_dr icon=GFX_goal_generic_political_pressure x=22 y=1 cost=3 search_filters={FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}available={NOT={is_subject_of=JAP}has_completed_focus=MAN_disobedience_dr}available_if_capitulated=yes prerequisite={focus=MAN_the_chinese_sengoku_dr}mutually_exclusive={focus=MAN_seek_japanese_permission_dr}ai_will_do={factor=1}completion_reward={add_war_support=.05 if={limit={has_power_balance={id=will_balance_dr}}add_power_balance_value={id=will_balance_dr value=-0.05}}custom_effect_tooltip=nat_tooltip_dr}}focus={id=MAN_topple_the_nationalists_dr icon=GFX_focus_attack_china x=20 y=2 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={OR={has_country_flag=jap_deny_flag_dr is_subject=no}country_exists=CHI NOT={is_subject_of=CHI has_wargoal_against=CHI has_war_with=CHI CHI={is_subject_of=MAN}}}available_if_capitulated=yes bypass_if_unavailable=yes prerequisite={focus=MAN_seek_japanese_permission_dr focus=MAN_the_path_to_reunification_dr}ai_will_do={factor=1}completion_reward={if={limit={is_subject_of=JAP}JAP={create_wargoal={target=CHI type=annex_everything}}}else={create_wargoal={target=CHI type=annex_everything}}}}focus={id=MAN_topple_the_commies_dr icon=GFX_goal_anti_comintern_pact x=22 y=2 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={OR={has_country_flag=jap_deny_flag_dr is_subject=no}country_exists=PRC NOT={is_subject_of=PRC has_wargoal_against=XSM has_war_with=PRC PRC={is_subject_of=MAN}}}available_if_capitulated=yes bypass_if_unavailable=yes prerequisite={focus=MAN_seek_japanese_permission_dr focus=MAN_the_path_to_reunification_dr}ai_will_do={factor=1}completion_reward={if={limit={is_subject_of=JAP}JAP={create_wargoal={target=PRC type=annex_everything}}}else={create_wargoal={target=PRC type=annex_everything}}}}focus={id=MAN_pacify_the_ma_dr icon=GFX_goal_generic_major_war x=21 y=3 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={country_exists=XSM NOT={has_wargoal_against=XSM has_war_with=XSM XSM={is_subject_of=MAN}}}available_if_capitulated=yes bypass_if_unavailable=yes prerequisite={focus=MAN_topple_the_nationalists_dr}prerequisite={focus=MAN_topple_the_commies_dr}ai_will_do={factor=1}completion_reward={if={limit={is_subject_of=JAP}JAP={create_wargoal={target=XSM type=annex_everything}}}else={create_wargoal={target=XSM type=annex_everything}}}}focus={id=MAN_tibet_doesnt_exist_dr icon=GFX_focus_spr_masters_of_our_own_fate x=17 y=4 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={country_exists=BHU NOT={has_wargoal_against=BHU has_war_with=BHU BHU={is_subject_of=MAN}}}available_if_capitulated=yes bypass_if_unavailable=yes prerequisite={focus=MAN_pacify_the_ma_dr}ai_will_do={factor=1}completion_reward={if={limit={is_subject_of=JAP}JAP={create_wargoal={target=BHU type=annex_everything}}}else={create_wargoal={target=BHU type=annex_everything}}}}focus={id=MAN_claim_the_islands_dr icon=GFX_focus_attack_japan x=21 y=4 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={country_exists=JAP NOT={is_subject_of=JAP has_wargoal_against=JAP has_war_with=JAP JAP={is_subject_of=MAN}}}available_if_capitulated=yes bypass_if_unavailable=yes prerequisite={focus=MAN_pacify_the_ma_dr}ai_will_do={factor=1}completion_reward={create_wargoal={target=JAP type=puppet_wargoal_focus}}}focus={id=MAN_reverse_amur_annexation_dr icon=GFX_goal_tfv_saf_anti_colonialist_crusade x=25 y=4 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={country_exists=FER NOT={has_wargoal_against=FER has_war_with=FER FER={is_subject_of=MAN}}}available_if_capitulated=yes bypass_if_unavailable=yes prerequisite={focus=MAN_pacify_the_ma_dr}ai_will_do={factor=1}completion_reward={if={limit={is_subject_of=JAP}JAP={create_wargoal={target=FER type=puppet_wargoal_focus}}}else={create_wargoal={target=FER type=puppet_wargoal_focus}}}}focus={id=MAN_reclaim_xinjiang_dr icon=GFX_goal_generic_occupy_states_ongoing_war x=19 y=4 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={country_exists=UZB NOT={has_wargoal_against=UZB has_war_with=UZB UZB={is_subject_of=MAN}}}available_if_capitulated=yes bypass_if_unavailable=yes prerequisite={focus=MAN_pacify_the_ma_dr}ai_will_do={factor=1}completion_reward={if={limit={is_subject_of=JAP}JAP={create_wargoal={target=UZB type=puppet_wargoal_focus}}}else={create_wargoal={target=UZB type=puppet_wargoal_focus}}}}focus={id=MAN_heavenly_kingdom_dr icon=GFX_focus_por_concordat x=21 y=7 cost=8 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION}available={OR={has_government=neutrality has_government=fascism}}available_if_capitulated=yes prerequisite={focus=MAN_rise_of_the_restorationists_dr}mutually_exclusive={focus=MAN_pursue_our_legacy_dr}ai_will_do={factor=1}completion_reward={set_cosmetic_tag=cosmetic_tag_mir_dr swap_ideas={remove_idea=idea_memories_of_the_empire_dr add_idea=idea_memories_of_the_empire_2_dr}add_popularity={ideology=neutrality popularity=.15}set_party_name={ideology=neutrality long_name="Imperial Restoration League" name="IRL"}set_party_name={ideology=democratic long_name="Imperial-Democratic League" name="I-DL"}set_party_name={ideology=communism long_name="People's Imperial Restoration Union" name="PIRU"}set_party_name={ideology=fascism long_name="National-Imperial Restoration League" name="N-IRL"}}}focus={id=MAN_pursue_our_legacy_dr icon=GFX_focus_generic_monarchy_2 x=15 y=7 cost=8 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION}available={OR={has_government=neutrality has_government=fascism}}available_if_capitulated=yes prerequisite={focus=MAN_rise_of_the_restorationists_dr}mutually_exclusive={focus=MAN_heavenly_kingdom_dr}ai_will_do={factor=1}completion_reward={set_cosmetic_tag=cosmetic_tag_mir_dr swap_ideas={remove_idea=idea_memories_of_the_empire_dr add_idea=idea_memories_of_the_empire_2_dr}add_popularity={ideology=neutrality popularity=.15}set_party_name={ideology=neutrality long_name="Imperial Restoration League" name="IRL"}set_party_name={ideology=democratic long_name="Imperial-Democratic League" name="I-DL"}set_party_name={ideology=communism long_name="People's Imperial Restoration Union" name="PIRU"}set_party_name={ideology=fascism long_name="National-Imperial Restoration League" name="N-IRL"}}}focus={id=MAN_anti_republican_rhetoric_dr icon=GFX_focus_rom_royal_dictatorship x=17 y=8 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available={OR={has_government=neutrality has_government=fascism}}available_if_capitulated=yes prerequisite={focus=MAN_heavenly_kingdom_dr focus=MAN_pursue_our_legacy}ai_will_do={factor=1}completion_reward={add_popularity={ideology=democratic popularity=-.05}add_popularity={ideology=communism popularity=-.05}if={limit={country_exists=CHI}CHI={add_opinion_modifier={target=MAN modifier=arr_modifier_dr}}add_opinion_modifier={target=CHI modifier=arr_modifier_dr}}if={limit={country_exists=PRC}PRC={add_opinion_modifier={target=MAN modifier=arr_modifier_dr}}add_opinion_modifier={target=PRC modifier=arr_modifier_dr}}if={limit={country_exists=XSM}XSM={add_opinion_modifier={target=MAN modifier=arr_modifier_dr}}add_opinion_modifier={target=XSM modifier=arr_modifier_dr}}custom_effect_tooltip=opinion_tooltip_dr}}focus={id=MAN_restabilzing_the_administration_dr icon=GFX_focus_generic_treaty x=19 y=8 cost=5 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}available={OR={has_government=neutrality has_government=fascism}}available_if_capitulated=yes prerequisite={focus=MAN_pursue_our_legacy_dr focus=MAN_heavenly_kingdom_dr}ai_will_do={factor=1}completion_reward={add_stability=.05 add_political_power=20}}focus={id=MAN_forever_a_subject_dr icon=GFX_focus_jap_spiritual_mobilization x=3 y=2 cost=5 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}available={is_subject_of=JAP}available_if_capitulated=yes prerequisite={focus=MAN_obedience_dr}ai_will_do={factor=1}completion_reward={add_political_power=25 add_stability=.05 add_war_support=-.05}}focus={id=MAN_two_empires_one_system_dr icon=GFX_focus_jap_cast_the_die x=3 y=6 cost=15 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY}available={has_country_flag=equality_flag_dr is_subject_of=JAP}available_if_capitulated=yes prerequisite={focus=MAN_proposition_for_equality_dr}ai_will_do={factor=1}completion_reward={JAP={end_puppet=MAN give_guarantee=MAN}give_guarantee=JAP swap_ideas={remove_idea=idea_japanese_lapdog_3_dr add_idea=idea_japanese_lapdog_4_dr}add_political_power=100 custom_effect_tooltip=equality_tooltip_2_dr complete_national_focus=MAN_rise_of_the_restorationists_dr}}focus={id=MAN_investments_from_the_mitsubishi_dr icon=GFX_focus_generic_modernize_industry x=26 y=0 cost=6 search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}available={OR={is_subject_of=JAP has_completed_focus=MAN_two_empires_one_system_dr}has_completed_focus=MAN_obedience_dr}available_if_capitulated=yes mutually_exclusive={focus=MAN_prioritize_local_help_dr focus=MAN_foreign_assistance_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_investments_from_the_mitsubishi_dr add_political_power=15}}focus={id=MAN_concentrated_production_dr icon=GFX_focus_generic_reorient_production x=28 y=4 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available={OR={has_tech=concentrated_industry NOT={has_tech=concentrated_industry has_tech=dispersed_industry}}}available_if_capitulated=yes prerequisite={focus=MAN_three_year_plan_dr}mutually_exclusive={focus=MAN_dispersed_production_dr}ai_will_do={factor=1}completion_reward={add_tech_bonus={bonus=0.5 uses=2 category=concentrated_industry_category}}}focus={id=MAN_develop_capital_region_dr icon=GFX_focus_DEN_civilian_preparations x=29 y=5 cost=5 search_filters={FOCUS_FILTER_INDUSTRY}available_if_capitulated=yes prerequisite={focus=MAN_concentrated_production_dr focus=MAN_dispersed_production_dr}ai_will_do={factor=1}completion_reward={random_owned_controlled_state={limit={is_capital=yes}ROOT={add_building_construction={type=industrial_complex level=1 instant_build=yes}add_building_construction={type=arms_factory level=1 instant_build=yes}add_building_construction={type=infrastructure level=1 instant_build=yes}add_extra_state_shared_building_slots=3}}}}focus={id=MAN_slay_the_khan_dr icon=GFX_focus_smiling_buddha x=23 y=4 cost=5 search_filters={FOCUS_FILTER_ANNEXATION}available={country_exists=MON NOT={has_wargoal_against=MON has_war_with=MON MON={is_subject_of=MAN}}}available_if_capitulated=yes bypass_if_unavailable=yes prerequisite={focus=MAN_pacify_the_ma_dr}ai_will_do={factor=1}completion_reward={if={limit={is_subject_of=JAP}JAP={create_wargoal={target=MON type=annex_everything}}}else={create_wargoal={target=MON type=annex_everything}}}}focus={id=MAN_changchun_university_dr icon=GFX_focus_research x=8 y=9 cost=10 search_filters={FOCUS_FILTER_RESEARCH}available={NOT={has_government=fascism}}available_if_capitulated=yes prerequisite={focus=MAN_agrarian_socialism_dr focus=MAN_foundations_of_democracy_dr}ai_will_do={factor=1}completion_reward={add_research_slot=1}}focus={id=MAN_sinocization_dr icon=GFX_goal_generic_attack_allies x=8 y=10 cost=5 search_filters={FOCUS_FILTER_POLITICAL}available={NOT={has_government=fascism}}available_if_capitulated=yes prerequisite={focus=MAN_changchun_university_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_sinocization_dr add_political_power=25 if={limit={has_power_balance={id=will_balance_dr}}add_power_balance_value={id=will_balance_dr value=-0.05}}custom_effect_tooltip=nat_tooltip_dr}}focus={id=MAN_the_dragons_bliss_dr icon=GFX_focus_BUL_the_third_bulgarian_empire x=14 y=8 cost=5 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}available={OR={has_government=neutrality has_government=fascism}}available_if_capitulated=yes prerequisite={focus=MAN_pursue_our_legacy_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_memories_of_the_empire_2_dr add_idea=idea_memories_of_the_empire_3_dr}add_popularity={ideology=neutrality popularity=.05}}}focus={id=MAN_the_second_cumming_dr icon=GFX_focus_TUR_reform_the_balkan_pact x=22 y=8 cost=5 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}available_if_capitulated=yes prerequisite={focus=MAN_heavenly_kingdom_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_memories_of_the_empire_2_dr add_idea=idea_memories_of_the_empire_3_dr }add_popularity={ideology=neutrality popularity=.05}}}focus={id=MAN_honoring_the_nobility_dr icon=GFX_goal_tfv_strengthen_commonwealth_ties x=13 y=9 cost=4 search_filters={FOCUS_FILTER_POLITICAL}available={OR={has_government=neutrality has_government=fascism}}available_if_capitulated=yes prerequisite={focus=MAN_the_dragons_bliss_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=neutrality popularity=.05}}}focus={id=MAN_new_qing_reform_dr icon=GFX_focus_hol_the_foundations_of_defense x=15 y=9 cost=6 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}available={OR={has_government=neutrality has_government=fascism}}available_if_capitulated=yes prerequisite={focus=MAN_the_dragons_bliss_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_memories_of_the_empire_3_dr add_idea=idea_memories_of_the_empire_4_dr}add_political_power=25 add_popularity={ideology=neutrality popularity=.05}}}focus={id=MAN_heretical_indictment_dr icon=GFX_focus_spa_eliminate_the_carlists x=21 y=9 cost=6 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}available={OR={has_government=neutrality has_government=fascism}}available_if_capitulated=yes prerequisite={focus=MAN_the_second_cumming_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_memories_of_the_empire_3_dr add_idea=idea_memories_of_the_empire_5_dr}add_political_power=25 add_popularity={ideology=neutrality popularity=.05}}}focus={id=MAN_spread_the_faith_dr icon=GFX_focus_generic_pope x=23 y=9 cost=4 search_filters={FOCUS_FILTER_POLITICAL}available={OR={has_government=neutrality has_government=fascism}}available_if_capitulated=yes prerequisite={focus=MAN_the_second_cumming_dr}ai_will_do={factor=1}completion_reward={add_popularity={ideology=neutrality popularity=.05}}}focus={id=MAN_cult_of_the_marshal_dr icon=GFX_focus_chi_examination_yuan x=11 y=10 cost=9 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={has_country_flag=national_leadership_flag_dr OR={has_government=neutrality has_government=democratic}}available_if_capitulated=yes prerequisite={focus=MAN_foundations_of_democracy_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_the_three_principles_dr add_idea=idea_the_three_principles_2_dr}add_political_power=25 add_stability=.05 add_war_support=.05 add_popularity={ideology=neutrality popularity=.1}}}focus={id=MAN_the_east_is_red_dr icon=GFX_goal_support_communism x=6 y=12 cost=6 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=MAN_red_sun_in_the_sky_dr}ai_will_do={factor=1}completion_reward={add_political_power=25 add_stability=.05 add_war_support=.05 add_popularity={ideology=communism popularity=.05}}}focus={id=MAN_the_second_xinhai_dr icon=GFX_goal_support_democracy x=10 y=12 cost=6 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={OR={has_government=neutrality has_government=democratic}}available_if_capitulated=yes prerequisite={focus=MAN_better_dead_than_red_dr}ai_will_do={factor=1}completion_reward={add_political_power=25 add_stability=.05 add_war_support=.05 add_popularity={ideology=democratic popularity=.05}}}focus={id=MAN_better_dead_than_red_dr icon=GFX_focus_generic_strike_at_democracy1 x=10 y=11 cost=6 search_filters={FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}available={OR={has_government=neutrality has_government=democratic}}available_if_capitulated=yes prerequisite={focus=MAN_cult_of_the_marshal_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_the_three_principles_2_dr add_idea=idea_the_three_principles_3_dr}add_popularity={ideology=neutrality popularity=.05}}}focus={id=MAN_modernity_and_tradition_dr icon=GFX_goal_generic_neutrality_focus x=18 y=9 cost=5 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={OR={has_government=neutrality has_government=fascism}}available_if_capitulated=yes prerequisite={focus=MAN_anti_republican_rhetoric_dr}prerequisite={focus=MAN_restabilzing_the_administration_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_modernity_and_tradition_dr}}focus={id=MAN_meritocratic_ideals_dr icon=GFX_goal_continuous_increase_nu x=18 y=10 cost=7 search_filters={FOCUS_FILTER_POLITICAL}available={OR={has_government=neutrality has_government=fascism}}available_if_capitulated=yes prerequisite={focus=MAN_modernity_and_tradition_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_modernity_and_tradition_dr add_idea=idea_modernity_and_tradition_2_dr}}}focus={id=MAN_zheltorossiya_project_dr icon=GFX_goal_anschluss x=13 y=15 cost=0 allow_branch={has_country_flag=zhelto_flag_dr}search_filters={FOCUS_FILTER_POLITICAL}available={always=no}available_if_capitulated=yes bypass={has_country_flag=zhelto_flag_dr NOT={has_war_with=JAP}}ai_will_do={factor=1}}focus={id=MAN_socialism_in_two_countries_dr icon=GFX_focus_SOV_the_supreme_soviet x=9 y=16 cost=8 search_filters={FOCUS_FILTER_POLITICAL}available={NOT={has_government=communism}}available_if_capitulated=yes prerequisite={focus=MAN_zheltorossiya_project_dr}mutually_exclusive={focus=MAN_subservience_to_ramscow_dr focus=MAN_the_white_exiles_dr}ai_will_do={factor=1}completion_reward={set_cosmetic_tag=cosmetic_tag_zhelto_dr set_party_name={ideology=neutrality long_name="Association of Russian Exiles" name="ARE"}set_party_name={ideology=democratic long_name="Russian Liberal Party" name="RLP"}set_party_name={ideology=communism long_name="People's Futurist Party of Zheltorossiya" name="PFPZ"}set_party_name={ideology=fascism long_name="All-Russian Liberation Committee" name="A-RLC"}set_politics={ruling_party=communism elections_allowed=no}add_popularity={ideology=communism popularity=.35}}}focus={id=MAN_the_white_exiles_dr icon=GFX_focus_SOV_mobilization_plan x=17 y=16 cost=8 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=MAN_zheltorossiya_project_dr}mutually_exclusive={focus=MAN_socialism_in_two_countries_dr focus=MAN_subservience_to_ramscow_dr}ai_will_do={factor=1}completion_reward={set_cosmetic_tag=cosmetic_tag_will_zhelto_dr set_party_name={ideology=neutrality long_name="Association of Russian Exiles" name="ARE"}set_party_name={ideology=democratic long_name="Russian Liberal Party" name="RLP"}set_party_name={ideology=communism long_name="People's Futurist Party of Zheltorossiya" name="PFPZ"}set_party_name={ideology=fascism long_name="All-Russian Liberation Committee" name="A-RLC"}add_popularity={ideology=neutrality popularity=.35}}}focus={id=MAN_pragmatic_dictatorship_dr icon=GFX_focus_generic_military_dictatorship x=15 y=17 cost=6 search_filters={FOCUS_FILTER_POLITICAL}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=MAN_subservience_to_ramscow_dr focus=MAN_the_white_exiles_dr}ai_will_do={factor=1}completion_reward={add_political_power=25 add_stability=.05 add_popularity={ideology=neutrality popularity=.1}add_popularity={ideology=fascism popularity=.05}}}focus={id=MAN_dictatorial_democracy_dr icon=GFX_focus_ARG_keep_it_in_the_party x=11 y=17 cost=6 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=MAN_socialism_in_two_countries_dr focus=MAN_subservience_to_ramscow_dr}ai_will_do={factor=1}completion_reward={add_political_power=25 add_stability=.05 add_popularity={ideology=communism popularity=.1}add_popularity={ideology=democratic popularity=.05}}}focus={id=MAN_unification_of_exiled_parties_dr icon=GFX_focus_eng_the_kings_party x=14 y=18 cost=6 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=MAN_pragmatic_dictatorship_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_unification_of_exiled_parties_dr add_popularity={ideology=neutrality popularity=.05}add_popularity={ideology=democratic popularity=.05}add_popularity={ideology=fascism popularity=.05}add_war_support=.05}}focus={id=MAN_far_eastern_orthodoxy_dr icon=GFX_focus_GRE_an_orthodox_state x=16 y=18 cost=6 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}available={has_government=neutrality}available_if_capitulated=yes prerequisite={focus=MAN_pragmatic_dictatorship_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_far_eastern_orthodoxy_dr add_popularity={ideology=neutrality popularity=0.1 add_political_power=25}}}focus={id=MAN_avant_garde_collectivization_dr icon=GFX_focus_rom_parties_end x=12 y=18 cost=6 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=MAN_dictatorial_democracy_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_avant_garde_collectivization_dr add_popularity={ideology=communism popularity=.1}add_stability=.05}}focus={id=MAN_technophilic_spur_dr icon=GFX_focus_generic_socialist_science x=10 y=18 cost=6 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=MAN_dictatorial_democracy_dr}ai_will_do={factor=1}completion_reward={add_ideas=idea_technophilic_spur_dr add_popularity={ideology=communism popularity=.05}add_political_power=25}}
+
+
+
+
+
+#local is fucked for some reason
+	focus={id=MAN_a_great_leap_dr icon=GFX_goal_generic_soviet_construction x=5 y=10 cost=9 search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}available={has_country_flag=national_leadership_flag_dr has_government=communism}available_if_capitulated=yes prerequisite={focus=MAN_agrarian_socialism_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_land_reform_dr add_idea=idea_land_reform_2_dr}add_political_power=25 add_stability=.05 add_war_support=.05 add_popularity={ideology=communism popularity=.1}}}
+
+#local is fucked for some reason
+	focus={id=MAN_red_sun_in_the_sky_dr icon=GFX_focus_prc_agrarian_socialism x=6 y=11 cost=6 search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}available={has_government=communism}available_if_capitulated=yes prerequisite={focus=MAN_a_great_leap_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_land_reform_2_dr add_idea=idea_land_reform_3_dr}add_popularity={ideology=communism popularity=.05}}}
+
+	focus={id=MAN_anime_in_propaganda_dr icon=GFX_goal_unknown x=8 y=4 cost=5 search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}available_if_capitulated=yes prerequisite={focus=MAN_weebist_indoctrination_dr}ai_will_do={factor=1}completion_reward={swap_ideas={remove_idea=idea_weebist_indoctrination_dr add_idea=idea_weebist_indoctrination_2_dr}add_popularity={ideology=fascism popularity=.05}if={limit={country_exists=JAP}JAP={add_opinion_modifier={target=MAN modifier=weeb_modifier_2_dr}}}custom_effect_tooltip=opinion_tooltip_dr}}
+
+
+	focus = {
+		id = MAN_northern_development
+		icon = GFX_focus_generic_industry_2
+		x = 29
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_infrastructure_construction_dr 
+		}
+		prerequisite = { 
+			focus = MAN_advanced_resource_extraction_dr 
+		}
+		prerequisite = { 
+			focus = MAN_steel_mills_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = MAN_southern_development
+		icon = GFX_focus_generic_industry_2
+		x = 26
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_infrastructure_construction_dr 
+		}
+		prerequisite = { 
+			focus = MAN_advanced_resource_extraction_dr 
+		}
+		prerequisite = { 
+			focus = MAN_steel_mills_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = MAN_heaven_is_a_place_on_earth_dr
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 20
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_meritocratic_ideals_dr
+		}
+		prerequisite = { 
+			focus = MAN_chinese_christianity_dr
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mandate Of Heaven
+	focus = {
+		id = MAN_mandate_of_heaven_dr
+		icon = GFX_focus_man_claim_the_mandate_of_heaven
+		x = 16
+		y = 11
+		cost = 11
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_imperial_divinity_dr 
+		}
+		prerequisite = { 
+			focus = MAN_meritocratic_ideals_dr 
+		}
+		mutually_exclusive = { focus = MAN_heaven_is_a_place_on_earth_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Emperor's Tributaries
+	focus = {
+		id = MAN_the_emperors_tributaries_dr
+		icon = GFX_focus_AST_squander_bug
+		x = 18
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_mandate_of_heaven_dr
+			focus = MAN_heaven_is_a_place_on_earth_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Japanese Vassalization
+	focus = {
+		id = MAN_japanese_vassalization_dr
+		icon = GFX_focus_generic_japanese_imperial_glory
+		x = 18
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_the_emperors_tributaries_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Steppe Mercenaries
+	focus = {
+		id = MAN_steppe_mercenaries
+		icon = GFX_goal_unknown
+		x = 58
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = MAN_subservience_to_ramscow_dr
+		icon = GFX_focus_SOV_the_defense_of_moscow
+		x = 13
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_zheltorossiya_project_dr }
+		mutually_exclusive = { focus = MAN_socialism_in_two_countries_dr focus=MAN_the_white_exiles_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	#Focus for The Art Of War
+	focus = {
+		id = MAN_the_art_of_war
+		icon = GFX_focus_generic_support_the_left_right
+		x = 41
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Waking The Tiger
+	focus = {
+		id = MAN_waking_the_tiger
+		icon = GFX_focus_usa_tank_destroyer_doctrine
+		x = 39
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus={
+		id=MAN_china_heroically_stands_in_the_universe_dr icon=GFX_focus_chi_united_front x=8 y=13 cost=10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_the_east_is_red_dr
+			focus = MAN_the_second_xinhai_dr
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Make A Man Out Of You
+	focus = {
+		id = MAN_make_a_man_out_of_you
+		icon = GFX_goal_unknown
+		x = 41
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sun Tzu Reborn
+	focus = {
+		id = MAN_sun_tzu_reborn
+		icon = GFX_goal_unknown
+		x = 41
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Home Of Gundpowder
+	focus = {
+		id = MAN_the_home_of_gundpowder
+		icon = GFX_MAN_the_home_of_gundpowder-144721
+		x = 43
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Emulating The Imperial Fleet
+	focus = {
+		id = MAN_emulating_the_imperial_fleet
+		icon = GFX_MAN_emulating_the_imperial_fleet-144377
+		x = 39
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Imperial Divinity
+	focus = {
+		id = MAN_imperial_divinity_dr
+		icon = GFX_focus_generic_home_defense
+		x = 14
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_honoring_the_nobility_dr
+		}
+		prerequisite = { 
+			focus = MAN_new_qing_reform_dr
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Chinese Christianity
+	focus = {
+		id = MAN_chinese_christianity_dr
+		icon = GFX_MAN_chinese_christianity-155833
+		x = 22
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_heretical_indictment_dr 
+		}
+		prerequisite = { 
+			focus = MAN_spread_the_faith_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Cup Of Solid Gold
+	focus = {
+		id = MAN_cup_of_solid_gold_dr
+		icon = GFX_goal_unknown
+		x = 18
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_japanese_vassalization_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = MAN_hundreds_propaganda_dr
+		icon = GFX_MAN_socialism_in_two_countries-144969
+		x = 15
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		allow_branch={has_country_flag=zhelto_flag_dr}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = MAN_japanese_guidance_dr
+		icon = GFX_MAN_socialism_in_two_countries-144969
+		x = 15
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		allow_branch={has_country_flag=zhelto_flag_dr}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = MAN_russia_indivisible_dr
+		icon = GFX_MAN_socialism_in_two_countries-144969
+		x = 15
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		allow_branch={has_country_flag=zhelto_flag_dr}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = MAN_freedom_of_the_mind_dr
+		icon = GFX_MAN_freedom_of_the_mind-146072
+		x = 11
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		allow_branch={has_country_flag=zhelto_flag_dr}
+		prerequisite = { 
+			focus = MAN_avante_garde_collectivization_dr
+		}
+		prerequisite = { 
+			focus = MAN_technophilic_spur_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = MAN_accelerate_accelerate_dr
+		icon = GFX_focus_hol_liberation
+		x = 11
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		allow_branch={has_country_flag=zhelto_flag_dr}
+		prerequisite = { focus = MAN_freedom_of_the_mind_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = MAN_our_reality_dr
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		allow_branch={has_country_flag=zhelto_flag_dr}
+		x = 11
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_accelerate_accelerate_dr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = MAN_central_plains_development
+		icon = GFX_focus_generic_industry_2
+		x = 32
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_infrastructure_construction_dr 
+		}
+		prerequisite = { 
+			focus = MAN_advanced_resource_extraction_dr 
+		}
+		prerequisite = { 
+			focus = MAN_steel_mills_dr 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

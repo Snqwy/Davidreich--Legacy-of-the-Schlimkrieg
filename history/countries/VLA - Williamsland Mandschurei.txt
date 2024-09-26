@@ -1,1 +1,1 @@
-﻿capital=328 set_cosmetic_tag=MAN_reichskommissariat_dr create_country_leader={name="Evil Will" picture=GFX_idea_europe_generic_1 expire="1965.1.1" ideology=nazism}
+﻿capital=328 set_cosmetic_tag=MAN_reichskommissariat_dr create_country_leader={name="Evil Will" picture=GFX_idea_europe_generic_1 expire="1965.1.1" ideology=nazism}add_ideas=idea_davekommissariat_dr

@@ -1436,39 +1436,33 @@ characters={ITA_benito_mussolini={name=ITA_max portraits={civilian={large="GFX_p
 		}
 	}
 
-#fix
+		#fix
 	ITA_enrico_fermi={name=ITA_enrico_fermi portraits={army={small=GFX_portrait_ITA_enrico_fermi_small}}available={has_completed_focus=ITA_duce_nuked_em_dr}advisor={slot=political_advisor idea_token=ITA_enrico_fermi research_bonus={nuclear=0.15}traits={nuclear_scientist}ai_will_do={base=0.100}}}
 
-#fix
+		#fix
 	ITA_giuseppe_borea={name=ITA_giuseppe_borea portraits={army={small=GFX_portrait_ITA_giuseppe_borea_small}}available={NOT={has_government=fascism}has_capitulated=yes}advisor={slot=political_advisor idea_token=ITA_giuseppe_borea traits={anti_fascist_chaplain}ai_will_do={base=0.300}}}
 
-#fix
+		#fix
 	ITA_pietro_d_acquarone={name=ITA_pietro_d_acquarone portraits={army={small=GFX_portrait_ITA_pietro_d_acquarone_small}}available={has_government=neutrality}advisor={slot=political_advisor idea_token=ITA_pietro_d_acquarone traits={staunch_monarchist}ai_will_do={base=0 modifier={add=100}}}}
 
-#fix portrait
+		#fix portrait
 	ITA_alcide_de_gasperi={name=ITA_alcide_de_gasperi portraits={army={small=GFX_portrait_ITA_alcide_de_gasperi_small}}advisor={slot=political_advisor idea_token=ITA_alcide_de_gasperi available={has_government=democratic}traits={master_of_politics voice_of_restraint}ai_will_do={base=0 modifier={add=0.1}}}}
 
-ITA_ivanoe_bonomi={name=ITA_ivanoe_bonomi portraits={army={small=GFX_idea_ivanoe_bonomi}}advisor={slot=political_advisor idea_token=ivanoe_bonomi available={has_government=democratic}traits={democratic_reformer}ai_will_do={base=0.000 modifier={factor=0}}}}
+ITA_mario_scelba={name=ITA_mario_scelba portraits={army={small=GFX_portrait_ITA_mario_scelba_small}}advisor={slot=political_advisor idea_token=ITA_mario_scelba available={has_government=democratic}traits={minister_of_posts_and_telegraphs}ai_will_do={base=0.300 modifier={factor=0}}}}ITA_fausto_gullo={name=ITA_fausto_gullo portraits={army={small=GFX_portrait_ITA_fausto_gullo_small}}advisor={slot=political_advisor idea_token=ITA_fausto_gullo available={has_government=democratic}traits={minister_of_peasants}ai_will_do={base=0.300}}}
 
-ITA_fausto_gullo={name=ITA_fausto_gullo portraits={army={small=GFX_portrait_ITA_fausto_gullo_small}}advisor={slot=political_advisor idea_token=ITA_fausto_gullo available={has_government=democratic}traits={minister_of_peasants}ai_will_do={base=0.300}}}
+#buff him
+	ITA_ivanoe_bonomi={name=ITA_ivanoe_bonomi portraits={army={small=GFX_idea_ivanoe_bonomi}}advisor={slot=political_advisor idea_token=ivanoe_bonomi available={has_government=democratic}traits={democratic_reformer}ai_will_do={base=0.000 modifier={factor=0}}}}
+	
+ITA_guido_de_ruggiero={name=ITA_guido_de_ruggiero portraits={army={small=GFX_portrait_ITA_guido_de_rugiero_small}}advisor={cost=100 slot=political_advisor idea_token=ITA_guido_de_ruggiero available={has_government=democratic}traits={liberal_professor}ai_will_do={base=0.300 modifier={factor=0}}}}ITA_vittorio_emanuele_orlando={name=ITA_vittorio_emanuele_orlando portraits={army={small=GFX_portrait_ITA_vittorio_emanuele_orlando_small}}advisor={slot=political_advisor idea_token=ITA_vittorio_emanuele_orlando available={has_government=democratic}traits={old_figurehead}ai_will_do={base=0.300 modifier={factor=0.5}}}}ITA_sandro_pertini={name=ITA_sandro_pertini portraits={army={small=GFX_portrait_ITA_sandro_pertini_small}}advisor={slot=political_advisor idea_token=ITA_sandro_pertini available={OR={has_government=democratic has_government=communism}}traits={marxist_philosopher}ai_will_do={base=1.000 modifier={factor=0}}}}ITA_palmiro_togliatti={name=ITA_palmiro_togliatti portraits={army={small=GFX_portrait_ITA_palmiro_togliatti_small}}country_leader={ideology=marxism expire="1965.1.1.1" id=-1}advisor={slot=political_advisor idea_token=ITA_palmiro_togliatti available={has_government=communism}traits={conservative_communist}ai_will_do={base=0.100 modifier={factor=0}}}}ITA_amadeo_bordiga={name=ITA_amadeo_bordiga portraits={army={small=GFX_idea_amadeo_bordiga}}advisor={slot=political_advisor idea_token=amadeo_bordiga available={has_government=communism}traits={communist_revolutionary}ai_will_do={base=0.000}}}ITA_ignazio_silone={name=ITA_ignazio_silone portraits={army={small=GFX_portrait_ITA_ignazio_silone_small}}advisor={slot=political_advisor idea_token=ITA_ignazio_silone available={has_government=communism}traits={revolutionary_poet}ai_will_do={base=0.300 modifier={factor=0}}}
 
-ITA_mario_scelba={name=ITA_mario_scelba portraits={army={small=GFX_portrait_ITA_mario_scelba_small}}advisor={slot=political_advisor idea_token=ITA_mario_scelba available={has_government=democratic}traits={minister_of_posts_and_telegraphs}ai_will_do={base=0.300 modifier={factor=0}}}}
-
-ITA_vittorio_emanuele_orlando={name=ITA_vittorio_emanuele_orlando portraits={army={small=GFX_portrait_ITA_vittorio_emanuele_orlando_small}}advisor={slot=political_advisor idea_token=ITA_vittorio_emanuele_orlando available={has_government=democratic}traits={old_figurehead}ai_will_do={base=0.300 modifier={factor=0.5}}}}
-
-ITA_guido_de_ruggiero={name=ITA_guido_de_ruggiero portraits={army={small=GFX_portrait_ITA_guido_de_rugiero_small}}advisor={slot=political_advisor idea_token=ITA_guido_de_ruggiero available={has_government=democratic}traits={liberal_professor}ai_will_do={base=0.300 modifier={factor=0}}}}
-
-ITA_sandro_pertini={name=ITA_sandro_pertini portraits={army={small=GFX_portrait_ITA_sandro_pertini_small}}advisor={slot=political_advisor idea_token=ITA_sandro_pertini available={OR={has_government=democratic has_government=communism}}traits={marxist_philosopher}ai_will_do={base=1.000 modifier={factor=0}}}}
-
-	ITA_palmiro_togliatti={name=ITA_palmiro_togliatti portraits={army={small=GFX_portrait_ITA_palmiro_togliatti_small}}country_leader={ideology=marxism expire="1965.1.1.1" id=-1}advisor={slot=political_advisor idea_token=ITA_palmiro_togliatti available={has_government=communism}traits={marxist_fundamentalist conservative_communist}ai_will_do={base=0.100 modifier={factor=0}}}}
-
-ITA_amadeo_bordiga={name=ITA_amadeo_bordiga portraits={army={small=GFX_idea_amadeo_bordiga}}advisor={slot=political_advisor idea_token=amadeo_bordiga available={has_government=communism}traits={communist_revolutionary}ai_will_do={base=0.000}}}
-
+#fix portrait
 	ITA_luigi_longo={name=ITA_luigi_longo portraits={army={small=GFX_portrait_ITA_luigi_longo_small}}advisor={slot=political_advisor idea_token=ITA_luigi_longo available={has_government=communism}traits={gallo}ai_will_do={base=0.800 modifier={factor=0.1}}}}
 
-ITA_ignazio_silone={name=ITA_ignazio_silone portraits={army={small=GFX_portrait_ITA_ignazio_silone_small}}advisor={slot=political_advisor idea_token=ITA_ignazio_silone available={has_government=communism}traits={revolutionary_poet}ai_will_do={base=0.300 modifier={factor=0}}}
+
 
 	ITA_giulio_paggio={name=ITA_giulio_paggio portraits={army={small=GFX_portrait_ITA_giulio_paggio_small}}advisor={slot=political_advisor idea_token=ITA_giulio_paggio available={has_government=communism}traits={partisans_organizer}ai_will_do={base=0.300}}}
+
+
 
 	ITA_gian_galeazzo_ciano={name=ITA_gian_galeazzo_ciano portraits={army={small=GFX_portrait_ITA_gian_galeazzo_ciano_small}}advisor={slot=political_advisor idea_token=ITA_gian_galeazzo_ciano available={has_government=fascism}cost=75 traits={hierarch_minister_of_foreign_affairs}ai_will_do={base=0.3 modifier={factor=0}}}}
 

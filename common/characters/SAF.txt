@@ -1,64 +1,496 @@
 characters={
-	SAF_j_b_m_hertzog={
-		name=SAF_j_b_m_hertzog
+	SAF_j_b_m_hertzog={name=SAF_j_b_m_hertzog portraits={civilian={large="GFX_portrait_eugene_democratic"}}country_leader={ideology=conservatism traits={trait_submissive_and_breedable_dr trait_falso_gringo_dr trait_algebra_flashbacks_dr}desc=leader_desc_eugene expire="1965.1.1.1" id=-1}}
+
+#fix portrait
+	eugene_fascist_character_dr={name=SAF_j_b_m_hertzog portraits={civilian={large="GFX_portrait_eugene_democratic"}}country_leader={ideology=fascism_ideology traits={trait_submissive_and_breedable_dr trait_falso_gringo_dr trait_algebra_flashbacks_dr}desc=leader_desc_eugene expire="1965.1.1.1" id=-1}}
+
+#fix portrait
+	eugene_commie_character_dr={name=SAF_j_b_m_hertzog portraits={civilian={large="GFX_portrait_eugene_democratic"}}country_leader={ideology=utopianism traits={trait_submissive_and_breedable_dr trait_falso_gringo_dr trait_algebra_flashbacks_dr}desc=leader_desc_eugene expire="1965.1.1.1" id=-1}}
+
+#fix portrait
+	eugene_anarchy_character_dr={name=SAF_j_b_m_hertzog portraits={civilian={large="GFX_portrait_eugene_democratic"}}country_leader={ideology=anarchism traits={trait_submissive_and_breedable_dr trait_falso_gringo_dr trait_algebra_flashbacks_dr}desc=leader_desc_eugene expire="1965.1.1.1" id=-1}}
+
+#check in game + add portrait
+	HOL_dirk_jan_de_geer_advisor={advisor={slot=political_advisor idea_token=HOL_dirk_jan_de_geer_advisor allowed={original_tag=SAF SAF={has_completed_focus=SAF_reunion_dr}}available={OR={has_government=neutrality has_government=democratic}}traits={defeatist}ai_will_do={factor=1.000}}}
+
+#check in game + add portrait
+	HOL_pieter_sjoerds_gerbrandy_advisor={advisor={slot=political_advisor idea_token=HOL_pieter_sjoerds_gerbrandy_advisor allowed={original_tag=SAF SAF={has_completed_focus=SAF_reunion_dr}}available={OR={has_government=neutrality has_government=democratic}}traits={little_churchill}ai_will_do={factor=1.000}}}
+
+#check in game + add portrait
+	HOL_jacob_adriaan_de_wilde_advisor={advisor={slot=political_advisor idea_token=HOL_jacob_adriaan_de_wilde_advisor allowed={original_tag=SAF SAF={has_completed_focus=SAF_reunion_dr}}available={OR={has_government=neutrality has_government=democratic}}traits={genial_anti_revolutionary}ai_will_do={factor=1.000}}}
+
+#check in game + add portrait
+	HOL_willem_schermerhorn_advisor={advisor={slot=political_advisor idea_token=HOL_willem_schermerhorn_advisor allowed={original_tag=SAF SAF={has_completed_focus=SAF_reunion_dr}}available={OR={has_government=neutrality has_government=democratic}}traits={democratic_reformer}ai_will_do={factor=1.000}}}
+
+#check in game + add portrait
+	HOL_lou_de_visser_advisor={advisor={slot=political_advisor idea_token=HOL_lou_de_visser_advisor allowed={original_tag=SAF SAF={has_completed_focus=SAF_reunion_dr}}available={has_government=communism}traits={veteran_communist}ai_will_do={factor=1.000}}}
+
+#check in game + add portrait
+	HOL_antonie_pannekoek_advisor={advisor={slot=political_advisor idea_token=HOL_antonie_pannekoek_advisor allowed={original_tag=SAF SAF={has_completed_focus=SAF_reunion_dr}}available={has_government=communism}traits={council_communist}ai_will_do={factor=1.000}}}
+
+#check in game + add portrait
+	HOL_saul_de_groot_advisor={advisor={slot=political_advisor idea_token=HOL_saul_de_groot_advisor allowed={original_tag=SAF SAF={has_completed_focus=SAF_reunion_dr}}available={has_government=communism}traits={communist_revolutionary}ai_will_do={factor=1.000}}}
+
+#check in game + add portrait
+	HOL_anton_de_kom_advisor={advisor={slot=political_advisor idea_token=HOL_anton_de_kom_advisor allowed={original_tag=SAF SAF={has_completed_focus=SAF_reunion_dr}}available={has_government=communism}traits={colonial_communist}ai_will_do={factor=1.000}}}
+
+#check in game + add portrait
+	HOL_anton_mussert_advisor={advisor={slot=political_advisor idea_token=HOL_anton_mussert_advisor allowed={original_tag=SAF SAF={has_completed_focus=SAF_reunion_dr}}available={has_government=fascism}traits={leider}ai_will_do={factor=1.000}}}
+
+#check in game + add portrait
+	HOL_jan_goudriaan_advisor={advisor={slot=political_advisor idea_token=HOL_jan_goudriaan_advisor allowed={original_tag=SAF SAF={has_completed_focus=SAF_reunion_dr}}available={NOT={has_government=communism}}traits={trait_intelligent_economist_dr}ai_will_do={factor=1.000}}}
+
+#check in game + add portrait
+	HOL_adriaan_dijxhoorn_advisor={advisor={slot=political_advisor idea_token=HOL_adriaan_dijxhoorn_advisor allowed={original_tag=SAF SAF={has_completed_focus=SAF_reunion_dr}}available={has_capitulated=yes}traits={war_industrialist}ai_will_do={factor=1.000}}}
+
+#check in game + add portrait
+	HOL_walraven_van_hall_advisor={advisor={slot=political_advisor idea_token=HOL_walraven_van_hall_advisor allowed={original_tag=SAF SAF={has_completed_focus=SAF_reunion_dr}}available={has_capitulated=yes}traits={resistance_banker}ai_will_do={factor=1.000}}}
+
+#prince bernhard advisor?
+
+	
+	HOL_cornelis_van_geelkerken={advisor={slot=political_advisor idea_token=HOL_cornelis_van_geelkerken allowed = {
+					original_tag  = HOL
+				}
+				available  = {
+					has_government  = fascism 
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name=HOL_cornelis_van_geelkerken
 		portraits={
+			army={
+				small="GFX_idea_HOL_cornelis_van_geelkerken"
+			}
+		}
+	}
+	HOL_meinout_rost_van_tonningen={
+		advisor={
+			slot = political_advisor
+			idea_token = HOL_meinout_rost_van_tonningen
+			allowed  = {
+					original_tag  = HOL
+				}
+				
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+
+		name=HOL_meinout_rost_van_tonningen
+		portraits={
+			army={
+				small="GFX_idea_HOL_meinout_rost_van_tonningen"
+			}
+		}
+	}
+
+
+	HOL_izaak_reijnders={
+		name=HOL_izaak_reijnders
+		portraits={
+			army={
+				large="GFX_portrait_hol_izaak_reijnders"
+				small="GFX_idea_HOL_izaak_reijnders"
+			}
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist trait_reckless }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=980
+		}
+		advisor={
+			slot = army_chief
+			idea_token = HOL_izaak_reijnders
+			allowed = {
+					original_tag = HOL
+				}
+				
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}
+	HOL_petrus_wilhelmus_best={
+		name=HOL_petrus_wilhelmus_best
+		portraits={
+			army={
+				large="GFX_portrait_hol_petrus_wilhelmus_best"
+				small="GFX_idea_HOL_petrus_wilhelmus_best"
+			}
+		}
+		corps_commander={
+			traits={ organizer skilled_staffer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor={
+			slot = air_chief
+			idea_token = HOL_petrus_wilhelmus_best
+			allowed = {
+					original_tag = HOL
+				}
+				traits = {
+					air_chief_night_operations_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}
+	HOL_godfried_van_voorst_tot_voorst={
+		name=HOL_godfried_van_voorst_tot_voorst
+		portraits={
+			army={
+				large="GFX_portrait_hol_godfried_van_voorst_tot_voorst"
+				small="GFX_idea_HOL_godfried_van_voorst_tot_voorst"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist career_officer armor_officer politically_connected }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = HOL_godfried_van_voorst_tot_voorst
+			ledger = army
+				allowed = {
+					original_tag = HOL
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+	}
+	HOL_johannes_theodorus_furstner={
+		name=HOL_johannes_theodorus_furstner
+		portraits={
+			army={
+				large="GFX_portrait_HOL_johannes_theodorus_furstner"
+				small="GFX_portrait_HOL_johannes_theodorus_furstner_small"
+			}
 			civilian={
-				large="GFX_portrait_eugene_democratic"
+				small="GFX_portrait_HOL_johannes_theodorus_furstner_small"
 			}
 		}
-		country_leader={
-			ideology=conservatism
-			traits={trait_submissive_and_breedable_dr trait_falso_gringo_dr trait_algebra_flashbacks_dr}
-			desc = leader_desc_eugene
-			expire="1965.1.1.1"
-			id=-1
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = HOL_johan_furstner
+			ledger = navy
+				allowed = {
+					original_tag = HOL
+				}
+				
+				traits = {
+					naval_theorist
+				}
+		}
+		navy_leader={
+			traits={ caustic_personality blockade_runner fly_swatter }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=-1
 		}
 	}
+	HOL_conrad_helfrich={
+		name=HOL_conrad_helfrich
+		portraits={
+			army={
+				large="GFX_portrait_hol_conrad_helfrich"
+				small=GFX_portrait_HOL_conrad_helfrich_small
+			}
+		}
+		navy_leader={
+			traits={ bold navy_career_officer seawolf superior_tactician }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=981
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = HOL_conrad_helfrich
+			allowed = {
+					original_tag = HOL
+				}
+				traits = {
+					navy_chief_commerce_raiding_3
+				}
+				cost = 200
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}
+	HOL_karel_doorman={
+		name=HOL_karel_doorman
+		portraits={
+			army={
+				large="GFX_portrait_hol_karel_doorman"
+				small="GFX_idea_HOL_karel_doorman"
+			}
+		}
+		navy_leader={
+			traits={ bold naval_lineage fleet_protector }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=-1
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = HOL_karel_doorman
+			allowed = {
+					original_tag = HOL
+				}
+				traits = {
+					navy_chief_decisive_battle_1
+				}
+				cost =  50
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
 
-	eugene_fascist_character_dr={
-		name=SAF_j_b_m_hertzog
+	}
+	HOL_charles_douw_van_der_krap={
+		advisor={
+			slot = high_command
+			idea_token = HOL_charles_douw_van_der_krap
+			ledger = navy
+				allowed = {
+					original_tag = HOL
+				}
+				traits = {
+					air_naval_strike_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=HOL_charles_douw_van_der_krap
 		portraits={
-			civilian={ #fix portrait
-				large="GFX_portrait_eugene_democratic"
+			army={
+				small="GFX_idea_HOL_charles_douw_van_der_krap"
 			}
 		}
-		country_leader={
-			ideology=fascism_ideology
-			traits={trait_submissive_and_breedable_dr trait_falso_gringo_dr trait_algebra_flashbacks_dr}
-			desc = leader_desc_eugene
-			expire="1965.1.1.1"
-			id=-1
-		}
 	}
+	HOL_nico_van_straten={
+		advisor={
+			slot = high_command
+			idea_token = HOL_nico_van_straten
+			ledger = army
+				allowed = {
+					original_tag = HOL
+				}
+				traits = {
+					army_cavalry_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
 
-	eugene_commie_character_dr={
-		name=SAF_j_b_m_hertzog
+		name=HOL_nico_van_straten
 		portraits={
-			civilian={ #fix portrait
-				large="GFX_portrait_eugene_democratic"
+			army={
+				small="GFX_idea_HOL_nico_van_straten"
 			}
-		}
-		country_leader={
-			ideology=utopianism
-			traits={trait_submissive_and_breedable_dr trait_falso_gringo_dr trait_algebra_flashbacks_dr}
-			desc = leader_desc_eugene
-			expire="1965.1.1.1"
-			id=-1
 		}
 	}
-	eugene_anarchy_character_dr={
-		name=SAF_j_b_m_hertzog
+	HOL_hein_ter_poorten={
+		advisor={
+			slot = army_chief
+			idea_token = HOL_hein_ter_poorten
+			allowed = {
+					original_tag = HOL
+				}
+				traits = {
+					army_chief_morale_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=HOL_hein_ter_poorten
 		portraits={
-			civilian={ #fix portrait
-				large="GFX_portrait_eugene_democratic"
+			army={
+				large="GFX_portrait_hol_hein_ter_poorten"
+				small="GFX_idea_HOL_hein_ter_poorten"
 			}
 		}
-		country_leader={
-			ideology=anarchism
-			traits={trait_submissive_and_breedable_dr trait_falso_gringo_dr trait_algebra_flashbacks_dr}
-			desc = leader_desc_eugene
-			expire="1965.1.1.1"
-			id=-1
+	}
+	HOL_adrianus_rudolphus_van_den_bent={
+		advisor={
+			slot = high_command
+			idea_token = HOL_adrianus_rudolphus_van_den_bent
+			ledger = army
+				allowed = {
+					original_tag = HOL
+				}
+				traits = {
+					army_infantry_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=HOL_adrianus_rudolphus_van_den_bent
+		portraits={
+			army={
+				small="GFX_idea_HOL_adrianus_rudolphus_van_den_bent"
+			}
+		}
+	}
+	HOL_hendrik_van_oyen={
+		advisor={
+			slot = air_chief
+			idea_token = HOL_hendrik_van_oyen
+			allowed = {
+					original_tag = HOL
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=HOL_hendrik_van_oyen
+		portraits={
+			army={
+				small="GFX_idea_HOL_hendrik_van_oyen"
+			}
+		}
+	}
+	HOL_hendrik_seyffardt={
+		advisor={
+			slot = army_chief
+			idea_token = HOL_hendrik_seyffardt
+			allowed = {
+					original_tag = HOL
+					has_dlc = "Man the Guns"
+				}
+				available = {
+					has_government = fascism
+				}
+				traits = {
+					army_chief_offensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=HOL_hendrik_seyffardt
+		portraits={
+			army={
+				small="GFX_idea_HOL_hendrik_seyffardt"
+			}
+		}
+	}
+	HOL_henri_winkelman={
+		advisor={	
+			slot = army_chief
+			idea_token = HOL_henri_winkelman
+			allowed = {
+					original_tag = HOL
+				}
+				
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=HOL_henri_winkelman
+		portraits={
+			army={
+				small="GFX_idea_HOL_henri_winkelman"
+				large="GFX_portrait_hol_henri_winkelman"
+			}
+		}
+	}
+	HOL_maarten_belzer={
+		advisor={
+			slot = high_command
+			idea_token = HOL_maarten_belzer
+			ledger = army
+				allowed = {
+					original_tag = HOL
+				}
+				traits = {
+					army_concealment_1
+				}
+				cost =  50
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=HOL_maarten_belzer
+		portraits={
+			army={
+				small="GFX_idea_HOL_maarten_belzer"
+			}
+		}
+	}
+	HOL_marius_raaijmakers={
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = HOL_marius_raaijmakers
+			ledger = air
+				allowed = {
+					original_tag = HOL
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name=HOL_marius_raaijmakers
+		portraits={
+			army={
+				small="GFX_idea_HOL_marius_raaijmakers"
+			}
 		}
 	}
 }

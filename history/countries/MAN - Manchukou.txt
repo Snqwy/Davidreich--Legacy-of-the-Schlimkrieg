@@ -1,6 +1,6 @@
 ﻿capital = 328
 
-oob = "MAN_1936"
+oob = "MAN"
 
 add_ideas={
 	idea_japanese_lapdog_dr

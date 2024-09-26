@@ -45,6 +45,8 @@ give_military_access=GAR
 give_military_access=URG
 give_military_access=ARG
 
+add_ideas=idea_amazonian_territory_dr
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.2.11"
